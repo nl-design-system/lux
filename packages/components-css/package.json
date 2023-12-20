@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0-alpha.0",
+  "author": "Community for NL Design System",
+  "description": "CSS Components for a design system based on the NL Design System architecture",
+  "license": "EUPL-1.2",
+  "name": "@example/components-css",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7.23.5",
+    "@mdx-js/react": "1.6.22",
+    "@storybook/addon-docs": "7.6.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.3.2",
+    "webpack": "5.89.0"
+  }
+}

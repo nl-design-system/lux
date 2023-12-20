@@ -1,0 +1,4 @@
+# Ignore generated files from Stencil
+dist/
+loader/
+www/
