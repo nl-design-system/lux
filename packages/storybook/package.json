@@ -3,14 +3,14 @@
   "author": "Community for NL Design System",
   "description": "Storybook based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/storybook",
+  "name": "@lux/storybook",
   "keywords": [
     "nl-design-system"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:nl-design-system/lux.git"
   },
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
@@ -24,12 +24,12 @@
     "@babel/preset-react": "7.23.3",
     "@babel/preset-typescript": "7.23.3",
     "@etchteam/storybook-addon-status": "4.2.4",
-    "@example/assets": "workspace:*",
-    "@example/components-css": "workspace:*",
-    "@example/design-tokens": "workspace:*",
-    "@example/font": "workspace:*",
-    "@example/web-components-react": "workspace:*",
-    "@example/web-components-stencil": "workspace:*",
+    "@lux/assets": "workspace:*",
+    "@lux/components-css": "workspace:*",
+    "@lux/design-tokens": "workspace:*",
+    "@lux/font": "workspace:*",
+    "@lux/web-components-react": "workspace:*",
+    "@lux/web-components-stencil": "workspace:*",
     "@storybook/addon-a11y": "7.6.1",
     "@storybook/addon-actions": "7.6.1",
     "@storybook/addon-docs": "7.6.1",

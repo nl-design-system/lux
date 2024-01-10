@@ -3,7 +3,7 @@
   "author": "Community for NL Design System",
   "description": "Stencil web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/web-components-stencil",
+  "name": "@lux/web-components-stencil",
   "keywords": [
     "nl-design-system"
   ],
@@ -13,14 +13,14 @@
   "types": "./dist/types/components.d.ts",
   "collection": "./dist/collection/collection-manifest.json",
   "collection:main": "./dist/collection/collection-manifest.json",
-  "unpkg": "./dist/example/example.esm.js",
+  "unpkg": "./dist/lux/lux.esm.js",
   "files": [
     "dist/",
     "loader/"
   ],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:nl-design-system/lux.git"
   },
   "scripts": {
     "prebuild": "npm run clean",
@@ -34,7 +34,7 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@example/components-css": "workspace:*",
+    "@lux/components-css": "workspace:*",
     "@stencil/react-output-target": "0.5.3",
     "@stencil/sass": "3.0.7",
     "@types/jest": "29.5.10",
