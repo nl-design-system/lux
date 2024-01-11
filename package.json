@@ -1,12 +1,13 @@
 {
   "version": "1.0.0-alpha.0",
-  "author": "Community for Logius Design System",
+  "author": "Logius",
   "description": "Design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "name": "@lux/design-system",
   "keywords": [
     "nl-design-system",
-    "lux"
+    "lux",
+    "logius"
   ],
   "private": true,
   "engines": {
