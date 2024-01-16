@@ -1,6 +1,6 @@
-import '@example/design-tokens/dist/index.css';
-import '@example/font/src/index.scss';
-import { defineCustomElements } from '@example/web-components-stencil/loader/index.js';
+import '@lux/design-tokens/dist/index.css';
+import '@lux/font/src/index.scss';
+import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
 import type { Preview, StoryContext } from '@storybook/react';
 
 defineCustomElements();
@@ -15,7 +15,7 @@ const preview: Preview = {
       storyContext.parameters['args'] = storyContext.args;
 
       return (
-        <div className="example-theme">
+        <div className="lux-theme">
           <Story />
         </div>
       );
