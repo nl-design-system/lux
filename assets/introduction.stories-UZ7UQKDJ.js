@@ -1,4 +1,4 @@
-import{M as s,e as a}from"./chunk-HLWAVYOI-jTgJhZOe.js";import{j as e}from"./jsx-runtime-Q5kDp4vx.js";import{u as o}from"./index-BxL6228P.js";import"./iframe-rb1B6HK9.js";import"../sb-preview/runtime.js";import"./index-DogsOklH.js";import"./react-18-qZm_vjb7.js";import"./index-83LIMwj7.js";const d=`<!-- @license CC0-1.0 -->
+import{M as r,e as a}from"./chunk-HLWAVYOI-X9I6uenH.js";import{j as e}from"./jsx-runtime-Q5kDp4vx.js";import{u as o}from"./index-BxL6228P.js";import"./iframe-s01sOf7J.js";import"../sb-preview/runtime.js";import"./index-DogsOklH.js";import"./react-18-qZm_vjb7.js";import"./index-83LIMwj7.js";const d=`<!-- @license CC0-1.0 -->
 
 # NL Design System introductie
 
@@ -11,7 +11,7 @@ Daarom gaan we tussen overheidsorganisaties principes, interactiepatronen en cod
 > Hierdoor is het nu nog niet volwassen genoeg om volledig gebruikt te worden.
 > Houdt hier dus rekening mee voor je aan de slag gaat.
 > We zouden het op prijs stellen als je wilt bijdragen om het NLDS tot een succes te maken.
-> Dit kan in onze GitHub of met een mailtje aan: [nldesignsystem@gebruikercentraal.nl](mailto:nldesignsystem@gebruikercentraal.nl)
+> Dit kan in onze GitHub of met een mailtje aan: [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl)
 
 ## Wat is een Design System
 
@@ -34,5 +34,5 @@ Het is belangrijk dat iedereen de online dienstverlening van de overheid kan geb
 De POC is te vinden op:
 
 <http://github.com/nl-design-system>
-`;function r(n){return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Example/Intro"}),`
-`,e.jsx(a,{children:d})]})}function l(n={}){const{wrapper:i}=Object.assign({},o(),n.components);return i?e.jsx(i,{...n,children:e.jsx(r,{...n})}):r()}const m=()=>{throw new Error("Docs-only story")};m.parameters={docsOnly:!0};const t={title:"Example/Intro",tags:["stories-mdx"],includeStories:["__page"]};t.parameters=t.parameters||{};t.parameters.docs={...t.parameters.docs||{},page:l};const j=["__page"];export{j as __namedExportsOrder,m as __page,t as default};
+`;function s(n){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Example/Intro"}),`
+`,e.jsx(a,{children:d})]})}function m(n={}){const{wrapper:i}=Object.assign({},o(),n.components);return i?e.jsx(i,{...n,children:e.jsx(s,{...n})}):s()}const l=()=>{throw new Error("Docs-only story")};l.parameters={docsOnly:!0};const t={title:"Example/Intro",tags:["stories-mdx"],includeStories:["__page"]};t.parameters=t.parameters||{};t.parameters.docs={...t.parameters.docs||{},page:m};const j=["__page"];export{j as __namedExportsOrder,l as __page,t as default};
