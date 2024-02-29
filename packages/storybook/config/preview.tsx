@@ -1,6 +1,5 @@
 import '@lux/design-tokens/dist/root.css';
 import '@lux/design-tokens/dist/dark.css';
-import '@lux/design-tokens/dist/funky.css';
 import '@lux/font/src/index.scss';
 import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
 import type { Preview, StoryContext } from '@storybook/react';
@@ -17,7 +16,7 @@ const preview: Preview = {
       storyContext.parameters['args'] = storyContext.args;
 
       return (
-        <div className="lux-theme lux-theme--dark lux-theme--funky">
+        <div className="lux-theme">
           <Story />
         </div>
       );
