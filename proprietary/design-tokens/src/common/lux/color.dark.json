@@ -1,0 +1,16 @@
+{
+  "lux": {
+    "color": {
+      "foreground": {
+        "default": {
+          "value": "{logius.color.wit}"
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{logius.color.grijs.700}"
+        }
+      }
+    }
+  }
+}

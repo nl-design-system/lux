@@ -1,0 +1,27 @@
+{
+  "lux": {
+    "color": {
+      "foreground": {
+        "default": {
+          "value": "{logius.color.grijs.700}"
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{logius.color.wit}"
+        },
+        "hover": {
+          "value": "{logius.color.grijs.300}"
+        },
+        "active": {
+          "value": "{logius.color.grijs.400}"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{logius.color.grijs.500}"
+        }
+      }
+    }
+  }
+}

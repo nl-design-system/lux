@@ -1,0 +1,32 @@
+{
+  "lux": {
+    "login-method-button": {
+      "background": {
+        "category": "color",
+        "value": "{lux.color.background.default}"
+      },
+      "color": {
+        "category": "color",
+        "value": "{lux.color.foreground.default}"
+      },
+      "icon": {
+        "eherkenning": {
+          "e-color": {
+            "category": "color",
+            "value": "#fff"
+          }
+        },
+        "eidas": {
+          "background-color": {
+            "category": "color",
+            "value": "#fff"
+          },
+          "lines-color": {
+            "category": "color",
+            "value": "#fff"
+          }
+        }
+      }
+    }
+  }
+}
