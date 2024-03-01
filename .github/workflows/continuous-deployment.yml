@@ -20,7 +20,7 @@ jobs:
           version: 8.14
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -44,7 +44,7 @@ jobs:
           version: 8.14
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -71,7 +71,7 @@ jobs:
           version: 8.14
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -119,7 +119,7 @@ jobs:
           version: 8.14
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -170,7 +170,7 @@ jobs:
           version: 8.14
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4.0.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version-file: .nvmrc
 
