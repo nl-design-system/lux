@@ -9,7 +9,7 @@ import { PropsWithoutRef } from 'react';
 const LoginMethodButtonDefault = (props: PropsWithoutRef<JSX.LuxLoginMethodButton>) => (<LuxLoginMethodButton {...props} />);
 
 const meta = {
-  title: 'Web Component/Login Method Button',
+  title: 'Components/Login Method Button',
   id: 'web-component-login-method',
   component: LoginMethodButtonDefault,
   argTypes: {
