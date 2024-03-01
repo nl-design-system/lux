@@ -14,7 +14,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v4.1.1
 
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         with:
           version: 8.14
@@ -38,7 +38,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v4.1.1
 
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         with:
           version: 8.14
@@ -65,7 +65,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v4.1.1
 
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         with:
           version: 8.14
@@ -113,7 +113,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v4.1.1
 
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         with:
           version: 8.14
@@ -164,7 +164,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         with:
           version: 8.14
