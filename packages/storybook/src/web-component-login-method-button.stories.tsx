@@ -6,7 +6,9 @@ import type { JSX } from '@lux/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithoutRef } from 'react';
 
-const LoginMethodButtonDefault = (props: PropsWithoutRef<JSX.LuxLoginMethodButton>) => (<LuxLoginMethodButton {...props} />);
+const LoginMethodButtonDefault = (props: PropsWithoutRef<JSX.LuxLoginMethodButton>) => (
+  <LuxLoginMethodButton {...props} />
+);
 
 const meta = {
   title: 'Components/Login Method Button',
@@ -18,7 +20,7 @@ const meta = {
     },
     variant: {
       type: 'string',
-    }
+    },
   },
   tags: ['autodocs'],
   parameters: {
@@ -38,15 +40,15 @@ export const Digid: Story = {
   name: 'Digid',
   args: {
     label: '',
-    variant: 'digid'
-  }
+    variant: 'digid',
+  },
 };
 
 export const DigidMachtigen: Story = {
   name: 'Digid Machtigen',
   args: {
     label: '',
-    variant: 'digid-machtigen'
+    variant: 'digid-machtigen',
   },
 };
 
@@ -54,14 +56,14 @@ export const EHerkenning: Story = {
   name: 'E-Herkenning',
   args: {
     label: '',
-    variant: 'e-herkenning'
-  }
+    variant: 'e-herkenning',
+  },
 };
 
 export const Eidas: Story = {
   name: 'Eidas',
   args: {
     label: '',
-    variant: 'eidas'
-  }
+    variant: 'eidas',
+  },
 };

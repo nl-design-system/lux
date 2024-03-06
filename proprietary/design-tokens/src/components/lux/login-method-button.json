@@ -16,7 +16,7 @@
       },
       "background": {
         "category": "color",
-        "value": "{lux.color.background.default.value}"
+        "value": "{lux.color.background.default}"
       },
       "border-color": {
         "category": "color",
@@ -36,7 +36,7 @@
       },
       "color": {
         "category": "color",
-        "value": "{lux.color.foreground.default.value}"
+        "value": "{lux.color.foreground.default}"
       },
       "focus": {
         "outline-color": {

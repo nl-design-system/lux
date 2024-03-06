@@ -8,7 +8,8 @@ so you don't have to use a CDN or hosted files from Google Fonts.
   font-family: "Rijksoverheid";
   font-style: normal;
   font-weight: 400;
-  src: local("ROsanswebtextregular"),
+  src:
+    local("ROsanswebtextregular"),
     url("ROsanswebtextregular.woff") format("woff"),
     url("ROsanswebtextregular.eot") format("embedded-opentype"),
     url("ROsanswebtextregular.ttf") format("truetype");
@@ -18,7 +19,8 @@ so you don't have to use a CDN or hosted files from Google Fonts.
   font-family: "Rijksoverheid";
   font-style: normal;
   font-weight: 700;
-  src: local("ROsanswebtextbold"),
+  src:
+    local("ROsanswebtextbold"),
     url("ROsanswebtextbold.woff") format("woff"),
     url("ROsanswebtextbold.eot") format("embedded-opentype"),
     url("ROsanswebtextbold.ttf") format("truetype");
@@ -28,7 +30,8 @@ so you don't have to use a CDN or hosted files from Google Fonts.
   font-family: "Rijksoverheid";
   font-style: italic;
   font-weight: 400;
-  src: local("ROsanswebtextitalic"),
+  src:
+    local("ROsanswebtextitalic"),
     url("ROsanswebtextitalic.woff") format("woff"),
     url("ROsanswebtextitalic.eot") format("embedded-opentype"),
     url("ROsanswebtextitalic.ttf") format("truetype");

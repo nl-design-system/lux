@@ -16,8 +16,13 @@ const preview: Preview = {
       storyContext.parameters['args'] = storyContext.args;
 
       return (
-        <div className="lux-theme">
-          <Story />
+        <div className="lux-theme" style={{ display: 'flex', gap: '1rem', justifyContent: 'space-around' }}>
+          <div style={{ padding: '1rem' }}>
+            <Story />
+          </div>
+          <div className="lux-theme--dark" style={{ padding: '1rem', backgroundColor: 'black' }}>
+            <Story />
+          </div>
         </div>
       );
     },

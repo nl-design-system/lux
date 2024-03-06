@@ -49,3 +49,25 @@
   inline-size: var(--lux-login-method-button-icon-size);
   line-height: 1;
 }
+
+/* stylelint-disable selector-class-pattern */
+.lux-login-method-button__logo--e-herkenning .e {
+  fill: var(--lux-login-method-button-icon-eherkenning-e-color);
+}
+
+.lux-login-method-button__logo--eidas .line {
+  fill: var(--lux-login-method-button-icon-eidas-lines-color);
+}
+
+.lux-login-method-button__logo--eidas .star {
+  fill: var(--lux-login-method-button-icon-eidas-stars-color);
+}
+
+.lux-login-method-button__logo--eidas .background {
+  fill: var(--lux-login-method-button-icon-eidas-background-color);
+}
+
+.lux-login-method-button__logo--eidas .lock {
+  fill: var(--lux-login-method-button-icon-eidas-lock-color);
+}
+/* stylelint-enable selector-class-pattern */
