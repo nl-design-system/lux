@@ -43,6 +43,7 @@
     "@babel/preset-react": "7.23.3",
     "@babel/preset-typescript": "7.23.3",
     "@babel/runtime": "7.23.5",
+    "@jest/globals": "29.7.0",
     "@lux/components-css": "workspace:*",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-commonjs": "25.0.7",
