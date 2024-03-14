@@ -65,7 +65,7 @@ export class LoginMethodButton {
       const content = await this.getSvgContent(url);
       this.svgContent = content;
     } catch (err) {
-      console.error(`icon '${this.variant}' was not resolved`);
+      console.error(`Icon '${this.variant}' was not resolved`);
       console.error(err);
     }
   }
