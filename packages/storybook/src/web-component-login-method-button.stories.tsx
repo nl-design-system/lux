@@ -19,7 +19,10 @@ const meta = {
       type: 'string',
     },
     variant: {
-      type: 'string',
+      options: ['digid', 'digid-machtigen', 'e-herkenning', 'eidas'],
+      control: {
+        type: 'select',
+      },
     },
   },
   tags: ['autodocs'],
