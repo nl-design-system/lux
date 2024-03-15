@@ -18,6 +18,7 @@
   font-weight: var(--lux-login-method-button-font-weight);
   gap: var(--lux-login-method-button-gap);
   justify-content: space-between;
+  line-height: var(--lux-font-line-height-m);
   margin-block: 0;
   margin-inline: 0;
   min-block-size: var(--lux-login-method-button-min-block-size);
@@ -29,7 +30,7 @@
   user-select: none;
 }
 
-.lux-login-method-button:focus {
+.lux-login-method-button:focus-visible {
   outline-color: var(--lux-login-method-button-focus-outline-color);
   outline-offset: var(--lux-login-method-button-focus-outline-offset);
   outline-style: var(--lux-login-method-button-focus-outline-style);
@@ -42,6 +43,7 @@
 
 .lux-login-method-button:active {
   background-color: var(--lux-login-method-button-active-background);
+  border-color: var(--lux-login-method-button-active-border-color);
 }
 
 .lux-login-method-button__logo {

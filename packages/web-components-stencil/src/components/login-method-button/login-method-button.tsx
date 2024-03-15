@@ -12,10 +12,18 @@ const requestsCache = new Map<string, Promise<string>>();
   styleUrl: 'login-method-button.css',
 })
 export class LoginMethodButton {
-  @Prop() public readonly variant!: LoginMethodVariant;
-  @Prop() public readonly label!: string;
+  private get printedLabel(): string {
+    if (this.label) {
+      return this.label;
+    }
+
+    return loginMethodLabels[this.variant];
+  }
 
   @State() private svgContent: string = '';
+
+  @Prop() public readonly variant!: LoginMethodVariant;
+  @Prop() public readonly label!: string;
 
   @Event() private luxClick!: EventEmitter<void>;
 
@@ -25,23 +33,6 @@ export class LoginMethodButton {
 
   async componentWillRender() {
     return this.loadLogoAsset();
-  }
-
-  private get printedLabel(): string {
-    if (this.label) {
-      return this.label;
-    }
-
-    return loginMethodLabels[this.variant];
-  }
-
-  render() {
-    return (
-      <button class={COMPONENT_TAG} onClick={(evt: MouseEvent) => this.handleClick(evt)}>
-        {this.renderLabel()}
-        {this.renderLogo()}
-      </button>
-    );
   }
 
   renderLabel() {
@@ -55,6 +46,15 @@ export class LoginMethodButton {
     };
 
     return <div class={classNames} aria-hidden="true" innerHTML={this.svgContent} />;
+  }
+
+  render() {
+    return (
+      <button class={COMPONENT_TAG} onClick={(evt: MouseEvent) => this.handleClick(evt)}>
+        {this.renderLabel()}
+        {this.renderLogo()}
+      </button>
+    );
   }
 
   private handleClick(evt: MouseEvent) {

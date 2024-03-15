@@ -19,12 +19,15 @@
         "background": {
           "category": "color",
           "value": "{lux.color.background.active}"
+        },
+        "border-color": {
+          "category": "color",
+          "value": "{lux.color.border.active}"
         }
       },
       "focus": {
-        "background": {
-          "category": "color",
-          "value": "{lux.color.background.focus}"
+        "outline-color": {
+          "value": "{lux.color.outline.default}"
         }
       },
       "icon": {

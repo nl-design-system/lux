@@ -8,7 +8,7 @@
         },
         "border-color": {
           "category": "color",
-          "value": "{lux.color.border.default}"
+          "value": "{lux.color.border.active}"
         },
         "color": {
           "value": "{lux.color.foreground.default}"
@@ -40,7 +40,7 @@
       },
       "focus": {
         "outline-color": {
-          "value": "{lux.color.border.default}"
+          "value": "{lux.color.outline.default}"
         },
         "outline-offset": {
           "value": "{logius.space.025-x}"
