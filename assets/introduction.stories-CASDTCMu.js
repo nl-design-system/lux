@@ -1,4 +1,4 @@
-import{M as r,e as a}from"./chunk-HLWAVYOI-X9I6uenH.js";import{j as e}from"./jsx-runtime-Q5kDp4vx.js";import{u as o}from"./index-BxL6228P.js";import"./iframe-s01sOf7J.js";import"../sb-preview/runtime.js";import"./index-DogsOklH.js";import"./react-18-qZm_vjb7.js";import"./index-83LIMwj7.js";const d=`<!-- @license CC0-1.0 -->
+import{M as s,e as a}from"./chunk-HLWAVYOI-BBHpPV7U.js";import{j as e}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as o}from"./index-DzJSSmSq.js";import"./iframe-D6MUMdug.js";import"../sb-preview/runtime.js";import"./index-BBkUAzwr.js";import"./react-18-DHj1n7xi.js";import"./index-bVXY45sP.js";const d=`<!-- @license CC0-1.0 -->
 
 # NL Design System introductie
 
@@ -34,5 +34,5 @@ Het is belangrijk dat iedereen de online dienstverlening van de overheid kan geb
 De POC is te vinden op:
 
 <http://github.com/nl-design-system>
-`;function s(n){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Example/Intro"}),`
-`,e.jsx(a,{children:d})]})}function m(n={}){const{wrapper:i}=Object.assign({},o(),n.components);return i?e.jsx(i,{...n,children:e.jsx(s,{...n})}):s()}const l=()=>{throw new Error("Docs-only story")};l.parameters={docsOnly:!0};const t={title:"Example/Intro",tags:["stories-mdx"],includeStories:["__page"]};t.parameters=t.parameters||{};t.parameters.docs={...t.parameters.docs||{},page:m};const j=["__page"];export{j as __namedExportsOrder,l as __page,t as default};
+`;function r(n){return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Example/Intro"}),`
+`,e.jsx(a,{children:d})]})}function m(n={}){const{wrapper:i}=Object.assign({},o(),n.components);return i?e.jsx(i,{...n,children:e.jsx(r,{...n})}):r()}const l=()=>{throw new Error("Docs-only story")};l.parameters={docsOnly:!0};const t={title:"Example/Intro",tags:["stories-mdx"],includeStories:["__page"]};t.parameters=t.parameters||{};t.parameters.docs={...t.parameters.docs||{},page:m};const j=["__page"];export{j as __namedExportsOrder,l as __page,t as default};
