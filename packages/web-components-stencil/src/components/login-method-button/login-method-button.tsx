@@ -1,12 +1,13 @@
 import { Component, Event, EventEmitter, getAssetPath, h, Prop, State } from '@stencil/core';
 import { COMPONENT_TAG, loginMethodLabels } from './constants';
 import type { LoginMethodVariant } from './types';
+import { isStatusValid } from '../../utils/http/status';
 
-const requests = new Map<string, Promise<string>>();
+const requestsCache = new Map<string, Promise<string>>();
 
 @Component({
   tag: 'lux-login-method-button',
-  assetsDirs: ['logos'],
+  assetsDirs: ['assets'],
   shadow: true,
   styleUrl: 'login-method-button.css',
 })
@@ -14,12 +15,16 @@ export class LoginMethodButton {
   @Prop() public readonly variant!: LoginMethodVariant;
   @Prop() public readonly label!: string;
 
-  @State() private svgContent: string = 'No logo';
+  @State() private svgContent: string = '';
 
   @Event() private luxClick!: EventEmitter<void>;
 
   async componentWillLoad() {
-    this.loadIcon();
+    return this.loadLogoAsset();
+  }
+
+  async componentWillRender() {
+    return this.loadLogoAsset();
   }
 
   private get printedLabel(): string {
@@ -58,48 +63,44 @@ export class LoginMethodButton {
     this.luxClick.emit();
   }
 
-  private async loadIcon(): Promise<void> {
-    const url = this.getSvgUrl();
+  private async loadLogoAsset(): Promise<void> {
+    const assetPath = this.getLogoAssetPath();
 
     try {
-      const content = await this.getSvgContent(url);
+      const content = await this.getLogoAssetHtmlString(assetPath);
       this.svgContent = content;
     } catch (err) {
-      console.error(`icon '${this.variant}' was not resolved`);
+      console.error(`Icon '${this.variant}' was not resolved`);
       console.error(err);
     }
   }
 
-  private isStatusValid(status: number): boolean {
-    return status <= 299;
-  }
-
-  private getSvgUrl(): string {
+  private getLogoAssetPath(): string {
     return getAssetPath(`./logos/${this.variant}.svg`);
   }
 
-  private async getSvgContent(url: string): Promise<string> {
-    if (!url) {
+  private async getLogoAssetHtmlString(assetPath: string): Promise<string> {
+    if (!assetPath) {
       return Promise.reject();
     }
 
-    // Make sure we only request the same icon once by checking if we already have a request for this url
-    let request = requests.get(url);
+    // Get from cache, if available
+    let request = requestsCache.get(assetPath);
 
     if (request) {
       return request;
     }
 
-    request = fetch(url, { cache: 'force-cache', credentials: 'include' }).then((response) => {
-      if (this.isStatusValid(response.status)) {
+    request = fetch(assetPath, { cache: 'force-cache', credentials: 'include' }).then((response) => {
+      if (isStatusValid(response)) {
         return response.text();
       }
 
       return Promise.resolve('');
     });
 
-    // cache for the same requests
-    requests.set(url, request);
+    // Cache to prevent repetition
+    requestsCache.set(assetPath, request);
 
     return request;
   }
