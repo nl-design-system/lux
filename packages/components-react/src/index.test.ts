@@ -1,7 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import { describe, it } from '@jest/globals';
 
 describe('index', () => {
-  it('has a placeholder test', () => {
-    expect(true).toBe(true);
-  });
+  it.todo('has a placeholder test');
 });
