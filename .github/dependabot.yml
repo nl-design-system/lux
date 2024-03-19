@@ -6,12 +6,12 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:
-      - "nl-design-system/kernteam-sysadmin"
+      - "nl-design-system/kernteam-dependabot"
