@@ -1,0 +1,38 @@
+{
+  "lux": {
+    "color": {
+      "foreground": {
+        "default": {
+          "value": "{logius.color.wit}"
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{logius.color.grijs.700}"
+        },
+        "active": {
+          "value": "{logius.color.grijs.500}"
+        },
+        "hover": {
+          "value": "{logius.color.grijs.600}"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{logius.color.grijs.700}"
+        },
+        "active": {
+          "value": "{logius.color.grijs.100}"
+        },
+        "hover": {
+          "value": "{logius.color.grijs.500}"
+        }
+      },
+      "outline": {
+        "default": {
+          "value": "{logius.color.grijs.100}"
+        }
+      }
+    }
+  }
+}

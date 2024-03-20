@@ -1,0 +1,141 @@
+{
+  "lux": {
+    "login-method-button": {
+      "active": {
+        "background": {
+          "category": "color",
+          "value": "{lux.color.background.active}"
+        },
+        "border-color": {
+          "category": "color",
+          "value": "{lux.color.border.active}"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}"
+        }
+      },
+      "background": {
+        "category": "color",
+        "value": "{lux.color.background.default}"
+      },
+      "border-color": {
+        "category": "color",
+        "value": "{lux.color.border.default}"
+      },
+      "border-radius": {
+        "category": "borderRadius",
+        "value": "{logius.border-radius.default}"
+      },
+      "border-style": {
+        "category": "borderWidth",
+        "value": "{logius.border-style.solid}"
+      },
+      "border-width": {
+        "category": "borderWidth",
+        "value": "{logius.border-width.default}"
+      },
+      "color": {
+        "category": "color",
+        "value": "{lux.color.foreground.default}"
+      },
+      "focus": {
+        "outline-color": {
+          "value": "{lux.color.outline.default}"
+        },
+        "outline-offset": {
+          "value": "{logius.space.025-x}"
+        },
+        "outline-style": {
+          "value": "{logius.border-style.default}"
+        },
+        "outline-width": {
+          "value": "{logius.border-width.m}"
+        }
+      },
+      "font-family": {
+        "value": "{logius.font-family.default}"
+      },
+      "font-size": {
+        "value": "{logius.font-size.m}"
+      },
+      "font-weight": {
+        "value": "{logius.font-weight.default}"
+      },
+      "gap": {
+        "value": "{logius.space.2-x}"
+      },
+      "hover": {
+        "background": {
+          "category": "color",
+          "value": "{lux.color.background.hover}"
+        },
+        "border-color": {
+          "category": "color",
+          "value": "{lux.color.border.default}"
+        },
+        "color": {
+          "category": "color",
+          "value": "{lux.color.foreground.default}"
+        }
+      },
+      "icon": {
+        "eherkenning": {
+          "e-color": {
+            "category": "color",
+            "value": "#203a70"
+          }
+        },
+        "eidas": {
+          "background-color": {
+            "category": "color",
+            "value": "#1d336a"
+          },
+          "lines-color": {
+            "category": "color",
+            "value": "#6ba6f1"
+          },
+          "lock-color": {
+            "category": "color",
+            "value": "#fff"
+          },
+          "stars-color": {
+            "category": "color",
+            "value": "#f1cc49"
+          }
+        },
+        "size": {
+          "category": "sizing",
+          "value": "40px"
+        }
+      },
+      "margin-inline": {
+        "category": "spacing",
+        "value": "{logius.space.1-x}"
+      },
+      "min-block-size": {
+        "category": "sizing",
+        "value": "auto"
+      },
+      "min-inline-size": {
+        "category": "sizing",
+        "value": "{lux.size.target}"
+      },
+      "padding-block-end": {
+        "category": "spacing",
+        "value": "{logius.space.05-x}"
+      },
+      "padding-block-start": {
+        "category": "spacing",
+        "value": "{logius.space.05-x}"
+      },
+      "padding-inline-end": {
+        "category": "spacing",
+        "value": "{logius.space.05-x}"
+      },
+      "padding-inline-start": {
+        "category": "spacing",
+        "value": "{logius.space.2-x}"
+      }
+    }
+  }
+}

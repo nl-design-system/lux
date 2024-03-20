@@ -1,0 +1,75 @@
+:host {
+  appearance: button;
+  display: contents;
+}
+
+.lux-login-method-button {
+  align-items: center;
+  appearance: button;
+  background-color: var(--lux-login-method-button-background);
+  border-color: var(--lux-login-method-button-border-color);
+  border-radius: var(--lux-login-method-button-border-radius);
+  border-style: var(--lux-login-method-button-border-style);
+  border-width: var(--lux-login-method-button-border-width);
+  color: var(--lux-login-method-button-color);
+  display: flex;
+  font-family: var(--lux-login-method-button-font-family);
+  font-size: var(--lux-login-method-button-font-size);
+  font-weight: var(--lux-login-method-button-font-weight);
+  gap: var(--lux-login-method-button-gap);
+  justify-content: space-between;
+  line-height: var(--lux-font-line-height-m);
+  margin-block: 0;
+  margin-inline: 0;
+  min-block-size: var(--lux-login-method-button-min-block-size);
+  min-inline-size: var(--lux-login-method-button-min-inline-size);
+  padding-block-end: var(--lux-login-method-button-padding-block-end);
+  padding-block-start: var(--lux-login-method-button-padding-block-start);
+  padding-inline-end: var(--lux-login-method-button-padding-inline-end);
+  padding-inline-start: var(--lux-login-method-button-padding-inline-start);
+  user-select: none;
+}
+
+.lux-login-method-button:focus-visible {
+  outline-color: var(--lux-login-method-button-focus-outline-color);
+  outline-offset: var(--lux-login-method-button-focus-outline-offset);
+  outline-style: var(--lux-login-method-button-focus-outline-style);
+  outline-width: var(--lux-login-method-button-focus-outline-width);
+}
+
+.lux-login-method-button:hover {
+  background-color: var(--lux-login-method-button-hover-background);
+}
+
+.lux-login-method-button:active {
+  background-color: var(--lux-login-method-button-active-background);
+  border-color: var(--lux-login-method-button-active-border-color);
+}
+
+.lux-login-method-button__logo {
+  block-size: var(--lux-login-method-button-icon-size);
+  inline-size: var(--lux-login-method-button-icon-size);
+  line-height: 1;
+}
+
+/* stylelint-disable selector-class-pattern */
+.lux-login-method-button__logo--e-herkenning .e {
+  fill: var(--lux-login-method-button-icon-eherkenning-e-color);
+}
+
+.lux-login-method-button__logo--eidas .line {
+  fill: var(--lux-login-method-button-icon-eidas-lines-color);
+}
+
+.lux-login-method-button__logo--eidas .star {
+  fill: var(--lux-login-method-button-icon-eidas-stars-color);
+}
+
+.lux-login-method-button__logo--eidas .background {
+  fill: var(--lux-login-method-button-icon-eidas-background-color);
+}
+
+.lux-login-method-button__logo--eidas .lock {
+  fill: var(--lux-login-method-button-icon-eidas-lock-color);
+}
+/* stylelint-enable selector-class-pattern */

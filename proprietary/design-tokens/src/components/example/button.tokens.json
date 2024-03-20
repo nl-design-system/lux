@@ -1,8 +1,0 @@
-{
-  "lux": {
-    "button": {
-      "background-color": { "value": "{lux.color.blue.50}" },
-      "color": { "value": "{lux.color.grey.100}" }
-    }
-  }
-}
