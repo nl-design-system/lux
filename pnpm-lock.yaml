@@ -398,6 +398,9 @@ importers:
         specifier: 4.12.6
         version: 4.12.6
     devDependencies:
+      '@jest/globals':
+        specifier: 29.7.0
+        version: 29.7.0
       '@lux/components-css':
         specifier: workspace:*
         version: link:../components-css

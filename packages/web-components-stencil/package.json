@@ -29,11 +29,15 @@
     "build:typescript": "tsc",
     "clean": "rimraf dist/ ../web-components-react/src/components.ts ../web-components-react/src/react-component-lib/",
     "start": "stencil build --dev --watch --serve",
+    "test": "npm-run-all --parallel test:*",
+    "test:e2e": "stencil test --e2e",
+    "test:unit": "stencil test --spec",
     "watch": "npm-run-all --parallel watch:**",
     "watch:stencil": "chokidar --follow-symlinks --initial --command 'npm run build:stencil' '../../components/**/*.(js|jsx|ts|tsx)'",
     "generate": "stencil generate"
   },
   "devDependencies": {
+    "@jest/globals": "29.7.0",
     "@lux/components-css": "workspace:*",
     "@stencil/react-output-target": "0.5.3",
     "@stencil/sass": "3.0.10",

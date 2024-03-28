@@ -1,13 +1,11 @@
-import { Component, Event, EventEmitter, getAssetPath, h, Prop, State } from '@stencil/core';
+import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
 import { COMPONENT_TAG, loginMethodLabels } from './constants';
 import type { LoginMethodVariant } from './types';
-import { isStatusValid } from '../../utils/http/status';
-
-const requestsCache = new Map<string, Promise<string>>();
+import { RequiredPropertyError, UnsupportedPropertyValueError } from '../../utils/errors/custom-errors';
+import { applyTestId } from '../../utils/test/testid';
 
 @Component({
   tag: 'lux-login-method-button',
-  assetsDirs: ['assets'],
   shadow: true,
   styleUrl: 'login-method-button.css',
 })
@@ -20,88 +18,73 @@ export class LoginMethodButton {
     return loginMethodLabels[this.variant];
   }
 
-  @State() private svgContent: string = '';
+  @Element() el!: HTMLLuxLoginMethodButtonElement;
 
   @Prop() public readonly variant!: LoginMethodVariant;
   @Prop() public readonly label!: string;
 
   @Event() private luxClick!: EventEmitter<void>;
 
-  async componentWillLoad() {
-    return this.loadLogoAsset();
+  componentWillRender() {
+    this.validateProperties();
   }
 
-  async componentWillRender() {
-    return this.loadLogoAsset();
+  @Listen('click')
+  handleClick(evt: MouseEvent) {
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    this.luxClick.emit();
   }
 
   renderLabel() {
-    return <span class={`${COMPONENT_TAG}__label`}>{this.printedLabel}</span>;
+    return (
+      <span class={`${COMPONENT_TAG}__label`} {...applyTestId('label')}>
+        {this.printedLabel}
+      </span>
+    );
+  }
+
+  renderLogoIcon() {
+    const loginMethodIcons: Record<LoginMethodVariant, any> = {
+      digid: <lux-icon-logo-digid />,
+      'digid-machtigen': <lux-icon-logo-digid />,
+      eherkenning: <lux-icon-logo-eherkenning />,
+      eidas: <lux-icon-logo-eidas />,
+    };
+
+    return loginMethodIcons[this.variant];
   }
 
   renderLogo() {
-    const classNames = {
-      [`${COMPONENT_TAG}__logo`]: true,
-      [`${COMPONENT_TAG}__logo--${this.variant}`]: true,
-    };
-
-    return <div class={classNames} aria-hidden="true" innerHTML={this.svgContent} />;
+    return (
+      <div class={`${COMPONENT_TAG}__logo`} aria-hidden="true" {...applyTestId('logo')}>
+        {this.renderLogoIcon()}
+      </div>
+    );
   }
 
   render() {
+    const classNames = {
+      [`${COMPONENT_TAG}`]: true,
+      [`${COMPONENT_TAG}--${this.variant}`]: true,
+    };
+
     return (
-      <button class={COMPONENT_TAG} onClick={(evt: MouseEvent) => this.handleClick(evt)}>
+      <button class={classNames}>
         {this.renderLabel()}
         {this.renderLogo()}
       </button>
     );
   }
 
-  private handleClick(evt: MouseEvent) {
-    evt.stopPropagation();
-
-    this.luxClick.emit();
-  }
-
-  private async loadLogoAsset(): Promise<void> {
-    const assetPath = this.getLogoAssetPath();
-
-    try {
-      const content = await this.getLogoAssetHtmlString(assetPath);
-      this.svgContent = content;
-    } catch (err) {
-      console.error(`Icon '${this.variant}' was not resolved`);
-      console.error(err);
-    }
-  }
-
-  private getLogoAssetPath(): string {
-    return getAssetPath(`./logos/${this.variant}.svg`);
-  }
-
-  private async getLogoAssetHtmlString(assetPath: string): Promise<string> {
-    if (!assetPath) {
-      return Promise.reject();
+  private validateProperties(): void {
+    if (!this.variant) {
+      throw new RequiredPropertyError(this.el, 'variant');
     }
 
-    // Get from cache, if available
-    let request = requestsCache.get(assetPath);
-
-    if (request) {
-      return request;
+    if (!Object.keys(loginMethodLabels).includes(this.variant)) {
+      throw new UnsupportedPropertyValueError(this.el, 'variant', this.variant);
     }
-
-    request = fetch(assetPath, { cache: 'force-cache', credentials: 'include' }).then((response) => {
-      if (isStatusValid(response)) {
-        return response.text();
-      }
-
-      return Promise.resolve('');
-    });
-
-    // Cache to prevent repetition
-    requestsCache.set(assetPath, request);
-
-    return request;
   }
 }

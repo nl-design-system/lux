@@ -79,6 +79,7 @@
     "no-sparse-arrays": "error",
     "no-this-before-super": "error",
     "no-throw-literal": "error",
+    "@typescript-eslint/no-undef": "off",
     "no-undef": "error",
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",

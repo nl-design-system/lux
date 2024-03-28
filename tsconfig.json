@@ -19,7 +19,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2020",
-    "jsx": "react"
+    "jsx": "react",
+    "jsxFactory": "h"
   },
   "exclude": ["**/node_modules/*"]
 }
