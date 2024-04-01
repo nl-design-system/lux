@@ -30,7 +30,7 @@
     "@lux/font": "workspace:*",
     "@lux/web-components-react": "workspace:*",
     "@lux/web-components-stencil": "workspace:*",
-    "@storybook/addon-a11y": "7.6.17",
+    "@storybook/addon-a11y": "8.0.5",
     "@storybook/addon-actions": "7.6.17",
     "@storybook/addon-docs": "7.6.17",
     "@storybook/addon-interactions": "7.6.17",
