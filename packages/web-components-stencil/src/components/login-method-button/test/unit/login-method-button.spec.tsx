@@ -41,7 +41,6 @@ it('allows for a custom label to be provided', async () => {
   });
 
   const { textContent }: HTMLLuxLoginMethodButtonElement = getTestableShadowElement(page, 'label');
-  expect(textContent).not.toBe('Inloggen'); // The default label for variant="digid"
   expect(textContent).toBe('My Custom Label');
 });
 

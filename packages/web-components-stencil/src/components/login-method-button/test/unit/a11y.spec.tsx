@@ -4,7 +4,7 @@ import { getTestableShadowElement } from '../../../../utils/test/element';
 import { LoginMethodButton } from '../../login-method-button';
 
 describe('a11y', () => {
-  it('is hidden from the a11y tree', async () => {
+  it('hides logo icons from the a11y tree', async () => {
     const page = await newSpecPage({
       components: [LoginMethodButton],
       html: `<lux-login-method-button variant="digid" />`,
