@@ -1,9 +1,9 @@
 import { Build } from '@stencil/core';
 
-const testIdProp = 'data-test-id';
+const testIdProp = 'data-testid';
 
 interface TestIdObject {
-  'data-test-id': string;
+  'data-testid': string;
 }
 
 export const applyTestId = (id: string): TestIdObject | null => {

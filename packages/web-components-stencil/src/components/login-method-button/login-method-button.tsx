@@ -1,7 +1,6 @@
 import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
 import { COMPONENT_TAG, loginMethodLabels } from './constants';
 import type { LoginMethodVariant } from './types';
-import { RequiredPropertyError, UnsupportedPropertyValueError } from '../../utils/errors/custom-errors';
 import { applyTestId } from '../../utils/test/testid';
 
 @Component({
@@ -24,10 +23,6 @@ export class LoginMethodButton {
   @Prop() public readonly label!: string;
 
   @Event() private luxClick!: EventEmitter<void>;
-
-  componentWillRender() {
-    this.validateProperties();
-  }
 
   @Listen('click')
   handleClick(evt: MouseEvent) {
@@ -56,7 +51,7 @@ export class LoginMethodButton {
     return loginMethodIcons[this.variant];
   }
 
-  renderLogo() {
+  renderLogoContainer() {
     return (
       <div class={`${COMPONENT_TAG}__logo`} aria-hidden="true" {...applyTestId('logo')}>
         {this.renderLogoIcon()}
@@ -73,18 +68,8 @@ export class LoginMethodButton {
     return (
       <button class={classNames}>
         {this.renderLabel()}
-        {this.renderLogo()}
+        {this.renderLogoContainer()}
       </button>
     );
-  }
-
-  private validateProperties(): void {
-    if (!this.variant) {
-      throw new RequiredPropertyError(this.el, 'variant');
-    }
-
-    if (!Object.keys(loginMethodLabels).includes(this.variant)) {
-      throw new UnsupportedPropertyValueError(this.el, 'variant', this.variant);
-    }
   }
 }
