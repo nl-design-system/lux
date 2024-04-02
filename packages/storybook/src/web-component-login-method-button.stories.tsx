@@ -56,7 +56,7 @@ export const DigidMachtigen: Story = {
 };
 
 export const EHerkenning: Story = {
-  name: 'E-Herkenning',
+  name: 'eHerkenning',
   args: {
     label: '',
     variant: 'e-herkenning',
@@ -64,7 +64,7 @@ export const EHerkenning: Story = {
 };
 
 export const Eidas: Story = {
-  name: 'Eidas',
+  name: 'eIDAS',
   args: {
     label: '',
     variant: 'eidas',
