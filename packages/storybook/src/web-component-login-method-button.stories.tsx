@@ -19,7 +19,7 @@ const meta = {
       type: 'string',
     },
     variant: {
-      options: ['digid', 'digid-machtigen', 'e-herkenning', 'eidas'],
+      options: ['digid', 'digid-machtigen', 'eherkenning', 'eidas'],
       control: {
         type: 'select',
       },
@@ -59,7 +59,7 @@ export const EHerkenning: Story = {
   name: 'eHerkenning',
   args: {
     label: '',
-    variant: 'e-herkenning',
+    variant: 'eherkenning',
   },
 };
 
