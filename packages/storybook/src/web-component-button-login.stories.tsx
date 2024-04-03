@@ -1,24 +1,22 @@
 /* @license CC0-1.0 */
 
-import readme from '@lux/components-css/login-method-button/README.md?raw';
-import { LuxLoginMethodButton } from '@lux/web-components-react';
+import readme from '@lux/components-css/button-login/README.md?raw';
+import { LuxButtonLogin } from '@lux/web-components-react';
 import type { JSX } from '@lux/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithoutRef } from 'react';
 
-const LoginMethodButtonDefault = (props: PropsWithoutRef<JSX.LuxLoginMethodButton>) => (
-  <LuxLoginMethodButton {...props} />
-);
+const ButtonLoginDefault = (props: PropsWithoutRef<JSX.LuxButtonLogin>) => <LuxButtonLogin {...props} />;
 
 const meta = {
-  title: 'Components/Login Method Button',
-  id: 'web-component-login-method',
-  component: LoginMethodButtonDefault,
+  title: 'Components/Button Login',
+  id: 'web-component-button-login',
+  component: ButtonLoginDefault,
   argTypes: {
     label: {
       type: 'string',
     },
-    variant: {
+    agent: {
       options: ['digid', 'digid-machtigen', 'eherkenning', 'eidas'],
       control: {
         type: 'select',
@@ -33,7 +31,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof LoginMethodButtonDefault>;
+} satisfies Meta<typeof ButtonLoginDefault>;
 
 export default meta;
 
@@ -43,7 +41,7 @@ export const Digid: Story = {
   name: 'Digid',
   args: {
     label: '',
-    variant: 'digid',
+    agent: 'digid',
   },
 };
 
@@ -51,7 +49,7 @@ export const DigidMachtigen: Story = {
   name: 'Digid Machtigen',
   args: {
     label: '',
-    variant: 'digid-machtigen',
+    agent: 'digid-machtigen',
   },
 };
 
@@ -59,7 +57,7 @@ export const EHerkenning: Story = {
   name: 'eHerkenning',
   args: {
     label: '',
-    variant: 'eherkenning',
+    agent: 'eherkenning',
   },
 };
 
@@ -67,6 +65,6 @@ export const Eidas: Story = {
   name: 'eIDAS',
   args: {
     label: '',
-    variant: 'eidas',
+    agent: 'eidas',
   },
 };

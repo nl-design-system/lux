@@ -1,6 +1,6 @@
 {
   "lux": {
-    "login-method-button": {
+    "button-login": {
       "active": {
         "background": {
           "category": "color",

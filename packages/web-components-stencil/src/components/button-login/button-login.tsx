@@ -1,25 +1,25 @@
 import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
-import { COMPONENT_TAG, loginMethodLabels } from './constants';
-import type { LoginMethodVariant } from './types';
+import { COMPONENT_TAG, LoginAgentsLabels } from './constants';
+import type { ButtonLoginAgent } from './types';
 import { applyTestId } from '../../utils/test/testid';
 
 @Component({
-  tag: 'lux-login-method-button',
+  tag: 'lux-button-login',
   shadow: true,
-  styleUrl: 'login-method-button.css',
+  styleUrl: 'button-login.css',
 })
-export class LoginMethodButton {
+export class ButtonLogin {
   private get printedLabel(): string {
     if (this.label) {
       return this.label;
     }
 
-    return loginMethodLabels[this.variant];
+    return LoginAgentsLabels[this.agent];
   }
 
-  @Element() el!: HTMLLuxLoginMethodButtonElement;
+  @Element() el!: HTMLLuxButtonLoginElement;
 
-  @Prop() public readonly variant!: LoginMethodVariant;
+  @Prop() public readonly agent!: ButtonLoginAgent;
   @Prop() public readonly label!: string;
 
   @Event() private luxClick!: EventEmitter<void>;
@@ -41,14 +41,14 @@ export class LoginMethodButton {
   }
 
   renderLogoIcon() {
-    const loginMethodIcons: Record<LoginMethodVariant, any> = {
+    const loginMethodIcons: Record<ButtonLoginAgent, any> = {
       digid: <lux-icon-logo-digid />,
       'digid-machtigen': <lux-icon-logo-digid />,
       eherkenning: <lux-icon-logo-eherkenning />,
       eidas: <lux-icon-logo-eidas />,
     };
 
-    return loginMethodIcons[this.variant];
+    return loginMethodIcons[this.agent];
   }
 
   renderLogoContainer() {
@@ -62,7 +62,7 @@ export class LoginMethodButton {
   render() {
     const classNames = {
       [`${COMPONENT_TAG}`]: true,
-      [`${COMPONENT_TAG}--${this.variant}`]: true,
+      [`${COMPONENT_TAG}--${this.agent}`]: true,
     };
 
     return (
