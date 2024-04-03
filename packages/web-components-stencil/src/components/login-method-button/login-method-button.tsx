@@ -1,13 +1,10 @@
-import { Component, Event, EventEmitter, getAssetPath, h, Prop, State } from '@stencil/core';
+import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
 import { COMPONENT_TAG, loginMethodLabels } from './constants';
 import type { LoginMethodVariant } from './types';
-import { isStatusValid } from '../../utils/http/status';
-
-const requestsCache = new Map<string, Promise<string>>();
+import { applyTestId } from '../../utils/test/testid';
 
 @Component({
   tag: 'lux-login-method-button',
-  assetsDirs: ['assets'],
   shadow: true,
   styleUrl: 'login-method-button.css',
 })
@@ -20,88 +17,59 @@ export class LoginMethodButton {
     return loginMethodLabels[this.variant];
   }
 
-  @State() private svgContent: string = '';
+  @Element() el!: HTMLLuxLoginMethodButtonElement;
 
   @Prop() public readonly variant!: LoginMethodVariant;
   @Prop() public readonly label!: string;
 
   @Event() private luxClick!: EventEmitter<void>;
 
-  async componentWillLoad() {
-    return this.loadLogoAsset();
-  }
-
-  async componentWillRender() {
-    return this.loadLogoAsset();
-  }
-
-  renderLabel() {
-    return <span class={`${COMPONENT_TAG}__label`}>{this.printedLabel}</span>;
-  }
-
-  renderLogo() {
-    const classNames = {
-      [`${COMPONENT_TAG}__logo`]: true,
-      [`${COMPONENT_TAG}__logo--${this.variant}`]: true,
-    };
-
-    return <div class={classNames} aria-hidden="true" innerHTML={this.svgContent} />;
-  }
-
-  render() {
-    return (
-      <button class={COMPONENT_TAG} onClick={(evt: MouseEvent) => this.handleClick(evt)}>
-        {this.renderLabel()}
-        {this.renderLogo()}
-      </button>
-    );
-  }
-
-  private handleClick(evt: MouseEvent) {
+  @Listen('click')
+  handleClick(evt: MouseEvent) {
     evt.stopPropagation();
+    evt.preventDefault();
 
     this.luxClick.emit();
   }
 
-  private async loadLogoAsset(): Promise<void> {
-    const assetPath = this.getLogoAssetPath();
-
-    try {
-      const content = await this.getLogoAssetHtmlString(assetPath);
-      this.svgContent = content;
-    } catch (err) {
-      console.error(`Icon '${this.variant}' was not resolved`);
-      console.error(err);
-    }
+  renderLabel() {
+    return (
+      <span class={`${COMPONENT_TAG}__label`} {...applyTestId('label')}>
+        {this.printedLabel}
+      </span>
+    );
   }
 
-  private getLogoAssetPath(): string {
-    return getAssetPath(`./logos/${this.variant}.svg`);
+  renderLogoIcon() {
+    const loginMethodIcons: Record<LoginMethodVariant, any> = {
+      digid: <lux-icon-logo-digid />,
+      'digid-machtigen': <lux-icon-logo-digid />,
+      eherkenning: <lux-icon-logo-eherkenning />,
+      eidas: <lux-icon-logo-eidas />,
+    };
+
+    return loginMethodIcons[this.variant];
   }
 
-  private async getLogoAssetHtmlString(assetPath: string): Promise<string> {
-    if (!assetPath) {
-      return Promise.reject();
-    }
+  renderLogoContainer() {
+    return (
+      <div class={`${COMPONENT_TAG}__logo`} aria-hidden="true" {...applyTestId('logo')}>
+        {this.renderLogoIcon()}
+      </div>
+    );
+  }
 
-    // Get from cache, if available
-    let request = requestsCache.get(assetPath);
+  render() {
+    const classNames = {
+      [`${COMPONENT_TAG}`]: true,
+      [`${COMPONENT_TAG}--${this.variant}`]: true,
+    };
 
-    if (request) {
-      return request;
-    }
-
-    request = fetch(assetPath, { cache: 'force-cache', credentials: 'include' }).then((response) => {
-      if (isStatusValid(response)) {
-        return response.text();
-      }
-
-      return Promise.resolve('');
-    });
-
-    // Cache to prevent repetition
-    requestsCache.set(assetPath, request);
-
-    return request;
+    return (
+      <button class={classNames}>
+        {this.renderLabel()}
+        {this.renderLogoContainer()}
+      </button>
+    );
   }
 }

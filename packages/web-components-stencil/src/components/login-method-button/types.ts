@@ -1,1 +1,1 @@
-export type LoginMethodVariant = 'digid' | 'digid-machtigen' | 'eidas' | 'e-herkenning';
+export type LoginMethodVariant = 'digid' | 'digid-machtigen' | 'eidas' | 'eherkenning';

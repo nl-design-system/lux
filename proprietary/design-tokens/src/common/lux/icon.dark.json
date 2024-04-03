@@ -1,0 +1,29 @@
+{
+  "lux": {
+    "icon": {
+      "eherkenning": {
+        "color": {
+          "e": {
+            "value": "#FFF"
+          }
+        }
+      },
+      "eidas": {
+        "color": {
+          "background": {
+            "value": "transparent"
+          },
+          "lines": {
+            "value": "#FFF"
+          },
+          "lock": {
+            "value": "#FFF"
+          },
+          "stars": {
+            "value": "#FFF"
+          }
+        }
+      }
+    }
+  }
+}

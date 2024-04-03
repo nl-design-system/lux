@@ -5,10 +5,11 @@
     "declaration": true,
     "outDir": "dist",
     "target": "es2017",
+    "module": "ESNext",
     "jsx": "react",
     "jsxFactory": "h",
     "skipLibCheck": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "../../components/"],
   "exclude": ["**/node_modules/*", "dist", "loader", "**/*.spec.ts", "**/*.spec.tsx"]
 }
