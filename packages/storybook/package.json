@@ -38,7 +38,7 @@
     "@storybook/addon-viewport": "7.6.17",
     "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "7.6.17",
-    "@storybook/react-vite": "7.6.17",
+    "@storybook/react-vite": "8.0.5",
     "@storybook/react-webpack5": "7.6.17",
     "@storybook/testing-library": "0.2.2",
     "@types/react": "18.2.66",
