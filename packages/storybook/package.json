@@ -32,7 +32,7 @@
     "@lux/web-components-stencil": "workspace:*",
     "@storybook/addon-a11y": "7.6.17",
     "@storybook/addon-actions": "7.6.17",
-    "@storybook/addon-docs": "7.6.17",
+    "@storybook/addon-docs": "8.0.5",
     "@storybook/addon-interactions": "7.6.17",
     "@storybook/addon-links": "7.6.17",
     "@storybook/addon-viewport": "7.6.17",
