@@ -408,8 +408,8 @@ importers:
         specifier: 0.5.3
         version: 0.5.3(@stencil/core@4.12.6)
       '@stencil/sass':
-        specifier: 3.0.10
-        version: 3.0.10(@stencil/core@4.12.6)
+        specifier: 3.0.11
+        version: 3.0.11(@stencil/core@4.12.6)
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
@@ -4443,8 +4443,8 @@ packages:
       '@stencil/core': 4.12.6
     dev: true
 
-  /@stencil/sass@3.0.10(@stencil/core@4.12.6):
-    resolution: {integrity: sha512-G4JdKDhEXEBS4+Riy5WVxPRXfHdfEwPopmPne8fm9ilQpaTRyl3BMpbxt63ijHtQjH0KtH8jxmRiTYamP4BfIA==}
+  /@stencil/sass@3.0.11(@stencil/core@4.12.6):
+    resolution: {integrity: sha512-YzKBKuV2wYf2aCM2Or8DbksX+8DQKOYFe2QMNAV+LFzyexhiYDz5/Tq04CDtc8xTXmzqC0J8U79GB8Vvz9myAQ==}
     engines: {node: '>=12.0.0', npm: '>=6.0.0'}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0'
@@ -6521,9 +6521,6 @@ packages:
 
   /ajv-formats@2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependenciesMeta:
-      ajv:
-        optional: true
     dependencies:
       ajv: 8.12.0
     dev: true
