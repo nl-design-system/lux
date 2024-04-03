@@ -41,14 +41,14 @@ export class ButtonLogin {
   }
 
   renderLogoIcon() {
-    const loginMethodIcons: Record<ButtonLoginAgent, any> = {
+    const buttonLoginIcons: Record<ButtonLoginAgent, any> = {
       digid: <lux-icon-logo-digid />,
       'digid-machtigen': <lux-icon-logo-digid />,
       eherkenning: <lux-icon-logo-eherkenning />,
       eidas: <lux-icon-logo-eidas />,
     };
 
-    return loginMethodIcons[this.agent];
+    return buttonLoginIcons[this.agent];
   }
 
   renderLogoContainer() {
