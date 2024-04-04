@@ -1,0 +1,57 @@
+:host {
+  appearance: button;
+  display: contents;
+}
+
+:host([hidden]) {
+  display: none !important;
+}
+
+.lux-button-login {
+  align-items: center;
+  appearance: button;
+  background-color: var(--lux-button-login-background);
+  border-color: var(--lux-button-login-border-color);
+  border-radius: var(--lux-button-login-border-radius);
+  border-style: var(--lux-button-login-border-style);
+  border-width: var(--lux-button-login-border-width);
+  color: var(--lux-button-login-color);
+  display: flex;
+  font-family: var(--lux-button-login-font-family);
+  font-size: var(--lux-button-login-font-size);
+  font-weight: var(--lux-button-login-font-weight);
+  gap: var(--lux-button-login-gap);
+  justify-content: space-between;
+  line-height: var(--lux-font-line-height-m);
+  margin-block: 0;
+  margin-inline: 0;
+  min-block-size: var(--lux-button-login-min-block-size);
+  min-inline-size: var(--lux-button-login-min-inline-size);
+  padding-block-end: var(--lux-button-login-padding-block-end);
+  padding-block-start: var(--lux-button-login-padding-block-start);
+  padding-inline-end: var(--lux-button-login-padding-inline-end);
+  padding-inline-start: var(--lux-button-login-padding-inline-start);
+  user-select: none;
+}
+
+.lux-button-login:focus-visible {
+  outline-color: var(--lux-button-login-focus-outline-color);
+  outline-offset: var(--lux-button-login-focus-outline-offset);
+  outline-style: var(--lux-button-login-focus-outline-style);
+  outline-width: var(--lux-button-login-focus-outline-width);
+}
+
+.lux-button-login:hover {
+  background-color: var(--lux-button-login-hover-background);
+}
+
+.lux-button-login:active {
+  background-color: var(--lux-button-login-active-background);
+  border-color: var(--lux-button-login-active-border-color);
+}
+
+.lux-button-login__logo {
+  block-size: var(--lux-button-login-icon-size);
+  inline-size: var(--lux-button-login-icon-size);
+  line-height: 1;
+}
