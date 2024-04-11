@@ -1,3 +1,5 @@
+@import "../../styles/sr-only";
+
 :host {
   appearance: button;
   display: contents;
@@ -22,7 +24,7 @@
   font-weight: var(--lux-button-login-font-weight);
   gap: var(--lux-button-login-gap);
   justify-content: space-between;
-  line-height: var(--lux-font-line-height-m);
+  line-height: var(--lux-button-login-line-height);
   margin-block: 0;
   margin-inline: 0;
   min-block-size: var(--lux-button-login-min-block-size);
@@ -48,6 +50,10 @@
 .lux-button-login:active {
   background-color: var(--lux-button-login-active-background);
   border-color: var(--lux-button-login-active-border-color);
+}
+
+.lux-button-login__label--sr-only {
+  @include sr-only;
 }
 
 .lux-button-login__logo {
