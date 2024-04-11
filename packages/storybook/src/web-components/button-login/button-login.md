@@ -71,4 +71,15 @@ Schaal het icoon mee met de hoogte van de knop. Houd de knop minimaal 48px hoog 
 | `--lux-button-login-min-inline-size` | `118px` |
 | `--lux-button-login-icon-size`       | `40px`  |
 
+## Toegankelijkheid
+
+Biedt jouw organisatie meer dan één inlogmiddel aan? Plaats de inlogknoppen in een lijst, zodat een blinde of slechtziende gebruiker van de voorleessoftware te horen krijgt dat er meerdere opties volgen.
+
+Aangezien het inlogmiddel alleen visueel wordt weergegeven, wordt deze tekst aan het label toegevoegd maar verborgen, zodat dit wordt voorgelezen door de voorleessoftware.
+
+---
+
+[WCAG eis 2.1.3](https://www.w3.org/TR/WCAG21/#keyboard-no-exception): je kan de button activeren met Enter of Space, en het is mogelijk met Tab de button te focussen. Space gebruiken heeft dan niet het effect dat de pagina scrollt.
+[WCAG eis 2.5.5](https://www.w3.org/TR/WCAG21/#target-size): de button moet groot genoeg zijn om aan te klikken.
+
 ## Playground
