@@ -71,15 +71,84 @@ Schaal het icoon mee met de hoogte van de knop. Houd de knop minimaal 48px hoog 
 | `--lux-button-login-min-inline-size` | `118px` |
 | `--lux-button-login-icon-size`       | `40px`  |
 
+## State
+
+<ul class="section">
+  <li>
+    <lux-button-login agent="digid"></lux-button-login>
+    <span>Default</span>
+  </li>
+  <li>
+    <lux-button-login class="sb-state--hover" agent="digid"></lux-button-login>
+    <span>Hover</span>
+  </li>
+  <li>
+    <lux-button-login class="sb-state--active" agent="digid"></lux-button-login>
+    <span>Active</span>
+  </li>
+  <li>
+    <lux-button-login class="sb-state--focus" agent="digid"></lux-button-login>
+    <span>Focus</span>
+  </li>
+</ul>
+
+## Agent
+
+<ul class="section">
+  <li>
+    <lux-button-login agent="digid"></lux-button-login>
+    <span>Digid</span>
+  </li>
+  <li>
+    <lux-button-login agent="digid-machtigen"></lux-button-login>
+    <span>Digid Machtigen</span>
+  </li>
+  <li>
+    <lux-button-login agent="eherkenning"></lux-button-login>
+    <span>eHerkenning</span>
+  </li>
+  <li>
+    <lux-button-login agent="eidas"></lux-button-login>
+    <span>eIDAS</span>
+  </li>
+</ul>
+
+## Language: en
+
+Gebruik de onderstaande Engelse vertalingen door het `label` attribuut toe te wijzen.
+
+```html
+<lux-button-login agent="digid" label="Log in"></lux-button-login>
+```
+
+<ul class="section">
+  <li>
+    <lux-button-login agent="digid" label="Log in"></lux-button-login>
+    <span>Digid</span>
+  </li>
+  <li>
+    <lux-button-login agent="digid-machtigen" label="Log in as representative"></lux-button-login>
+    <span>Digid Machtigen</span>
+  </li>
+  <li>
+    <lux-button-login agent="eherkenning" label="Login as a company or organisation"></lux-button-login>
+    <span>eHerkenning</span>
+  </li>
+  <li>
+    <lux-button-login agent="eidas"></lux-button-login>
+    <span>eIDAS</span>
+  </li>
+</ul>
+
 ## Toegankelijkheid
 
 Biedt jouw organisatie meer dan één inlogmiddel aan? Plaats de inlogknoppen in een lijst, zodat een blinde of slechtziende gebruiker van de voorleessoftware te horen krijgt dat er meerdere opties volgen.
 
 Aangezien het inlogmiddel alleen visueel wordt weergegeven, wordt deze tekst aan het label toegevoegd maar verborgen, zodat dit wordt voorgelezen door de voorleessoftware.
 
----
+### Verwante WCAG regels
 
-[WCAG eis 2.1.3](https://www.w3.org/TR/WCAG21/#keyboard-no-exception): je kan de button activeren met Enter of Space, en het is mogelijk met Tab de button te focussen. Space gebruiken heeft dan niet het effect dat de pagina scrollt.
-[WCAG eis 2.5.5](https://www.w3.org/TR/WCAG21/#target-size): de button moet groot genoeg zijn om aan te klikken.
+- [WCAG eis 2.1.3](https://www.w3.org/TR/WCAG21/#keyboard-no-exception): je kan de button activeren met Enter of Space, en het is mogelijk met Tab de button te focussen. Space gebruiken heeft dan niet het effect dat de pagina scrollt.
+- [WCAG eis 2.5.5](https://www.w3.org/TR/WCAG21/#target-size): de button moet groot genoeg zijn om aan te klikken.
 
 ## Playground

@@ -9,7 +9,7 @@ import readme from './button-login.md?raw';
 const LuxButtonLogin = (props: PropsWithoutRef<JSX.LuxButtonLogin>) => <ButtonLogin {...props} />;
 
 const meta = {
-  title: 'Web Components/Button Login',
+  title: 'Web Components/Button login',
   id: 'web-component-button-login',
   component: LuxButtonLogin,
   argTypes: {
