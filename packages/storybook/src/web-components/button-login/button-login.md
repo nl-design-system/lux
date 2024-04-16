@@ -64,7 +64,7 @@ Denk aan de contrastvereisten van de WCAG.
 
 #### Size
 
-Schaal het icoon mee met de hoogte van de knop. Houd de knop minimaal 48px hoog in verband met de toegankelijke target size.
+Schaal het icoon mee met de hoogte van de button. Houd de button minimaal 48px hoog in verband met de toegankelijke target size.
 
 | Token                                | Waarde  |
 | :----------------------------------- | :------ |
@@ -79,15 +79,15 @@ Schaal het icoon mee met de hoogte van de knop. Houd de knop minimaal 48px hoog 
     <span>Default</span>
   </li>
   <li>
-    <lux-button-login class="sb-state--hover" agent="digid"></lux-button-login>
+    <lux-button-login class="force-state--hover" agent="digid"></lux-button-login>
     <span>Hover</span>
   </li>
   <li>
-    <lux-button-login class="sb-state--active" agent="digid"></lux-button-login>
+    <lux-button-login class="force-state--active" agent="digid"></lux-button-login>
     <span>Active</span>
   </li>
   <li>
-    <lux-button-login class="sb-state--focus" agent="digid"></lux-button-login>
+    <lux-button-login class="force-state--focus" agent="digid"></lux-button-login>
     <span>Focus</span>
   </li>
 </ul>
@@ -142,9 +142,11 @@ Gebruik de onderstaande Engelse vertalingen door het `label` attribuut toe te wi
 
 ## Toegankelijkheid
 
-Biedt jouw organisatie meer dan één inlogmiddel aan? Plaats de inlogknoppen in een lijst, zodat een blinde of slechtziende gebruiker van de voorleessoftware te horen krijgt dat er meerdere opties volgen.
+Biedt jouw organisatie meer dan één inlogmiddel aan? Plaats de buttons dan in een lijst, zodat screenreader gebruikers te horen krijgen dat er meerdere opties volgen.
 
-Aangezien het inlogmiddel alleen visueel wordt weergegeven, wordt deze tekst aan het label toegevoegd maar verborgen, zodat dit wordt voorgelezen door de voorleessoftware.
+### Inlogmiddel
+
+Het inlogmiddel wordt alleen visueel weergegeven. Deze wordt verborgen toegevoegd aan het label zodat screenreadergebruikers weten om welk inlogmiddel het gaat.
 
 ### Verwante WCAG regels
 

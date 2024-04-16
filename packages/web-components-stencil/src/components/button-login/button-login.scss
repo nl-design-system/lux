@@ -37,20 +37,20 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
-:host(.sb-state--hover) .lux-button-login,
+:host(.force-state--hover) .lux-button-login,
 .lux-button-login:hover {
   background-color: var(--lux-button-login-hover-background);
 }
 
 /* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
-:host(.sb-state--active) .lux-button-login,
+:host(.force-state--active) .lux-button-login,
 .lux-button-login:active {
   background-color: var(--lux-button-login-active-background);
   border-color: var(--lux-button-login-active-border-color);
 }
 
 /* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
-:host(.sb-state--focus) .lux-button-login,
+:host(.force-state--focus) .lux-button-login,
 .lux-button-login:focus-visible {
   outline-color: var(--lux-button-login-focus-outline-color);
   outline-offset: var(--lux-button-login-focus-outline-offset);
