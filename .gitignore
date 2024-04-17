@@ -60,3 +60,6 @@ package-lock.json
 
 # Ignore generated files from Stencil
 components.d.ts
+
+# Ignore folders for Figma Token Studio
+proprietary/design-tokens/studio
