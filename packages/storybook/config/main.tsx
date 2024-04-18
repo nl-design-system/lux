@@ -1,5 +1,6 @@
-/* eslint-env node */
-module.exports = {
+import { type StorybookConfig } from '@storybook/react-vite';
+
+const config: StorybookConfig = {
   stories: ['../src/**/*stories.@(js|jsx|mdx|ts|tsx)'],
   addons: [
     '@etchteam/storybook-addon-status/register',
@@ -7,11 +8,9 @@ module.exports = {
     '@storybook/addon-docs',
     '@storybook/addon-viewport/register',
     '@storybook/preset-scss',
+    '@storybook/addon-designs',
   ],
-  framework: {
-    name: '@storybook/react-vite',
-    options: {},
-  },
+  framework: '@storybook/react-vite',
   core: {
     disableTelemetry: true,
   },
@@ -24,3 +23,5 @@ module.exports = {
   },
   staticDirs: ['../../../proprietary/assets/src'],
 };
+
+export default config;

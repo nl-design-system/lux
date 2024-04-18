@@ -60,7 +60,7 @@ const preview: Preview = {
       },
     },
     options: {
-      panelPosition: 'right',
+      panelPosition: 'bottom',
     },
   },
 };
