@@ -9,11 +9,11 @@
   ],
   "private": true,
   "devDependencies": {
-    "@babel/core": "7.24.0",
-    "@storybook/addon-docs": "7.6.17",
+    "@babel/core": "7.24.4",
+    "@storybook/addon-docs": "8.0.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.4.2",
-    "webpack": "5.90.3"
+    "typescript": "5.4.5",
+    "webpack": "5.91.0"
   }
 }
