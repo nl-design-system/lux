@@ -2,6 +2,6 @@ const minorConfig = require('./.ncurc.minor.cjs');
 
 module.exports = {
   ...minorConfig,
-  reject: [...minorConfig.reject, 'storybook', '@storybook/*'],
+  reject: [...minorConfig.reject, 'eslint'],
   target: 'latest',
 };
