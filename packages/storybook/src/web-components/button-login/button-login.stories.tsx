@@ -44,18 +44,3 @@ export const Playground: Story = {
     agent: 'digid',
   },
 };
-
-// export const Inlogstraat: Story = {
-//   name: 'Inlogstraat',
-//   parameters: {
-//     design: {
-//       type: 'figma',
-//       url: 'https://www.figma.com/proto/o3Zx3k2kiCUgeOIyEwNkYg/Stijlhandleiding-aansluiten-Toegang?page-id=2%3A12&type=design&node-id=2259-5584&viewport=-1674%2C586%2C0.3&t=sqgz97kPXlwflyCw-1&scaling=contain&mode=design',
-//     },
-//     docs: {
-//       description: {
-//         component: inlogstraat,
-//       },
-//     },
-//   }
-// }
