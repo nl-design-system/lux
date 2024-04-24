@@ -13,4 +13,14 @@ describe('a11y', () => {
     const logoContainerElement = getTestableShadowElement(page, 'logo');
     expect(logoContainerElement.getAttribute('aria-hidden')).toBe('true');
   });
+
+  it('identifies the agent to assistive technologies', async () => {
+    const page = await newSpecPage({
+      components: [ButtonLogin],
+      html: `<lux-button-login agent="digid" />`,
+    });
+
+    const { textContent }: HTMLElement = getTestableShadowElement(page, 'label');
+    expect(textContent).toMatch('met digid');
+  });
 });

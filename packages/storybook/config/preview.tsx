@@ -4,6 +4,8 @@ import '@lux/font/src/index.scss';
 import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
 import type { Preview, StoryContext } from '@storybook/react';
 
+import '../src/styles/theme.css';
+
 defineCustomElements();
 
 const preview: Preview = {
@@ -30,7 +32,7 @@ const preview: Preview = {
   parameters: {
     controls: { expanded: false },
     options: {
-      panelPosition: 'right',
+      panelPosition: 'bottom',
     },
   },
 };

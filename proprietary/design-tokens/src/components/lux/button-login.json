@@ -108,6 +108,9 @@
           "value": "40px"
         }
       },
+      "line-height": {
+        "value": "{logius.font.line-height.s}"
+      },
       "margin-inline": {
         "category": "spacing",
         "value": "{logius.space.1-x}"

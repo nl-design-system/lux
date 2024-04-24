@@ -27,7 +27,7 @@ it.each(agents)(
     const labelElement = getTestableShadowElement<HTMLSpanElement>(page, 'label');
     const logoContainerElement = getTestableShadowElement<HTMLDivElement>(page, `logo`);
 
-    expect(labelElement.textContent).toBe(label);
+    expect(labelElement.textContent).toMatch(label);
     // TODO check for the child to be an SVGElement with [data-testid="icon-${agent}"]
     // --> logoContainerElement.children[0] is an empty object
     expect(logoContainerElement.children).toHaveLength(1);
@@ -40,8 +40,8 @@ it('allows for a custom label to be provided', async () => {
     html: `<lux-button-login agent="digid" label="My Custom Label" />`,
   });
 
-  const { textContent }: HTMLLuxButtonLoginElement = getTestableShadowElement(page, 'label');
-  expect(textContent).toBe('My Custom Label');
+  const { textContent }: HTMLElement = getTestableShadowElement(page, 'label');
+  expect(textContent).toMatch('My Custom Label');
 });
 
 it('only emits a luxClick event when clicked', async () => {

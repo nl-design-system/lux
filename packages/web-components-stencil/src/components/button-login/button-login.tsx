@@ -1,12 +1,13 @@
 import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
-import { COMPONENT_TAG, LoginAgentsLabels } from './constants';
+import { HTMLStencilElement } from '@stencil/core/internal';
+import { COMPONENT_TAG, loginAgentsLabels } from './constants';
 import type { ButtonLoginAgent } from './types';
 import { applyTestId } from '../../utils/test/testid';
 
 @Component({
   tag: 'lux-button-login',
   shadow: true,
-  styleUrl: 'button-login.css',
+  styleUrl: 'button-login.scss',
 })
 export class ButtonLogin {
   private get printedLabel(): string {
@@ -14,7 +15,15 @@ export class ButtonLogin {
       return this.label;
     }
 
-    return LoginAgentsLabels[this.agent];
+    return loginAgentsLabels[this.agent].label;
+  }
+
+  private get hiddenAgentLabel(): string {
+    if (this.label) {
+      return '';
+    }
+
+    return loginAgentsLabels[this.agent].agentLabel;
   }
 
   @Element() el!: HTMLLuxButtonLoginElement;
@@ -33,15 +42,17 @@ export class ButtonLogin {
   }
 
   renderLabel() {
+    const className = `${COMPONENT_TAG}__label`;
     return (
-      <span class={`${COMPONENT_TAG}__label`} {...applyTestId('label')}>
+      <span class={className} {...applyTestId('label')}>
         {this.printedLabel}
+        <span class={`${className}--sr-only`}> {this.hiddenAgentLabel}</span>
       </span>
     );
   }
 
   renderLogoIcon() {
-    const buttonLoginIcons: Record<ButtonLoginAgent, any> = {
+    const buttonLoginIcons: Record<ButtonLoginAgent, HTMLStencilElement> = {
       digid: <lux-icon-logo-digid />,
       'digid-machtigen': <lux-icon-logo-digid />,
       eherkenning: <lux-icon-logo-eherkenning />,

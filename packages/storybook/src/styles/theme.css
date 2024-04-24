@@ -1,0 +1,22 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable property-disallowed-list */
+.section {
+  border: solid 1px #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 !important;
+}
+
+.section li {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-block: 24px;
+  padding-inline: 32px;
+}
+
+.section li + li {
+  border-top: solid 1px #a7a7a7;
+}
