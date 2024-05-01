@@ -52,7 +52,7 @@
     "vite": "5.2.9"
   },
   "dependencies": {
-    "@storybook/addon-controls": "8.0.8",
+    "@storybook/addon-controls": "8.0.9",
     "@storybook/blocks": "8.0.8"
   }
 }
