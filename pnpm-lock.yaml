@@ -282,8 +282,8 @@ importers:
         specifier: 8.0.8
         version: 8.0.8
       '@storybook/addon-links':
-        specifier: 8.0.8
-        version: 8.0.8(react@18.2.0)
+        specifier: 8.0.9
+        version: 8.0.9(react@18.2.0)
       '@storybook/addon-viewport':
         specifier: 8.0.8
         version: 8.0.8
@@ -3645,15 +3645,15 @@ packages:
       - vitest
     dev: true
 
-  /@storybook/addon-links@8.0.8(react@18.2.0):
-    resolution: {integrity: sha512-iRI/W9I6fOom5zfZvsu53gfJtuhBSMmhgI/u5uZbAbfEoNL5D1PqpDXD4ygM8Vvlx90AZNZ2W5slEe7gCZOMyA==}
+  /@storybook/addon-links@8.0.9(react@18.2.0):
+    resolution: {integrity: sha512-FVt+AdW3JFSqbJzkKiqKsMRWqHXqEvCBqFs7lNfk3OW0w0jfv1iREtrxE0dVdJoUFQC9V/2Im/EpJ7UB3C2bNQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     peerDependenciesMeta:
       react:
         optional: true
     dependencies:
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/global': 5.0.0
       react: 18.2.0
       ts-dedent: 2.2.0
@@ -3838,7 +3838,7 @@ packages:
       '@babel/core': 7.24.4
       '@babel/preset-env': 7.24.4(@babel/core@7.24.4)
       '@babel/types': 7.24.0
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/csf-tools': 8.0.8
       '@storybook/node-logger': 8.0.8
       '@storybook/types': 8.0.8
@@ -3924,7 +3924,7 @@ packages:
       '@storybook/channels': 8.0.8
       '@storybook/core-common': 8.0.8
       '@storybook/core-events': 8.0.8
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/csf-tools': 8.0.8
       '@storybook/docs-mdx': 3.0.0
       '@storybook/global': 5.0.0
@@ -3997,6 +3997,12 @@ packages:
     resolution: {integrity: sha512-ePrvE/pS1vsKR9Xr+o+YwdqNgHUyXvg+1Xjx0h9LrVx7Zq4zNe06pd63F5EvzTbCbJsHj7GHr9tkiaqm7U8WRA==}
     dependencies:
       type-fest: 2.19.0
+
+  /@storybook/csf@0.1.6:
+    resolution: {integrity: sha512-JjWnBptVhBYJ14yq+cHs66BXjykRUWQ5TlD1RhPxMOtavynYyV/Q+QR98/N+XB+mcPtFMm5I2DvNkpj0/Dk8Mw==}
+    dependencies:
+      type-fest: 2.19.0
+    dev: true
 
   /@storybook/docs-mdx@3.0.0:
     resolution: {integrity: sha512-NmiGXl2HU33zpwTv1XORe9XG9H+dRUC1Jl11u92L4xr062pZtrShLmD4VKIsOQujxhhOrbxpwhNOt+6TdhyIdQ==}

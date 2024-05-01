@@ -30,7 +30,7 @@
     "@storybook/addon-actions": "8.0.8",
     "@storybook/addon-docs": "8.0.8",
     "@storybook/addon-interactions": "8.0.8",
-    "@storybook/addon-links": "8.0.8",
+    "@storybook/addon-links": "8.0.9",
     "@storybook/addon-viewport": "8.0.8",
     "@storybook/blocks": "8.0.8",
     "@storybook/components": "8.0.8",
