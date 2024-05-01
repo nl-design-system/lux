@@ -285,8 +285,8 @@ importers:
         specifier: 8.0.8
         version: 8.0.8(react@18.2.0)
       '@storybook/addon-viewport':
-        specifier: 8.0.8
-        version: 8.0.8
+        specifier: 8.0.9
+        version: 8.0.9
       '@storybook/components':
         specifier: 8.0.8
         version: 8.0.8(@types/react@18.2.79)(react-dom@18.2.0)(react@18.2.0)
@@ -3659,8 +3659,8 @@ packages:
       ts-dedent: 2.2.0
     dev: true
 
-  /@storybook/addon-viewport@8.0.8:
-    resolution: {integrity: sha512-nOuc6DquGvm24c/A0HFTgeEN/opd58ebs1KLaEEq1f6iYV0hT2Gpnk0Usg/seOiFtJnj3NyAM46HSkZz06T8Sw==}
+  /@storybook/addon-viewport@8.0.9:
+    resolution: {integrity: sha512-Ao4+D56cO7biaw+iTlMU1FBec1idX0cmdosDeCFZin06MSawcPkeBlRBeruaSQYdLes8TBMdZPFgfuqI5yIk6g==}
     dependencies:
       memoizerific: 1.11.3
     dev: true
