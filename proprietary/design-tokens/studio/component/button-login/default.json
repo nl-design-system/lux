@@ -1,0 +1,88 @@
+{
+  "lux": {
+    "button-login": {
+      "color": {
+        "value": "{lux.color.foreground.default}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{lux.color.background.default}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{lux.color.border.default}",
+        "type": "color"
+      },
+      "hover": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{lux.color.background.hover}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.default}",
+          "type": "color"
+        }
+      },
+      "active": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{mode.button-login.active.background-color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.strong}",
+          "type": "color"
+        }
+      },
+      "padding-block-start": {
+        "value": "{lux.space.05-x}",
+        "type": "dimension"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.05-x}",
+        "type": "dimension"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.2-x}",
+        "type": "dimension"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.05-x}",
+        "type": "dimension"
+      },
+      "min-inline-size": {
+        "value": "{lux.size.target}",
+        "type": "dimension"
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "dimension"
+      },
+      "margin-inline": {
+        "value": "{lux.space.1-x}",
+        "type": "dimension"
+      },
+      "border-radius": {
+        "value": "{lux.border-radius.default}",
+        "type": "dimension"
+      },
+      "border-width": {
+        "value": "{lux.border-width.default}",
+        "type": "dimension"
+      },
+      "icon": {
+        "size": {
+          "value": "40px",
+          "type": "dimension"
+        }
+      }
+    }
+  }
+}

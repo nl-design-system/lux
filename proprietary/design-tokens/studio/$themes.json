@@ -1,0 +1,156 @@
+[
+  {
+    "id": "931f38d91d781b4146b648c963312ceb6eb74a1f",
+    "name": "default",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "core/default": "enabled",
+      "core/component": "enabled"
+    },
+    "group": "core"
+  },
+  {
+    "id": "foo",
+    "name": "component",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "component/alert": "enabled",
+      "component/button": "enabled",
+      "component/button-login": "enabled",
+      "component/link": "enabled"
+    },
+    "group": "core"
+  },
+  {
+    "id": "3284297cf94eb80c30de9e0fae554d3e67dab93a",
+    "name": "Logius",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/Logius": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "57af11441eb1cede5559de27f3318f16a184ba76",
+    "name": "MijnOverheid",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/MijnOverheid": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "78967fbf397f5124663684577db1269441d85d09",
+    "name": "DigiD",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/DigiD": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "1768c551ca723179d433b97865cfbe0d90bcb4a8",
+    "name": "NLdoc - default",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/NLdoc - default": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "b5537d136e2b4795c141adb2710d2f6fab6f6203",
+    "name": "NLdoc - Ridderkerk",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/NLdoc - Ridderkerk": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "757c18c67c7cbf5b4677a294fca831c39f8a3e62",
+    "name": "NLdoc - Rijksoverheid",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/NLdoc - Rijksoverheid": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "7873d754073eb55055cb4e1c67a71c9847f08bf5",
+    "name": "NLdoc - WHD",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/NLdoc - WHD": "enabled"
+    },
+    "group": "product"
+  },
+  {
+    "id": "7121b8b2014e14d081ccf1faf75a797585926a9e",
+    "name": "light",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "mode/light": "enabled"
+    },
+    "group": "mode"
+  },
+  {
+    "id": "0f448e32ff095387ed2b3053db5b1f420196e6bc",
+    "name": "dark (beta)",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "mode/dark (beta)": "enabled"
+    },
+    "group": "mode"
+  },
+  {
+    "id": "3a2037c6ec1c739897764dfa5bbb68851baa925b",
+    "name": "xl",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "viewport (beta)/xl": "enabled",
+      "common/default": "enabled"
+    },
+    "group": "viewport (beta)"
+  },
+  {
+    "id": "e4b67a14247b40034ec3e8fc022e1e7296b84574",
+    "name": "lg",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "viewport (beta)/lg": "enabled",
+      "common/default": "enabled",
+      "component/button-login": "enabled"
+    },
+    "group": "viewport (beta)"
+  },
+  {
+    "id": "bfcd473261c5c34a231166f120246309b1228d78",
+    "name": "md",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "viewport (beta)/md": "enabled",
+      "common/default": "enabled"
+    },
+    "group": "viewport (beta)"
+  },
+  {
+    "id": "8fe3d7a9ca3de27b5b989f2903bcff7cbe1e28e0",
+    "name": "sm",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "viewport (beta)/sm": "enabled",
+      "common/default": "enabled"
+    },
+    "group": "viewport (beta)"
+  },
+  {
+    "id": "3f718b094125230529a11e785104999f9c77705d",
+    "name": "xs",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "viewport (beta)/xs": "enabled",
+      "common/default": "enabled"
+    },
+    "group": "viewport (beta)"
+  }
+]

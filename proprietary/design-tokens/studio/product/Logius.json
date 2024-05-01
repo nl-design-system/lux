@@ -1,0 +1,114 @@
+{
+  "lux": {
+    "color": {
+      "brand": {
+        "default": {
+          "value": "{lux.color.groen.300}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": "kleur van het product"
+        },
+        "subdued": {
+          "value": "{lux.color.groen.100}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": "Subtiele kleur van het product"
+        },
+        "hover": {
+          "value": "{lux.color.groen.400}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": "Hover kleur van het product"
+        }
+      }
+    },
+    "border-radius": {
+      "default": {
+        "value": "0.25rem",
+        "type": "dimension",
+        "parent": "product/Logius",
+        "description": ""
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "value": "0.125rem",
+        "type": "dimension",
+        "parent": "product/Logius",
+        "description": ""
+      },
+      "border-radius": {
+        "value": "0.375rem",
+        "type": "dimension",
+        "parent": "product/Logius",
+        "description": ""
+      }
+    }
+  },
+  "product": {
+    "button": {
+      "secondary": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": ""
+        },
+        "border-color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": ""
+        },
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": ""
+        },
+        "hover": {
+          "border-color": {
+            "value": "{lux.color.brand.hover}",
+            "type": "color",
+            "parent": "product/Logius",
+            "description": ""
+          },
+          "color": {
+            "value": "{lux.color.brand.hover}",
+            "type": "color",
+            "parent": "product/Logius",
+            "description": ""
+          },
+          "background-color": {
+            "value": "{lux.color.brand.subdued}",
+            "type": "color",
+            "parent": "product/Logius",
+            "description": ""
+          }
+        }
+      },
+      "tertiary": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color",
+          "parent": "product/Logius",
+          "description": ""
+        },
+        "hover": {
+          "color": {
+            "value": "{lux.color.brand.hover}",
+            "type": "color",
+            "parent": "product/Logius",
+            "description": ""
+          },
+          "background-color": {
+            "value": "{lux.color.brand.subdued}",
+            "type": "color",
+            "parent": "product/Logius",
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

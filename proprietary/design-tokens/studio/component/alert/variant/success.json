@@ -1,0 +1,18 @@
+{
+  "figma": {
+    "icon": {
+      "variant": {
+        "value": "success",
+        "type": "text"
+      }
+    }
+  },
+  "lux": {
+    "alert": {
+      "background-color": {
+        "value": "{lux.color.feedback.success.subdued}",
+        "type": "color"
+      }
+    }
+  }
+}

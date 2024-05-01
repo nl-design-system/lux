@@ -1,0 +1,28 @@
+{
+  "lux": {
+    "button": {
+      "padding-inline-start": {
+        "value": "{lux.space.105-x}",
+        "type": "dimension"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.2-x}",
+        "type": "dimension"
+      }
+    }
+  },
+  "figma": {
+    "button": {
+      "show-icon": {
+        "start": {
+          "value": "true",
+          "type": "boolean"
+        },
+        "end": {
+          "value": "false",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

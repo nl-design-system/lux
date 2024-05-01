@@ -4,7 +4,7 @@ import { LuxButtonLogin as ButtonLogin } from '@lux/web-components-react';
 import type { JSX } from '@lux/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithoutRef } from 'react';
-import readme from './button-login.md?raw';
+// import readme from './button-login.md?raw';
 
 const LuxButtonLogin = (props: PropsWithoutRef<JSX.LuxButtonLogin>) => <ButtonLogin {...props} />;
 
@@ -24,13 +24,13 @@ const meta = {
     },
   },
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
+  // parameters: {
+  //   docs: {
+  //     description: {
+  //       component: readme,
+  //     },
+  //   },
+  // },
 } satisfies Meta<typeof LuxButtonLogin>;
 
 export default meta;

@@ -1,5 +1,5 @@
-import '@lux/design-tokens/dist/root.css';
-import '@lux/design-tokens/dist/dark.css';
+import '@lux/design-tokens/dist/logius/light/lg.css';
+import '@lux/design-tokens/dist/logius/dark/lg.css';
 import '@lux/font/src/index.scss';
 import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
 import type { Preview, StoryContext } from '@storybook/react';

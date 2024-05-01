@@ -11,7 +11,7 @@ const StyleDictionary = require('style-dictionary');
 const MODES = ['dark'];
 
 const DIR_DIST = './dist/';
-const DIR_SRC = './src/';
+const DIR_SRC = './src/generated/';
 
 const PATH_TOKENS_DEFAULT = `${DIR_SRC}/**/!(*.${MODES.join(`|*.`)}).json`;
 
