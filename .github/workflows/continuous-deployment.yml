@@ -132,6 +132,21 @@ jobs:
         run: |
           pnpm run --if-present test
 
+  visual-regression:
+    runs-on: ubuntu-latest
+    needs: install
+
+    steps:
+      - name: Publish to Chromatic
+        uses: chromaui/action@v11
+        if: |
+          github.event.pull_request.draft == false &&
+          github.actor != 'dependabot[bot]'
+        with:
+          autoAcceptChanges: main
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: packages/storybook/dist/
+
   publish-website:
     runs-on: ubuntu-latest
     needs: build

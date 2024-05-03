@@ -22,7 +22,7 @@ const preview: Preview = {
           <div style={{ padding: '1rem' }}>
             <Story />
           </div>
-          <div className="lux-theme--dark" style={{ padding: '1rem', backgroundColor: 'black' }}>
+          <div className="lux-theme--dark" style={{ padding: '1rem', background: 'black', color: 'white' }}>
             <Story />
           </div>
         </div>
@@ -30,8 +30,37 @@ const preview: Preview = {
     },
   ],
   parameters: {
+    backgrounds: {
+      default: 'mode',
+      values: [
+        {
+          name: 'mode',
+          value: 'var(--lux-color-background-default)',
+        },
+        {
+          /*
+          Deliberately provide a background which we'd never use in production.
+          This helps us identify the component boundaries. Use purple because
+          it's Aline's favorite color.
+          */
+          name: 'boundaries',
+          value: 'rebeccapurple',
+        },
+        {
+          name: 'transparent',
+          value:
+            'fixed repeating-conic-gradient(#CCC 0% 25%, var(--lux-color-background-default) 0% 50%) 50% / 20px 20px',
+        },
+      ],
+    },
+    chromatic: {
+      disable: true,
+      // Enable on story level. Not every story needs to be tested.
+      disableSnapshot: true,
+    },
     controls: { expanded: false },
     options: {
+      showPanel: true,
       panelPosition: 'bottom',
     },
   },

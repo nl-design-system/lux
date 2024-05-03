@@ -5,6 +5,9 @@ import type { JSX } from '@lux/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithoutRef } from 'react';
 import readme from './button-login.md?raw';
+import { VisualAgents } from './visual/Agents';
+import { VisualStates } from './visual/States';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils/createVisualRegressionStory';
 
 const LuxButtonLogin = (props: PropsWithoutRef<JSX.LuxButtonLogin>) => <ButtonLogin {...props} />;
 
@@ -44,3 +47,10 @@ export const Playground: Story = {
     agent: 'digid',
   },
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <VisualRegressionWrapper>
+    <VisualAgents />
+    <VisualStates />
+  </VisualRegressionWrapper>
+));
