@@ -11,8 +11,11 @@
   ],
   "private": true,
   "engines": {
-    "node": "^20",
+    "node": "20.12.2",
     "pnpm": "^8"
+  },
+  "volta": {
+    "node": "20.12.2"
   },
   "workspaces": [
     "./packages/*",
