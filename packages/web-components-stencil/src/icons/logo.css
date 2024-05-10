@@ -1,21 +1,21 @@
 /* stylelint-disable selector-class-pattern */
 .lux-icon--eherkenning .e {
-  fill: var(--lux-icon-eherkenning-color-e);
+  fill: var(--lux-icon-logo-eherkenning-e-color);
 }
 
 .lux-icon--eidas .line {
-  fill: var(--lux-icon-eidas-color-lines);
+  fill: var(--lux-icon-logo-eidas-lines-color);
 }
 
 .lux-icon--eidas .star {
-  fill: var(--lux-icon-eidas-color-stars);
+  fill: var(--lux-icon-logo-eidas-stars-color);
 }
 
 .lux-icon--eidas .background {
-  fill: var(--lux-icon-eidas-color-background);
+  fill: var(--lux-icon-logo-eidas-background-color);
 }
 
 .lux-icon--eidas .lock {
-  fill: var(--lux-icon-eidas-color-lock);
+  fill: var(--lux-icon-logo-eidas-lock-color);
 }
 /* stylelint-enable selector-class-pattern */

@@ -1,87 +1,87 @@
 {
   "lux": {
     "button-login": {
-      "color": {
-        "value": "{lux.color.foreground.default}",
-        "type": "color"
+      "active": {
+        "background-color": {
+          "type": "color",
+          "value": "{mode.button-login.active.background-color}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.color.border.strong}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.color.foreground.default}"
+        }
       },
       "background-color": {
-        "value": "{lux.color.background.default}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.background.default}"
       },
       "border-color": {
-        "value": "{lux.color.border.default}",
-        "type": "color"
-      },
-      "hover": {
-        "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
-        },
-        "background-color": {
-          "value": "{lux.color.background.hover}",
-          "type": "color"
-        },
-        "border-color": {
-          "value": "{lux.color.border.default}",
-          "type": "color"
-        }
-      },
-      "active": {
-        "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
-        },
-        "background-color": {
-          "value": "{mode.button-login.active.background-color}",
-          "type": "color"
-        },
-        "border-color": {
-          "value": "{lux.color.border.strong}",
-          "type": "color"
-        }
-      },
-      "padding-block-start": {
-        "value": "{lux.space.05-x}",
-        "type": "dimension"
-      },
-      "padding-block-end": {
-        "value": "{lux.space.05-x}",
-        "type": "dimension"
-      },
-      "padding-inline-start": {
-        "value": "{lux.space.2-x}",
-        "type": "dimension"
-      },
-      "padding-inline-end": {
-        "value": "{lux.space.05-x}",
-        "type": "dimension"
-      },
-      "min-inline-size": {
-        "value": "{lux.size.target}",
-        "type": "dimension"
-      },
-      "min-block-size": {
-        "value": "{lux.size.target}",
-        "type": "dimension"
-      },
-      "margin-inline": {
-        "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "color",
+        "value": "{lux.color.border.default}"
       },
       "border-radius": {
-        "value": "{lux.border-radius.default}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "value": "{lux.border-width.default}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.border-width.default}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{lux.color.foreground.default}"
+      },
+      "hover": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.background.hover}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.color.border.default}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.color.foreground.default}"
+        }
       },
       "icon": {
         "size": {
-          "value": "40px",
-          "type": "dimension"
+          "type": "dimension",
+          "value": "40px"
         }
+      },
+      "margin-inline": {
+        "type": "dimension",
+        "value": "{lux.space.1-x}"
+      },
+      "min-block-size": {
+        "type": "dimension",
+        "value": "{lux.size.target}"
+      },
+      "min-inline-size": {
+        "type": "dimension",
+        "value": "{lux.size.target}"
+      },
+      "padding-block-end": {
+        "type": "dimension",
+        "value": "{lux.space.05-x}"
+      },
+      "padding-block-start": {
+        "type": "dimension",
+        "value": "{lux.space.05-x}"
+      },
+      "padding-inline-end": {
+        "type": "dimension",
+        "value": "{lux.space.05-x}"
+      },
+      "padding-inline-start": {
+        "type": "dimension",
+        "value": "{lux.space.2-x}"
       }
     }
   }

@@ -12,7 +12,7 @@
 .lux-button-login {
   align-items: center;
   appearance: button;
-  background-color: var(--lux-button-login-background);
+  background-color: var(--lux-button-login-background-color);
   border-color: var(--lux-button-login-border-color);
   border-radius: var(--lux-button-login-border-radius);
   border-style: var(--lux-button-login-border-style);
@@ -22,7 +22,7 @@
   font-family: var(--lux-button-login-font-family);
   font-size: var(--lux-button-login-font-size);
   font-weight: var(--lux-button-login-font-weight);
-  gap: var(--lux-button-login-gap);
+  gap: var(--lux-button-login-margin-inline);
   justify-content: space-between;
   line-height: var(--lux-button-login-line-height);
   margin-block: 0;
@@ -39,23 +39,23 @@
 /* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
 :host(.force-state--hover) .lux-button-login,
 .lux-button-login:hover {
-  background-color: var(--lux-button-login-hover-background);
+  background-color: var(--lux-button-login-hover-background-color);
 }
 
 /* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
 :host(.force-state--active) .lux-button-login,
 .lux-button-login:active {
-  background-color: var(--lux-button-login-active-background);
+  background-color: var(--lux-button-login-active-background-color);
   border-color: var(--lux-button-login-active-border-color);
 }
 
 /* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
 :host(.force-state--focus) .lux-button-login,
 .lux-button-login:focus-visible {
-  outline-color: var(--lux-button-login-focus-outline-color);
-  outline-offset: var(--lux-button-login-focus-outline-offset);
-  outline-style: var(--lux-button-login-focus-outline-style);
-  outline-width: var(--lux-button-login-focus-outline-width);
+  outline-color: var(--lux-focus-outline-color);
+  outline-offset: var(--lux-focus-outline-offset);
+  outline-style: var(--lux-focus-outline-style);
+  outline-width: var(--lux-focus-outline-width);
 }
 
 .lux-button-login__label--sr-only {

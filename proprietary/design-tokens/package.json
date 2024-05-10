@@ -7,7 +7,6 @@
   "keywords": [
     "nl-design-system"
   ],
-  "_main": "dist/",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -24,7 +23,7 @@
     "build:tokens-studio": "node studio.mjs",
     "build:style-dictionary": "node ./config.js",
     "watch": "npm-run-all watch:**",
-    "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'"
+    "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'"
   },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "0.15.2",

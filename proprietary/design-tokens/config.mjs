@@ -10,20 +10,25 @@ const normalizeFileName = (name) =>
   name
     .toLowerCase()
     .replaceAll(/(_?default_?|\s\(beta\))/g, '')
+    .replaceAll(new RegExp(`${DELIMITER}{2,}`, 'g'), '')
     .replace(/(nldoc)(\s-\s)?/, 'nldoc/');
 
 const prepareTokensFile = async () => {
-  const $themes = JSON.parse(await readFile('studio/$themes.json', 'utf-8'));
+  const $themes = JSON.parse(await readFile('src/$themes.json', 'utf-8'));
   const themes = permutateThemes($themes, { separator: DELIMITER });
   return themes;
 };
 
-// const extractModeFromName = (name) => ['light', 'dark'].find((mode) => name.indexOf(mode) >= 0);
+const extractModeFromName = (name) => ['light', 'dark'].find((mode) => name.indexOf(mode) >= 0);
 
 async function run() {
   const $themes = await prepareTokensFile();
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
-    source: tokensets.map((tokenset) => `./**/${tokenset}.json`),
+    source: [
+      ...tokensets.map((tokenset) => `./**/${tokenset}.json`),
+      'missingTokens.json',
+      `missingTokens.${extractModeFromName(name)}.json`,
+    ],
     platforms: {
       css: {
         buildPath: 'dist/',
@@ -47,7 +52,6 @@ async function run() {
     sd.cleanAllPlatforms();
     sd.buildAllPlatforms();
   });
-  console.log($themes);
 }
 
 run();

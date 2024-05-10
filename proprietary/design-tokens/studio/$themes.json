@@ -4,22 +4,33 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled",
-      "core/component": "enabled"
+      "core/default": "enabled"
     },
     "group": "core"
   },
   {
-    "id": "foo",
-    "name": "component",
+    "id": "d85910f43f2a886285b3474bc9142a39beb710ad",
+    "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "component/alert": "enabled",
-      "component/button": "enabled",
-      "component/button-login": "enabled",
-      "component/link": "enabled"
+      "component/button-login/default": "enabled",
+      "component/button/default": "enabled",
+      "component/button/variant/primary": "enabled",
+      "component/button/variant/secondary": "enabled",
+      "component/button/variant/tertairy": "enabled",
+      "component/button/icon/none": "enabled",
+      "component/button/icon/end": "enabled",
+      "component/button/icon/start": "enabled",
+      "component/alert/default": "enabled",
+      "component/alert/variant/info": "enabled",
+      "component/alert/variant/success": "enabled",
+      "component/alert/variant/error": "enabled",
+      "component/alert/variant/warning": "enabled",
+      "component/alert/closable/false": "enabled",
+      "component/alert/closable/true": "enabled",
+      "component/link/default": "enabled"
     },
-    "group": "core"
+    "group": "components"
   },
   {
     "id": "3284297cf94eb80c30de9e0fae554d3e67dab93a",
@@ -118,8 +129,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport (beta)/lg": "enabled",
-      "common/default": "enabled",
-      "component/button-login": "enabled"
+      "common/default": "enabled"
     },
     "group": "viewport (beta)"
   },
