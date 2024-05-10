@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: false
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@tokens-studio/sd-transforms@0.15.2':
+    hash: 4izyzujpparowfeopcgnsqc73u
+    path: patches/@tokens-studio__sd-transforms@0.15.2.patch
+
 importers:
 
   .:
@@ -412,7 +417,7 @@ importers:
     devDependencies:
       '@tokens-studio/sd-transforms':
         specifier: 0.15.2
-        version: 0.15.2
+        version: 0.15.2(patch_hash=4izyzujpparowfeopcgnsqc73u)
       chokidar-cli:
         specifier: 3.0.0
         version: 3.0.0
@@ -4408,7 +4413,7 @@ packages:
       '@testing-library/dom': 9.3.4
     dev: true
 
-  /@tokens-studio/sd-transforms@0.15.2:
+  /@tokens-studio/sd-transforms@0.15.2(patch_hash=4izyzujpparowfeopcgnsqc73u):
     resolution: {integrity: sha512-0ryA1xdZ75cmneUZ/0UQIpzMFUyKPsfQgeu/jZguGFF7vB3/Yr+JsjGU/HFFvWtZfy0c4EQToCSHYwI0g13cBg==}
     engines: {node: '>=17.0.0'}
     dependencies:
@@ -4421,6 +4426,7 @@ packages:
       postcss-calc-ast-parser: 0.1.4
       style-dictionary: 4.0.0-prerelease.26
     dev: true
+    patched: true
 
   /@tokens-studio/types@0.4.0:
     resolution: {integrity: sha512-rp5t0NP3Kai+Z+euGfHRUMn3AvPQ0bd9Dd2qbtfgnTvujxM5QYVr4psx/mwrVwA3NS9829mE6cD3ln+PIaptBA==}

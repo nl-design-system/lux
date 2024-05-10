@@ -1,0 +1,13 @@
+diff --git a/dist/src/registerTransforms.js b/dist/src/registerTransforms.js
+index 4ead120b89e8db6a98ccb1ea7513f6609ad37660..ab7e170c84f0a6161c10730909d0f70ddf261a3c 100644
+--- a/dist/src/registerTransforms.js
++++ b/dist/src/registerTransforms.js
+@@ -182,7 +182,7 @@ async function registerTransforms(sd, transformOpts) {
+         name: 'tokens-studio',
+         // add a default name transform, since this is almost always needed
+         // it's easy to override by users, adding their own "transforms"
+-        transforms: [...transforms, 'name/camel'],
++        transforms: [...transforms, 'name/cti/camel'],
+     });
+ }
+ 

@@ -78,5 +78,10 @@
   },
   "dependencies": {
     "http-server": "14.1.1"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@tokens-studio/sd-transforms@0.15.2": "patches/@tokens-studio__sd-transforms@0.15.2.patch"
+    }
   }
 }
