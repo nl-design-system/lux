@@ -2,6 +2,12 @@
   "rules": {
     "declaration-no-important": [true, { "disableFix": true, "severity": "warning" }],
     "no-descending-specificity": [true, { "ignore": ["selectors-within-list"] }],
+    "declaration-property-value-disallowed-list": [
+      {
+        "text-align": ["left", "right"],
+        "float": ["left", "right"]
+      }
+    ],
     "order/properties-alphabetical-order": null,
     "scss/dollar-variable-pattern": "^(lux)-[a-z0-9-]+$",
     "scss/percent-placeholder-pattern": "^(lux)-[a-z0-9-]+$",
