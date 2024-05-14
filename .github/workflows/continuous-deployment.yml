@@ -137,6 +137,12 @@ jobs:
     needs: build
 
     steps:
+      - name: "Restore build artifact: Storybook"
+        uses: actions/download-artifact@v4.1.4
+        with:
+          name: storybook
+          path: packages/storybook/dist/
+
       - name: Publish to Chromatic
         uses: chromaui/action@v11
         if: |
