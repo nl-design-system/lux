@@ -64,6 +64,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4.1.1
+        with:
+          fetch-depth: 0
 
       - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
