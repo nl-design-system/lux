@@ -11,7 +11,6 @@ const config: StorybookConfig = {
     '@storybook/addon-actions',
     '@storybook/addon-interactions',
     '@storybook/addon-links',
-    '@chromatic-com/storybook',
   ],
   framework: {
     name: '@storybook/react-vite',
@@ -22,6 +21,12 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: true,
+  },
+  managerHead(head) {
+    return `
+      ${head}
+      <style>div[data-item-id$="--visual"] { display: none; }</style>
+    `;
   },
   features: {},
   staticDirs: ['../../../proprietary/assets/src'],
