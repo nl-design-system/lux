@@ -5,7 +5,10 @@
     "declaration-property-value-disallowed-list": [
       {
         "text-align": ["left", "right"],
-        "float": ["left", "right"]
+        "float": ["left", "right"],
+        "clear": ["left", "right"],
+        "caption-side": ["top", "bottom"],
+        "resize": ["horizontal", "vertical"]
       }
     ],
     "order/properties-alphabetical-order": null,
