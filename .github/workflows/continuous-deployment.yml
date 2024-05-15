@@ -64,6 +64,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4.1.1
+        with:
+          fetch-depth: 0
 
       - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
@@ -97,6 +99,16 @@ jobs:
           BASE_URL: "/utrecht/"
         run: |
           pnpm run --if-present test-build
+
+      - name: "Publish to Chromatic"
+        uses: chromaui/action@v11
+        if: |
+          github.event.pull_request.draft == false &&
+          github.actor != 'dependabot[bot]'
+        with:
+          autoAcceptChanges: main
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: packages/storybook/dist/
 
       - name: "Retain build artifact: storybook"
         uses: actions/upload-artifact@v4.3.1
