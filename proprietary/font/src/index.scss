@@ -1,5 +1,4 @@
 @font-face {
-  font-family: "Rijksoverheid";
   font-style: normal;
   font-weight: 400;
   src:
@@ -7,10 +6,10 @@
     url("ROsanswebtextregular.woff") format("woff"),
     url("ROsanswebtextregular.eot") format("embedded-opentype"),
     url("ROsanswebtextregular.ttf") format("truetype");
+  font-family: "Rijksoverheid";
 }
 
 @font-face {
-  font-family: "Rijksoverheid";
   font-style: normal;
   font-weight: 700;
   src:
@@ -18,10 +17,10 @@
     url("ROsanswebtextbold.woff") format("woff"),
     url("ROsanswebtextbold.eot") format("embedded-opentype"),
     url("ROsanswebtextbold.ttf") format("truetype");
+  font-family: "Rijksoverheid";
 }
 
 @font-face {
-  font-family: "Rijksoverheid";
   font-style: italic;
   font-weight: 400;
   src:
@@ -29,4 +28,5 @@
     url("ROsanswebtextitalic.woff") format("woff"),
     url("ROsanswebtextitalic.eot") format("embedded-opentype"),
     url("ROsanswebtextitalic.ttf") format("truetype");
+  font-family: "Rijksoverheid";
 }
