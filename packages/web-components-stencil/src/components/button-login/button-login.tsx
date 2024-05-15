@@ -78,8 +78,8 @@ export class ButtonLogin {
 
     return (
       <button class={classNames}>
-        {this.renderLabel()}
         {this.renderLogoContainer()}
+        {this.renderLabel()}
       </button>
     );
   }

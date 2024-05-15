@@ -133,11 +133,11 @@
       },
       "padding-inline-end": {
         "category": "spacing",
-        "value": "{logius.space.05-x}"
+        "value": "{logius.space.2-x}"
       },
       "padding-inline-start": {
         "category": "spacing",
-        "value": "{logius.space.2-x}"
+        "value": "{logius.space.05-x}"
       }
     }
   }
