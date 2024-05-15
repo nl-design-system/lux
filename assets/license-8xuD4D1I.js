@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as t}from"./index-DSz_1G2r.js";import{M as r,d as a}from"./index-D5V_QstY.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-1-PEBlo9.js";import"../sb-preview/runtime.js";import"./index-BtM5VmRH.js";import"./index-Bw8VTzHM.js";import"./index-C3HXKmZM.js";const s=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as t}from"./index-DSz_1G2r.js";import{M as r,d as a}from"./index-CfXGNXDl.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-Dp5-WIDW.js";import"../sb-preview/runtime.js";import"./index-BtM5VmRH.js";import"./index-Bw8VTzHM.js";import"./index-DLle_QMf.js";import"./index-DrFu-skq.js";const s=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
 
 EUPL © the European Union 2007, 2016
 
@@ -287,4 +287,4 @@ Code from exclusive appropriation.
 All other changes or additions to this Appendix require the production of a new
 EUPL version.
 `;function o(n){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Example/Open Source License"}),`
-`,e.jsx(a,{children:s})]})}function y(n={}){const{wrapper:i}={...t(),...n.components};return i?e.jsx(i,{...n,children:e.jsx(o,{...n})}):o()}export{y as default};
+`,e.jsx(a,{children:s})]})}function L(n={}){const{wrapper:i}={...t(),...n.components};return i?e.jsx(i,{...n,children:e.jsx(o,{...n})}):o()}export{L as default};
