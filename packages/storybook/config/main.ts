@@ -4,6 +4,7 @@ const config: StorybookConfig = {
   stories: ['../src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
   addons: [
     '@storybook/addon-a11y',
+    '@storybook/addon-backgrounds',
     '@storybook/addon-controls',
     '@storybook/addon-docs',
     '@storybook/addon-viewport',
@@ -20,6 +21,12 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: true,
+  },
+  managerHead(head) {
+    return `
+      ${head}
+      <style>div[data-item-id$="--visual"] { display: none; }</style>
+    `;
   },
   features: {},
   staticDirs: ['../../../proprietary/assets/src'],
