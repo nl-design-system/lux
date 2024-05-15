@@ -36,7 +36,6 @@
   user-select: none;
 }
 
-/* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
 :host(.force-state--hover) .lux-button-login,
 .lux-button-login:hover {
   background-color: var(--lux-button-login-hover-background-color);
@@ -45,7 +44,7 @@
 :host(.force-state--active) .lux-button-login,
 .lux-button-login:active {
   border-color: var(--lux-button-login-active-border-color);
-  background-color: var(--lux-button-login-active-background);
+  background-color: var(--lux-button-login-active-background-color);
 }
 
 :host(.force-state--focus) .lux-button-login,
