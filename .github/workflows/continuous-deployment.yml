@@ -111,7 +111,7 @@ jobs:
           storybookBuildDir: packages/storybook/dist/
 
       - name: "Retain build artifact: storybook"
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: storybook
           path: packages/storybook/dist/
