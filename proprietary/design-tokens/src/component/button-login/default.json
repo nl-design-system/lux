@@ -77,11 +77,11 @@
       },
       "padding-inline-end": {
         "type": "dimension",
-        "value": "{lux.space.05-x}"
+        "value": "{lux.space.2-x}"
       },
       "padding-inline-start": {
         "type": "dimension",
-        "value": "{lux.space.2-x}"
+        "value": "{lux.space.05-x}"
       }
     }
   }

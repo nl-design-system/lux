@@ -14,7 +14,7 @@ const normalizeFileName = (name) =>
     .replace(/(nldoc)(\s-\s)?/, 'nldoc/');
 
 const prepareTokensFile = async () => {
-  const $themes = JSON.parse(await readFile('studio/$themes.json', 'utf-8'));
+  const $themes = JSON.parse(await readFile('src/$themes.json', 'utf-8'));
   const themes = permutateThemes($themes, { separator: DELIMITER });
   return themes;
 };
