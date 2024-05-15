@@ -11,7 +11,7 @@
 
 .lux-button-login {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: var(--lux-button-login-margin-inline);
   appearance: button;
