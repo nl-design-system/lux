@@ -1,8 +1,8 @@
 @import "../../styles/sr-only";
 
 :host {
-  appearance: button;
   display: contents;
+  appearance: button;
 }
 
 :host([hidden]) {
@@ -10,29 +10,29 @@
 }
 
 .lux-button-login {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: var(--lux-button-login-margin-inline);
   appearance: button;
-  background-color: var(--lux-button-login-background-color);
+  margin-inline: 0;
+  margin-block: 0;
+  border-width: var(--lux-button-login-border-width);
+  border-style: var(--lux-button-login-border-style);
   border-color: var(--lux-button-login-border-color);
   border-radius: var(--lux-button-login-border-radius);
-  border-style: var(--lux-button-login-border-style);
-  border-width: var(--lux-button-login-border-width);
-  color: var(--lux-button-login-color);
-  display: flex;
-  font-family: var(--lux-button-login-font-family);
-  font-size: var(--lux-button-login-font-size);
-  font-weight: var(--lux-button-login-font-weight);
-  gap: var(--lux-button-login-margin-inline);
-  justify-content: space-between;
-  line-height: var(--lux-button-login-line-height);
-  margin-block: 0;
-  margin-inline: 0;
-  min-block-size: var(--lux-button-login-min-block-size);
-  min-inline-size: var(--lux-button-login-min-inline-size);
-  padding-block-end: var(--lux-button-login-padding-block-end);
-  padding-block-start: var(--lux-button-login-padding-block-start);
-  padding-inline-end: var(--lux-button-login-padding-inline-end);
+  background-color: var(--lux-button-login-background-color);
   padding-inline-start: var(--lux-button-login-padding-inline-start);
+  padding-inline-end: var(--lux-button-login-padding-inline-end);
+  padding-block-start: var(--lux-button-login-padding-block-start);
+  padding-block-end: var(--lux-button-login-padding-block-end);
+  min-inline-size: var(--lux-button-login-min-inline-size);
+  min-block-size: var(--lux-button-login-min-block-size);
+  color: var(--lux-button-login-color);
+  font-weight: var(--lux-button-login-font-weight);
+  font-size: var(--lux-button-login-font-size);
+  line-height: var(--lux-button-login-line-height);
+  font-family: var(--lux-button-login-font-family);
   user-select: none;
 }
 
@@ -42,20 +42,18 @@
   background-color: var(--lux-button-login-hover-background-color);
 }
 
-/* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
 :host(.force-state--active) .lux-button-login,
 .lux-button-login:active {
-  background-color: var(--lux-button-login-active-background-color);
   border-color: var(--lux-button-login-active-border-color);
+  background-color: var(--lux-button-login-active-background);
 }
 
-/* stylelint-disable-next-line selector-class-pattern, no-descending-specificity */
 :host(.force-state--focus) .lux-button-login,
 .lux-button-login:focus-visible {
   outline-color: var(--lux-focus-outline-color);
-  outline-offset: var(--lux-focus-outline-offset);
   outline-style: var(--lux-focus-outline-style);
   outline-width: var(--lux-focus-outline-width);
+  outline-offset: var(--lux-focus-outline-offset);
 }
 
 .lux-button-login__label--sr-only {
@@ -63,7 +61,7 @@
 }
 
 .lux-button-login__logo {
-  block-size: var(--lux-button-login-icon-size);
   inline-size: var(--lux-button-login-icon-size);
+  block-size: var(--lux-button-login-icon-size);
   line-height: 1;
 }

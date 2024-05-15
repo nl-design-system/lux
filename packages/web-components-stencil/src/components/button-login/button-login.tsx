@@ -29,7 +29,7 @@ export class ButtonLogin {
   @Element() el!: HTMLLuxButtonLoginElement;
 
   @Prop() public readonly agent!: ButtonLoginAgent;
-  @Prop() public readonly label!: string;
+  @Prop() public readonly label?: string;
 
   @Event() private luxClick!: EventEmitter<void>;
 
@@ -78,8 +78,8 @@ export class ButtonLogin {
 
     return (
       <button class={classNames}>
-        {this.renderLabel()}
         {this.renderLogoContainer()}
+        {this.renderLabel()}
       </button>
     );
   }
