@@ -11,9 +11,9 @@
 
 .lux-button-login {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: var(--lux-button-login-gap);
+  gap: var(--lux-button-login-margin-inline);
   appearance: button;
   margin-inline: 0;
   margin-block: 0;
@@ -21,7 +21,7 @@
   border-style: var(--lux-button-login-border-style);
   border-color: var(--lux-button-login-border-color);
   border-radius: var(--lux-button-login-border-radius);
-  background-color: var(--lux-button-login-background);
+  background-color: var(--lux-button-login-background-color);
   padding-inline-start: var(--lux-button-login-padding-inline-start);
   padding-inline-end: var(--lux-button-login-padding-inline-end);
   padding-block-start: var(--lux-button-login-padding-block-start);
@@ -36,23 +36,23 @@
   user-select: none;
 }
 
-.lux-button-login:hover,
-:host(.force-state--hover) .lux-button-login {
-  background-color: var(--lux-button-login-hover-background);
+:host(.force-state--hover) .lux-button-login,
+.lux-button-login:hover {
+  background-color: var(--lux-button-login-hover-background-color);
 }
 
-.lux-button-login:active,
-:host(.force-state--active) .lux-button-login {
+:host(.force-state--active) .lux-button-login,
+.lux-button-login:active {
   border-color: var(--lux-button-login-active-border-color);
-  background-color: var(--lux-button-login-active-background);
+  background-color: var(--lux-button-login-active-background-color);
 }
 
-.lux-button-login:focus-visible,
-:host(.force-state--focus) .lux-button-login {
-  outline-color: var(--lux-button-login-focus-outline-color);
-  outline-style: var(--lux-button-login-focus-outline-style);
-  outline-width: var(--lux-button-login-focus-outline-width);
-  outline-offset: var(--lux-button-login-focus-outline-offset);
+:host(.force-state--focus) .lux-button-login,
+.lux-button-login:focus-visible {
+  outline-color: var(--lux-focus-outline-color);
+  outline-style: var(--lux-focus-outline-style);
+  outline-width: var(--lux-focus-outline-width);
+  outline-offset: var(--lux-focus-outline-offset);
 }
 
 .lux-button-login__label--sr-only {

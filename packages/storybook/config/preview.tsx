@@ -1,9 +1,8 @@
-import '@lux/design-tokens/dist/root.css';
-import '@lux/design-tokens/dist/dark.css';
-import '@lux/font/src/index.scss';
 import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
 import type { Preview, StoryContext } from '@storybook/react';
 
+import '@lux/font/src/index.scss';
+import './themes';
 import '../src/styles/theme.css';
 
 defineCustomElements();

@@ -1,0 +1,49 @@
+{
+  "lux": {
+    "icon-logo": {
+      "eherkenning": {
+        "e-color": {
+          "value": "#203a70",
+          "type": "color",
+          "description": "",
+          "parent": "mode/light"
+        }
+      },
+      "eidas": {
+        "stars-color": {
+          "value": "#f1cc49",
+          "type": "color",
+          "description": "",
+          "parent": "mode/light"
+        },
+        "lock-color": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "",
+          "parent": "mode/light"
+        },
+        "lines-color": {
+          "value": "#6ba6f1",
+          "type": "color",
+          "description": "",
+          "parent": "mode/light"
+        },
+        "background-color": {
+          "value": "#1d336a",
+          "type": "color",
+          "description": "",
+          "parent": "mode/light"
+        }
+      }
+    }
+  },
+  "logius": {
+    "color": {
+      "outline": {
+        "default": {
+          "value": "{lux.color.grijs.700}"
+        }
+      }
+    }
+  }
+}

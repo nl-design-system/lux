@@ -1,0 +1,296 @@
+{
+  "lux": {
+    "color": {
+      "foreground": {
+        "default": {
+          "value": "{lux.color.grijs.100}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Standaard kleur voor teksten en iconen. Gebruik deze voor body content, titels en labels."
+        },
+        "subdued": {
+          "value": "{lux.color.grijs.400}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Gebruik voor content die extra context biedt, maar niet essentieel is om de interface te begrijpen."
+        },
+        "onEmphasis": {
+          "value": "{lux.color.wit}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Tekst en iconen die op een sterke achtergrond staan. Zoals het label in de primaire button of links in de footer."
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{lux.color.grijs.700}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Achtergrond kleur"
+        },
+        "subdued": {
+          "value": "{lux.color.grijs.800}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Subtiele achtergrond kleur"
+        },
+        "hover": {
+          "value": "{lux.color.grijs.600}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Kleur van elementen als je eroverheen gaat met je muis"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{lux.color.grijs.500}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Border kleur"
+        },
+        "subdued": {
+          "value": "{lux.color.grijs.600}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Subtiele border"
+        },
+        "strong": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        }
+      },
+      "canvas": {
+        "value": "{lux.color.zwart}",
+        "type": "color",
+        "parent": "mode/dark (beta)",
+        "description": "Achtergrond kleur van de website"
+      },
+      "feedback": {
+        "success": {
+          "default": {
+            "value": "{lux.color.groen.300}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een positieve boodschap te benadrukken."
+          },
+          "subdued": {
+            "value": "{lux.color.groen.100}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een positieve boodschap te highlighten."
+          }
+        },
+        "info": {
+          "default": {
+            "value": "{lux.color.hemelblauw.300}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een informatieve boodschap te benadrukken."
+          },
+          "subdued": {
+            "value": "{lux.color.hemelblauw.100}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een informatieve boodschap te highlighten."
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{lux.color.rood.300}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een negatieve boodschap te benadrukken."
+          },
+          "subdued": {
+            "value": "{lux.color.rood.100}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een negatieve boodschap te highlighten."
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{lux.color.donkergeel.300}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een waarschuwing te benadrukken."
+          },
+          "subdued": {
+            "value": "{lux.color.donkergeel.100}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": "Gebruik deze kleur om een waarschuwing te highlighten."
+          }
+        }
+      },
+      "focus": {
+        "outline": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Outline kleur voor de focus state."
+        }
+      }
+    },
+    "link": {
+      "color": {
+        "value": "{lux.color.lichtblauw.200}",
+        "type": "color",
+        "parent": "mode/dark (beta)",
+        "description": "Gebruik deze kleur voor link tekst"
+      },
+      "visited": {
+        "color": {
+          "value": "{lux.color.paars.200}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        }
+      },
+      "hover": {
+        "color": {
+          "value": "{lux.color.lichtblauw.300}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Gebruik deze kleur voor de hover van link tekst"
+        }
+      },
+      "active": {
+        "color": {
+          "value": "{lux.color.paars.200}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        }
+      }
+    }
+  },
+  "mode": {
+    "button": {
+      "tertiary": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        },
+        "hover": {
+          "background-color": {
+            "value": "{lux.color.background.hover}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          },
+          "color": {
+            "value": "{lux.color.foreground.default}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          }
+        }
+      },
+      "secondary": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        },
+        "hover": {
+          "background-color": {
+            "value": "{lux.color.background.hover}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          },
+          "color": {
+            "value": "{lux.color.foreground.default}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          },
+          "border-color": {
+            "value": "{lux.color.border.default}",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          }
+        },
+        "border-color": {
+          "value": "{lux.color.border.default}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        },
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        }
+      }
+    },
+    "button-login": {
+      "icon": {
+        "eherkenning": {
+          "e-color": {
+            "value": "#ffffff",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          }
+        },
+        "eidas": {
+          "stars-color": {
+            "value": "#ffffff",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          },
+          "lock-color": {
+            "value": "#ffffff",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          },
+          "lines-color": {
+            "value": "#ffffff",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          },
+          "background-color": {
+            "value": "#ffffff00",
+            "type": "color",
+            "parent": "mode/dark (beta)",
+            "description": ""
+          }
+        }
+      },
+      "active": {
+        "background-color": {
+          "value": "{lux.color.grijs.500}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": ""
+        }
+      }
+    },
+    "rijkslogo": {
+      "color": {
+        "value": "{lux.color.wit}",
+        "type": "color",
+        "parent": "mode/dark (beta)",
+        "description": ""
+      }
+    },
+    "on": {
+      "value": "dark",
+      "type": "text",
+      "parent": "mode/dark (beta)",
+      "description": ""
+    }
+  }
+}
