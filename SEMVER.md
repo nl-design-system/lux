@@ -24,7 +24,9 @@ Binnen LUX hebben we dit uitgebreidt en worden de versienummer als volgt verhoog
 <dd>wordt verhoogd wordt verhoogd bij compatibele bugfixes.</dd>
 </dl>
 
-Dus een wijziging in kleuren van een component die bij een design bijvoorbeeld tot contrastproblemen of grote (visuele) regressie kunnen veroorzaken geldt als een Major versie-update.  
+### Voorbeeld
+
+Mocht het hele design van LUX op grote schaal veranderen dan zal dit veel impact hebben. Volgens (SemVer)[^1] is die geen breaking change en dus geen `MAJOR` bump. Volgens LUX is dat wel het geval. Wij zullen dit beschouwen als een `MAJOR` change waardoor het voor de gebruiker duidelijk is dat ze extra moeten opletten bij het updateten van LUX.
 Het is niet uitgesloten dat een Minor versie ook (visuele) regressietesten breekt, maar hiervoor zouden geen wijzigingen in een design of andere code-aanpassingen voor nodig hoeven zijn, alleen een update van de test of accorderen van een nieuwe baseline.
 
 Op dit moment is dit de basis van onze versionering, in de loop van de tijd zullen we deze aanscherpen en aanvullen met voorbeelden uit de praktijk.
