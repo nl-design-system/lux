@@ -2,7 +2,7 @@
 
 # LUX Design System
 
-> Hèt Logius Design System
+> Hét Logius Design System
 
 LUX staat voor "Logius UX", ofwel "Logius User eXperience" en is het design system dat Logius-breed ingezet wordt.
 
