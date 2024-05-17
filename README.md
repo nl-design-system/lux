@@ -17,7 +17,7 @@ Voor meer informatie en contact met het team kom naar onze Slack `LUX` workspace
 
 You need to have the following tools installed to run Storybook locally:
 De volgende onderdelen moeten geinstalleerd zijn om Storybook lokaal te kunnen draaien:  
-Tip: Installeer Node.js via [Volta](https://volta.sh/) of NVM.
+Tip: Installeer Node.js via [Volta](https://volta.sh/) of [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md).
 
 - Git
 - [Node.js and npm](https://nodejs.org/en/)
