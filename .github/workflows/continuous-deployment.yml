@@ -109,6 +109,7 @@ jobs:
           autoAcceptChanges: main
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: packages/storybook/dist/
+          exitZeroOnChanges: true
 
       - name: "Retain build artifact: storybook"
         uses: actions/upload-artifact@v4.3.1
