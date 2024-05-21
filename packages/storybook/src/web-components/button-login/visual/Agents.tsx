@@ -7,5 +7,6 @@ export const VisualAgents = () => (
     <LuxButtonLogin agent="digid-machtigen"></LuxButtonLogin>
     <LuxButtonLogin agent="eherkenning"></LuxButtonLogin>
     <LuxButtonLogin agent="eidas"></LuxButtonLogin>
+    <LuxButtonLogin agent="unknown"></LuxButtonLogin>
   </>
 );
