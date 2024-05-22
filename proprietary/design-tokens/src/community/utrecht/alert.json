@@ -1,0 +1,48 @@
+{
+  "utrecht": {
+    "alert": {
+      "background-color": { "value": "{lux.alert.background-color}" },
+      "border-color": { "value": "{lux.alert.border-color}" },
+      "border-radius": { "value": "{lux.alert.border-radius}" },
+      "border-width": { "value": "{lux.alert.border-width}" },
+      "color": { "value": "{lux.alert.color}" },
+      "padding-block-start": { "value": "{lux.alert.padding-block-start}" },
+      "padding-block-end": { "value": "{lux.alert.padding-block-end}" },
+      "padding-inline-start": { "value": "{lux.alert.padding-inline-start}" },
+      "padding-inline-end": { "value": "{lux.alert.padding-inline-end}" },
+      "margin-block-start": { "value": "{lux.alert.margin-block-start}" },
+      "margin-block-end": { "value": "{lux.alert.margin-block-end}" },
+      "warning": {
+        "background-color": { "value": "{lux.alert.warning.background-color}" },
+        "color": { "value": "{lux.alert.warning.color}" },
+        "border-color": { "value": "{lux.alert.warning.border-color}" },
+        "border-width": { "value": "{lux.alert.warning.border-width}" }
+      },
+      "error": {
+        "background-color": { "value": "{lux.alert.error.background-color}" },
+        "color": { "value": "{lux.alert.error.color}" },
+        "border-color": { "value": "{lux.alert.error.border-color}" },
+        "border-width": { "value": "{lux.alert.error.border-width}" }
+      },
+      "ok": {
+        "background-color": { "value": "{lux.alert.ok.background-color}" },
+        "color": { "value": "{lux.alert.ok.color}" },
+        "border-color": { "value": "{lux.alert.ok.border-color}" },
+        "border-width": { "value": "{lux.alert.ok.border-width}" }
+      },
+      "icon": {
+        "color": { "value": "{lux.alert.icon.color}" },
+        "gap": { "value": "{lux.alert.icon.gap}" },
+        "error": {
+          "color": { "value": "{lux.alert.icon.error.color}" }
+        },
+        "warning": {
+          "color": { "value": "{lux.alert.icon.warning.color}" }
+        },
+        "ok": {
+          "color": { "value": "{lux.alert.icon.ok.color}" }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,10 @@ import StyleDictionary from 'style-dictionary';
 registerTransforms(StyleDictionary);
 
 const DELIMITER = '/';
+const SRC_FOLDER = 'src';
+// const COMMUNITY_SRC_FOLDER = `${SRC_FOLDER}/community`;
+const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
+const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
 
 const normalizeFileName = (name) =>
   name
@@ -14,7 +18,7 @@ const normalizeFileName = (name) =>
     .replace(/(nldoc)(\s-\s)?/, 'nldoc/');
 
 const prepareTokensFile = async () => {
-  const $themes = JSON.parse(await readFile('src/$themes.json', 'utf-8'));
+  const $themes = JSON.parse(await readFile(`${IMPORTED_SRC_FOLDER}/$themes.json`, 'utf-8'));
   const themes = permutateThemes($themes, { separator: DELIMITER });
   return themes;
 };
@@ -26,8 +30,9 @@ async function run() {
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
     source: [
       ...tokensets.map((tokenset) => `./**/${tokenset}.json`),
-      'missingTokens.json',
-      `missingTokens.${extractModeFromName(name)}.json`,
+      // `${COMMUNITY_SRC_FOLDER}/**/*.json`,
+      `${MANUAL_SRC_FOLDER}/missingTokens.json`,
+      `${MANUAL_SRC_FOLDER}/missingTokens.${extractModeFromName(name)}.json`,
     ],
     platforms: {
       css: {

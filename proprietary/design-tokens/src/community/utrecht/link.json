@@ -1,0 +1,34 @@
+{
+  "utrecht": {
+    "link": {
+      "color": { "value": "{lux.link.color}" },
+      "text-decoration": { "value": "{lux.link.text-decoration}" },
+      "text-decoration-color": { "value": "{lux.link.text-decoration-color}" },
+      "text-decoration-thickness": { "value": "{lux.link.text-decoration-thickness}" },
+      "text-underline-offset": { "value": "{lux.link.text-underline-offset}" },
+      "active": {
+        "color": { "value": "{lux.link.active.color}" }
+      },
+      "focus": {
+        "color": { "value": "{lux.link.focus.color}" },
+        "text-decoration": { "value": "{lux.link.focus.text-decoration}" },
+        "text-decoration-thickness": { "value": "{lux.link.focus.text-decoration-thickness}" }
+      },
+      "hover": {
+        "color": { "value": "{lux.link.hover.color}" },
+        "text-decoration": { "value": "{lux.link.hover.text-decoration}" },
+        "text-decoration-thickness": { "value": "{lux.link.hover.text-decoration-thickness}" }
+      },
+      "placeholder": {
+        "color": { "value": "{lux.link.placeholder.color}" },
+        "font-weight": { "value": "{lux.link.placeholder.font-weight}" }
+      },
+      "visited": {
+        "color": { "value": "{lux.link.visited.color}" }
+      },
+      "icon": {
+        "size": { "value": "{lux.link.icon.size}" }
+      }
+    }
+  }
+}

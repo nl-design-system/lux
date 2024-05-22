@@ -1,0 +1,153 @@
+{
+  "utrecht": {
+    "button": {
+      "background-color": { "value": "{lux.button.background-color}" },
+      "border-color": { "value": "{lux.button.border-color}" },
+      "border-radius": { "value": "{lux.button.border-radius}" },
+      "border-width": { "value": "{lux.button.border-width}" },
+      "color": { "value": "{lux.button.color}" },
+      "font-family": { "value": "{lux.button.font-family}" },
+      "font-size": { "value": "{lux.button.font-size}" },
+      "font-weight": { "value": "{lux.button.font-weight}" },
+      "inline-size": { "value": "{lux.button.inline-size}" },
+      "line-height": { "value": "{lux.button.line-height}" },
+      "min-block-size": { "value": "{lux.button.min-block-size}" },
+      "min-inline-size": { "value": "{lux.button.min-inline-size}" },
+      "padding-block-start": { "value": "{lux.button.padding-block-start}" },
+      "padding-block-end": { "value": "{lux.button.padding-block-end}" },
+      "padding-inline-start": { "value": "{lux.button.padding-inline-start}" },
+      "padding-inline-end": { "value": "{lux.button.padding-inline-end}" },
+      "text-transform": { "value": "{lux.button.text-transform}" },
+      "active": {
+        "background-color": { "value": "{lux.button.active.background-color}" },
+        "border-color": { "value": "{lux.button.active.border-color}" },
+        "color": { "value": "{lux.button.active.color}" }
+      },
+      "icon": {
+        "gap": { "value": "{lux.button.icon.gap}" },
+        "size": { "value": "{lux.button.icon.size}" }
+      },
+      "disabled": {
+        "background-color": { "value": "{lux.button.disabled.background-color}" },
+        "border-color": { "value": "{lux.button.disabled.border-color}" },
+        "color": { "value": "{lux.button.disabled.color}" }
+      },
+      "focus": {
+        "background-color": { "value": "{lux.button.focus.background-color}" },
+        "border-color": { "value": "{lux.button.focus.border-color}" },
+        "color": { "value": "{lux.button.focus.color}" },
+        "scale": { "value": "{lux.button.focus.scale}" }
+      },
+      "hover": {
+        "background-color": { "value": "{lux.button.hover.background-color}" },
+        "border-color": { "value": "{lux.button.hover.border-color}" },
+        "color": { "value": "{lux.button.hover.color}" },
+        "scale": { "value": "{lux.button.hover.scale}" }
+      },
+      "pressed": {
+        "background-color": { "value": "{lux.button.pressed.background-color}" },
+        "border-color": { "value": "{lux.button.pressed.border-color}" },
+        "color": { "value": "{lux.button.pressed.color}" }
+      },
+      "primary-action": {
+        "background-color": { "value": "{lux.button.primary.background-color}" },
+        "border-color": { "value": "{lux.button.primary.border-color}" },
+        "border-width": { "value": "{lux.button.primary.border-width}" },
+        "color": { "value": "{lux.button.primary.color}" },
+        "font-weight": { "value": "{lux.button.primary.font-weight}" },
+        "active": {
+          "background-color": { "value": "{lux.button.primary.active.background-color}" },
+          "border-color": { "value": "{lux.button.primary.active.border-color}" },
+          "color": { "value": "{lux.button.primary.active.color}" }
+        },
+        "disabled": {
+          "background-color": { "value": "{lux.button.primary.disabled.background-color}" },
+          "border-color": { "value": "{lux.button.primary.disabled.border-color}" },
+          "color": { "value": "{lux.button.primary.disabled.color}" }
+        },
+        "hover": {
+          "background-color": { "value": "{lux.button.primary.hover.background-color}" },
+          "border-color": { "value": "{lux.button.primary.hover.border-color}" },
+          "color": { "value": "{lux.button.primary.hover.color}" },
+          "scale": { "value": "{lux.button.primary.hover.scale}" }
+        },
+        "focus": {
+          "background-color": { "value": "{lux.button.primary.focus.background-color}" },
+          "border-color": { "value": "{lux.button.primary.focus.border-color}" },
+          "color": { "value": "{lux.button.primary.focus.color}" }
+        },
+        "pressed": {
+          "background-color": { "value": "{lux.button.primary.pressed.background-color}" },
+          "border-color": { "value": "{lux.button.primary.pressed.border-color}" },
+          "color": { "value": "{lux.button.primary.pressed.color}" }
+        }
+      },
+      "secondary-action": {
+        "background-color": { "value": "{lux.button.secondary.background-color}" },
+        "border-color": { "value": "{lux.button.secondary.border-color}" },
+        "border-width": { "value": "{lux.button.secondary.border-width}" },
+        "color": { "value": "{lux.button.secondary.color}" },
+        "font-weight": { "value": "{lux.button.secondary.font-weight}" },
+        "active": {
+          "background-color": { "value": "{lux.button.secondary.active.background-color}" },
+          "border-color": { "value": "{lux.button.secondary.active.border-color}" },
+          "color": { "value": "{lux.button.secondary.active.color}" }
+        },
+        "disabled": {
+          "background-color": { "value": "{lux.button.secondary.disabled.background-color}" },
+          "border-color": { "value": "{lux.button.secondary.disabled.border-color}" },
+          "color": { "value": "{lux.button.secondary.disabled.color}" }
+        },
+        "hover": {
+          "background-color": { "value": "{lux.button.secondary.hover.background-color}" },
+          "border-color": { "value": "{lux.button.secondary.hover.border-color}" },
+          "color": { "value": "{lux.button.secondary.hover.color}" },
+          "scale": { "value": "{lux.button.secondary.hover.scale}" }
+        },
+        "focus": {
+          "background-color": { "value": "{lux.button.secondary.focus.background-color}" },
+          "border-color": { "value": "{lux.button.secondary.focus.border-color}" },
+          "color": { "value": "{lux.button.secondary.focus.color}" }
+        },
+        "pressed": {
+          "background-color": { "value": "{lux.button.secondary.pressed.background-color}" },
+          "border-color": { "value": "{lux.button.secondary.pressed.border-color}" },
+          "color": { "value": "{lux.button.secondary.pressed.color}" }
+        }
+      },
+      "subtle": {
+        "background-color": { "value": "{lux.button.subtle.background-color}" },
+        "border-color": { "value": "{lux.button.subtle.border-color}" },
+        "border-width": { "value": "{lux.button.subtle.border-width}" },
+        "color": { "value": "{lux.button.subtle.color}" },
+        "font-weight": { "value": "{lux.button.subtle.font-weight}" },
+        "active": {
+          "background-color": { "value": "{lux.button.subtle.active.background-color}" },
+          "border-color": { "value": "{lux.button.subtle.active.border-color}" },
+          "color": { "value": "{lux.button.subtle.active.color}" }
+        },
+        "disabled": {
+          "background-color": { "value": "{lux.button.subtle.disabled.background-color}" },
+          "border-color": { "value": "{lux.button.subtle.disabled.border-color}" },
+          "color": { "value": "{lux.button.subtle.disabled.color}" }
+        },
+        "hover": {
+          "background-color": { "value": "{lux.button.subtle.hover.background-color}" },
+          "border-color": { "value": "{lux.button.subtle.hover.border-color}" },
+          "color": { "value": "{lux.button.subtle.hover.color}" },
+          "scale": { "value": "{lux.button.subtle.hover.scale}" }
+        },
+        "focus": {
+          "background-color": { "value": "{lux.button.subtle.focus.background-color}" },
+          "border-color": { "value": "{lux.button.subtle.focus.border-color}" },
+          "color": { "value": "{lux.button.subtle.focus.color}" }
+        },
+        "pressed": {
+          "background-color": { "value": "{lux.button.subtle.pressed.background-color}" },
+          "border-color": { "value": "{lux.button.subtle.pressed.border-color}" },
+          "color": { "value": "{lux.button.subtle.pressed.color}" }
+        }
+      }
+    }
+  }
+}
