@@ -23,6 +23,10 @@ const prepareTokensFile = async () => {
   return themes;
 };
 
+const isFigmaToken = (name) => name.startsWith('figma');
+const isModeIndicatorToken = (name) => name === 'mode-on';
+const excludeSystemTokens = ({ name }) => ![isFigmaToken, isModeIndicatorToken].some((fn) => fn(name));
+
 const extractModeFromName = (name) => ['light', 'dark'].find((mode) => name.indexOf(mode) >= 0);
 
 async function run() {
@@ -42,6 +46,7 @@ async function run() {
         files: [
           {
             destination: `${normalizeFileName(name)}.css`,
+            filter: excludeSystemTokens,
             format: 'css/variables',
             options: {
               outputReferences: true,
