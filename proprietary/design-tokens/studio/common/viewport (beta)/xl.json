@@ -1,0 +1,136 @@
+{
+  "figma": {
+    "rijkslint": {
+      "variant": {
+        "value": "default",
+        "type": "text",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    },
+    "screen-size": {
+      "value": "90rem",
+      "type": "dimension",
+      "parent": "viewport (beta)/xl",
+      "description": ""
+    }
+  },
+  "lux": {
+    "grid": {
+      "gutter": {
+        "value": "2rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "margin": {
+        "value": "2.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.75rem",
+          "type": "dimension",
+          "parent": "viewport (beta)/xl",
+          "description": ""
+        }
+      },
+      "target [oud]": {
+        "value": "3rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    },
+    "font-size": {
+      "s": {
+        "value": "1rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "m": {
+        "value": "1.125rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "l": {
+        "value": "1.375rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "xl": {
+        "value": "1.625rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "2xl": {
+        "value": "2.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    },
+    "line-height": {
+      "s": {
+        "value": "1.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "m": {
+        "value": "1.75rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "l": {
+        "value": "2rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "xl": {
+        "value": "2.25rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "2xl": {
+        "value": "3.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    }
+  },
+  "viewport": {
+    "rijkslint": {
+      "wordmark": {
+        "75%": {
+          "padding-block-start": {
+            "value": "2.5rem",
+            "type": "dimension",
+            "parent": "viewport (beta)/xl",
+            "description": ""
+          }
+        },
+        "original": {
+          "padding-block-start": {
+            "value": "3.125rem",
+            "type": "dimension",
+            "parent": "viewport (beta)/xl",
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

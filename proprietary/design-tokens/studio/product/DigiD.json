@@ -1,0 +1,114 @@
+{
+  "lux": {
+    "color": {
+      "brand": {
+        "default": {
+          "value": "{lux.color.oranje.300}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": "kleur van het product"
+        },
+        "subdued": {
+          "value": "{lux.color.oranje.100}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": "Subtiele kleur van het product"
+        },
+        "hover": {
+          "value": "{lux.color.oranje.400}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": "Hover kleur van het product"
+        }
+      }
+    },
+    "border-radius": {
+      "default": {
+        "value": "0.25rem",
+        "type": "dimension",
+        "parent": "product/DigiD",
+        "description": ""
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "value": "0.125rem",
+        "type": "dimension",
+        "parent": "product/DigiD",
+        "description": ""
+      },
+      "border-radius": {
+        "value": "0.375rem",
+        "type": "dimension",
+        "parent": "product/DigiD",
+        "description": ""
+      }
+    }
+  },
+  "product": {
+    "button": {
+      "secondary": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": ""
+        },
+        "border-color": {
+          "value": "{lux.color.border.default}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": ""
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": ""
+        },
+        "hover": {
+          "border-color": {
+            "value": "{lux.color.border.default}",
+            "type": "color",
+            "parent": "product/DigiD",
+            "description": ""
+          },
+          "color": {
+            "value": "{lux.color.foreground.default}",
+            "type": "color",
+            "parent": "product/DigiD",
+            "description": ""
+          },
+          "background-color": {
+            "value": "{lux.color.background.hover}",
+            "type": "color",
+            "parent": "product/DigiD",
+            "description": ""
+          }
+        }
+      },
+      "tertiary": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color",
+          "parent": "product/DigiD",
+          "description": ""
+        },
+        "hover": {
+          "color": {
+            "value": "{lux.color.foreground.default}",
+            "type": "color",
+            "parent": "product/DigiD",
+            "description": ""
+          },
+          "background-color": {
+            "value": "{lux.color.background.hover}",
+            "type": "color",
+            "parent": "product/DigiD",
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "tokenSetOrder": [
+    "core/default",
+    "common/default",
+    "common/product",
+    "common/viewport (beta)/xl",
+    "common/viewport (beta)/lg",
+    "common/viewport (beta)/md",
+    "common/viewport (beta)/sm",
+    "common/viewport (beta)/xs",
+    "mode/light",
+    "mode/dark (beta)",
+    "component/button login",
+    "component/button",
+    "component/alert",
+    "component/link",
+    "product/Logius",
+    "product/MijnOverheid",
+    "product/DigiD",
+    "product/NLdoc"
+  ]
+}
