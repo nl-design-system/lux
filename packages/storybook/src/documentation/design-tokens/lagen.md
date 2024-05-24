@@ -1,6 +1,6 @@
-# Naamgeving Design Tokens
+# Lagen van Design Tokens
 
-[design-tokens]: /docs/developer-design-tokens--docs
+[design-tokens]: /docs/design-tokens-design-tokens--docs
 [esds-naamgeving]: https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676
 [kleurenpallet]: https://www.rijkshuisstijl.nl/publiek/modules/product/DigitalStyleGuide/default/index.aspx?ItemId=6744
 [nlds-naamgeving]: https://www.nldesignsystem.nl/handboek/design-tokens/#naamgeving
@@ -11,7 +11,7 @@ Om onderscheid te kunnen maken tussen tussen verschillende onderdelen van het de
 
 De core design tokens zijn de harde waarden. Alle waarden die überhaupt mogelijk zijn om je thema te maken. Het pallet waarmee we werken. Dit is de diepste laag en heeft geen referenties naar andere lagen. Er wordt wellicht gerefereerd naar een andere core design token. Voorbeelden van design tokens in die in de `core` laag zijn gedefiniëerd bijvoorbeeld het [beschikbare kleurenpallet][kleurenpallet], de typografie van LUX, en de beschikbare witruimten.
 
-**NB**: De code design tokens zijn statisch. Dat betekent dat ze nooit van waarde zullen veranderen als het thema wijzigt of men wisselt van `light` mode naar `dark`. Het nieuwe thema zal simpelweg verwijzen naar een andere core design token.
+**NB**: De core design tokens zijn statisch. Dit betekent dat ze nooit van waarde zullen veranderen als het thema wijzigt of men wisselt van `light` mode naar `dark`. Het nieuwe thema zal simpelweg verwijzen naar een andere core design token.
 
 Om deze design tokens te benoemen gebruikt LUX de zelfde naamgeving als die van het [Eight Shapes Design System][esds-naamgeving], of _ESDS_.
 
