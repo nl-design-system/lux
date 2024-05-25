@@ -76,16 +76,14 @@
         "parent": "button login/default"
       },
       "padding-inline-start": {
-        "value": "{lux.space.2-x}",
-        "type": "dimension",
-        "parent": "button login/default",
-        "description": ""
-      },
-      "padding-inline-end": {
         "value": "{lux.space.05-x}",
         "type": "dimension",
-        "parent": "button login/default",
-        "description": ""
+        "parent": "button login/default"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.2-x}",
+        "type": "dimension",
+        "parent": "button login/default"
       },
       "min-inline-size": {
         "value": "{lux.size.target}",
@@ -114,8 +112,7 @@
       "border-width": {
         "value": "{lux.border-width.default}",
         "type": "dimension",
-        "parent": "button login/default",
-        "description": ""
+        "parent": "button login/default"
       },
       "icon": {
         "size": {
@@ -136,17 +133,6 @@
       "font-family": {
         "value": "{lux.font-family.default}",
         "type": "text"
-      }
-    }
-  },
-  "figma": {
-    "button-login": {
-      "active": {
-        "background-color": {
-          "value": "{mode.button-login.active.background-color}",
-          "type": "color",
-          "parent": "button login/default"
-        }
       }
     }
   }

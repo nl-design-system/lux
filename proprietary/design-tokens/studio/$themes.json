@@ -4,7 +4,12 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled"
+      "core/default": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2312:22",
     "$figmaModeId": "2312:2",
@@ -109,7 +114,12 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled"
+      "common/default": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -126,7 +136,12 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled"
+      "mode/light": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -154,14 +169,6 @@
       "lux.link.visited.color": "e9ce184c570b2b135680a8a0424dbd566607aeb1",
       "lux.link.hover.color": "13ed7f99f37a7eb4a3de1cd3c646d6d9e295fd83",
       "lux.link.active.color": "d9baabd0c5bdd5ddcc8214732f1c4a7ebf50a913",
-      "lux.icon-logo.eherkenning.e-color": "aee1caf63c419b7246063e05784e51f629810e70",
-      "lux.icon-logo.eidas.stars-color": "64170f9aefa02416cd9d337c2c54f9e78693de02",
-      "lux.icon-logo.eidas.lock-color": "0ef206134635bd8203d36a4fd3a81541a3089f23",
-      "lux.icon-logo.eidas.lines-color": "195dbe9a752ceec169ab451cb20f11ec3ba02526",
-      "lux.icon-logo.eidas.background-color": "73d29d41f75d1f45ed903384588cc28969eecaa2",
-      "lux.icon-logo.digid.border-color": "c4fc0acd1237a167d673bf5b7129106eb3bcd6a6",
-      "lux.button-login.active.background-color": "c0467851f08ea15cb6fdba698eb6fa3e07f517e1",
-      "lux.rijkslogo.color": "08e585dc3f0a5d7637d193ede35eb12db045b910",
       "mode.button.tertiary.color": "8a7434c1692865f363775de7f7902e6ade0e0b05",
       "mode.button.tertiary.hover.background-color": "f0fc6e04f341c42b2775e539a0b7a796a6fbbfd5",
       "mode.button.tertiary.hover.color": "70e47f68ae877e255fbf469830f9b6aebd93c1ab",
@@ -177,7 +184,7 @@
       "mode.icon-logo.eidas.lines-color": "d73d7dc4288090388b3889ea71d52f4db58551ad",
       "mode.icon-logo.eidas.background-color": "be2b3fc21b1c80c5e79a974479cec74a68e6350a",
       "mode.icon-logo.digid.border-color": "97bf18af9fd607640c7c38d4c238d3831dfecba0",
-      "mode.button-login.active.background-color": "bca8b95ff8f654f371dc1a9da0efcf729e29d66a",
+      "mode.button-login.active.background-color": "2e92e7e17069b7ae8a2079b175b8fdb523e41b5c",
       "mode.rijkslogo.color": "8db46088673a3466fa55d450f79489d79ca330cc"
     },
     "group": "mode"
@@ -187,7 +194,12 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark (beta)": "enabled"
+      "mode/dark (beta)": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -230,8 +242,8 @@
       "mode.icon-logo.eidas.lines-color": "d73d7dc4288090388b3889ea71d52f4db58551ad",
       "mode.icon-logo.eidas.background-color": "be2b3fc21b1c80c5e79a974479cec74a68e6350a",
       "mode.icon-logo.digid.border-color": "97bf18af9fd607640c7c38d4c238d3831dfecba0",
-      "mode.rijkslogo.color": "8db46088673a3466fa55d450f79489d79ca330cc",
-      "mode.button-login.active.background-color": "2e92e7e17069b7ae8a2079b175b8fdb523e41b5c"
+      "mode.button-login.active.background-color": "2e92e7e17069b7ae8a2079b175b8fdb523e41b5c",
+      "mode.rijkslogo.color": "8db46088673a3466fa55d450f79489d79ca330cc"
     },
     "group": "mode"
   },
@@ -240,7 +252,12 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled"
+      "product/Logius": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -268,7 +285,12 @@
     "name": "MijnOverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/MijnOverheid": "enabled"
+      "product/MijnOverheid": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -296,7 +318,12 @@
     "name": "DigiD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/DigiD": "enabled"
+      "product/DigiD": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -324,7 +351,11 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc": "enabled"
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "enabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -352,7 +383,12 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xl": "enabled"
+      "common/viewport (beta)/xl": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -383,7 +419,12 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/lg": "enabled"
+      "common/viewport (beta)/lg": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -414,7 +455,12 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/md": "enabled"
+      "common/viewport (beta)/md": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -445,7 +491,12 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/sm": "enabled"
+      "common/viewport (beta)/sm": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -476,7 +527,12 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xs": "enabled"
+      "common/viewport (beta)/xs": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -510,7 +566,12 @@
       "component/link": "enabled",
       "component/alert": "enabled",
       "component/button": "enabled",
-      "component/button login": "enabled"
+      "component/button login": "enabled",
+      "product/NLdoc/default": "disabled",
+      "product/NLdoc/mapping": "disabled",
+      "product/NLdoc/Ridderkerk": "disabled",
+      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
+      "product/NLdoc/Rijksoverheid": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2337:49",
     "$figmaModeId": "2337:2",
@@ -588,30 +649,6 @@
       "lux.button.tertairy.disabled.color": "078edb63651fed2e34951cfc87d97ebd0944344f",
       "lux.button.font-weight": "b348be96afe32c5b653432454ac127274068432a",
       "lux.button.font-family": "e77f4c3d25c4bbe3e0ae0f3c179f20c191d419d1",
-      "figma.button.secondary.background-color": "c84bb07b62e6162c27fd9fc62c8fc6801a9cfe43",
-      "figma.button.secondary.border-color": "b046e16215fd3850217f317adc1e4aeb1aa68bbd",
-      "figma.button.secondary.color": "867927662693d847ab68e581f4b33e21ff33573b",
-      "figma.button.secondary.hover.background-color": "a7565d8041f34d0cf4c8bd6d796812186a0be747",
-      "figma.button.secondary.hover.border-color": "ef21bce6e6dbb76ca1ceaba5c034c8e6963255ed",
-      "figma.button.secondary.hover.color": "c3b57cd691b64ad02b3ad3a7bacf7069ef21976d",
-      "figma.button.secondary.active.background-color": "7eec87a29f343d4cd4ea941a70e2814ad1842a7a",
-      "figma.button.secondary.active.border-color": "3ea629e6c7c88bb8648fa250685152f034267e80",
-      "figma.button.secondary.active.color": "fe881624af6759f1bc446c92f0e0308211849de0",
-      "figma.button.secondary.disabled.background-color": "a34a2d8454cea735c4687cb93e6a023494d01c27",
-      "figma.button.secondary.disabled.border-color": "29d897a64daeb33c6c963c82521fae7a2251c7b7",
-      "figma.button.secondary.disabled.color": "43b30ebb87b5635c031d12029a39bf75d9a6b332",
-      "figma.button.tertairy.background-color": "84530759dc6db31307a7814f1929d8bdb3553162",
-      "figma.button.tertairy.border-color": "d7ab8d2bb49cd102524e8915912fe36cd91f362a",
-      "figma.button.tertairy.color": "644437bdb608521076f12e73b561d30f9ddcc8fc",
-      "figma.button.tertairy.hover.background-color": "c8999e063b8ef82860e382f230eb113d9fa760b9",
-      "figma.button.tertairy.hover.border-color": "2491999a8414933bbf9e8f2b6097329642948993",
-      "figma.button.tertairy.hover.color": "b65c4bf499efe92c73b3d69b0747f18d104a664d",
-      "figma.button.tertairy.active.background-color": "a9ec78034613e07d1ba728f4fabf1e21979bf453",
-      "figma.button.tertairy.active.border-color": "cf92ff2f2ab66d0e68d6512cb704c8f783c5e8ba",
-      "figma.button.tertairy.active.color": "b58792f788821809ec4bd88468c6ec36e4be1a3d",
-      "figma.button.tertairy.disabled.background-color": "688ecc635776796c84edb0a654063ee3718348ed",
-      "figma.button.tertairy.disabled.border-color": "ce65b3e689e53244dd31220491e6478c26b6da21",
-      "figma.button.tertairy.disabled.color": "d8062dc8b2aa5890776a8c5cd1a6f09eb1d26c42",
       "lux.button-login.color": "d0b84fbbf5fffb5a7c0addf080335996ba737b9e",
       "lux.button-login.background-color": "1bd64527eb9f0c40aae5b215afb0123d42c772c6",
       "lux.button-login.border-color": "027787a5994a9f58ce2e74566aaa645ce36eb94f",
@@ -634,8 +671,7 @@
       "lux.button-login.icon.size": "c0d05dd814df2cb187f25d50da8d8f3f0c4a6f14",
       "lux.button-login.line-height": "25977331112147dfcb62091e59411e698eb5e2f5",
       "lux.button-login.font-weight": "ff7ac870bab0e79873fcc97f0865b424fb290fc5",
-      "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92",
-      "figma.button-login.active.background-color": "f6e2b9387790fbd4eb67a1b7e8fbbb5d90ee367b"
+      "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92"
     },
     "group": "component"
   }
