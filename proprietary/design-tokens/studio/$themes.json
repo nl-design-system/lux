@@ -4,12 +4,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "core/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2312:22",
     "$figmaModeId": "2312:2",
@@ -114,12 +109,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "common/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -136,12 +126,7 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "mode/light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -194,12 +179,7 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark (beta)": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "mode/dark (beta)": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -252,12 +232,7 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "product/Logius": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -285,12 +260,7 @@
     "name": "MijnOverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/MijnOverheid": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "product/MijnOverheid": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -318,12 +288,7 @@
     "name": "DigiD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/DigiD": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "product/DigiD": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -351,11 +316,7 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "enabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "product/NLdoc/mapping": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -383,12 +344,7 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xl": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "common/viewport (beta)/xl": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -419,12 +375,7 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/lg": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "common/viewport (beta)/lg": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -455,12 +406,7 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/md": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "common/viewport (beta)/md": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -491,12 +437,7 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/sm": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "common/viewport (beta)/sm": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -527,12 +468,7 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xs": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "common/viewport (beta)/xs": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -566,12 +502,7 @@
       "component/link": "enabled",
       "component/alert": "enabled",
       "component/button": "enabled",
-      "component/button login": "enabled",
-      "product/NLdoc/default": "disabled",
-      "product/NLdoc/mapping": "disabled",
-      "product/NLdoc/Ridderkerk": "disabled",
-      "product/NLdoc/Waterschap Hollandse Delta": "disabled",
-      "product/NLdoc/Rijksoverheid": "disabled"
+      "component/button login": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2337:49",
     "$figmaModeId": "2337:2",
