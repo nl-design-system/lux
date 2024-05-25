@@ -9,13 +9,13 @@
     "common/viewport (beta)/xs",
     "mode/light",
     "mode/dark (beta)",
-    "component/button login",
-    "component/button",
-    "component/alert",
-    "component/link",
     "product/Logius",
     "product/MijnOverheid",
     "product/DigiD",
-    "product/NLdoc"
+    "product/NLdoc",
+    "component/button login",
+    "component/button",
+    "component/alert",
+    "component/link"
   ]
 }

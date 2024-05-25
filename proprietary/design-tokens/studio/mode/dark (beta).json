@@ -145,8 +145,7 @@
         "color": {
           "value": "{lux.color.paars.200}",
           "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
+          "parent": "mode/dark (beta)"
         }
       },
       "hover": {
@@ -281,8 +280,7 @@
         "background-color": {
           "value": "{lux.color.grijs.500}",
           "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
+          "parent": "mode/dark (beta)"
         }
       }
     },

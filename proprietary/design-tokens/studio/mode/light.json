@@ -138,22 +138,21 @@
       "color": {
         "value": "{lux.color.donkerblauw.300}",
         "type": "color",
-        "parent": "mode/light",
+        "parent": "mode/dark (beta)",
         "description": "Gebruik deze kleur voor link tekst"
       },
       "visited": {
         "color": {
           "value": "{lux.color.paars.300}",
           "type": "color",
-          "parent": "mode/light",
-          "description": ""
+          "parent": "mode/dark (beta)"
         }
       },
       "hover": {
         "color": {
           "value": "{lux.color.donkerblauw.400}",
           "type": "color",
-          "parent": "mode/light",
+          "parent": "mode/dark (beta)",
           "description": "Gebruik deze kleur voor de hover van link tekst"
         }
       },
@@ -161,72 +160,8 @@
         "color": {
           "value": "{lux.color.paars.300}",
           "type": "color",
-          "parent": "mode/light",
-          "description": ""
+          "parent": "mode/dark (beta)"
         }
-      }
-    },
-    "icon-logo": {
-      "eherkenning": {
-        "e-color": {
-          "value": "#203a70",
-          "type": "color",
-          "parent": "mode/light",
-          "description": ""
-        }
-      },
-      "eidas": {
-        "stars-color": {
-          "value": "#f1cc49",
-          "type": "color",
-          "parent": "mode/light",
-          "description": ""
-        },
-        "lock-color": {
-          "value": "#ffffff",
-          "type": "color",
-          "parent": "mode/light",
-          "description": ""
-        },
-        "lines-color": {
-          "value": "#6ba6f1",
-          "type": "color",
-          "parent": "mode/light",
-          "description": ""
-        },
-        "background-color": {
-          "value": "#1d336a",
-          "type": "color",
-          "parent": "mode/light",
-          "description": ""
-        }
-      },
-      "digid": {
-        "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
-          "parent": "mode/light",
-          "description": ""
-        }
-      }
-    },
-    "button-login": {
-      "active": {
-        "background-color": {
-          "value": "{lux.color.grijs.400}",
-          "type": "color",
-          "parent": "mode/light",
-          "description": "",
-          "oldValue": "{lux.color.grijs.400}"
-        }
-      }
-    },
-    "rijkslogo": {
-      "color": {
-        "value": "{lux.color.zwart}",
-        "type": "color",
-        "parent": "mode/light",
-        "description": ""
       }
     }
   },
