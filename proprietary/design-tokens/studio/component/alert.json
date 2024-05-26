@@ -61,7 +61,7 @@
           "type": "color"
         }
       },
-      "sucess": {
+      "success": {
         "background-color": {
           "value": "{lux.color.feedback.success.subdued}",
           "type": "color"
