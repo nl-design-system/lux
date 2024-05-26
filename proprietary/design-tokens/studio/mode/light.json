@@ -133,7 +133,9 @@
           "description": "Outline kleur voor de focus state."
         }
       }
-    },
+    }
+  },
+  "mode": {
     "link": {
       "color": {
         "value": "{lux.color.donkerblauw.300}",
@@ -163,9 +165,7 @@
           "parent": "mode/dark (beta)"
         }
       }
-    }
-  },
-  "mode": {
+    },
     "button": {
       "tertiary": {
         "color": {

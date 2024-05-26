@@ -2,7 +2,7 @@
   "lux": {
     "link": {
       "color": {
-        "value": "{lux.color.donkerblauw.300}",
+        "value": "{mode.link.color}",
         "type": "color"
       },
       "margin-inline": {
@@ -17,19 +17,19 @@
       },
       "hover": {
         "color": {
-          "value": "{lux.color.donkerblauw.400}",
+          "value": "{mode.link.hover.color}",
           "type": "color"
         }
       },
       "active": {
         "color": {
-          "value": "{lux.color.paars.300}",
+          "value": "{mode.link.active.color}",
           "type": "color"
         }
       },
       "visited": {
         "color": {
-          "value": "{lux.color.paars.300}",
+          "value": "{mode.link.visited.color}",
           "type": "color"
         }
       }

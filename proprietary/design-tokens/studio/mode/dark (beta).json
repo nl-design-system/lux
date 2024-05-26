@@ -133,7 +133,9 @@
           "description": "Outline kleur voor de focus state."
         }
       }
-    },
+    }
+  },
+  "mode": {
     "link": {
       "color": {
         "value": "{lux.color.lichtblauw.200}",
@@ -164,9 +166,7 @@
           "description": ""
         }
       }
-    }
-  },
-  "mode": {
+    },
     "button": {
       "tertiary": {
         "color": {

@@ -20,6 +20,7 @@
     "component/button login",
     "component/button",
     "component/alert",
-    "component/link"
+    "component/link",
+    "nl/utrecht-mapping"
   ]
 }
