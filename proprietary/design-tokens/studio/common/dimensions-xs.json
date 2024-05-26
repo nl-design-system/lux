@@ -1,0 +1,26 @@
+{
+  "figma": {
+    "screen-size": {
+      "value": "23.4375rem",
+      "type": "dimension",
+      "parent": "viewport (beta)/xs",
+      "description": ""
+    }
+  },
+  "lux": {
+    "grid": {
+      "gutter": {
+        "value": "0rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "margin": {
+        "value": "1rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      }
+    }
+  }
+}

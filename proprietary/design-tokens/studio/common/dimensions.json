@@ -1,0 +1,39 @@
+{
+  "lux": {
+    "size": {
+      "target": {
+        "value": "3rem",
+        "type": "dimension",
+        "parent": "common/default",
+        "description": ""
+      },
+      "icon": {
+        "default": {
+          "value": "1rem",
+          "type": "dimension",
+          "parent": "common/default",
+          "wrapper-height": {
+            "value": "1.75rem",
+            "type": "dimension",
+            "parent": "viewport (beta)/xl",
+            "description": ""
+          },
+          "wrapper-height-copy": {
+            "value": "1.75rem",
+            "type": "dimension"
+          },
+          "wrapper-height2": {
+            "value": "1.75rem",
+            "type": "dimension"
+          }
+        }
+      }
+    },
+    "grid": {
+      "max-inline": {
+        "value": "77.5rem",
+        "type": "dimension"
+      }
+    }
+  }
+}

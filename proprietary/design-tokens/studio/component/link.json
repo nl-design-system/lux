@@ -34,5 +34,36 @@
         }
       }
     }
+  },
+  "figma": {
+    "link": {
+      "color": {
+        "value": "{figma.mode.link.color}",
+        "type": "color",
+        "parent": "mode/dark (beta)"
+      },
+      "visited": {
+        "color": {
+          "value": "{figma.mode.link.visited.color}",
+          "type": "color",
+          "parent": "mode/dark (beta)"
+        }
+      },
+      "hover": {
+        "color": {
+          "value": "{figma.mode.link.hover.color}",
+          "type": "color",
+          "parent": "mode/dark (beta)",
+          "description": "Gebruik deze kleur voor de hover van link tekst"
+        }
+      },
+      "active": {
+        "color": {
+          "value": "{figma.mode.link.active.color}",
+          "type": "color",
+          "parent": "mode/dark (beta)"
+        }
+      }
+    }
   }
 }

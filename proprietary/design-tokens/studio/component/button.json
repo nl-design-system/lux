@@ -48,7 +48,7 @@
       "icon": {
         "size": {
           "type": "dimension",
-          "value": "{lux.size.icon}"
+          "value": "{lux.size.icon.default}"
         }
       },
       "primary": {
@@ -114,7 +114,7 @@
         },
         "border-color": {
           "type": "color",
-          "value": "{mode.button.secondary.border-color}"
+          "value": "{lux.color.brand.default}"
         },
         "color": {
           "type": "color",
@@ -140,11 +140,11 @@
             "type": "color"
           },
           "border-color": {
-            "value": "{mode.button.secondary.border-color}",
+            "value": "{lux.color.brand.default}",
             "type": "color"
           },
           "color": {
-            "value": "{mode.button.secondary.color}",
+            "value": "{lux.color.brand.default}",
             "type": "color"
           }
         },
@@ -174,12 +174,12 @@
         },
         "color": {
           "type": "color",
-          "value": "{mode.button.tertiary.color}"
+          "value": "{lux.color.brand.default}"
         },
         "hover": {
           "background-color": {
             "type": "color",
-            "value": "{mode.button.tertiary.hover.background-color}"
+            "value": "{lux.color.brand.subdued}"
           },
           "border-color": {
             "value": "{lux.color.none}",
@@ -187,7 +187,7 @@
           },
           "color": {
             "type": "color",
-            "value": "{mode.button.tertiary.hover.color}"
+            "value": "{lux.color.brand.hover}"
           }
         },
         "active": {
@@ -200,7 +200,7 @@
             "type": "color"
           },
           "color": {
-            "value": "{mode.button.tertiary.color}",
+            "value": "{lux.color.brand.default}",
             "type": "color"
           }
         },
@@ -231,116 +231,57 @@
   },
   "figma": {
     "button": {
-      "secondary": {
-        "background-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
-        },
-        "border-color": {
-          "type": "color",
-          "value": "{mode.button.secondary.border-color}"
-        },
+      "tertiary": {
         "color": {
+          "value": "{figma.mode.button.tertiary.color}",
           "type": "color",
-          "value": "{lux.color.brand.default}"
+          "parent": "mode/dark (beta)"
         },
         "hover": {
           "background-color": {
+            "value": "{figma.mode.button.tertiary.hover.background-color}",
             "type": "color",
-            "value": "{lux.color.brand.subdued}"
-          },
-          "border-color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color"
+            "parent": "mode/dark (beta)"
           },
           "color": {
+            "value": "{figma.mode.button.tertiary.hover.color}",
             "type": "color",
-            "value": "{lux.color.brand.hover}"
-          }
-        },
-        "active": {
-          "background-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{mode.button.secondary.border-color}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{mode.button.secondary.color}",
-            "type": "color"
-          }
-        },
-        "disabled": {
-          "background-color": {
-            "value": "{lux.color.background.subdued}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{lux.color.foreground.subdued}",
-            "type": "color"
+            "parent": "mode/dark (beta)"
           }
         }
       },
-      "tertairy": {
-        "background-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
-        },
-        "border-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
-        },
+      "secondary": {
         "color": {
+          "value": "{figma.mode.button.secondary.color}",
           "type": "color",
-          "value": "{mode.button.tertiary.color}"
+          "parent": "mode/dark (beta)"
         },
         "hover": {
           "background-color": {
+            "value": "{figma.mode.button.secondary.hover.background-color}",
             "type": "color",
-            "value": "{mode.button.tertiary.hover.background-color}"
-          },
-          "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
+            "parent": "mode/dark (beta)"
           },
           "color": {
+            "value": "{figma.mode.button.secondary.hover.color}",
             "type": "color",
-            "value": "{mode.button.tertiary.hover.color}"
+            "parent": "mode/dark (beta)"
+          },
+          "border-color": {
+            "value": "{figma.mode.button.secondary.hover.border-color}",
+            "type": "color",
+            "parent": "mode/dark (beta)"
           }
         },
-        "active": {
-          "background-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{mode.button.tertiary.color}",
-            "type": "color"
-          }
+        "border-color": {
+          "value": "{figma.mode.button.secondary.border-color}",
+          "type": "color",
+          "parent": "mode/dark (beta)"
         },
-        "disabled": {
-          "background-color": {
-            "value": "{lux.color.background.subdued}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{lux.color.foreground.subdued}",
-            "type": "color"
-          }
+        "background-color": {
+          "value": "{figma.mode.button.secondary.background-color}",
+          "type": "color",
+          "parent": "mode/dark (beta)"
         }
       }
     }

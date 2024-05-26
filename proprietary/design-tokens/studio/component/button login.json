@@ -46,10 +46,9 @@
           "description": ""
         },
         "background-color": {
-          "value": "{mode.button-login.active.background-color}",
+          "value": "{lux.color.grijs.400}",
           "type": "color",
-          "parent": "button login/default",
-          "description": ""
+          "parent": "button login/default"
         },
         "border-color": {
           "value": "{lux.color.border.strong}",
@@ -108,8 +107,7 @@
       "border-radius": {
         "value": "{lux.border-radius.default}",
         "type": "dimension",
-        "parent": "button login/default",
-        "description": ""
+        "parent": "button login/default"
       },
       "border-width": {
         "value": "{lux.border-width.default}",
@@ -136,17 +134,6 @@
       "font-family": {
         "value": "{lux.font-family.default}",
         "type": "text"
-      }
-    }
-  },
-  "figma": {
-    "button-login": {
-      "active": {
-        "background-color": {
-          "value": "{mode.button-login.active.background-color}",
-          "type": "color",
-          "parent": "button login/default"
-        }
       }
     }
   }

@@ -19,6 +19,11 @@
           "type": "color",
           "parent": "mode/dark (beta)",
           "description": "Tekst en iconen die op een sterke achtergrond staan. Zoals het label in de primaire button of links in de footer."
+        },
+        "link": {
+          "value": "{lux.color.lichtblauw.200}",
+          "type": "color",
+          "description": "Gebruik deze kleur voor link tekst"
         }
       },
       "background": {
@@ -132,166 +137,6 @@
           "parent": "mode/dark (beta)",
           "description": "Outline kleur voor de focus state."
         }
-      }
-    },
-    "link": {
-      "color": {
-        "value": "{lux.color.lichtblauw.200}",
-        "type": "color",
-        "parent": "mode/dark (beta)",
-        "description": "Gebruik deze kleur voor link tekst"
-      },
-      "visited": {
-        "color": {
-          "value": "{lux.color.paars.200}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      },
-      "hover": {
-        "color": {
-          "value": "{lux.color.lichtblauw.300}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": "Gebruik deze kleur voor de hover van link tekst"
-        }
-      },
-      "active": {
-        "color": {
-          "value": "{lux.color.paars.200}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      }
-    }
-  },
-  "mode": {
-    "button": {
-      "tertiary": {
-        "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        },
-        "hover": {
-          "background-color": {
-            "value": "{lux.color.background.hover}",
-            "type": "color",
-            "parent": "mode/dark (beta)",
-            "description": ""
-          },
-          "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color",
-            "parent": "mode/dark (beta)",
-            "description": ""
-          }
-        }
-      },
-      "secondary": {
-        "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        },
-        "hover": {
-          "background-color": {
-            "value": "{lux.color.background.hover}",
-            "type": "color",
-            "parent": "mode/dark (beta)",
-            "description": ""
-          },
-          "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color",
-            "parent": "mode/dark (beta)",
-            "description": ""
-          },
-          "border-color": {
-            "value": "{lux.color.border.default}",
-            "type": "color",
-            "parent": "mode/dark (beta)",
-            "description": ""
-          }
-        },
-        "border-color": {
-          "value": "{lux.color.border.default}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        },
-        "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      }
-    },
-    "icon-logo": {
-      "eherkenning": {
-        "e-color": {
-          "value": "#ffffff",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      },
-      "eidas": {
-        "stars-color": {
-          "value": "#ffffff",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        },
-        "lock-color": {
-          "value": "#ffffff",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        },
-        "lines-color": {
-          "value": "#ffffff",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        },
-        "background-color": {
-          "value": "#ffffff00",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      },
-      "digid": {
-        "border-color": {
-          "value": "#d1d1d1",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      }
-    },
-    "button-login": {
-      "active": {
-        "background-color": {
-          "value": "{lux.color.grijs.500}",
-          "type": "color",
-          "parent": "mode/dark (beta)",
-          "description": ""
-        }
-      }
-    },
-    "rijkslogo": {
-      "color": {
-        "value": "{lux.color.wit}",
-        "type": "color",
-        "parent": "mode/dark (beta)",
-        "description": ""
       }
     }
   }

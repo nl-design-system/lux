@@ -1,0 +1,78 @@
+{
+  "figma": {
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "{lux.line-height.m}",
+          "type": "dimension"
+        }
+      }
+    }
+  },
+  "lux": {
+    "font-size": {
+      "s": {
+        "value": "1rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "m": {
+        "value": "1.125rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "l": {
+        "value": "1.375rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "xl": {
+        "value": "1.625rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "2xl": {
+        "value": "2.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    },
+    "line-height": {
+      "s": {
+        "value": "1.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "m": {
+        "value": "1.75rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "l": {
+        "value": "2rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "xl": {
+        "value": "2.25rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      },
+      "2xl": {
+        "value": "3.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xl",
+        "description": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lux": {
+    "border-radius": {
+      "default": {
+        "value": "0.25rem",
+        "type": "dimension",
+        "parent": "product/Logius",
+        "description": ""
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "value": "0.125rem",
+        "type": "dimension",
+        "parent": "product/Logius",
+        "description": ""
+      },
+      "border-radius": {
+        "value": "0.375rem",
+        "type": "dimension",
+        "parent": "product/Logius",
+        "description": ""
+      }
+    }
+  }
+}

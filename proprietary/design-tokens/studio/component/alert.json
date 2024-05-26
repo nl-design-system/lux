@@ -46,7 +46,7 @@
         "type": "dimension"
       },
       "close-button-size": {
-        "value": "{lux.size.icon}",
+        "value": "{lux.size.icon.default}",
         "type": "dimension"
       },
       "content": {
