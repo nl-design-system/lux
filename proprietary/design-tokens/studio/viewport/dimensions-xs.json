@@ -16,5 +16,71 @@
         }
       }
     }
+  },
+  "lux": {
+    "font-size": {
+      "s": {
+        "value": "0.875rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "m": {
+        "value": "1rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "l": {
+        "value": "1.25rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "xl": {
+        "value": "1.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "2xl": {
+        "value": "2rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      }
+    },
+    "line-height": {
+      "s": {
+        "value": "1.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "m": {
+        "value": "1.5rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "l": {
+        "value": "1.75rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "xl": {
+        "value": "2rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      },
+      "2xl": {
+        "value": "3rem",
+        "type": "dimension",
+        "parent": "viewport (beta)/xs",
+        "description": ""
+      }
+    }
   }
 }
