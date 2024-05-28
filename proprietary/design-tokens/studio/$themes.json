@@ -114,7 +114,7 @@
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
     "$figmaVariableReferences": {
-      "lux.focus.border-width [oud]": "54da244c9873508d7fac2446b5f6bf714af90f90",
+      "lux.focus.border-width [oud]": "6277342b7a67e25c1c28417b98d38765bd124e24",
       "lux.size.target": "48a70abc389058105c74b14fbec860fc3ab0e339",
       "lux.size.icon": "a3c95921a6a2913b21bb14a0b67255ae7db101ca",
       "lux.grid.max-inline": "5bb1f77e522415bef3624175933ccdb23c2f8593"
@@ -605,5 +605,33 @@
       "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92"
     },
     "group": "component"
+  },
+  {
+    "id": "773e4852cfcc71ef32dbd36c8904bc54519ed1cf",
+    "name": "Eila",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "product/Eila": "enabled"
+    },
+    "group": "product",
+    "$figmaCollectionId": "VariableCollectionId:1:2",
+    "$figmaModeId": "2418:0",
+    "$figmaVariableReferences": {
+      "lux.color.brand.default": "83157ab11bdba1943e590ad79ea2225dda0ad58f",
+      "lux.color.brand.subdued": "01da129adda02738bfac20e8e1d102c4081102f0",
+      "lux.color.brand.hover": "9c1838d9a820b37f1f9653b314f3790ef6f89aa1",
+      "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
+      "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
+      "lux.focus.border-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
+      "product.button.secondary.background-color": "467c8346bb98fd26172ff6535d4047f4e7a7368f",
+      "product.button.secondary.border-color": "4f64fa12c59b87d66a2b3e4a769e0b7fa93d206a",
+      "product.button.secondary.color": "c86bfa8fb14d9a0baeea896141a00c05a00c0895",
+      "product.button.secondary.hover.border-color": "861211bc78f2ad6fd36c78ce2c87b90750b8f49b",
+      "product.button.secondary.hover.color": "39d3a00ed9fa091949c5559deeeb143c36665fa1",
+      "product.button.secondary.hover.background-color": "0967172519a43ace30023ae950424d569fa46d3e",
+      "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
+      "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
+      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
+    }
   }
 ]

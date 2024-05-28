@@ -141,10 +141,9 @@
           "description": ""
         },
         "400": {
-          "value": "#3b1255",
+          "value": "#714f87",
           "type": "color",
-          "parent": "core/default",
-          "description": ""
+          "parent": "core/default"
         }
       },
       "hemelblauw": {
