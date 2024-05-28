@@ -68,16 +68,14 @@
         },
         "hover": {
           "border-color": {
-            "value": "{lux.color.brand.hover}",
+            "value": "{lux.color.brand.default}",
             "type": "color",
-            "parent": "product/MijnOverheid",
-            "description": ""
+            "parent": "product/MijnOverheid"
           },
           "color": {
-            "value": "{lux.color.brand.hover}",
+            "value": "{lux.color.brand.default}",
             "type": "color",
-            "parent": "product/MijnOverheid",
-            "description": ""
+            "parent": "product/MijnOverheid"
           },
           "background-color": {
             "value": "{lux.color.brand.subdued}",
@@ -96,10 +94,9 @@
         },
         "hover": {
           "color": {
-            "value": "{lux.color.brand.hover}",
+            "value": "{lux.color.brand.default}",
             "type": "color",
-            "parent": "product/MijnOverheid",
-            "description": ""
+            "parent": "product/MijnOverheid"
           },
           "background-color": {
             "value": "{lux.color.brand.subdued}",
