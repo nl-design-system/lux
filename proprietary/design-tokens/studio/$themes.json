@@ -87,6 +87,7 @@
       "lux.border-width.default": "f1e1b4b3f9eb69045efb733840be42bb0f9e141b",
       "lux.border-width.m": "8a31c1ff1820337797a05eb0d989b599fd0cea83",
       "lux.border-width.none": "31ab440c46c372684ba7c4d6af7306fc8b3ef10b",
+      "lux.space.0-x": "a7243342a4528b9ccbf8bb229ee416eb213fa909",
       "lux.space.025-x": "1ebe641b2790457f3336e3c509984f9e63ada0e8",
       "lux.space.05-x": "9a717e23045eb1bf0da4df876a3c073dba76f0a3",
       "lux.space.1-x": "7e93355de2c74419aa06c6d02896d04bb1fdf0cd",
@@ -99,8 +100,7 @@
       "lux.space.7-x": "2ab21a68e3520cf91dbe973fed78ffc7cabf2de9",
       "lux.font-family.default": "fce12356ff8930eebd192c3b80b8ede070b6a08d",
       "lux.font-weight.regular": "a082ddec57a8f068b20b871868fe52ed40f6b148",
-      "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793",
-      "lux.space.0-x": "a7243342a4528b9ccbf8bb229ee416eb213fa909"
+      "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793"
     },
     "group": "core"
   },
@@ -115,6 +115,7 @@
     "$figmaModeId": "46:0",
     "$figmaVariableReferences": {
       "lux.focus.border-width [oud]": "6277342b7a67e25c1c28417b98d38765bd124e24",
+      "lux.focus.outline-offset": "c56e3f5cd7a6ef8cc90fc3e59cfc06021f59de08",
       "lux.size.target": "48a70abc389058105c74b14fbec860fc3ab0e339",
       "lux.size.icon": "a3c95921a6a2913b21bb14a0b67255ae7db101ca",
       "lux.grid.max-inline": "5bb1f77e522415bef3624175933ccdb23c2f8593"
@@ -596,13 +597,13 @@
       "lux.button-login.padding-inline-end": "4ec21a261242d8d1e16b39d401e15dc2c329ab57",
       "lux.button-login.min-inline-size": "3aa3dd65262b0063cfcda770ed6f24c7d7d75443",
       "lux.button-login.min-block-size": "ed495aee02296e7d2d6fd20455c56c85514f1c78",
+      "lux.button-login.gap": "2bab4632426c3db50d8ec643f2de2c5b7871509e",
       "lux.button-login.border-radius": "714dcaa1a2daffecb19272dea0ef3914c7c48667",
       "lux.button-login.border-width": "b6c3ae70761347271debeb4511d1cf9c2279deef",
       "lux.button-login.icon.size": "c0d05dd814df2cb187f25d50da8d8f3f0c4a6f14",
       "lux.button-login.line-height": "25977331112147dfcb62091e59411e698eb5e2f5",
       "lux.button-login.font-weight": "ff7ac870bab0e79873fcc97f0865b424fb290fc5",
-      "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92",
-      "lux.button-login.gap": "2bab4632426c3db50d8ec643f2de2c5b7871509e"
+      "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92"
     },
     "group": "component"
   },
