@@ -6,6 +6,10 @@
         "type": "dimension",
         "parent": "common/default",
         "description": "vervangen met product collectie"
+      },
+      "outline-offset": {
+        "value": "{lux.space.025-x}",
+        "type": "dimension"
       }
     },
     "size": {

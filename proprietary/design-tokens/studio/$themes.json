@@ -596,13 +596,13 @@
       "lux.button-login.padding-inline-end": "4ec21a261242d8d1e16b39d401e15dc2c329ab57",
       "lux.button-login.min-inline-size": "3aa3dd65262b0063cfcda770ed6f24c7d7d75443",
       "lux.button-login.min-block-size": "ed495aee02296e7d2d6fd20455c56c85514f1c78",
-      "lux.button-login.margin-inline": "2bab4632426c3db50d8ec643f2de2c5b7871509e",
       "lux.button-login.border-radius": "714dcaa1a2daffecb19272dea0ef3914c7c48667",
       "lux.button-login.border-width": "b6c3ae70761347271debeb4511d1cf9c2279deef",
       "lux.button-login.icon.size": "c0d05dd814df2cb187f25d50da8d8f3f0c4a6f14",
       "lux.button-login.line-height": "25977331112147dfcb62091e59411e698eb5e2f5",
       "lux.button-login.font-weight": "ff7ac870bab0e79873fcc97f0865b424fb290fc5",
-      "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92"
+      "lux.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92",
+      "lux.button-login.gap": "2bab4632426c3db50d8ec643f2de2c5b7871509e"
     },
     "group": "component"
   },

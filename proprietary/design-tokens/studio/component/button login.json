@@ -97,11 +97,10 @@
         "parent": "button login/default",
         "description": ""
       },
-      "margin-inline": {
+      "gap": {
         "value": "{lux.space.1-x}",
         "type": "dimension",
-        "parent": "button login/default",
-        "description": ""
+        "parent": "button login/default"
       },
       "border-radius": {
         "value": "{lux.border-radius.default}",
