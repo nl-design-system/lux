@@ -95,6 +95,29 @@ jobs:
           path: packages/storybook/dist/
           retention-days: 1
 
+  test:
+    runs-on: ubuntu-latest
+    needs: install
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: "Continuous Integration: test"
+        run: pnpm run --if-present test
+
   regression:
     runs-on: ubuntu-latest
     needs: build
@@ -121,29 +144,6 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: packages/storybook/dist/
           exitZeroOnChanges: "!(main)"
-
-  test:
-    runs-on: ubuntu-latest
-    needs: install
-
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
-
-      - name: Set up Node.js version
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: "Continuous Integration: test"
-        run: pnpm run --if-present test
 
   publish-website:
     runs-on: ubuntu-latest
