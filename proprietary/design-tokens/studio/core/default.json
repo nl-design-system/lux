@@ -513,22 +513,19 @@
     },
     "space": {
       "0-x": {
-        "value": "0rem",
+        "value": "0* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "025-x": {
-        "value": "0.125rem",
+        "value": "0.25* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "05-x": {
-        "value": "0.25rem",
+        "value": "0.5* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "1-x": {
         "value": "0.5rem",
@@ -537,46 +534,39 @@
         "description": ""
       },
       "105-x": {
-        "value": "0.75rem",
+        "value": "1.5* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "2-x": {
-        "value": "1rem",
+        "value": "2* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "3-x": {
-        "value": "1.5rem",
+        "value": "3* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "4-x": {
-        "value": "2rem",
+        "value": "4* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "5-x": {
-        "value": "2.5rem",
+        "value": "5* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "6-x": {
-        "value": "3rem",
+        "value": "6* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       },
       "7-x": {
-        "value": "3.5rem",
+        "value": "7* {lux.space.1-x}",
         "type": "dimension",
-        "parent": "core/default",
-        "description": ""
+        "parent": "core/default"
       }
     },
     "font-family": {

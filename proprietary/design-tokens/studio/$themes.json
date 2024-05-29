@@ -87,7 +87,6 @@
       "lux.border-width.default": "f1e1b4b3f9eb69045efb733840be42bb0f9e141b",
       "lux.border-width.m": "8a31c1ff1820337797a05eb0d989b599fd0cea83",
       "lux.border-width.none": "31ab440c46c372684ba7c4d6af7306fc8b3ef10b",
-      "lux.space.0-x": "a7243342a4528b9ccbf8bb229ee416eb213fa909",
       "lux.space.025-x": "1ebe641b2790457f3336e3c509984f9e63ada0e8",
       "lux.space.05-x": "9a717e23045eb1bf0da4df876a3c073dba76f0a3",
       "lux.space.1-x": "7e93355de2c74419aa06c6d02896d04bb1fdf0cd",
@@ -100,7 +99,8 @@
       "lux.space.7-x": "2ab21a68e3520cf91dbe973fed78ffc7cabf2de9",
       "lux.font-family.default": "fce12356ff8930eebd192c3b80b8ede070b6a08d",
       "lux.font-weight.regular": "a082ddec57a8f068b20b871868fe52ed40f6b148",
-      "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793"
+      "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793",
+      "lux.space.0-x": "a7243342a4528b9ccbf8bb229ee416eb213fa909"
     },
     "group": "core"
   },
