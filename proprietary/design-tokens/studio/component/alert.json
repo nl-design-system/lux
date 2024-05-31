@@ -11,15 +11,15 @@
       },
       "border-radius": {
         "value": "{lux.border-radius.default}",
-        "type": "dimension"
+        "type": "borderRadius"
       },
       "border-width": {
         "value": "{lux.border-width.default}",
-        "type": "dimension"
+        "type": "borderWidth"
       },
-      "column-gap": {
+      "gap": {
         "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-block-end": {
         "value": "{lux.space.105-x}",
@@ -27,32 +27,32 @@
       },
       "padding-block-start": {
         "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-inline-end": {
         "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-inline-start": {
         "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "icon-start-size": {
         "value": "24px",
-        "type": "dimension"
+        "type": "sizing"
       },
       "min-inline-size": {
         "value": "160px",
-        "type": "dimension"
+        "type": "sizing"
       },
       "close-button-size": {
         "value": "{lux.size.icon}",
-        "type": "dimension"
+        "type": "sizing"
       },
       "content": {
         "row-gap": {
           "value": "{lux.space.0-x}",
-          "type": "dimension"
+          "type": "spacing"
         }
       },
       "info": {

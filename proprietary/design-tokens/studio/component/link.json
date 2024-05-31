@@ -5,14 +5,14 @@
         "value": "{mode.link.color}",
         "type": "color"
       },
-      "margin-inline": {
+      "gap": {
         "value": "{lux.space.05-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "icon": {
         "size": {
-          "value": "{lux.button.icon.size}",
-          "type": "dimension"
+          "value": "{lux.size.icon}",
+          "type": "sizing"
         }
       },
       "hover": {
@@ -32,6 +32,30 @@
           "value": "{mode.link.visited.color}",
           "type": "color"
         }
+      },
+      "font-family": {
+        "value": "{lux.font-family.default}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.m}",
+        "type": "dimensions"
+      },
+      "font-size": {
+        "value": "{lux.font-size.m}",
+        "type": "dimensions"
+      }
+    }
+  },
+  "figma": {
+    "link": {
+      "font-family": {
+        "value": "{figma.font-family.default}",
+        "type": "text"
       }
     }
   }

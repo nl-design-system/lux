@@ -25,7 +25,7 @@
         "value": "{lux.space.1-x}",
         "type": "spacing"
       },
-      "margin-inline": {
+      "gap": {
         "value": "{lux.space.1-x}",
         "type": "spacing"
       },
