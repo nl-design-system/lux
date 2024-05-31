@@ -512,6 +512,8 @@
       "lux.link.hover.color": "b0c34158e04f76e6a5708c12f5c3241ae0eda265",
       "lux.link.active.color": "32dfe9d82f213b931f51d5d98bfe966cb106247c",
       "lux.link.visited.color": "08c38c3ec35f44134291776c356c954e4898f019",
+      "lux.link.line-height": "ba06cdf33e88663065dbb4897b7104aa7b8a3254",
+      "lux.link.font-size": "416e8baa7b33903731b5015457bb6100c9a5bb92",
       "figma.link.font-family": "63d9a53f49166228335691903d17d20b95115766",
       "lux.alert.color": "366da43378df9f28f9f99f003567d0d930f575b8",
       "lux.alert.border-color": "6c5d5ff013af6b8c69278b1ec8bdffa42aa964e6",
