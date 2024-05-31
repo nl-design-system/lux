@@ -60,77 +60,85 @@
       },
       "padding-block-start": {
         "value": "{lux.space.05-x}",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "button login/default",
         "description": ""
       },
       "padding-block-end": {
         "value": "{lux.space.05-x}",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "button login/default",
         "description": ""
       },
       "font-size": {
         "value": "18px",
-        "type": "dimension",
+        "type": "dimensions",
         "parent": "button login/default"
       },
       "padding-inline-start": {
         "value": "{lux.space.05-x}",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "button login/default"
       },
       "padding-inline-end": {
         "value": "{lux.space.2-x}",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "button login/default"
       },
       "min-inline-size": {
         "value": "{lux.size.target}",
-        "type": "dimension",
+        "type": "sizing",
         "parent": "button login/default",
         "description": ""
       },
       "min-block-size": {
         "value": "{lux.size.target}",
-        "type": "dimension",
+        "type": "sizing",
         "parent": "button login/default",
         "description": ""
       },
       "gap": {
         "value": "{lux.space.1-x}",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "button login/default"
       },
       "border-radius": {
         "value": "{lux.border-radius.default}",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "button login/default",
         "description": ""
       },
       "border-width": {
         "value": "{lux.border-width.default}",
-        "type": "dimension",
+        "type": "borderWidth",
         "parent": "button login/default"
       },
       "icon": {
         "size": {
           "value": "2.5rem",
-          "type": "dimension",
+          "type": "sizing",
           "parent": "button login/default",
           "description": ""
         }
       },
       "line-height": {
         "value": "28px",
-        "type": "dimension"
+        "type": "dimensions"
       },
       "font-weight": {
         "value": "{lux.font-weight.regular}",
-        "type": "text"
+        "type": "fontWeights"
       },
       "font-family": {
-        "value": "{lux.font-family.default}",
+        "value": "{figma.font-family.default}",
+        "type": "fontFamilies"
+      }
+    }
+  },
+  "figma": {
+    "button-login": {
+      "font-family": {
+        "value": "{figma.font-family.default}",
         "type": "text"
       }
     }

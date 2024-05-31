@@ -25,7 +25,7 @@
     "border-radius": {
       "default": {
         "value": "0.25rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "product/MijnOverheid",
         "description": ""
       }
@@ -33,13 +33,13 @@
     "focus": {
       "outline-width": {
         "value": "0.125rem",
-        "type": "dimension",
+        "type": "borderWidth",
         "parent": "product/MijnOverheid",
         "description": ""
       },
       "border-radius": {
         "value": "0.375rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "product/MijnOverheid",
         "description": ""
       }

@@ -25,7 +25,7 @@
     "border-radius": {
       "default": {
         "value": "0rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "product/NLdoc",
         "description": ""
       }
@@ -33,13 +33,13 @@
     "focus": {
       "outline-width": {
         "value": "0.0625rem",
-        "type": "dimension",
+        "type": "borderWidth",
         "parent": "product/NLdoc",
         "description": ""
       },
       "border-radius": {
         "value": "0rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "product/NLdoc",
         "description": ""
       }

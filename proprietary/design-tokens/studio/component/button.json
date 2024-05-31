@@ -11,43 +11,43 @@
       },
       "padding-inline-start": {
         "value": "{lux.space.2-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-block-start": {
         "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-inline-end": {
         "value": "{lux.space.2-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-block-end": {
         "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "margin-inline": {
         "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "min-inline-size": {
-        "type": "dimension",
+        "type": "sizing",
         "value": "{lux.size.target}"
       },
       "min-block-size": {
-        "type": "dimension",
+        "type": "sizing",
         "value": "{lux.size.target}"
       },
       "border-radius": {
-        "type": "dimension",
+        "type": "borderRadius",
         "value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "type": "dimension",
+        "type": "borderWidth",
         "value": "{lux.border-width.default}"
       },
       "icon": {
         "size": {
-          "type": "dimension",
+          "type": "sizing",
           "value": "{lux.size.icon}"
         }
       },
@@ -221,10 +221,10 @@
       },
       "font-weight": {
         "value": "{lux.font-weight.bold}",
-        "type": "text"
+        "type": "fontWeights"
       },
       "font-family": {
-        "value": "{lux.button-login.font-family}",
+        "value": "{figma.font-family.default}",
         "type": "text"
       }
     }

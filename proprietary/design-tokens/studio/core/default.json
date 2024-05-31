@@ -474,19 +474,19 @@
     "border-radius": {
       "default": {
         "value": "0.25rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "core/default",
         "description": ""
       },
       "circle": {
         "value": "62.4375rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "core/default",
         "description": ""
       },
       "none": {
         "value": "0rem",
-        "type": "dimension",
+        "type": "borderRadius",
         "parent": "core/default",
         "description": ""
       }
@@ -494,19 +494,19 @@
     "border-width": {
       "default": {
         "value": "0.0625rem",
-        "type": "dimension",
+        "type": "borderWidth",
         "parent": "core/default",
         "description": ""
       },
       "m": {
         "value": "0.125rem",
-        "type": "dimension",
+        "type": "borderWidth",
         "parent": "core/default",
         "description": ""
       },
       "none": {
         "value": "0rem",
-        "type": "dimension",
+        "type": "borderWidth",
         "parent": "core/default",
         "description": ""
       }
@@ -569,19 +569,27 @@
         "parent": "core/default"
       }
     },
-    "font-family": {
-      "default": {
-        "value": "RijksoverheidSansWebText",
-        "type": "text"
-      }
-    },
     "font-weight": {
       "regular": {
         "value": "Regular",
-        "type": "text"
+        "type": "fontWeights"
       },
       "bold": {
         "value": "Bold",
+        "type": "fontWeights"
+      }
+    },
+    "font-family": {
+      "default": {
+        "value": "RijksoverheidSansWebText, Arial",
+        "type": "fontFamilies"
+      }
+    }
+  },
+  "figma": {
+    "font-family": {
+      "default": {
+        "value": "RijksoverheidSansWebText",
         "type": "text"
       }
     }

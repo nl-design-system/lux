@@ -10,7 +10,7 @@
     },
     "screen-size": {
       "value": "90rem",
-      "type": "dimension",
+      "type": "sizing",
       "parent": "viewport (beta)/xl",
       "description": ""
     }
@@ -19,13 +19,13 @@
     "grid": {
       "gutter": {
         "value": "2rem",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "viewport (beta)/xl",
         "description": ""
       },
       "margin": {
         "value": "2.5rem",
-        "type": "dimension",
+        "type": "spacing",
         "parent": "viewport (beta)/xl",
         "description": ""
       }
@@ -34,14 +34,14 @@
       "icon": {
         "wrapper-height": {
           "value": "1.75rem",
-          "type": "dimension",
+          "type": "sizing",
           "parent": "viewport (beta)/xl",
           "description": ""
         }
       },
       "target [oud]": {
         "value": "3rem",
-        "type": "dimension",
+        "type": "sizing",
         "parent": "viewport (beta)/xl",
         "description": ""
       }
@@ -117,7 +117,7 @@
         "75%": {
           "padding-block-start": {
             "value": "2.5rem",
-            "type": "dimension",
+            "type": "spacing",
             "parent": "viewport (beta)/xl",
             "description": ""
           }
@@ -125,7 +125,7 @@
         "original": {
           "padding-block-start": {
             "value": "3.125rem",
-            "type": "dimension",
+            "type": "spacing",
             "parent": "viewport (beta)/xl",
             "description": ""
           }

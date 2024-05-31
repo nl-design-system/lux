@@ -5,19 +5,19 @@
         "default": {
           "value": "{lux.color.paars.300}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": "kleur van het product"
         },
         "subdued": {
           "value": "{lux.color.paars.200}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
           "value": "{lux.color.paars.400}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": "Hover kleur van het product"
         }
       }
@@ -25,22 +25,22 @@
     "border-radius": {
       "default": {
         "value": "0.25rem",
-        "type": "dimension",
-        "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "parent": "product/Eila",
         "description": ""
       }
     },
     "focus": {
       "outline-width": {
         "value": "0.125rem",
-        "type": "dimension",
-        "parent": "product/MijnOverheid",
+        "type": "borderWidth",
+        "parent": "product/Eila",
         "description": ""
       },
       "border-radius": {
         "value": "0.375rem",
-        "type": "dimension",
-        "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "parent": "product/Eila",
         "description": ""
       }
     }
@@ -51,36 +51,36 @@
         "background-color": {
           "value": "{lux.color.none}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": ""
         },
         "border-color": {
           "value": "{lux.color.brand.default}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": ""
         },
         "color": {
           "value": "{lux.color.brand.default}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": ""
         },
         "hover": {
           "border-color": {
             "value": "{lux.color.brand.default}",
             "type": "color",
-            "parent": "product/MijnOverheid"
+            "parent": "product/Eila"
           },
           "color": {
             "value": "{lux.color.brand.default}",
             "type": "color",
-            "parent": "product/MijnOverheid"
+            "parent": "product/Eila"
           },
           "background-color": {
             "value": "{lux.color.brand.subdued}",
             "type": "color",
-            "parent": "product/MijnOverheid",
+            "parent": "product/Eila",
             "description": ""
           }
         }
@@ -89,19 +89,19 @@
         "color": {
           "value": "{lux.color.brand.default}",
           "type": "color",
-          "parent": "product/MijnOverheid",
+          "parent": "product/Eila",
           "description": ""
         },
         "hover": {
           "color": {
             "value": "{lux.color.brand.default}",
             "type": "color",
-            "parent": "product/MijnOverheid"
+            "parent": "product/Eila"
           },
           "background-color": {
             "value": "{lux.color.brand.subdued}",
             "type": "color",
-            "parent": "product/MijnOverheid",
+            "parent": "product/Eila",
             "description": ""
           }
         }
