@@ -81,7 +81,7 @@
       },
       "padding-inline-start": {
         "type": "dimension",
-        "value": "{lux.space.05-x}"
+        "value": "{lux.space.5-x}"
       }
     }
   }
