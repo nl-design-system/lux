@@ -42,7 +42,7 @@
     "@babel/preset-env": "7.24.4",
     "@babel/preset-react": "7.24.1",
     "@babel/preset-typescript": "7.24.1",
-    "@babel/runtime": "7.24.4",
+    "@babel/runtime": "7.24.6",
     "@jest/globals": "29.7.0",
     "@lux/components-css": "workspace:*",
     "@rollup/plugin-babel": "6.0.4",
