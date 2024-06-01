@@ -23,7 +23,7 @@
       },
       "padding-block-end": {
         "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "spacing"
       },
       "padding-block-start": {
         "value": "{lux.space.105-x}",
@@ -78,6 +78,30 @@
           "value": "{lux.color.feedback.warning.subdued}",
           "type": "color"
         }
+      },
+      "line-height": {
+        "value": "{lux.line-height.m}",
+        "type": "dimension"
+      },
+      "font-size": {
+        "value": "{lux.font-size.m}",
+        "type": "dimension"
+      },
+      "font-family": {
+        "value": "{lux.font-family.default}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "text"
+      }
+    }
+  },
+  "figma": {
+    "alert": {
+      "font-family": {
+        "value": "{figma.font-family.default}",
+        "type": "text"
       }
     }
   }

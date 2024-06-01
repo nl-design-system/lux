@@ -221,8 +221,16 @@
       },
       "font-weight": {
         "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "type": "text"
       },
+      "font-family": {
+        "value": "{lux.font-family.default}",
+        "type": "fontFamilies"
+      }
+    }
+  },
+  "figma": {
+    "button": {
       "font-family": {
         "value": "{figma.font-family.default}",
         "type": "text"

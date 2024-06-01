@@ -39,7 +39,7 @@
       },
       "font-weight": {
         "value": "{lux.font-weight.regular}",
-        "type": "fontWeights"
+        "type": "text"
       },
       "line-height": {
         "value": "{lux.line-height.m}",

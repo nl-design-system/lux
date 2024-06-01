@@ -4,7 +4,8 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled"
+      "core/default": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2312:22",
     "$figmaModeId": "2312:2",
@@ -98,6 +99,8 @@
       "lux.space.5-x": "633b352f9ef259b3bff0bdd232fe78ffd3eda5f4",
       "lux.space.6-x": "12badb64db7d39e916362f7fde6edef64472d64d",
       "lux.space.7-x": "2ab21a68e3520cf91dbe973fed78ffc7cabf2de9",
+      "lux.font-weight.regular": "a082ddec57a8f068b20b871868fe52ed40f6b148",
+      "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793",
       "figma.font-family.default": "fce12356ff8930eebd192c3b80b8ede070b6a08d"
     },
     "group": "core"
@@ -107,7 +110,8 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled"
+      "common/default": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -125,7 +129,8 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled"
+      "mode/light": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -178,7 +183,8 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark (beta)": "enabled"
+      "mode/dark (beta)": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -231,7 +237,8 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled"
+      "product/Logius": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -259,7 +266,8 @@
     "name": "MijnOverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/MijnOverheid": "enabled"
+      "product/MijnOverheid": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -287,7 +295,8 @@
     "name": "DigiD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/DigiD": "enabled"
+      "product/DigiD": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -315,7 +324,8 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc/mapping": "enabled"
+      "product/NLdoc/mapping": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -343,7 +353,8 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xl": "enabled"
+      "common/viewport (beta)/xl": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -374,7 +385,8 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/lg": "enabled"
+      "common/viewport (beta)/lg": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -405,7 +417,8 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/md": "enabled"
+      "common/viewport (beta)/md": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -436,7 +449,8 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/sm": "enabled"
+      "common/viewport (beta)/sm": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -467,7 +481,8 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xs": "enabled"
+      "common/viewport (beta)/xs": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -501,7 +516,8 @@
       "component/link": "enabled",
       "component/alert": "enabled",
       "component/button": "enabled",
-      "component/button login": "enabled"
+      "component/button login": "enabled",
+      "product/Elia": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2337:49",
     "$figmaModeId": "2337:2",
@@ -512,6 +528,7 @@
       "lux.link.hover.color": "b0c34158e04f76e6a5708c12f5c3241ae0eda265",
       "lux.link.active.color": "32dfe9d82f213b931f51d5d98bfe966cb106247c",
       "lux.link.visited.color": "08c38c3ec35f44134291776c356c954e4898f019",
+      "lux.link.font-weight": "e917c01553d25272d5d18d7dfad42f5299c6315a",
       "lux.link.line-height": "ba06cdf33e88663065dbb4897b7104aa7b8a3254",
       "lux.link.font-size": "416e8baa7b33903731b5015457bb6100c9a5bb92",
       "figma.link.font-family": "63d9a53f49166228335691903d17d20b95115766",
@@ -532,6 +549,10 @@
       "lux.alert.success.background-color": "2df87b8a8982f383c7d0b48aeb5cf6dbb3d58611",
       "lux.alert.error.background-color": "bb838aef7e77da23b133d16e1a85ce24be038aa9",
       "lux.alert.warning.background-color": "8d473a0ec73b2eaf10d224e2ec87c0605396e112",
+      "lux.alert.line-height": "657d34e2cb36dbfa84f289945702d2bf64e2addf",
+      "lux.alert.font-size": "e5f533fa546ffb59f2051898d8eeeca4a00bca6c",
+      "lux.alert.font-weight": "1088274c5a6c5aa8b38814f42d4cde5cfe4e16b4",
+      "figma.alert.font-family": "dc5084d5b4b5a7df7da7678083c84e645ce30193",
       "lux.button.font-size": "8a19589464da76155e23994cc16e1cf3c6bc00d7",
       "lux.button.line-height": "7a19951a4b5dfb377e055f295fe918f678e582fe",
       "lux.button.padding-inline-start": "6c416a16a47b9986a0fe83fda43009ab31e9fb40",
@@ -580,7 +601,7 @@
       "lux.button.tertairy.disabled.background-color": "c7ab915f76b445cd4721d8cefd41cab330c6aa68",
       "lux.button.tertairy.disabled.border-color": "66c1d6712d148e31d186f7bd2db4c7ed079b9696",
       "lux.button.tertairy.disabled.color": "078edb63651fed2e34951cfc87d97ebd0944344f",
-      "lux.button.font-family": "e77f4c3d25c4bbe3e0ae0f3c179f20c191d419d1",
+      "lux.button.font-weight": "b348be96afe32c5b653432454ac127274068432a",
       "lux.button-login.color": "d0b84fbbf5fffb5a7c0addf080335996ba737b9e",
       "lux.button-login.background-color": "1bd64527eb9f0c40aae5b215afb0123d42c772c6",
       "lux.button-login.border-color": "027787a5994a9f58ce2e74566aaa645ce36eb94f",
@@ -600,18 +621,19 @@
       "lux.button-login.border-radius": "714dcaa1a2daffecb19272dea0ef3914c7c48667",
       "lux.button-login.border-width": "b6c3ae70761347271debeb4511d1cf9c2279deef",
       "lux.button-login.icon.size": "c0d05dd814df2cb187f25d50da8d8f3f0c4a6f14",
-      "figma.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92"
+      "lux.button-login.font-weight": "ff7ac870bab0e79873fcc97f0865b424fb290fc5",
+      "figma.button-login.font-family": "aba0906532d1e97680894d2f3e2a04b9bba0fe92",
+      "figma.button.font-family": "e77f4c3d25c4bbe3e0ae0f3c179f20c191d419d1"
     },
     "group": "component"
   },
   {
     "id": "773e4852cfcc71ef32dbd36c8904bc54519ed1cf",
-    "name": "Eila",
+    "name": "Elia",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Eila": "enabled"
+      "product/Elia": "enabled"
     },
-    "group": "product",
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
     "$figmaVariableReferences": {
@@ -630,6 +652,7 @@
       "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
-    }
+    },
+    "group": "product"
   }
 ]

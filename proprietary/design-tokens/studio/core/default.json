@@ -572,11 +572,11 @@
     "font-weight": {
       "regular": {
         "value": "Regular",
-        "type": "fontWeights"
+        "type": "text"
       },
       "bold": {
         "value": "Bold",
-        "type": "fontWeights"
+        "type": "text"
       }
     },
     "font-family": {
