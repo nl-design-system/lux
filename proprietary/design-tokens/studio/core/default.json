@@ -492,12 +492,12 @@
       "default": {
         "parent": "core/default",
         "type": "borderWidth",
-        "value": "4px"
+        "value": "1px"
       },
       "m": {
         "parent": "core/default",
         "type": "borderWidth",
-        "value": "8px"
+        "value": "2px"
       },
       "none": {
         "parent": "core/default",
