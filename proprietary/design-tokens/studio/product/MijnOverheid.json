@@ -3,44 +3,44 @@
     "color": {
       "brand": {
         "default": {
-          "value": "{lux.color.hemelblauw.300}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.hemelblauw.300}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "value": "{lux.color.hemelblauw.100}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.hemelblauw.100}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "value": "{lux.color.hemelblauw.400}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.hemelblauw.400}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "value": "0.25rem",
-        "type": "borderRadius",
         "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "value": "0.25rem",
         "description": ""
       }
     },
     "focus": {
       "outline-width": {
-        "value": "0.125rem",
-        "type": "borderWidth",
         "parent": "product/MijnOverheid",
+        "type": "borderWidth",
+        "value": "0.125rem",
         "description": ""
       },
       "border-radius": {
-        "value": "0.375rem",
-        "type": "borderRadius",
         "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "value": "0.375rem",
         "description": ""
       }
     }
@@ -49,62 +49,62 @@
     "button": {
       "secondary": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "background-color": {
-            "value": "{lux.color.brand.subdued}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
             "description": ""
           }
         }
       },
       "tertiary": {
         "color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "background-color": {
-            "value": "{lux.color.brand.subdued}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
             "description": ""
           }
         }

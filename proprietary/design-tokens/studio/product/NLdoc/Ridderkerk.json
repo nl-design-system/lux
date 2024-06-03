@@ -3,30 +3,30 @@
     "color": {
       "brand": {
         "default": {
-          "value": "#028532",
-          "type": "color",
           "parent": "NLdoc / Organisatie/Ridderkerk",
+          "type": "color",
+          "value": "#028532",
           "description": ""
         },
         "subdued": {
-          "value": "#d9ede0",
-          "type": "color",
           "parent": "NLdoc / Organisatie/Ridderkerk",
+          "type": "color",
+          "value": "#d9ede0",
           "description": ""
         },
         "hover": {
-          "value": "#026732",
-          "type": "color",
           "parent": "NLdoc / Organisatie/Ridderkerk",
+          "type": "color",
+          "value": "#026732",
           "description": ""
         }
       }
     },
     "button": {
       "color": {
-        "value": "{lux.color.grijs.700}",
-        "type": "color",
         "parent": "NLdoc / Organisatie/Ridderkerk",
+        "type": "color",
+        "value": "{lux.color.grijs.700}",
         "description": ""
       }
     }

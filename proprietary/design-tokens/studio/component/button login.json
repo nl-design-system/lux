@@ -2,144 +2,136 @@
   "lux": {
     "button-login": {
       "color": {
-        "value": "{lux.color.brand.default}",
+        "parent": "button login/default",
         "type": "color",
-        "parent": "button login/default"
+        "value": "{lux.color.brand.default}"
       },
       "background-color": {
-        "value": "{lux.color.background.default}",
-        "type": "color",
         "parent": "button login/default",
+        "type": "color",
+        "value": "{lux.color.background.default}",
         "description": ""
       },
       "border-color": {
-        "value": "{lux.color.border.default}",
-        "type": "color",
         "parent": "button login/default",
+        "type": "color",
+        "value": "{lux.color.border.default}",
         "description": ""
       },
       "hover": {
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color",
           "parent": "button login/default",
+          "type": "color",
+          "value": "{lux.color.foreground.default}",
           "description": ""
         },
         "background-color": {
-          "value": "{lux.color.background.hover}",
-          "type": "color",
           "parent": "button login/default",
+          "type": "color",
+          "value": "{lux.color.background.hover}",
           "description": ""
         },
         "border-color": {
-          "value": "{lux.color.border.default}",
-          "type": "color",
           "parent": "button login/default",
+          "type": "color",
+          "value": "{lux.color.border.default}",
           "description": ""
         }
       },
       "active": {
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color",
           "parent": "button login/default",
+          "type": "color",
+          "value": "{lux.color.foreground.default}",
           "description": ""
         },
         "background-color": {
-          "value": "{mode.button-login.active.background-color}",
-          "type": "color",
           "parent": "button login/default",
+          "type": "color",
+          "value": "{mode.button-login.active.background-color}",
           "description": ""
         },
         "border-color": {
-          "value": "{lux.color.border.strong}",
-          "type": "color",
           "parent": "button login/default",
+          "type": "color",
+          "value": "{lux.color.border.strong}",
           "description": ""
         }
       },
       "padding-block-start": {
-        "value": "{lux.space.05-x}",
-        "type": "spacing",
         "parent": "button login/default",
+        "type": "spacing",
+        "value": "{lux.space.05-x}",
         "description": ""
       },
       "padding-block-end": {
-        "value": "{lux.space.05-x}",
-        "type": "spacing",
         "parent": "button login/default",
+        "type": "spacing",
+        "value": "{lux.space.05-x}",
         "description": ""
       },
       "font-size": {
-        "value": "18px",
-        "type": "dimensions",
-        "parent": "button login/default"
+        "parent": "button login/default",
+        "type": "fontSizes",
+        "value": "18px"
       },
       "padding-inline-start": {
-        "value": "{lux.space.05-x}",
+        "parent": "button login/default",
         "type": "spacing",
-        "parent": "button login/default"
+        "value": "{lux.space.05-x}"
       },
       "padding-inline-end": {
-        "value": "{lux.space.2-x}",
+        "parent": "button login/default",
         "type": "spacing",
-        "parent": "button login/default"
+        "value": "{lux.space.2-x}"
       },
       "min-inline-size": {
-        "value": "{lux.size.target}",
-        "type": "sizing",
         "parent": "button login/default",
+        "type": "sizing",
+        "value": "{lux.size.target}",
         "description": ""
       },
       "min-block-size": {
-        "value": "{lux.size.target}",
-        "type": "sizing",
         "parent": "button login/default",
+        "type": "sizing",
+        "value": "{lux.size.target}",
         "description": ""
       },
       "gap": {
-        "value": "{lux.space.1-x}",
+        "parent": "button login/default",
         "type": "spacing",
-        "parent": "button login/default"
+        "value": "{lux.space.1-x}"
       },
       "border-radius": {
-        "value": "{lux.border-radius.default}",
-        "type": "borderRadius",
         "parent": "button login/default",
+        "type": "borderRadius",
+        "value": "{lux.border-radius.default}",
         "description": ""
       },
       "border-width": {
-        "value": "{lux.border-width.default}",
+        "parent": "button login/default",
         "type": "borderWidth",
-        "parent": "button login/default"
+        "value": "{lux.border-width.default}"
       },
       "icon": {
         "size": {
-          "value": "2.5rem",
-          "type": "sizing",
           "parent": "button login/default",
+          "type": "sizing",
+          "value": "2.5rem",
           "description": ""
         }
       },
       "line-height": {
-        "value": "28px",
-        "type": "dimensions"
+        "type": "lineHeights",
+        "value": "28px"
       },
       "font-weight": {
-        "value": "{lux.font-weight.regular}",
-        "type": "text"
+        "type": "fontWeights",
+        "value": "{lux.font-weight.regular}"
       },
       "font-family": {
-        "value": "{figma.font-family.default}",
-        "type": "fontFamilies"
-      }
-    }
-  },
-  "figma": {
-    "button-login": {
-      "font-family": {
-        "value": "{figma.font-family.default}",
-        "type": "text"
+        "type": "fontFamilies",
+        "value": "{lux.font-family.default}"
       }
     }
   }

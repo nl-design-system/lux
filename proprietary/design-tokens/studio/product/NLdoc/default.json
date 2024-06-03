@@ -3,30 +3,30 @@
     "color": {
       "brand": {
         "default": {
-          "value": "{lux.color.violet.300}",
-          "type": "color",
           "parent": "NLdoc / Organisatie/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.300}",
           "description": ""
         },
         "subdued": {
-          "value": "{lux.color.violet.100}",
-          "type": "color",
           "parent": "NLdoc / Organisatie/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.100}",
           "description": ""
         },
         "hover": {
-          "value": "{lux.color.violet.400}",
-          "type": "color",
           "parent": "NLdoc / Organisatie/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.400}",
           "description": ""
         }
       }
     },
     "button": {
       "color": {
-        "value": "{nldoc.color.brand.default}",
-        "type": "color",
         "parent": "NLdoc / Organisatie/NLdoc",
+        "type": "color",
+        "value": "{nldoc.color.brand.default}",
         "description": ""
       }
     }

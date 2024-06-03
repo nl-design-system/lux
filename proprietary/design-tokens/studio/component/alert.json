@@ -2,106 +2,98 @@
   "lux": {
     "alert": {
       "color": {
-        "value": "{lux.color.grijs.700}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.grijs.700}"
       },
       "border-color": {
-        "value": "{lux.color.none}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.none}"
       },
       "border-radius": {
-        "value": "{lux.border-radius.default}",
-        "type": "borderRadius"
+        "type": "borderRadius",
+        "value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "value": "{lux.border-width.default}",
-        "type": "borderWidth"
+        "type": "borderWidth",
+        "value": "{lux.border-width.default}"
       },
       "gap": {
-        "value": "{lux.space.1-x}",
-        "type": "spacing"
+        "type": "spacing",
+        "value": "{lux.space.1-x}"
       },
       "padding-block-end": {
-        "value": "{lux.space.105-x}",
-        "type": "spacing"
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
       },
       "padding-block-start": {
-        "value": "{lux.space.105-x}",
-        "type": "spacing"
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
       },
       "padding-inline-end": {
-        "value": "{lux.space.105-x}",
-        "type": "spacing"
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
       },
       "padding-inline-start": {
-        "value": "{lux.space.105-x}",
-        "type": "spacing"
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
       },
       "icon-start-size": {
-        "value": "24px",
-        "type": "sizing"
+        "type": "sizing",
+        "value": "24px"
       },
       "min-inline-size": {
-        "value": "160px",
-        "type": "sizing"
+        "type": "sizing",
+        "value": "160px"
       },
       "close-button-size": {
-        "value": "{lux.size.icon}",
-        "type": "sizing"
+        "type": "sizing",
+        "value": "{lux.size.icon}"
       },
       "content": {
         "row-gap": {
-          "value": "{lux.space.0-x}",
-          "type": "spacing"
+          "type": "spacing",
+          "value": "{lux.space.0-x}"
         }
       },
       "info": {
         "background-color": {
-          "value": "{lux.color.feedback.info.subdued}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.feedback.info.subdued}"
         }
       },
       "success": {
         "background-color": {
-          "value": "{lux.color.feedback.success.subdued}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.feedback.success.subdued}"
         }
       },
       "error": {
         "background-color": {
-          "value": "{lux.color.feedback.error.subdued}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.feedback.error.subdued}"
         }
       },
       "warning": {
         "background-color": {
-          "value": "{lux.color.feedback.warning.subdued}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.feedback.warning.subdued}"
         }
       },
       "line-height": {
-        "value": "{lux.line-height.m}",
-        "type": "dimension"
+        "type": "lineHeights",
+        "value": "{lux.line-height.m}"
       },
       "font-size": {
-        "value": "{lux.font-size.m}",
-        "type": "dimension"
+        "type": "fontSizes",
+        "value": "{lux.font-size.m}"
       },
       "font-family": {
-        "value": "{lux.font-family.default}",
-        "type": "fontFamilies"
+        "type": "fontFamilies",
+        "value": "{lux.font-family.default}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.regular}",
-        "type": "text"
-      }
-    }
-  },
-  "figma": {
-    "alert": {
-      "font-family": {
-        "value": "{figma.font-family.default}",
-        "type": "text"
+        "type": "fontWeight",
+        "value": "{lux.font-weight.regular}"
       }
     }
   }

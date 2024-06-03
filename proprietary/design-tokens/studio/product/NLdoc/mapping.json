@@ -3,44 +3,44 @@
     "color": {
       "brand": {
         "default": {
-          "value": "{nldoc.color.brand.default}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.color.brand.default}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "value": "{nldoc.color.brand.subdued}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.color.brand.subdued}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "value": "{nldoc.color.brand.hover}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.color.brand.hover}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "value": "0rem",
-        "type": "borderRadius",
         "parent": "product/NLdoc",
+        "type": "borderRadius",
+        "value": "0rem",
         "description": ""
       }
     },
     "focus": {
       "outline-width": {
-        "value": "0.0625rem",
-        "type": "borderWidth",
         "parent": "product/NLdoc",
+        "type": "borderWidth",
+        "value": "0.0625rem",
         "description": ""
       },
       "border-radius": {
-        "value": "0rem",
-        "type": "borderRadius",
         "parent": "product/NLdoc",
+        "type": "borderRadius",
+        "value": "0rem",
         "description": ""
       }
     }
@@ -49,62 +49,62 @@
     "button": {
       "secondary": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "value": "{nldoc.button.color}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.button.color}",
           "description": ""
         },
         "color": {
-          "value": "{nldoc.button.color}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.button.color}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "value": "{nldoc.color.brand.hover}",
-            "type": "color",
             "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.color.brand.hover}",
             "description": ""
           },
           "color": {
-            "value": "{nldoc.button.color}",
-            "type": "color",
             "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.button.color}",
             "description": ""
           },
           "background-color": {
-            "value": "{nldoc.color.brand.subdued}",
-            "type": "color",
             "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.color.brand.subdued}",
             "description": ""
           }
         }
       },
       "tertiary": {
         "color": {
-          "value": "{nldoc.button.color}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.button.color}",
           "description": ""
         },
         "hover": {
           "color": {
-            "value": "{nldoc.button.color}",
-            "type": "color",
             "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.button.color}",
             "description": ""
           },
           "background-color": {
-            "value": "{nldoc.color.brand.subdued}",
-            "type": "color",
             "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.color.brand.subdued}",
             "description": ""
           }
         }

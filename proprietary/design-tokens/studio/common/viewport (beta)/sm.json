@@ -2,111 +2,111 @@
   "figma": {
     "rijkslint": {
       "variant": {
-        "value": "default",
-        "type": "text",
         "parent": "viewport (beta)/sm",
+        "type": "text",
+        "value": "default",
         "description": ""
       }
     },
     "screen-size": {
-      "value": "36rem",
-      "type": "sizing",
       "parent": "viewport (beta)/sm",
+      "type": "sizing",
+      "value": "36rem",
       "description": ""
     }
   },
   "lux": {
     "grid": {
       "gutter": {
-        "value": "1.5rem",
-        "type": "spacing",
         "parent": "viewport (beta)/sm",
+        "type": "spacing",
+        "value": "1.5rem",
         "description": ""
       },
       "margin": {
-        "value": "1.5rem",
-        "type": "spacing",
         "parent": "viewport (beta)/sm",
+        "type": "spacing",
+        "value": "1.5rem",
         "description": ""
       }
     },
     "size": {
       "icon": {
         "wrapper-height": {
-          "value": "1.75rem",
-          "type": "sizing",
           "parent": "viewport (beta)/sm",
+          "type": "sizing",
+          "value": "1.75rem",
           "description": ""
         }
       },
       "target [oud]": {
-        "value": "3rem",
-        "type": "sizing",
         "parent": "viewport (beta)/sm",
+        "type": "sizing",
+        "value": "3rem",
         "description": ""
       }
     },
     "font-size": {
       "s": {
-        "value": "1rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "fontSizes",
+        "value": "1rem",
         "description": ""
       },
       "m": {
-        "value": "1.125rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "fontSizes",
+        "value": "1.125rem",
         "description": ""
       },
       "l": {
-        "value": "1.375rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "fontSizes",
+        "value": "1.375rem",
         "description": ""
       },
       "xl": {
-        "value": "1.625rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "fontSizes",
+        "value": "1.625rem",
         "description": ""
       },
       "2xl": {
-        "value": "2.5rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "fontSizes",
+        "value": "2.5rem",
         "description": ""
       }
     },
     "line-height": {
       "s": {
-        "value": "1.5rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "lineHeights",
+        "value": "1.5rem",
         "description": ""
       },
       "m": {
-        "value": "1.75rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "lineHeights",
+        "value": "1.75rem",
         "description": ""
       },
       "l": {
-        "value": "2rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "lineHeights",
+        "value": "2rem",
         "description": ""
       },
       "xl": {
-        "value": "2.25rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "lineHeights",
+        "value": "2.25rem",
         "description": ""
       },
       "2xl": {
-        "value": "3.5rem",
-        "type": "dimension",
         "parent": "viewport (beta)/sm",
+        "type": "lineHeights",
+        "value": "3.5rem",
         "description": ""
       }
     }
@@ -116,17 +116,17 @@
       "wordmark": {
         "75%": {
           "padding-block-start": {
-            "value": "2.5rem",
-            "type": "spacing",
             "parent": "viewport (beta)/sm",
+            "type": "spacing",
+            "value": "2.5rem",
             "description": ""
           }
         },
         "original": {
           "padding-block-start": {
-            "value": "3.125rem",
-            "type": "spacing",
             "parent": "viewport (beta)/sm",
+            "type": "spacing",
+            "value": "3.125rem",
             "description": ""
           }
         }

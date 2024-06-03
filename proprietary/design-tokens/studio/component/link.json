@@ -2,60 +2,52 @@
   "lux": {
     "link": {
       "color": {
-        "value": "{mode.link.color}",
-        "type": "color"
+        "type": "color",
+        "value": "{mode.link.color}"
       },
       "gap": {
-        "value": "{lux.space.05-x}",
-        "type": "spacing"
+        "type": "spacing",
+        "value": "{lux.space.05-x}"
       },
       "icon": {
         "size": {
-          "value": "{lux.size.icon}",
-          "type": "sizing"
+          "type": "sizing",
+          "value": "{lux.size.icon}"
         }
       },
       "hover": {
         "color": {
-          "value": "{mode.link.hover.color}",
-          "type": "color"
+          "type": "color",
+          "value": "{mode.link.hover.color}"
         }
       },
       "active": {
         "color": {
-          "value": "{mode.link.active.color}",
-          "type": "color"
+          "type": "color",
+          "value": "{mode.link.active.color}"
         }
       },
       "visited": {
         "color": {
-          "value": "{mode.link.visited.color}",
-          "type": "color"
+          "type": "color",
+          "value": "{mode.link.visited.color}"
         }
       },
       "font-family": {
-        "value": "{lux.font-family.default}",
-        "type": "fontFamilies"
+        "type": "fontFamilies",
+        "value": "{lux.font-family.default}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.regular}",
-        "type": "text"
+        "type": "fontWeights",
+        "value": "{lux.font-weight.regular}"
       },
       "line-height": {
-        "value": "{lux.line-height.m}",
-        "type": "dimension"
+        "type": "lineHeights",
+        "value": "{lux.line-height.m}"
       },
       "font-size": {
-        "value": "{lux.font-size.m}",
-        "type": "dimension"
-      }
-    }
-  },
-  "figma": {
-    "link": {
-      "font-family": {
-        "value": "{figma.font-family.default}",
-        "type": "text"
+        "type": "fontSizes",
+        "value": "{lux.font-size.m}"
       }
     }
   }

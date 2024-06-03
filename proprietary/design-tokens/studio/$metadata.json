@@ -22,6 +22,7 @@
     "component/button",
     "component/alert",
     "component/link",
-    "nl/utrecht-mapping"
+    "nl/utrecht-button",
+    "tokens"
   ]
 }
