@@ -4,8 +4,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled",
-      "core/try-out": "enabled"
+      "core/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:1003",
     "$figmaModeId": "7:30",
@@ -111,12 +110,15 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled",
-      "common/try-out": "enabled"
+      "common/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
     "$figmaVariableReferences": {
+      "try.font-family.core": "4708d30b630bbfa67dc763baf58b0a0a5f5223f0",
+      "try.font-family.common": "81ffb5c9eedcb728d82bc5174428271a38c7f342",
+      "try.font-family.component": "2c63707e4e2a6792450a54fa97689a867b6a4c0f",
+      "try.outline-offset.reference": "3b9b93a6e190e156733050d1dd0a4a8ca42a6341",
       "lux.focus.outline-offset": "c56e3f5cd7a6ef8cc90fc3e59cfc06021f59de08",
       "lux.size.target": "48a70abc389058105c74b14fbec860fc3ab0e339",
       "lux.size.icon": "a3c95921a6a2913b21bb14a0b67255ae7db101ca",
@@ -129,10 +131,7 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "mode/light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -185,10 +184,7 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark (beta)": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "mode/dark (beta)": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -242,10 +238,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius": "enabled",
-      "core/default": "source",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -277,10 +270,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "core/default": "source",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -312,10 +302,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "core/default": "source",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -347,10 +334,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/NLdoc/mapping": "enabled",
-      "core/default": "source",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -381,10 +365,7 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xl": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "common/viewport (beta)/xl": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -415,10 +396,7 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/lg": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "common/viewport (beta)/lg": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -449,10 +427,7 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/md": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "common/viewport (beta)/md": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -483,10 +458,7 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/sm": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "common/viewport (beta)/sm": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -517,10 +489,7 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xs": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "common/viewport (beta)/xs": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -554,8 +523,7 @@
       "component/link": "enabled",
       "component/alert": "enabled",
       "component/button": "enabled",
-      "component/button login": "enabled",
-      "component/try-out": "enabled"
+      "component/button login": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1503:3470",
     "$figmaModeId": "1503:2",
@@ -675,10 +643,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Elia": "enabled",
-      "core/default": "source",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -709,10 +674,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "nl/utrecht-button": "enabled",
-      "component/try-out": "disabled",
-      "common/try-out": "disabled",
-      "core/try-out": "disabled"
+      "nl/utrecht-button": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",

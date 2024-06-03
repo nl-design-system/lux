@@ -1,9 +1,7 @@
 {
   "tokenSetOrder": [
     "core/default",
-    "core/try-out",
     "common/default",
-    "common/try-out",
     "common/viewport (beta)/xl",
     "common/viewport (beta)/lg",
     "common/viewport (beta)/md",
@@ -24,7 +22,6 @@
     "component/button",
     "component/alert",
     "component/link",
-    "component/try-out",
     "nl/utrecht-button",
     "nl/utrecht-alert",
     "nl/utrecht-link"
