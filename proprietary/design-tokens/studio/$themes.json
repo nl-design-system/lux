@@ -115,10 +115,6 @@
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
     "$figmaVariableReferences": {
-      "try.font-family.core": "4708d30b630bbfa67dc763baf58b0a0a5f5223f0",
-      "try.font-family.common": "81ffb5c9eedcb728d82bc5174428271a38c7f342",
-      "try.font-family.component": "2c63707e4e2a6792450a54fa97689a867b6a4c0f",
-      "try.outline-offset.reference": "3b9b93a6e190e156733050d1dd0a4a8ca42a6341",
       "lux.focus.outline-offset": "c56e3f5cd7a6ef8cc90fc3e59cfc06021f59de08",
       "lux.size.target": "48a70abc389058105c74b14fbec860fc3ab0e339",
       "lux.size.icon": "a3c95921a6a2913b21bb14a0b67255ae7db101ca",
