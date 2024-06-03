@@ -35,7 +35,8 @@
       },
       "inline-size": {
         "type": "sizing",
-        "value": "{lux.button.inline-size}"
+        "value": "{lux.button.inline-size}",
+        "description": "Wat is dit voor token? Waarom zit deze in de button? "
       },
       "line-height": {
         "type": "lineHeights",
@@ -85,8 +86,13 @@
       },
       "icon": {
         "gap": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {}
+            }
+          },
           "type": "spacing",
-          "value": "{lux.button.icon.gap}"
+          "value": "{lux.button.gap}"
         },
         "size": {
           "type": "sizing",
@@ -168,7 +174,7 @@
         },
         "border-width": {
           "type": "borderWidth",
-          "value": "{lux.button.primary.border-width}"
+          "value": "{lux.button.border-width}"
         },
         "color": {
           "type": "color",
@@ -176,7 +182,7 @@
         },
         "font-weight": {
           "type": "fontWeight",
-          "value": "{lux.button.primary.font-weight}"
+          "value": "{lux.button.font-weight}"
         },
         "active": {
           "background-color": {
@@ -263,8 +269,8 @@
           "value": "{lux.button.secondary.border-color}"
         },
         "border-width": {
-          "type": "color",
-          "value": "{lux.button.secondary.border-width}"
+          "type": "borderWidth",
+          "value": "{lux.button.border-width}"
         },
         "color": {
           "type": "color",
@@ -272,7 +278,7 @@
         },
         "font-weight": {
           "type": "fontWeight",
-          "value": "{lux.button.secondary.font-weight}"
+          "value": "{lux.button.font-weight}"
         },
         "active": {
           "background-color": {
@@ -352,68 +358,68 @@
       "subtle": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.subtle.background-color}"
+          "value": "{lux.button.tertairy.background-color}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.subtle.border-color}"
+          "value": "{lux.button.tertairy.border-color}"
         },
         "border-width": {
           "type": "borderWidth",
-          "value": "{lux.button.subtle.border-width}"
+          "value": "{lux.button.border-width}"
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.subtle.color}"
+          "value": "{lux.button.tertairy.color}"
         },
         "font-weight": {
           "type": "fontWeight",
-          "value": "{lux.button.subtle.font-weight}"
+          "value": "{lux.button.font-weight}"
         },
         "active": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.subtle.active.background-color}"
+            "value": "{lux.button.tertairy.active.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.subtle.active.border-color}"
+            "value": "{lux.button.tertairy.active.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.subtle.active.color}"
+            "value": "{lux.button.tertairy.active.color}"
           }
         },
         "disabled": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.subtle.disabled.background-color}"
+            "value": "{lux.button.tertairy.disabled.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.subtle.disabled.border-color}"
+            "value": "{lux.button.tertairy.disabled.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.subtle.disabled.color}"
+            "value": "{lux.button.tertairy.disabled.color}"
           }
         },
         "hover": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.subtle.hover.background-color}"
+            "value": "{lux.button.tertairy.hover.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.subtle.hover.border-color}"
+            "value": "{lux.button.tertairy.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.subtle.hover.color}"
+            "value": "{lux.button.tertairy.hover.color}"
           },
           "scale": {
             "type": "other",
-            "value": "{lux.button.subtle.hover.scale}"
+            "value": "{lux.button.tertairy.hover.scale}"
           }
         },
         "focus": {

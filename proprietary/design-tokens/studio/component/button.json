@@ -3,55 +3,13 @@
     "button": {
       "font-size": {
         "type": "fontSizes",
-        "value": "18px"
-      },
-      "line-height": {
-        "type": "lineHeights",
-        "value": "28px"
-      },
-      "padding-inline-start": {
-        "type": "spacing",
-        "value": "{lux.space.2-x}"
-      },
-      "padding-block-start": {
-        "type": "spacing",
-        "value": "{lux.space.1-x}"
-      },
-      "padding-inline-end": {
-        "type": "spacing",
-        "value": "{lux.space.2-x}"
-      },
-      "padding-block-end": {
-        "type": "spacing",
-        "value": "{lux.space.1-x}"
-      },
-      "gap": {
-        "type": "spacing",
-        "value": "{lux.space.1-x}"
-      },
-      "min-inline-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
-      },
-      "min-block-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
-      },
-      "border-radius": {
-        "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
-      },
-      "border-width": {
-        "type": "borderWidth",
-        "value": "{lux.border-width.default}"
-      },
-      "icon": {
-        "size": {
-          "type": "sizing",
-          "value": "{lux.size.icon}"
-        }
+        "value": "{product.button.font-size}"
       },
       "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "{product.button.primary.font-size}"
+        },
         "background-color": {
           "type": "color",
           "value": "{lux.color.brand.default}"
@@ -105,6 +63,52 @@
             "type": "color",
             "value": "{lux.color.foreground.subdued}"
           }
+        }
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "1.75rem"
+      },
+      "padding-inline-start": {
+        "type": "spacing",
+        "value": "{lux.space.2-x}"
+      },
+      "padding-block-start": {
+        "type": "spacing",
+        "value": "{lux.space.1-x}"
+      },
+      "padding-inline-end": {
+        "type": "spacing",
+        "value": "{lux.space.2-x}"
+      },
+      "padding-block-end": {
+        "type": "spacing",
+        "value": "{lux.space.1-x}"
+      },
+      "gap": {
+        "type": "spacing",
+        "value": "{lux.space.1-x}"
+      },
+      "min-inline-size": {
+        "type": "sizing",
+        "value": "{lux.size.target}"
+      },
+      "min-block-size": {
+        "type": "sizing",
+        "value": "{lux.size.target}"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{lux.border-radius.default}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{lux.border-width.default}"
+      },
+      "icon": {
+        "size": {
+          "type": "sizing",
+          "value": "{lux.size.icon}"
         }
       },
       "secondary": {

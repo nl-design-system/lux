@@ -73,7 +73,7 @@
       "font-size": {
         "parent": "button login/default",
         "type": "fontSizes",
-        "value": "18px"
+        "value": "1.125rem"
       },
       "padding-inline-start": {
         "parent": "button login/default",
@@ -123,7 +123,7 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "28px"
+        "value": "1.75rem"
       },
       "font-weight": {
         "type": "fontWeights",

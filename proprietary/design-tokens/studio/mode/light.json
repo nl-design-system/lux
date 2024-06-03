@@ -129,7 +129,7 @@
         "outline": {
           "parent": "mode/light",
           "type": "color",
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.color.border.strong}",
           "description": "Outline kleur voor de focus state."
         }
       }

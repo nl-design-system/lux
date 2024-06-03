@@ -108,6 +108,16 @@
             "description": ""
           }
         }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "1.125rem"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "1.1875rem"
+        }
       }
     }
   }

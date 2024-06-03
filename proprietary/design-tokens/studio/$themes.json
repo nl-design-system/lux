@@ -5,8 +5,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "core/default": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2312:22",
     "$figmaModeId": "2312:2",
@@ -112,8 +111,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "common/default": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -132,8 +130,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "mode/light": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -187,8 +184,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "mode/dark (beta)": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -242,8 +238,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -262,7 +257,9 @@
       "product.button.secondary.hover.background-color": "0967172519a43ace30023ae950424d569fa46d3e",
       "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
-      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
+      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
+      "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
     },
     "group": "product"
   },
@@ -272,8 +269,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -292,7 +288,9 @@
       "product.button.secondary.hover.background-color": "0967172519a43ace30023ae950424d569fa46d3e",
       "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
-      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
+      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
+      "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
     },
     "group": "product"
   },
@@ -302,8 +300,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -322,7 +319,9 @@
       "product.button.secondary.hover.background-color": "0967172519a43ace30023ae950424d569fa46d3e",
       "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
-      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
+      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
+      "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
     },
     "group": "product"
   },
@@ -332,8 +331,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/NLdoc/mapping": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -352,7 +350,9 @@
       "product.button.secondary.hover.background-color": "0967172519a43ace30023ae950424d569fa46d3e",
       "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
-      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
+      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
+      "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
     },
     "group": "product"
   },
@@ -362,8 +362,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "common/viewport (beta)/xl": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -395,8 +394,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "common/viewport (beta)/lg": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -428,8 +426,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "common/viewport (beta)/md": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -461,8 +458,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "common/viewport (beta)/sm": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -494,8 +490,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "common/viewport (beta)/xs": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -530,8 +525,7 @@
       "component/alert": "enabled",
       "component/button": "enabled",
       "component/button login": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2337:49",
     "$figmaModeId": "2337:2",
@@ -567,6 +561,7 @@
       "lux.alert.font-size": "e5f533fa546ffb59f2051898d8eeeca4a00bca6c",
       "lux.alert.font-family": "dc5084d5b4b5a7df7da7678083c84e645ce30193",
       "lux.button.font-size": "8a19589464da76155e23994cc16e1cf3c6bc00d7",
+      "lux.button.primary.font-size": "b8cc078c327b5ed3466a5f103389812c41e5eafc",
       "lux.button.line-height": "7a19951a4b5dfb377e055f295fe918f678e582fe",
       "lux.button.padding-inline-start": "6c416a16a47b9986a0fe83fda43009ab31e9fb40",
       "lux.button.padding-block-start": "60b0f070de55e7fef18a6e8c1dad4cd2be624a31",
@@ -648,8 +643,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Elia": "enabled",
-      "nl/utrecht-button": "disabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -668,7 +662,9 @@
       "product.button.secondary.hover.background-color": "0967172519a43ace30023ae950424d569fa46d3e",
       "product.button.tertiary.color": "9a7b4ba4ac20971ae8b32e7e9f1964192e2105af",
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
-      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1"
+      "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
+      "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
     },
     "group": "product"
   },
@@ -678,7 +674,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "nl/utrecht-button": "enabled",
-      "tokens": "disabled"
+      "nl/utrecht-alert": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2460:17",
     "$figmaModeId": "2460:1",
