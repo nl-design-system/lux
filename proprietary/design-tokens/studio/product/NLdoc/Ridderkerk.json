@@ -29,6 +29,17 @@
         "value": "{lux.color.grijs.700}",
         "description": ""
       }
+    },
+    "font-family": {
+      "default": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "Lato, Arial"
+      }
     }
   }
 }

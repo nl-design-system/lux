@@ -131,7 +131,7 @@
       },
       "font-family": {
         "type": "fontFamilies",
-        "value": "{lux.font-family.default}"
+        "value": "{rh.font-family.default}"
       }
     }
   }

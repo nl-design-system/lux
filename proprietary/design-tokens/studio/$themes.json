@@ -4,8 +4,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "core/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2312:22",
     "$figmaModeId": "2312:2",
@@ -101,7 +100,7 @@
       "lux.space.7-x": "2ab21a68e3520cf91dbe973fed78ffc7cabf2de9",
       "lux.font-weight.regular": "a082ddec57a8f068b20b871868fe52ed40f6b148",
       "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793",
-      "lux.font-family.default": "6e3d9c0ea079151e151a93fa9696d60e4fea4aa9"
+      "rh.font-family.default": "6e3d9c0ea079151e151a93fa9696d60e4fea4aa9"
     },
     "group": "core"
   },
@@ -110,8 +109,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "common/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -129,8 +127,7 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "mode/light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -183,8 +180,7 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark (beta)": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "mode/dark (beta)": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -237,8 +233,7 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "product/Logius": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -268,8 +263,7 @@
     "name": "MijnOverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/MijnOverheid": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "product/MijnOverheid": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -299,8 +293,7 @@
     "name": "DigiD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/DigiD": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "product/DigiD": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -330,8 +323,7 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc/mapping": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "product/NLdoc/mapping": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -361,8 +353,7 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xl": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "common/viewport (beta)/xl": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -393,8 +384,7 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/lg": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "common/viewport (beta)/lg": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -425,8 +415,7 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/md": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "common/viewport (beta)/md": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -457,8 +446,7 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/sm": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "common/viewport (beta)/sm": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -489,8 +477,7 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport (beta)/xs": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "common/viewport (beta)/xs": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -524,8 +511,7 @@
       "component/link": "enabled",
       "component/alert": "enabled",
       "component/button": "enabled",
-      "component/button login": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "component/button login": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2337:49",
     "$figmaModeId": "2337:2",
@@ -642,8 +628,7 @@
     "name": "Elia",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Elia": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "product/Elia": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -673,8 +658,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "nl/utrecht-button": "enabled",
-      "nl/utrecht-alert": "disabled"
+      "nl/utrecht-button": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2460:17",
     "$figmaModeId": "2460:1",

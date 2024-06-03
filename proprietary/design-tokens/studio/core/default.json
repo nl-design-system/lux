@@ -572,7 +572,9 @@
         "type": "fontWeights",
         "value": "Bold"
       }
-    },
+    }
+  },
+  "rh": {
     "font-family": {
       "default": {
         "type": "fontFamilies",

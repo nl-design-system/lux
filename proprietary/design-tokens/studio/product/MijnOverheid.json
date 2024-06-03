@@ -43,6 +43,12 @@
         "value": "0.375rem",
         "description": ""
       }
+    },
+    "font-family": {
+      "default-copy": {
+        "type": "fontFamilies",
+        "value": "{rh.font-family.default}"
+      }
     }
   },
   "product": {
