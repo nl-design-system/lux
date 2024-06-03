@@ -1,0 +1,82 @@
+{
+  "utrecht": {
+    "link": {
+      "color": {
+        "type": "color",
+        "value": "{lux.link.color}"
+      },
+      "text-decoration": {
+        "type": "other",
+        "value": "{lux.link.text-decoration}"
+      },
+      "text-decoration-color": {
+        "type": "color",
+        "value": "{lux.link.color}"
+      },
+      "text-decoration-thickness": {
+        "type": "other",
+        "value": "{lux.link.text-decoration-thickness}"
+      },
+      "text-underline-offset": {
+        "type": "other",
+        "value": "{lux.link.text-underline-offset}"
+      },
+      "active": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.active.color}"
+        }
+      },
+      "focus": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.focus.color}"
+        },
+        "text-decoration": {
+          "type": "other",
+          "value": "{lux.link.focus.text-decoration}"
+        },
+        "text-decoration-thickness": {
+          "type": "other",
+          "value": "{lux.link.focus.text-decoration-thickness}"
+        }
+      },
+      "hover": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.hover.color}"
+        },
+        "text-decoration": {
+          "type": "other",
+          "value": "{lux.link.hover.text-decoration}"
+        },
+        "text-decoration-thickness": {
+          "type": "other",
+          "value": "{lux.link.hover.text-decoration-thickness}"
+        }
+      },
+      "placeholder": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.placeholder.color}"
+        },
+        "font-weight": {
+          "type": "fontWeight",
+          "value": "{lux.link.placeholder.font-weight}"
+        }
+      },
+      "visited": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.visited.color}"
+        }
+      },
+      "icon": {
+        "size": {
+          "type": "color",
+          "value": "{lux.link.icon.size}"
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,6 @@
 {
   "lux": {
     "focus": {
-      "border-width [oud]": {
-        "parent": "common/default",
-        "type": "borderWidth",
-        "value": "{lux.border-width.m}",
-        "description": "vervangen met product collectie"
-      },
       "outline-offset": {
         "type": "spacing",
         "value": "{lux.space.025-x}"

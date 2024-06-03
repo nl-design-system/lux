@@ -100,7 +100,8 @@
       "lux.space.7-x": "2ab21a68e3520cf91dbe973fed78ffc7cabf2de9",
       "lux.font-weight.regular": "a082ddec57a8f068b20b871868fe52ed40f6b148",
       "lux.font-weight.bold": "b2b5339c7706563ae4362c7ea69308e0acfeb793",
-      "rh.font-family.default": "6e3d9c0ea079151e151a93fa9696d60e4fea4aa9"
+      "rh.font-family.default": "fce12356ff8930eebd192c3b80b8ede070b6a08d",
+      "figma.nldoc.font-family.default": "50c025233414fdbe357c640b7d34278a1b69f9c1"
     },
     "group": "core"
   },
@@ -114,7 +115,6 @@
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
     "$figmaVariableReferences": {
-      "lux.focus.border-width [oud]": "6277342b7a67e25c1c28417b98d38765bd124e24",
       "lux.focus.outline-offset": "c56e3f5cd7a6ef8cc90fc3e59cfc06021f59de08",
       "lux.size.target": "48a70abc389058105c74b14fbec860fc3ab0e339",
       "lux.size.icon": "a3c95921a6a2913b21bb14a0b67255ae7db101ca",
@@ -233,7 +233,8 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled"
+      "product/Logius": "enabled",
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -254,7 +255,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
-      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e",
+      "lux.font-family.default": "e2a30b23599c4d415e5f29e5ad913c5dd9a3cb37"
     },
     "group": "product"
   },
@@ -263,7 +265,8 @@
     "name": "MijnOverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/MijnOverheid": "enabled"
+      "product/MijnOverheid": "enabled",
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -284,7 +287,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
-      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e",
+      "lux.font-family.default": "e2a30b23599c4d415e5f29e5ad913c5dd9a3cb37"
     },
     "group": "product"
   },
@@ -293,7 +297,8 @@
     "name": "DigiD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/DigiD": "enabled"
+      "product/DigiD": "enabled",
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -314,7 +319,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
-      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e",
+      "lux.font-family.default": "e2a30b23599c4d415e5f29e5ad913c5dd9a3cb37"
     },
     "group": "product"
   },
@@ -323,7 +329,8 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc/mapping": "enabled"
+      "product/NLdoc/mapping": "enabled",
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -344,7 +351,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
-      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e",
+      "lux.font-family.default": "e2a30b23599c4d415e5f29e5ad913c5dd9a3cb37"
     },
     "group": "product"
   },
@@ -628,7 +636,8 @@
     "name": "Elia",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Elia": "enabled"
+      "product/Elia": "enabled",
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -649,7 +658,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "4d7b949b208e8170171a4f8dba71d01a00456102",
-      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e"
+      "product.button.primary.font-size": "866d8fb0eae11424fe409b77797277867f82f20e",
+      "lux.font-family.default": "e2a30b23599c4d415e5f29e5ad913c5dd9a3cb37"
     },
     "group": "product"
   },

@@ -23,6 +23,7 @@
     "component/alert",
     "component/link",
     "nl/utrecht-button",
-    "nl/utrecht-alert"
+    "nl/utrecht-alert",
+    "nl/utrecht-link"
   ]
 }

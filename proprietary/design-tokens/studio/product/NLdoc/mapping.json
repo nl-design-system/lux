@@ -26,22 +26,19 @@
       "default": {
         "parent": "product/NLdoc",
         "type": "borderRadius",
-        "value": "0rem",
-        "description": ""
+        "value": "0px"
       }
     },
     "focus": {
       "outline-width": {
         "parent": "product/NLdoc",
         "type": "borderWidth",
-        "value": "0.0625rem",
-        "description": ""
+        "value": "1px"
       },
       "border-radius": {
         "parent": "product/NLdoc",
         "type": "borderRadius",
-        "value": "0rem",
-        "description": ""
+        "value": "0px"
       }
     },
     "font-family": {
@@ -52,7 +49,7 @@
           }
         },
         "type": "fontFamilies",
-        "value": "{nldoc.font-family.default}"
+        "value": "{figma.nldoc.font-family.default}"
       }
     }
   },

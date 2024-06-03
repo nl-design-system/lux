@@ -229,7 +229,7 @@
       },
       "font-family": {
         "type": "fontFamilies",
-        "value": "{rh.font-family.default}"
+        "value": "{lux.font-family.default}"
       }
     }
   }

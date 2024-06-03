@@ -45,7 +45,12 @@
       }
     },
     "font-family": {
-      "default-copy": {
+      "default": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontFamilies",
         "value": "{rh.font-family.default}"
       }

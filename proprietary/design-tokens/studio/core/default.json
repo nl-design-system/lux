@@ -475,34 +475,34 @@
       "default": {
         "parent": "core/default",
         "type": "borderRadius",
-        "value": "4"
+        "value": "4px"
       },
       "circle": {
         "parent": "core/default",
         "type": "borderRadius",
-        "value": "999"
+        "value": "999px"
       },
       "none": {
         "parent": "core/default",
         "type": "borderRadius",
-        "value": "0"
+        "value": "0px"
       }
     },
     "border-width": {
       "default": {
         "parent": "core/default",
         "type": "borderWidth",
-        "value": "4"
+        "value": "4px"
       },
       "m": {
         "parent": "core/default",
         "type": "borderWidth",
-        "value": "8"
+        "value": "8px"
       },
       "none": {
         "parent": "core/default",
         "type": "borderWidth",
-        "value": "0"
+        "value": "0px"
       }
     },
     "space": {
@@ -579,6 +579,16 @@
       "default": {
         "type": "fontFamilies",
         "value": "RijksoverheidSansWebText, Arial"
+      }
+    }
+  },
+  "figma": {
+    "nldoc": {
+      "font-family": {
+        "default": {
+          "type": "fontFamilies",
+          "value": "Arial"
+        }
       }
     }
   }
