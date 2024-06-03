@@ -1,0 +1,15 @@
+{
+  "try": {
+    "font-family": {
+      "common": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "{try.font-family.core}"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "try": {
+    "font-family": {
+      "core": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "Arial"
+      }
+    }
+  }
+}
