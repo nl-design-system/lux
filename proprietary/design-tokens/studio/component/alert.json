@@ -92,7 +92,7 @@
         "value": "{lux.font-family.default}"
       },
       "font-weight": {
-        "type": "fontWeight",
+        "type": "fontWeights",
         "value": "{lux.font-weight.regular}"
       }
     }
