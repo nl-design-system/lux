@@ -6,12 +6,13 @@ registerTransforms(StyleDictionary);
 
 const DELIMITER = '/';
 
-const normalizeFileName = (name) =>
+const normalizeFileName = (name, prefix = '') =>
   name
     .toLowerCase()
     .replaceAll(/(_?default_?|\s\(beta\))/g, '')
     .replaceAll(new RegExp(`${DELIMITER}{2,}`, 'g'), '')
-    .replace(/(nldoc)(\s-\s)?/, 'nldoc/');
+    .replace(/(nldoc)(\s-\s)?/, 'nldoc/')
+    .replace(/([^\/]+$)/, `${prefix}$1`);
 
 const prepareTokensFile = async () => {
   const $themes = JSON.parse(await readFile('src/$themes.json', 'utf-8'));
@@ -38,6 +39,13 @@ async function run() {
           {
             destination: `${normalizeFileName(name)}.css`,
             format: 'css/variables',
+            options: {
+              outputReferences: true,
+            },
+          },
+          {
+            destination: `${normalizeFileName(name, '_')}.scss`,
+            format: 'scss/variables',
             options: {
               outputReferences: true,
             },
