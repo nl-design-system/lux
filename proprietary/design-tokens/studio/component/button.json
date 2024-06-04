@@ -122,20 +122,20 @@
         },
         "color": {
           "type": "color",
-          "value": "{lux.color.brand.default}"
+          "value": "{mode.button.secondary.color}"
         },
         "hover": {
           "background-color": {
             "type": "color",
-            "value": "{lux.color.brand.subdued}"
+            "value": "{mode.button.secondary.hover.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.color.brand.hover}"
+            "value": "{mode.button.secondary.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.color.brand.hover}"
+            "value": "{mode.button.secondary.hover.color}"
           }
         },
         "active": {
