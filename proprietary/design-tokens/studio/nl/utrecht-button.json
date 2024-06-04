@@ -3,11 +3,11 @@
     "button": {
       "background-color": {
         "type": "color",
-        "value": "{lux.button.background-color}"
+        "value": "{not-in-use}"
       },
       "border-color": {
         "type": "color",
-        "value": "{lux.button.border-color}"
+        "value": "{no-token}"
       },
       "border-radius": {
         "type": "borderRadius",
@@ -19,7 +19,7 @@
       },
       "color": {
         "type": "color",
-        "value": "{lux.button.color}"
+        "value": "{no-token}"
       },
       "font-family": {
         "type": "fontFamilies",
@@ -35,7 +35,7 @@
       },
       "inline-size": {
         "type": "sizing",
-        "value": "{lux.button.inline-size}",
+        "value": "{no-token}",
         "description": "Wat is dit voor token? Waarom zit deze in de button? "
       },
       "line-height": {
@@ -68,20 +68,20 @@
       },
       "text-transform": {
         "type": "other",
-        "value": "{lux.button.text-transform}"
+        "value": "{no-token}"
       },
       "active": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.active.background-color}"
+          "value": "{no-token}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.active.border-color}"
+          "value": "{no-token}"
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.active.color}"
+          "value": "{no-token}"
         }
       },
       "icon": {
@@ -102,65 +102,65 @@
       "disabled": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.disabled.background-color}"
+          "value": "{no-token}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.disabled.border-color}"
+          "value": "{no-token}"
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.disabled.color}"
+          "value": "{no-token}"
         }
       },
       "focus": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.focus.background-color}"
+          "value": "{no-token}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.focus.border-color}"
+          "value": "{no-token}"
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.focus.color}"
+          "value": "{no-token}"
         },
         "scale": {
           "type": "other",
-          "value": "{lux.button.focus.scale}"
+          "value": "{no-token}"
         }
       },
       "hover": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.hover.background-color}"
+          "value": "{no-token}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.hover.border-color}"
+          "value": "{no-token}"
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.hover.color}"
+          "value": "{no-token}"
         },
         "scale": {
           "type": "other",
-          "value": "{lux.button.hover.scale}"
+          "value": "{no-token}"
         }
       },
       "pressed": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.pressed.background-color}"
+          "value": "{no-token}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.pressed.border-color}"
+          "value": "{no-token}"
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.pressed.color}"
+          "value": "{no-token}"
         }
       },
       "primary-action": {
@@ -227,35 +227,35 @@
           },
           "scale": {
             "type": "other",
-            "value": "{lux.button.primary.hover.scale}"
+            "value": "{no-token}"
           }
         },
         "focus": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.primary.focus.background-color}"
+            "value": "{no-token}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.primary.focus.border-color}"
+            "value": "{no-token}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.primary.focus.color}"
+            "value": "{no-token}"
           }
         },
         "pressed": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.primary.pressed.background-color}"
+            "value": "{no-token}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.primary.pressed.border-color}"
+            "value": "{no-token}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.primary.pressed.color}"
+            "value": "{no-token}"
           }
         }
       },
@@ -323,35 +323,35 @@
           },
           "scale": {
             "type": "other",
-            "value": "{lux.button.secondary.hover.scale}"
+            "value": "{no-token}"
           }
         },
         "focus": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.secondary.focus.background-color}"
+            "value": "{no-token}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.secondary.focus.border-color}"
+            "value": "{no-token}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.secondary.focus.color}"
+            "value": "{no-token}"
           }
         },
         "pressed": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.secondary.pressed.background-color}"
+            "value": "{no-token}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.secondary.pressed.border-color}"
+            "value": "{no-token}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.secondary.pressed.color}"
+            "value": "{no-token}"
           }
         }
       },
@@ -419,35 +419,35 @@
           },
           "scale": {
             "type": "other",
-            "value": "{lux.button.tertairy.hover.scale}"
+            "value": "{no-token}"
           }
         },
         "focus": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.subtle.focus.background-color}"
+            "value": "{no-token}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.subtle.focus.border-color}"
+            "value": "{no-token}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.subtle.focus.color}"
+            "value": "{no-token}"
           }
         },
         "pressed": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.subtle.pressed.background-color}"
+            "value": "{no-token}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.subtle.pressed.border-color}"
+            "value": "{no-token}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.subtle.pressed.color}"
+            "value": "{no-token}"
           }
         }
       }
