@@ -7,7 +7,7 @@
       },
       "text-decoration": {
         "type": "other",
-        "value": "{lux.link.text-decoration}"
+        "value": "{no-token}"
       },
       "text-decoration-color": {
         "type": "color",
@@ -15,11 +15,11 @@
       },
       "text-decoration-thickness": {
         "type": "other",
-        "value": "{lux.link.text-decoration-thickness}"
+        "value": "{no-token}"
       },
       "text-underline-offset": {
         "type": "other",
-        "value": "{lux.link.text-underline-offset}"
+        "value": "{no-token}"
       },
       "active": {
         "color": {
@@ -34,11 +34,11 @@
         },
         "text-decoration": {
           "type": "other",
-          "value": "{lux.link.focus.text-decoration}"
+          "value": "{no-token}"
         },
         "text-decoration-thickness": {
           "type": "other",
-          "value": "{lux.link.focus.text-decoration-thickness}"
+          "value": "{no-token}"
         }
       },
       "hover": {
@@ -48,11 +48,11 @@
         },
         "text-decoration": {
           "type": "other",
-          "value": "{lux.link.hover.text-decoration}"
+          "value": "{no-token}"
         },
         "text-decoration-thickness": {
           "type": "other",
-          "value": "{lux.link.hover.text-decoration-thickness}"
+          "value": "{no-token}"
         }
       },
       "placeholder": {
