@@ -3,7 +3,7 @@
     "button": {
       "background-color": {
         "type": "color",
-        "value": "{not-in-use}"
+        "value": "{no-token}"
       },
       "border-color": {
         "type": "color",

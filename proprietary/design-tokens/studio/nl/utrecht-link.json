@@ -30,7 +30,7 @@
       "focus": {
         "color": {
           "type": "color",
-          "value": "{lux.link.focus.color}"
+          "value": "{no-token}"
         },
         "text-decoration": {
           "type": "other",
@@ -58,11 +58,11 @@
       "placeholder": {
         "color": {
           "type": "color",
-          "value": "{lux.link.placeholder.color}"
+          "value": "{no-token}"
         },
         "font-weight": {
           "type": "fontWeight",
-          "value": "{lux.link.placeholder.font-weight}"
+          "value": "{no-token}"
         }
       },
       "visited": {

@@ -3,7 +3,7 @@
     "alert": {
       "background-color": {
         "type": "color",
-        "value": "{lux.alert.background-color}"
+        "value": "{lux.color.feedback.info.subdued}"
       },
       "border-color": {
         "type": "color",
@@ -39,11 +39,11 @@
       },
       "margin-block-start": {
         "type": "spacing",
-        "value": "{lux.alert.margin-block-start}"
+        "value": "{no-token}"
       },
       "margin-block-end": {
         "type": "spacing",
-        "value": "{lux.alert.margin-block-end}"
+        "value": "{no-token}"
       },
       "warning": {
         "background-color": {
@@ -84,7 +84,7 @@
       "ok": {
         "background-color": {
           "type": "color",
-          "value": "{lux.alert.error.background-color}"
+          "value": "{lux.alert.success.background-color}"
         },
         "color": {
           "type": "color",
@@ -102,7 +102,7 @@
       "icon": {
         "color": {
           "type": "color",
-          "value": "{lux.alert.icon.color}"
+          "value": "{no-token}"
         },
         "gap": {
           "$extensions": {
@@ -116,19 +116,19 @@
         "error": {
           "color": {
             "type": "color",
-            "value": "{lux.alert.icon.error.color}"
+            "value": "{no-token}"
           }
         },
         "warning": {
           "color": {
             "type": "color",
-            "value": "{lux.alert.icon.warning.color}"
+            "value": "{no-token}"
           }
         },
         "ok": {
           "color": {
             "type": "color",
-            "value": "{lux.alert.icon.ok.color}"
+            "value": "{no-token}"
           }
         }
       }
