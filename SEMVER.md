@@ -40,4 +40,5 @@ Mochten er nog vragen zijn, neem contact op met het LUX-team via ons [Slack #sup
 [logius-ux.slack.com](https://logius-ux.slack.com/)
 
 [^1]: <https://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning>
+
 [^2]: <https://semver.org/lang/nl/>
