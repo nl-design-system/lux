@@ -130,7 +130,7 @@
       },
       "font-family": {
         "type": "fontFamilies",
-        "value": "{lux.font-family.default}"
+        "value": "{lux.font-family.primary}"
       }
     }
   }

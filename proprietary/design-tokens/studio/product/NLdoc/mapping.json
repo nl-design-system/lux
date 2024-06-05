@@ -42,7 +42,7 @@
       }
     },
     "font-family": {
-      "default": {
+      "primary": {
         "$extensions": {
           "studio.tokens": {
             "modify": {}

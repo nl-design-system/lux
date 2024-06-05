@@ -587,9 +587,23 @@
   },
   "rh": {
     "font-family": {
-      "default": {
+      "sans": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontFamilies",
         "value": "RijksoverheidSansWebText, Arial"
+      },
+      "serif": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "RijksoverheidSerifWeb, Arial"
       }
     }
   },
@@ -605,7 +619,7 @@
   },
   "no-token": {
     "type": "other",
-    "value": "*",
+    "value": "/* */",
     "description": "Discussie nodig"
   }
 }
