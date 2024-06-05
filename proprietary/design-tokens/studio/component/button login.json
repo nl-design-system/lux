@@ -4,7 +4,7 @@
       "color": {
         "parent": "button login/default",
         "type": "color",
-        "value": "{lux.color.foreground.default}.default}"
+        "value": "{lux.color.foreground.default}"
       },
       "background-color": {
         "parent": "button login/default",
