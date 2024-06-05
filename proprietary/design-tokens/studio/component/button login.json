@@ -105,8 +105,7 @@
       "border-radius": {
         "parent": "button login/default",
         "type": "borderRadius",
-        "value": "{oud.lux.border-radius.default}",
-        "description": ""
+        "value": "{lux.border-radius.default}"
       },
       "border-width": {
         "parent": "button login/default",

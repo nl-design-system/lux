@@ -99,7 +99,7 @@
       },
       "border-radius": {
         "type": "borderRadius",
-        "value": "{oud.lux.border-radius.default}"
+        "value": "{lux.border-radius.default}"
       },
       "border-width": {
         "type": "borderWidth",
