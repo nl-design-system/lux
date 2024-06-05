@@ -607,16 +607,6 @@
       }
     }
   },
-  "figma": {
-    "nldoc": {
-      "font-family": {
-        "default": {
-          "type": "fontFamilies",
-          "value": "Arial"
-        }
-      }
-    }
-  },
   "no-token": {
     "type": "other",
     "value": "/* */",
