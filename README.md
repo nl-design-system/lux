@@ -6,17 +6,17 @@
 
 LUX staat voor "Logius UX", ofwel "Logius User eXperience" en is het design system dat Logius-breed ingezet wordt.
 
-Dit design system is gebaseerd op het NL Design System architectuur.  
+Dit design system is gebaseerd op het NL Design System architectuur.
 Voor meer informatie over het NL Design System ga naar [nldesignsystem.nl](https://www.nldesignsystem.nl/), [Github](https://github.com/nl-design-system) en `#nl-design-system` op Slack via [praatmee.codefor.nl](https://praatmee.codefor.nl)!
 
 Voor meer informatie en contact met het team kom naar onze Slack `LUX` workspace via [logius-ux.slack.com](https://logius-ux.slack.com/)!
 
 ## Getting started with LUX Design System
 
-### Installatievereisten
+### Requirements
 
 You need to have the following tools installed to run Storybook locally:
-De volgende onderdelen moeten geinstalleerd zijn om Storybook lokaal te kunnen draaien:  
+De volgende onderdelen moeten geinstalleerd zijn om Storybook lokaal te kunnen draaien:
 Tip: Installeer Node.js via [Volta](https://volta.sh/) of [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md).
 
 - Git
@@ -32,7 +32,7 @@ Tip: Installeer Node.js via [Volta](https://volta.sh/) of [NVM](https://github.c
 
 ### Mappenstructuur
 
-Algemene documentatie komt in de map `packages/storybook/src/documentation`  
+Algemene documentatie komt in de map `packages/storybook/src/documentation`
 Documentatie over componenten komt in de map `packages/storybook/src/web-components` en elk component krijgt zijn eigen map.
 
 ### Design tokens
