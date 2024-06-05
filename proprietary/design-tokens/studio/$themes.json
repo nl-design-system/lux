@@ -81,7 +81,6 @@
       "lux.color.robijnrood.200": "9ecd4c1ac60d480e432153d5f947a6cd7bff7072",
       "lux.color.robijnrood.300": "d2bcdbf6c61f1903460bd6ff1db3ee8c9cf193e4",
       "lux.color.logoblauw.300": "6957f755d942aa22fbd7ab8f9e5fd1d886f1bbe5",
-      "lux.border-radius.default": "55dce012ee906fb686b825d0aedefbf7f782ecb6",
       "lux.border-radius.circle": "e3a820c6942fee57ea9426a29e7a3a2bbc82e2d7",
       "lux.border-radius.none": "9064a7c4ef66b5437909ab5ad9ba765cb945fbdb",
       "lux.border-width.default": "074d70c137b66c2dfe534ce6a956456aff30b76e",
@@ -101,7 +100,8 @@
       "lux.font-weight.regular": "5b2e2435df9cab6be899c623d47bbdf7b77bd45f",
       "lux.font-weight.bold": "ddf6efd24669e7ffed982463284ca6c4c1eb507e",
       "rh.font-family.default": "062927187b4fee426138e2779e2cfd360e2f1bbc",
-      "figma.nldoc.font-family.default": "31c0b29d2a4c6219083b79eca255291d8dc9f4de"
+      "figma.nldoc.font-family.default": "31c0b29d2a4c6219083b79eca255291d8dc9f4de",
+      "oud.lux.border-radius.default": "55dce012ee906fb686b825d0aedefbf7f782ecb6"
     },
     "group": "core"
   },
@@ -242,7 +242,6 @@
       "lux.color.brand.default": "83157ab11bdba1943e590ad79ea2225dda0ad58f",
       "lux.color.brand.subdued": "01da129adda02738bfac20e8e1d102c4081102f0",
       "lux.color.brand.hover": "9c1838d9a820b37f1f9653b314f3790ef6f89aa1",
-      "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.focus.border-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "lux.font-family.default": "6ca41422b4800497ec7ad853c83135355adb2435",
@@ -256,7 +255,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
+      "oud.lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270"
     },
     "group": "product"
   },
@@ -274,7 +274,6 @@
       "lux.color.brand.default": "83157ab11bdba1943e590ad79ea2225dda0ad58f",
       "lux.color.brand.subdued": "01da129adda02738bfac20e8e1d102c4081102f0",
       "lux.color.brand.hover": "9c1838d9a820b37f1f9653b314f3790ef6f89aa1",
-      "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.focus.border-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "lux.font-family.default": "6ca41422b4800497ec7ad853c83135355adb2435",
@@ -288,7 +287,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
+      "oud.lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270"
     },
     "group": "product"
   },
@@ -306,7 +306,6 @@
       "lux.color.brand.default": "83157ab11bdba1943e590ad79ea2225dda0ad58f",
       "lux.color.brand.subdued": "01da129adda02738bfac20e8e1d102c4081102f0",
       "lux.color.brand.hover": "9c1838d9a820b37f1f9653b314f3790ef6f89aa1",
-      "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.focus.border-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "lux.font-family.default": "6ca41422b4800497ec7ad853c83135355adb2435",
@@ -320,7 +319,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
+      "oud.lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270"
     },
     "group": "product"
   },
@@ -338,7 +338,6 @@
       "lux.color.brand.default": "83157ab11bdba1943e590ad79ea2225dda0ad58f",
       "lux.color.brand.subdued": "01da129adda02738bfac20e8e1d102c4081102f0",
       "lux.color.brand.hover": "9c1838d9a820b37f1f9653b314f3790ef6f89aa1",
-      "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.focus.border-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "lux.font-family.default": "6ca41422b4800497ec7ad853c83135355adb2435",
@@ -352,7 +351,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
+      "oud.lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270"
     },
     "group": "product"
   },
@@ -646,7 +646,6 @@
       "lux.color.brand.default": "83157ab11bdba1943e590ad79ea2225dda0ad58f",
       "lux.color.brand.subdued": "01da129adda02738bfac20e8e1d102c4081102f0",
       "lux.color.brand.hover": "9c1838d9a820b37f1f9653b314f3790ef6f89aa1",
-      "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.focus.border-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "lux.font-family.default": "6ca41422b4800497ec7ad853c83135355adb2435",
@@ -660,7 +659,8 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
+      "oud.lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270"
     },
     "group": "product"
   },

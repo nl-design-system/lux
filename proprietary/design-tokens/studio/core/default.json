@@ -472,11 +472,6 @@
       }
     },
     "border-radius": {
-      "default": {
-        "parent": "core/default",
-        "type": "borderRadius",
-        "value": "4px"
-      },
       "circle": {
         "parent": "core/default",
         "type": "borderRadius",
@@ -571,6 +566,22 @@
       "bold": {
         "type": "fontWeights",
         "value": "Bold"
+      }
+    }
+  },
+  "oud": {
+    "lux": {
+      "border-radius": {
+        "default": {
+          "parent": "core/default",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {}
+            }
+          },
+          "type": "borderRadius",
+          "value": "4px"
+        }
       }
     }
   },

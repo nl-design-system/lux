@@ -11,7 +11,7 @@
       },
       "border-radius": {
         "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
+        "value": "{oud.lux.border-radius.default}"
       },
       "border-width": {
         "type": "borderWidth",
