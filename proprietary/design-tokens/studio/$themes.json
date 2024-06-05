@@ -99,9 +99,9 @@
       "lux.space.7-x": "f6538115f501638c2c5fc17bed98ad0e17b25d8f",
       "lux.font-weight.regular": "5b2e2435df9cab6be899c623d47bbdf7b77bd45f",
       "lux.font-weight.bold": "ddf6efd24669e7ffed982463284ca6c4c1eb507e",
-      "figma.nldoc.font-family.default": "31c0b29d2a4c6219083b79eca255291d8dc9f4de",
       "oud.lux.border-radius.default": "55dce012ee906fb686b825d0aedefbf7f782ecb6",
-      "rh.font-family.sans": "062927187b4fee426138e2779e2cfd360e2f1bbc"
+      "rh.font-family.sans": "062927187b4fee426138e2779e2cfd360e2f1bbc",
+      "rh.font-family.serif": "8c34f1b6fde8e6daf7a168815c48ce2d427fc6fc"
     },
     "group": "core"
   },
