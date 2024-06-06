@@ -5,6 +5,9 @@ import StyleDictionary from 'style-dictionary';
 registerTransforms(StyleDictionary);
 
 const DELIMITER = '/';
+const SRC_FOLDER = 'src';
+const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
+const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
 
 const normalizeFileName = (name) =>
   name
@@ -14,10 +17,14 @@ const normalizeFileName = (name) =>
     .replace(/(nldoc)(\s-\s)?/, 'nldoc/');
 
 const prepareTokensFile = async () => {
-  const $themes = JSON.parse(await readFile('src/$themes.json', 'utf-8'));
+  const $themes = JSON.parse(await readFile(`${IMPORTED_SRC_FOLDER}/$themes.json`, 'utf-8'));
   const themes = permutateThemes($themes, { separator: DELIMITER });
   return themes;
 };
+
+const isFigmaToken = (name) => name.startsWith('figma');
+const isModeIndicatorToken = (name) => name === 'mode-on';
+const excludeSystemTokens = ({ name }) => ![isFigmaToken, isModeIndicatorToken].some((fn) => fn(name));
 
 const extractModeFromName = (name) => ['light', 'dark'].find((mode) => name.indexOf(mode) >= 0);
 
@@ -26,8 +33,8 @@ async function run() {
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
     source: [
       ...tokensets.map((tokenset) => `./**/${tokenset}.json`),
-      'missingTokens.json',
-      `missingTokens.${extractModeFromName(name)}.json`,
+      `${MANUAL_SRC_FOLDER}/missingTokens.json`,
+      `${MANUAL_SRC_FOLDER}/missingTokens.${extractModeFromName(name)}.json`,
     ],
     platforms: {
       css: {
@@ -37,6 +44,7 @@ async function run() {
         files: [
           {
             destination: `${normalizeFileName(name)}.css`,
+            filter: excludeSystemTokens,
             format: 'css/variables',
             options: {
               outputReferences: true,
