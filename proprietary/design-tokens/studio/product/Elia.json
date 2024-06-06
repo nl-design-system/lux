@@ -1,0 +1,132 @@
+{
+  "lux": {
+    "color": {
+      "brand": {
+        "default": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.paars.300}",
+          "description": "kleur van het product"
+        },
+        "subdued": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.paars.200}",
+          "description": "Subtiele kleur van het product"
+        },
+        "hover": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.paars.400}",
+          "description": "Hover kleur van het product"
+        }
+      }
+    },
+    "border-radius": {
+      "default": {
+        "parent": "product/Eila",
+        "type": "borderRadius",
+        "value": "0.25rem",
+        "description": ""
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "parent": "product/Eila",
+        "type": "borderWidth",
+        "value": "0.125rem",
+        "description": ""
+      },
+      "border-radius": {
+        "parent": "product/Eila",
+        "type": "borderRadius",
+        "value": "0.375rem",
+        "description": ""
+      }
+    },
+    "font-family": {
+      "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "{rh.font-family.sans}"
+      }
+    }
+  },
+  "product": {
+    "button": {
+      "secondary": {
+        "background-color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.none}",
+          "description": ""
+        },
+        "border-color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "hover": {
+          "border-color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.default}"
+          },
+          "color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.default}"
+          },
+          "background-color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "tertiary": {
+        "color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "hover": {
+          "color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.default}"
+          },
+          "background-color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "1.125rem"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "1.125rem"
+        }
+      }
+    }
+  }
+}

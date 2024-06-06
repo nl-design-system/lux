@@ -1,0 +1,135 @@
+{
+  "figma": {
+    "rijkslint": {
+      "variant": {
+        "parent": "viewport (beta)/xl",
+        "type": "text",
+        "value": "default",
+        "description": ""
+      }
+    },
+    "screen-size": {
+      "parent": "viewport (beta)/xl",
+      "type": "sizing",
+      "value": "90rem",
+      "description": ""
+    }
+  },
+  "lux": {
+    "grid": {
+      "gutter": {
+        "parent": "viewport (beta)/xl",
+        "type": "spacing",
+        "value": "2rem",
+        "description": ""
+      },
+      "margin": {
+        "parent": "viewport (beta)/xl",
+        "type": "spacing",
+        "value": "2.5rem",
+        "description": ""
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "parent": "viewport (beta)/xl",
+          "type": "sizing",
+          "value": "1.75rem",
+          "description": ""
+        }
+      },
+      "target [oud]": {
+        "parent": "viewport (beta)/xl",
+        "type": "sizing",
+        "value": "3rem",
+        "description": ""
+      }
+    },
+    "font-size": {
+      "s": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1rem",
+        "description": ""
+      },
+      "m": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1.125rem",
+        "description": ""
+      },
+      "l": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1.375rem",
+        "description": ""
+      },
+      "xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1.625rem",
+        "description": ""
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "2.5rem",
+        "description": ""
+      }
+    },
+    "line-height": {
+      "s": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "1.5rem"
+      },
+      "m": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "1.75rem",
+        "description": ""
+      },
+      "l": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "2rem",
+        "description": ""
+      },
+      "xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "2.25rem",
+        "description": ""
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "3.5rem",
+        "description": ""
+      }
+    }
+  },
+  "viewport": {
+    "rijkslint": {
+      "wordmark": {
+        "75%": {
+          "padding-block-start": {
+            "parent": "viewport (beta)/xl",
+            "type": "spacing",
+            "value": "2.5rem",
+            "description": ""
+          }
+        },
+        "original": {
+          "padding-block-start": {
+            "parent": "viewport (beta)/xl",
+            "type": "spacing",
+            "value": "3.125rem",
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
