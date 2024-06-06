@@ -85,7 +85,12 @@
         "type": "spacing",
         "value": "{lux.space.1-x}"
       },
-      "gap": {
+      "column-gap": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "spacing",
         "value": "{lux.space.1-x}"
       },

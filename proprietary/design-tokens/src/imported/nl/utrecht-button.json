@@ -57,7 +57,7 @@
           }
         },
         "type": "spacing",
-        "value": "{lux.button.gap}"
+        "value": "{lux.button.column-gap}"
       },
       "padding-block-start": {
         "type": "spacing",

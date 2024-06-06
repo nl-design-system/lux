@@ -97,8 +97,13 @@
         "value": "{lux.size.target}",
         "description": ""
       },
-      "gap": {
+      "column-gap": {
         "parent": "button login/default",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "spacing",
         "value": "{lux.space.1-x}"
       },

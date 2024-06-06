@@ -111,7 +111,7 @@
             }
           },
           "type": "spacing",
-          "value": "{lux.alert.gap}"
+          "value": "{lux.alert.column-gap}"
         },
         "error": {
           "color": {

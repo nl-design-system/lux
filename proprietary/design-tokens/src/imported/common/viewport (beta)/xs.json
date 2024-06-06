@@ -31,16 +31,6 @@
       }
     },
     "size": {
-      "target [oud]": {
-        "parent": "viewport (beta)/xs",
-        "type": "sizing",
-        "value": "3rem",
-        "description": ""
-      }
-    }
-  },
-  "viewport": {
-    "size": {
       "icon": {
         "wrapper-height": {
           "parent": "viewport (beta)/xs",
@@ -48,6 +38,12 @@
           "value": "1.5rem",
           "description": ""
         }
+      },
+      "target [oud]": {
+        "parent": "viewport (beta)/xs",
+        "type": "sizing",
+        "value": "3rem",
+        "description": ""
       }
     },
     "font-size": {
@@ -113,7 +109,9 @@
         "value": "3rem",
         "description": ""
       }
-    },
+    }
+  },
+  "viewport": {
     "rijkslint": {
       "wordmark": {
         "75%": {
