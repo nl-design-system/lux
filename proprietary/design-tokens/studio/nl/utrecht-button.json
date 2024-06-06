@@ -50,6 +50,15 @@
         "type": "sizing",
         "value": "{lux.button.min-inline-size}"
       },
+      "column-gap": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "spacing",
+        "value": "{lux.button.gap}"
+      },
       "padding-block-start": {
         "type": "spacing",
         "value": "{lux.button.padding-block-start}"
@@ -92,7 +101,7 @@
             }
           },
           "type": "spacing",
-          "value": "{lux.button.gap}"
+          "value": "{utrecht.button.column-gap}"
         },
         "size": {
           "type": "sizing",
