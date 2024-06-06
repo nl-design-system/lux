@@ -51,6 +51,65 @@
         "type": "fontFamilies",
         "value": "{nldoc.font-family.primary}"
       }
+    },
+    "line-height": {
+      "s": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{lux.font-size.s}*1.5"
+      },
+      "m": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{lux.font-size.m}*1.5"
+      },
+      "l": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "150%{lux.font-size.l}*1.5"
+      },
+      "xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{lux.font-size.xl}*1.5"
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{lux.font-size.2xl}*1.5"
+      }
+    },
+    "font-size": {
+      "s": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "0.875rem",
+        "description": ""
+      },
+      "m": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "1rem",
+        "description": ""
+      },
+      "l": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "1.25rem",
+        "description": ""
+      },
+      "xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "1.5rem",
+        "description": ""
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "2rem",
+        "description": ""
+      }
     }
   },
   "product": {

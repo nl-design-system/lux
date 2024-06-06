@@ -97,7 +97,7 @@
           }
         },
         "type": "lineHeights",
-        "value": "{viewport.lux.line-height.l}"
+        "value": "{viewport.line-height.l}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",

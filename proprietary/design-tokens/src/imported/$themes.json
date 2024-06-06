@@ -4,13 +4,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "core/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:1003",
     "$figmaModeId": "7:30",
@@ -116,13 +110,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "common/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -139,13 +127,7 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "mode/light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -198,12 +180,7 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "enabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "mode/dark": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -257,13 +234,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius": "enabled",
-      "core/default": "source",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -295,13 +266,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "core/default": "source",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -333,13 +298,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "core/default": "source",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -371,13 +330,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "core/default": "source",
-      "product/NLdoc-mapping": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "product/NLdoc-mapping": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -409,13 +362,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Elia": "enabled",
-      "core/default": "source",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "core/default": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -446,12 +393,7 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "disabled",
-      "common/viewport/xl": "enabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "common/viewport/xl": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -460,20 +402,20 @@
       "figma.screen-size": "bd0f39c7c8c9102a0b039d307c83b865a9397bc4",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "lux.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.size.target [oud]": "7af716f3d3c7762410466abac2ca5b406f36d187",
-      "lux.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "lux.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "lux.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "lux.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "lux.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "lux.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "lux.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "lux.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "lux.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "lux.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039"
+      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039",
+      "viewport.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
+      "viewport.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
+      "viewport.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
+      "viewport.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
+      "viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a"
     },
     "group": "viewport (beta)"
   },
@@ -482,12 +424,7 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "enabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "common/viewport/lg": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -496,20 +433,20 @@
       "figma.screen-size": "bd0f39c7c8c9102a0b039d307c83b865a9397bc4",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "lux.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.size.target [oud]": "7af716f3d3c7762410466abac2ca5b406f36d187",
-      "lux.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "lux.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "lux.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "lux.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "lux.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "lux.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "lux.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "lux.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "lux.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "lux.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039"
+      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039",
+      "viewport.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
+      "viewport.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
+      "viewport.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
+      "viewport.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
+      "viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a"
     },
     "group": "viewport (beta)"
   },
@@ -518,12 +455,7 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "enabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "common/viewport/md": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -532,20 +464,20 @@
       "figma.screen-size": "bd0f39c7c8c9102a0b039d307c83b865a9397bc4",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "lux.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.size.target [oud]": "7af716f3d3c7762410466abac2ca5b406f36d187",
-      "lux.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "lux.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "lux.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "lux.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "lux.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "lux.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "lux.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "lux.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "lux.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "lux.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039"
+      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039",
+      "viewport.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
+      "viewport.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
+      "viewport.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
+      "viewport.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
+      "viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a"
     },
     "group": "viewport (beta)"
   },
@@ -554,12 +486,7 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "enabled",
-      "common/viewport/xs": "disabled"
+      "common/viewport/sm": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -568,20 +495,20 @@
       "figma.screen-size": "bd0f39c7c8c9102a0b039d307c83b865a9397bc4",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "lux.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.size.target [oud]": "7af716f3d3c7762410466abac2ca5b406f36d187",
-      "lux.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "lux.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "lux.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "lux.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "lux.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "lux.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "lux.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "lux.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "lux.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "lux.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039"
+      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039",
+      "viewport.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
+      "viewport.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
+      "viewport.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
+      "viewport.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
+      "viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a"
     },
     "group": "viewport (beta)"
   },
@@ -590,11 +517,6 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
       "common/viewport/xs": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
@@ -604,20 +526,20 @@
       "figma.screen-size": "bd0f39c7c8c9102a0b039d307c83b865a9397bc4",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "lux.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.size.target [oud]": "7af716f3d3c7762410466abac2ca5b406f36d187",
-      "lux.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "lux.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "lux.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "lux.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "lux.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "lux.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "lux.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "lux.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "lux.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "lux.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039"
+      "viewport.rijkslint.wordmark.original.padding-block-start": "905961d798105984d9560e77782dccd15b07c039",
+      "viewport.line-height.s": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
+      "viewport.line-height.m": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.l": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.xl": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.2xl": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.font-size.s": "9b5432916c6a4f69c307613b4aea0693acaf2071",
+      "viewport.font-size.m": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.l": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.xl": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
+      "viewport.font-size.2xl": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
+      "viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a"
     },
     "group": "viewport (beta)"
   },
@@ -629,13 +551,7 @@
       "component/link": "enabled",
       "component/alert": "enabled",
       "component/button": "enabled",
-      "component/button login": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "component/button login": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1503:3470",
     "$figmaModeId": "1503:2",
@@ -753,13 +669,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "nl/utrecht-button": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "nl/utrecht-button": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",
@@ -861,13 +771,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/default": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "NLdoc/default": "enabled"
     },
     "group": "NLdoc"
   },
@@ -876,13 +780,7 @@
     "name": "Rijksoverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Rijksoverheid": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "NLdoc/Rijksoverheid": "enabled"
     },
     "group": "NLdoc"
   },
@@ -891,13 +789,7 @@
     "name": "Ridderkerk",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Ridderkerk": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "NLdoc/Ridderkerk": "enabled"
     },
     "group": "NLdoc"
   },
@@ -906,13 +798,7 @@
     "name": "Waterschap Hollandse Delta",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Waterschap Hollandse Delta": "enabled",
-      "mode/dark": "disabled",
-      "common/viewport/xl": "disabled",
-      "common/viewport/lg": "disabled",
-      "common/viewport/md": "disabled",
-      "common/viewport/sm": "disabled",
-      "common/viewport/xs": "disabled"
+      "NLdoc/Waterschap Hollandse Delta": "enabled"
     },
     "group": "NLdoc"
   }

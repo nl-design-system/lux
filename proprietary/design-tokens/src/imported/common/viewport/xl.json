@@ -31,19 +31,22 @@
       }
     },
     "size": {
-      "icon": {
-        "wrapper-height": {
-          "parent": "viewport (beta)/xl",
-          "type": "sizing",
-          "value": "1.75rem",
-          "description": ""
-        }
-      },
       "target [oud]": {
         "parent": "viewport (beta)/xl",
         "type": "sizing",
         "value": "3rem",
         "description": ""
+      }
+    }
+  },
+  "viewport": {
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "parent": "viewport (beta)/xl",
+          "type": "sizing",
+          "value": "1.75rem"
+        }
       }
     },
     "font-size": {
@@ -108,9 +111,7 @@
         "value": "3.5rem",
         "description": ""
       }
-    }
-  },
-  "viewport": {
+    },
     "rijkslint": {
       "wordmark": {
         "75%": {
