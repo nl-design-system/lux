@@ -54,6 +54,77 @@
         "type": "fontFamilies",
         "value": "{rh.font-family.sans}"
       }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height-copy": {
+          "type": "sizing",
+          "value": "1.75rem"
+        }
+      }
+    },
+    "line-height-copy": {
+      "s": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "1.5rem"
+      },
+      "m": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "1.75rem",
+        "description": ""
+      },
+      "l": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "2rem",
+        "description": ""
+      },
+      "xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "2.25rem",
+        "description": ""
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "lineHeights",
+        "value": "3.5rem",
+        "description": ""
+      }
+    },
+    "font-size-copy": {
+      "s": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1rem",
+        "description": ""
+      },
+      "m": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1.125rem",
+        "description": ""
+      },
+      "l": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1.375rem",
+        "description": ""
+      },
+      "xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "1.625rem",
+        "description": ""
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xl",
+        "type": "fontSizes",
+        "value": "2.5rem",
+        "description": ""
+      }
     }
   },
   "product": {
