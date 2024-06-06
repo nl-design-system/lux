@@ -6,7 +6,6 @@ registerTransforms(StyleDictionary);
 
 const DELIMITER = '/';
 const SRC_FOLDER = 'src';
-// const COMMUNITY_SRC_FOLDER = `${SRC_FOLDER}/community`;
 const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
 const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
 
@@ -34,7 +33,6 @@ async function run() {
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
     source: [
       ...tokensets.map((tokenset) => `./**/${tokenset}.json`),
-      // `${COMMUNITY_SRC_FOLDER}/**/*.json`,
       `${MANUAL_SRC_FOLDER}/missingTokens.json`,
       `${MANUAL_SRC_FOLDER}/missingTokens.${extractModeFromName(name)}.json`,
     ],
