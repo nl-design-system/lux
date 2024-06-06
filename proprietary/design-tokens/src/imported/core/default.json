@@ -3,582 +3,613 @@
     "color": {
       "grijs": {
         "100": {
-          "value": "#fbfbfb",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fbfbfb",
           "description": ""
         },
         "200": {
-          "value": "#f3f3f3",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f3f3f3",
           "description": ""
         },
         "300": {
-          "value": "#e6e6e6",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#e6e6e6",
           "description": ""
         },
         "400": {
-          "value": "#a7a7a7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#a7a7a7",
           "description": ""
         },
         "500": {
-          "value": "#696969",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#696969",
           "description": ""
         },
         "600": {
-          "value": "#383838",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#383838",
           "description": ""
         },
         "700": {
-          "value": "#282828",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#282828",
           "description": ""
         },
         "800": {
-          "value": "#1d1d1d",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#1d1d1d",
           "description": ""
         },
         "900": {
-          "value": "#171717",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#171717",
           "description": ""
         }
       },
       "zwart": {
-        "value": "#000000",
-        "type": "color",
         "parent": "core/default",
+        "type": "color",
+        "value": "#000000",
         "description": ""
       },
       "wit": {
-        "value": "#ffffff",
-        "type": "color",
         "parent": "core/default",
+        "type": "color",
+        "value": "#ffffff",
         "description": ""
       },
       "none": {
-        "value": "#ffffff00",
-        "type": "color",
         "parent": "core/default",
+        "type": "color",
+        "value": "#ffffff00",
         "description": ""
       },
       "lichtblauw": {
         "100": {
-          "value": "#eef7fb",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#eef7fb",
           "description": ""
         },
         "200": {
-          "value": "#ddeff8",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#ddeff8",
           "description": ""
         },
         "300": {
-          "value": "#8fcae7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#8fcae7",
           "description": ""
         }
       },
       "violet": {
         "100": {
-          "value": "#f2d9e7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f2d9e7",
           "description": ""
         },
         "200": {
-          "value": "#e5b3d0",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#e5b3d0",
           "description": ""
         },
         "300": {
-          "value": "#a90061",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#a90061",
           "description": ""
         },
         "400": {
-          "value": "#52002f",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#52002f",
           "description": ""
         }
       },
       "paars": {
         "100": {
-          "value": "#e3dce7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#e3dce7",
           "description": ""
         },
         "200": {
-          "value": "#c6b9cf",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#c6b9cf",
           "description": ""
         },
         "300": {
-          "value": "#42145f",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#42145f",
           "description": ""
         },
         "400": {
-          "value": "#3b1255",
-          "type": "color",
           "parent": "core/default",
-          "description": ""
+          "type": "color",
+          "value": "#714f87"
         }
       },
       "hemelblauw": {
         "100": {
-          "value": "#d9ebf7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#d9ebf7",
           "description": ""
         },
         "200": {
-          "value": "#b3d7ee",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#b3d7ee",
           "description": ""
         },
         "300": {
-          "value": "#007bc7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#007bc7",
           "description": ""
         },
         "400": {
-          "value": "#00436c",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#00436c",
           "description": ""
         }
       },
       "donkerblauw": {
         "100": {
-          "value": "#d9e8f0",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#d9e8f0",
           "description": ""
         },
         "200": {
-          "value": "#b3d2e1",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#b3d2e1",
           "description": ""
         },
         "300": {
-          "value": "#01689b",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#01689b",
           "description": ""
         },
         "400": {
-          "value": "#013f5e",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#013f5e",
           "description": ""
         }
       },
       "mintgroen": {
         "100": {
-          "value": "#eaf8f4",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#eaf8f4",
           "description": ""
         },
         "200": {
-          "value": "#d6f2e9",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#d6f2e9",
           "description": ""
         },
         "300": {
-          "value": "#76d2b6",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#76d2b6",
           "description": ""
         }
       },
       "mosgroen": {
         "100": {
-          "value": "#ebebd9",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#ebebd9",
           "description": ""
         },
         "200": {
-          "value": "#d6d7b3",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#d6d7b3",
           "description": ""
         },
         "300": {
-          "value": "#777b00",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#777b00",
           "description": ""
         }
       },
       "groen": {
         "100": {
-          "value": "#e1eddb",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#e1eddb",
           "description": ""
         },
         "200": {
-          "value": "#c4dbb6",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#c4dbb6",
           "description": ""
         },
         "300": {
-          "value": "#39870c",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#39870c",
           "description": ""
         },
         "400": {
-          "value": "#004b17",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#004b17",
           "description": ""
         }
       },
       "donkergroen": {
         "100": {
-          "value": "#dfe6e1",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#dfe6e1",
           "description": ""
         },
         "200": {
-          "value": "#becdc3",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#becdc3",
           "description": ""
         },
         "300": {
-          "value": "#275937",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#275937",
           "description": ""
         }
       },
       "bruin": {
         "100": {
-          "value": "#efeada",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#efeada",
           "description": ""
         },
         "200": {
-          "value": "#dfd4b6",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#dfd4b6",
           "description": ""
         },
         "300": {
-          "value": "#94710a",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#94710a",
           "description": ""
         }
       },
       "donkerbruin": {
         "100": {
-          "value": "#e8e0df",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#e8e0df",
           "description": ""
         },
         "200": {
-          "value": "#d1c2be",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#d1c2be",
           "description": ""
         },
         "300": {
-          "value": "#673327",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#673327",
           "description": ""
         }
       },
       "geel": {
         "100": {
-          "value": "#fefbdd",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fefbdd",
           "description": ""
         },
         "200": {
-          "value": "#fdf6bc",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fdf6bc",
           "description": ""
         },
         "300": {
-          "value": "#f9e11e",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f9e11e",
           "description": ""
         }
       },
       "donkergeel": {
         "100": {
-          "value": "#fff4db",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fff4db",
           "description": ""
         },
         "200": {
-          "value": "#ffe9b8",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#ffe9b8",
           "description": ""
         },
         "300": {
-          "value": "#ffb612",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#ffb612",
           "description": ""
         },
         "400": {
-          "value": "#bf880d",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#bf880d",
           "description": ""
         }
       },
       "oranje": {
         "100": {
-          "value": "#fbead9",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fbead9",
           "description": ""
         },
         "200": {
-          "value": "#f6d4b3",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f6d4b3",
           "description": ""
         },
         "300": {
-          "value": "#e17000",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#e17000",
           "description": ""
         },
         "400": {
-          "value": "#b35900",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#b35900",
           "description": ""
         }
       },
       "rood": {
         "100": {
-          "value": "#f9dfdd",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f9dfdd",
           "description": ""
         },
         "200": {
-          "value": "#f2bfbc",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f2bfbc",
           "description": ""
         },
         "300": {
-          "value": "#d52b1e",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#d52b1e",
           "description": ""
         },
         "400": {
-          "value": "#542621",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#542621",
           "description": ""
         }
       },
       "roze": {
         "100": {
-          "value": "#fdeff8",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fdeff8",
           "description": ""
         },
         "200": {
-          "value": "#fbdef0",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#fbdef0",
           "description": ""
         },
         "300": {
-          "value": "#f092cd",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f092cd",
           "description": ""
         }
       },
       "robijnrood": {
         "100": {
-          "value": "#f7d9e7",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#f7d9e7",
           "description": ""
         },
         "200": {
-          "value": "#efb3ce",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#efb3ce",
           "description": ""
         },
         "300": {
-          "value": "#ca005d",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#ca005d",
           "description": ""
         }
       },
       "logoblauw": {
         "300": {
-          "value": "#154273",
-          "type": "color",
           "parent": "core/default",
+          "type": "color",
+          "value": "#154273",
           "description": ""
         }
       }
     },
     "border-radius": {
-      "default": {
-        "value": "0.25rem",
-        "type": "dimension",
-        "parent": "core/default",
-        "description": ""
-      },
       "circle": {
-        "value": "62.4375rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "borderRadius",
+        "value": "999px"
       },
       "none": {
-        "value": "0rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "borderRadius",
+        "value": "0px"
       }
     },
     "border-width": {
       "default": {
-        "value": "0.0625rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "borderWidth",
+        "value": "1px"
       },
       "m": {
-        "value": "0.125rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "borderWidth",
+        "value": "2px"
       },
       "none": {
-        "value": "0rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "borderWidth",
+        "value": "0px"
       }
     },
     "space": {
       "0-x": {
-        "value": "0rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "0* {lux.space.1-x}"
       },
       "025-x": {
-        "value": "0.125rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "0.25* {lux.space.1-x}"
       },
       "05-x": {
-        "value": "0.25rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "0.5* {lux.space.1-x}"
       },
       "1-x": {
-        "value": "0.5rem",
-        "type": "dimension",
         "parent": "core/default",
+        "type": "spacing",
+        "value": "0.5rem",
         "description": ""
       },
       "105-x": {
-        "value": "0.75rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "1.5* {lux.space.1-x}"
       },
       "2-x": {
-        "value": "1rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "2* {lux.space.1-x}"
       },
       "3-x": {
-        "value": "1.5rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "3* {lux.space.1-x}"
       },
       "4-x": {
-        "value": "2rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "4* {lux.space.1-x}"
       },
       "5-x": {
-        "value": "2.5rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "5* {lux.space.1-x}"
       },
       "6-x": {
-        "value": "3rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "6* {lux.space.1-x}"
       },
       "7-x": {
-        "value": "3.5rem",
-        "type": "dimension",
         "parent": "core/default",
-        "description": ""
+        "type": "spacing",
+        "value": "7* {lux.space.1-x}"
+      }
+    },
+    "font-weight": {
+      "regular": {
+        "type": "fontWeights",
+        "value": "Regular"
+      },
+      "bold": {
+        "type": "fontWeights",
+        "value": "Bold"
       }
     }
+  },
+  "oud": {
+    "lux": {
+      "border-radius": {
+        "default": {
+          "parent": "core/default",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {}
+            }
+          },
+          "type": "borderRadius",
+          "value": "4px"
+        }
+      }
+    }
+  },
+  "rh": {
+    "font-family": {
+      "sans": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "RijksoverheidSansWebText, Arial"
+      },
+      "serif": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "RijksoverheidSerifWeb, Arial"
+      }
+    }
+  },
+  "no-token": {
+    "type": "other",
+    "value": "/* */",
+    "description": "Discussie nodig"
   }
 }
