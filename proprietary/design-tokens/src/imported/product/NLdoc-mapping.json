@@ -66,7 +66,7 @@
       "l": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "150%{lux.font-size.l}*1.5"
+        "value": "{lux.font-size.l}*1.5"
       },
       "xl": {
         "parent": "viewport (beta)/xs",
