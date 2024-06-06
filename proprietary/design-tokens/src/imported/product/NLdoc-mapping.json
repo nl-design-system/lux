@@ -56,27 +56,27 @@
       "s": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "{lux.font-size.s}*1.5"
+        "value": "{viewport.font-size.s}*1.5"
       },
       "m": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "{lux.font-size.m}*1.5"
+        "value": "{viewport.font-size.m}*1.5"
       },
       "l": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "{lux.font-size.l}*1.5"
+        "value": "{viewport.font-size.l}*1.5"
       },
       "xl": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "{lux.font-size.xl}*1.5"
+        "value": "{viewport.font-size.xl}*1.5"
       },
       "2xl": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "{lux.font-size.2xl}*1.5"
+        "value": "{viewport.font-size.2xl}*1.5"
       }
     },
     "font-size": {

@@ -37,7 +37,9 @@
         "value": "3rem",
         "description": ""
       }
-    },
+    }
+  },
+  "viewport": {
     "font-size": {
       "s": {
         "parent": "viewport (beta)/sm",
@@ -69,9 +71,7 @@
         "value": "2.5rem",
         "description": ""
       }
-    }
-  },
-  "viewport": {
+    },
     "size": {
       "icon": {
         "wrapper-height": {

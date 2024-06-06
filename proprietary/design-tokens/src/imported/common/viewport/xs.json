@@ -31,14 +31,6 @@
       }
     },
     "size": {
-      "icon": {
-        "wrapper-height": {
-          "parent": "viewport (beta)/xs",
-          "type": "sizing",
-          "value": "1.5rem",
-          "description": ""
-        }
-      },
       "target [oud]": {
         "parent": "viewport (beta)/xs",
         "type": "sizing",
@@ -48,6 +40,20 @@
     }
   },
   "viewport": {
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "parent": "viewport (beta)/xs",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {}
+            }
+          },
+          "type": "sizing",
+          "value": "1.5rem"
+        }
+      }
+    },
     "font-size": {
       "s": {
         "parent": "viewport (beta)/xs",
