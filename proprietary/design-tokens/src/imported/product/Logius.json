@@ -57,73 +57,119 @@
     },
     "size": {
       "icon": {
-        "wrapper-height-copy": {
+        "wrapper-height": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {}
+            }
+          },
           "type": "sizing",
-          "value": "1.75rem"
+          "value": "{viewport.size.icon.wrapper-height}"
         }
       }
     },
-    "line-height-copy": {
+    "line-height": {
       "s": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
-        "value": "1.5rem"
+        "value": "{viewport.line-height.s}"
       },
       "m": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
-        "value": "1.75rem",
-        "description": ""
+        "value": "{viewport.line-height.m}"
       },
       "l": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
-        "value": "2rem",
-        "description": ""
+        "value": "{viewport.line-height.l}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
-        "value": "2.25rem",
-        "description": ""
+        "value": "{viewport.line-height.xl}"
       },
       "2xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
-        "value": "3.5rem",
-        "description": ""
+        "value": "{viewport.line-height.2xl}"
       }
     },
-    "font-size-copy": {
+    "font-size": {
       "s": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
-        "value": "1rem",
-        "description": ""
+        "value": "{viewport.font-size.s}"
       },
       "m": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
-        "value": "1.125rem",
-        "description": ""
+        "value": "{viewport.font-size.m}"
       },
       "l": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
-        "value": "1.375rem",
-        "description": ""
+        "value": "{viewport.font-size.l}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
-        "value": "1.625rem",
-        "description": ""
+        "value": "{viewport.font-size.xl}"
       },
       "2xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
-        "value": "2.5rem",
-        "description": ""
+        "value": "{viewport.font-size.2xl}"
       }
     }
   },
