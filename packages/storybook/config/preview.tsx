@@ -50,6 +50,12 @@ const preview: Preview = {
       disableSnapshot: true,
     },
     controls: { expanded: false },
+    docs: {
+      toc: {
+        headingSelector: 'h2',
+        title: 'Op deze pagina',
+      },
+    },
     options: {
       showPanel: true,
       panelPosition: 'bottom',
