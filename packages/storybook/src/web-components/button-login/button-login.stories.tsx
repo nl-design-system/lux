@@ -48,6 +48,19 @@ export const Playground: Story = {
   },
 };
 
+export const Dark: Story = {
+  name: 'Dark version',
+  args: {
+    label: '',
+    agent: 'digid',
+  },
+  parameters: {
+    themes: {
+      themeOverride: 'Logius dark',
+    },
+  },
+};
+
 export const Visual = createVisualRegressionStory(() => (
   <VisualRegressionWrapper>
     <VisualAgents />

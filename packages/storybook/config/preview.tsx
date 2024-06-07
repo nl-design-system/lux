@@ -1,5 +1,6 @@
 import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
-import type { Preview, StoryContext } from '@storybook/react';
+import { withThemeByClassName } from '@storybook/addon-themes';
+import type { Preview, ReactRenderer /*, StoryContext */ } from '@storybook/react';
 
 import '@lux/font/src/index.scss';
 import './themes';
@@ -9,31 +10,22 @@ defineCustomElements();
 
 const preview: Preview = {
   decorators: [
-    // Enable `utrecht-document` component as backdrop
-    // Enable `utrecht-theme` to configure the design tokens
-    // Ensure old html templates will be rendered as react component
-    (Story: any, storyContext: StoryContext<any>) => {
-      // Hack to make current args for a story available in the transformSource of the docs addon
-      storyContext.parameters['args'] = storyContext.args;
-
-      return (
-        <div className="lux-theme" style={{ display: 'flex', gap: '1rem', justifyContent: 'space-around' }}>
-          <div style={{ padding: '1rem' }}>
-            <Story />
-          </div>
-          <div className="lux-theme--dark" style={{ padding: '1rem', background: 'black', color: 'white' }}>
-            <Story />
-          </div>
-        </div>
-      );
-    },
+    withThemeByClassName<ReactRenderer>({
+      themes: {
+        'Logius light': 'lux-theme--logius-light',
+        'Logius dark': 'lux-theme--logius-dark',
+        'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
+        'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
+      },
+      defaultTheme: 'Logius light',
+    }),
   ],
   parameters: {
     backgrounds: {
-      default: 'mode',
+      default: 'default',
       values: [
         {
-          name: 'mode',
+          name: 'default',
           value: 'var(--lux-color-background-default)',
         },
         {
