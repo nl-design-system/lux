@@ -73,28 +73,28 @@ Schaal het icoon mee met de hoogte van de button. Houd de button minimaal 48px h
 
 ## State
 
-<ul class="section">
+<ul className="section">
   <li>
     <lux-button-login agent="digid"></lux-button-login>
     <span>Default</span>
   </li>
   <li>
-    <lux-button-login class="force-state--hover" agent="digid"></lux-button-login>
+    <lux-button-login className="force-state--hover" agent="digid"></lux-button-login>
     <span>Hover</span>
   </li>
   <li>
-    <lux-button-login class="force-state--active" agent="digid"></lux-button-login>
+    <lux-button-login className="force-state--active" agent="digid"></lux-button-login>
     <span>Active</span>
   </li>
   <li>
-    <lux-button-login class="force-state--focus" agent="digid"></lux-button-login>
+    <lux-button-login className="force-state--focus" agent="digid"></lux-button-login>
     <span>Focus</span>
   </li>
 </ul>
 
 ## Agent
 
-<ul class="section">
+<ul className="section">
   <li>
     <lux-button-login agent="digid"></lux-button-login>
     <span>Digid</span>
@@ -121,7 +121,7 @@ Gebruik de onderstaande Engelse vertalingen door het `label` attribuut toe te wi
 <lux-button-login agent="digid" label="Log in"></lux-button-login>
 ```
 
-<ul class="section">
+<ul className="section">
   <li>
     <lux-button-login agent="digid" label="Log in"></lux-button-login>
     <span>Digid</span>

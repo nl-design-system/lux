@@ -62,7 +62,10 @@ export const createVisualRegressionStory: CreateVisualRegressionStoryFn = (
  * @param props {@link React.PropsWithChildren}
  * @returns A {@link React.ReactElement}
  */
-export const VisualRegressionWrapper = ({ children }: PropsWithChildren): React.ReactElement => {
+export const VisualRegressionWrapper = ({
+  children,
+  className,
+}: PropsWithChildren<{ className: string }>): React.ReactElement => {
   const wrapperStyle: CSSProperties = {
     backgroundColor: '',
     display: 'flex',
@@ -71,5 +74,9 @@ export const VisualRegressionWrapper = ({ children }: PropsWithChildren): React.
     gap: '16px 32px',
   };
 
-  return <div style={wrapperStyle}>{children}</div>;
+  return (
+    <div className={className} style={wrapperStyle}>
+      {children}
+    </div>
+  );
 };

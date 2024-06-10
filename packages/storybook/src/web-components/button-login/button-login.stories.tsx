@@ -48,7 +48,23 @@ export const Playground: Story = {
   },
 };
 
-export const Dark: Story = {
+export const LightTheme: Story = {
+  name: 'Light version',
+  args: {
+    label: '',
+    agent: 'digid',
+  },
+  parameters: {
+    themes: {
+      themeOverride: 'Logius light',
+    },
+    backgrounds: {
+      default: 'light',
+    },
+  },
+};
+
+export const DarkTheme: Story = {
   name: 'Dark version',
   args: {
     label: '',
@@ -58,12 +74,23 @@ export const Dark: Story = {
     themes: {
       themeOverride: 'Logius dark',
     },
+    backgrounds: {
+      default: 'dark',
+    },
   },
 };
 
 export const Visual = createVisualRegressionStory(() => (
-  <VisualRegressionWrapper>
-    <VisualAgents />
-    <VisualStates />
-  </VisualRegressionWrapper>
+  <>
+    <h4 className="lux-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <VisualAgents />
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <h4 className="lux-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualAgents />
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
 ));

@@ -1,3 +1,7 @@
+.docs-story {
+  background-color: var(--lux-color-background-default);
+}
+
 .section {
   display: flex;
   flex-direction: column;

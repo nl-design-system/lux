@@ -2,4 +2,4 @@
 @import "./light/lg.css" (prefers-color-scheme: light);
 @import "./dark/lg.css" (prefers-color-scheme: dark);
 
-/* TODO: For future with breakpoints */
+/* TODO: In the future with breakpoints */

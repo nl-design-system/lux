@@ -1,6 +1,6 @@
 import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
 import { withThemeByClassName } from '@storybook/addon-themes';
-import type { Preview, ReactRenderer /*, StoryContext */ } from '@storybook/react';
+import type { Preview, ReactRenderer } from '@storybook/react';
 
 import '@lux/font/src/index.scss';
 import './themes';
@@ -12,10 +12,14 @@ const preview: Preview = {
   decorators: [
     withThemeByClassName<ReactRenderer>({
       themes: {
+        'DigiD light': 'lux-theme--digid-light',
+        'DigiD dark': 'lux-theme--digid-dark',
         'Logius light': 'lux-theme--logius-light',
         'Logius dark': 'lux-theme--logius-dark',
         'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
         'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
+        'NLdoc light': 'lux-theme--nldoc-default-light',
+        'NLdoc dark': 'lux-theme--nldoc-default-dark',
       },
       defaultTheme: 'Logius light',
     }),
@@ -41,6 +45,14 @@ const preview: Preview = {
           name: 'transparent',
           value:
             'fixed repeating-conic-gradient(#CCC 0% 25%, var(--lux-color-background-default) 0% 50%) 50% / 20px 20px',
+        },
+        {
+          name: 'light',
+          value: 'white',
+        },
+        {
+          name: 'dark',
+          value: 'black',
         },
       ],
     },

@@ -1,0 +1,32 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import * as ButtonLoginStories from "./button-login.stories";
+
+<Meta name="Themes" of={ButtonLoginStories} />
+
+# Button Login Themes
+
+## Light Theme (default)
+
+<Canvas of={ButtonLoginStories.LightTheme} withToolbar={false} className="lux-theme--logius-light" sourceState="none" />
+
+## Dark Theme
+
+<Canvas of={ButtonLoginStories.DarkTheme} withToolbar={false} className="lux-theme--logius-dark" sourceState="none" />
+
+## NLdoc Light Theme
+
+<Canvas
+  of={ButtonLoginStories.LightTheme}
+  withToolbar={false}
+  className="lux-theme--nldoc-default-light"
+  sourceState="none"
+/>
+
+## NLdoc Dark Theme
+
+<Canvas
+  of={ButtonLoginStories.DarkTheme}
+  withToolbar={false}
+  className="lux-theme--nl-doc-default-dark"
+  sourceState="none"
+/>

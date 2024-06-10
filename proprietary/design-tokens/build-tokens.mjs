@@ -1,20 +1,16 @@
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
+import { addIndexes } from './add-indexes.mjs';
 
 registerTransforms(StyleDictionary);
 
-// StyleDictionary.registerFormat({
-//   name: 'yolo',
-//   formatter: function({dictionary, platform}) {
-//     console.log(dictionary, platform);
-//   },
-// })
-
 const DELIMITER = '/';
-const SRC_FOLDER = 'src';
+const SRC_FOLDER = './src';
 const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
 const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
+const DIST_FOLDER = './dist/';
+const COPY_FOLDER = './src/templates/';
 
 const stripWords = (name) => name.replaceAll(/(_?default_?|\s\(beta\))/g, '');
 const fixNLdoc = (name, postfix = '') => name.replace(/(nldoc)(\s-\s)?/, `nldoc${postfix}`);
@@ -36,10 +32,6 @@ const extractProductFromName = (name) => {
   return fixNLdoc(name.split(DELIMITER)[2].toLowerCase(), '-');
 };
 
-// const addMediaIndexes = () => {
-
-// }
-
 async function run() {
   const $themes = await prepareTokensFile();
   //console.log(Object.entries($themes).map(([name, tokensets]) => ({name: extractProductFromName(name), tokensets: '[tokensets]'})));
@@ -57,7 +49,7 @@ async function run() {
     ],
     platforms: {
       css: {
-        buildPath: 'dist/',
+        buildPath: DIST_FOLDER,
         transformGroup: 'tokens-studio',
         transforms: ['name/cti/kebab'],
         files: [
@@ -77,10 +69,6 @@ async function run() {
               selector: `.lux-theme--${extractProductFromName(name)}-${extractModeFromName(name)}`,
             },
           },
-          // {
-          //   destination: `index.css`,
-          //   format: 'yolo',
-          // }
         ],
       },
     },
@@ -91,6 +79,8 @@ async function run() {
     sd.cleanAllPlatforms();
     sd.buildAllPlatforms();
   });
+
+  await addIndexes(DIST_FOLDER, COPY_FOLDER);
 }
 
 run();
