@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-X2b_N9AH.js";import{useMDXComponents as o}from"./index-CRbi4mQH.js";import{M as r,d as a}from"./index-YGM3t6__.js";import"./index-uCp2LrAq.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DF5BiqNe.js";import"../sb-preview/runtime.js";import"./index-CqS9fqXy.js";import"./index-DXimoRZY.js";import"./index-B8K4vdXH.js";import"./index-DrFu-skq.js";const s=`# Semantic versioning
+import{j as e}from"./jsx-runtime-X2b_N9AH.js";import{useMDXComponents as o}from"./index-CRbi4mQH.js";import{M as r,e as a}from"./index-B9yzR-5t.js";import"./index-uCp2LrAq.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-CncGcper.js";import"../sb-preview/runtime.js";import"./index-CqS9fqXy.js";import"./index-DXimoRZY.js";import"./index-B8K4vdXH.js";import"./index-DrFu-skq.js";const s=`# Semantic versioning
 
 ## De standaard
 
@@ -40,6 +40,7 @@ Mochten er nog vragen zijn, neem contact op met het LUX-team via ons [Slack #sup
 [logius-ux.slack.com](https://logius-ux.slack.com/)
 
 [^1]: <https://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning>
+
 [^2]: <https://semver.org/lang/nl/>
 `;function t(n){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Developer/Versioning"}),`
 `,e.jsx(a,{children:s})]})}function j(n={}){const{wrapper:i}={...o(),...n.components};return i?e.jsx(i,{...n,children:e.jsx(t,{...n})}):t()}export{j as default};
