@@ -1,4 +1,4 @@
-import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
+import { Component, Element, h, Prop } from '@stencil/core';
 import { HTMLStencilElement } from '@stencil/core/internal';
 import { COMPONENT_TAG, loginAgentsLabels } from './constants';
 import type { ButtonLoginAgent } from './types';
@@ -30,16 +30,6 @@ export class ButtonLogin {
 
   @Prop() public readonly agent!: ButtonLoginAgent;
   @Prop() public readonly label?: string;
-
-  @Event() private luxClick!: EventEmitter<void>;
-
-  @Listen('click')
-  handleClick(evt: MouseEvent) {
-    evt.stopPropagation();
-    evt.preventDefault();
-
-    this.luxClick.emit();
-  }
 
   renderLabel() {
     const className = `${COMPONENT_TAG}__label`;

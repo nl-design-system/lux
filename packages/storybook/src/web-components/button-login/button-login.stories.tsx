@@ -4,7 +4,6 @@ import { LuxButtonLogin as ButtonLogin } from '@lux/web-components-react';
 import type { JSX } from '@lux/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithoutRef } from 'react';
-import readme from './button-login.md?raw';
 import { VisualAgents } from './visual/Agents';
 import { VisualStates } from './visual/States';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils/createVisualRegressionStory';
@@ -26,14 +25,6 @@ const meta = {
       },
     },
   },
-  tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 } satisfies Meta<typeof LuxButtonLogin>;
 
 export default meta;
@@ -45,6 +36,11 @@ export const Playground: Story = {
   args: {
     label: '',
     agent: 'digid',
+  },
+  parameters: {
+    docs: {
+      sourceState: 'shown',
+    },
   },
 };
 
