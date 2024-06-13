@@ -2,6 +2,7 @@
 
 LUX bestaat uit meerdere losse onderdelen. Je kan zelf kiezen welke onderdelen je gebruikt binnen je applicatie.
 
+
 - Design Tokens
 - CSS Styling utilities
 - Web componenten
