@@ -183,9 +183,6 @@ importers:
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
-      '@types/testing-library__jest-dom':
-        specifier: 5.14.9
-        version: 5.14.9
       '@vitejs/plugin-react':
         specifier: 4.3.0
         version: 4.3.0(vite@5.2.12(@types/node@20.14.1)(sass@1.77.4)(terser@5.29.2))
@@ -2687,9 +2684,6 @@ packages:
 
   '@types/supports-color@8.1.1':
     resolution: {integrity: sha512-dPWnWsf+kzIG140B8z2w3fr5D03TLWbOAFQl45xUpI3vcizeXriNR5VYkWZ+WTMsUHqZ9Xlt3hrxGNANFyNQfw==}
-
-  '@types/testing-library__jest-dom@5.14.9':
-    resolution: {integrity: sha512-FSYhIjFlfOpGSRyVoMBMuS3ws5ehFQODymf3vlI7U1K8c7PHwWwFY7VREfmsuzHSOnoKs/9/Y983ayOs7eRzqw==}
 
   '@types/tough-cookie@4.0.2':
     resolution: {integrity: sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==}
@@ -11914,10 +11908,6 @@ snapshots:
   '@types/stack-utils@2.0.1': {}
 
   '@types/supports-color@8.1.1': {}
-
-  '@types/testing-library__jest-dom@5.14.9':
-    dependencies:
-      '@types/jest': 29.5.12
 
   '@types/tough-cookie@4.0.2': {}
 
