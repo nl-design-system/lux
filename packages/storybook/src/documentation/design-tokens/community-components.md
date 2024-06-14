@@ -24,7 +24,7 @@ Hierin moet je een aantal stappen nemen:
 
 <!-- TODO: (LUX-257): linken naar contact-pagina -->
 
-Laat het LUX altijd weten welk component je gebruikt. _Ook als wij al weten dat het component wordt gebruikt_ door een ander team binnen Logius. Het is voor ons belangrijk om te weten wie welke [community componenten][nlds-components] gebruikt. Dat helpt ons met het bepalen van de prioriteiten. Dus: **geef het altijd en tijdig aan** als je [community componenten][nlds-components] gebruikt
+Voor LUX is het belangrijk om te weten welke [community componenten][nlds-components] waar gebruikt worden. Laat het ons dan ook altijd weten welk component je gebruikt.
 
 ## Zelf doen
 

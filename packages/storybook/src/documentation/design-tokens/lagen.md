@@ -6,7 +6,7 @@
 [nlds-naamgeving]: https://www.nldesignsystem.nl/handboek/design-tokens/#naamgeving
 [style-dictionary]: https://amzn.github.io/style-dictionary/
 
-Om onderscheid te kunnen maken tussen tussen verschillende onderdelen van het design zijn de [LUX design tokens][design-tokens] opgesplits in 3 verschillende lagen: `core`, `common`, en `component`. Elke laag heeft zijn eigen doel en toepassing.
+Om onderscheid te kunnen maken tussen verschillende onderdelen van het design zijn de [LUX design tokens][design-tokens] opgesplits in 3 verschillende lagen: `core`, `common`, en `component`. Elke laag heeft zijn eigen doel en toepassing.
 
 > **Let op:** De voorbeelden op deze pagina beschrijven design tokens in het JSON formaat van [Amazon's Style Dictionary][style-dictionary], de technologie die wij gebruiken om design tokens te definieren en vertalen naar de nodige platformen (CSS, Android, iOS, SCSS, etc.).
 
@@ -14,7 +14,7 @@ Om onderscheid te kunnen maken tussen tussen verschillende onderdelen van het de
 
 De core design tokens zijn de harde waarden. Alle waarden die überhaupt mogelijk zijn om je thema te maken. Het pallet waarmee we werken. Dit is de diepste laag en heeft geen referenties naar andere lagen. Er wordt wellicht gerefereerd naar een andere core design token. Voorbeelden van design tokens in die in de `core` laag zijn gedefiniëerd bijvoorbeeld het [beschikbare kleurenpallet][kleurenpallet], de typografie van LUX, en de beschikbare witruimten.
 
-**NB**: De core design tokens zijn statisch. Dit betekent dat ze nooit van waarde zullen veranderen als het thema wijzigt of men de mode wisselt van `light` naar `dark`. Het nieuwe thema zal simpelweg verwijzen naar een andere core design token.
+**NB**: De core design tokens zijn statisch. Dit betekent dat ze nooit van waarde zullen veranderen als het thema wijzigt of men de mode wisselt van `light` naar `dark`.
 
 Om deze design tokens te benoemen gebruikt LUX de zelfde naamgeving als die van het [Eight Shapes Design System][esds-naamgeving], of _ESDS_.
 
