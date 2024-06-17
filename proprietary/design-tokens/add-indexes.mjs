@@ -4,6 +4,11 @@ import path from 'path';
 const isModeFolder = (file) => ['light', 'dark'].includes(file);
 const isProjectFolder = (file) => !isModeFolder(file); // && !['nldoc'].includes(file);
 
+/**
+ * Loops recursive through project folders and adds index files to them.
+ * @param {string} dir Directory to add index files to
+ * @param {string} copydir Directory to copy the index files from
+ */
 export async function addIndexes(dir, copydir) {
   let files = await readdir(dir);
 

@@ -34,12 +34,6 @@ const extractProductFromName = (name) => {
 
 async function run() {
   const $themes = await prepareTokensFile();
-  //console.log(Object.entries($themes).map(([name, tokensets]) => ({name: extractProductFromName(name), tokensets: '[tokensets]'})));
-  // try {
-  //   return;
-  // } catch (error) {
-  //   console(error);
-  // }
 
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
     source: [

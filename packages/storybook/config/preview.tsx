@@ -10,6 +10,7 @@ defineCustomElements();
 
 const preview: Preview = {
   decorators: [
+    // LUX-303: Spike - Mogelijkheid thema's en modus te splitsen in Storybook themes.
     withThemeByClassName<ReactRenderer>({
       themes: {
         'DigiD light': 'lux-theme--digid-light',
