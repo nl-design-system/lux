@@ -30,8 +30,8 @@
     "build:tokens-studio": "node build-tokens.mjs",
     "watch": "npm-run-all watch:**",
     "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
-    "prepack": "npm-run-all build lint",
-    "prepare": "cpy imported/**/*.json ../lib/tokens/ --cwd=src && cpy . ../../lib/css/ --cwd=dist",
+    "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src && cpy . ../../lib/css/ --cwd=dist",
+    "prepack": "npm-run-all build lint createlib",
     "postpack": "npm run clean:lib"
   },
   "devDependencies": {
