@@ -9,7 +9,7 @@ const isProjectFolder = (file) => !isModeFolder(file); // && !['nldoc'].includes
  * @param {string} dir Directory to add index files to
  * @param {string} copydir Directory to copy the index files from
  */
-export async function addIndexes(dir, copydir) {
+export async function addMediaDependentFiles(dir, copydir) {
   let files = await readdir(dir);
 
   files = await Promise.all(
@@ -19,7 +19,7 @@ export async function addIndexes(dir, copydir) {
 
       if (stats.isDirectory()) {
         if (isProjectFolder(file)) {
-          await cp(copydir, filePath, { recursive: true }).then(() => {
+          cp(copydir, filePath, { recursive: true }).then(() => {
             console.info(`Added indexes to ${filePath}.`);
           });
 

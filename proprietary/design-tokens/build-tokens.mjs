@@ -1,7 +1,7 @@
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
-import { addIndexes } from './add-indexes.mjs';
+import { addMediaDependentFiles } from './add-media-dependent-files.mjs';
 
 registerTransforms(StyleDictionary);
 
@@ -74,7 +74,7 @@ async function run() {
     sd.buildAllPlatforms();
   });
 
-  await addIndexes(DIST_FOLDER, COPY_FOLDER);
+  await addMediaDependentFiles(DIST_FOLDER, COPY_FOLDER);
 }
 
 run();
