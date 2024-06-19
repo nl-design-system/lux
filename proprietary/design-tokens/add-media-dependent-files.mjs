@@ -19,11 +19,11 @@ export async function addMediaDependentFiles(dir, copydir) {
 
       if (stats.isDirectory()) {
         if (isProjectFolder(file)) {
-          cp(copydir, filePath, { recursive: true }).then(() => {
+          await cp(copydir, filePath, { recursive: true }).then(() => {
             console.info(`Added indexes to ${filePath}.`);
           });
 
-          return addIndexes(filePath, copydir);
+          return addMediaDependentFiles(filePath, copydir);
         }
       }
 
