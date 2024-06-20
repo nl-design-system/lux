@@ -169,7 +169,7 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     needs: [lint, test]
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || 'refs/heads/LUX-247_(NPM)-Release-van-JSON-tokens-beschikbaar-maken'
 
     steps:
       - name: Checkout release branch
