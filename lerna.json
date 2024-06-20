@@ -6,7 +6,7 @@
   "command": {
     "publish": {},
     "version": {
-      "allowBranch": ["main"],
+      "allowBranch": ["main", "LUX-247_(NPM)-Release-van-JSON-tokens-beschikbaar-maken"],
       "conventionalCommits": true,
       "exact": true,
       "message": "docs(release): design system packages\n\nskip-checks: true",
