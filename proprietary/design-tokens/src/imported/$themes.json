@@ -636,6 +636,7 @@
     "$figmaModeId": "1503:2",
     "$figmaVariableReferences": {
       "lux.link.color": "45cc69f7b5b073038e64950dd0bcf57fd941c1b4",
+      "lux.link.column-gap": "38f5f79657a4396e434073957e70cbc73acb0925",
       "lux.link.icon.size": "a69dad391c15651d33379ca64d9c9d54ece48203",
       "lux.link.hover.color": "f4356f81c57003ad4b6d7b6641835897cc697dbe",
       "lux.link.active.color": "4e72f55b1759e0f5c97763c8e64ea2e5d6a4ed7f",
@@ -648,6 +649,7 @@
       "lux.alert.border-color": "a23d2e0117359a296e7aab9c6577f40d7bb7bc66",
       "lux.alert.border-radius": "0c595d3d861046c13c5c31d5ca23f3766762af72",
       "lux.alert.border-width": "7d5dc4f4dd694bbcdd99fdc5434c84df6409e278",
+      "lux.alert.column-gap": "1de2c918296b27359cba803a250fe3e2344d672d",
       "lux.alert.padding-block-end": "e5b60561c75ef218c24784484443fc0b18a44247",
       "lux.alert.padding-block-start": "34e1d62491bdcd700d224ffa439c4eaf8033aaab",
       "lux.alert.padding-inline-end": "007c0393cde00ccbc05b8dec4644e02db1d472b5",
@@ -683,6 +685,7 @@
       "lux.button.padding-block-start": "16d752da1792d39e113c2303896334fce38332ad",
       "lux.button.padding-inline-end": "e2c01ad2f2951109f581d5cf57569719758f0d00",
       "lux.button.padding-block-end": "ce35ee8f5482682ac7627540f5a3f70dca3cbb54",
+      "lux.button.column-gap": "51d91ffb876ff5cff8efcd9ee36ee8514eb5742d",
       "lux.button.min-inline-size": "595e42830676f55c43a45d72ec0fae862ddbe704",
       "lux.button.min-block-size": "13f835d1eb827dfa55118a50f97bf6b7c93c1785",
       "lux.button.border-radius": "bd1c529f671d43f35560df8b38d0492534f1444c",
@@ -730,16 +733,13 @@
       "lux.button-login.padding-inline-end": "ffdfeec3b2b83fb9e27c5c8fce9720b3bc044b99",
       "lux.button-login.min-inline-size": "9699cf1a232e171424345b840011c2d4ead4f3c1",
       "lux.button-login.min-block-size": "970cbc652b3c10d2c3a880610fe24e9f647b0db8",
+      "lux.button-login.column-gap": "90b77b87e8de82242a8df50861ce135d76715c12",
       "lux.button-login.border-radius": "73f6acde0366c442b217a4ff811c27a6a0cfd57f",
       "lux.button-login.border-width": "8a8dce464cf6f57863d7a380390019acfd00a6cd",
       "lux.button-login.icon.size": "8a31fc23473c6e137de315550ecfd83f6472237a",
       "lux.button-login.line-height": "51a8ad5b695755c6b3c0c0b760ececbbeb320c0d",
       "lux.button-login.font-weight": "a1643e472c52569a9beb8b15368579e2fe09ae75",
-      "lux.button-login.font-family": "4f871538e4cec521a825f5826c51f6fbd70c95bb",
-      "lux.link.column-gap": "38f5f79657a4396e434073957e70cbc73acb0925",
-      "lux.alert.column-gap": "12fb88b7f8b3f14d4a91567fb23309f98f89ab98",
-      "lux.button.column-gap": "51d91ffb876ff5cff8efcd9ee36ee8514eb5742d",
-      "lux.button-login.column-gap": "90b77b87e8de82242a8df50861ce135d76715c12"
+      "lux.button-login.font-family": "4f871538e4cec521a825f5826c51f6fbd70c95bb"
     },
     "group": "component"
   },

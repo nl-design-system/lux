@@ -86,11 +86,11 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "{viewport.line-height.m}"
+        "value": "{lux.line-height.m}"
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "{viewport.font-size.m}"
+        "value": "{lux.font-size.m}"
       },
       "font-family": {
         "type": "fontFamilies",
