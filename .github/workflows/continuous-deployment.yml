@@ -200,9 +200,10 @@ jobs:
           GIT_AUTHOR_NAME: "LUX Design System"
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
           GIT_COMMITTER_NAME: "LUX Design System"
-        run: |
-          git push --set-upstream origin HEAD:$(git branch --show-current)
-          pnpm run release
+        run: pnpm run release
+        # run: |
+        #   git push --set-upstream origin HEAD
+        #   pnpm run release
 
       - name: "Continuous Deployment: publish to npm"
         env:
