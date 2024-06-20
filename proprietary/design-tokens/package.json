@@ -19,6 +19,8 @@
     "type": "git+ssh",
     "url": "git@github.com:nl-design-system/lux.git"
   },
+  "homepage": "https://nl-design-system.github.io/lux/",
+  "bugs": "https://github.com/nl-design-system/lux/issues",
   "scripts": {
     "clean": "npm-run-all clean:**",
     "clean:dist": "rimraf dist/",
