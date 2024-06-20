@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/react';
-import { CSSProperties, PropsWithChildren, ReactElement } from 'react';
+import { PropsWithChildren, ReactElement } from 'react';
 
 type VisualRegressionRenderFn = () => ReactElement<void, any>;
 interface CreateVisualRegressionStoryFn {
@@ -62,14 +62,9 @@ export const createVisualRegressionStory: CreateVisualRegressionStoryFn = (
  * @param props {@link React.PropsWithChildren}
  * @returns A {@link React.ReactElement}
  */
-export const VisualRegressionWrapper = ({ children }: PropsWithChildren): React.ReactElement => {
-  const wrapperStyle: CSSProperties = {
-    backgroundColor: '',
-    display: 'flex',
-    flexDirection: 'column',
-    flexWrap: 'wrap',
-    gap: '16px 32px',
-  };
-
-  return <div style={wrapperStyle}>{children}</div>;
+export const VisualRegressionWrapper = ({
+  children,
+  className,
+}: PropsWithChildren<{ className: string }>): React.ReactElement => {
+  return <div className={`visual-regression-wrapper ${className}`}>{children}</div>;
 };
