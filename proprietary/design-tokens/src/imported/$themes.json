@@ -117,8 +117,7 @@
     "$figmaVariableReferences": {
       "lux.focus.outline-offset": "c56e3f5cd7a6ef8cc90fc3e59cfc06021f59de08",
       "lux.size.icon": "a3c95921a6a2913b21bb14a0b67255ae7db101ca",
-      "lux.grid.max-inline": "5bb1f77e522415bef3624175933ccdb23c2f8593",
-      "product.size.target": "48a70abc389058105c74b14fbec860fc3ab0e339"
+      "lux.grid.max-inline": "5bb1f77e522415bef3624175933ccdb23c2f8593"
     },
     "group": "common"
   },
