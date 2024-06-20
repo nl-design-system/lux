@@ -3,45 +3,42 @@
     "color": {
       "brand": {
         "default": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
-          "value": "{lux.color.hemelblauw.300}",
+          "value": "{nldoc.color.brand.default}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
-          "value": "{lux.color.hemelblauw.100}",
+          "value": "{nldoc.color.brand.subdued}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
-          "value": "{lux.color.hemelblauw.400}",
+          "value": "{nldoc.color.brand.hover}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "parent": "product/MijnOverheid",
+        "parent": "product/NLdoc",
         "type": "borderRadius",
-        "value": "0.25rem",
-        "description": ""
+        "value": "0px"
       }
     },
     "focus": {
       "outline-width": {
-        "parent": "product/MijnOverheid",
+        "parent": "product/NLdoc",
         "type": "borderWidth",
-        "value": "0.125rem",
-        "description": ""
+        "value": "1px"
       },
       "border-radius": {
-        "parent": "product/MijnOverheid",
+        "parent": "product/NLdoc",
         "type": "borderRadius",
-        "value": "0.375rem",
-        "description": ""
+        "value": "0px"
       }
     },
     "font-family": {
@@ -52,39 +49,34 @@
           }
         },
         "type": "fontFamilies",
-        "value": "{rh.font-family.sans}"
+        "value": "{nldoc.font-family.primary}"
       }
     },
     "line-height": {
       "s": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "1.5rem",
-        "description": ""
+        "value": "{viewport.font-size.s}*1.5"
       },
       "m": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "1.5rem",
-        "description": ""
+        "value": "{viewport.font-size.m}*1.5"
       },
       "l": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "1.75rem",
-        "description": ""
+        "value": "{viewport.font-size.l}*1.5"
       },
       "xl": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "2rem",
-        "description": ""
+        "value": "{viewport.font-size.xl}*1.5"
       },
       "2xl": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "3rem",
-        "description": ""
+        "value": "{viewport.font-size.2xl}*1.5"
       }
     },
     "font-size": {
@@ -118,87 +110,92 @@
         "value": "2rem",
         "description": ""
       }
-    },
-    "size": {
-      "target": {
-        "type": "sizing",
-        "value": "3rem"
-      }
     }
   },
   "product": {
     "button": {
       "secondary": {
         "background-color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
           "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
-          "value": "{lux.color.brand.default}",
+          "value": "{nldoc.button.color}",
           "description": ""
         },
         "color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
-          "value": "{lux.color.brand.default}",
+          "value": "{nldoc.button.color}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/NLdoc",
             "type": "color",
-            "value": "{lux.color.brand.hover}",
+            "value": "{nldoc.color.brand.hover}",
             "description": ""
           },
           "color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/NLdoc",
             "type": "color",
-            "value": "{lux.color.brand.hover}",
+            "value": "{nldoc.button.color}",
             "description": ""
           },
           "background-color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/NLdoc",
             "type": "color",
-            "value": "{lux.color.brand.subdued}",
+            "value": "{nldoc.color.brand.subdued}",
             "description": ""
           }
         }
       },
       "tertiary": {
         "color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/NLdoc",
           "type": "color",
-          "value": "{lux.color.brand.default}",
+          "value": "{nldoc.button.color}",
           "description": ""
         },
         "hover": {
           "color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/NLdoc",
             "type": "color",
-            "value": "{lux.color.brand.hover}",
+            "value": "{nldoc.button.color}",
             "description": ""
           },
           "background-color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/NLdoc",
             "type": "color",
-            "value": "{lux.color.brand.subdued}",
+            "value": "{nldoc.color.brand.subdued}",
             "description": ""
           }
         }
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "1.125rem"
+        "value": "1rem"
       },
       "primary": {
         "font-size": {
           "type": "fontSizes",
-          "value": "1.125rem"
+          "value": "1rem"
         }
+      }
+    },
+    "size": {
+      "target": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "sizing",
+        "value": "2.5rem"
       }
     }
   }

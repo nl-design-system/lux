@@ -1,0 +1,105 @@
+{
+  "lux": {
+    "alert": {
+      "color": {
+        "type": "color",
+        "value": "{lux.color.grijs.700}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{lux.color.none}"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{lux.border-radius.default}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{lux.border-width.default}"
+      },
+      "column-gap": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "spacing",
+        "value": "{lux.space.1-x}"
+      },
+      "padding-block-end": {
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
+      },
+      "padding-block-start": {
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
+      },
+      "padding-inline-end": {
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
+      },
+      "padding-inline-start": {
+        "type": "spacing",
+        "value": "{lux.space.105-x}"
+      },
+      "icon-start-size": {
+        "type": "sizing",
+        "value": "24px"
+      },
+      "min-inline-size": {
+        "type": "sizing",
+        "value": "160px"
+      },
+      "close-button-size": {
+        "type": "sizing",
+        "value": "{lux.size.icon}"
+      },
+      "content": {
+        "row-gap": {
+          "type": "spacing",
+          "value": "{lux.space.0-x}"
+        }
+      },
+      "info": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.info.subdued}"
+        }
+      },
+      "success": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.success.subdued}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.error.subdued}"
+        }
+      },
+      "warning": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.warning.subdued}"
+        }
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{viewport.line-height.m}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{viewport.font-size.m}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{lux.font-family.primary}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{lux.font-weight.regular}"
+      }
+    }
+  }
+}

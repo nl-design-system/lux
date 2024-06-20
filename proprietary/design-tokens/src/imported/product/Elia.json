@@ -3,28 +3,28 @@
     "color": {
       "brand": {
         "default": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.oranje.300}",
+          "value": "{lux.color.paars.300}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.oranje.100}",
+          "value": "{lux.color.paars.200}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.oranje.400}",
+          "value": "{lux.color.paars.400}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "parent": "product/DigiD",
+        "parent": "product/Eila",
         "type": "borderRadius",
         "value": "0.25rem",
         "description": ""
@@ -32,13 +32,13 @@
     },
     "focus": {
       "outline-width": {
-        "parent": "product/DigiD",
+        "parent": "product/Eila",
         "type": "borderWidth",
         "value": "0.125rem",
         "description": ""
       },
       "border-radius": {
-        "parent": "product/DigiD",
+        "parent": "product/Eila",
         "type": "borderRadius",
         "value": "0.375rem",
         "description": ""
@@ -66,62 +66,59 @@
     "button": {
       "secondary": {
         "background-color": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
           "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.border.default}",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "color": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "parent": "product/DigiD",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.border.default}",
-            "description": ""
+            "value": "{lux.color.brand.default}"
           },
           "color": {
-            "parent": "product/DigiD",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.foreground.default}",
-            "description": ""
+            "value": "{lux.color.brand.default}"
           },
           "background-color": {
-            "parent": "product/DigiD",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.background.hover}",
+            "value": "{lux.color.brand.subdued}",
             "description": ""
           }
         }
       },
       "tertiary": {
         "color": {
-          "parent": "product/DigiD",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "color": {
-            "parent": "product/DigiD",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.foreground.default}",
-            "description": ""
+            "value": "{lux.color.brand.default}"
           },
           "background-color": {
-            "parent": "product/DigiD",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.background.hover}",
+            "value": "{lux.color.brand.subdued}",
             "description": ""
           }
         }
@@ -133,7 +130,7 @@
       "primary": {
         "font-size": {
           "type": "fontSizes",
-          "value": "1.1875rem"
+          "value": "1.125rem"
         }
       }
     }
