@@ -1,7 +1,7 @@
 /* @license CC0-1.0 */
 
-import { LuxButtonLogin as ButtonLogin } from '@lux/web-components-react';
-import type { JSX } from '@lux/web-components-stencil';
+import { LuxButtonLogin as ButtonLogin } from '@lux-design-system/web-components-react';
+import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithoutRef } from 'react';
 import { VisualAgents } from './visual/Agents';

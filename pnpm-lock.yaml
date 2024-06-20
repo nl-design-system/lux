@@ -150,7 +150,7 @@ importers:
       '@jest/globals':
         specifier: 29.7.0
         version: 29.7.0
-      '@lux/components-css':
+      '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
       '@rollup/plugin-babel':
@@ -259,22 +259,22 @@ importers:
       '@chromatic-com/storybook':
         specifier: 1.5.0
         version: 1.5.0(react@18.3.1)
-      '@lux/assets':
+      '@lux-design-system/assets':
         specifier: workspace:*
         version: link:../../proprietary/assets
-      '@lux/components-css':
+      '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
-      '@lux/design-tokens':
+      '@lux-design-system/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
-      '@lux/font':
+      '@lux-design-system/font':
         specifier: workspace:*
         version: link:../../proprietary/font
-      '@lux/web-components-react':
+      '@lux-design-system/web-components-react':
         specifier: workspace:*
         version: link:../web-components-react
-      '@lux/web-components-stencil':
+      '@lux-design-system/web-components-stencil':
         specifier: workspace:*
         version: link:../web-components-stencil
       '@storybook/addon-a11y':
@@ -352,7 +352,7 @@ importers:
 
   packages/web-components-react:
     devDependencies:
-      '@lux/web-components-stencil':
+      '@lux-design-system/web-components-stencil':
         specifier: workspace:*
         version: link:../web-components-stencil
       '@types/node':
@@ -386,7 +386,7 @@ importers:
       '@jest/globals':
         specifier: 29.7.0
         version: 29.7.0
-      '@lux/components-css':
+      '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
       '@stencil/react-output-target':
