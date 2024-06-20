@@ -25,13 +25,13 @@ Om deze design tokens te benoemen gebruikt LUX de zelfde naamgeving als die van 
   "lux": {
     "color": {
       "groen": {
-        "300": { "value": "#39870c" } /* Logius groen */
+        "300": { "value": "#39870c" } /* de groene kleur die Logius gebruikt */
       },
       "hemelblauw": {
-        "300": { "value": "#007bc7" } /* MijnOverheid blauw */
+        "300": { "value": "#007bc7" } /* de blauwe kleur die MijnOverheid gebruikt */
       },
       "oranje": {
-        "300": { "value": "#e17000" } /* Digid oranje */
+        "300": { "value": "#e17000" } /* de oranje kleur die Digid gebruikt */
       }
     }
   }
