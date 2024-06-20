@@ -4,5 +4,7 @@
  * are to be done from here.
  */
 
-import '@lux-design-system/design-tokens/dist/logius/light/lg.css';
-// import '@lux-design-system/design-tokens/dist/logius/dark/lg.css';
+import '@lux-design-system/design-tokens/dist/digid/index-theme.css';
+import '@lux-design-system/design-tokens/dist/logius/index-theme.css';
+import '@lux-design-system/design-tokens/dist/mijnoverheid/index-theme.css';
+import '@lux-design-system/design-tokens/dist/nldoc/index-theme.css';

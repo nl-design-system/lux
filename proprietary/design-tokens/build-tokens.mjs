@@ -1,20 +1,21 @@
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
+import { addMediaDependentFiles } from './add-media-dependent-files.mjs';
 
 registerTransforms(StyleDictionary);
 
 const DELIMITER = '/';
-const SRC_FOLDER = 'src';
+const SRC_FOLDER = './src';
 const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
 const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
+const DIST_FOLDER = './dist/';
+const COPY_FOLDER = './src/templates/';
 
+const stripWords = (name) => name.replaceAll(/(_?default_?|\s\(beta\))/g, '');
+const fixNLdoc = (name, postfix = '') => name.replace(/(nldoc)(\s-\s)?/, `nldoc${postfix}`);
 const normalizeFileName = (name) =>
-  name
-    .toLowerCase()
-    .replaceAll(/(_?default_?|\s\(beta\))/g, '')
-    .replaceAll(new RegExp(`${DELIMITER}{2,}`, 'g'), '')
-    .replace(/(nldoc)(\s-\s)?/, 'nldoc/');
+  fixNLdoc(stripWords(name.toLowerCase().replaceAll(new RegExp(`${DELIMITER}{2,}`, 'g'), '')), '/');
 
 const prepareTokensFile = async () => {
   const $themes = JSON.parse(await readFile(`${IMPORTED_SRC_FOLDER}/$themes.json`, 'utf-8'));
@@ -27,9 +28,13 @@ const isModeIndicatorToken = (name) => name === 'mode-on';
 const excludeSystemTokens = ({ name }) => ![isFigmaToken, isModeIndicatorToken].some((fn) => fn(name));
 
 const extractModeFromName = (name) => ['light', 'dark'].find((mode) => name.indexOf(mode) >= 0);
+const extractProductFromName = (name) => {
+  return fixNLdoc(name.split(DELIMITER)[2].toLowerCase(), '-');
+};
 
 async function run() {
   const $themes = await prepareTokensFile();
+
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
     source: [
       ...tokensets.map((tokenset) => `./**/${tokenset}.json`),
@@ -38,7 +43,7 @@ async function run() {
     ],
     platforms: {
       css: {
-        buildPath: 'dist/',
+        buildPath: DIST_FOLDER,
         transformGroup: 'tokens-studio',
         transforms: ['name/cti/kebab'],
         files: [
@@ -48,6 +53,14 @@ async function run() {
             format: 'css/variables',
             options: {
               outputReferences: true,
+            },
+          },
+          {
+            destination: `${normalizeFileName(name)}-theme.css`,
+            format: 'css/variables',
+            options: {
+              outputReferences: true,
+              selector: `.lux-theme--${extractProductFromName(name)}-${extractModeFromName(name)}`,
             },
           },
         ],
@@ -60,6 +73,8 @@ async function run() {
     sd.cleanAllPlatforms();
     sd.buildAllPlatforms();
   });
+
+  await addMediaDependentFiles(DIST_FOLDER, COPY_FOLDER);
 }
 
 run();

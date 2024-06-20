@@ -1,5 +1,6 @@
 import { defineCustomElements } from '@lux-design-system/web-components-stencil/loader/index.js';
-import type { Preview, StoryContext } from '@storybook/react';
+import { withThemeByClassName } from '@storybook/addon-themes';
+import type { Preview, ReactRenderer } from '@storybook/react';
 
 import '@lux-design-system/font/src/index.scss';
 import './themes';
@@ -9,31 +10,27 @@ defineCustomElements();
 
 const preview: Preview = {
   decorators: [
-    // Enable `utrecht-document` component as backdrop
-    // Enable `utrecht-theme` to configure the design tokens
-    // Ensure old html templates will be rendered as react component
-    (Story: any, storyContext: StoryContext<any>) => {
-      // Hack to make current args for a story available in the transformSource of the docs addon
-      storyContext.parameters['args'] = storyContext.args;
-
-      return (
-        <div className="lux-theme" style={{ display: 'flex', gap: '1rem', justifyContent: 'space-around' }}>
-          <div style={{ padding: '1rem' }}>
-            <Story />
-          </div>
-          <div className="lux-theme--dark" style={{ padding: '1rem', background: 'black', color: 'white' }}>
-            <Story />
-          </div>
-        </div>
-      );
-    },
+    // LUX-303: Spike - Mogelijkheid thema's en modus te splitsen in Storybook themes.
+    withThemeByClassName<ReactRenderer>({
+      themes: {
+        'DigiD light': 'lux-theme--digid-light',
+        'DigiD dark': 'lux-theme--digid-dark',
+        'Logius light': 'lux-theme--logius-light',
+        'Logius dark': 'lux-theme--logius-dark',
+        'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
+        'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
+        'NLdoc light': 'lux-theme--nldoc-default-light',
+        'NLdoc dark': 'lux-theme--nldoc-default-dark',
+      },
+      defaultTheme: 'Logius light',
+    }),
   ],
   parameters: {
     backgrounds: {
-      default: 'mode',
+      default: 'default',
       values: [
         {
-          name: 'mode',
+          name: 'default',
           value: 'var(--lux-color-background-default)',
         },
         {
@@ -49,6 +46,14 @@ const preview: Preview = {
           name: 'transparent',
           value:
             'fixed repeating-conic-gradient(#CCC 0% 25%, var(--lux-color-background-default) 0% 50%) 50% / 20px 20px',
+        },
+        {
+          name: 'light',
+          value: 'white',
+        },
+        {
+          name: 'dark',
+          value: 'black',
         },
       ],
     },
