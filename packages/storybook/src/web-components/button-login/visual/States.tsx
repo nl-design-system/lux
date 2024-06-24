@@ -1,4 +1,4 @@
-import { LuxButtonLogin } from '@lux/web-components-react';
+import { LuxButtonLogin } from '@lux-design-system/web-components-react';
 
 export const VisualStates = () => (
   <>

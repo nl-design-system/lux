@@ -19,7 +19,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
-      componentCorePackage: '@lux/web-components-stencil',
+      componentCorePackage: '@lux-design-system/web-components-stencil',
       proxiesFile: '../web-components-react/src/components.ts',
     }),
   ],

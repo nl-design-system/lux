@@ -9,6 +9,7 @@ vendor/
 build/
 coverage/
 dist/
+lib/
 tmp/
 
 # Ignore archives
