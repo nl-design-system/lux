@@ -4,9 +4,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "core/default": "enabled"
     },
     "group": "core"
   },
@@ -30,9 +28,7 @@
       "component/alert/variant/warning": "enabled",
       "component/alert/closable/false": "enabled",
       "component/alert/closable/true": "enabled",
-      "component/link/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "component/link/default": "enabled"
     },
     "group": "components"
   },
@@ -41,9 +37,7 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/Logius": "enabled"
     },
     "group": "product"
   },
@@ -52,9 +46,7 @@
     "name": "MijnOverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/MijnOverheid": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/MijnOverheid": "enabled"
     },
     "group": "product"
   },
@@ -63,9 +55,7 @@
     "name": "DigiD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/DigiD": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/DigiD": "enabled"
     },
     "group": "product"
   },
@@ -74,9 +64,7 @@
     "name": "NLdoc - default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc - default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/NLdoc - default": "enabled"
     },
     "group": "product"
   },
@@ -85,9 +73,7 @@
     "name": "NLdoc - Ridderkerk",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc - Ridderkerk": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/NLdoc - Ridderkerk": "enabled"
     },
     "group": "product"
   },
@@ -96,9 +82,7 @@
     "name": "NLdoc - Rijksoverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc - Rijksoverheid": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/NLdoc - Rijksoverheid": "enabled"
     },
     "group": "product"
   },
@@ -107,9 +91,7 @@
     "name": "NLdoc - WHD",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc - WHD": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "product/NLdoc - WHD": "enabled"
     },
     "group": "product"
   },
@@ -118,9 +100,7 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "mode/light": "enabled"
     },
     "group": "mode"
   },
@@ -129,9 +109,7 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark (beta)": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "mode/dark (beta)": "enabled"
     },
     "group": "mode"
   },
@@ -141,9 +119,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport (beta)/xl": "enabled",
-      "common/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "common/default": "enabled"
     },
     "group": "viewport (beta)"
   },
@@ -153,9 +129,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport (beta)/lg": "enabled",
-      "common/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "common/default": "enabled"
     },
     "group": "viewport (beta)"
   },
@@ -165,9 +139,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport (beta)/md": "enabled",
-      "common/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "common/default": "enabled"
     },
     "group": "viewport (beta)"
   },
@@ -177,9 +149,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport (beta)/sm": "enabled",
-      "common/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "common/default": "enabled"
     },
     "group": "viewport (beta)"
   },
@@ -189,9 +159,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport (beta)/xs": "enabled",
-      "common/default": "enabled",
-      "language/nl": "disabled",
-      "language/en": "disabled"
+      "common/default": "enabled"
     },
     "group": "viewport (beta)"
   },

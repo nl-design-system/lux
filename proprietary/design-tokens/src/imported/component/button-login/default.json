@@ -90,6 +90,18 @@
       "digid": {
         "type": "text",
         "value": "{language.button-login.digid}"
+      },
+      "digid-machtigen": {
+        "type": "text",
+        "value": "{language.button-login.digid-machtigen}}"
+      },
+      "eherkenning": {
+        "type": "text",
+        "value": "{language.button-login.eherkenning}"
+      },
+      "european-login": {
+        "type": "text",
+        "value": "{language.button-login.european-login}"
       }
     }
   }
