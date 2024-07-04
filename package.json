@@ -14,6 +14,11 @@
     "node": "^20",
     "pnpm": "^9"
   },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "."
+  },
   "volta": {
     "node": "20.12.2"
   },

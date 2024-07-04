@@ -14,7 +14,8 @@
   },
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/lux-community.git"
+    "url": "git@github.com:nl-design-system/lux-community.git",
+    "directory": "packages/components-react"
   },
   "scripts": {
     "prebuild": "npm run clean",
