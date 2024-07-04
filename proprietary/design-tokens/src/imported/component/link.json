@@ -6,11 +6,6 @@
         "value": "{mode.link.color}"
       },
       "column-gap": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "spacing",
         "value": "{lux.space.05-x}"
       },

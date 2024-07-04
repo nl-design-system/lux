@@ -574,11 +574,6 @@
       "border-radius": {
         "default": {
           "parent": "core/default",
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {}
-            }
-          },
           "type": "borderRadius",
           "value": "4px"
         }
@@ -588,20 +583,10 @@
   "rh": {
     "font-family": {
       "sans": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "fontFamilies",
         "value": "RijksoverheidSansWebText, Arial"
       },
       "serif": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "fontFamilies",
         "value": "RijksoverheidSerifWeb, Arial"
       }

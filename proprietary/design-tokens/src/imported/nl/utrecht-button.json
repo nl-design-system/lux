@@ -95,11 +95,6 @@
       },
       "icon": {
         "gap": {
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {}
-            }
-          },
           "type": "spacing",
           "value": "{utrecht.button.column-gap}"
         },
