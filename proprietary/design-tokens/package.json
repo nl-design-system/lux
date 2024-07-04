@@ -13,7 +13,8 @@
   },
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/lux.git"
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "properietary/design-tokens"
   },
   "scripts": {
     "clean": "npm-run-all clean:**",
