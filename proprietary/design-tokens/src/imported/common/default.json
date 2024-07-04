@@ -2,31 +2,31 @@
   "lux": {
     "focus": {
       "border-width [oud]": {
-        "value": "{lux.border-width.m}",
-        "type": "dimension",
         "parent": "common/Mode 1",
+        "type": "dimension",
+        "value": "{lux.border-width.m}",
         "description": "vervangen met product collectie"
       }
     },
     "size": {
       "target": {
-        "value": "3rem",
-        "type": "dimension",
         "parent": "common/Mode 1",
+        "type": "dimension",
+        "value": "3rem",
         "description": ""
       },
       "icon": {
-        "value": "1rem",
-        "type": "dimension",
         "parent": "common/Mode 1",
+        "type": "dimension",
+        "value": "1rem",
         "description": ""
       }
     },
     "grid": {
       "max-inline": {
-        "value": "77.5rem",
-        "type": "dimension",
         "parent": "common/Mode 1",
+        "type": "dimension",
+        "value": "77.5rem",
         "description": ""
       }
     }

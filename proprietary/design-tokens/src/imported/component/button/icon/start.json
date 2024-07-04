@@ -2,12 +2,12 @@
   "lux": {
     "button": {
       "padding-inline-start": {
-        "value": "{lux.space.2-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.2-x}"
       },
       "padding-inline-end": {
-        "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.105-x}"
       }
     }
   },
@@ -15,12 +15,12 @@
     "button": {
       "show-icon": {
         "start": {
-          "value": "false",
-          "type": "boolean"
+          "type": "boolean",
+          "value": "false"
         },
         "end": {
-          "value": "true",
-          "type": "boolean"
+          "type": "boolean",
+          "value": "true"
         }
       }
     }

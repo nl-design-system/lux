@@ -2,35 +2,35 @@
   "lux": {
     "link": {
       "color": {
-        "value": "{lux.color.donkerblauw.300}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.donkerblauw.300}"
       },
       "margin-inline": {
-        "value": "{lux.space.05-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.05-x}"
       },
       "icon": {
         "size": {
-          "value": "{lux.button.icon.size}",
-          "type": "dimension"
+          "type": "dimension",
+          "value": "{lux.button.icon.size}"
         }
       },
       "hover": {
         "color": {
-          "value": "{lux.color.donkerblauw.400}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.donkerblauw.400}"
         }
       },
       "active": {
         "color": {
-          "value": "{lux.color.paars.300}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.paars.300}"
         }
       },
       "visited": {
         "color": {
-          "value": "{lux.color.paars.300}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.paars.300}"
         }
       }
     }

@@ -19,8 +19,8 @@
           "value": "{lux.color.brand.hover}"
         },
         "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "color": {
           "type": "color",
@@ -29,16 +29,16 @@
       },
       "active": {
         "background-color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.brand.default}"
         },
         "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "color": {
-          "value": "{lux.color.foreground.onEmphasis}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.foreground.onEmphasis}"
         }
       }
     }

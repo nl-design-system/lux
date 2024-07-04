@@ -2,57 +2,57 @@
   "lux": {
     "alert": {
       "color": {
-        "value": "{lux.color.grijs.700}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.grijs.700}"
       },
       "border-color": {
-        "value": "{lux.color.none}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.none}"
       },
       "border-radius": {
-        "value": "{lux.border-radius.default}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "value": "{lux.border-width.default}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.border-width.default}"
       },
       "column-gap": {
-        "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.1-x}"
       },
       "padding-block-end": {
-        "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.105-x}"
       },
       "padding-block-start": {
-        "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.105-x}"
       },
       "padding-inline-end": {
-        "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.105-x}"
       },
       "padding-inline-start": {
-        "value": "{lux.space.105-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.105-x}"
       },
       "icon-start-size": {
-        "value": "24px",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "24px"
       },
       "min-inline-size": {
-        "value": "160px",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "160px"
       },
       "close-button-size": {
-        "value": "{lux.size.icon}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.size.icon}"
       },
       "content": {
         "row-gap": {
-          "value": "{lux.space.0-x}",
-          "type": "dimension"
+          "type": "dimension",
+          "value": "{lux.space.0-x}"
         }
       }
     }

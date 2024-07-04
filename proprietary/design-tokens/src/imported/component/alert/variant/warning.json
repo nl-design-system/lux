@@ -2,16 +2,16 @@
   "figma": {
     "icon": {
       "variant": {
-        "value": "warning",
-        "type": "text"
+        "type": "text",
+        "value": "warning"
       }
     }
   },
   "lux": {
     "alert": {
       "background-color": {
-        "value": "{lux.color.feedback.warning.subdued}",
-        "type": "color"
+        "type": "color",
+        "value": "{lux.color.feedback.warning.subdued}"
       }
     }
   }

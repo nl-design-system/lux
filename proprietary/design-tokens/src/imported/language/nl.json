@@ -1,0 +1,22 @@
+{
+  "language": {
+    "button-login": {
+      "digid": {
+        "type": "text",
+        "value": "Inloggen"
+      },
+      "digid-machtigen": {
+        "type": "text",
+        "value": "Inloggen als gemachtigde"
+      },
+      "eherkenning": {
+        "type": "text",
+        "value": "Inloggen als bedrijf of instelling"
+      },
+      "european-login": {
+        "type": "text",
+        "value": "European login"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "language": {
+    "button-login": {
+      "digid": {
+        "type": "text",
+        "value": "Log in"
+      },
+      "digid-machtigen": {
+        "type": "text",
+        "value": "Log in as representative"
+      },
+      "eherkenning": {
+        "type": "text",
+        "value": "Log in as a company or organisation"
+      },
+      "european-login": {
+        "type": "text",
+        "value": "European login"
+      }
+    }
+  }
+}

@@ -19,8 +19,8 @@
           "value": "{lux.color.brand.subdued}"
         },
         "border-color": {
-          "value": "{lux.color.brand.hover}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.brand.hover}"
         },
         "color": {
           "type": "color",
@@ -29,16 +29,16 @@
       },
       "active": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "border-color": {
-          "value": "{mode.button.secondary.border-color}",
-          "type": "color"
+          "type": "color",
+          "value": "{mode.button.secondary.border-color}"
         },
         "color": {
-          "value": "{mode.button.secondary.color}",
-          "type": "color"
+          "type": "color",
+          "value": "{mode.button.secondary.color}"
         }
       }
     }

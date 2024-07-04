@@ -19,8 +19,8 @@
           "value": "{mode.button.tertiary.hover.background-color}"
         },
         "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "color": {
           "type": "color",
@@ -29,16 +29,16 @@
       },
       "active": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "color": {
-          "value": "{mode.button.tertiary.color}",
-          "type": "color"
+          "type": "color",
+          "value": "{mode.button.tertiary.color}"
         }
       }
     }

@@ -2,16 +2,16 @@
   "figma": {
     "alert": {
       "close-button": {
-        "value": "false",
-        "type": "boolean"
+        "type": "boolean",
+        "value": "false"
       }
     }
   },
   "lux": {
     "alert": {
       "padding-inline-end": {
-        "value": "{lux.space.2-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.2-x}"
       }
     }
   }

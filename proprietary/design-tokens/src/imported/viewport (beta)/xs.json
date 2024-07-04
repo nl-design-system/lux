@@ -2,40 +2,40 @@
   "figma": {
     "rijkslint": {
       "variant": {
-        "value": "small",
-        "type": "text",
         "parent": "viewport (beta)/xs",
+        "type": "text",
+        "value": "small",
         "description": ""
       }
     },
     "screen-size": {
-      "value": "23.4375rem",
-      "type": "dimension",
       "parent": "viewport (beta)/xs",
+      "type": "dimension",
+      "value": "23.4375rem",
       "description": ""
     }
   },
   "lux": {
     "grid": {
       "gutter": {
-        "value": "0rem",
-        "type": "dimension",
         "parent": "viewport (beta)/xs",
+        "type": "dimension",
+        "value": "0rem",
         "description": ""
       },
       "margin": {
-        "value": "1rem",
-        "type": "dimension",
         "parent": "viewport (beta)/xs",
+        "type": "dimension",
+        "value": "1rem",
         "description": ""
       }
     },
     "size": {
       "icon": {
         "wrapper-height": {
-          "value": "1.5rem",
-          "type": "dimension",
           "parent": "viewport (beta)/xs",
+          "type": "dimension",
+          "value": "1.5rem",
           "description": ""
         }
       }
@@ -46,17 +46,17 @@
       "wordmark": {
         "75%": {
           "padding-block-start": {
-            "value": "1.25rem",
-            "type": "dimension",
             "parent": "viewport (beta)/xs",
+            "type": "dimension",
+            "value": "1.25rem",
             "description": ""
           }
         },
         "original": {
           "padding-block-start": {
-            "value": "1.25rem",
-            "type": "dimension",
             "parent": "viewport (beta)/xs",
+            "type": "dimension",
+            "value": "1.25rem",
             "description": ""
           }
         }

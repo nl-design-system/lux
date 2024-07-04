@@ -3,37 +3,37 @@
     "button": {
       "disabled": {
         "background-color": {
-          "value": "{lux.color.background.subdued}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.background.subdued}"
         },
         "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.none}"
         },
         "color": {
-          "value": "{lux.color.foreground.subdued}",
-          "type": "color"
+          "type": "color",
+          "value": "{lux.color.foreground.subdued}"
         }
       },
       "padding-inline-start": {
-        "value": "{lux.space.2-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.2-x}"
       },
       "padding-block-start": {
-        "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.1-x}"
       },
       "padding-inline-end": {
-        "value": "{lux.space.2-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.2-x}"
       },
       "padding-block-end": {
-        "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.1-x}"
       },
       "margin-inline": {
-        "value": "{lux.space.1-x}",
-        "type": "dimension"
+        "type": "dimension",
+        "value": "{lux.space.1-x}"
       },
       "min-inline-size": {
         "type": "dimension",

@@ -3,44 +3,44 @@
     "color": {
       "brand": {
         "default": {
-          "value": "{lux.color.violet.300}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.300}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "value": "{lux.color.violet.100}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.100}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "value": "{lux.color.violet.400}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.400}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "value": "0rem",
-        "type": "dimension",
         "parent": "product/NLdoc",
+        "type": "dimension",
+        "value": "0rem",
         "description": ""
       }
     },
     "focus": {
       "outline-width": {
-        "value": "0.0625rem",
-        "type": "dimension",
         "parent": "product/NLdoc",
+        "type": "dimension",
+        "value": "0.0625rem",
         "description": ""
       },
       "border-radius": {
-        "value": "0rem",
-        "type": "dimension",
         "parent": "product/NLdoc",
+        "type": "dimension",
+        "value": "0rem",
         "description": ""
       }
     }
@@ -49,55 +49,55 @@
     "button": {
       "secondary": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
           "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "value": "{lux.color.brand.default}",
+          "parent": "product/NLdoc",
           "type": "color",
-          "parent": "product/NLdoc"
+          "value": "{lux.color.brand.default}"
         },
         "color": {
-          "value": "{lux.color.brand.default}",
+          "parent": "product/NLdoc",
           "type": "color",
-          "parent": "product/NLdoc"
+          "value": "{lux.color.brand.default}"
         },
         "hover": {
           "border-color": {
-            "value": "{lux.color.brand.hover}",
+            "parent": "product/NLdoc",
             "type": "color",
-            "parent": "product/NLdoc"
+            "value": "{lux.color.brand.hover}"
           },
           "color": {
-            "value": "{lux.color.brand.hover}",
+            "parent": "product/NLdoc",
             "type": "color",
-            "parent": "product/NLdoc"
+            "value": "{lux.color.brand.hover}"
           },
           "background-color": {
-            "value": "{lux.color.brand.subdued}",
+            "parent": "product/NLdoc",
             "type": "color",
-            "parent": "product/NLdoc"
+            "value": "{lux.color.brand.subdued}"
           }
         }
       },
       "tertiary": {
         "color": {
-          "value": "{lux.color.brand.default}",
+          "parent": "product/NLdoc",
           "type": "color",
-          "parent": "product/NLdoc"
+          "value": "{lux.color.brand.default}"
         },
         "hover": {
           "color": {
-            "value": "{lux.color.brand.hover}",
+            "parent": "product/NLdoc",
             "type": "color",
-            "parent": "product/NLdoc"
+            "value": "{lux.color.brand.hover}"
           },
           "background-color": {
-            "value": "{lux.color.brand.subdued}",
+            "parent": "product/NLdoc",
             "type": "color",
-            "parent": "product/NLdoc"
+            "value": "{lux.color.brand.subdued}"
           }
         }
       }

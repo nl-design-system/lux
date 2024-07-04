@@ -84,5 +84,13 @@
         "value": "{lux.space.05-x}"
       }
     }
+  },
+  "label": {
+    "button-login": {
+      "digid": {
+        "type": "text",
+        "value": "{language.button-login.digid}"
+      }
+    }
   }
 }

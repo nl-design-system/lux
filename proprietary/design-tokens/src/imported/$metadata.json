@@ -31,6 +31,8 @@
     "component/alert/variant/warning",
     "component/alert/closable/false",
     "component/alert/closable/true",
-    "component/link/default"
+    "component/link/default",
+    "language/nl",
+    "language/en"
   ]
 }
