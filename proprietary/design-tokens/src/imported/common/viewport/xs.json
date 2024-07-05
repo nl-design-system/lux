@@ -128,7 +128,7 @@
             "description": ""
           }
         },
-        "original": {
+        "default": {
           "padding-block-start": {
             "parent": "viewport (beta)/xs",
             "type": "spacing",

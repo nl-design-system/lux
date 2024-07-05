@@ -1,9 +1,10 @@
+// DEPRECATED: to be deleted
 import { transform } from '@divriots/style-dictionary-to-figma';
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
-import jsonListFormat from './json-list-formatter.mjs';
-import { addMediaDependentFiles } from './add-media-dependent-files.mjs';
+import jsonListFormat from './build/json-list-formatter.mjs';
+import { addMediaDependentFiles } from './build/add-media-dependent-files.mjs';
 
 registerTransforms(StyleDictionary);
 

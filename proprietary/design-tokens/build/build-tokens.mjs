@@ -1,10 +1,9 @@
 import { permutateThemes as permutateTsThemes, registerTransforms } from '@tokens-studio/sd-transforms';
+import { transform } from '@divriots/style-dictionary-to-figma';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
-
-const SRC_FOLDER = 'src';
-const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
-// const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
+import { IMPORTED_SRC_FOLDER, DIST_FOLDER } from './constants.mjs';
+import jsonListFormat from './json-list-formatter.mjs';
 
 /** 
  * Transforms spacing tokens with math symbols to css calc()-values
@@ -30,6 +29,8 @@ registerTransforms(StyleDictionary, {
 const cleanName = (n) => n.toLowerCase().replaceAll(/\/?(default|\s\(.+\))/g, '').replaceAll(' ', '-');
 const isFigmaToken = (name) => name.startsWith('figma');
 const excludeSystemTokens = ({ name }) => ![isFigmaToken].some((fn) => fn(name));
+const extractProductFromName = (name) => name.split('/').slice(0, -2).join('-');
+const extractModeFromName = (name) => name.split('/').slice(-2, -1).toString();
 
 /**
  * Gets the different groups from the themes object and groups them.
@@ -132,7 +133,7 @@ const createProducts = (groups) => {
         const modeTokens = getTokensByMode(groups, mode);
         const viewportTokens = getTokensByViewport(groups, viewport);
 
-        return [`nldoc/${name}/${mode}/${viewport}`, [...nlDocTokenSets, ...selectedTokenSets, ...modeTokens, ...viewportTokens]];
+        return [`nldoc/${name ? name + '/' : ''}${mode}/${viewport}`, [...nlDocTokenSets, ...selectedTokenSets, ...modeTokens, ...viewportTokens]];
       });
     }
   );
@@ -154,7 +155,6 @@ const permutateThemes = (themes) => {
   return createProducts(themeGroups);
 };
 
-
 /**
  * Builds tokens
  *
@@ -166,10 +166,6 @@ export const buildTokens = async () => {
 
   const $themes = JSON.parse(await readFile(`${IMPORTED_SRC_FOLDER}/$themes.json`, 'utf-8'));
   const themes = permutateThemes($themes);
-
-  console.log(
-    Object.entries(themes).filter(([key]) => key.match(/(?=.*community)(?=.*utrecht)/gi))
-  );
 
   const configs = Object.entries(themes).map(([name, tokenSets]) => ({
     source: [
@@ -183,9 +179,35 @@ export const buildTokens = async () => {
       './**/nl/*.json', // For now, later this will be handled different.
     ],
     preprocessors: ['tokens-studio'], // <-- since 0.16.0 this must be explicit
+    format: {
+      ...jsonListFormat,
+      figmaTokensPlugin: ({ dictionary }) => {
+        const transformedTokens = transform(dictionary.tokens);
+        return JSON.stringify(transformedTokens, null, 2);
+      },
+    },
     platforms: {
+      jsonx: {
+        transformGroup: 'js',
+        files: [
+          {
+            filter: excludeSystemTokens,
+            destination: `${DIST_FOLDER}figma-tokens.json`,
+            format: 'figmaTokensPlugin',
+          },
+        ],
+      },
+      json: {
+        files: [
+          {
+            filter: excludeSystemTokens,
+            destination: `${DIST_FOLDER}index.json`,
+            format: 'json/list',
+          },
+        ],
+      },
       css: {
-        buildPath: 'dist/',
+        buildPath: DIST_FOLDER,
         transformGroup: 'tokens-studio',
         transforms: ['spacing/calc', 'name/cti/kebab', 'ts/descriptionToComment', 'ts/typography/css/fontFamily' ],
         files: [
@@ -198,6 +220,14 @@ export const buildTokens = async () => {
               outputReferenceFallbacks: true,
             },
           },
+          {
+            destination: `${name}-theme.css`,
+            format: 'css/variables',
+            options: {
+              outputReferences: true,
+              selector: `.lux-theme--${extractProductFromName(name)}-${extractModeFromName(name)}`,
+            },
+          }
         ],
       },
     },
@@ -205,8 +235,8 @@ export const buildTokens = async () => {
 
   configs.forEach((cfg) => {
     const sd = StyleDictionary.extend(cfg);
-    console.info(`\n🔧 Building files ${cfg.platforms.css.files.map(({destination}) => destination).join(',')}`);
-    console.info(`Files used: \n${[...cfg.include, ...cfg.source].join('\n')}`);
+    console.info(`\n🔧 Building files ${cfg.platforms.css.files.map(({destination}) => destination).join(', ')}`);
+    console.info(`  Files used: \n${[...cfg.include, ...cfg.source].join('\n')}`);
   
     sd.cleanAllPlatforms();
     sd.buildAllPlatforms();
