@@ -55,7 +55,7 @@
     "rimraf": "5.0.7",
     "storybook": "8.1.5",
     "typescript": "5.4.5",
-    "vite": "5.2.12"
+    "vite": "5.3.3"
   },
   "dependencies": {
     "@nl-design-system-unstable/theme-toolkit": "1.0.0-alpha.21",
