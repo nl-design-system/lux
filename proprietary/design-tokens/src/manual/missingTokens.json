@@ -1,80 +1,32 @@
 {
   "lux": {
-    "button-login": {
-      "border-style": {
-        "category": "borderWidth",
-        "value": "{logius.border-style.solid}"
-      },
-      "font-family": {
-        "value": "{logius.font-family.default}"
-      },
-      "font-size": {
-        "value": "{logius.font-size.m}"
-      },
-      "font-weight": {
-        "value": "{logius.font-weight.default}"
-      },
-      "line-height": {
-        "value": "{logius.font.line-height.s}"
-      }
-    },
-    "focus": {
-      "outline-color": {
-        "value": "{logius.color.outline.default}"
-      },
-      "outline-offset": {
-        "value": "{lux.space.025-x}"
-      },
-      "outline-style": {
-        "value": "{logius.border-style.default}"
-      }
-    }
-  },
-  "logius": {
-    "border-style": {
-      "default": {
-        "value": "{logius.border-style.solid}"
-      },
-      "solid": {
-        "value": "solid"
-      }
-    },
-    "color": {
-      "outline": {
-        "default": {
-          "value": "{lux.color.grijs.700}"
-        }
-      }
-    },
-    "font": {
-      "line-height": {
-        "s": {
-          "type": "lineHeights",
-          "value": "24px"
-        }
-      }
-    },
     "font-family": {
-      "default": {
+      "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontFamilies",
-        "value": "Rijksoverheid, Arial"
+        "value": "{rh.font-family.sans}"
       }
     },
-    "font-size": {
-      "m": {
-        "type": "fontSizes",
-        "value": "18px"
+    "alert": {
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{oud.lux.border-radius.default}"
       }
     },
-    "font-weight": {
-      "default": {
-        "value": "{logius.font-weight.normal}"
-      },
-      "normal": {
-        "value": "normal"
-      },
-      "regular": {
-        "value": "{logius.font-weight.normal}"
+    "button": {
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{oud.lux.border-radius.default}"
+      }
+    },
+    "button-login": {
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{oud.lux.border-radius.default}"
       }
     }
   }

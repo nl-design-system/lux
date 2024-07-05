@@ -504,58 +504,61 @@
       "0-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0* {lux.space.1-x}"
+        "value": "0"
       },
       "025-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.25* {lux.space.1-x}"
+        "value": "0.25 * 0.5rem",
+        "description": "0.25 x => 025..."
       },
       "05-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.5* {lux.space.1-x}"
+        "value": "0.5 * 0.5rem",
+        "description": "0.5 x => 05..."
       },
       "1-x": {
         "parent": "core/default",
         "type": "spacing",
         "value": "0.5rem",
-        "description": ""
+        "description": "Base spacing. Bij wijziging, ook anderen wijzigen"
       },
       "105-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "1.5* {lux.space.1-x}"
+        "value": "1.5 * 0.5rem",
+        "description": "1 + 0.5 x => 105..."
       },
       "2-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "2* {lux.space.1-x}"
+        "value": "2 * 0.5rem"
       },
       "3-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "3* {lux.space.1-x}"
+        "value": "3 * 0.5rem"
       },
       "4-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "4* {lux.space.1-x}"
+        "value": "4 * 0.5rem"
       },
       "5-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "5* {lux.space.1-x}"
+        "value": "5 * 0.5rem"
       },
       "6-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "6* {lux.space.1-x}"
+        "value": "6 * 0.5rem"
       },
       "7-x": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "7* {lux.space.1-x}"
+        "value": "7 * 0.5rem"
       }
     },
     "font-weight": {
