@@ -67,7 +67,7 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "1.75rem"
+        "value": "{lux.line-height.m}"
       },
       "padding-inline-start": {
         "type": "spacing",

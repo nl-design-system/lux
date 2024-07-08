@@ -105,11 +105,6 @@
           "value": "{no-token}"
         },
         "gap": {
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {}
-            }
-          },
           "type": "spacing",
           "value": "{lux.alert.column-gap}"
         },

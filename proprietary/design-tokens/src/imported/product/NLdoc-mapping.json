@@ -186,6 +186,17 @@
           "value": "1rem"
         }
       }
+    },
+    "size": {
+      "target": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "sizing",
+        "value": "2.5rem"
+      }
     }
   }
 }

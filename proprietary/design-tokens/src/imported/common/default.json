@@ -7,12 +7,6 @@
       }
     },
     "size": {
-      "target": {
-        "parent": "common/default",
-        "type": "sizing",
-        "value": "3rem",
-        "description": ""
-      },
       "icon": {
         "parent": "common/default",
         "type": "sizing",

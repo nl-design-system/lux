@@ -54,6 +54,12 @@
         "type": "fontFamilies",
         "value": "{rh.font-family.sans}"
       }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3rem"
+      }
     }
   },
   "product": {

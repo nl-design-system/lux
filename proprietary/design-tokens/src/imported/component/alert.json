@@ -18,11 +18,6 @@
         "value": "{lux.border-width.default}"
       },
       "column-gap": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "spacing",
         "value": "{lux.space.1-x}"
       },
@@ -86,11 +81,11 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "{viewport.line-height.m}"
+        "value": "{lux.line-height.m}"
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "{viewport.font-size.m}"
+        "value": "{lux.font-size.m}"
       },
       "font-family": {
         "type": "fontFamilies",

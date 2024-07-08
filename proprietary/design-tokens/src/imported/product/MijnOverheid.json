@@ -118,6 +118,12 @@
         "value": "2rem",
         "description": ""
       }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3rem"
+      }
     }
   },
   "product": {
