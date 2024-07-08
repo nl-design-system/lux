@@ -1,6 +1,8 @@
+import { transform } from '@divriots/style-dictionary-to-figma';
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
+import jsonListFormat from './json-list-formatter.mjs';
 import { addMediaDependentFiles } from './add-media-dependent-files.mjs';
 
 registerTransforms(StyleDictionary);
@@ -41,7 +43,33 @@ async function run() {
       `${MANUAL_SRC_FOLDER}/missingTokens.json`,
       `${MANUAL_SRC_FOLDER}/missingTokens.${extractModeFromName(name)}.json`,
     ],
+    format: {
+      ...jsonListFormat,
+      figmaTokensPlugin: ({ dictionary }) => {
+        const transformedTokens = transform(dictionary.tokens);
+        return JSON.stringify(transformedTokens, null, 2);
+      },
+    },
     platforms: {
+      jsonx: {
+        transformGroup: 'js',
+        files: [
+          {
+            filter: excludeSystemTokens,
+            destination: `${DIST_FOLDER}figma-tokens.json`,
+            format: 'figmaTokensPlugin',
+          },
+        ],
+      },
+      json: {
+        files: [
+          {
+            filter: excludeSystemTokens,
+            destination: `${DIST_FOLDER}index.json`,
+            format: 'json/list',
+          },
+        ],
+      },
       css: {
         buildPath: DIST_FOLDER,
         transformGroup: 'tokens-studio',
