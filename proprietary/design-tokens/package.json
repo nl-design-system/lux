@@ -20,7 +20,7 @@
     "clean:dist": "rimraf dist/",
     "prebuild": "npm run clean",
     "build": "npm-run-all clean build:tokens-studio",
-    "build:tokens-studio": "node build-tokens.mjs",
+    "build:tokens-studio": "node ./build/run-build.mjs",
     "watch": "npm-run-all watch:**",
     "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'"
   },
