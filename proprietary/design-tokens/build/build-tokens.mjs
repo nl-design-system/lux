@@ -89,7 +89,7 @@ const getProductCombinations = (name, combined) => combined.flatMap((combo) => {
   return viewports.map((viewport) => ({name: cleanName(name), mode, viewport}));
 });
 
-const getTokensByMode = (groups, mode) => filterTokenSets(groups['mode'].find(({name}) => name.includes(mode)).selectedTokenSets);
+const getTokensByMode = (groups, mode) => filterTokenSets(groups.mode.find(({name}) => name.includes(mode)).selectedTokenSets);
 const getTokensByViewport = (groups, viewport) => filterTokenSets(groups['viewport'].find(({name}) => name.includes(viewport)).selectedTokenSets);
 
 /**
