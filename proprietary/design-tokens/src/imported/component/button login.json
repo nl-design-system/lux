@@ -134,6 +134,10 @@
       "font-family": {
         "type": "fontFamilies",
         "value": "{lux.font-family.primary}"
+      },
+      "border-style": {
+        "type": "other",
+        "value": "solid"
       }
     }
   }
