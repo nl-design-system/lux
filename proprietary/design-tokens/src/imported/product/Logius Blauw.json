@@ -5,19 +5,19 @@
         "default": {
           "parent": "product/Logius",
           "type": "color",
-          "value": "{lux.color.hemelblauw.300}",
+          "value": "{lux.color.hemelblauw.500}",
           "description": "kleur van het product"
         },
         "subdued": {
           "parent": "product/Logius",
           "type": "color",
-          "value": "{lux.color.hemelblauw.100}",
+          "value": "{lux.color.hemelblauw.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
           "parent": "product/Logius",
           "type": "color",
-          "value": "{lux.color.hemelblauw.400}",
+          "value": "{lux.color.hemelblauw.700}",
           "description": "Hover kleur van het product"
         }
       }

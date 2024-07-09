@@ -5,19 +5,19 @@
         "default": {
           "parent": "NLdoc / Organisatie/NLdoc",
           "type": "color",
-          "value": "{lux.color.violet.300}",
+          "value": "{lux.color.violet.500}",
           "description": ""
         },
         "subdued": {
           "parent": "NLdoc / Organisatie/NLdoc",
           "type": "color",
-          "value": "{lux.color.violet.100}",
+          "value": "{lux.color.violet.50}",
           "description": ""
         },
         "hover": {
           "parent": "NLdoc / Organisatie/NLdoc",
           "type": "color",
-          "value": "{lux.color.violet.400}",
+          "value": "{lux.color.violet.700}",
           "description": ""
         }
       }

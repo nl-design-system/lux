@@ -5,19 +5,19 @@
         "default": {
           "parent": "product/DigiD",
           "type": "color",
-          "value": "{lux.color.oranje.300}",
+          "value": "{lux.color.oranje.500}",
           "description": "kleur van het product"
         },
         "subdued": {
           "parent": "product/DigiD",
           "type": "color",
-          "value": "{lux.color.oranje.100}",
+          "value": "{lux.color.oranje.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
           "parent": "product/DigiD",
           "type": "color",
-          "value": "{lux.color.oranje.400}",
+          "value": "{lux.color.oranje.700}",
           "description": "Hover kleur van het product"
         }
       }

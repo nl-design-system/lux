@@ -5,13 +5,13 @@
         "default": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.paars.300}",
+          "value": "{lux.color.paars.500}",
           "description": "kleur van het product"
         },
         "subdued": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.paars.200}",
+          "value": "{lux.color.paars.100}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {

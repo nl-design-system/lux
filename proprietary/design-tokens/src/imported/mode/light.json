@@ -72,13 +72,13 @@
           "default": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.groen.300}",
+            "value": "{lux.color.groen.500}",
             "description": "Gebruik deze kleur om een positieve boodschap te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.groen.100}",
+            "value": "{lux.color.groen.50}",
             "description": "Gebruik deze kleur om een positieve boodschap te highlighten."
           }
         },
@@ -86,13 +86,13 @@
           "default": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.hemelblauw.300}",
+            "value": "{lux.color.hemelblauw.500}",
             "description": "Gebruik deze kleur om een informatieve boodschap te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.hemelblauw.100}",
+            "value": "{lux.color.hemelblauw.50}",
             "description": "Gebruik deze kleur om een informatieve boodschap te highlighten."
           }
         },
@@ -100,13 +100,13 @@
           "default": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.rood.300}",
+            "value": "{lux.color.rood.500}",
             "description": "Gebruik deze kleur om een negatieve boodschap te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.rood.100}",
+            "value": "{lux.color.rood.50}",
             "description": "Gebruik deze kleur om een negatieve boodschap te highlighten."
           }
         },
@@ -114,13 +114,13 @@
           "default": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.donkergeel.300}",
+            "value": "{lux.color.donkergeel.500}",
             "description": "Gebruik deze kleur om een waarschuwing te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
             "type": "color",
-            "value": "{lux.color.donkergeel.100}",
+            "value": "{lux.color.donkergeel.50}",
             "description": "Gebruik deze kleur om een waarschuwing te highlighten."
           }
         }
@@ -140,21 +140,21 @@
       "color": {
         "parent": "mode/dark (beta)",
         "type": "color",
-        "value": "{lux.color.donkerblauw.300}",
+        "value": "{lux.color.donkerblauw.500}",
         "description": "Gebruik deze kleur voor link tekst"
       },
       "visited": {
         "color": {
           "parent": "mode/dark (beta)",
           "type": "color",
-          "value": "{lux.color.paars.300}"
+          "value": "{lux.color.paars.500}"
         }
       },
       "hover": {
         "color": {
           "parent": "mode/dark (beta)",
           "type": "color",
-          "value": "{lux.color.donkerblauw.400}",
+          "value": "{lux.color.donkerblauw.700}",
           "description": "Gebruik deze kleur voor de hover van link tekst"
         }
       },
@@ -162,7 +162,7 @@
         "color": {
           "parent": "mode/dark (beta)",
           "type": "color",
-          "value": "{lux.color.paars.300}"
+          "value": "{lux.color.paars.500}"
         }
       }
     },
