@@ -88,12 +88,12 @@
       "min-inline-size": {
         "parent": "button login/default",
         "type": "sizing",
-        "value": "{no-token}"
+        "value": "48px"
       },
       "min-block-size": {
         "parent": "button login/default",
         "type": "sizing",
-        "value": "{no-token}"
+        "value": "48px"
       },
       "column-gap": {
         "parent": "button login/default",

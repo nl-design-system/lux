@@ -96,11 +96,11 @@
       },
       "min-inline-size": {
         "type": "sizing",
-        "value": "{no-token}"
+        "value": "48px"
       },
       "min-block-size": {
         "type": "sizing",
-        "value": "{no-token}"
+        "value": "48px"
       },
       "border-radius": {
         "type": "borderRadius",
