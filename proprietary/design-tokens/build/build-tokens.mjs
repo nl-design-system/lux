@@ -22,9 +22,7 @@ StyleDictionary.registerTransform({
   }
 })
 
-registerTransforms(StyleDictionary, {
-  /* options here if needed */
-});
+registerTransforms(StyleDictionary, {});
 
 const cleanName = (n) => n.toLowerCase().replaceAll(/\/?(default|\s\(.+\))/g, '').replaceAll(' ', '-');
 const isFigmaToken = (name) => name.startsWith('figma');
