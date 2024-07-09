@@ -587,11 +587,12 @@
     "font-family": {
       "sans": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSansWebText, Arial"
+        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif"
       },
       "serif": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSerifWeb, Arial"
+        "value": "RijksoverheidSerifWebText, 'Times New Roman', serif",
+        "description": "TODO: fonts toevoegen in assets en css"
       }
     }
   },
