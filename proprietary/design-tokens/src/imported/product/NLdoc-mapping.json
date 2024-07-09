@@ -39,6 +39,12 @@
         "parent": "product/NLdoc",
         "type": "borderRadius",
         "value": "0px"
+      },
+      "outline": {
+        "style": {
+          "type": "other",
+          "value": "dotted"
+        }
       }
     },
     "font-family": {
