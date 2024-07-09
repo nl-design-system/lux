@@ -7,7 +7,7 @@ import jsonListFormat from './json-list-formatter.mjs';
 
 /** 
  * Transforms spacing tokens with math symbols to css calc()-values
- * NOTE: because the way references work in StyleDictionary/TokenStudio it will not transform e.g. `5 * {space.coyboy}`
+ * NOTE: because the way references work in StyleDictionary/TokenStudio it will not transform e.g. `5 * {space.cowboy}`
  */
 StyleDictionary.registerTransform({
   name: 'spacing/calc',
