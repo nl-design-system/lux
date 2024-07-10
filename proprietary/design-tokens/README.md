@@ -15,6 +15,10 @@ In design tokens worden de design beslissingen vastgelegd voor het design system
 
 Daarna zijn de volgende tokens beschikbaar:
 
+## PNPM
+
+`pnpm add -D @lux-design-system/design-tokens`
+
 ## JSON
 
 In de map `/lib/tokens/` staan de tokens die vanuit Tokens Studio en Figma gegenereerd worden.
