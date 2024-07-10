@@ -3,35 +3,35 @@
     "color": {
       "brand": {
         "default": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.groen.500}",
+          "value": "{lux.color.paars.500}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.groen.50}",
+          "value": "{lux.color.paars.100}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.groen.700}",
+          "value": "{lux.color.paars.400}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "parent": "product/Logius",
+        "parent": "product/Eila",
         "type": "borderRadius",
         "value": "4px"
       }
     },
     "focus": {
       "outline-width": {
-        "parent": "product/Logius",
+        "parent": "product/Eila",
         "type": "borderWidth",
         "value": "2px"
       },
@@ -44,6 +44,11 @@
     },
     "font-family": {
       "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontFamilies",
         "value": "{rh.font-family.sans}"
       }
@@ -54,66 +59,12 @@
         "value": "3rem",
         "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
-    },
-    "line-height": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.s}"
-      },
-      "m": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.m}"
-      },
-      "l": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.l}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.xl}"
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.2xl}"
-      }
-    },
-    "font-size": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.s}"
-      },
-      "m": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.m}"
-      },
-      "l": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.l}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.xl}"
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.2xl}"
-      }
     }
   },
   "figma": {
     "focus": {
       "outline-radius": {
-        "parent": "product/Logius",
+        "parent": "product/Eila",
         "type": "borderRadius",
         "value": "6px"
       }
@@ -121,8 +72,8 @@
     "size": {
       "icon": {
         "wrapper-height": {
-          "type": "sizing",
-          "value": "{figma.viewport.size.icon.wrapper-height}"
+          "value": "{figma.viewport.size.icon.wrapper-height}",
+          "type": "sizing"
         }
       }
     }
@@ -131,38 +82,36 @@
     "button": {
       "secondary": {
         "background-color": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
           "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
           "value": "{lux.color.brand.default}",
           "description": ""
         },
         "color": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
           "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "parent": "product/Logius",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.brand.hover}",
-            "description": ""
+            "value": "{lux.color.brand.default}"
           },
           "color": {
-            "parent": "product/Logius",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.brand.hover}",
-            "description": ""
+            "value": "{lux.color.brand.default}"
           },
           "background-color": {
-            "parent": "product/Logius",
+            "parent": "product/Eila",
             "type": "color",
             "value": "{lux.color.brand.subdued}",
             "description": ""
@@ -171,20 +120,19 @@
       },
       "tertiary": {
         "color": {
-          "parent": "product/Logius",
+          "parent": "product/Eila",
           "type": "color",
           "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "color": {
-            "parent": "product/Logius",
+            "parent": "product/Eila",
             "type": "color",
-            "value": "{lux.color.brand.hover}",
-            "description": ""
+            "value": "{lux.color.brand.default}"
           },
           "background-color": {
-            "parent": "product/Logius",
+            "parent": "product/Eila",
             "type": "color",
             "value": "{lux.color.brand.subdued}",
             "description": ""

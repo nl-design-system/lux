@@ -1,0 +1,42 @@
+{
+  "lux": {
+    "icon-logo": {
+      "eherkenning": {
+        "e-color": {
+          "parent": "mode/light",
+          "type": "color",
+          "value": "{mode.icon-logo.eherkenning.e-color}"
+        }
+      },
+      "eidas": {
+        "stars-color": {
+          "parent": "mode/light",
+          "type": "color",
+          "value": "{mode.icon-logo.eidas.stars-color}"
+        },
+        "lock-color": {
+          "parent": "mode/light",
+          "type": "color",
+          "value": "{mode.icon-logo.eidas.lock-color}"
+        },
+        "lines-color": {
+          "parent": "mode/light",
+          "type": "color",
+          "value": "{mode.icon-logo.eidas.lines-color}"
+        },
+        "background-color": {
+          "parent": "mode/light",
+          "type": "color",
+          "value": "{mode.icon-logo.eidas.background-color}"
+        }
+      },
+      "digid": {
+        "border-color": {
+          "parent": "mode/light",
+          "type": "color",
+          "value": "{mode.icon-logo.digid.border-color}"
+        }
+      }
+    }
+  }
+}

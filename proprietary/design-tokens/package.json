@@ -29,7 +29,7 @@
     "lint:json": "jsonlint -q -F src/**/*.json",
     "prebuild": "npm run clean",
     "build": "npm-run-all build:tokens-studio",
-    "build:tokens-studio": "node build-tokens.mjs",
+    "build:tokens-studio": "node ./build/run-build.mjs",
     "watch": "npm-run-all watch:**",
     "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
     "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src && cpy . ../../lib/css/ --cwd=dist",
