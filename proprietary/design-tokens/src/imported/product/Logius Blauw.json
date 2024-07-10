@@ -5,19 +5,19 @@
         "default": {
           "parent": "product/Logius",
           "type": "color",
-          "value": "{lux.color.groen.500}",
+          "value": "{lux.color.hemelblauw.500}",
           "description": "kleur van het product"
         },
         "subdued": {
           "parent": "product/Logius",
           "type": "color",
-          "value": "{lux.color.groen.50}",
+          "value": "{lux.color.hemelblauw.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
           "parent": "product/Logius",
           "type": "color",
-          "value": "{lux.color.groen.700}",
+          "value": "{lux.color.hemelblauw.700}",
           "description": "Hover kleur van het product"
         }
       }
@@ -44,6 +44,11 @@
     },
     "font-family": {
       "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontFamilies",
         "value": "{rh.font-family.sans}"
       }
@@ -58,26 +63,51 @@
     "line-height": {
       "s": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
         "value": "{viewport.line-height.s}"
       },
       "m": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
         "value": "{viewport.line-height.m}"
       },
       "l": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
         "value": "{viewport.line-height.l}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
         "value": "{viewport.line-height.xl}"
       },
       "2xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "lineHeights",
         "value": "{viewport.line-height.2xl}"
       }
@@ -85,26 +115,51 @@
     "font-size": {
       "s": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
         "value": "{viewport.font-size.s}"
       },
       "m": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
         "value": "{viewport.font-size.m}"
       },
       "l": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
         "value": "{viewport.font-size.l}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
         "value": "{viewport.font-size.xl}"
       },
       "2xl": {
         "parent": "viewport (beta)/xl",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
         "type": "fontSizes",
         "value": "{viewport.font-size.2xl}"
       }
@@ -121,6 +176,11 @@
     "size": {
       "icon": {
         "wrapper-height": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {}
+            }
+          },
           "type": "sizing",
           "value": "{figma.viewport.size.icon.wrapper-height}"
         }
