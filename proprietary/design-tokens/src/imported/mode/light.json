@@ -65,7 +65,7 @@
         "parent": "mode/light",
         "type": "color",
         "value": "{lux.color.grijs.200}",
-        "description": "Achtergrond kleur van de website"
+        "description": "Gebruik deze kleur voor de achtergrond van de website, hierbovenop komen de background kleuren."
       },
       "feedback": {
         "success": {
