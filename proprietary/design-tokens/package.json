@@ -37,6 +37,7 @@
     "postpack": "npm run clean:lib"
   },
   "devDependencies": {
+    "@divriots/style-dictionary-to-figma": "0.4.0",
     "@prantlf/jsonlint": "14.0.3",
     "@tokens-studio/sd-transforms": "0.15.2",
     "chokidar-cli": "3.0.0",

@@ -52,7 +52,7 @@
             "description": ""
           }
         },
-        "original": {
+        "default": {
           "padding-block-start": {
             "value": "1.25rem",
             "type": "dimension",
