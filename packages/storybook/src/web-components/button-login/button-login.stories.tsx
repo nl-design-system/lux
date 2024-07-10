@@ -1,8 +1,8 @@
 /* @license CC0-1.0 */
 
-import tokens from '@lux/design-tokens/dist/index.json';
-import { LuxButtonLogin as ButtonLogin } from '@lux/web-components-react';
-import type { JSX } from '@lux/web-components-stencil';
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
+import { LuxButtonLogin as ButtonLogin } from '@lux-design-system/web-components-react';
+import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type PropsWithoutRef } from 'react';
 import tokensDefinition from './tokens.json';

@@ -5,7 +5,7 @@
   },
   "description": "Storybook based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@lux/storybook",
+  "name": "@lux-design-system/storybook",
   "keywords": [
     "nl-design-system"
   ],
@@ -24,12 +24,12 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.5.0",
-    "@lux/assets": "workspace:*",
-    "@lux/components-css": "workspace:*",
-    "@lux/design-tokens": "workspace:*",
-    "@lux/font": "workspace:*",
-    "@lux/web-components-react": "workspace:*",
-    "@lux/web-components-stencil": "workspace:*",
+    "@lux-design-system/assets": "workspace:*",
+    "@lux-design-system/components-css": "workspace:*",
+    "@lux-design-system/design-tokens": "workspace:*",
+    "@lux-design-system/font": "workspace:*",
+    "@lux-design-system/web-components-react": "workspace:*",
+    "@lux-design-system/web-components-stencil": "workspace:*",
     "@storybook/addon-a11y": "8.1.5",
     "@storybook/addon-actions": "8.1.5",
     "@storybook/addon-backgrounds": "8.1.5",
