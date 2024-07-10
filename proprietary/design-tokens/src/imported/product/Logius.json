@@ -34,14 +34,12 @@
       "outline-width": {
         "parent": "product/Logius",
         "type": "borderWidth",
-        "value": "0.125rem",
-        "description": ""
+        "value": "2px"
       },
       "border-radius": {
         "parent": "product/Logius",
         "type": "borderRadius",
-        "value": "0.375rem",
-        "description": ""
+        "value": "6px"
       },
       "outline": {
         "style": {

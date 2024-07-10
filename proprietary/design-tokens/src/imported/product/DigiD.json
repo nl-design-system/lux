@@ -26,22 +26,19 @@
       "default": {
         "parent": "product/DigiD",
         "type": "borderRadius",
-        "value": "0.25rem",
-        "description": ""
+        "value": "4px"
       }
     },
     "focus": {
       "outline-width": {
         "parent": "product/DigiD",
         "type": "borderWidth",
-        "value": "0.125rem",
-        "description": ""
+        "value": "2px"
       },
       "border-radius": {
         "parent": "product/DigiD",
         "type": "borderRadius",
-        "value": "0.375rem",
-        "description": ""
+        "value": "6px"
       },
       "outline": {
         "style": {
