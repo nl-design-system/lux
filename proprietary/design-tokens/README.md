@@ -1,7 +1,7 @@
 # Design Tokens voor het LUX Design System
 
 Deze package bevat de Design Tokens van het LUX Design System in verschillende formaten.  
-In design tokens worden de keuzes opgeslagen voor het design system. De design tokens in deze package zijn de enige bron van waarheid voor de look en feel van de componenten.
+In design tokens worden de design beslissingen vastgelegd voor het design system. De design tokens in deze package zijn de enige bron van waarheid voor de look en feel van de componenten.
 
 ## Installeren
 
