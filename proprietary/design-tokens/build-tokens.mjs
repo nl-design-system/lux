@@ -11,6 +11,7 @@ const IMPORTED_SRC_FOLDER = `${SRC_FOLDER}/imported`;
 const MANUAL_SRC_FOLDER = `${SRC_FOLDER}/manual`;
 const DIST_FOLDER = './dist/';
 const COPY_FOLDER = './src/templates/';
+const EXTRACT_FILENAME_REGEX = /\/([^/]+)\.\w+$/;
 
 const stripWords = (name) => name.replaceAll(/(_?default_?|\s\(beta\))/g, '');
 const fixNLdoc = (name, postfix = '') => name.replace(/(nldoc)(\s-\s)?/, `nldoc${postfix}`);
@@ -23,16 +24,66 @@ const prepareTokensFile = async () => {
   return themes;
 };
 
-const isFigmaToken = (name) => name.startsWith('figma');
-const isModeIndicatorToken = (name) => name === 'mode-on';
-const excludeSystemTokens = ({ name }) => ![isFigmaToken, isModeIndicatorToken].some((fn) => fn(name));
+const withLanguageSpecifier = (preferredLanguage) => (token) => {
+  if (isLanguageToken(token.name)) {
+    const language = token.filePath.split(EXTRACT_FILENAME_REGEX).at(-2);
+    return language === preferredLanguage;
+  }
+  return false;
+}
+const withPrefix = (pattern) => (phrase) => new RegExp(`^${pattern}`, 'i').test(phrase);
+
+const isDutchLanguageToken = withLanguageSpecifier('nl');
+const isEnglishLanguageToken = withLanguageSpecifier('en');
+const isLabelToken = withPrefix('label');
+const isLanguageToken = withPrefix('language');
+const isFigmaToken = withPrefix('figma');
+const isModeIndicatorToken = withPrefix('mode-?on');
+const isDesignToken = ({ name }) => ![isLabelToken, isLanguageToken, isFigmaToken, isModeIndicatorToken].some((fn) => fn(name));
 
 const extractModeFromName = (name) => ['light', 'dark'].find((mode) => name.indexOf(mode) >= 0);
 const extractProductFromName = (name) => {
   return fixNLdoc(name.split(DELIMITER)[2].toLowerCase(), '-');
 };
 
-async function run() {
+const runLabels = async () => {
+  const labelConfig = {
+    source: [
+      `${IMPORTED_SRC_FOLDER}/components/**/default.json`,
+      `${IMPORTED_SRC_FOLDER}/language/*.json`,
+    ],
+    platforms: {
+      typescript: {
+        buildPath: DIST_FOLDER,
+        transformGroup: 'js',
+        transforms: ['name/cti/camel'],
+        files: [
+          {
+            format: "javascript/es6",
+            destination: 'labels/nl.ts',
+            filter: (token) => isDutchLanguageToken(token),
+          },
+          {
+            format: "javascript/es6",
+            destination: 'labels/en.ts',
+            filter: (token) => isEnglishLanguageToken(token),
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: 'labels/labels.d.ts',
+            // filter: ({ name }) => isLabelToken(name),
+          }
+        ]
+      },
+    }
+  }
+
+  const sd = StyleDictionary.extend(labelConfig);
+  sd.cleanAllPlatforms();
+  sd.buildAllPlatforms();
+};
+
+const runDesignTokens = async () => {
   const $themes = await prepareTokensFile();
 
   const configs = Object.entries($themes).map(([name, tokensets]) => ({
@@ -40,6 +91,9 @@ async function run() {
       ...tokensets.map((tokenset) => `./**/${tokenset}.json`),
       `${MANUAL_SRC_FOLDER}/missingTokens.json`,
       `${MANUAL_SRC_FOLDER}/missingTokens.${extractModeFromName(name)}.json`,
+    ],
+    include: [
+      `!${IMPORTED_SRC_FOLDER}/language/*.json`
     ],
     platforms: {
       css: {
@@ -49,7 +103,7 @@ async function run() {
         files: [
           {
             destination: `${normalizeFileName(name)}.css`,
-            filter: excludeSystemTokens,
+            filter: isDesignToken,
             format: 'css/variables',
             options: {
               outputReferences: true,
@@ -58,6 +112,7 @@ async function run() {
           {
             destination: `${normalizeFileName(name)}-theme.css`,
             format: 'css/variables',
+            filter: isDesignToken,
             options: {
               outputReferences: true,
               selector: `.lux-theme--${extractProductFromName(name)}-${extractModeFromName(name)}`,
@@ -75,6 +130,11 @@ async function run() {
   });
 
   await addMediaDependentFiles(DIST_FOLDER, COPY_FOLDER);
-}
+};
+
+const run = async () => {
+  // runLabels();
+  runDesignTokens();
+};
 
 run();

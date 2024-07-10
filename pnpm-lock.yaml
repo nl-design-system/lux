@@ -389,6 +389,9 @@ importers:
       '@lux/components-css':
         specifier: workspace:*
         version: link:../components-css
+      '@lux/design-tokens':
+        specifier: workspace:1.0.0-alpha.0
+        version: link:../../proprietary/design-tokens
       '@stencil/react-output-target':
         specifier: 0.5.3
         version: 0.5.3(@stencil/core@4.18.3)

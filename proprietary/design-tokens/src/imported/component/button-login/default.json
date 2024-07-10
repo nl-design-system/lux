@@ -93,7 +93,7 @@
       },
       "digid-machtigen": {
         "type": "text",
-        "value": "{language.button-login.digid-machtigen}}"
+        "value": "{language.button-login.digid-machtigen}"
       },
       "eherkenning": {
         "type": "text",
