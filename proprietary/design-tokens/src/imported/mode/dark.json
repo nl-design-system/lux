@@ -19,6 +19,10 @@
           "type": "color",
           "value": "{lux.color.wit}",
           "description": "Tekst en iconen die op een sterke achtergrond staan. Zoals het label in de primaire button of links in de footer."
+        },
+        "link": {
+          "value": "{mode.link.color}",
+          "type": "color"
         }
       },
       "background": {
