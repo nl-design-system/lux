@@ -26,8 +26,7 @@
       "default": {
         "parent": "product/Logius",
         "type": "borderRadius",
-        "value": "0.25rem",
-        "description": ""
+        "value": "4px"
       }
     },
     "focus": {
