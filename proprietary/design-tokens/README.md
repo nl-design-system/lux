@@ -26,7 +26,7 @@ Deze tokens kunnen gebruikt worden in combinatie met je eigen tokens of om je ei
 _Let op_: Sommige mapnamen bevatten nog `(beta)`, deze suffix zal in de toekomst verdwijnen, dus het wordt aangeraden deze uit je output te filteren.  
 In de source code op Github kan je onze build script(s) inzien, deze worden niet meegeleverd in de package aangezien ze specifiek voor het LUX-project zijn.
 
-Meer informatie over de LUX design tokens en de lagen vind je op de pagina [Lagen van Design Tokens](https://nl-design-system.github.io/lux/?path=TODO:include-link) van onze Storybook.
+Meer informatie over de LUX design tokens en de lagen vind je op de pagina [Design Tokens](https://nl-design-system.github.io/lux/?path=/docs/design-tokens-design-tokens--docs) van onze Storybook.
 
 ## CSS
 
