@@ -57,12 +57,6 @@
       }
     },
     "size": {
-      "icon": {
-        "wrapper-height": {
-          "type": "sizing",
-          "value": "{viewport.size.icon.wrapper-height}"
-        }
-      },
       "target": {
         "type": "sizing",
         "value": "3rem"
@@ -120,6 +114,16 @@
         "parent": "viewport (beta)/xl",
         "type": "fontSizes",
         "value": "{viewport.font-size.2xl}"
+      }
+    }
+  },
+  "figma": {
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "type": "sizing",
+          "value": "{figma.viewport.size.icon.wrapper-height}"
+        }
       }
     }
   },

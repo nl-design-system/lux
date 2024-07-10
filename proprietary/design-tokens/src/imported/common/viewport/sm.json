@@ -13,6 +13,22 @@
       "type": "sizing",
       "value": "36rem",
       "description": ""
+    },
+    "viewport": {
+      "size": {
+        "icon": {
+          "wrapper-height": {
+            "parent": "viewport (beta)/sm",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {}
+              }
+            },
+            "type": "sizing",
+            "value": "1.75rem"
+          }
+        }
+      }
     }
   },
   "lux": {
@@ -70,20 +86,6 @@
         "type": "fontSizes",
         "value": "2.5rem",
         "description": ""
-      }
-    },
-    "size": {
-      "icon": {
-        "wrapper-height": {
-          "parent": "viewport (beta)/sm",
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {}
-            }
-          },
-          "type": "sizing",
-          "value": "1.75rem"
-        }
       }
     },
     "line-height": {

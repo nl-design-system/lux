@@ -143,5 +143,15 @@
         }
       }
     }
+  },
+  "figma": {
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "{figma.viewport.size.icon.wrapper-height}",
+          "type": "sizing"
+        }
+      }
+    }
   }
 }

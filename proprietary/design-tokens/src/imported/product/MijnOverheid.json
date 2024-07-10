@@ -207,5 +207,15 @@
         }
       }
     }
+  },
+  "figma": {
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      }
+    }
   }
 }

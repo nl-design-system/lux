@@ -13,6 +13,22 @@
       "type": "sizing",
       "value": "48rem",
       "description": ""
+    },
+    "viewport": {
+      "size": {
+        "icon": {
+          "wrapper-height": {
+            "parent": "viewport (beta)/md",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {}
+              }
+            },
+            "type": "sizing",
+            "value": "1.75rem"
+          }
+        }
+      }
     }
   },
   "lux": {
@@ -40,20 +56,6 @@
     }
   },
   "viewport": {
-    "size": {
-      "icon": {
-        "wrapper-height": {
-          "parent": "viewport (beta)/md",
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {}
-            }
-          },
-          "type": "sizing",
-          "value": "1.75rem"
-        }
-      }
-    },
     "font-size": {
       "s": {
         "parent": "viewport (beta)/md",
