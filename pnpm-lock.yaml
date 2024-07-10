@@ -278,8 +278,8 @@ importers:
         specifier: workspace:*
         version: link:../web-components-stencil
       '@storybook/addon-a11y':
-        specifier: 8.1.5
-        version: 8.1.5
+        specifier: 8.2.1
+        version: 8.2.1(storybook@8.1.5(@babel/preset-env@7.24.6(@babel/core@7.24.6))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@storybook/addon-actions':
         specifier: 8.1.5
         version: 8.1.5
@@ -1453,6 +1453,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1460,6 +1461,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@hutson/parse-repository-url@5.0.0':
     resolution: {integrity: sha512-e5+YUKENATs1JgYHMzTr2MW/NDcXGfYFAuOQU8gJgF/kEh4EqKgfGrfLI67bMD4tbhZVlkigz/9YYwWcbOFthg==}
@@ -2232,8 +2234,10 @@ packages:
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0'
 
-  '@storybook/addon-a11y@8.1.5':
-    resolution: {integrity: sha512-ZEXrfdMzo0fT8vhzuzy+UZYyotC1PQV9T1mxnPBzCCCgqXQHgADv88JwOMIqgPKmKJb499Xq6E9h+ta9pYd8YQ==}
+  '@storybook/addon-a11y@8.2.1':
+    resolution: {integrity: sha512-t+SiKtxutMJNHrv8wbpqTBlB3DSpGa4JRoW5aR4FnDMVTAOC/m0CD0+IbXzdwvxk/SmXuEe8HH7XFeShs9zQPg==}
+    peerDependencies:
+      storybook: ^8.2.1
 
   '@storybook/addon-actions@8.1.5':
     resolution: {integrity: sha512-XbCUGGXQ4XX/zTRgUsR1l1yZJQIWR33P/M1OEAn0HbsfwS+P87GqfApkj4N7QrMfLkUkoLtdfprp5BZul98AKA==}
@@ -2247,8 +2251,10 @@ packages:
   '@storybook/addon-docs@8.1.5':
     resolution: {integrity: sha512-D3kDWjOGAthbwQOnouauOmywiTnuvI4KS0E9TDBYspcufimoNve5nOlr/oo9SLS1O2Psmhi6MDJephaDDo+5Dw==}
 
-  '@storybook/addon-highlight@8.1.5':
-    resolution: {integrity: sha512-E31yrV7lmE82T57tLSm8mg50BX3lBbA4qozaVKyWohw0NrZPcrS3Z6Iyjl0dp7heoUFpE3rljHwMxADRA25HkQ==}
+  '@storybook/addon-highlight@8.2.1':
+    resolution: {integrity: sha512-rz4Hj2J8jz4Zdq+pF5hMWpwHrsPQNmyGkG+MBli7GEge4Bed6HAQkDT8sE/3OGgizrudE1YBLnAIO1M+Lk85Ew==}
+    peerDependencies:
+      storybook: ^8.2.1
 
   '@storybook/addon-interactions@8.1.5':
     resolution: {integrity: sha512-jhDpqttch0XhRiCY9rfrs8xQpAH5KcAGAesqfaHaCnCZnZs6jqlGfJgCJAJWzA5PM+IdsK/RJ6abIgD1GAzNyw==}
@@ -2460,6 +2466,7 @@ packages:
 
   '@storybook/testing-library@0.2.2':
     resolution: {integrity: sha512-L8sXFJUHmrlyU2BsWWZGuAjv39Jl1uAqUHdxmN42JY15M4+XCMjGlArdCCjDe1wpTSW6USYISA9axjZojgtvnw==}
+    deprecated: In Storybook 8, this package functionality has been integrated to a new package called @storybook/test, which uses Vitest APIs for an improved experience. When upgrading to Storybook 8 with 'npx storybook@latest upgrade', you will get prompted and will get an automigration for the new package. Please migrate when you can.
 
   '@storybook/theming@8.1.5':
     resolution: {integrity: sha512-E4z1t49fMbVvd/t2MSL0Ecp5zbqsU/QfWBX/eorJ+m+Xc9skkwwG5qf/FnP9x4RZ9KaX8U8+862t0eafVvf4Tw==}
@@ -3122,6 +3129,7 @@ packages:
   are-we-there-yet@3.0.1:
     resolution: {integrity: sha512-QZW4EDmGwlYur0Yyf/b2uGucHQMa8aFUP7eu9ddR73vvhFyt4V0Vl3QHPcTNJ8l6qYOBdxgXdnBXQrHilfRQBg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   are-we-there-yet@4.0.0:
     resolution: {integrity: sha512-nSXlV+u3vtVjRgihdTzbfWYzxPWGo424zPgQbHD0ZqIla3jqYAewDcvee0Ua2hjS5IfTAmjGlx1Jf0PKwjZDEw==}
@@ -4772,6 +4780,7 @@ packages:
   gauge@4.0.4:
     resolution: {integrity: sha512-f9m+BEN5jkg6a0fZjleidjN51VE1X+mPFQ2DJ0uv1V39oCLCbsGe6yjbBnp7eK7z/+GAon99a3nHuqbuuthyPg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   gauge@5.0.1:
     resolution: {integrity: sha512-CmykPMJGuNan/3S4kZOpvvPYSNqSHANiWnh9XcMU2pSjtBfF0XzZ2p1bFAxTbnFxyBuPxQYHhzwaoOmUdqzvxQ==}
@@ -4902,6 +4911,7 @@ packages:
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-dirs@3.0.1:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
@@ -5199,6 +5209,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -6635,6 +6646,7 @@ packages:
   npmlog@6.0.2:
     resolution: {integrity: sha512-/vBvz5Jfr9dT/aFWd0FIRf+T/Q2WBsLENygUaFUqstqsycmZAP/t5BvFJTK0viFmSUxiUKTUplWy5vt+rvKIxg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   npmlog@7.0.1:
     resolution: {integrity: sha512-uJ0YFk/mCQpLBt+bxN88AKd+gyqZvZDbtiNxk6Waqcj2aPRyfVx8ITawkyQynxUagInjdYT1+qj4NfA5KJJUxg==}
@@ -7559,6 +7571,7 @@ packages:
   read-package-json@6.0.4:
     resolution: {integrity: sha512-AEtWXYfopBj2z5N5PbkAOeNHRPUg5q+Nen7QLxV8M2zJq1ym6/lCz3fYNTCXe19puu2d06jfHhrP7v/S2PtMMw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   read-package-json@7.0.1:
     resolution: {integrity: sha512-8PcDiZ8DXUjLf687Ol4BR8Bpm2umR7vhoZOzNRt+uxD9GpBh/K+CAAALVIiYFknmvlmyg7hM7BSNUXPaCCqd0Q==}
@@ -11231,10 +11244,11 @@ snapshots:
     dependencies:
       '@stencil/core': 4.18.3
 
-  '@storybook/addon-a11y@8.1.5':
+  '@storybook/addon-a11y@8.2.1(storybook@8.1.5(@babel/preset-env@7.24.6(@babel/core@7.24.6))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
-      '@storybook/addon-highlight': 8.1.5
+      '@storybook/addon-highlight': 8.2.1(storybook@8.1.5(@babel/preset-env@7.24.6(@babel/core@7.24.6))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       axe-core: 4.7.2
+      storybook: 8.1.5(@babel/preset-env@7.24.6(@babel/core@7.24.6))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@storybook/addon-actions@8.1.5':
     dependencies:
@@ -11294,9 +11308,10 @@ snapshots:
       - prettier
       - supports-color
 
-  '@storybook/addon-highlight@8.1.5':
+  '@storybook/addon-highlight@8.2.1(storybook@8.1.5(@babel/preset-env@7.24.6(@babel/core@7.24.6))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@storybook/global': 5.0.0
+      storybook: 8.1.5(@babel/preset-env@7.24.6(@babel/core@7.24.6))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@storybook/addon-interactions@8.1.5(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.14.1))':
     dependencies:
