@@ -1,8 +1,8 @@
-import { permutateThemes as permutateTsThemes, registerTransforms } from '@tokens-studio/sd-transforms';
+import { registerTransforms } from '@tokens-studio/sd-transforms';
 import { transform } from '@divriots/style-dictionary-to-figma';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
-import { IMPORTED_SRC_FOLDER, DIST_FOLDER } from './constants.mjs';
+import { IMPORTED_SRC_FOLDER, MANUAL_SRC_FOLDER, DIST_FOLDER } from './constants.mjs';
 import jsonListFormat from './json-list-formatter.mjs';
 
 /** 
@@ -22,7 +22,8 @@ StyleDictionary.registerTransform({
   }
 })
 
-registerTransforms(StyleDictionary, {});
+// Register the custom transforms for Style-Dictionary, to work with Design Tokens that are exported from Tokens Studio
+registerTransforms(StyleDictionary);
 
 const cleanName = (n) => n.toLowerCase().replaceAll(/\/?(default|\s\(.+\))/g, '').replaceAll(' ', '-');
 const isFigmaToken = (name) => name.startsWith('figma');
@@ -167,7 +168,8 @@ export const buildTokens = async () => {
 
   const configs = Object.entries(themes).map(([name, tokenSets]) => ({
     source: [
-      // `${MANUAL_SRC_FOLDER}/missingTokens.json`,
+      `${MANUAL_SRC_FOLDER}/missingTokens.json`,
+      `${MANUAL_SRC_FOLDER}/missingTokens.${extractModeFromName(name)}.json`,
       ...tokenSets.map((tokenSet) => `./**/${tokenSet}.json`),
     ],
     include: [
@@ -176,7 +178,7 @@ export const buildTokens = async () => {
       './**/component/*.json', 
       './**/nl/*.json', // For now, later this will be handled different.
     ],
-    preprocessors: ['tokens-studio'], // <-- since 0.16.0 this must be explicit
+    preprocessors: ['tokens-studio'],
     format: {
       ...jsonListFormat,
       figmaTokensPlugin: ({ dictionary }) => {
@@ -190,7 +192,7 @@ export const buildTokens = async () => {
         files: [
           {
             filter: excludeSystemTokens,
-            destination: `${DIST_FOLDER}figma-tokens.json`,
+            destination: `${DIST_FOLDER}/figma-tokens.json`,
             format: 'figmaTokensPlugin',
           },
         ],
@@ -199,13 +201,13 @@ export const buildTokens = async () => {
         files: [
           {
             filter: excludeSystemTokens,
-            destination: `${DIST_FOLDER}index.json`,
+            destination: `${DIST_FOLDER}/index.json`,
             format: 'json/list',
           },
         ],
       },
       css: {
-        buildPath: DIST_FOLDER,
+        buildPath: `${DIST_FOLDER}/`,
         transformGroup: 'tokens-studio',
         transforms: ['spacing/calc', 'name/cti/kebab', 'ts/descriptionToComment', 'ts/typography/css/fontFamily' ],
         files: [
