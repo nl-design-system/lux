@@ -51,7 +51,8 @@
     "size": {
       "target": {
         "type": "sizing",
-        "value": "3rem"
+        "value": "3rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
     },
     "line-height": {

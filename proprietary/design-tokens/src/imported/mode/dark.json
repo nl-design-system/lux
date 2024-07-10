@@ -19,6 +19,10 @@
           "type": "color",
           "value": "{lux.color.wit}",
           "description": "Tekst en iconen die op een sterke achtergrond staan. Zoals het label in de primaire button of links in de footer."
+        },
+        "link": {
+          "value": "{mode.link.color}",
+          "type": "color"
         }
       },
       "background": {
@@ -26,7 +30,7 @@
           "parent": "mode/dark (beta)",
           "type": "color",
           "value": "{lux.color.grijs.700}",
-          "description": "Achtergrond kleur"
+          "description": "Gebruik deze kleur voor de achtergrond van de website, hierbovenop komen de background kleuren."
         },
         "subdued": {
           "parent": "mode/dark (beta)",
@@ -65,7 +69,7 @@
         "parent": "mode/dark (beta)",
         "type": "color",
         "value": "{lux.color.zwart}",
-        "description": "Achtergrond kleur van de website"
+        "description": "Gebruik deze kleur voor de achtergrond van de website, hierbovenop komen de background kleuren."
       },
       "feedback": {
         "success": {
