@@ -35,11 +35,6 @@
         "type": "borderWidth",
         "value": "1px"
       },
-      "border-radius": {
-        "parent": "product/NLdoc",
-        "type": "borderRadius",
-        "value": "0px"
-      },
       "outline": {
         "style": {
           "type": "other",
@@ -115,6 +110,23 @@
         "type": "fontSizes",
         "value": "2rem",
         "description": ""
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/NLdoc",
+        "type": "borderRadius",
+        "value": "0px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
       }
     }
   },
@@ -202,16 +214,6 @@
         },
         "type": "sizing",
         "value": "2.5rem"
-      }
-    }
-  },
-  "figma": {
-    "size": {
-      "icon": {
-        "wrapper-height": {
-          "value": "1.5rem",
-          "type": "sizing"
-        }
       }
     }
   }

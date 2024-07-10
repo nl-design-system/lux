@@ -35,11 +35,6 @@
         "type": "borderWidth",
         "value": "2px"
       },
-      "border-radius": {
-        "parent": "product/Eila",
-        "type": "borderRadius",
-        "value": "6px"
-      },
       "outline": {
         "style": {
           "type": "other",
@@ -62,6 +57,23 @@
       "target": {
         "type": "sizing",
         "value": "3rem"
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/Eila",
+        "type": "borderRadius",
+        "value": "6px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "{figma.viewport.size.icon.wrapper-height}",
+          "type": "sizing"
+        }
       }
     }
   },
@@ -134,16 +146,6 @@
         "font-size": {
           "type": "fontSizes",
           "value": "1.125rem"
-        }
-      }
-    }
-  },
-  "figma": {
-    "size": {
-      "icon": {
-        "wrapper-height": {
-          "value": "{figma.viewport.size.icon.wrapper-height}",
-          "type": "sizing"
         }
       }
     }

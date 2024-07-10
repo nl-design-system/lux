@@ -35,11 +35,6 @@
         "type": "borderWidth",
         "value": "2px"
       },
-      "border-radius": {
-        "parent": "product/MijnOverheid",
-        "type": "borderRadius",
-        "value": "6px"
-      },
       "outline": {
         "style": {
           "type": "other",
@@ -129,6 +124,23 @@
       }
     }
   },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "value": "6px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      }
+    }
+  },
   "product": {
     "button": {
       "secondary": {
@@ -201,16 +213,6 @@
         "font-size": {
           "type": "fontSizes",
           "value": "1.125rem"
-        }
-      }
-    }
-  },
-  "figma": {
-    "size": {
-      "icon": {
-        "wrapper-height": {
-          "value": "1.5rem",
-          "type": "sizing"
         }
       }
     }
