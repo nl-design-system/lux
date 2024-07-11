@@ -28,3 +28,23 @@
 .section li + li {
   border-top: solid 1px #a7a7a7;
 }
+
+.dt-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--lux-space-1x, 0.5rem);
+}
+
+.dt-preview::before {
+  display: inline-block;
+  border-width: var(--dt-border-width, 1px);
+  border-style: var(--dt-border-style, solid);
+  border-color: var(--dt-border-color, var(--lux-color-border-subdued, #a7a7a7));
+  border-radius: var(--dt-border-radius, var(--lux-border-radius-circle, 50%));
+  background-color: var(--dt-background-color);
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  content: "";
+}
