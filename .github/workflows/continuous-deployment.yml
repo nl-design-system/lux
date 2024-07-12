@@ -197,9 +197,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
-          GIT_AUTHOR_NAME: "NL Design System"
+          GIT_AUTHOR_NAME: "LUX Design System"
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
-          GIT_COMMITTER_NAME: "NL Design System"
+          GIT_COMMITTER_NAME: "LUX Design System"
         run: |
           git push --set-upstream origin HEAD
           pnpm run release
