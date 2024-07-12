@@ -1,8 +1,8 @@
-const componentToHex = (c: number) => {
+const componentToHex = (c: number): string => {
   const hex = c.toString(16);
   return hex.padStart(2, '0');
 };
-const rgbaStringToRgbArray = (rgba) => {
+const rgbaStringToRgbArray = (rgba: string): number[] => {
   const rgbaValues = rgba.substring(rgba.indexOf('(') + 1, rgba.lastIndexOf(')')).split(',');
 
   // Convert the string values to numbers

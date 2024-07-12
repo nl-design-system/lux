@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import rgbaToHex from '../../utils/rgbaToHex';
 
-const asCssVar = (token) => `var(--${token.replaceAll('.', '-')})`;
+type Props = {
+  token: string;
+};
 
-const DesignTokenPreview = ({ token }) => {
+const asCssVar = (token: string): string => `var(--${token.replace(/\./g, '-')})`;
+
+const DesignTokenColorPreview = ({ token }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
   const cssVar = asCssVar(token);
   const [tokenValue, setTokenValue] = useState(cssVar);
@@ -18,7 +22,11 @@ const DesignTokenPreview = ({ token }) => {
   return (
     <>
       <td>
-        <span className="dt-preview" ref={bubbleElem} style={{ '--dt-background-color': cssVar }}>
+        <span
+          className="dt-preview"
+          ref={bubbleElem}
+          style={{ '--dt-background-color': cssVar } as React.CSSProperties}
+        >
           {token}
         </span>
       </td>
@@ -29,4 +37,4 @@ const DesignTokenPreview = ({ token }) => {
   );
 };
 
-export { DesignTokenPreview };
+export { DesignTokenColorPreview };
