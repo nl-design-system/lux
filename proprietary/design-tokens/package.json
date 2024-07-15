@@ -13,6 +13,7 @@
     "access": "public"
   },
   "files": [
+    "dist/",
     "lib/"
   ],
   "repository": {

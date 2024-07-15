@@ -1,0 +1,49 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenBorderPreview } from "../DesignTokenBorderPreview";
+
+<Meta title="Design Tokens/Niveaus/Core/Borders" />
+
+# Border Design Tokens
+
+## Radius
+
+<section className="lux-theme--logius-light">
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <DesignTokenBorderPreview token="lux.border-radius.circle" />
+      </tr>
+      <tr>
+        <DesignTokenBorderPreview token="lux.border-radius.none" />
+      </tr>
+    </tbody>
+  </table>
+
+## Width
+
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <DesignTokenBorderPreview token="lux.border-width.default" />
+      </tr>
+      <tr>
+        <DesignTokenBorderPreview token="lux.border-width.m" />
+      </tr>
+      <tr>
+        <DesignTokenBorderPreview token="lux.border-width.none" />
+      </tr>
+    </tbody>
+  </table>
+</section>
