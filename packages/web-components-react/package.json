@@ -3,7 +3,7 @@
   "author": "Community for NL Design System",
   "description": "React web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@lux/web-components-react",
+  "name": "@lux-design-system/web-components-react",
   "keywords": [
     "nl-design-system"
   ],
@@ -28,7 +28,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@lux/web-components-stencil": "workspace:*",
+    "@lux-design-system/web-components-stencil": "workspace:*",
     "@types/node": "20.14.1",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",

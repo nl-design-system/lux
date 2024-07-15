@@ -11,9 +11,9 @@
 
 .lux-button-login {
   display: flex;
+  column-gap: var(--lux-button-login-column-gap);
   justify-content: flex-start;
   align-items: center;
-  gap: var(--lux-button-login-margin-inline);
   appearance: button;
   margin-inline: 0;
   margin-block: 0;
@@ -49,7 +49,7 @@
 
 :host(.force-state--focus) .lux-button-login,
 .lux-button-login:focus-visible {
-  outline-color: var(--lux-focus-outline-color);
+  outline-color: var(--lux-color-focus-outline);
   outline-style: var(--lux-focus-outline-style);
   outline-width: var(--lux-focus-outline-width);
   outline-offset: var(--lux-focus-outline-offset);

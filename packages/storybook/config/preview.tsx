@@ -1,8 +1,8 @@
-import { defineCustomElements } from '@lux/web-components-stencil/loader/index.js';
+import { defineCustomElements } from '@lux-design-system/web-components-stencil/loader/index.js';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview, ReactRenderer } from '@storybook/react';
 
-import '@lux/font/src/index.scss';
+import '@lux-design-system/font/src/index.scss';
 import './themes';
 import '../src/styles/theme.css';
 
@@ -19,8 +19,8 @@ const preview: Preview = {
         'Logius dark': 'lux-theme--logius-dark',
         'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
         'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
-        'NLdoc light': 'lux-theme--nldoc-default-light',
-        'NLdoc dark': 'lux-theme--nldoc-default-dark',
+        'NLdoc light': 'lux-theme--nldoc-light',
+        'NLdoc dark': 'lux-theme--nldoc-dark',
       },
       defaultTheme: 'Logius light',
     }),

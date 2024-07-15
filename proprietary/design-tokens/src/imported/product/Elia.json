@@ -1,0 +1,154 @@
+{
+  "lux": {
+    "color": {
+      "brand": {
+        "default": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.paars.500}",
+          "description": "kleur van het product"
+        },
+        "subdued": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.paars.100}",
+          "description": "Subtiele kleur van het product"
+        },
+        "hover": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.paars.400}",
+          "description": "Hover kleur van het product"
+        }
+      }
+    },
+    "border-radius": {
+      "default": {
+        "parent": "product/Eila",
+        "type": "borderRadius",
+        "value": "4px"
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "parent": "product/Eila",
+        "type": "borderWidth",
+        "value": "2px"
+      },
+      "outline": {
+        "style": {
+          "type": "other",
+          "value": "solid"
+        }
+      }
+    },
+    "font-family": {
+      "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "{rh.font-family.sans}"
+      }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/Eila",
+        "type": "borderRadius",
+        "value": "6px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "{figma.viewport.size.icon.wrapper-height}",
+          "type": "sizing"
+        }
+      }
+    }
+  },
+  "product": {
+    "button": {
+      "secondary": {
+        "background-color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.none}",
+          "description": ""
+        },
+        "border-color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "hover": {
+          "border-color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.default}"
+          },
+          "color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.default}"
+          },
+          "background-color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "tertiary": {
+        "color": {
+          "parent": "product/Eila",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "hover": {
+          "color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.default}"
+          },
+          "background-color": {
+            "parent": "product/Eila",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "1.125rem"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "1.125rem"
+        }
+      }
+    }
+  }
+}

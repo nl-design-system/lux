@@ -1,35 +1,50 @@
 {
-  "version": "1.0.0-alpha.0",
-  "author": "Community for NL Design System",
-  "description": "Example design tokens",
+  "version": "1.0.0-alpha.4",
+  "author": "Logius",
+  "description": "Design Tokens for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "SEE LICENSE IN LICENSE.md",
-  "name": "@lux/design-tokens",
+  "name": "@lux-design-system/design-tokens",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "lux-design-system"
   ],
   "private": false,
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:nl-design-system/lux.git"
   },
+  "homepage": "https://nl-design-system.github.io/lux/",
+  "bugs": "https://github.com/nl-design-system/lux/issues",
   "scripts": {
     "clean": "npm-run-all clean:**",
     "clean:dist": "rimraf dist/",
+    "clean:lib": "rimraf lib/",
+    "lint": "npm-run-all lint:**",
+    "lint:json": "jsonlint -q -F src/**/*.json",
     "prebuild": "npm run clean",
-    "build": "npm-run-all clean build:tokens-studio",
-    "build:tokens-studio": "node build-tokens.mjs",
+    "build": "npm-run-all build:tokens-studio",
+    "build:tokens-studio": "node ./build/run-build.mjs",
     "watch": "npm-run-all watch:**",
-    "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'"
+    "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
+    "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src && cpy . ../../lib/css/ --cwd=dist",
+    "prepack": "npm-run-all build lint createlib",
+    "postpack": "npm run clean:lib"
   },
   "devDependencies": {
     "@divriots/style-dictionary-to-figma": "0.4.0",
+    "@prantlf/jsonlint": "14.0.3",
     "@tokens-studio/sd-transforms": "0.15.2",
     "chokidar-cli": "3.0.0",
+    "cpy-cli": "5.0.0",
     "npm-run-all": "4.1.5",
     "rimraf": "5.0.7",
     "style-dictionary": "3.9.2"
-  }
+  },
+  "gitHead": "0b9df605d6559335afddf7761dde5e806153d468"
 }

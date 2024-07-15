@@ -1,0 +1,216 @@
+{
+  "lux": {
+    "color": {
+      "brand": {
+        "default": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.color.brand.default}",
+          "description": "kleur van het product"
+        },
+        "subdued": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.color.brand.subdued}",
+          "description": "Subtiele kleur van het product"
+        },
+        "hover": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.color.brand.hover}",
+          "description": "Hover kleur van het product"
+        }
+      }
+    },
+    "border-radius": {
+      "default": {
+        "parent": "product/NLdoc",
+        "type": "borderRadius",
+        "value": "0px"
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "parent": "product/NLdoc",
+        "type": "borderWidth",
+        "value": "1px"
+      },
+      "outline": {
+        "style": {
+          "type": "other",
+          "value": "dotted"
+        }
+      }
+    },
+    "font-family": {
+      "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "{nldoc.font-family.primary}"
+      }
+    },
+    "line-height": {
+      "s": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{viewport.font-size.s}*1.5"
+      },
+      "m": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{viewport.font-size.m}*1.5"
+      },
+      "l": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{viewport.font-size.l}*1.5"
+      },
+      "xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{viewport.font-size.xl}*1.5"
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{viewport.font-size.2xl}*1.5"
+      }
+    },
+    "font-size": {
+      "s": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "0.875rem",
+        "description": ""
+      },
+      "m": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "1rem",
+        "description": ""
+      },
+      "l": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "1.25rem",
+        "description": ""
+      },
+      "xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "1.5rem",
+        "description": ""
+      },
+      "2xl": {
+        "parent": "viewport (beta)/xs",
+        "type": "fontSizes",
+        "value": "2rem",
+        "description": ""
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/NLdoc",
+        "type": "borderRadius",
+        "value": "0px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      }
+    }
+  },
+  "product": {
+    "button": {
+      "secondary": {
+        "background-color": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{lux.color.none}",
+          "description": ""
+        },
+        "border-color": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.button.color}",
+          "description": ""
+        },
+        "color": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.button.color}",
+          "description": ""
+        },
+        "hover": {
+          "border-color": {
+            "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.color.brand.hover}",
+            "description": ""
+          },
+          "color": {
+            "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.button.color}",
+            "description": ""
+          },
+          "background-color": {
+            "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "tertiary": {
+        "color": {
+          "parent": "product/NLdoc",
+          "type": "color",
+          "value": "{nldoc.button.color}",
+          "description": ""
+        },
+        "hover": {
+          "color": {
+            "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.button.color}",
+            "description": ""
+          },
+          "background-color": {
+            "parent": "product/NLdoc",
+            "type": "color",
+            "value": "{nldoc.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "1rem"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "1rem"
+        }
+      }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "2.5rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+      }
+    }
+  }
+}

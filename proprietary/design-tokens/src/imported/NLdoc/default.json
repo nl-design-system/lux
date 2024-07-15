@@ -1,0 +1,45 @@
+{
+  "nldoc": {
+    "color": {
+      "brand": {
+        "default": {
+          "parent": "NLdoc / Organisatie/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.500}",
+          "description": ""
+        },
+        "subdued": {
+          "parent": "NLdoc / Organisatie/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.50}",
+          "description": ""
+        },
+        "hover": {
+          "parent": "NLdoc / Organisatie/NLdoc",
+          "type": "color",
+          "value": "{lux.color.violet.700}",
+          "description": ""
+        }
+      }
+    },
+    "button": {
+      "color": {
+        "parent": "NLdoc / Organisatie/NLdoc",
+        "type": "color",
+        "value": "{nldoc.color.brand.default}",
+        "description": ""
+      }
+    },
+    "font-family": {
+      "primary": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {}
+          }
+        },
+        "type": "fontFamilies",
+        "value": "{rh.font-family.sans}"
+      }
+    }
+  }
+}
