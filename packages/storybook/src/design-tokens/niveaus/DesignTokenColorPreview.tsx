@@ -1,15 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import rgbaToHex from '../../utils/rgbaToHex';
+import tokenToCssVar from '../../utils/tokenToCssVar';
 
 type Props = {
   token: string;
 };
 
-const asCssVar = (token: string): string => `var(--${token.replace(/\./g, '-')})`;
-
 const DesignTokenColorPreview = ({ token }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
-  const cssVar = asCssVar(token);
+  const cssVar = tokenToCssVar(token);
   const [tokenValue, setTokenValue] = useState(cssVar);
 
   useEffect(() => {

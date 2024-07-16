@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
+import tokenToCssVar from '../../utils/tokenToCssVar';
 
 type Props = {
   token: string;
 };
 
-const asCssVar = (token: string) => `var(--${token.replace(/\./g, '-')})`;
 const extractProperty = (token: string): string => {
   const borderPartIndex = token.indexOf('border-') + 'border-'.length;
   const nextPeriodSeparator = token.indexOf('.', borderPartIndex);
@@ -13,7 +13,7 @@ const extractProperty = (token: string): string => {
 
 const DesignTokenBorderPreview = ({ token }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
-  const cssVar = asCssVar(token);
+  const cssVar = tokenToCssVar(token);
   const property = extractProperty(token);
   const [tokenValue, setTokenValue] = useState(cssVar);
   const previewStyle: React.CSSProperties = {

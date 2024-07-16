@@ -1,15 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import pxToRem from '../../utils/pxToRem';
+import tokenToCssVar from '../../utils/tokenToCssVar';
 
 type Props = {
   token: string;
 };
 
-const asCssVar = (token: string) => `var(--${token.replace(/\./g, '-')})`;
-
 const DesignTokenSpacingPreview = ({ token }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
-  const cssVar = asCssVar(token);
+  const cssVar = tokenToCssVar(token);
   const [tokenValue, setTokenValue] = useState(cssVar);
   const style: React.CSSProperties = {
     '--dt-inline-size': cssVar,
