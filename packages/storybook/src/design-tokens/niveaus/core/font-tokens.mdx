@@ -1,0 +1,46 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenFontPreview } from "../DesignTokenFontPreview";
+
+<Meta title="Design Tokens/Niveaus/Core/Typografie" />
+
+# Font Design Tokens
+
+## Font Family
+
+<section className="lux-theme--logius-light">
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <DesignTokenFontPreview token="rh.font-family.sans" value="RijksoverheidSansWebText, Arial" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="rh.font-family.serif" value="RijksoverheidSerifWeb, Times" />
+      </tr>
+    </tbody>
+  </table>
+
+## Weight
+
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <DesignTokenFontPreview token="rh.font-weight.regular" value="regular" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="rh.font-weight.bold" value="bold" />
+      </tr>
+    </tbody>
+  </table>
+</section>
