@@ -3,15 +3,7 @@ const componentToHex = (c: number): string => {
   return hex.padStart(2, '0');
 };
 const rgbaStringToRgbArray = (rgba: string): number[] => {
-  const rgbaValues = rgba.substring(rgba.indexOf('(') + 1, rgba.lastIndexOf(')')).split(',');
-
-  // Convert the string values to numbers
-  const numericalValues = rgbaValues.map(function (value) {
-    return Number(value.trim());
-  });
-
-  // Return the array of numerical values
-  return numericalValues;
+  return rgba.match(/\d+/g)?.map(Number) ?? [];
 };
 
 /**
