@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import tokenToCssVar from '../../utils/tokenToCssVar';
+import { tokenToCssVar } from '../../utils';
 
 type Props = {
   token: string;

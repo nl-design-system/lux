@@ -4,6 +4,4 @@
  * @param token Design token to convert
  * @returns Design Token converted to CSS Custom Property
  */
-const tokenToCssVar = (token: string): string => `var(--${token.replace(/\./g, '-')})`;
-
-export default tokenToCssVar;
+export const tokenToCssVar = (token: string): string => `var(--${token.replace(/\./g, '-')})`;

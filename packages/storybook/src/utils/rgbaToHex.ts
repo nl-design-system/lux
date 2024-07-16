@@ -17,10 +17,8 @@ const rgbaStringToRgbArray = (rgba: string): number[] => {
  * @param rgba The rgba CSS color to convert
  * @returns Hex value
  */
-const rgbaToHex = (rgba: string): string => {
+export const rgbaToHex = (rgba: string): string => {
   const [r, g, b, a] = rgbaStringToRgbArray(rgba);
   // eslint-disable-next-line eqeqeq
   return `#${componentToHex(r)}${componentToHex(g)}${componentToHex(b)}${a != null ? componentToHex(a) : ''}`;
 };
-
-export default rgbaToHex;
