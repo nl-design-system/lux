@@ -35,4 +35,8 @@ Naast de variabelen in de `:root` is er ook een versie waarbij de variabelen in 
 Voor beide versies zijn er index-bestanden gemaakt per thema. Bij de `:root`-versie worden de mode-versies aan de hand van in de browser ingestelde color-scheme geïmporteerd. Bij de "theme"-versie worden beide mode-versies ingeladen.
 Binnenkort komen nog de viewports bij de index-bestanden.
 
+### Fonts
+
+Een aantal tokens referen naar het fonts van de Rijksshuisstijl. Daarvoor installeer je het [`@lux-design-system/font`-package](https://www.npmjs.com/package/@lux-design-system/font).
+
 [^1]: NLdoc thema's staan in de map `nldoc`.
