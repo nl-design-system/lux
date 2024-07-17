@@ -32,7 +32,7 @@ const DesignTokenFontPreview = ({ token, value, set, reference }: Props) => {
   } as React.CSSProperties;
 
   return (
-    <>
+    <tr>
       <td>
         <span className="dt-preview dt-preview--font" ref={bubbleElem} style={previewStyle}>
           {token}
@@ -55,7 +55,7 @@ const DesignTokenFontPreview = ({ token, value, set, reference }: Props) => {
           <span className="dt-set">{set}</span>
         </td>
       ) : null}
-    </>
+    </tr>
   );
 };
 

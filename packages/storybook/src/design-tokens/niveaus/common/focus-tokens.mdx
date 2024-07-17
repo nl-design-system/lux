@@ -19,15 +19,9 @@ import { DesignTokenOverview } from "../DesignTokenOverview";
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <DesignTokenColorPreview token="lux.color.focus.outline" reference="{lux.color.border.strong}" set="mode" />
-      </tr>
-      <tr>
-        <DesignTokenBorderPreview token="lux.focus.outline-width" group="outline" value="2px" set="product" />
-      </tr>
-      <tr>
-        <DesignTokenBorderPreview token="lux.focus.outline-offset" group="outline" value="lux.space.025-x" set="product" />
-      </tr>
+      <DesignTokenColorPreview token="lux.color.focus.outline" reference="{lux.color.border.strong}" set="mode" />
+      <DesignTokenBorderPreview token="lux.focus.outline-width" group="outline" value="2px" set="product" />
+      <DesignTokenBorderPreview token="lux.focus.outline-offset" group="outline" value="lux.space.025-x" set="product" />
     </tbody>
   </table>
 
@@ -44,9 +38,7 @@ Deze tokens zijn specifiek voor Figma, deze komen niet terug in de code.
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <DesignTokenBorderPreview token="figma.focus.outline-radius" group="outline" value="6px" set="product" />
-      </tr>
+      <DesignTokenBorderPreview token="figma.focus.outline-radius" group="outline" value="6px" set="product" />
     </tbody>
   </table>
 </DesignTokenOverview>

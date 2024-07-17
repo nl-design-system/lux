@@ -20,7 +20,7 @@ const DesignTokenColorPreview = ({ token, reference, set }: Props) => {
   });
 
   return (
-    <>
+    <tr>
       <td>
         <span
           className="dt-preview"
@@ -45,7 +45,7 @@ const DesignTokenColorPreview = ({ token, reference, set }: Props) => {
           <span className="dt-value">{tokenValue}</span>
         </td>
       ) : null}
-    </>
+    </tr>
   );
 };
 

@@ -33,7 +33,7 @@ const DesignTokenBorderPreview = ({ token, value, set, group = 'border' }: Props
   });
 
   return (
-    <>
+    <tr>
       <td>
         <span className="dt-preview dt-preview--border" ref={bubbleElem} style={previewStyle}>
           {token}
@@ -53,7 +53,7 @@ const DesignTokenBorderPreview = ({ token, value, set, group = 'border' }: Props
           <span className="dt-set">{set}</span>
         </td>
       ) : null}
-    </>
+    </tr>
   );
 };
 

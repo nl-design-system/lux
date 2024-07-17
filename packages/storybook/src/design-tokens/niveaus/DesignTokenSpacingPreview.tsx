@@ -21,7 +21,7 @@ const DesignTokenSpacingPreview = ({ token }: Props) => {
   });
 
   return (
-    <>
+    <tr>
       <td>
         <span className="dt-preview dt-preview--spacing" ref={bubbleElem} style={style}>
           {token}
@@ -30,7 +30,7 @@ const DesignTokenSpacingPreview = ({ token }: Props) => {
       <td>
         <span className="dt-value">{tokenValue}</span>
       </td>
-    </>
+    </tr>
   );
 };
 
