@@ -38,8 +38,10 @@
   gap: var(--lux-space-1x, 0.5rem);
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
-.dt-preview--spacing {
+/* stylelint-disable selector-class-pattern */
+.dt-preview--spacing,
+.dt-preview--sizing {
+  /* stylelint-enable selector-class-pattern */
   --dt-border-radius: 0;
   --dt-background-color: var(--lux-color-background-subdued);
 }
