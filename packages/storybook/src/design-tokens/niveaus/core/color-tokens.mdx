@@ -1,5 +1,6 @@
 import { Meta } from "@storybook/blocks";
 import { DesignTokenColorPreview } from "../DesignTokenColorPreview";
+import { DesignTokenOverview } from "../DesignTokenOverview";
 
 <Meta title="Design Tokens/Niveaus/Core/Kleuren" />
 
@@ -9,7 +10,7 @@ Gebruik deze kleuren voor ondersteunend materiaal, zoals illustraties, of waar n
 
 Vermijd het gebruik van de core tokens als er een common token is die hiervoor is ontworpen. Bijvoorbeeld, als u de foutstatus van een component ontwerpt, gebruik dan `lux-color-feedback-error` in plaats van `lux-color-rood`.
 
-<section className="lux-theme--logius-light">
+<DesignTokenOverview>
   <table>
     <thead>
       <tr>
@@ -648,4 +649,4 @@ Vermijd het gebruik van de core tokens als er een common token is die hiervoor i
       </tr>
     </tbody>
   </table>
-</section>
+</DesignTokenOverview>
