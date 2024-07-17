@@ -56,7 +56,7 @@ In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
 <div class="lux-theme--logius-dark">...</div>
 ```
 
-Via Webpack in Create React App en geinstalleerd via (p)npm of yarn:
+Via Webpack in Create React App en geïnstalleerd via een [package manager](#installeren):
 
 ```javascript
 import "@lux-design-system/design-tokens/dist/logius/index.css";
