@@ -7,12 +7,14 @@ type Props = {
   value: string;
 };
 
+const EXCLUDED_TOKENS_FOR_PREVIEW = ['figma.screen-size', 'lux.grid.max-inline'];
+
 const DesignTokenSizingPreview = ({ token, value, set }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
   const cssVar = tokenToCssVar(token);
   const style: React.CSSProperties = {} as React.CSSProperties;
 
-  if (token !== 'figma.screen-size') {
+  if (!EXCLUDED_TOKENS_FOR_PREVIEW.includes(token)) {
     Object.assign(style, {
       '--dt-inline-size': cssVar,
     });
