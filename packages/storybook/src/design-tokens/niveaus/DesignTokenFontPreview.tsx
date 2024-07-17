@@ -18,13 +18,17 @@ const getPropertyFromToken = (token: string): string => {
   return matches[0];
 };
 
+const toCamelCase = (str: string): string => {
+  return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (_m, chr) => chr.toUpperCase());
+};
+
 const DesignTokenFontPreview = ({ token, value, set, reference }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
   const previewStyle: React.CSSProperties = {};
   const property = getPropertyFromToken(token);
   const valueClassName = property === 'font-size' ? 'dt-value--line-height-reset' : '';
   const valueStyle: React.CSSProperties = {
-    [property]: tokenToCssVar(token),
+    [toCamelCase(property)]: tokenToCssVar(token),
   } as React.CSSProperties;
 
   return (
