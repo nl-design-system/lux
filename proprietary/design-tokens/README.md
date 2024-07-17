@@ -51,13 +51,12 @@ In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
 <link rel="stylesheet" href="https://unpkg.com/@lux-design-system/design-tokens/dist/logius/index-theme.css" />
 ```
 
-Via een import in javascript via CSS modules en geinstalleerd via (p)npm of yarn:
-
-```javascript
-import logiusTokens from "@lux-design-system/design-tokens/dist/logius/index.css" assert { type: "css" };
+```html
+<!-- theme -->
+<div class="lux-theme--logius-dark">...</div>
 ```
 
-Via Webpack in Create React App:
+Via Webpack in Create React App en geinstalleerd via (p)npm of yarn:
 
 ```javascript
 import "@lux-design-system/design-tokens/dist/logius/index.css";
