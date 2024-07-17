@@ -31,4 +31,35 @@
   font-family: "RijksoverheidSansWebText";
 }
 
-/* TODO: Serif toevoegen */
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("ROserifwebregular"),
+    url("ROserifwebregular.woff") format("woff"),
+    url("ROserifwebregular.eot") format("embedded-opentype"),
+    url("ROserifwebregular.ttf") format("truetype");
+  font-family: "RijksoverheidSerifWeb";
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("ROserifwebbold"),
+    url("ROserifwebbold.woff") format("woff"),
+    url("ROserifwebbold.eot") format("embedded-opentype"),
+    url("ROserifwebbold.ttf") format("truetype");
+  font-family: "RijksoverheidSerifWeb";
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("ROserifwebitalic"),
+    url("ROserifwebitalic.woff") format("woff"),
+    url("ROserifwebitalic.eot") format("embedded-opentype"),
+    url("ROserifwebitalic.ttf") format("truetype");
+  font-family: "RijksoverheidSerifWeb";
+}
