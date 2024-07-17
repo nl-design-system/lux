@@ -2,7 +2,7 @@ import { defineCustomElements } from '@lux-design-system/web-components-stencil/
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview, ReactRenderer } from '@storybook/react';
 
-import '@lux-design-system/font/dist/index.scss';
+import '@lux-design-system/font/dist/index.css';
 import './themes';
 import '../src/styles/theme.css';
 
