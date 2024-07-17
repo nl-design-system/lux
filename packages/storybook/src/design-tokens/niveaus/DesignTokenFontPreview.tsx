@@ -3,11 +3,13 @@ import { tokenToCssVar } from '../../utils';
 
 type Props = {
   token: string;
+  reference?: string;
+  set?: 'product' | 'viewport';
   value: string;
 };
 
 const getPropertyFromToken = (token: string): string => {
-  const matches = token.match(/(font-[^.]+)/i);
+  const matches = token.match(/(font-[^.]+|line-height)/i);
 
   if (!matches || !matches.length) {
     return '';
@@ -16,10 +18,11 @@ const getPropertyFromToken = (token: string): string => {
   return matches[0];
 };
 
-const DesignTokenFontPreview = ({ token, value }: Props) => {
+const DesignTokenFontPreview = ({ token, value, set, reference }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
   const previewStyle: React.CSSProperties = {};
   const property = getPropertyFromToken(token);
+  const valueClassName = property === 'font-size' ? 'dt-value--line-height-reset' : '';
   const valueStyle: React.CSSProperties = {
     [property]: tokenToCssVar(token),
   } as React.CSSProperties;
@@ -31,11 +34,23 @@ const DesignTokenFontPreview = ({ token, value }: Props) => {
           {token}
         </span>
       </td>
-      <td>
-        <span className="dt-value dt-value--font" style={valueStyle}>
-          {value}
-        </span>
-      </td>
+      {!reference && value ? (
+        <td className={valueClassName}>
+          <span className="dt-value dt-value--font" style={valueStyle}>
+            {value}
+          </span>
+        </td>
+      ) : null}
+      {reference ? (
+        <td>
+          <span className="dt-reference">{reference}</span>
+        </td>
+      ) : null}
+      {set ? (
+        <td>
+          <span className="dt-set">{set}</span>
+        </td>
+      ) : null}
     </>
   );
 };

@@ -56,6 +56,11 @@
   content: "";
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.dt-value--line-height-reset {
+  line-height: 1 !important;
+}
+
 .dt-set {
   text-transform: capitalize;
 }

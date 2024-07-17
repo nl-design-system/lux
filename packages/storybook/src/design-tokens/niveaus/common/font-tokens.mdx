@@ -1,0 +1,130 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenFontPreview } from "../DesignTokenFontPreview";
+import { DesignTokenOverview } from "../DesignTokenOverview";
+
+<Meta title="Design Tokens/Niveaus/Common/Typografie" />
+
+# Font Design Tokens
+
+## Font Family
+
+<DesignTokenOverview>
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Referentie</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <DesignTokenFontPreview token="rh.font-family.primary" reference="rh.font-family.sans" set="product" />
+      </tr>
+    </tbody>
+  </table>
+
+## Font Size
+
+<table>
+  <thead>
+    <tr>
+      <th>Token</th>
+      <th>Referentie</th>
+      <th>Set (Figma)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <DesignTokenFontPreview token="rh.font-size.s" reference="viewport.font-size.s" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.font-size.m" reference="viewport.font-size.m" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.font-size.l" reference="viewport.font-size.l" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.font-size.xl" reference="viewport.font-size.xl" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.font-size.2xl" reference="viewport.font-size.2xl" set="product" />
+    </tr>
+  </tbody>
+</table>
+
+## Line Height
+
+<table>
+  <thead>
+    <tr>
+      <th>Token</th>
+      <th>Referentie</th>
+      <th>Set (Figma)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <DesignTokenFontPreview token="rh.line-height.s" reference="viewport.line-height.s" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.line-height.m" reference="viewport.line-height.m" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.line-height.l" reference="viewport.line-height.l" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.line-height.xl" reference="viewport.line-height.xl" set="product" />
+    </tr>
+    <tr>
+      <DesignTokenFontPreview token="rh.line-height.2xl" reference="viewport.line-height.2xl" set="product" />
+    </tr>
+  </tbody>
+</table>
+
+## Viewport Tokens
+
+Deze tokens kun je niet selecteren in Figma. Hiermee passen we de `font-size` aan op viewport xs voor Logius thema.
+
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Referentie</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <DesignTokenFontPreview token="viewport.font-size.s" value="1rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.font-size.m" value="1.125rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.font-size.l" value="1.375rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.font-size.xl" value="1.625rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.font-size.2xl" value="2.5rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.line-height.s" value="1.5rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.line-height.m" value="1.75rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.line-height.l" value="2rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.line-height.xl" value="2.25rem" set="viewport" />
+      </tr>
+      <tr>
+        <DesignTokenFontPreview token="viewport.line-height.2xl" value="3.5rem" set="viewport" />
+      </tr>
+    </tbody>
+  </table>
+</DesignTokenOverview>
