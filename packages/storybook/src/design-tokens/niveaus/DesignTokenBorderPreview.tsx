@@ -3,18 +3,22 @@ import { tokenToCssVar } from '../../utils';
 
 type Props = {
   token: string;
+  group?: 'border' | 'outline';
+  value?: string;
+  set?: 'product' | 'mode';
 };
 
-const extractProperty = (token: string): string => {
-  const borderPartIndex = token.indexOf('border-') + 'border-'.length;
+const extractProperty = (token: string, group: Props['group']): string => {
+  const groupPrefix = `${group}-`;
+  const borderPartIndex = token.indexOf(groupPrefix) + groupPrefix.length;
   const nextPeriodSeparator = token.indexOf('.', borderPartIndex);
   return token.substring(borderPartIndex, nextPeriodSeparator);
 };
 
-const DesignTokenBorderPreview = ({ token }: Props) => {
+const DesignTokenBorderPreview = ({ token, value, set, group = 'border' }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
   const cssVar = tokenToCssVar(token);
-  const property = extractProperty(token);
+  const property = extractProperty(token, group);
   const [tokenValue, setTokenValue] = useState(cssVar);
   const previewStyle: React.CSSProperties = {
     [`--dt-border-${property}`]: tokenValue,
@@ -35,9 +39,20 @@ const DesignTokenBorderPreview = ({ token }: Props) => {
           {token}
         </span>
       </td>
-      <td>
-        <span className="dt-value">{tokenValue}</span>
-      </td>
+      {value ? (
+        <td>
+          <span className="dt-value">{value}</span>
+        </td>
+      ) : (
+        <td>
+          <span className="dt-value">{tokenValue}</span>
+        </td>
+      )}
+      {set ? (
+        <td>
+          <span className="dt-set">{set}</span>
+        </td>
+      ) : null}
     </>
   );
 };
