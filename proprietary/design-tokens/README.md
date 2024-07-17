@@ -30,13 +30,49 @@ Meer informatie over de LUX design tokens en de lagen vind je op de pagina [Desi
 
 ## CSS
 
-In de map `/lib/css/` staan de CSS-variabelen in bestanden per thema[^1], mode (light, dark) en viewport (xs, sm, md, lg, xl). Bijvoorbeeld `/lib/css/logius/dark/lg.css`.
-Naast de variabelen in de `:root` is er ook een versie waarbij de variabelen in een thema-mode-classname staan. Bijvoorbeeld `/lib/css/logius/dark/lg-theme.css`, met de selector `.lux-theme--logius-dark`.
+In de map `/dist/` staan de CSS-variabelen in bestanden per thema[^1], mode (light, dark) en viewport (xs, sm, md, lg, xl). Bijvoorbeeld `/dist/logius/dark/lg.css`.
+Naast de variabelen in de `:root` is er ook een versie waarbij de variabelen in een thema-mode-classname staan. Bijvoorbeeld `/dist/logius/dark/lg-theme.css`, met de selector `.lux-theme--logius-dark`.
 Voor beide versies zijn er index-bestanden gemaakt per thema. Bij de `:root`-versie worden de mode-versies aan de hand van in de browser ingestelde color-scheme geïmporteerd. Bij de "theme"-versie worden beide mode-versies ingeladen.
 Binnenkort komen nog de viewports bij de index-bestanden.
+
+### Gebruik
+
+Om de design tokens als CSS-variabelen te gebruiken zijn er verschillende methoden. Een aantal voorbeelden.
+
+In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
+
+```html
+<!-- :root-versie -->
+<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/design-tokens/dist/logius/index.css" />
+```
+
+```html
+<!-- theme-versie -->
+<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/design-tokens/dist/logius/index-theme.css" />
+```
+
+Via een import in javascript via CSS modules en geinstalleerd via (p)npm of yarn:
+
+```javascript
+import logiusTokens from "@lux-design-system/design-tokens/dist/logius/index.css" assert { type: "css" };
+```
+
+Via Webpack in Create React App:
+
+```javascript
+import "@lux-design-system/design-tokens/dist/logius/index.css";
+```
 
 ### Fonts
 
 Een aantal tokens referen naar het fonts van de Rijksshuisstijl. Daarvoor installeer je het [`@lux-design-system/font`-package](https://www.npmjs.com/package/@lux-design-system/font).
+
+Gebruik je een ander font? Voeg de volgende aanpassingen toe in je website of applicatie, bijvoorbeeld:
+
+```css
+:root {
+  --lux-font-family-primary: "Cormorant Infant", "Times New Roman", serif;
+}
+```
 
 [^1]: NLdoc thema's staan in de map `nldoc`.

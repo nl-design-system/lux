@@ -32,5 +32,5 @@ Hierin staan de definities en font-family-namen die binnen LUX worden gebruikt.
 Dit bestand kun je importeren of invoegen in je website of applicatie. Bijvoorbeeld via
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/fonts/dist/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/font/dist/index.css" />
 ```
