@@ -55,3 +55,7 @@
   inline-size: var(--dt-inline-size, 1.25rem);
   content: "";
 }
+
+.dt-set {
+  text-transform: capitalize;
+}

@@ -3,9 +3,11 @@ import { rgbaToHex, tokenToCssVar } from '../../utils';
 
 type Props = {
   token: string;
+  reference: string;
+  set: 'product' | 'mode';
 };
 
-const DesignTokenColorPreview = ({ token }: Props) => {
+const DesignTokenColorPreview = ({ token, reference, set }: Props) => {
   const bubbleElem = useRef<HTMLElement>(null);
   const cssVar = tokenToCssVar(token);
   const [tokenValue, setTokenValue] = useState(cssVar);
@@ -28,9 +30,21 @@ const DesignTokenColorPreview = ({ token }: Props) => {
           {token}
         </span>
       </td>
-      <td>
-        <span className="dt-value">{tokenValue}</span>
-      </td>
+      {reference ? (
+        <td>
+          <span className="dt-reference">{reference}</span>
+        </td>
+      ) : null}
+      {set ? (
+        <td>
+          <span className="dt-set">{set}</span>
+        </td>
+      ) : null}
+      {!reference ? (
+        <td>
+          <span className="dt-value">{tokenValue}</span>
+        </td>
+      ) : null}
     </>
   );
 };
