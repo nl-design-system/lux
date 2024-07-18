@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { rgbaToHex, tokenToCssVar } from '../../utils';
+import { rgbaToHex, tokenToCssVar } from '..';
 
 type Props = {
   token: string;
