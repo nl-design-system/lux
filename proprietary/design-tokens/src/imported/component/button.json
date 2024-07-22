@@ -91,11 +91,11 @@
       },
       "min-inline-size": {
         "type": "sizing",
-        "value": "48px"
+        "value": "{lux.size.target}"
       },
       "min-block-size": {
         "type": "sizing",
-        "value": "48px"
+        "value": "{lux.size.target}"
       },
       "border-radius": {
         "type": "borderRadius",

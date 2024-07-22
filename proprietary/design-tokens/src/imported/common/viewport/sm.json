@@ -40,14 +40,6 @@
         "value": "1.5rem",
         "description": ""
       }
-    },
-    "size": {
-      "target [oud]": {
-        "parent": "viewport (beta)/sm",
-        "type": "sizing",
-        "value": "3rem",
-        "description": ""
-      }
     }
   },
   "viewport": {
