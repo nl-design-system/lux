@@ -44,11 +44,6 @@
     },
     "font-family": {
       "primary": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "fontFamilies",
         "value": "{nldoc.font-family.primary}"
       }

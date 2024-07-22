@@ -19,11 +19,6 @@
         "icon": {
           "wrapper-height": {
             "parent": "viewport (beta)/lg",
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {}
-              }
-            },
             "type": "sizing",
             "value": "1.75rem"
           }

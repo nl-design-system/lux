@@ -51,11 +51,6 @@
         "value": "{lux.button.min-inline-size}"
       },
       "column-gap": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "spacing",
         "value": "{lux.button.column-gap}"
       },
