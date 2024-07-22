@@ -1,0 +1,5 @@
+@import "ro-font-face-mixin";
+
+$lux-font-folder: "." !default;
+
+@include ro-font-face($lux-font-folder);
