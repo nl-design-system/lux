@@ -752,7 +752,7 @@
       },
       "serif": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSansWebText, 'Times New Roman', serif",
+        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif",
         "description": "TODO: fonts toevoegen in assets en css"
       }
     }
