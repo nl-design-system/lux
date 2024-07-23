@@ -167,7 +167,7 @@
           }
         }
       },
-      "tertairy": {
+      "tertiary": {
         "background-color": {
           "type": "color",
           "value": "{lux.color.none}"

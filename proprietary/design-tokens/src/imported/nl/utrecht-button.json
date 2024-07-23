@@ -357,11 +357,11 @@
       "subtle": {
         "background-color": {
           "type": "color",
-          "value": "{lux.button.tertairy.background-color}"
+          "value": "{lux.button.tertiary.background-color}"
         },
         "border-color": {
           "type": "color",
-          "value": "{lux.button.tertairy.border-color}"
+          "value": "{lux.button.tertiary.border-color}"
         },
         "border-width": {
           "type": "borderWidth",
@@ -369,7 +369,7 @@
         },
         "color": {
           "type": "color",
-          "value": "{lux.button.tertairy.color}"
+          "value": "{lux.button.tertiary.color}"
         },
         "font-weight": {
           "type": "fontWeight",
@@ -378,43 +378,43 @@
         "active": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.tertairy.active.background-color}"
+            "value": "{lux.button.tertiary.active.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.tertairy.active.border-color}"
+            "value": "{lux.button.tertiary.active.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.tertairy.active.color}"
+            "value": "{lux.button.tertiary.active.color}"
           }
         },
         "disabled": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.tertairy.disabled.background-color}"
+            "value": "{lux.button.tertiary.disabled.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.tertairy.disabled.border-color}"
+            "value": "{lux.button.tertiary.disabled.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.tertairy.disabled.color}"
+            "value": "{lux.button.tertiary.disabled.color}"
           }
         },
         "hover": {
           "background-color": {
             "type": "color",
-            "value": "{lux.button.tertairy.hover.background-color}"
+            "value": "{lux.button.tertiary.hover.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{lux.button.tertairy.hover.border-color}"
+            "value": "{lux.button.tertiary.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{lux.button.tertairy.hover.color}"
+            "value": "{lux.button.tertiary.hover.color}"
           },
           "scale": {
             "type": "other",
