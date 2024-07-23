@@ -1,20 +1,35 @@
 {
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.2",
   "author": "Community for NL Design System",
-  "description": "Font assets",
+  "description": "Font assets for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@lux-design-system/font",
   "main": "dist/index.css",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "lux-design-system"
   ],
-  "private": true,
+  "private": false,
   "publishConfig": {
     "access": "public"
   },
   "files": [
-    "src"
+    "dist"
   ],
+  "scripts": {
+    "clean:dist": "rimraf dist/",
+    "create:dist": "cpy src/**/*.scss dist/",
+    "prebuild": "npm run clean:dist",
+    "build:css": "sass src/index.scss:dist/index.css --no-source-map --verbose",
+    "build": "npm-run-all create:dist build:css",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "cpy-cli": "5.0.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "5.0.7",
+    "sass": "1.77.4"
+  },
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:nl-design-system/lux.git"
