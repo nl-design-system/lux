@@ -1,0 +1,38 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenFontPreview, DesignTokenOverview } from "../../utils/components";
+
+<Meta title="Design Tokens/Core/Typografie" />
+
+# Font Design Tokens
+
+## Font Family
+
+<DesignTokenOverview>
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenFontPreview token="rh.font-family.sans" value="RijksoverheidSansWebText, Arial" />
+      <DesignTokenFontPreview token="rh.font-family.serif" value="RijksoverheidSerifWeb, Times" />
+    </tbody>
+  </table>
+
+## Weight
+
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenFontPreview token="rh.font-weight.regular" value="regular" />
+      <DesignTokenFontPreview token="rh.font-weight.bold" value="bold" />
+    </tbody>
+  </table>
+</DesignTokenOverview>
