@@ -29,3 +29,37 @@
 .section li + li {
   border-top: solid 1px #a7a7a7;
 }
+
+.dt-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--lux-space-1x, 0.5rem);
+}
+
+.dt-preview--spacing,
+.dt-preview--sizing {
+  --dt-border-radius: 0;
+  --dt-background-color: var(--lux-color-background-subdued);
+}
+
+.dt-preview:not(.dt-preview--font)::before {
+  display: inline-block;
+  border-width: var(--dt-border-width, 1px);
+  border-style: var(--dt-border-style, solid);
+  border-color: var(--dt-border-color, var(--lux-color-border-subdued, #a7a7a7));
+  border-radius: var(--dt-border-radius, var(--lux-border-radius-circle, 50%));
+  background-color: var(--dt-background-color, var(--lux-color-background-subdued));
+  aspect-ratio: 1;
+  inline-size: var(--dt-inline-size, 1.25rem);
+  content: "";
+}
+
+.dt-value--line-height-reset {
+  line-height: 1 !important;
+}
+
+.dt-set {
+  text-transform: capitalize;
+}

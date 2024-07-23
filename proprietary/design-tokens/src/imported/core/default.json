@@ -744,12 +744,13 @@
     "font-family": {
       "sans": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif"
+        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif",
+        "description": "De Sans Web wordt toegepast voor langere (lees-)teksten."
       },
       "serif": {
         "type": "fontFamilies",
         "value": "RijksoverheidSerifWeb, 'Times New Roman', serif",
-        "description": "TODO: fonts toevoegen in assets en css"
+        "description": "Serif Web is vooral interessant voor de afwisseling in bijvoorbeeld digitale magazines."
       }
     }
   },

@@ -1,0 +1,23 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenOverview, DesignTokenSizingPreview } from "../../utils/components";
+
+<Meta title="Design Tokens/Common/Grid" />
+
+# Grid Design Tokens
+
+<DesignTokenOverview>
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenSizingPreview token="lux.grid.max-inline" value="77.5rem" set="common" />
+      <DesignTokenSizingPreview token="lux.grid.gutter" value="2rem" set="product" />
+      <DesignTokenSizingPreview token="lux.grid.margin" value="2.5rem" set="product" />
+    </tbody>
+  </table>
+</DesignTokenOverview>
