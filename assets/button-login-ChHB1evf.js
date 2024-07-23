@@ -1,12 +1,12 @@
-import{j as e}from"./jsx-runtime-X2b_N9AH.js";import{useMDXComponents as a}from"./index-CRbi4mQH.js";import{M as r,C as d,d as s,e as o}from"./index-DaaPzyxZ.js";import{B as g,P as l}from"./button-login.stories-DSlYgzaR.js";import"./index-uCp2LrAq.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DxCZAV09.js";import"../sb-preview/runtime.js";import"./index-CqS9fqXy.js";import"./index-DXimoRZY.js";import"./index-B8K4vdXH.js";import"./index-DrFu-skq.js";import"./index-D3ylJrlI.js";function t(i){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",pre:"pre",ul:"ul",...a(),...i.components};return e.jsxs(e.Fragment,{children:[e.jsx(r,{of:g}),`
+import{j as e}from"./jsx-runtime-X2b_N9AH.js";import{useMDXComponents as a}from"./index-CRbi4mQH.js";import{M as r,C as d,d as s,e as o}from"./index-14jR7-E5.js";import{B as g,P as t}from"./button-login.stories-DaxDHlwg.js";import"./index-uCp2LrAq.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-Cx770WSi.js";import"../sb-preview/runtime.js";import"./index-CqS9fqXy.js";import"./index-DXimoRZY.js";import"./index-B8K4vdXH.js";import"./index-DrFu-skq.js";import"./createVisualRegressionStory-DBLw5BCm.js";import"./index-D3ylJrlI.js";function l(i){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",pre:"pre",ul:"ul",...a(),...i.components};return e.jsxs(e.Fragment,{children:[e.jsx(r,{of:g}),`
 `,e.jsx(n.h1,{id:"button-login",children:"Button Login"}),`
 `,e.jsx(n.p,{children:"Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren."}),`
 `,e.jsx(n.p,{children:e.jsx(n.a,{href:"https://www.figma.com/file/515tboh6xpSNziwQu6WyAy/LUX---UI-kit?type=design&node-id=1125-2&mode=design",rel:"nofollow",children:"Figma"})}),`
 `,e.jsx(n.p,{children:"Als LUX bieden wij dit component aan, zodat een organisatie eenvoudig aan de stijlhandleiding aansluiten toegang van Logius kan voldoen. Het is een uniek component, hiermee zijn updates aan de copy, logo’s of opmaak gemakkelijk gemaakt."}),`
 `,e.jsxs(n.p,{children:["Dit component is onderdeel van het patroon: ",e.jsx(n.a,{href:"https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang",rel:"nofollow",children:"inlogstraat"}),"."]}),`
 `,e.jsx(n.h2,{id:"playground",children:"Playground"}),`
-`,e.jsx(d,{of:l}),`
-`,e.jsx(s,{of:l}),`
+`,e.jsx(d,{of:t}),`
+`,e.jsx(s,{of:t}),`
 `,e.jsx(n.h2,{id:"gebruik",children:"Gebruik"}),`
 `,e.jsxs(n.p,{children:["Met de ",e.jsx(n.code,{children:"Button Login"})," kunnen gebruikers inloggen met het gekozen inlogmiddel."]}),`
 `,e.jsx(n.h2,{id:"opmaak-voor-buiten-logius",children:"Opmaak (voor buiten Logius)"}),`
@@ -42,4 +42,4 @@ import{j as e}from"./jsx-runtime-X2b_N9AH.js";import{useMDXComponents as a}from"
 `,e.jsxs(n.ul,{children:[`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"https://www.w3.org/TR/WCAG21/#keyboard-no-exception",rel:"nofollow",children:"WCAG eis 2.1.3"}),": je kan de button activeren met Enter of Space, en het is mogelijk met Tab de button te focussen. Space gebruiken heeft dan niet het effect dat de pagina scrollt."]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"https://www.w3.org/TR/WCAG21/#target-size",rel:"nofollow",children:"WCAG eis 2.5.5"}),": de button moet groot genoeg zijn om aan te klikken."]}),`
-`]})]})}function A(i={}){const{wrapper:n}={...a(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(t,{...i})}):t(i)}export{A as default};
+`]})]})}function D(i={}){const{wrapper:n}={...a(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(l,{...i})}):l(i)}export{D as default};
