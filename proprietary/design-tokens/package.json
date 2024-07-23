@@ -13,7 +13,8 @@
     "access": "public"
   },
   "files": [
-    "lib/"
+    "lib/",
+    "dist/"
   ],
   "repository": {
     "type": "git+ssh",
@@ -32,7 +33,7 @@
     "build:tokens-studio": "node ./build/run-build.mjs",
     "watch": "npm-run-all watch:**",
     "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
-    "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src && cpy . ../../lib/css/ --cwd=dist",
+    "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src",
     "prepack": "npm-run-all build lint createlib",
     "postpack": "npm run clean:lib"
   },
