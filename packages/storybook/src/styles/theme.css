@@ -38,15 +38,13 @@
   gap: var(--lux-space-1x, 0.5rem);
 }
 
-/* stylelint-disable selector-class-pattern */
 .dt-preview--spacing,
 .dt-preview--sizing {
-  /* stylelint-enable selector-class-pattern */
   --dt-border-radius: 0;
   --dt-background-color: var(--lux-color-background-subdued);
 }
 
-.dt-preview::before {
+.dt-preview:not(.dt-preview--font)::before {
   display: inline-block;
   border-width: var(--dt-border-width, 1px);
   border-style: var(--dt-border-style, solid);
@@ -58,7 +56,6 @@
   content: "";
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
 .dt-value--line-height-reset {
   line-height: 1 !important;
 }
