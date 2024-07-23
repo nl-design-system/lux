@@ -3,7 +3,7 @@
     "focus": {
       "outline-offset": {
         "type": "spacing",
-        "value": "{lux.space.025-x}"
+        "value": "{lux.space.25}"
       }
     },
     "size": {

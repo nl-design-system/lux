@@ -662,61 +662,57 @@
       }
     },
     "space": {
-      "0-x": {
+      "0": {
         "parent": "core/default",
         "type": "spacing",
         "value": "0"
       },
-      "025-x": {
+      "25": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.25 * 0.5rem",
-        "description": "0.25 x => 025..."
+        "value": "0.25 * 0.5rem"
       },
-      "05-x": {
+      "50": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.5 * 0.5rem",
-        "description": "0.5 x => 05..."
+        "value": "0.5 * 0.5rem"
       },
-      "1-x": {
+      "100": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.5rem",
-        "description": "Base spacing. Bij wijziging, ook anderen wijzigen"
+        "value": "0.5rem"
       },
-      "105-x": {
+      "150": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "1.5 * 0.5rem",
-        "description": "1 + 0.5 x => 105..."
+        "value": "1.5 * 0.5rem"
       },
-      "2-x": {
+      "200": {
         "parent": "core/default",
         "type": "spacing",
         "value": "2 * 0.5rem"
       },
-      "3-x": {
+      "300": {
         "parent": "core/default",
         "type": "spacing",
         "value": "3 * 0.5rem"
       },
-      "4-x": {
+      "400": {
         "parent": "core/default",
         "type": "spacing",
         "value": "4 * 0.5rem"
       },
-      "5-x": {
+      "500": {
         "parent": "core/default",
         "type": "spacing",
         "value": "5 * 0.5rem"
       },
-      "6-x": {
+      "600": {
         "parent": "core/default",
         "type": "spacing",
         "value": "6 * 0.5rem"
       },
-      "7-x": {
+      "700": {
         "parent": "core/default",
         "type": "spacing",
         "value": "7 * 0.5rem"

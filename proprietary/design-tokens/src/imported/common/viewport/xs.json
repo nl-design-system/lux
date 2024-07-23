@@ -19,11 +19,6 @@
         "icon": {
           "wrapper-height": {
             "parent": "viewport (beta)/xs",
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {}
-              }
-            },
             "type": "sizing",
             "value": "1.5rem"
           }
@@ -43,14 +38,6 @@
         "parent": "viewport (beta)/xs",
         "type": "spacing",
         "value": "1rem",
-        "description": ""
-      }
-    },
-    "size": {
-      "target [oud]": {
-        "parent": "viewport (beta)/xs",
-        "type": "sizing",
-        "value": "3rem",
         "description": ""
       }
     }

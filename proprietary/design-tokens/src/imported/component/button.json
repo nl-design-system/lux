@@ -71,36 +71,31 @@
       },
       "padding-inline-start": {
         "type": "spacing",
-        "value": "{lux.space.2-x}"
+        "value": "{lux.space.200}"
       },
       "padding-block-start": {
         "type": "spacing",
-        "value": "{lux.space.1-x}"
+        "value": "{lux.space.100}"
       },
       "padding-inline-end": {
         "type": "spacing",
-        "value": "{lux.space.2-x}"
+        "value": "{lux.space.200}"
       },
       "padding-block-end": {
         "type": "spacing",
-        "value": "{lux.space.1-x}"
+        "value": "{lux.space.100}"
       },
       "column-gap": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "spacing",
-        "value": "{lux.space.1-x}"
+        "value": "{lux.space.100}"
       },
       "min-inline-size": {
         "type": "sizing",
-        "value": "48px"
+        "value": "{lux.size.target}"
       },
       "min-block-size": {
         "type": "sizing",
-        "value": "48px"
+        "value": "{lux.size.target}"
       },
       "border-radius": {
         "type": "borderRadius",
@@ -172,7 +167,7 @@
           }
         }
       },
-      "tertairy": {
+      "tertiary": {
         "background-color": {
           "type": "color",
           "value": "{lux.color.none}"

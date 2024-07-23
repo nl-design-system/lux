@@ -44,11 +44,6 @@
     },
     "font-family": {
       "primary": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "fontFamilies",
         "value": "{nldoc.font-family.primary}"
       }
@@ -110,6 +105,13 @@
         "type": "fontSizes",
         "value": "2rem",
         "description": ""
+      }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "2.5rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
     }
   },
@@ -203,13 +205,6 @@
           "type": "fontSizes",
           "value": "1rem"
         }
-      }
-    },
-    "size": {
-      "target": {
-        "type": "sizing",
-        "value": "2.5rem",
-        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
     }
   }

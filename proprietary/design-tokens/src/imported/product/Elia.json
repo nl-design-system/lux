@@ -44,11 +44,6 @@
     },
     "font-family": {
       "primary": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "fontFamilies",
         "value": "{rh.font-family.sans}"
       }

@@ -32,11 +32,6 @@
     },
     "font-family": {
       "primary": {
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {}
-          }
-        },
         "type": "fontFamilies",
         "value": "Lato, Arial"
       }
