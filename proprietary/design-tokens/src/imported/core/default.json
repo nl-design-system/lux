@@ -670,26 +670,22 @@
       "25": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.25 * 0.5rem",
-        "description": "0.25 x => 025..."
+        "value": "0.25 * 0.5rem"
       },
       "50": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.5 * 0.5rem",
-        "description": "0.5 x => 05..."
+        "value": "0.5 * 0.5rem"
       },
       "100": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "0.5rem",
-        "description": "Base spacing. Bij wijziging, ook anderen wijzigen"
+        "value": "0.5rem"
       },
       "150": {
         "parent": "core/default",
         "type": "spacing",
-        "value": "1.5 * 0.5rem",
-        "description": "1 + 0.5 x => 105..."
+        "value": "1.5 * 0.5rem"
       },
       "200": {
         "parent": "core/default",
