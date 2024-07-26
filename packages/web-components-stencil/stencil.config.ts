@@ -25,4 +25,5 @@ export const config: Config = {
   ],
   plugins: [sass()],
   extras: { enableImportInjection: true },
+  globalScript: 'src/global/app.ts',
 };

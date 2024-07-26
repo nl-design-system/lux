@@ -1,0 +1,14 @@
+@import "../../styles/sr-only";
+
+:host {
+  display: contents;
+  appearance: button;
+}
+
+:host([hidden]) {
+  display: none !important;
+}
+
+.lux-button {
+  box-shadow: inset 0 0 4px 2px rebeccapurple;
+}
