@@ -30,7 +30,7 @@ const config: StorybookConfig = {
     `;
   },
   features: {},
-  staticDirs: ['../../../proprietary/assets/src'],
+  staticDirs: ['../../../proprietary/assets/src', '../../../proprietary/design-tokens/dist'],
 };
 
 export default config;
