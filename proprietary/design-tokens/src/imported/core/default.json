@@ -866,15 +866,13 @@
   },
   "rh": {
     "font-family": {
-      "sans": {
+      "primary": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif",
-        "description": "De Sans Web wordt toegepast voor langere (lees-)teksten."
+        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif"
       },
-      "serif": {
+      "secondary": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif",
-        "description": "Serif Web is vooral interessant voor de afwisseling in bijvoorbeeld digitale magazines."
+        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif"
       }
     }
   },
