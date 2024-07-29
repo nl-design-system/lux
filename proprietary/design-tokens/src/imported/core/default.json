@@ -853,18 +853,7 @@
       }
     }
   },
-  "oud": {
-    "lux": {
-      "border-radius": {
-        "default": {
-          "parent": "core/default",
-          "type": "borderRadius",
-          "value": "4px"
-        }
-      }
-    }
-  },
-  "rh": {
+  "ro": {
     "font-family": {
       "primary": {
         "type": "fontFamilies",

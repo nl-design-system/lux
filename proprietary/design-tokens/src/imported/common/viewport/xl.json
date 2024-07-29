@@ -44,7 +44,7 @@
     "body": {
       "default": {
         "value": {
-          "fontFamily": "{rh.font-family.primary}",
+          "fontFamily": "{ro.font-family.primary}",
           "fontWeight": "{lux.font-weight.regular}",
           "fontSize": "{lux.font-size.sm.desktop}",
           "lineHeight": "{lux.line-height.sm.desktop}"

@@ -45,7 +45,7 @@
     "font-family": {
       "primary": {
         "type": "fontFamilies",
-        "value": "{rh.font-family.primary}"
+        "value": "{ro.font-family.primary}"
       }
     },
     "size": {
