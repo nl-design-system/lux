@@ -200,8 +200,7 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled",
-      "core/default": "source"
+      "product/Logius": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -213,6 +212,16 @@
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.font-family.primary": "6ca41422b4800497ec7ad853c83135355adb2435",
       "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
+      "lux.line-height.body.small": "63342461b4356f8cb185b2c0fcb889656959c86c",
+      "lux.line-height.body.default": "2f3894626c135d8b22514afc4c77cb466d6c850b",
+      "lux.line-height.l": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
+      "lux.line-height.xl": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
+      "lux.line-height.2xl": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
+      "lux.font-size.s": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
+      "lux.font-size.m": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
+      "lux.font-size.l": "6e16652aee7872150e29c42a57688fa3d39f05be",
+      "lux.font-size.xl": "0786642f99e321f1ff532a1305766c90ac18b735",
+      "lux.font-size.2xl": "9135fe45995dce093f2f44116431fded977dbd50",
       "figma.focus.outline-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "figma.size.icon.wrapper-height": "73ddfa6479edcfd7f028cf491accf299e34cad52",
       "product.button.secondary.background-color": "467c8346bb98fd26172ff6535d4047f4e7a7368f",
@@ -225,17 +234,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "lux.line-height.xs.desktop": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
-      "lux.line-height.sm.desktop": "fc7b0d711005fd3ef0bcec985dddc059afaf665a",
-      "lux.line-height.md.desktop": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
-      "lux.line-height.lg.desktop": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
-      "lux.line-height.xl.desktop": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
-      "lux.font-size.xs.desktop": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
-      "lux.font-size.sm.desktop": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
-      "lux.font-size.md.desktop": "6e16652aee7872150e29c42a57688fa3d39f05be",
-      "lux.font-size.lg.desktop": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.xl.desktop": "9135fe45995dce093f2f44116431fded977dbd50"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -245,7 +244,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius Blauw": "enabled",
-      "core/default": "source"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2641:0",
@@ -257,6 +256,16 @@
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.font-family.primary": "6ca41422b4800497ec7ad853c83135355adb2435",
       "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
+      "lux.line-height.s": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
+      "lux.line-height.body.default": "2f3894626c135d8b22514afc4c77cb466d6c850b",
+      "lux.line-height.l": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
+      "lux.line-height.xl": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
+      "lux.line-height.2xl": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
+      "lux.font-size.s": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
+      "lux.font-size.m": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
+      "lux.font-size.l": "6e16652aee7872150e29c42a57688fa3d39f05be",
+      "lux.font-size.xl": "0786642f99e321f1ff532a1305766c90ac18b735",
+      "lux.font-size.2xl": "9135fe45995dce093f2f44116431fded977dbd50",
       "figma.focus.outline-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "figma.size.icon.wrapper-height": "73ddfa6479edcfd7f028cf491accf299e34cad52",
       "product.button.secondary.background-color": "467c8346bb98fd26172ff6535d4047f4e7a7368f",
@@ -269,17 +278,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "lux.line-height.xs.desktop": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
-      "lux.line-height.sm.desktop": "fc7b0d711005fd3ef0bcec985dddc059afaf665a",
-      "lux.line-height.md.desktop": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
-      "lux.line-height.lg.desktop": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
-      "lux.line-height.xl.desktop": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
-      "lux.font-size.xs.desktop": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
-      "lux.font-size.sm.desktop": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
-      "lux.font-size.md.desktop": "6e16652aee7872150e29c42a57688fa3d39f05be",
-      "lux.font-size.lg.desktop": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.xl.desktop": "9135fe45995dce093f2f44116431fded977dbd50"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -289,7 +288,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "core/default": "source"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -300,6 +299,16 @@
       "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.font-family.primary": "6ca41422b4800497ec7ad853c83135355adb2435",
+      "lux.line-height.s": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
+      "lux.line-height.body.default": "2f3894626c135d8b22514afc4c77cb466d6c850b",
+      "lux.line-height.l": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
+      "lux.line-height.xl": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
+      "lux.line-height.2xl": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
+      "lux.font-size.s": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
+      "lux.font-size.m": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
+      "lux.font-size.l": "6e16652aee7872150e29c42a57688fa3d39f05be",
+      "lux.font-size.xl": "0786642f99e321f1ff532a1305766c90ac18b735",
+      "lux.font-size.2xl": "9135fe45995dce093f2f44116431fded977dbd50",
       "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
       "figma.focus.outline-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "figma.size.icon.wrapper-height": "73ddfa6479edcfd7f028cf491accf299e34cad52",
@@ -313,17 +322,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "lux.line-height.xs.desktop": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
-      "lux.line-height.sm.desktop": "fc7b0d711005fd3ef0bcec985dddc059afaf665a",
-      "lux.line-height.md.desktop": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
-      "lux.line-height.lg.desktop": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
-      "lux.line-height.xl.desktop": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
-      "lux.font-size.xs.desktop": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
-      "lux.font-size.sm.desktop": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
-      "lux.font-size.md.desktop": "6e16652aee7872150e29c42a57688fa3d39f05be",
-      "lux.font-size.lg.desktop": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.xl.desktop": "9135fe45995dce093f2f44116431fded977dbd50"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -333,7 +332,6 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "core/default": "source",
       "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
@@ -367,7 +365,6 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "core/default": "source",
       "product/NLdoc-mapping": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
@@ -379,6 +376,17 @@
       "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.font-family.primary": "6ca41422b4800497ec7ad853c83135355adb2435",
+      "lux.line-height.s": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
+      "lux.line-height.body.default": "2f3894626c135d8b22514afc4c77cb466d6c850b",
+      "lux.line-height.l": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
+      "lux.line-height.xl": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
+      "lux.line-height.2xl": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
+      "lux.font-size.s": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
+      "lux.font-size.m": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
+      "lux.font-size.l": "6e16652aee7872150e29c42a57688fa3d39f05be",
+      "lux.font-size.xl": "0786642f99e321f1ff532a1305766c90ac18b735",
+      "lux.font-size.2xl": "9135fe45995dce093f2f44116431fded977dbd50",
+      "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
       "figma.focus.outline-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "figma.size.icon.wrapper-height": "73ddfa6479edcfd7f028cf491accf299e34cad52",
       "product.button.secondary.background-color": "467c8346bb98fd26172ff6535d4047f4e7a7368f",
@@ -391,18 +399,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
-      "lux.line-height.xs.desktop": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
-      "lux.line-height.sm.desktop": "fc7b0d711005fd3ef0bcec985dddc059afaf665a",
-      "lux.line-height.md.desktop": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
-      "lux.line-height.lg.desktop": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
-      "lux.line-height.xl.desktop": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
-      "lux.font-size.xs.desktop": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
-      "lux.font-size.sm.desktop": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
-      "lux.font-size.md.desktop": "6e16652aee7872150e29c42a57688fa3d39f05be",
-      "lux.font-size.lg.desktop": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.xl.desktop": "9135fe45995dce093f2f44116431fded977dbd50"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -412,7 +409,6 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Elia": "enabled",
-      "core/default": "source",
       "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
@@ -456,18 +452,24 @@
       "figma.viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d",
-      "viewport.line-height.xs": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "viewport.line-height.sm": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "viewport.line-height.md": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "viewport.line-height.lg": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "viewport.font-size.xs": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "viewport.font-size.sm": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "viewport.font-size.md": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
       "viewport.font-size.heading.level-1": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
       "viewport.font-size.heading.level-2": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "viewport.line-height.heading.level-2": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd"
+      "viewport.font-size.heading.level-3": "5a8cd715a6e2a5530ab2b514539d5d53290e7920",
+      "viewport.font-size.heading.level-4": "2bf6c040770ada5c0ca947177e6f25a026015a7a",
+      "viewport.font-size.heading.level-5": "ae57d831ebe277731e376a9ca702153a9704a35c",
+      "viewport.font-size.body.default": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.body.large": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.body.small": "9b5432916c6a4f69c307613b4aea0693acaf2071",
+      "viewport.line-height.heading.level-1": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.line-height.heading.level-2": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.heading.level-3": "2fa4100a3be092392eae4a912d3afb0fe1944552",
+      "viewport.line-height.heading.level-4": "0c0123ce2f9d93dad2f2740518d13a9d813d29a1",
+      "viewport.line-height.heading.level-5": "26802ff3ee2ff178b175e494dd4bdf6354c4fc0d",
+      "viewport.line-height.body.default": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.body.large": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.body.small": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
+      "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
+      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d"
     },
     "group": "viewport (beta)"
   },
@@ -476,7 +478,8 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/lg": "enabled"
+      "common/viewport/lg": "enabled",
+      "common/viewport/xl": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -487,17 +490,7 @@
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d",
-      "viewport.line-height.xs": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "viewport.line-height.sm": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "viewport.line-height.md": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "viewport.line-height.lg": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "viewport.font-size.xs": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "viewport.font-size.sm": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "viewport.font-size.md": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "viewport.font-size.heading.level-1": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "viewport.font-size.heading.level-2": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "viewport.line-height.heading.level-2": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd"
+      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d"
     },
     "group": "viewport (beta)"
   },
@@ -506,7 +499,8 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/md": "enabled"
+      "common/viewport/md": "enabled",
+      "common/viewport/xl": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -517,17 +511,7 @@
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d",
-      "viewport.line-height.xs": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "viewport.line-height.sm": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "viewport.line-height.md": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "viewport.line-height.lg": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "viewport.font-size.xs": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "viewport.font-size.sm": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "viewport.font-size.md": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "viewport.font-size.heading.level-1": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "viewport.font-size.heading.level-2": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "viewport.line-height.heading.level-2": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd"
+      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d"
     },
     "group": "viewport (beta)"
   },
@@ -536,7 +520,8 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/sm": "enabled"
+      "common/viewport/sm": "enabled",
+      "common/viewport/xl": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -547,17 +532,7 @@
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
-      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d",
-      "viewport.line-height.xs": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "viewport.line-height.sm": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "viewport.line-height.md": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "viewport.line-height.lg": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "viewport.font-size.xs": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "viewport.font-size.sm": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "viewport.font-size.md": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
-      "viewport.font-size.heading.level-1": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
-      "viewport.font-size.heading.level-2": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "viewport.line-height.heading.level-2": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd"
+      "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d"
     },
     "group": "viewport (beta)"
   },
@@ -578,16 +553,22 @@
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
       "viewport.rijkslint.wordmark.75%.padding-block-start": "9c8f0b8f28c1aa8075b44cc141c5fde9039dfa1a",
       "viewport.rijkslint.wordmark.default.padding-block-start": "f6f65e2e69561099f6a3e7261feba19f3cd5948d",
-      "viewport.line-height.xs": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
-      "viewport.line-height.sm": "d3d94c308fe81462caeff342fb387da44d1928aa",
-      "viewport.line-height.md": "6f1746627185b21ccd561b3db60c939e88b8d954",
-      "viewport.line-height.lg": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
-      "viewport.font-size.xs": "9b5432916c6a4f69c307613b4aea0693acaf2071",
-      "viewport.font-size.sm": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
-      "viewport.font-size.md": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.line-height.heading.level-1": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd",
+      "viewport.line-height.heading.level-2": "f9fef75f0b0db9b25f5536c3cac53f34705e715b",
+      "viewport.line-height.heading.level-3": "2fa4100a3be092392eae4a912d3afb0fe1944552",
+      "viewport.line-height.heading.level-4": "0c0123ce2f9d93dad2f2740518d13a9d813d29a1",
+      "viewport.line-height.heading.level-5": "26802ff3ee2ff178b175e494dd4bdf6354c4fc0d",
+      "viewport.line-height.body.default": "d3d94c308fe81462caeff342fb387da44d1928aa",
+      "viewport.line-height.body.large": "6f1746627185b21ccd561b3db60c939e88b8d954",
+      "viewport.line-height.body.small": "d306b39bf721cbdf7fa1e19bac91ade214e227ac",
       "viewport.font-size.heading.level-1": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
       "viewport.font-size.heading.level-2": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
-      "viewport.line-height.heading.level-2": "f96bef2e356970b4f17662d9f9a0834a79a7c1dd"
+      "viewport.font-size.heading.level-3": "5a8cd715a6e2a5530ab2b514539d5d53290e7920",
+      "viewport.font-size.heading.level-4": "2bf6c040770ada5c0ca947177e6f25a026015a7a",
+      "viewport.font-size.heading.level-5": "ae57d831ebe277731e376a9ca702153a9704a35c",
+      "viewport.font-size.body.default": "0fe7684dffb3bb48b63e9154326789ecc8f9b6fa",
+      "viewport.font-size.body.large": "1d24e0ee7c507a4505150718df32b67a29fcfbeb",
+      "viewport.font-size.body.small": "9b5432916c6a4f69c307613b4aea0693acaf2071"
     },
     "group": "viewport (beta)"
   },
@@ -971,7 +952,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Digitoegankelijk": "enabled",
-      "core/default": "source"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2690:0",
@@ -983,6 +964,16 @@
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.font-family.primary": "6ca41422b4800497ec7ad853c83135355adb2435",
       "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
+      "lux.line-height.s": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
+      "lux.line-height.body.default": "2f3894626c135d8b22514afc4c77cb466d6c850b",
+      "lux.line-height.l": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
+      "lux.line-height.xl": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
+      "lux.line-height.2xl": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
+      "lux.font-size.s": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
+      "lux.font-size.m": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
+      "lux.font-size.l": "6e16652aee7872150e29c42a57688fa3d39f05be",
+      "lux.font-size.xl": "0786642f99e321f1ff532a1305766c90ac18b735",
+      "lux.font-size.2xl": "9135fe45995dce093f2f44116431fded977dbd50",
       "figma.focus.outline-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "figma.size.icon.wrapper-height": "73ddfa6479edcfd7f028cf491accf299e34cad52",
       "product.button.secondary.background-color": "467c8346bb98fd26172ff6535d4047f4e7a7368f",
@@ -995,17 +986,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "lux.line-height.xs.desktop": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
-      "lux.line-height.sm.desktop": "fc7b0d711005fd3ef0bcec985dddc059afaf665a",
-      "lux.line-height.md.desktop": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
-      "lux.line-height.lg.desktop": "d52cfac2d8816aee5b6474ee19606543295c1ebd",
-      "lux.line-height.xl.desktop": "79384e6f1f37e8176cc56ce7bf2e8a138eeff29a",
-      "lux.font-size.xs.desktop": "d37fc0499696a0f71358879fb3b4cf46b8069f4b",
-      "lux.font-size.sm.desktop": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
-      "lux.font-size.md.desktop": "6e16652aee7872150e29c42a57688fa3d39f05be",
-      "lux.font-size.lg.desktop": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.xl.desktop": "9135fe45995dce093f2f44116431fded977dbd50"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   }

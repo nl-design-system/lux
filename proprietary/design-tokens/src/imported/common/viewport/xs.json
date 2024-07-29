@@ -43,62 +43,6 @@
     }
   },
   "viewport": {
-    "font-size": {
-      "xs": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "{lux.font-size.xs.mobile}"
-      },
-      "sm": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "{lux.font-size.sm.mobile}"
-      },
-      "md": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "{lux.font-size.md.mobile}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "1.5rem",
-        "description": ""
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "2rem",
-        "description": ""
-      }
-    },
-    "line-height": {
-      "xs": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "{lux.line-height.xs.mobile}"
-      },
-      "sm": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "{lux.line-height.sm.mobile}"
-      },
-      "md": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "{lux.line-height.md.mobile}"
-      },
-      "lg": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "{lux.line-height.lg.mobile}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "{lux.line-height.xl.mobile}"
-      }
-    },
     "rijkslint": {
       "wordmark": {
         "75%": {
@@ -116,6 +60,92 @@
             "value": "1.25rem",
             "description": ""
           }
+        }
+      }
+    },
+    "line-height": {
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.xl.mobile}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.lg.mobile}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.md.mobile}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.sm.mobile}"
+        },
+        "level-5": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.xs.mobile}"
+        }
+      },
+      "body": {
+        "default": {
+          "value": "{lux.line-height.sm.mobile}",
+          "type": "lineHeights"
+        },
+        "large": {
+          "value": "{lux.line-height.md.mobile}",
+          "type": "lineHeights"
+        },
+        "small": {
+          "value": "{lux.line-height.xs.mobile}",
+          "type": "lineHeights"
+        }
+      }
+    },
+    "font-size": {
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.xl.mobile}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.lg.mobile}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.md.mobile}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.sm.mobile}"
+        },
+        "level-5": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.xs.mobile}"
+        }
+      },
+      "body": {
+        "default": {
+          "value": "{lux.font-size.sm.mobile}",
+          "type": "fontSizes"
+        },
+        "large": {
+          "value": "{lux.font-size.md.mobile}",
+          "type": "fontSizes"
+        },
+        "small": {
+          "value": "{lux.font-size.xs.mobile}",
+          "type": "fontSizes"
         }
       }
     }
