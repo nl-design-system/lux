@@ -61,10 +61,12 @@
         "type": "lineHeights",
         "value": "{viewport.line-height.xs}"
       },
-      "m": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.sm}"
+      "body": {
+        "default": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.sm}"
+        }
       },
       "l": {
         "parent": "viewport (beta)/xl",

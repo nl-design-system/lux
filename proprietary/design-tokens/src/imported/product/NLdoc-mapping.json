@@ -54,10 +54,12 @@
         "type": "lineHeights",
         "value": "{viewport.font-size.xs}*1.5"
       },
-      "m": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "{viewport.font-size.sm}*1.5"
+      "body": {
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{viewport.font-size.sm}*1.5"
+        }
       },
       "l": {
         "parent": "viewport (beta)/xs",

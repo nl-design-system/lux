@@ -55,11 +55,13 @@
         "value": "1.5rem",
         "description": ""
       },
-      "m": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "1.5rem",
-        "description": ""
+      "body": {
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "1.5rem",
+          "description": ""
+        }
       },
       "l": {
         "parent": "viewport (beta)/xs",

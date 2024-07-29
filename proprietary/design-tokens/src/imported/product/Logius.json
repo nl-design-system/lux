@@ -56,15 +56,17 @@
       }
     },
     "line-height": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.xs}"
-      },
-      "m": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.sm}"
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.small}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.default}"
+        }
       },
       "l": {
         "parent": "viewport (beta)/xl",

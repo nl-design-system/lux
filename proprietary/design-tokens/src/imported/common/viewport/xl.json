@@ -40,6 +40,17 @@
         "value": "2.5rem",
         "description": ""
       }
+    },
+    "body": {
+      "default": {
+        "value": {
+          "fontFamily": "{rh.font-family.sans}",
+          "fontWeight": "{lux.font-weight.regular}",
+          "fontSize": "{lux.font-size.sm.desktop}",
+          "lineHeight": "{lux.line-height.sm.desktop}"
+        },
+        "type": "typography"
+      }
     }
   },
   "viewport": {
@@ -71,13 +82,17 @@
           "value": "{lux.font-size.xs.desktop}"
         }
       },
-      "paragraph": {
+      "body": {
         "default": {
           "value": "{lux.font-size.sm.desktop}",
           "type": "fontSizes"
         },
-        "intro": {
+        "large": {
           "value": "{lux.font-size.md.desktop}",
+          "type": "fontSizes"
+        },
+        "small": {
+          "value": "{lux.font-size.xs.desktop}",
           "type": "fontSizes"
         }
       }
@@ -110,13 +125,17 @@
           "value": "{lux.line-height.xs.desktop}"
         }
       },
-      "paragraph": {
+      "body": {
         "default": {
           "value": "{lux.line-height.sm.desktop}",
           "type": "lineHeights"
         },
-        "intro": {
+        "large": {
           "value": "{lux.line-height.md.desktop}",
+          "type": "lineHeights"
+        },
+        "small": {
+          "value": "{lux.line-height.xs.desktop}",
           "type": "lineHeights"
         }
       }
