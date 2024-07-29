@@ -59,54 +59,54 @@
       "s": {
         "parent": "viewport (beta)/xl",
         "type": "lineHeights",
-        "value": "{viewport.line-height.s}"
+        "value": "{viewport.line-height.xs}"
       },
       "m": {
         "parent": "viewport (beta)/xl",
         "type": "lineHeights",
-        "value": "{viewport.line-height.m}"
+        "value": "{viewport.line-height.sm}"
       },
       "l": {
         "parent": "viewport (beta)/xl",
         "type": "lineHeights",
-        "value": "{viewport.line-height.l}"
+        "value": "{viewport.line-height.md}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",
         "type": "lineHeights",
-        "value": "{viewport.line-height.xl}"
+        "value": "{viewport.line-height.lg}"
       },
       "2xl": {
         "parent": "viewport (beta)/xl",
         "type": "lineHeights",
-        "value": "{viewport.line-height.2xl}"
+        "value": "{viewport.line-height.heading.level-2}"
       }
     },
     "font-size": {
       "s": {
         "parent": "viewport (beta)/xl",
         "type": "fontSizes",
-        "value": "{viewport.font-size.s}"
+        "value": "{viewport.font-size.xs}"
       },
       "m": {
         "parent": "viewport (beta)/xl",
         "type": "fontSizes",
-        "value": "{viewport.font-size.m}"
+        "value": "{viewport.font-size.sm}"
       },
       "l": {
         "parent": "viewport (beta)/xl",
         "type": "fontSizes",
-        "value": "{viewport.font-size.l}"
+        "value": "{viewport.font-size.md}"
       },
       "xl": {
         "parent": "viewport (beta)/xl",
         "type": "fontSizes",
-        "value": "{viewport.font-size.xl}"
+        "value": "{viewport.font-size.heading.level-2}"
       },
       "2xl": {
         "parent": "viewport (beta)/xl",
         "type": "fontSizes",
-        "value": "{viewport.font-size.2xl}"
+        "value": "{viewport.font-size.heading.level-1}"
       }
     }
   },

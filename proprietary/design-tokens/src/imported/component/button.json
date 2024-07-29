@@ -67,7 +67,7 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "{lux.line-height.m}"
+        "value": "{lux.line-height.sm.desktop}"
       },
       "padding-inline-start": {
         "type": "spacing",

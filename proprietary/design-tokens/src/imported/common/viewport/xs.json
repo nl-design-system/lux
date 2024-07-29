@@ -44,23 +44,20 @@
   },
   "viewport": {
     "font-size": {
-      "s": {
+      "xs": {
         "parent": "viewport (beta)/xs",
         "type": "fontSizes",
-        "value": "0.875rem",
-        "description": ""
+        "value": "{lux.font-size.xs.mobile}"
       },
-      "m": {
+      "sm": {
         "parent": "viewport (beta)/xs",
         "type": "fontSizes",
-        "value": "1rem",
-        "description": ""
+        "value": "{lux.font-size.sm.mobile}"
       },
-      "l": {
+      "md": {
         "parent": "viewport (beta)/xs",
         "type": "fontSizes",
-        "value": "1.25rem",
-        "description": ""
+        "value": "{lux.font-size.md.mobile}"
       },
       "xl": {
         "parent": "viewport (beta)/xs",
@@ -76,35 +73,30 @@
       }
     },
     "line-height": {
-      "s": {
+      "xs": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "1.5rem",
-        "description": ""
+        "value": "{lux.line-height.xs.mobile}"
       },
-      "m": {
+      "sm": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "1.5rem",
-        "description": ""
+        "value": "{lux.line-height.sm.mobile}"
       },
-      "l": {
+      "md": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "1.75rem",
-        "description": ""
+        "value": "{lux.line-height.md.mobile}"
+      },
+      "lg": {
+        "parent": "viewport (beta)/xs",
+        "type": "lineHeights",
+        "value": "{lux.line-height.lg.mobile}"
       },
       "xl": {
         "parent": "viewport (beta)/xs",
         "type": "lineHeights",
-        "value": "2rem",
-        "description": ""
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "3rem",
-        "description": ""
+        "value": "{lux.line-height.xl.mobile}"
       }
     },
     "rijkslint": {
