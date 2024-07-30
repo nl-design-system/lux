@@ -68,35 +68,35 @@
         "level-1": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.xl.mobile}"
+          "value": "{lux.line-height.small-scale.xl}"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.lg.mobile}"
+          "value": "{lux.line-height.small-scale.lg}"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.md.mobile}"
+          "value": "{lux.line-height.small-scale.md}"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.sm.mobile}"
+          "value": "{lux.line-height.small-scale.sm}"
         }
       },
       "body": {
         "default": {
-          "value": "{lux.line-height.sm.mobile}",
+          "value": "{lux.line-height.small-scale.sm}",
           "type": "lineHeights"
         },
         "large": {
-          "value": "{lux.line-height.md.mobile}",
+          "value": "{lux.line-height.small-scale.md}",
           "type": "lineHeights"
         },
         "small": {
-          "value": "{lux.line-height.xs.mobile}",
+          "value": "{lux.line-height.small-scale.xs}",
           "type": "lineHeights"
         }
       }
@@ -106,35 +106,35 @@
         "level-1": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.xl.mobile}"
+          "value": "{lux.font-size.small-scale.xl}"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.lg.mobile}"
+          "value": "{lux.font-size.small-scale.lg}"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.md.mobile}"
+          "value": "{lux.font-size.small-scale.md}"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.sm.mobile}"
+          "value": "{lux.font-size.small-scale.sm}"
         }
       },
       "body": {
         "default": {
-          "value": "{lux.font-size.sm.mobile}",
+          "value": "{lux.font-size.small-scale.sm}",
           "type": "fontSizes"
         },
         "large": {
-          "value": "{lux.font-size.md.mobile}",
+          "value": "{lux.font-size.small-scale.md}",
           "type": "fontSizes"
         },
         "small": {
-          "value": "{lux.font-size.xs.mobile}",
+          "value": "{lux.font-size.small-scale.xs}",
           "type": "fontSizes"
         }
       }

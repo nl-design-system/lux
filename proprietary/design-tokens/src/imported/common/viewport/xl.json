@@ -46,8 +46,8 @@
         "value": {
           "fontFamily": "{ro.font-family.primary}",
           "fontWeight": "{lux.font-weight.regular}",
-          "fontSize": "{lux.font-size.sm.desktop}",
-          "lineHeight": "{lux.line-height.sm.desktop}"
+          "fontSize": "{lux.font-size.large-scale.sm}",
+          "lineHeight": "{lux.line-height.large-scale.sm}"
         },
         "type": "typography"
       }
@@ -59,35 +59,35 @@
         "level-1": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.xl.desktop}"
+          "value": "{lux.font-size.large-scale.xl}"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.lg.desktop}"
+          "value": "{lux.font-size.large-scale.lg}"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.md.desktop}"
+          "value": "{lux.font-size.large-scale.md}"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.sm.desktop}"
+          "value": "{lux.font-size.large-scale.sm}"
         }
       },
       "body": {
         "default": {
-          "value": "{lux.font-size.sm.desktop}",
+          "value": "{lux.font-size.large-scale.sm}",
           "type": "fontSizes"
         },
         "large": {
-          "value": "{lux.font-size.md.desktop}",
+          "value": "{lux.font-size.large-scale.md}",
           "type": "fontSizes"
         },
         "small": {
-          "value": "{lux.font-size.xs.desktop}",
+          "value": "{lux.font-size.large-scale.xs}",
           "type": "fontSizes"
         }
       }
@@ -97,35 +97,35 @@
         "level-1": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.xl.desktop}"
+          "value": "{lux.line-height.large-scale.xl}"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.lg.desktop}"
+          "value": "{lux.line-height.large-scale.lg}"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.md.desktop}"
+          "value": "{lux.line-height.large-scale.md}"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.sm.desktop}"
+          "value": "{lux.line-height.large-scale.sm}"
         }
       },
       "body": {
         "default": {
-          "value": "{lux.line-height.sm.desktop}",
+          "value": "{lux.line-height.large-scale.sm}",
           "type": "lineHeights"
         },
         "large": {
-          "value": "{lux.line-height.md.desktop}",
+          "value": "{lux.line-height.large-scale.md}",
           "type": "lineHeights"
         },
         "small": {
-          "value": "{lux.line-height.xs.desktop}",
+          "value": "{lux.line-height.large-scale.xs}",
           "type": "lineHeights"
         }
       }
