@@ -49,69 +49,81 @@
       }
     },
     "line-height": {
-      "s": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "1.5rem",
-        "description": ""
-      },
       "body": {
+        "small": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.xs.desktop}"
+        },
         "default": {
           "parent": "viewport (beta)/xs",
           "type": "lineHeights",
-          "value": "1.5rem",
-          "description": ""
+          "value": "{lux.line-height.sm.desktop}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.md.desktop}"
         }
       },
-      "l": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "1.75rem",
-        "description": ""
-      },
-      "xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "2rem",
-        "description": ""
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "lineHeights",
-        "value": "3rem",
-        "description": ""
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.xl.desktop}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.lg.desktop}"
+        },
+        "level-3": {
+          "value": "{lux.line-height.md.desktop}",
+          "type": "lineHeights"
+        },
+        "level-4": {
+          "value": "{lux.line-height.sm.desktop}",
+          "type": "lineHeights"
+        },
+        "level-5": {
+          "value": "{lux.line-height.xs.desktop}",
+          "type": "lineHeights"
+        }
       }
     },
     "font-size": {
-      "s": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "0.875rem",
-        "description": ""
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "0.875rem"
+        },
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "1rem",
+          "description": ""
+        },
+        "large": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "1.25rem",
+          "description": ""
+        }
       },
-      "m": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "1rem",
-        "description": ""
-      },
-      "l": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "1.25rem",
-        "description": ""
-      },
-      "xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "1.5rem",
-        "description": ""
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xs",
-        "type": "fontSizes",
-        "value": "2rem",
-        "description": ""
+      "heading": {
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "1.5rem",
+          "description": ""
+        },
+        "level-1": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "2rem",
+          "description": ""
+        }
       }
     },
     "size": {

@@ -56,59 +56,34 @@
       }
     },
     "line-height": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.xs}"
-      },
       "body": {
+        "small": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.small}"
+        },
         "default": {
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{viewport.line-height.sm}"
+          "value": "{viewport.line-height.body.default}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.large}"
         }
       },
-      "l": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.md}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.lg}"
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.heading.level-2}"
-      }
-    },
-    "font-size": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.xs}"
-      },
-      "m": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.sm}"
-      },
-      "l": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.md}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.heading.level-2}"
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.heading.level-1}"
+      "heading": {
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.heading.level-2}"
+        },
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.heading.level-2}"
+        }
       }
     }
   },

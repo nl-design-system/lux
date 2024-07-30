@@ -54,62 +54,6 @@
         "value": "3rem",
         "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
-    },
-    "line-height": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.xs}"
-      },
-      "body": {
-        "default": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.sm}"
-        }
-      },
-      "l": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.md}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.lg}"
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "lineHeights",
-        "value": "{viewport.line-height.heading.level-2}"
-      }
-    },
-    "font-size": {
-      "s": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.xs}"
-      },
-      "m": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.sm}"
-      },
-      "l": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.md}"
-      },
-      "xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.heading.level-2}"
-      },
-      "2xl": {
-        "parent": "viewport (beta)/xl",
-        "type": "fontSizes",
-        "value": "{viewport.font-size.heading.level-1}"
-      }
     }
   },
   "figma": {
