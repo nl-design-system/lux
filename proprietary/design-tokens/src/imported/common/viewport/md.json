@@ -62,6 +62,92 @@
           }
         }
       }
+    },
+    "line-height": {
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.xl.desktop}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.lg.desktop}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.md.desktop}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.sm.desktop}"
+        },
+        "level-5": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.xs.desktop}"
+        }
+      },
+      "body": {
+        "default": {
+          "value": "{lux.line-height.sm.desktop}",
+          "type": "lineHeights"
+        },
+        "large": {
+          "value": "{lux.line-height.md.desktop}",
+          "type": "lineHeights"
+        },
+        "small": {
+          "value": "{lux.line-height.xs.desktop}",
+          "type": "lineHeights"
+        }
+      }
+    },
+    "font-size": {
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.xl.desktop}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.lg.desktop}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.md.desktop}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.sm.desktop}"
+        },
+        "level-5": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.xs.desktop}"
+        }
+      },
+      "body": {
+        "default": {
+          "value": "{lux.font-size.sm.desktop}",
+          "type": "fontSizes"
+        },
+        "large": {
+          "value": "{lux.font-size.md.desktop}",
+          "type": "fontSizes"
+        },
+        "small": {
+          "value": "{lux.font-size.xs.desktop}",
+          "type": "fontSizes"
+        }
+      }
     }
   }
 }
