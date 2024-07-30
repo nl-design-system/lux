@@ -84,11 +84,6 @@
           "parent": "viewport (beta)/xl",
           "type": "lineHeights",
           "value": "{lux.line-height.sm.desktop}"
-        },
-        "level-5": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{lux.line-height.xs.desktop}"
         }
       },
       "body": {
@@ -127,11 +122,6 @@
           "parent": "viewport (beta)/xl",
           "type": "fontSizes",
           "value": "{lux.font-size.sm.desktop}"
-        },
-        "level-5": {
-          "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{lux.font-size.xs.desktop}"
         }
       },
       "body": {

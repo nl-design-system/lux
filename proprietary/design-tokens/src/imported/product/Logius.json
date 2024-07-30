@@ -91,10 +91,6 @@
         "level-4": {
           "value": "{viewport.line-height.heading.level-4}",
           "type": "lineHeights"
-        },
-        "level-5": {
-          "value": "{viewport.line-height.heading.level-5}",
-          "type": "lineHeights"
         }
       }
     },
@@ -133,10 +129,6 @@
         },
         "level-4": {
           "value": "{viewport.font-size.heading.level-4}",
-          "type": "fontSizes"
-        },
-        "level-5": {
-          "value": "{viewport.font-size.heading.level-5}",
           "type": "fontSizes"
         }
       }

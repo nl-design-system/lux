@@ -84,10 +84,6 @@
         "level-4": {
           "value": "{lux.line-height.sm.desktop}",
           "type": "lineHeights"
-        },
-        "level-5": {
-          "value": "{lux.line-height.xs.desktop}",
-          "type": "lineHeights"
         }
       }
     },
@@ -129,11 +125,6 @@
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
           "value": "{lux.font-size.sm.desktop}"
-        },
-        "level-5": {
-          "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.xs.desktop}"
         }
       }
     },
