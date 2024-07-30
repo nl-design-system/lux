@@ -96,33 +96,44 @@
         "small": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "0.875rem"
+          "value": "{lux.font-size.xs.desktop}"
         },
         "default": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "1rem",
-          "description": ""
+          "value": "{lux.font-size.sm.desktop}"
         },
         "large": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "1.25rem",
-          "description": ""
+          "value": "{lux.font-size.md.desktop}"
         }
       },
       "heading": {
-        "level-2": {
-          "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.5rem",
-          "description": ""
-        },
         "level-1": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "2rem",
-          "description": ""
+          "value": "{lux.font-size.xl.desktop}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.lg.desktop}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.md.desktop}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.sm.desktop}"
+        },
+        "level-5": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.xs.desktop}"
         }
       }
     },

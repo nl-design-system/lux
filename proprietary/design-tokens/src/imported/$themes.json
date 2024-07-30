@@ -234,7 +234,7 @@
       "lux.font-size.body.default": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
       "lux.font-size.body.large": "6e16652aee7872150e29c42a57688fa3d39f05be",
       "lux.font-size.heading.level-2": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.heading.level-1": "9135fe45995dce093f2f44116431fded977dbd50"
+      "lux.font-size.heading.level-3": "9135fe45995dce093f2f44116431fded977dbd50"
     },
     "group": "product"
   },
@@ -278,7 +278,7 @@
       "lux.font-size.body.default": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
       "lux.font-size.body.large": "6e16652aee7872150e29c42a57688fa3d39f05be",
       "lux.font-size.heading.level-2": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.heading.level-1": "9135fe45995dce093f2f44116431fded977dbd50"
+      "lux.font-size.heading.level-3": "9135fe45995dce093f2f44116431fded977dbd50"
     },
     "group": "product"
   },
@@ -322,7 +322,7 @@
       "lux.font-size.body.default": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
       "lux.font-size.body.large": "6e16652aee7872150e29c42a57688fa3d39f05be",
       "lux.font-size.heading.level-2": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.heading.level-1": "9135fe45995dce093f2f44116431fded977dbd50"
+      "lux.font-size.heading.level-3": "9135fe45995dce093f2f44116431fded977dbd50"
     },
     "group": "product"
   },
@@ -399,7 +399,7 @@
       "lux.font-size.body.default": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
       "lux.font-size.body.large": "6e16652aee7872150e29c42a57688fa3d39f05be",
       "lux.font-size.heading.level-2": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.heading.level-1": "9135fe45995dce093f2f44116431fded977dbd50"
+      "lux.font-size.heading.level-3": "9135fe45995dce093f2f44116431fded977dbd50"
     },
     "group": "product"
   },
@@ -986,7 +986,7 @@
       "lux.font-size.body.default": "9f043845ef7e00361630954eafdd0a7d3855fa6b",
       "lux.font-size.body.large": "6e16652aee7872150e29c42a57688fa3d39f05be",
       "lux.font-size.heading.level-2": "0786642f99e321f1ff532a1305766c90ac18b735",
-      "lux.font-size.heading.level-1": "9135fe45995dce093f2f44116431fded977dbd50"
+      "lux.font-size.heading.level-3": "9135fe45995dce093f2f44116431fded977dbd50"
     },
     "group": "product"
   }

@@ -54,37 +54,6 @@
         "value": "3rem",
         "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
-    },
-    "line-height": {
-      "body": {
-        "small": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.body.small}"
-        },
-        "default": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.body.default}"
-        },
-        "large": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.body.large}"
-        }
-      },
-      "heading": {
-        "level-2": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.heading.level-2}"
-        },
-        "level-1": {
-          "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.heading.level-2}"
-        }
-      }
     }
   },
   "figma": {

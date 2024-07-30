@@ -70,7 +70,7 @@
         "level-1": {
           "parent": "viewport (beta)/xs",
           "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-1}*1.5"
+          "value": "{lux.font-size.heading.level-3}*1.5"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
