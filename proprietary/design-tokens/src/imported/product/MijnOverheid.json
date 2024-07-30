@@ -151,6 +151,10 @@
           "type": "sizing"
         }
       }
+    },
+    "product": {
+      "value": "MijnOverheid",
+      "type": "text"
     }
   },
   "product": {

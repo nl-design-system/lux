@@ -149,6 +149,10 @@
           "value": "{figma.viewport.size.icon.wrapper-height}"
         }
       }
+    },
+    "product": {
+      "value": "Logius",
+      "type": "text"
     }
   },
   "product": {

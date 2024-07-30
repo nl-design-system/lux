@@ -149,6 +149,10 @@
           "type": "sizing"
         }
       }
+    },
+    "product": {
+      "value": "DigiD",
+      "type": "text"
     }
   },
   "product": {
