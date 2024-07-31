@@ -780,7 +780,7 @@
         "xl": {
           "parent": "viewport (beta)/xs",
           "type": "lineHeights",
-          "value": "3rem"
+          "value": "3.25rem"
         }
       }
     },
