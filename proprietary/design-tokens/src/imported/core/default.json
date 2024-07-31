@@ -836,7 +836,7 @@
         "xl": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "2rem"
+          "value": "2.25rem"
         }
       }
     }
