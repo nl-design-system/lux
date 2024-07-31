@@ -221,12 +221,12 @@
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "1.125rem"
+        "value": "{lux.font-size.large-scale.sm}"
       },
       "primary": {
         "font-size": {
           "type": "fontSizes",
-          "value": "1.125rem"
+          "value": "{lux.font-size.large-scale.sm}"
         }
       }
     }
