@@ -13,6 +13,7 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'bundle',
+      includeGlobalScripts: true,
     },
     {
       type: 'www',
