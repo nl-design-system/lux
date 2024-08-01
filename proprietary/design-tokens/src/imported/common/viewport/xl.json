@@ -40,17 +40,6 @@
         "value": "2.5rem",
         "description": ""
       }
-    },
-    "body": {
-      "default": {
-        "value": {
-          "fontFamily": "{ro.font-family.primary}",
-          "fontWeight": "{lux.font-weight.regular}",
-          "fontSize": "{lux.font-size.large-scale.sm}",
-          "lineHeight": "{lux.line-height.large-scale.sm}"
-        },
-        "type": "typography"
-      }
     }
   },
   "viewport": {
