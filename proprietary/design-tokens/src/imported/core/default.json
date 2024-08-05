@@ -727,30 +727,129 @@
         "type": "fontWeights",
         "value": "Bold"
       }
-    }
-  },
-  "oud": {
-    "lux": {
-      "border-radius": {
-        "default": {
-          "parent": "core/default",
-          "type": "borderRadius",
-          "value": "4px"
+    },
+    "line-height": {
+      "large-scale": {
+        "xs": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "1.5rem"
+        },
+        "sm": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "1.75rem"
+        },
+        "md": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "2rem"
+        },
+        "lg": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "2.25rem"
+        },
+        "xl": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "3.5rem"
+        }
+      },
+      "small-scale": {
+        "xs": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "1.5rem"
+        },
+        "sm": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "1.5rem"
+        },
+        "md": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "1.75rem"
+        },
+        "lg": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "2rem"
+        },
+        "xl": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "3.25rem"
+        }
+      }
+    },
+    "font-size": {
+      "large-scale": {
+        "xs": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "1rem"
+        },
+        "sm": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "1.125rem"
+        },
+        "md": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "1.375rem"
+        },
+        "lg": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "1.625rem"
+        },
+        "xl": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "2.5rem"
+        }
+      },
+      "small-scale": {
+        "xs": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "0.875rem"
+        },
+        "sm": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "1rem"
+        },
+        "md": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "1.25rem"
+        },
+        "lg": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "1.5rem"
+        },
+        "xl": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "2.25rem"
         }
       }
     }
   },
-  "rh": {
+  "ro": {
     "font-family": {
-      "sans": {
+      "primary": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif",
-        "description": "De Sans Web wordt toegepast voor langere (lees-)teksten."
+        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif"
       },
-      "serif": {
+      "secondary": {
         "type": "fontFamilies",
-        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif",
-        "description": "Serif Web is vooral interessant voor de afwisseling in bijvoorbeeld digitale magazines."
+        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif"
       }
     }
   },

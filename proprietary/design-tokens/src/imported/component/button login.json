@@ -73,7 +73,7 @@
       "font-size": {
         "parent": "button login/default",
         "type": "fontSizes",
-        "value": "1.125rem"
+        "value": "{lux.font-size.large-scale.sm}"
       },
       "padding-inline-start": {
         "parent": "button login/default",
@@ -120,7 +120,7 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "1.75rem"
+        "value": "{lux.line-height.large-scale.sm}"
       },
       "font-weight": {
         "type": "fontWeights",
