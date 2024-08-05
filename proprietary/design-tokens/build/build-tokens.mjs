@@ -15,7 +15,7 @@ StyleDictionary.registerTransform({
   transitive: true,
   matcher: function(token) {
     const {type, value, isSource} = token
-    return type === 'spacing' && isSource && value.match(/[\+\-\*\/]/g);
+    return type === 'spacing' && value.match(/[\+\-\*\/]/g);
   },
   transformer: function(token) {
     return `calc(${token.original.value})`;

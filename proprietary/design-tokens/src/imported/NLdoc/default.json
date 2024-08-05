@@ -33,7 +33,7 @@
     "font-family": {
       "primary": {
         "type": "fontFamilies",
-        "value": "{rh.font-family.sans}"
+        "value": "{ro.font-family.primary}"
       }
     }
   }

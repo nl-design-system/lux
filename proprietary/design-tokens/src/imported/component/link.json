@@ -43,11 +43,11 @@
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "{lux.line-height.m}"
+        "value": "{lux.line-height.body.default}"
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "{lux.font-size.m}"
+        "value": "{lux.font-size.body.default}"
       }
     }
   }
