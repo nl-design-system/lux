@@ -28,9 +28,6 @@ export class Button {
   // @Event({ cancelable: true }) utrechtRequestSubmit: EventEmitter;
   // @Element() hostElement: HTMLElement;
 
-  // @Prop() iconStart?: HTMLLuxIconChevronLeftElement;
-  // @Prop() iconEnd?: boolean;
-
   render() {
     const classNames = { 'lux-button': true };
 
@@ -73,12 +70,7 @@ export class Button {
         value={value}
         type={type}
       >
-        {/* <div part='start' class="lux-button__icon lux-button__icon--start"> */}
-        {/* <slot name="icon-start"/> */}
-        {/* </div> */}
-        {/* {this.iconStart} */}
         <slot />
-        {/* <slot name="icon-end" /> */}
       </utrecht-button>
     );
   }

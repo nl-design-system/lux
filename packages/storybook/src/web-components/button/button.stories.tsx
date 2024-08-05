@@ -84,6 +84,47 @@ export const Playground: Story = {
   },
 };
 
+export const Primary: Story = {
+  name: 'Primary',
+  args: {
+    appearance: 'primary-action-button',
+    children: 'Primary Button',
+  },
+};
+
+export const Secondary: Story = {
+  name: 'Secondary',
+  args: {
+    appearance: 'secondary-action-button',
+    children: 'Secondary Button',
+  },
+};
+
+export const Tertiary: Story = {
+  name: 'Tertiary',
+  args: {
+    appearance: 'subtle-button',
+    children: 'Tertiary Button',
+  },
+};
+
+// export const WithoutAppearance: Story = {
+//   name: 'Default',
+//   args: {
+//     appearance: '',
+//     children: 'Without appearance Button',
+//   },
+// };
+
+// TODO: see how we can trigger active (and others)
+export const Active: Story = {
+  name: 'Active',
+  args: {
+    appearance: 'primary-action-button',
+    children: 'Active Button',
+  },
+};
+
 export const WithStartIcon: Story = {
   name: 'Start Icon',
   args: {
@@ -110,16 +151,20 @@ export const WithEndIcon: Story = {
   ),
 };
 
-export const WithEndIcon2: Story = {
-  name: 'Child Icon',
+export const Busy: Story = {
+  name: 'Busy',
   args: {
     appearance: 'primary-action-button',
+    children: 'Busy Button',
+    busy: true,
   },
-  render: (args) => (
-    <LuxButton {...args}>
-      <span>Between </span>
-      <IconChevronRight />
-      <span> Icon</span>
-    </LuxButton>
-  ),
+};
+
+export const Toggle: Story = {
+  name: 'Toggle',
+  args: {
+    appearance: 'secondary-action-button',
+    children: 'Toggle Button',
+    pressed: true,
+  },
 };

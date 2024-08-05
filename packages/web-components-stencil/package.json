@@ -31,7 +31,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec",
     "watch": "npm-run-all --parallel watch:**",
-    "watch:stencil": "chokidar src/**/* --follow-symlinks --initial --command \"pnpm run build:stencil\"",
+    "watch:stencil": "chokidar src/**/* --follow-symlinks --initial --command \"npm run build:stencil\"",
     "generate": "stencil generate"
   },
   "devDependencies": {
