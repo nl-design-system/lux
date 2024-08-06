@@ -4,8 +4,18 @@ import {
   LuxIconChevronRight as IconChevronRight,
 } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
+import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent /*, fn, within*/ } from '@storybook/test';
 import { type PropsWithChildren /*, type PropsWithoutRef */ } from 'react';
+import {
+  //   deepQuerySelector,
+  //   deepQuerySelectorAll,
+  //   getAllElementsAndShadowRoots,
+  //   screen,
+  within,
+} from 'shadow-dom-testing-library';
+// import { withinShadowRoot } from '../../utils/withinShadowRoot';
 
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton>) => <Button {...props} />;
 
@@ -26,6 +36,7 @@ const meta = {
       options: [undefined, 'button', 'primary-action-button', 'secondary-action-button', 'subtle-button'],
     },
     children: {
+      name: 'label',
       description: 'Button text',
       control: 'text',
     },
@@ -82,6 +93,7 @@ export const Playground: Story = {
       sourceState: 'shown',
     },
   },
+  tags: ['!autodocs'],
 };
 
 export const Primary: Story = {
@@ -122,6 +134,35 @@ export const Active: Story = {
   args: {
     appearance: 'primary-action-button',
     children: 'Active Button',
+    forceState: 'active',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = await within(canvasElement);
+    const luxButton = canvas.getByShadowText('Active Button');
+    await userEvent.pointer({ target: luxButton, keys: '[MouseLeft]' });
+  },
+};
+
+export const Hover: Story = {
+  name: 'Hover',
+  args: {
+    appearance: 'primary-action-button',
+    children: 'Hover Button',
+    forceState: 'hover',
+  },
+  // render: (args) => (
+  //   <LuxButton {...args}>
+  //     { args.children }
+  //   </LuxButton>
+  // ),
+};
+
+export const Focus: Story = {
+  name: 'Focus',
+  args: {
+    appearance: 'primary-action-button',
+    children: 'Focus Button',
+    forceState: 'focus',
   },
 };
 
@@ -129,11 +170,12 @@ export const WithStartIcon: Story = {
   name: 'Start Icon',
   args: {
     appearance: 'primary-action-button',
+    children: 'Start Icon',
   },
   render: (args) => (
     <LuxButton {...args}>
       <IconChevronLeft />
-      Start Icon
+      {args.children}
     </LuxButton>
   ),
 };
@@ -142,10 +184,11 @@ export const WithEndIcon: Story = {
   name: 'End Icon',
   args: {
     appearance: 'primary-action-button',
+    children: 'End Icon',
   },
   render: (args) => (
     <LuxButton {...args}>
-      End Icon
+      {args.children}
       <IconChevronRight />
     </LuxButton>
   ),
@@ -163,8 +206,40 @@ export const Busy: Story = {
 export const Toggle: Story = {
   name: 'Toggle',
   args: {
-    appearance: 'secondary-action-button',
-    children: 'Toggle Button',
+    appearance: 'primary-action-button',
     pressed: true,
   },
+  render: (args: any) => {
+    const [{ pressed }, updateArgs] = useArgs();
+
+    const onPress = () => {
+      updateArgs({ pressed: !pressed });
+    };
+
+    return (
+      <LuxButton {...args} onClick={onPress}>
+        Toggle Button {args.pressed ? 'pressed' : 'not pressed'}
+      </LuxButton>
+    );
+  },
+  argTypes: {
+    pressed: {
+      control: 'boolean',
+    },
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+  // play: async({ canvasElement }) => {
+  //   const canvas = await within(canvasElement);
+  //   // const canvas = await withinShadowRoot(canvasElement, 'lux-button');
+  //   const luxButton = canvas.getByShadowText('Toggle Button'); // deepQuerySelector(canvasElement, '*');
+  //   // const utrechtButton = deepQuerySelector(canvasElement, 'utrecht-button', { shallow: true });
+
+  //   // console.log(canvasElement, canvas, luxButton, utrechtButton, luxButton && within(luxButton));
+
+  //   await userEvent.click(luxButton);
+  // }
 };

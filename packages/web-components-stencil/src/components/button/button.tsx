@@ -1,10 +1,10 @@
-import { Component, /*Element,*/ h, Prop } from '@stencil/core';
-// import { HTMLStencilElement } from '@stencil/core/internal';
+import { Component, Element, Event, EventEmitter, h, Listen, Prop } from '@stencil/core';
+import { UtrechtButtonCustomEvent } from '@utrecht/web-component-library-stencil';
 import { attrBoolean } from '../../utils/helpers/attrBoolean';
 
 @Component({
   tag: 'lux-button',
-  shadow: true,
+  shadow: { delegatesFocus: true },
   styleUrl: 'button.scss',
 })
 export class Button {
@@ -24,12 +24,47 @@ export class Button {
   @Prop() name?: string;
   @Prop() value?: string;
   @Prop() type?: string = 'button';
-  // @Event({ cancelable: true }) utrechtRequestReset: EventEmitter;
-  // @Event({ cancelable: true }) utrechtRequestSubmit: EventEmitter;
-  // @Element() hostElement: HTMLElement;
+  @Prop({ reflect: false }) forceState?: 'active' | 'focus' | 'hover';
+  @Event({ cancelable: true }) luxRequestReset!: EventEmitter;
+  @Event({ cancelable: true }) luxRequestSubmit!: EventEmitter;
+  @Element() hostElement!: HTMLElement;
+
+  private buttonElement?: HTMLButtonElement | null;
+
+  @Listen('utrechtRequestReset')
+  utrechtRequestResetHandler(event: CustomEvent<UtrechtButtonCustomEvent<any>>) {
+    console.log('Received the custom utrechtRequestReset event: ', event);
+    this.luxRequestReset.emit();
+
+    if (!event.defaultPrevented) {
+      this.hostElement?.closest('form')?.reset();
+    }
+  }
+  @Listen('utrechtRequestSubmit')
+  utrechtRequestSubmitHandler(event: CustomEvent<UtrechtButtonCustomEvent<any>>) {
+    console.log('Received the custom utrechtRequestSubmit event: ', event);
+    this.luxRequestSubmit.emit();
+
+    if (!event.defaultPrevented) {
+      this.hostElement?.closest('form')?.requestSubmit();
+    }
+  }
+
+  componentDidLoad() {
+    this.buttonElement = this.hostElement.shadowRoot
+      ?.querySelector('utrecht-button')
+      ?.shadowRoot?.querySelector('button');
+    if (this.forceState) {
+      let forcedClass: string[] = [`utrecht-button--${this.forceState}`];
+      if (this.forceState === 'focus') forcedClass.push('utrecht-button--focus-visible');
+
+      // console.log('componentDidLoad', this.buttonElement, forcedClass);
+      this.buttonElement?.classList.add(...forcedClass);
+    }
+  }
 
   render() {
-    const classNames = { 'lux-button': true };
+    const classNames = { [`force-state--${this.forceState}`]: Boolean(this.forceState), 'lux-button': true };
 
     const {
       appearance,
@@ -69,6 +104,7 @@ export class Button {
         name={name}
         value={value}
         type={type}
+        part="utrecht-button"
       >
         <slot />
       </utrecht-button>

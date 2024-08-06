@@ -44,6 +44,7 @@
     "@storybook/preview-api": "8.1.5",
     "@storybook/react": "8.1.5",
     "@storybook/react-vite": "8.1.5",
+    "@storybook/test": "8.1.5",
     "@storybook/testing-library": "0.2.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -53,6 +54,7 @@
     "react-dom": "18.3.1",
     "require-from-string": "2.0.2",
     "rimraf": "5.0.7",
+    "shadow-dom-testing-library": "1.11.2",
     "storybook": "8.1.5",
     "typescript": "5.4.5",
     "vite": "5.2.12"
