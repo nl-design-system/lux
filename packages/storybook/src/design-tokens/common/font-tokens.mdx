@@ -17,7 +17,7 @@ import { DesignTokenFontPreview, DesignTokenOverview } from "../../utils/compone
       </tr>
     </thead>
     <tbody>
-      <DesignTokenFontPreview token="rh.font-family.primary" reference="rh.font-family.sans" set="product" />
+      <DesignTokenFontPreview token="lux.font-family.primary" reference="rh.font-family.sans" set="product" />
     </tbody>
   </table>
 
@@ -32,11 +32,33 @@ import { DesignTokenFontPreview, DesignTokenOverview } from "../../utils/compone
     </tr>
   </thead>
   <tbody>
-    <DesignTokenFontPreview token="rh.font-size.s" reference="viewport.font-size.s" set="product" />
-    <DesignTokenFontPreview token="rh.font-size.m" reference="viewport.font-size.m" set="product" />
-    <DesignTokenFontPreview token="rh.font-size.l" reference="viewport.font-size.l" set="product" />
-    <DesignTokenFontPreview token="rh.font-size.xl" reference="viewport.font-size.xl" set="product" />
-    <DesignTokenFontPreview token="rh.font-size.2xl" reference="viewport.font-size.2xl" set="product" />
+    <DesignTokenFontPreview
+      token="lux.font-size.heading.level-1"
+      reference="viewport.font-size.heading.level-1"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.font-size.heading.level-2"
+      reference="viewport.font-size.heading.level-2"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.font-size.heading.level-3"
+      reference="viewport.font-size.heading.level-3"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.font-size.heading.level-4"
+      reference="viewport.font-size.heading.level-4"
+      set="product"
+    />
+    <DesignTokenFontPreview token="lux.font-size.body.large" reference="viewport.font-size.body.large" set="product" />
+    <DesignTokenFontPreview
+      token="lux.font-size.body.default"
+      reference="viewport.font-size.body.default"
+      set="product"
+    />
+    <DesignTokenFontPreview token="lux.font-size.body.small" reference="viewport.font-size.body.small" set="product" />
   </tbody>
 </table>
 
@@ -51,11 +73,41 @@ import { DesignTokenFontPreview, DesignTokenOverview } from "../../utils/compone
     </tr>
   </thead>
   <tbody>
-    <DesignTokenFontPreview token="rh.line-height.s" reference="viewport.line-height.s" set="product" />
-    <DesignTokenFontPreview token="rh.line-height.m" reference="viewport.line-height.m" set="product" />
-    <DesignTokenFontPreview token="rh.line-height.l" reference="viewport.line-height.l" set="product" />
-    <DesignTokenFontPreview token="rh.line-height.xl" reference="viewport.line-height.xl" set="product" />
-    <DesignTokenFontPreview token="rh.line-height.2xl" reference="viewport.line-height.2xl" set="product" />
+    <DesignTokenFontPreview
+      token="lux.line-height.heading.level-1"
+      reference="viewport.line-height.heading.level-1"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.line-height.heading.level-2"
+      reference="viewport.line-height.heading.level-2"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.line-height.heading.level-3"
+      reference="viewport.line-height.heading.level-3"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.line-height.heading.level-4"
+      reference="viewport.line-height.heading.level-4"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.line-height.body.large"
+      reference="viewport.line-height.body.large"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.line-height.body.default"
+      reference="viewport.line-height.body.default"
+      set="product"
+    />
+    <DesignTokenFontPreview
+      token="lux.line-height.body.small"
+      reference="viewport.line-height.body.small"
+      set="product"
+    />
   </tbody>
 </table>
 
@@ -72,16 +124,20 @@ Deze tokens kun je niet selecteren in Figma. Hiermee passen we de `font-size` aa
       </tr>
     </thead>
     <tbody>
-      <DesignTokenFontPreview token="viewport.font-size.s" value="1rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.font-size.m" value="1.125rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.font-size.l" value="1.375rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.font-size.xl" value="1.625rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.font-size.2xl" value="2.5rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.line-height.s" value="1.5rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.line-height.m" value="1.75rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.line-height.l" value="2rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.line-height.xl" value="2.25rem" set="viewport" />
-      <DesignTokenFontPreview token="viewport.line-height.2xl" value="3.5rem" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.heading.level-1" reference="lux.font-size.large-scale.xl" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.heading.level-2" reference="lux.font-size.large-scale.lg" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.heading.level-3" reference="lux.font-size.large-scale.md" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.heading.level-4" reference="lux.font-size.large-scale.sm" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.body.large" reference="lux.font-size.large-scale.md" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.body.default" reference="lux.font-size.large-scale.sm" set="viewport" />
+      <DesignTokenFontPreview token="viewport.font-size.body.small" reference="lux.font-size.large-scale.xs" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.heading.level-1" reference="lux.line-height.large-scale.xl" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.heading.level-2" reference="lux.line-height.large-scale.lg" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.heading.level-3" reference="lux.line-height.large-scale.md" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.heading.level-4" reference="lux.line-height.large-scale.sm" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.body.large" reference="lux.line-height.large-scale.md" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.body.default" reference="lux.line-height.large-scale.sm" set="viewport" />
+      <DesignTokenFontPreview token="viewport.line-height.body.small" reference="lux.line-height.large-scale.xs" set="viewport" />
     </tbody>
   </table>
 </DesignTokenOverview>
