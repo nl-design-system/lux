@@ -63,3 +63,18 @@
 .dt-set {
   text-transform: capitalize;
 }
+
+.citation {
+  display: inline-block;
+  margin-block-end: var(--lux-space-50);
+  background-color: var(--lux-color-background-subdued);
+  padding-inline: var(--lux-space-100);
+  padding-block: var(--lux-space-50);
+  font-style: normal;
+  font-size: var(--lux-font-size-s);
+  font-family: var(--lux-font-family-primary);
+
+  p {
+    margin: 0;
+  }
+}

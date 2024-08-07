@@ -15,7 +15,6 @@ import {
   //   screen,
   within,
 } from 'shadow-dom-testing-library';
-// import { withinShadowRoot } from '../../utils/withinShadowRoot';
 
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton>) => <Button {...props} />;
 
@@ -128,9 +127,9 @@ export const Tertiary: Story = {
 //   },
 // };
 
-// TODO: see how we can trigger active (and others)
+// BUG: lijkt niet te werken met Utrecht force classes
 export const Active: Story = {
-  name: 'Active',
+  name: 'Active 🪳',
   args: {
     appearance: 'primary-action-button',
     children: 'Active Button',
@@ -150,15 +149,10 @@ export const Hover: Story = {
     children: 'Hover Button',
     forceState: 'hover',
   },
-  // render: (args) => (
-  //   <LuxButton {...args}>
-  //     { args.children }
-  //   </LuxButton>
-  // ),
 };
 
 export const Focus: Story = {
-  name: 'Focus',
+  name: 'Focus 🪳',
   args: {
     appearance: 'primary-action-button',
     children: 'Focus Button',
@@ -232,14 +226,4 @@ export const Toggle: Story = {
       },
     },
   },
-  // play: async({ canvasElement }) => {
-  //   const canvas = await within(canvasElement);
-  //   // const canvas = await withinShadowRoot(canvasElement, 'lux-button');
-  //   const luxButton = canvas.getByShadowText('Toggle Button'); // deepQuerySelector(canvasElement, '*');
-  //   // const utrechtButton = deepQuerySelector(canvasElement, 'utrecht-button', { shallow: true });
-
-  //   // console.log(canvasElement, canvas, luxButton, utrechtButton, luxButton && within(luxButton));
-
-  //   await userEvent.click(luxButton);
-  // }
 };
