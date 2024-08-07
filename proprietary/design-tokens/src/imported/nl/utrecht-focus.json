@@ -5,7 +5,7 @@
         "value": "{lux.color.focus.outline}",
         "type": "color"
       },
-      "ouline-offset": {
+      "outline-offset": {
         "value": "{lux.focus.outline-offset}",
         "type": "spacing"
       },
@@ -17,7 +17,7 @@
         "value": "{lux.focus.outline-width}",
         "type": "borderWidth"
       },
-      "invers": {
+      "inverse": {
         "outline-color": {
           "value": "transparant",
           "type": "color"

@@ -78,3 +78,10 @@
     margin: 0;
   }
 }
+
+.story-grid {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: var(--lux-grid-gutter);
+}

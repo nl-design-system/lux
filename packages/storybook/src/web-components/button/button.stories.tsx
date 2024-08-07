@@ -6,15 +6,9 @@ import {
 import type { JSX } from '@lux-design-system/web-components-stencil';
 import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
-import { userEvent /*, fn, within*/ } from '@storybook/test';
-import { type PropsWithChildren /*, type PropsWithoutRef */ } from 'react';
-import {
-  //   deepQuerySelector,
-  //   deepQuerySelectorAll,
-  //   getAllElementsAndShadowRoots,
-  //   screen,
-  within,
-} from 'shadow-dom-testing-library';
+import { userEvent } from '@storybook/test';
+import { type PropsWithChildren } from 'react';
+import { within } from 'shadow-dom-testing-library';
 
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton>) => <Button {...props} />;
 
@@ -101,6 +95,13 @@ export const Primary: Story = {
     appearance: 'primary-action-button',
     children: 'Primary Button',
   },
+  parameters: {
+    docs: {
+      description: {
+        story: 'De Primary styling zet je met `appearance="primary-action-button"`',
+      },
+    },
+  },
 };
 
 export const Secondary: Story = {
@@ -108,6 +109,13 @@ export const Secondary: Story = {
   args: {
     appearance: 'secondary-action-button',
     children: 'Secondary Button',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'De Secondary styling zet je met `appearance="secondary-action-button"`',
+      },
+    },
   },
 };
 
@@ -117,21 +125,19 @@ export const Tertiary: Story = {
     appearance: 'subtle-button',
     children: 'Tertiary Button',
   },
+  parameters: {
+    docs: {
+      description: {
+        story: 'De Tertiary styling zet je met `appearance="subtle-button"`',
+      },
+    },
+  },
 };
 
-// export const WithoutAppearance: Story = {
-//   name: 'Default',
-//   args: {
-//     appearance: '',
-//     children: 'Without appearance Button',
-//   },
-// };
-
-// BUG: lijkt niet te werken met Utrecht force classes
 export const Active: Story = {
-  name: 'Active 🪳',
+  name: 'Active',
   args: {
-    appearance: 'primary-action-button',
+    appearance: 'button',
     children: 'Active Button',
     forceState: 'active',
   },
@@ -140,24 +146,84 @@ export const Active: Story = {
     const luxButton = canvas.getByShadowText('Active Button');
     await userEvent.pointer({ target: luxButton, keys: '[MouseLeft]' });
   },
+  render: (args) => (
+    <>
+      <LuxButton {...args} appearance="primary-action-button">
+        {args.children}
+      </LuxButton>
+      <LuxButton {...args} appearance="secondary-action-button">
+        {args.children}
+      </LuxButton>
+      <LuxButton {...args} appearance="subtle-button">
+        {args.children}
+      </LuxButton>
+    </>
+  ),
+  decorators: [
+    (Story) => (
+      <div className="story-grid">
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export const Hover: Story = {
   name: 'Hover',
   args: {
-    appearance: 'primary-action-button',
+    appearance: 'button',
     children: 'Hover Button',
     forceState: 'hover',
   },
+  render: (args) => (
+    <>
+      <LuxButton {...args} appearance="primary-action-button">
+        {args.children}
+      </LuxButton>
+      <LuxButton {...args} appearance="secondary-action-button">
+        {args.children}
+      </LuxButton>
+      <LuxButton {...args} appearance="subtle-button">
+        {args.children}
+      </LuxButton>
+    </>
+  ),
+  decorators: [
+    (Story) => (
+      <div className="story-grid">
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export const Focus: Story = {
-  name: 'Focus 🪳',
+  name: 'Focus',
   args: {
-    appearance: 'primary-action-button',
+    appearance: 'button',
     children: 'Focus Button',
     forceState: 'focus',
   },
+  render: (args) => (
+    <>
+      <LuxButton {...args} appearance="primary-action-button">
+        {args.children}
+      </LuxButton>
+      <LuxButton {...args} appearance="secondary-action-button">
+        {args.children}
+      </LuxButton>
+      <LuxButton {...args} appearance="subtle-button">
+        {args.children}
+      </LuxButton>
+    </>
+  ),
+  decorators: [
+    (Story) => (
+      <div className="story-grid">
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export const WithStartIcon: Story = {
@@ -195,6 +261,14 @@ export const Busy: Story = {
     children: 'Busy Button',
     busy: true,
   },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Een busy button zet je met het `busy`-attribute (`true`/`false`, default: `undefined`). Toont een `wait` cursor en `aria-busy`-attribute.',
+      },
+    },
+  },
 };
 
 export const Toggle: Story = {
@@ -223,6 +297,14 @@ export const Toggle: Story = {
     children: {
       table: {
         disable: true,
+      },
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Een pressed button zet je met het `pressed`-attribute (`true`/`false`/`"mixed"`, default: `undefined`). Zet `aria-pressed`-attribute.',
       },
     },
   },
