@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-BlAj40OV.js";import{useMDXComponents as t}from"./index-BI1Biiay.js";import{ae as a,ah as s}from"./index-DcviSK0l.js";import"./index-Cs7sjTYM.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DcyNyk4S.js";import"../sb-preview/runtime.js";import"./index-b2-t_3Kz.js";import"./index-D-8MO0q_.js";import"./index-nrpnv_Jx.js";import"./index-DrFu-skq.js";const d=`# Design Tokens
+import{j as e}from"./jsx-runtime-BlAj40OV.js";import{useMDXComponents as t}from"./index-BI1Biiay.js";import{ae as a,ah as s}from"./index-C_cQaHjT.js";import"./index-Cs7sjTYM.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DQpA-3CA.js";import"../sb-preview/runtime.js";import"./index-b2-t_3Kz.js";import"./index-D-8MO0q_.js";import"./index-nrpnv_Jx.js";import"./index-DrFu-skq.js";const d=`# Design Tokens
 
 [design-tokens]: /docs/design-tokens-design-tokens--docs
 [digid]: https://digid.nl/

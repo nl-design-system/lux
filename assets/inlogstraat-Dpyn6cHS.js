@@ -1,4 +1,4 @@
-import{j as t}from"./jsx-runtime-BlAj40OV.js";import{useMDXComponents as r}from"./index-BI1Biiay.js";import{ae as i,ah as s}from"./index-DcviSK0l.js";import"./index-Cs7sjTYM.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DcyNyk4S.js";import"../sb-preview/runtime.js";import"./index-b2-t_3Kz.js";import"./index-D-8MO0q_.js";import"./index-nrpnv_Jx.js";import"./index-DrFu-skq.js";const a=`# Inlogstraat
+import{j as t}from"./jsx-runtime-BlAj40OV.js";import{useMDXComponents as r}from"./index-BI1Biiay.js";import{ae as i,ah as s}from"./index-C_cQaHjT.js";import"./index-Cs7sjTYM.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DQpA-3CA.js";import"../sb-preview/runtime.js";import"./index-b2-t_3Kz.js";import"./index-D-8MO0q_.js";import"./index-nrpnv_Jx.js";import"./index-DrFu-skq.js";const a=`# Inlogstraat
 
 <iframe
   allow="fullscreen"
