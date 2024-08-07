@@ -1,0 +1,28 @@
+{
+  "utrecht": {
+    "focus": {
+      "outline-color": {
+        "value": "{lux.color.focus.outline}",
+        "type": "color"
+      },
+      "ouline-offset": {
+        "value": "{lux.focus.outline-offset}",
+        "type": "spacing"
+      },
+      "outline-style": {
+        "value": "{lux.focus.outline.style}",
+        "type": "other"
+      },
+      "outline-width": {
+        "value": "{lux.focus.outline-width}",
+        "type": "borderWidth"
+      },
+      "invers": {
+        "outline-color": {
+          "value": "transparant",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
