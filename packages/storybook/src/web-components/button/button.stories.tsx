@@ -161,7 +161,7 @@ export const Active: Story = {
   ),
   decorators: [
     (Story) => (
-      <div className="story-grid">
+      <div className="lsb-story-grid">
         <Story />
       </div>
     ),
@@ -190,7 +190,7 @@ export const Hover: Story = {
   ),
   decorators: [
     (Story) => (
-      <div className="story-grid">
+      <div className="lsb-story-grid">
         <Story />
       </div>
     ),
@@ -219,7 +219,7 @@ export const Focus: Story = {
   ),
   decorators: [
     (Story) => (
-      <div className="story-grid">
+      <div className="lsb-story-grid">
         <Story />
       </div>
     ),

@@ -2,13 +2,13 @@
   background-color: var(--lux-color-background-default);
 }
 
-.visual-regression-wrapper {
+.lsb-visual-regression-wrapper {
   display: flex;
   flex-flow: column wrap;
   gap: 16px 32px;
 }
 
-.section {
+.lsb-section {
   display: flex;
   flex-direction: column;
   border: solid 1px #a7a7a7;
@@ -17,7 +17,7 @@
   list-style: none;
 }
 
-.section li {
+.lsb-section li {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -26,11 +26,11 @@
   padding-block: 24px;
 }
 
-.section li + li {
+.lsb-section li + li {
   border-top: solid 1px #a7a7a7;
 }
 
-.dt-preview {
+.lsb-dt-preview {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -38,13 +38,13 @@
   gap: var(--lux-space-1x, 0.5rem);
 }
 
-.dt-preview--spacing,
-.dt-preview--sizing {
+.lsb-dt-preview--spacing,
+.lsb-dt-preview--sizing {
   --dt-border-radius: 0;
   --dt-background-color: var(--lux-color-background-subdued);
 }
 
-.dt-preview:not(.dt-preview--font)::before {
+.lsb-dt-preview:not(.lsb-dt-preview--font)::before {
   display: inline-block;
   border-width: var(--dt-border-width, 1px);
   border-style: var(--dt-border-style, solid);
@@ -56,15 +56,15 @@
   content: "";
 }
 
-.dt-value--line-height-reset {
+.lsb-dt-value--line-height-reset {
   line-height: 1 !important;
 }
 
-.dt-set {
+.lsb-dt-set {
   text-transform: capitalize;
 }
 
-.citation {
+.lsb-citation {
   display: inline-block;
   margin-block-end: var(--lux-space-50);
   background-color: var(--lux-color-background-subdued);
@@ -79,7 +79,7 @@
   }
 }
 
-.story-grid {
+.lsb-story-grid {
   display: grid;
   grid-auto-flow: column;
   justify-content: start;
