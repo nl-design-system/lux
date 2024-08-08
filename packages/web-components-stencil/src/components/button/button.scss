@@ -1,0 +1,20 @@
+@import "../../styles/sr-only";
+
+:host {
+  display: contents;
+  appearance: button;
+}
+
+:host::part(utrecht-button) {
+  /* TODO: remove */
+
+  /* outline: 1mm dashed salmon; */
+}
+
+:host([hidden]) {
+  display: none !important;
+}
+
+.lux-button {
+  --lux-icon-size: var(--lux-button-icon-size);
+}

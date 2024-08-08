@@ -13,6 +13,7 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'bundle',
+      includeGlobalScripts: true,
     },
     {
       type: 'www',
@@ -25,4 +26,5 @@ export const config: Config = {
   ],
   plugins: [sass()],
   extras: { enableImportInjection: true },
+  globalScript: 'src/global/app.ts',
 };

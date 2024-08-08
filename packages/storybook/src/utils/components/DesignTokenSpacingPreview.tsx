@@ -23,12 +23,12 @@ const DesignTokenSpacingPreview = ({ token }: Props) => {
   return (
     <tr>
       <td>
-        <span className="dt-preview dt-preview--spacing" ref={bubbleElem} style={style}>
+        <span className="lsb-dt-preview lsb-dt-preview--spacing" ref={bubbleElem} style={style}>
           {token}
         </span>
       </td>
       <td>
-        <span className="dt-value">{tokenValue}</span>
+        <span className="lsb-dt-value">{tokenValue}</span>
       </td>
     </tr>
   );

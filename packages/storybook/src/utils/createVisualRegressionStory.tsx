@@ -66,5 +66,5 @@ export const VisualRegressionWrapper = ({
   children,
   className,
 }: PropsWithChildren<{ className: string }>): React.ReactElement => {
-  return <div className={`visual-regression-wrapper ${className}`}>{children}</div>;
+  return <div className={`lsb-visual-regression-wrapper ${className}`}>{children}</div>;
 };

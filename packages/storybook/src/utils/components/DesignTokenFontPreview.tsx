@@ -34,25 +34,25 @@ const DesignTokenFontPreview = ({ token, value, set, reference }: Props) => {
   return (
     <tr>
       <td>
-        <span className="dt-preview dt-preview--font" ref={bubbleElem} style={previewStyle}>
+        <span className="lsb-dt-preview lsb-dt-preview--font" ref={bubbleElem} style={previewStyle}>
           {token}
         </span>
       </td>
       {!reference && value ? (
         <td className={valueClassName}>
-          <span className="dt-value dt-value--font" style={valueStyle}>
+          <span className="lsb-dt-value dt-value--font" style={valueStyle}>
             {value}
           </span>
         </td>
       ) : null}
       {reference ? (
         <td>
-          <span className="dt-reference">{reference}</span>
+          <span className="lsb-dt-reference">{reference}</span>
         </td>
       ) : null}
       {set ? (
         <td>
-          <span className="dt-set">{set}</span>
+          <span className="lsb-dt-set">{set}</span>
         </td>
       ) : null}
     </tr>

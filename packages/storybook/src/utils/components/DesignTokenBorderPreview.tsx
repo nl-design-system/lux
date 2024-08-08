@@ -35,22 +35,22 @@ const DesignTokenBorderPreview = ({ token, value, set, group = 'border' }: Props
   return (
     <tr>
       <td>
-        <span className="dt-preview dt-preview--border" ref={bubbleElem} style={previewStyle}>
+        <span className="lsb-dt-preview lsb-dt-preview--border" ref={bubbleElem} style={previewStyle}>
           {token}
         </span>
       </td>
       {value ? (
         <td>
-          <span className="dt-value">{value}</span>
+          <span className="lsb-dt-value">{value}</span>
         </td>
       ) : (
         <td>
-          <span className="dt-value">{tokenValue}</span>
+          <span className="lsb-dt-value">{tokenValue}</span>
         </td>
       )}
       {set ? (
         <td>
-          <span className="dt-set">{set}</span>
+          <span className="lsb-dt-set">{set}</span>
         </td>
       ) : null}
     </tr>

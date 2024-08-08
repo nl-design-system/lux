@@ -3,11 +3,11 @@
     "button": {
       "background-color": {
         "type": "color",
-        "value": "{no-token}"
+        "value": "{lux.color.paars.100}"
       },
       "border-color": {
         "type": "color",
-        "value": "{no-token}"
+        "value": "{lux.color.paars.500}"
       },
       "border-radius": {
         "type": "borderRadius",
@@ -19,7 +19,7 @@
       },
       "color": {
         "type": "color",
-        "value": "{no-token}"
+        "value": "{lux.color.paars.500}"
       },
       "font-family": {
         "type": "fontFamilies",
@@ -77,15 +77,15 @@
       "active": {
         "background-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.background-color}"
         },
         "border-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.border-color}"
         },
         "color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.color}"
         }
       },
       "icon": {
@@ -101,29 +101,29 @@
       "disabled": {
         "background-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.background-color}"
         },
         "border-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.border-color}"
         },
         "color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.color}"
         }
       },
       "focus": {
         "background-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.background-color}"
         },
         "border-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.border-color}"
         },
         "color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.color}"
         },
         "scale": {
           "type": "other",
@@ -133,15 +133,15 @@
       "hover": {
         "background-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{lux.color.paars.200}"
         },
         "border-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.border-color}"
         },
         "color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.color}"
         },
         "scale": {
           "type": "other",
@@ -151,15 +151,15 @@
       "pressed": {
         "background-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.background-color}"
         },
         "border-color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.border-color}"
         },
         "color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{utrecht.button.color}"
         }
       },
       "primary-action": {
@@ -232,29 +232,29 @@
         "focus": {
           "background-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.primary.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.primary.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.primary.color}"
           }
         },
         "pressed": {
           "background-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.primary.hover.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.primary.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.primary.hover.color}"
           }
         }
       },
@@ -328,29 +328,29 @@
         "focus": {
           "background-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.secondary.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.secondary.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.secondary.color}"
           }
         },
         "pressed": {
           "background-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.secondary.hover.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.secondary.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.secondary.hover.color}"
           }
         }
       },
@@ -424,29 +424,29 @@
         "focus": {
           "background-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.tertiary.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.tertiary.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.tertiary.color}"
           }
         },
         "pressed": {
           "background-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.tertiary.hover.background-color}"
           },
           "border-color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.tertiary.hover.border-color}"
           },
           "color": {
             "type": "color",
-            "value": "{no-token}"
+            "value": "{lux.button.tertiary.hover.color}"
           }
         }
       }

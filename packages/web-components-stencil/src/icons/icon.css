@@ -1,0 +1,5 @@
+:host {
+  display: inline-grid;
+  inline-size: var(--lux-icon-size, 1rem);
+  block-size: var(--lux-icon-size, 1rem);
+}
