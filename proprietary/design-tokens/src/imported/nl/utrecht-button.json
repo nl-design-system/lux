@@ -30,7 +30,7 @@
         "value": "{lux.button.font-size}"
       },
       "font-weight": {
-        "type": "fontWeight",
+        "type": "fontWeights",
         "value": "{lux.button.font-weight}"
       },
       "inline-size": {
@@ -180,7 +180,7 @@
           "value": "{lux.button.primary.color}"
         },
         "font-weight": {
-          "type": "fontWeight",
+          "type": "fontWeights",
           "value": "{lux.button.font-weight}"
         },
         "active": {
@@ -276,7 +276,7 @@
           "value": "{lux.button.secondary.color}"
         },
         "font-weight": {
-          "type": "fontWeight",
+          "type": "fontWeights",
           "value": "{lux.button.font-weight}"
         },
         "active": {
@@ -372,7 +372,7 @@
           "value": "{lux.button.tertiary.color}"
         },
         "font-weight": {
-          "type": "fontWeight",
+          "type": "fontWeights",
           "value": "{lux.button.font-weight}"
         },
         "active": {
