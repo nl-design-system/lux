@@ -8,7 +8,12 @@
       "core/color": "enabled",
       "core/spacing": "enabled",
       "core/border": "enabled",
-      "core/other": "enabled"
+      "core/other": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:1003",
     "$figmaModeId": "7:30",
@@ -188,7 +193,12 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled"
+      "common/default": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -204,7 +214,12 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled"
+      "product/Logius": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -253,7 +268,12 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius Blauw": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2641:0",
@@ -302,7 +322,12 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -351,7 +376,12 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -399,7 +429,12 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc-mapping": "enabled"
+      "product/NLdoc-mapping": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -434,7 +469,12 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Elia": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -482,7 +522,11 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/xl": "enabled"
+      "viewport/xl": "enabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -516,8 +560,11 @@
     "name": "lg",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/lg": "enabled",
-      "common/viewport/xl": "source"
+      "viewport/xl": "source",
+      "viewport/lg": "enabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -551,8 +598,11 @@
     "name": "md",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/md": "enabled",
-      "common/viewport/xl": "source"
+      "viewport/xl": "source",
+      "viewport/lg": "disabled",
+      "viewport/md": "enabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -586,8 +636,11 @@
     "name": "sm",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/sm": "enabled",
-      "common/viewport/xl": "source"
+      "viewport/xl": "source",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "enabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -621,7 +674,11 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/viewport/xs": "enabled"
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -655,7 +712,12 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled"
+      "mode/light": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -709,7 +771,12 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "enabled"
+      "mode/dark": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -767,7 +834,12 @@
       "component/alert": "enabled",
       "component/button": "enabled",
       "component/button login": "enabled",
-      "component/icon-logo": "enabled"
+      "component/icon-logo": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1503:3470",
     "$figmaModeId": "1503:2",
@@ -891,7 +963,12 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "nl/utrecht-button": "enabled"
+      "nl/utrecht-button": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",
@@ -993,7 +1070,12 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/default": "enabled"
+      "NLdoc/default": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1002,7 +1084,12 @@
     "name": "Rijksoverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Rijksoverheid": "enabled"
+      "NLdoc/Rijksoverheid": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1011,7 +1098,12 @@
     "name": "Ridderkerk",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Ridderkerk": "enabled"
+      "NLdoc/Ridderkerk": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1020,7 +1112,12 @@
     "name": "Waterschap Hollandse Delta",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Waterschap Hollandse Delta": "enabled"
+      "NLdoc/Waterschap Hollandse Delta": "enabled",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1030,7 +1127,12 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Digitoegankelijk": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "viewport/xl": "disabled",
+      "viewport/lg": "disabled",
+      "viewport/md": "disabled",
+      "viewport/sm": "disabled",
+      "viewport/xs": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2690:0",
