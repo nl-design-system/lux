@@ -56,7 +56,9 @@ export class Button {
       ?.shadowRoot?.querySelector('button');
     if (this.forceState) {
       let forcedClass: string[] = [`utrecht-button--${this.forceState}`];
-      if (this.forceState === 'focus') forcedClass.push('utrecht-button--focus-visible');
+      if (this.forceState === 'focus') {
+          forcedClass.push('utrecht-button--focus-visible');
+      }
 
       // console.log('componentDidLoad', this.buttonElement, forcedClass);
       this.buttonElement?.classList.add(...forcedClass);
