@@ -30,7 +30,7 @@
       "focus": {
         "color": {
           "type": "color",
-          "value": "{no-token}"
+          "value": "{lux.color.foreground.link}"
         },
         "text-decoration": {
           "type": "other",
@@ -39,6 +39,10 @@
         "text-decoration-thickness": {
           "type": "other",
           "value": "{no-token}"
+        },
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
         }
       },
       "hover": {
@@ -55,15 +59,9 @@
           "value": "{no-token}"
         }
       },
-      "placeholder": {
-        "color": {
-          "type": "color",
-          "value": "{no-token}"
-        },
-        "font-weight": {
-          "type": "fontWeight",
-          "value": "{no-token}"
-        }
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{lux.link.font-weight}"
       },
       "visited": {
         "color": {
@@ -73,9 +71,21 @@
       },
       "icon": {
         "size": {
-          "type": "color",
+          "type": "sizing",
           "value": "{lux.link.icon.size}"
         }
+      },
+      "font-family": {
+        "value": "{lux.link.font-family}",
+        "type": "fontFamilies"
+      },
+      "line-height": {
+        "value": "{lux.link.line-height}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.link.font-size}",
+        "type": "fontSizes"
       }
     }
   }
