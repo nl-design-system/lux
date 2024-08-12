@@ -1,6 +1,10 @@
 {
   "tokenSetOrder": [
-    "core/default",
+    "core/color",
+    "core/spacing",
+    "core/font",
+    "core/border",
+    "core/other",
     "common/default",
     "common/viewport/xl",
     "common/viewport/lg",
