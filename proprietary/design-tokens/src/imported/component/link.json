@@ -19,12 +19,20 @@
         "color": {
           "type": "color",
           "value": "{mode.link.hover.color}"
+        },
+        "text-decoration": {
+          "value": "none",
+          "type": "textDecoration"
         }
       },
       "active": {
         "color": {
           "type": "color",
           "value": "{mode.link.active.color}"
+        },
+        "tex-decoration": {
+          "value": "none",
+          "type": "textDecoration"
         }
       },
       "visited": {
@@ -48,6 +56,16 @@
       "font-size": {
         "type": "fontSizes",
         "value": "{lux.font-size.body.default}"
+      },
+      "text-decoration": {
+        "value": "underline",
+        "type": "textDecoration"
+      },
+      "focus": {
+        "text-decoration": {
+          "value": "none",
+          "type": "textDecoration"
+        }
       }
     }
   }
