@@ -1,3 +1,4 @@
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import {
   LuxButton as Button,
   LuxIconChevronLeft as IconChevronLeft,
@@ -9,6 +10,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent } from '@storybook/test';
 import { type PropsWithChildren } from 'react';
 import { within } from 'shadow-dom-testing-library';
+import tokensDefinition from './tokens.json';
+import { createDesignTokensStory } from '../../utils';
 
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton>) => <Button {...props} />;
 
@@ -18,11 +21,11 @@ const meta = {
   title: 'Web Components/Button',
   id: 'web-components-button',
   component: LuxButton,
-  // parameters: {
-  //   tokens,
-  //   tokensPrefix: 'lux-button',
-  //   tokensDefinition,
-  // },
+  parameters: {
+    tokens,
+    tokensPrefix: 'lux-button',
+    tokensDefinition,
+  },
   argTypes: {
     appearance: {
       control: { type: 'select' },
@@ -73,12 +76,12 @@ export const Playground: Story = {
     disabled: false,
     expanded: undefined,
     pressed: undefined,
-    form: '',
+    form: undefined,
     formAction: '',
     formEnctype: '',
     formMethod: '',
     formNoValidate: false,
-    popoverTarget: '',
+    popoverTarget: undefined,
     popoverTargetAction: '',
   },
   parameters: {
@@ -226,34 +229,6 @@ export const Focus: Story = {
   ],
 };
 
-export const WithStartIcon: Story = {
-  name: 'Start Icon',
-  args: {
-    appearance: 'primary-action-button',
-    children: 'Start Icon',
-  },
-  render: (args) => (
-    <LuxButton {...args}>
-      <IconChevronLeft />
-      {args.children}
-    </LuxButton>
-  ),
-};
-
-export const WithEndIcon: Story = {
-  name: 'End Icon',
-  args: {
-    appearance: 'primary-action-button',
-    children: 'End Icon',
-  },
-  render: (args) => (
-    <LuxButton {...args}>
-      {args.children}
-      <IconChevronRight />
-    </LuxButton>
-  ),
-};
-
 export const Busy: Story = {
   name: 'Busy',
   args: {
@@ -309,3 +284,33 @@ export const Toggle: Story = {
     },
   },
 };
+
+export const WithStartIcon: Story = {
+  name: 'Start Icon',
+  args: {
+    appearance: 'primary-action-button',
+    children: 'Start Icon',
+  },
+  render: (args) => (
+    <LuxButton {...args}>
+      <IconChevronLeft />
+      {args.children}
+    </LuxButton>
+  ),
+};
+
+export const WithEndIcon: Story = {
+  name: 'End Icon',
+  args: {
+    appearance: 'primary-action-button',
+    children: 'End Icon',
+  },
+  render: (args) => (
+    <LuxButton {...args}>
+      {args.children}
+      <IconChevronRight />
+    </LuxButton>
+  ),
+};
+
+export const DesignTokens = createDesignTokensStory(meta);

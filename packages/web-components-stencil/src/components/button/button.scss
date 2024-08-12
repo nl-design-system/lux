@@ -5,12 +5,6 @@
   appearance: button;
 }
 
-:host::part(utrecht-button) {
-  /* TODO: remove */
-
-  /* outline: 1mm dashed salmon; */
-}
-
 :host([hidden]) {
   display: none !important;
 }

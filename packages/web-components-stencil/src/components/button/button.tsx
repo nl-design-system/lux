@@ -8,32 +8,33 @@ import { attrBoolean } from '../../utils/helpers/attrBoolean';
   styleUrl: 'button.scss',
 })
 export class Button {
-  @Prop() appearance!: string; // = 'primary-action-button'
-  @Prop() busy?: boolean;
-  @Prop() disabled?: boolean;
-  @Prop() expanded?: boolean | string | 'false' | 'true';
-  @Prop() pressed?: boolean | string | 'false' | 'true' | 'mixed';
-  @Prop({ attribute: 'readonly', reflect: true }) form?: string;
-  @Prop({ attribute: 'formaction', reflect: true }) formAction?: string;
-  @Prop({ attribute: 'formenctype', reflect: true }) formEnctype?: string;
-  @Prop({ attribute: 'formmethod', reflect: true }) formMethod?: string;
-  @Prop({ attribute: 'formnovalidate', reflect: true }) formNoValidate?: boolean;
-  @Prop({ attribute: 'formtarget', reflect: true }) formTarget?: string;
-  @Prop({ attribute: 'popovertarget', reflect: true }) popoverTarget?: string;
-  @Prop({ attribute: 'popovertargetaction', reflect: true }) popoverTargetAction?: string;
-  @Prop() name?: string;
-  @Prop() value?: string;
-  @Prop() type?: string = 'button';
+  @Prop() appearance!: string;
+  @Prop() busy?: boolean | 'false' | 'true' = false;
+  @Prop() disabled?: HTMLButtonElement['disabled'];
+  @Prop() expanded?: boolean | 'false' | 'true';
+  @Prop() pressed?: boolean | 'false' | 'true' | 'mixed';
+  @Prop({ attribute: 'readonly', reflect: true }) form?: HTMLButtonElement['form'];
+  @Prop({ attribute: 'formaction', reflect: true }) formAction?: HTMLButtonElement['formAction'];
+  @Prop({ attribute: 'formenctype', reflect: true }) formEnctype?: HTMLButtonElement['formEnctype'];
+  @Prop({ attribute: 'formmethod', reflect: true }) formMethod?: HTMLButtonElement['formMethod'];
+  @Prop({ attribute: 'formnovalidate', reflect: true }) formNoValidate?: HTMLButtonElement['formNoValidate'];
+  @Prop({ attribute: 'formtarget', reflect: true }) formTarget?: HTMLButtonElement['formTarget'];
+  @Prop({ attribute: 'popovertarget', reflect: true }) popoverTarget?: PopoverInvokerElement['popoverTargetElement'];
+  @Prop({ attribute: 'popovertargetaction', reflect: true })
+  popoverTargetAction?: PopoverInvokerElement['popoverTargetAction'];
+  @Prop() name?: HTMLButtonElement['name'];
+  @Prop() value?: HTMLButtonElement['value'];
+  @Prop() type?: HTMLButtonElement['type'];
   @Prop() forceState?: 'active' | 'focus' | 'hover';
   @Event({ cancelable: true }) luxRequestReset!: EventEmitter;
   @Event({ cancelable: true }) luxRequestSubmit!: EventEmitter;
   @Element() hostElement!: HTMLElement;
 
+  private utrechtButtonElement?: HTMLUtrechtButtonElement;
   private buttonElement?: HTMLButtonElement | null;
 
   @Listen('utrechtRequestReset')
   utrechtRequestResetHandler(event: CustomEvent<UtrechtButtonCustomEvent<any>>) {
-    console.log('Received the custom utrechtRequestReset event: ', event);
     this.luxRequestReset.emit();
 
     if (!event.defaultPrevented) {
@@ -42,7 +43,6 @@ export class Button {
   }
   @Listen('utrechtRequestSubmit')
   utrechtRequestSubmitHandler(event: CustomEvent<UtrechtButtonCustomEvent<any>>) {
-    console.log('Received the custom utrechtRequestSubmit event: ', event);
     this.luxRequestSubmit.emit();
 
     if (!event.defaultPrevented) {
@@ -51,16 +51,13 @@ export class Button {
   }
 
   componentDidLoad() {
-    this.buttonElement = this.hostElement.shadowRoot
-      ?.querySelector('utrecht-button')
-      ?.shadowRoot?.querySelector('button');
+    this.buttonElement = this.utrechtButtonElement?.shadowRoot?.querySelector('button');
     if (this.forceState) {
       let forcedClass: string[] = [`utrecht-button--${this.forceState}`];
       if (this.forceState === 'focus') {
-          forcedClass.push('utrecht-button--focus-visible');
+        forcedClass.push('utrecht-button--focus-visible');
       }
 
-      // console.log('componentDidLoad', this.buttonElement, forcedClass);
       this.buttonElement?.classList.add(...forcedClass);
     }
   }
@@ -107,6 +104,9 @@ export class Button {
         value={value}
         type={type}
         part="utrecht-button"
+        ref={(el: HTMLUtrechtButtonElement) => {
+          this.utrechtButtonElement = el;
+        }}
       >
         <slot />
       </utrecht-button>

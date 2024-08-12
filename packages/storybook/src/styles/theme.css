@@ -74,8 +74,17 @@
   font-size: var(--lux-font-size-s);
   font-family: var(--lux-font-family-primary);
 
+  a {
+    color: var(--lux-color-foreground-link);
+  }
+
   p {
     margin: 0;
+  }
+
+  &,
+  p {
+    color: var(--lux-color-foreground-default);
   }
 }
 
