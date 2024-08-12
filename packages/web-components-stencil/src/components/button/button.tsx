@@ -24,7 +24,7 @@ export class Button {
   @Prop() name?: string;
   @Prop() value?: string;
   @Prop() type?: string = 'button';
-  @Prop({ reflect: false }) forceState?: 'active' | 'focus' | 'hover';
+  @Prop() forceState?: 'active' | 'focus' | 'hover';
   @Event({ cancelable: true }) luxRequestReset!: EventEmitter;
   @Event({ cancelable: true }) luxRequestSubmit!: EventEmitter;
   @Element() hostElement!: HTMLElement;
