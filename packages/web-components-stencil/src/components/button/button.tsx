@@ -37,7 +37,7 @@ export class Button {
     this.luxRequestReset.emit();
 
     if (!event.defaultPrevented) {
-      this.hostElement?.closest('form')?.reset();
+      this.hostElement.closest('form')?.reset();
     }
   }
   @Listen('utrechtRequestSubmit')
