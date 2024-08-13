@@ -61,7 +61,7 @@
           "value": "{no-token}"
         },
         "font-weight": {
-          "type": "fontWeight",
+          "type": "fontWeights",
           "value": "{no-token}"
         }
       },

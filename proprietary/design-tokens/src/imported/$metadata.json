@@ -29,8 +29,10 @@
     "component/alert",
     "component/link",
     "component/icon-logo",
-    "nl/utrecht-button",
+    "nl/utrecht-focus",
     "nl/utrecht-alert",
-    "nl/utrecht-link"
+    "nl/utrecht-button",
+    "nl/utrecht-link",
+    "nl/utrecht-paragraph"
   ]
 }
