@@ -1,5 +1,6 @@
 # Community Component Aanleveren
 
+[mdn-slots]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot
 [nlds-components]: https://www.nldesignsystem.nl/componenten/
 [nlds-estafettemodel]: https://www.nldesignsystem.nl/handboek/estafettemodel
 [stencil]: https://stenciljs.com/docs/introduction
@@ -116,7 +117,20 @@ class MyComponent {
 
 #### Slots
 
-**_Oh yes, there's lots of slots in Vegas_**
+[Slots][mdn-slots], native voor web components mét ShadowDOM, bieden een plek om HTML content in het component toe te passen. Ze zijn vergelijkbaar met Angular's `ngTransclude`, render functions in React, of `slot`s in VueJS. Als het provider's component slots heeft kun je deze ook doorgeven met LUX component slots.
+
+```tsx
+render() {
+  return (
+    <provider-my-component>
+      {/* Default slot */}
+      <slot />
+      {/* Named slot */}
+      <slot name="named-slot" slot="named-slot" />
+    </provider-my-component>
+  )
+}
+```
 
 #### Custom Event Propagation
 
@@ -126,7 +140,7 @@ Sommige community componenten maken gebruik van custom DOM events om aan te geve
 
 Je maakt een wrapper voor het `provider-duck` component om het `lux-duck` component te bouwen. Het `provider-duck` component heeft een event genaamd `provider-quack` dat moet worden uitgezonden als het `lux-quack` event. Onderstaand voorbeeld laat zien hoe dat werkt.
 
-```tsx {7-10}
+```tsx
 import { h, Component, Event, EventEmitter } from '@stencil/core';
 
 @Component({
@@ -180,5 +194,9 @@ class MyComponent {
 ...
 
 #### Visual Regression Testing
+
+...
+
+#### Design Tokens
 
 ...
