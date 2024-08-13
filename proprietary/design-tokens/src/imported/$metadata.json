@@ -25,6 +25,7 @@
     "component/alert",
     "component/link",
     "component/icon-logo",
+    "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-link",
