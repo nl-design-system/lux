@@ -1,0 +1,61 @@
+{
+  "lux": {
+    "space": {
+      "0": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "0"
+      },
+      "25": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "0.25 * 0.5rem"
+      },
+      "50": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "0.5 * 0.5rem"
+      },
+      "100": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "0.5rem"
+      },
+      "150": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "1.5 * 0.5rem"
+      },
+      "200": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "2 * 0.5rem"
+      },
+      "300": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "3 * 0.5rem"
+      },
+      "400": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "4 * 0.5rem"
+      },
+      "500": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "5 * 0.5rem"
+      },
+      "600": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "6 * 0.5rem"
+      },
+      "700": {
+        "parent": "core/default",
+        "type": "spacing",
+        "value": "7 * 0.5rem"
+      }
+    }
+  }
+}
