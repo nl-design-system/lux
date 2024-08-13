@@ -1,0 +1,14 @@
+@import "../../styles/sr-only";
+
+:host {
+  display: contents;
+  appearance: button;
+}
+
+:host([hidden]) {
+  display: none !important;
+}
+
+.lux-button {
+  --lux-icon-size: var(--lux-button-icon-size);
+}

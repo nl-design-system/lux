@@ -23,15 +23,15 @@ const DesignTokenSizingPreview = ({ token, value, set }: Props) => {
   return (
     <tr>
       <td>
-        <span className="dt-preview dt-preview--sizing" ref={bubbleElem} style={style}>
+        <span className="lsb-dt-preview lsb-dt-preview--sizing" ref={bubbleElem} style={style}>
           {token}
         </span>
       </td>
       <td>
-        <span className="dt-value">{value}</span>
+        <span className="lsb-dt-value">{value}</span>
       </td>
       <td>
-        <span className="dt-set">{set}</span>
+        <span className="lsb-dt-set">{set}</span>
       </td>
     </tr>
   );
