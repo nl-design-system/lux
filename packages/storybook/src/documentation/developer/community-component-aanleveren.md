@@ -1,9 +1,14 @@
 # Community Component Aanleveren
 
+[github-button]: https://github.com/nl-design-system/lux/tree/main/packages/storybook/src/web-components/button/button.mdx#L13
+[lux-button]: /docs/web-components-button--docs
 [mdn-slots]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot
 [nlds-components]: https://www.nldesignsystem.nl/componenten/
 [nlds-estafettemodel]: https://www.nldesignsystem.nl/handboek/estafettemodel
+[nlds-utrecht-testing]: https://nl-design-system.github.io/utrecht/storybook-react/index.html?path=/docs/react-testing--docs
 [stencil]: https://stenciljs.com/docs/introduction
+[stencil-slots-doc]: https://stenciljs.com/docs/docs-json#slots
+[tsdoc]: https://tsdoc.org/
 
 Als gebruiker van LUX mag je ook componenten aandragen. Mocht het component al beschikbaar zijn in de [NL Design System community][nlds-components] is deze geschikt om bij LUX te betrekken. Dat kunnen wij voor je doen maar dat kan je zelf ook. Dan hoef je niet op ons te wachten. Handig toch?!
 
@@ -38,12 +43,11 @@ Kies altijd een web component. Bij gelijke geschiktheid kies je een component va
 1. In `packages/web-components-stencil/src/global/app.ts` voeg je de volgende regels toe:
 
 ```js
-import { defineCustomElements as defineXXXCustomElements } from "xxx";
+import { defineCustomElements as defineXXXCustomElements } from "xxx"; // <--
 
-// en
 export default function () {
   //...
-  defineXXXCustomElements();
+  defineXXXCustomElements(); // <--
 }
 ```
 
@@ -171,32 +175,111 @@ class MyComponent {
 
 ## Testen
 
-...
+Hoewel we een werkend en doorgetest component vaan een provider overnemen moeten we wel testen of de LUX wrapper geen mogelijkheden per ongeluk afschermt. Het is dus van belang om de wrapper die je schrijft te testen. Gemeente Utrecht heeft daar een goed voorbeel van gedocumenteerd. Volg de beschreven stappen op de [Storybook van Gemeente Utrecht (Engels)][nlds-utrecht-testing].
 
 ## Documenteren
 
-...
+Documentatie is het belangrijkste product dat een design system heeft. Zonder goede documentatie is het product niet goed bruikbaar, komen er veel onnodige vragen en worden er onterecht bugs gerapporteerd. Een goede duimregel is "begrijp ik dit zelf over 3 maanden ook nog?". Vooralsnog documenteren wij alleen in de codebase met [TSDoc][tsdoc] en hier op Storybook.
 
 ### TSDoc
 
-...
+Schrijf [TSDoc][tsdoc] voor elk stukje van de API. Als het beschikbaar is bij het component van de provider kun je dat overnemen. Let er op dat je alle publieke API van het component documenteert. Dat zijn de `Prop`s, `Method`s, `Event`s, en `slot`s. Omdat `slot`s niet expliciet onderdeel zijn van een Stencil component's API worden die beschreven op de [TSDoc van de component `class`][stencil-slots-doc].
 
 ### Storybook
 
-...
+Storybook is de voornaamste vorm van LUX documentatie. Begin met het aanmaken van het beginpunt voor je component. Dit bestand heet `/packages/storybook/src/web-components/[component-naam].stories.tsx` en heeft onderstaande content. Voer het `pnpm run storybook` commando uit in de project root om de documentatie van je huidige branch te zien en volgen.
+
+```tsx
+import { LuxComponentNaam as ComponentNaam } from "@lux-design-system/web-components-react";
+import type { Meta, StoryObj } from "@storybook/react";
+
+const LuxComponentNaam = (props: PropsWithoutRef<JSX.LuxComponentNaam>) => <ComponentNaam {...props} />;
+
+const meta = {
+  title: "Web Components/Button login",
+  id: "web-components-button-login",
+  component: LuxComponentNaam,
+} satisfies Meta<typeof LuxComponentNaam>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Playground: Story = {
+  name: "Playground",
+  args: {
+    // ...
+  },
+  parameters: {
+    docs: {
+      sourceState: "shown",
+    },
+  },
+};
+```
 
 #### Provider's Content
 
-...
+Het doel van NL Design System is delen wat je hebt met de rest van de community. Dat zijn niet alleen je componenten en design tokens, maar ook bijvoorbeeld je vakkennis, onderzoeken en resultaten, documentatie, en toolset. Sommige providers van de NLDS community bieden ook hun documentatie aan om te hergebruiken. Kijk altijd eerst of dit voor jouw component ook het geval is. Als het beschikbaar en toereikend is kun je dit 1 op 1 overnemen.
+
+[Een goed voorbeeld][github-button] is het [button component][lux-button], welke zijn documentatie ook van de provider Gemeente Utrecht heeft overgenomen.
 
 #### Playground
 
-...
+De playground is misschien wel de belangrijkste story van een component. Het laat de default state zien en biedt de mogelijkheid om deze aan te passen.
+
+```ts
+const Playground: Story = {
+  name: 'Playground',
+  args: {
+    ..., // component props and their default values
+  },
+  parameters: {
+    docs: {
+      sourceState: 'shown',
+    },
+  },
+}
+```
 
 #### Visual Regression Testing
 
-...
+Niet per se documentatie maar wel onderdeel van Storybook. Visuele regressietesten geven de zekerheid dat visuele wijzigingen in een component alleen worden gemaakt als dat de bedoeling is. LUX maakt gebruik van Chromatic om deze tests uit te voeren.
+
+> **Let op!**
+>
+> Door gebruik te maken van `createVisualRegressionStory` maak je een story die niet in het menu voorkomt. Echter kan je er nog steeds naartoe navigeren door in de URL `--docs` te vervangen voor `--visual`.
+
+```tsx
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils/';
+
+export const Visual = createVisualRegressionStory(() => (
+  <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+    {...}
+  </VisualRegressionWrapper>
+));
+```
 
 #### Design Tokens
 
-...
+De design tokens zijn de kracht van elk LUX component. Alle visuele aspecten van het component wordt bepaald door de design tokens en zorgen ervoor dat het component in meerdere contexten is in te zetten. Bijvoorbeeld in die van Logius, Digid, MijnOverheid, of zelfs door deelnemers van de NLDS community.
+
+Maak een bestand genaamd `/packages/storybook/web-components/[component-naam]/tokens.json` en reflecteer de juiste structuur in JSON formaat. Gebruik hiervoor `/proprietary/design-tokens/src/imported/components/[component-naam].json` en verander het naar het formaat in bvb. `/packages/storybook/web-components/button-login/tokens.json`. Wij kunnen je hierbij helpen. Dit bestand importeer je in je `.stories.tsx` bestand.
+
+```ts
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
+import tokensDefinition from './tokens.json';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils/';
+
+const meta = {
+  ...,
+  parameters: {
+    tokens,
+    tokensDefinition,
+    tokensPrefix: 'lux-[component-naam]',
+  },
+  ...,
+};
+
+export const DesignTokens = createDesignTokensStory(meta);
+```
