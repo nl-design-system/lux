@@ -23,7 +23,7 @@ const DesignTokenColorPreview = ({ token, reference, set }: Props) => {
     <tr>
       <td>
         <span
-          className="dt-preview"
+          className="lsb-dt-preview"
           ref={bubbleElem}
           style={{ '--dt-background-color': cssVar } as React.CSSProperties}
         >
