@@ -49,7 +49,7 @@
         "type": "sizing",
         "value": "{lux.size.icon}"
       },
-      "content": {
+      "message": {
         "row-gap": {
           "type": "spacing",
           "value": "{lux.space.0}"
@@ -91,9 +91,17 @@
         "type": "fontFamilies",
         "value": "{lux.font-family.primary}"
       },
-      "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.font-weight.regular}"
+      "paragraph": {
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{lux.font-weight.regular}"
+        }
+      },
+      "heading": {
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{lux.font-weight.regular}"
+        }
       }
     }
   }
