@@ -12,7 +12,7 @@
 
 Als gebruiker van LUX mag je ook componenten aandragen. Mocht het component al beschikbaar zijn in de [NL Design System community][nlds-components] is deze geschikt om bij LUX te betrekken. Dat kunnen wij voor je doen maar dat kan je zelf ook. Dan hoef je niet op ons te wachten. Handig toch?!
 
-Natuurlijk willen wij wel dat alle componenten op de zelfde wijze gebouwd worden zodat wij het allemaal makkelijker kunnen onderhouden. Om consistentie te waarborgen vertellen wij hie hoe je zelf een NLDS community component kunt aandragen als LUX component. Hier zijn de stappen.
+Natuurlijk willen wij wel dat alle componenten op de zelfde wijze gebouwd worden zodat wij het allemaal makkelijker kunnen onderhouden. Om consistentie te waarborgen vertellen wij hier hoe je zelf een NLDS community component kunt aandragen als LUX component. Hier zijn de stappen.
 
 > **Waarom een wrapper?**
 >
