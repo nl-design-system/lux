@@ -3,7 +3,7 @@
   "author": "Community for NL Design System",
   "description": "Stencil web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@lux/web-components-stencil",
+  "name": "@lux-design-system/web-components-stencil",
   "keywords": [
     "nl-design-system"
   ],
@@ -32,23 +32,24 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec",
     "watch": "npm-run-all --parallel watch:**",
-    "watch:stencil": "chokidar --follow-symlinks --initial --command 'npm run build:stencil' '../../components/**/*.(js|jsx|ts|tsx)'",
+    "watch:stencil": "chokidar src/**/* --follow-symlinks --initial --command \"npm run build:stencil\"",
     "generate": "stencil generate"
   },
   "devDependencies": {
     "@jest/globals": "29.7.0",
-    "@lux/components-css": "workspace:*",
+    "@lux-design-system/components-css": "workspace:*",
     "@stencil/react-output-target": "0.5.3",
     "@stencil/sass": "3.0.12",
     "@types/jest": "29.5.12",
+    "@utrecht/web-component-library-stencil": "1.3.0",
     "chokidar-cli": "3.0.0",
     "npm-run-all": "4.1.5",
     "react": "18.3.1",
-    "rimraf": "5.0.7",
-    "tslib": "2.6.2",
-    "typescript": "5.4.5"
+    "rimraf": "6.0.1",
+    "tslib": "2.6.3",
+    "typescript": "5.5.4"
   },
   "dependencies": {
-    "@stencil/core": "4.18.3"
+    "@stencil/core": "4.20.0"
   }
 }

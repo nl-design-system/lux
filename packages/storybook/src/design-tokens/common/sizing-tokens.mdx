@@ -1,0 +1,41 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenOverview, DesignTokenSizingPreview } from "../../utils/components";
+
+<Meta title="Design Tokens/Common/Afmetingen" />
+
+# Sizing Design Tokens
+
+<DesignTokenOverview>
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenSizingPreview token="lux.size.target" value="3rem" set="product" />
+      <DesignTokenSizingPreview token="lux.size.icon" value="1rem" set="product" />
+    </tbody>
+  </table>
+
+## Figma tokens
+
+Deze tokens zijn specifiek voor Figma, deze komen niet terug in de code.
+
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenSizingPreview token="figma.size.icon.wrapper-height" value="figma.viewport.size.icon.wrapper-height" set="common" />
+      <DesignTokenSizingPreview token="figma.viewport.size.icon.wrapper-height" value="1.75rem" set="viewport" />
+      <DesignTokenSizingPreview token="figma.screen-size" value="90rem" set="viewport" />
+    </tbody>
+  </table>
+</DesignTokenOverview>

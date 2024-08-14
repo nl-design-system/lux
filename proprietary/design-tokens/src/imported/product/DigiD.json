@@ -3,110 +3,230 @@
     "color": {
       "brand": {
         "default": {
-          "value": "{lux.color.oranje.300}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.oranje.500}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "value": "{lux.color.oranje.100}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.oranje.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "value": "{lux.color.oranje.400}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.oranje.700}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "value": "0.25rem",
-        "type": "dimension",
         "parent": "product/DigiD",
-        "description": ""
+        "type": "borderRadius",
+        "value": "4px"
       }
     },
     "focus": {
       "outline-width": {
-        "value": "0.125rem",
-        "type": "dimension",
         "parent": "product/DigiD",
-        "description": ""
+        "type": "borderWidth",
+        "value": "2px"
       },
-      "border-radius": {
-        "value": "0.375rem",
-        "type": "dimension",
-        "parent": "product/DigiD",
-        "description": ""
+      "outline": {
+        "style": {
+          "type": "other",
+          "value": "solid"
+        }
       }
+    },
+    "font-family": {
+      "primary": {
+        "type": "fontFamilies",
+        "value": "{ro.font-family.primary}"
+      }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+      }
+    },
+    "font-size": {
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{viewport.font-size.body.small}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{viewport.font-size.body.default}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{viewport.font-size.body.large}"
+        }
+      },
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{viewport.font-size.heading.level-1}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{viewport.font-size.heading.level-2}"
+        },
+        "level-3": {
+          "value": "{viewport.font-size.heading.level-3}",
+          "type": "fontSizes"
+        },
+        "level-4": {
+          "value": "{viewport.font-size.heading.level-4}",
+          "type": "fontSizes"
+        }
+      }
+    },
+    "line-height": {
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.small}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.default}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.body.large}"
+        }
+      },
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.heading.level-1}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{viewport.line-height.heading.level-2}"
+        },
+        "level-3": {
+          "value": "{viewport.line-height.heading.level-3}",
+          "type": "lineHeights"
+        },
+        "level-4": {
+          "value": "{viewport.line-height.heading.level-4}",
+          "type": "lineHeights"
+        }
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/DigiD",
+        "type": "borderRadius",
+        "value": "6px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "{figma.viewport.size.icon.wrapper-height}",
+          "type": "sizing"
+        }
+      }
+    },
+    "product": {
+      "value": "DigiD",
+      "type": "text"
     }
   },
   "product": {
     "button": {
       "secondary": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "value": "{lux.color.border.default}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.border.default}",
           "description": ""
         },
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.foreground.default}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "value": "{lux.color.border.default}",
-            "type": "color",
             "parent": "product/DigiD",
+            "type": "color",
+            "value": "{lux.color.border.default}",
             "description": ""
           },
           "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color",
             "parent": "product/DigiD",
+            "type": "color",
+            "value": "{lux.color.foreground.default}",
             "description": ""
           },
           "background-color": {
-            "value": "{lux.color.background.hover}",
-            "type": "color",
             "parent": "product/DigiD",
+            "type": "color",
+            "value": "{lux.color.background.hover}",
             "description": ""
           }
         }
       },
       "tertiary": {
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color",
           "parent": "product/DigiD",
+          "type": "color",
+          "value": "{lux.color.foreground.default}",
           "description": ""
         },
         "hover": {
           "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color",
             "parent": "product/DigiD",
+            "type": "color",
+            "value": "{lux.color.foreground.default}",
             "description": ""
           },
           "background-color": {
-            "value": "{lux.color.background.hover}",
-            "type": "color",
             "parent": "product/DigiD",
+            "type": "color",
+            "value": "{lux.color.background.hover}",
             "description": ""
           }
+        }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{lux.font-size.large-scale.sm}"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "1.1875rem"
         }
       }
     }

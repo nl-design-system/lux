@@ -1,0 +1,42 @@
+import { Meta } from "@storybook/blocks";
+import { DesignTokenBorderPreview, DesignTokenColorPreview, DesignTokenOverview } from "../../utils/components";
+
+<Meta title="Design Tokens/Common/Focus" />
+
+# Focus Design Tokens
+
+## Radius
+
+<DesignTokenOverview>
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenColorPreview token="lux.color.focus.outline" reference="lux.color.border.strong" set="mode" />
+      <DesignTokenBorderPreview token="lux.focus.outline-width" group="outline" value="2px" set="product" />
+      <DesignTokenBorderPreview token="lux.focus.outline-offset" group="outline" value="lux.space.25" set="product" />
+    </tbody>
+  </table>
+
+## Figma tokens
+
+Deze tokens zijn specifiek voor Figma, deze komen niet terug in de code.
+
+  <table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Waarde</th>
+        <th>Set (Figma)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <DesignTokenBorderPreview token="figma.focus.outline-radius" group="outline" value="6px" set="product" />
+    </tbody>
+  </table>
+</DesignTokenOverview>

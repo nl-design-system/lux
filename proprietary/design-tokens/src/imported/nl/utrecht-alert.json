@@ -1,0 +1,173 @@
+{
+  "utrecht": {
+    "alert": {
+      "background-color": {
+        "type": "color",
+        "value": "{lux.color.background.subdued}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{lux.alert.border-color}"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{lux.alert.border-radius}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{lux.alert.border-width}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{lux.alert.color}"
+      },
+      "padding-block-start": {
+        "type": "spacing",
+        "value": "{lux.alert.padding-block-start}"
+      },
+      "padding-block-end": {
+        "type": "spacing",
+        "value": "{lux.alert.padding-block-end}"
+      },
+      "padding-inline-start": {
+        "type": "spacing",
+        "value": "{lux.alert.padding-inline-start}"
+      },
+      "padding-inline-end": {
+        "type": "spacing",
+        "value": "{lux.alert.padding-inline-end}"
+      },
+      "margin-block-start": {
+        "type": "spacing",
+        "value": "{no-token}"
+      },
+      "margin-block-end": {
+        "type": "spacing",
+        "value": "{no-token}"
+      },
+      "warning": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.alert.warning.background-color}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.alert.color}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.alert.border-color}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.alert.error.background-color}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.alert.color}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.alert.border-color}"
+        }
+      },
+      "ok": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.alert.success.background-color}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.alert.color}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.alert.border-color}"
+        }
+      },
+      "icon": {
+        "color": {
+          "type": "color",
+          "value": "{lux.color.foreground.default}",
+          "description": "Deze token mist (nog) in utrecht component"
+        },
+        "error": {
+          "color": {
+            "type": "color",
+            "value": "{lux.color.feedback.error.default}"
+          }
+        },
+        "warning": {
+          "color": {
+            "type": "color",
+            "value": "{lux.color.feedback.warning.default}"
+          }
+        },
+        "ok": {
+          "color": {
+            "type": "color",
+            "value": "{lux.color.feedback.success.default}"
+          }
+        },
+        "inset-block-start": {
+          "value": "{lux.space.25}",
+          "type": "spacing"
+        },
+        "info": {
+          "color": {
+            "type": "color",
+            "value": "{lux.color.feedback.info.default}"
+          }
+        },
+        "size": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      },
+      "column-gap": {
+        "type": "spacing",
+        "value": "{lux.alert.column-gap}"
+      },
+      "message": {
+        "row-gap": {
+          "value": "{lux.space.0}",
+          "type": "spacing"
+        }
+      },
+      "info": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.alert.info.background-color}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.alert.color}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.alert.border-color}"
+        }
+      },
+      "heading": {
+        "font-family": {
+          "value": "{lux.alert.font-family}",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "value": "{lux.font-weight.bold}",
+          "type": "fontWeights"
+        },
+        "line-height": {
+          "value": "{lux.alert.line-height}",
+          "type": "lineHeights"
+        },
+        "font-size": {
+          "value": "{lux.alert.font-size}",
+          "type": "fontSizes"
+        }
+      }
+    }
+  }
+}

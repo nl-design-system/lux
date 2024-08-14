@@ -1,0 +1,82 @@
+{
+  "utrecht": {
+    "link": {
+      "color": {
+        "type": "color",
+        "value": "{lux.link.color}"
+      },
+      "text-decoration": {
+        "type": "other",
+        "value": "{no-token}"
+      },
+      "text-decoration-color": {
+        "type": "color",
+        "value": "{lux.link.color}"
+      },
+      "text-decoration-thickness": {
+        "type": "other",
+        "value": "{no-token}"
+      },
+      "text-underline-offset": {
+        "type": "other",
+        "value": "{no-token}"
+      },
+      "active": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.active.color}"
+        }
+      },
+      "focus": {
+        "color": {
+          "type": "color",
+          "value": "{no-token}"
+        },
+        "text-decoration": {
+          "type": "other",
+          "value": "{no-token}"
+        },
+        "text-decoration-thickness": {
+          "type": "other",
+          "value": "{no-token}"
+        }
+      },
+      "hover": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.hover.color}"
+        },
+        "text-decoration": {
+          "type": "other",
+          "value": "{no-token}"
+        },
+        "text-decoration-thickness": {
+          "type": "other",
+          "value": "{no-token}"
+        }
+      },
+      "placeholder": {
+        "color": {
+          "type": "color",
+          "value": "{no-token}"
+        },
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{no-token}"
+        }
+      },
+      "visited": {
+        "color": {
+          "type": "color",
+          "value": "{lux.link.visited.color}"
+        }
+      },
+      "icon": {
+        "size": {
+          "type": "color",
+          "value": "{lux.link.icon.size}"
+        }
+      }
+    }
+  }
+}

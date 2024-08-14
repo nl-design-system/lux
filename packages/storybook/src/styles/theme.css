@@ -2,21 +2,22 @@
   background-color: var(--lux-color-background-default);
 }
 
-.visual-regression-wrapper {
+.lsb-visual-regression-wrapper {
   display: flex;
   flex-flow: column wrap;
   gap: 16px 32px;
 }
 
-.section {
+.lsb-section {
   display: flex;
   flex-direction: column;
   border: solid 1px #a7a7a7;
+  background-color: var(--lux-color-background-default);
   padding: 0 !important;
   list-style: none;
 }
 
-.section li {
+.lsb-section li {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -25,6 +26,71 @@
   padding-block: 24px;
 }
 
-.section li + li {
+.lsb-section li + li {
   border-top: solid 1px #a7a7a7;
+}
+
+.lsb-dt-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--lux-space-1x, 0.5rem);
+}
+
+.lsb-dt-preview--spacing,
+.lsb-dt-preview--sizing {
+  --dt-border-radius: 0;
+  --dt-background-color: var(--lux-color-background-subdued);
+}
+
+.lsb-dt-preview:not(.lsb-dt-preview--font)::before {
+  display: inline-block;
+  border-width: var(--dt-border-width, 1px);
+  border-style: var(--dt-border-style, solid);
+  border-color: var(--dt-border-color, var(--lux-color-border-subdued, #a7a7a7));
+  border-radius: var(--dt-border-radius, var(--lux-border-radius-circle, 50%));
+  background-color: var(--dt-background-color, var(--lux-color-background-subdued));
+  aspect-ratio: 1;
+  inline-size: var(--dt-inline-size, 1.25rem);
+  content: "";
+}
+
+.lsb-dt-value--line-height-reset {
+  line-height: 1 !important;
+}
+
+.lsb-dt-set {
+  text-transform: capitalize;
+}
+
+.lsb-citation {
+  display: inline-block;
+  margin-block-end: var(--lux-space-50);
+  background-color: var(--lux-color-background-subdued);
+  padding-inline: var(--lux-space-100);
+  padding-block: var(--lux-space-50);
+  font-style: normal;
+  font-size: var(--lux-font-size-s);
+  font-family: var(--lux-font-family-primary);
+
+  a {
+    color: var(--lux-color-foreground-link);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &,
+  p {
+    color: var(--lux-color-foreground-default);
+  }
+}
+
+.lsb-story-grid {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: var(--lux-grid-gutter);
 }

@@ -1,0 +1,143 @@
+{
+  "figma": {
+    "rijkslint": {
+      "variant": {
+        "parent": "viewport (beta)/sm",
+        "type": "text",
+        "value": "default",
+        "description": ""
+      }
+    },
+    "screen-size": {
+      "parent": "viewport (beta)/sm",
+      "type": "sizing",
+      "value": "36rem",
+      "description": ""
+    },
+    "viewport": {
+      "size": {
+        "icon": {
+          "wrapper-height": {
+            "parent": "viewport (beta)/sm",
+            "type": "sizing",
+            "value": "1.75rem"
+          }
+        }
+      }
+    }
+  },
+  "lux": {
+    "grid": {
+      "gutter": {
+        "parent": "viewport (beta)/sm",
+        "type": "spacing",
+        "value": "1.5rem",
+        "description": ""
+      },
+      "margin": {
+        "parent": "viewport (beta)/sm",
+        "type": "spacing",
+        "value": "1.5rem",
+        "description": ""
+      }
+    }
+  },
+  "viewport": {
+    "rijkslint": {
+      "wordmark": {
+        "75%": {
+          "padding-block-start": {
+            "parent": "viewport (beta)/sm",
+            "type": "spacing",
+            "value": "2.5rem",
+            "description": ""
+          }
+        },
+        "default": {
+          "padding-block-start": {
+            "parent": "viewport (beta)/sm",
+            "type": "spacing",
+            "value": "3.125rem",
+            "description": ""
+          }
+        }
+      }
+    },
+    "line-height": {
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.xl}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.lg}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.md}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xl",
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.sm}"
+        }
+      },
+      "body": {
+        "default": {
+          "value": "{lux.line-height.large-scale.sm}",
+          "type": "lineHeights"
+        },
+        "large": {
+          "value": "{lux.line-height.large-scale.md}",
+          "type": "lineHeights"
+        },
+        "small": {
+          "value": "{lux.line-height.large-scale.xs}",
+          "type": "lineHeights"
+        }
+      }
+    },
+    "font-size": {
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.xl}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.lg}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.md}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xl",
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.sm}"
+        }
+      },
+      "body": {
+        "default": {
+          "value": "{lux.font-size.large-scale.sm}",
+          "type": "fontSizes"
+        },
+        "large": {
+          "value": "{lux.font-size.large-scale.md}",
+          "type": "fontSizes"
+        },
+        "small": {
+          "value": "{lux.font-size.large-scale.xs}",
+          "type": "fontSizes"
+        }
+      }
+    }
+  }
+}

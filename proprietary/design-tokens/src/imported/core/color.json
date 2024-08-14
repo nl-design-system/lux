@@ -1,0 +1,641 @@
+{
+  "lux": {
+    "color": {
+      "grijs": {
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fbfbfb",
+          "description": ""
+        },
+        "200": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f3f3f3",
+          "description": ""
+        },
+        "300": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#e6e6e6",
+          "description": ""
+        },
+        "400": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#a7a7a7",
+          "description": ""
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#696969",
+          "description": ""
+        },
+        "600": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#383838",
+          "description": ""
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#282828",
+          "description": ""
+        },
+        "800": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#1d1d1d",
+          "description": ""
+        },
+        "900": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#171717",
+          "description": ""
+        }
+      },
+      "zwart": {
+        "parent": "core/default",
+        "type": "color",
+        "value": "#000000",
+        "description": ""
+      },
+      "wit": {
+        "parent": "core/default",
+        "type": "color",
+        "value": "#ffffff",
+        "description": ""
+      },
+      "none": {
+        "parent": "core/default",
+        "type": "color",
+        "value": "#ffffff00",
+        "description": ""
+      },
+      "lichtblauw": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#eef7fb"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#ddeff8"
+        },
+        "200": {
+          "value": "#CCE7F4",
+          "type": "color"
+        },
+        "300": {
+          "value": "#BCDFF0",
+          "type": "color"
+        },
+        "400": {
+          "value": "#ABD7ED",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#8fcae7"
+        }
+      },
+      "violet": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f2d9e7"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#e5b3d0"
+        },
+        "200": {
+          "value": "#D88CB7",
+          "type": "color"
+        },
+        "300": {
+          "value": "#CB66A0",
+          "type": "color"
+        },
+        "400": {
+          "value": "#BE4088",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#a90061"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#52002f"
+        }
+      },
+      "paars": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#e3dce7"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#c6b9cf"
+        },
+        "200": {
+          "value": "#A995B7",
+          "type": "color"
+        },
+        "300": {
+          "value": "#8D729F",
+          "type": "color"
+        },
+        "400": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#714f87"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#42145f"
+        }
+      },
+      "hemelblauw": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#d9ebf7"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#b3d7ee"
+        },
+        "200": {
+          "value": "#8CC3E6",
+          "type": "color"
+        },
+        "300": {
+          "value": "#66AFDD",
+          "type": "color"
+        },
+        "400": {
+          "value": "#409CD5",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#007bc7"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#00436c"
+        }
+      },
+      "donkerblauw": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#d9e8f0"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#b3d2e1"
+        },
+        "200": {
+          "value": "#8CBBD2",
+          "type": "color"
+        },
+        "300": {
+          "value": "#66A4C3",
+          "type": "color"
+        },
+        "400": {
+          "value": "#408EB4",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#01689b"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#013f5e"
+        }
+      },
+      "mintgroen": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#eaf8f4"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#d6f2e9"
+        },
+        "200": {
+          "value": "#C1EBDE",
+          "type": "color"
+        },
+        "300": {
+          "value": "#ACE4D3",
+          "type": "color"
+        },
+        "400": {
+          "value": "#98DDC8",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#76d2b6"
+        }
+      },
+      "mosgroen": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#ebebd9"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#d6d7b3"
+        },
+        "200": {
+          "value": "#C1C38C",
+          "type": "color"
+        },
+        "300": {
+          "value": "#ADAF66",
+          "type": "color"
+        },
+        "400": {
+          "value": "#999C40",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#777b00"
+        }
+      },
+      "groen": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#e1eddb"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#c4dbb6"
+        },
+        "200": {
+          "value": "#A5C991",
+          "type": "color"
+        },
+        "300": {
+          "value": "#88B76D",
+          "type": "color"
+        },
+        "400": {
+          "value": "#6AA549",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#39870c"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#004b17"
+        }
+      },
+      "donkergroen": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#dfe6e1"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#becdc3"
+        },
+        "200": {
+          "value": "#9DB4A4",
+          "type": "color"
+        },
+        "300": {
+          "value": "#7D9B87",
+          "type": "color"
+        },
+        "400": {
+          "value": "#5D8269",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#275937"
+        }
+      },
+      "bruin": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#efeada"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#dfd4b6"
+        },
+        "200": {
+          "value": "#CFBF90",
+          "type": "color"
+        },
+        "300": {
+          "value": "#BFA96C",
+          "type": "color"
+        },
+        "400": {
+          "value": "#AF9447",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#94710a"
+        }
+      },
+      "donkerbruin": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#e8e0df"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#d1c2be"
+        },
+        "200": {
+          "value": "#BAA39D",
+          "type": "color"
+        },
+        "300": {
+          "value": "#A3847D",
+          "type": "color"
+        },
+        "400": {
+          "value": "#8D665D",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#673327"
+        }
+      },
+      "geel": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fefbdd"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fdf6bc"
+        },
+        "200": {
+          "value": "#FCF199",
+          "type": "color"
+        },
+        "300": {
+          "value": "#FBED78",
+          "type": "color"
+        },
+        "400": {
+          "value": "#FAE856",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f9e11e"
+        }
+      },
+      "donkergeel": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fff4db"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#ffe9b8"
+        },
+        "200": {
+          "value": "#FDDE94",
+          "type": "color"
+        },
+        "300": {
+          "value": "#FDD370",
+          "type": "color"
+        },
+        "400": {
+          "value": "#FDC84D",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#ffb612"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#bf880d"
+        }
+      },
+      "oranje": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fbead9"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f6d4b3"
+        },
+        "200": {
+          "value": "#F1BE8C",
+          "type": "color"
+        },
+        "300": {
+          "value": "#EDA966",
+          "type": "color"
+        },
+        "400": {
+          "value": "#E89440",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#e17000"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#b35900"
+        }
+      },
+      "rood": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f9dfdd"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f2bfbc"
+        },
+        "200": {
+          "value": "#EC9F99",
+          "type": "color"
+        },
+        "300": {
+          "value": "#E67F78",
+          "type": "color"
+        },
+        "400": {
+          "value": "#DF6056",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#d52b1e"
+        },
+        "700": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#542621"
+        }
+      },
+      "roze": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fdeff8"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#fbdef0"
+        },
+        "200": {
+          "value": "#F8CEE8",
+          "type": "color"
+        },
+        "300": {
+          "value": "#F6BDE1",
+          "type": "color"
+        },
+        "400": {
+          "value": "#F4ADD9",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f092cd"
+        }
+      },
+      "robijnrood": {
+        "50": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#f7d9e7"
+        },
+        "100": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#efb3ce"
+        },
+        "200": {
+          "value": "#E78CB6",
+          "type": "color"
+        },
+        "300": {
+          "value": "#DF669D",
+          "type": "color"
+        },
+        "400": {
+          "value": "#D74085",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#ca005d"
+        }
+      },
+      "lintblauw": {
+        "50": {
+          "value": "#dce3ea",
+          "type": "color"
+        },
+        "100": {
+          "value": "#b8c6d5",
+          "type": "color"
+        },
+        "200": {
+          "value": "#95a9c0",
+          "type": "color"
+        },
+        "300": {
+          "value": "#738eab",
+          "type": "color"
+        },
+        "400": {
+          "value": "#4f7196",
+          "type": "color"
+        },
+        "500": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#154273"
+        }
+      }
+    }
+  },
+  "no-token": {
+    "type": "other",
+    "value": "/* */",
+    "description": "Discussie nodig"
+  }
+}

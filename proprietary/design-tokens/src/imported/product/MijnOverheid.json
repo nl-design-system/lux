@@ -3,110 +3,232 @@
     "color": {
       "brand": {
         "default": {
-          "value": "{lux.color.hemelblauw.300}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.hemelblauw.500}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "value": "{lux.color.hemelblauw.100}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.hemelblauw.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "value": "{lux.color.hemelblauw.400}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.hemelblauw.700}",
           "description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
-        "value": "0.25rem",
-        "type": "dimension",
         "parent": "product/MijnOverheid",
-        "description": ""
+        "type": "borderRadius",
+        "value": "4px"
       }
     },
     "focus": {
       "outline-width": {
-        "value": "0.125rem",
-        "type": "dimension",
         "parent": "product/MijnOverheid",
-        "description": ""
+        "type": "borderWidth",
+        "value": "2px"
       },
-      "border-radius": {
-        "value": "0.375rem",
-        "type": "dimension",
-        "parent": "product/MijnOverheid",
-        "description": ""
+      "outline": {
+        "style": {
+          "type": "other",
+          "value": "solid"
+        }
       }
+    },
+    "font-family": {
+      "primary": {
+        "type": "fontFamilies",
+        "value": "{ro.font-family.primary}"
+      }
+    },
+    "line-height": {
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.xs}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.sm}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.md}"
+        }
+      },
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.xl}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.lg}"
+        },
+        "level-3": {
+          "value": "{lux.line-height.small-scale.md}",
+          "type": "lineHeights"
+        },
+        "level-4": {
+          "value": "{lux.line-height.small-scale.sm}",
+          "type": "lineHeights"
+        }
+      }
+    },
+    "font-size": {
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.xs}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.sm}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.md}"
+        }
+      },
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.xl}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.lg}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.md}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.sm}"
+        }
+      }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "value": "6px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      }
+    },
+    "product": {
+      "value": "MijnOverheid",
+      "type": "text"
     }
   },
   "product": {
     "button": {
       "secondary": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "background-color": {
-            "value": "{lux.color.brand.subdued}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
             "description": ""
           }
         }
       },
       "tertiary": {
         "color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color",
           "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "color": {
-            "value": "{lux.color.brand.hover}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "background-color": {
-            "value": "{lux.color.brand.subdued}",
-            "type": "color",
             "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
             "description": ""
           }
+        }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{lux.font-size.large-scale.sm}"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.sm}"
         }
       }
     }

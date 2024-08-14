@@ -1,32 +1,5 @@
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("ROsanswebtextregular"),
-    url("ROsanswebtextregular.woff") format("woff"),
-    url("ROsanswebtextregular.eot") format("embedded-opentype"),
-    url("ROsanswebtextregular.ttf") format("truetype");
-  font-family: "Rijksoverheid";
-}
+@import "ro-font-face-mixin";
 
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local("ROsanswebtextbold"),
-    url("ROsanswebtextbold.woff") format("woff"),
-    url("ROsanswebtextbold.eot") format("embedded-opentype"),
-    url("ROsanswebtextbold.ttf") format("truetype");
-  font-family: "Rijksoverheid";
-}
+$lux-font-folder: "." !default;
 
-@font-face {
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local("ROsanswebtextitalic"),
-    url("ROsanswebtextitalic.woff") format("woff"),
-    url("ROsanswebtextitalic.eot") format("embedded-opentype"),
-    url("ROsanswebtextitalic.ttf") format("truetype");
-  font-family: "Rijksoverheid";
-}
+@include ro-font-face($lux-font-folder);

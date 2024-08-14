@@ -13,16 +13,18 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'bundle',
+      includeGlobalScripts: true,
     },
     {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
-      componentCorePackage: '@lux/web-components-stencil',
+      componentCorePackage: '@lux-design-system/web-components-stencil',
       proxiesFile: '../web-components-react/src/components.ts',
     }),
   ],
   plugins: [sass()],
   extras: { enableImportInjection: true },
+  globalScript: 'src/global/app.ts',
 };

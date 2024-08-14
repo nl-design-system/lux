@@ -1,0 +1,108 @@
+{
+  "lux": {
+    "alert": {
+      "color": {
+        "type": "color",
+        "value": "{lux.color.grijs.700}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{lux.color.none}"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{lux.border-radius.default}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{lux.border-width.default}"
+      },
+      "column-gap": {
+        "type": "spacing",
+        "value": "{lux.space.100}"
+      },
+      "padding-block-end": {
+        "type": "spacing",
+        "value": "{lux.space.150}"
+      },
+      "padding-block-start": {
+        "type": "spacing",
+        "value": "{lux.space.150}"
+      },
+      "padding-inline-end": {
+        "type": "spacing",
+        "value": "{lux.space.150}"
+      },
+      "padding-inline-start": {
+        "type": "spacing",
+        "value": "{lux.space.150}"
+      },
+      "icon-start-size": {
+        "type": "sizing",
+        "value": "24px"
+      },
+      "min-inline-size": {
+        "type": "sizing",
+        "value": "160px"
+      },
+      "close-button-size": {
+        "type": "sizing",
+        "value": "{lux.size.icon}"
+      },
+      "message": {
+        "row-gap": {
+          "type": "spacing",
+          "value": "{lux.space.0}"
+        }
+      },
+      "info": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.info.subdued}"
+        }
+      },
+      "success": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.success.subdued}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.error.subdued}"
+        }
+      },
+      "warning": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.feedback.warning.subdued}"
+        }
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{lux.line-height.body.default}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{lux.font-size.body.default}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{lux.font-family.primary}"
+      },
+      "paragraph": {
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{lux.font-weight.regular}"
+        }
+      },
+      "heading": {
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{lux.font-weight.regular}"
+        }
+      }
+    }
+  }
+}

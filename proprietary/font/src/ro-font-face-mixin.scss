@@ -1,0 +1,67 @@
+@mixin ro-font-face($folder: ".") {
+  @font-face {
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local("ROsanswebtextregular"),
+      url("#{$folder}/ROsanswebtextregular.woff") format("woff"),
+      url("#{$folder}/ROsanswebtextregular.eot") format("embedded-opentype"),
+      url("#{$folder}/ROsanswebtextregular.ttf") format("truetype");
+    font-family: "RijksoverheidSansWebText";
+  }
+
+  @font-face {
+    font-style: normal;
+    font-weight: 700;
+    src:
+      local("ROsanswebtextbold"),
+      url("#{$folder}/ROsanswebtextbold.woff") format("woff"),
+      url("#{$folder}/ROsanswebtextbold.eot") format("embedded-opentype"),
+      url("#{$folder}/ROsanswebtextbold.ttf") format("truetype");
+    font-family: "RijksoverheidSansWebText";
+  }
+
+  @font-face {
+    font-style: italic;
+    font-weight: 400;
+    src:
+      local("ROsanswebtextitalic"),
+      url("#{$folder}/ROsanswebtextitalic.woff") format("woff"),
+      url("#{$folder}/ROsanswebtextitalic.eot") format("embedded-opentype"),
+      url("#{$folder}/ROsanswebtextitalic.ttf") format("truetype");
+    font-family: "RijksoverheidSansWebText";
+  }
+
+  @font-face {
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local("ROserifwebregular"),
+      url("#{$folder}/ROserifwebregular.woff") format("woff"),
+      url("#{$folder}/ROserifwebregular.eot") format("embedded-opentype"),
+      url("#{$folder}/ROserifwebregular.ttf") format("truetype");
+    font-family: "RijksoverheidSerifWeb";
+  }
+
+  @font-face {
+    font-style: normal;
+    font-weight: 700;
+    src:
+      local("ROserifwebbold"),
+      url("#{$folder}/ROserifwebbold.woff") format("woff"),
+      url("#{$folder}/ROserifwebbold.eot") format("embedded-opentype"),
+      url("#{$folder}/ROserifwebbold.ttf") format("truetype");
+    font-family: "RijksoverheidSerifWeb";
+  }
+
+  @font-face {
+    font-style: italic;
+    font-weight: 400;
+    src:
+      local("ROserifwebitalic"),
+      url("#{$folder}/ROserifwebitalic.woff") format("woff"),
+      url("#{$folder}/ROserifwebitalic.eot") format("embedded-opentype"),
+      url("#{$folder}/ROserifwebitalic.ttf") format("truetype");
+    font-family: "RijksoverheidSerifWeb";
+  }
+}

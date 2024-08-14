@@ -1,3 +1,11 @@
 {
-  "extends": ["stylelint-config-standard-scss"]
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "selector-class-pattern": [
+      "^(sb-?|storybook-|docs-|lux-|lsb-)([a-z-]+)+$",
+      {
+        "message": "Please use the prefix `lsb-` for our custom Storybook components."
+      }
+    ]
+  }
 }

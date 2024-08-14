@@ -1,0 +1,33 @@
+{
+  "lux": {
+    "border-radius": {
+      "circle": {
+        "parent": "core/default",
+        "type": "borderRadius",
+        "value": "999px"
+      },
+      "none": {
+        "parent": "core/default",
+        "type": "borderRadius",
+        "value": "0px"
+      }
+    },
+    "border-width": {
+      "default": {
+        "parent": "core/default",
+        "type": "borderWidth",
+        "value": "1px"
+      },
+      "m": {
+        "parent": "core/default",
+        "type": "borderWidth",
+        "value": "2px"
+      },
+      "none": {
+        "parent": "core/default",
+        "type": "borderWidth",
+        "value": "0px"
+      }
+    }
+  }
+}
