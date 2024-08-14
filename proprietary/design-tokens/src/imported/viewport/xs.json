@@ -139,5 +139,15 @@
         }
       }
     }
+  },
+  "utrecht": {
+    "alert": {
+      "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.0}",
+          "type": "spacing"
+        }
+      }
+    }
   }
 }
