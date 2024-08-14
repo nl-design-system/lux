@@ -30,14 +30,14 @@
       "focus": {
         "color": {
           "type": "color",
-          "value": "{lux.color.foreground.link}"
+          "value": "{lux.link.focus.color}"
         },
         "text-decoration-thickness": {
           "type": "other",
           "value": "auto"
         },
         "background-color": {
-          "value": "{lux.color.none}",
+          "value": "{lux.link.focus.background-color}",
           "type": "color"
         },
         "text-decoration": {
@@ -90,6 +90,10 @@
       "text-decoration": {
         "value": "{lux.link.text-decoration}",
         "type": "textDecoration"
+      },
+      "column-gap": {
+        "value": "{lux.link.column-gap}",
+        "type": "spacing"
       }
     }
   }

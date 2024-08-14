@@ -65,6 +65,14 @@
         "text-decoration": {
           "value": "none",
           "type": "textDecoration"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.color.foreground.link}"
+        },
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
         }
       }
     }
