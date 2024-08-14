@@ -193,16 +193,22 @@ jobs:
       - name: "Continuous Deployment: build"
         run: pnpm run --if-present build
 
-      - name: "Continuous Deployment: publish to GitHub repository"
+      - name: Publish to GitHub repository
+        uses: changesets/action@aba318e9165b45b7948c60273e0b72fce0a64eb9 # v1.4.7
+        id: changeset
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
           GIT_AUTHOR_NAME: "NL Design System"
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
           GIT_COMMITTER_NAME: "NL Design System"
-        run: |
-          git push --set-upstream origin HEAD
-          pnpm run release
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        with:
+          commit: "docs(release): design system packages"
+          setupGitUser: false
+          title: "docs(release): design system packages"
+          publish: "pnpm run publish"
 
       - name: "Continuous Deployment: publish to npm"
         env:
@@ -212,3 +218,5 @@ jobs:
           pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
           pnpm run publish
           pnpm config delete "//registry.npmjs.org/:_authToken"
+
+
