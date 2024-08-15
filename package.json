@@ -72,8 +72,8 @@
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
-    "watch:storybook": "pnpm run --filter @lux/storybook storybook",
-    "watch:tokens-studio": "pnpm run --filter @lux/design-tokens watch:tokens-studio"
+    "watch:storybook": "pnpm run --filter @lux-design-system/storybook storybook",
+    "watch:tokens-studio": "pnpm run --filter @lux-design-system/design-tokens watch:tokens-studio"
   },
   "dependencies": {
     "http-server": "14.1.1"

@@ -1,0 +1,21 @@
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/link-css/README.md?raw";
+import * as LinkStories from "./link.stories";
+
+<Meta of={LinkStories} />
+
+<p className="lsb-citation">
+  {`Documentatie afkomstig van `}
+  <cite>
+    {/* prettier-ignore */}
+    <a href="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-link--docs">Utrecht Link</a>
+  </cite>
+  {`.`}
+</p>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={LinkStories.Playground} />
+<Controls of={LinkStories.Playground} />
