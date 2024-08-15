@@ -10,7 +10,8 @@
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/lux.git"
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "packages/web-components-react"
   },
   "sideEffects": false,
   "scripts": {

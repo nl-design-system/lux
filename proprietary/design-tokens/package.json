@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha.17",
+  "version": "1.0.0-alpha.19",
   "author": "Logius",
   "description": "Design Tokens for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -18,7 +18,8 @@
   ],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/lux.git"
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "properietary/design-tokens"
   },
   "homepage": "https://nl-design-system.github.io/lux/",
   "bugs": "https://github.com/nl-design-system/lux/issues",

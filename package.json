@@ -14,19 +14,17 @@
     "node": "^20",
     "pnpm": "^9"
   },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "."
+  },
   "volta": {
     "node": "20.16.0"
   },
-  "workspaces": [
-    "./packages/*",
-    "./proprietary/*"
-  ],
   "devDependencies": {
-    "@lerna-lite/cli": "3.8.0",
-    "@lerna-lite/publish": "3.8.0",
-    "@lerna-lite/run": "3.8.0",
-    "@lerna-lite/version": "3.8.0",
-    "@types/node": "22.1.0",
+    "@changesets/cli": "2.27.7",
+    "@types/node": "20.14.1",
     "@typescript-eslint/eslint-plugin": "8.0.1",
     "@typescript-eslint/parser": "8.0.1",
     "eslint": "8.57.0",
@@ -50,9 +48,9 @@
     "typescript": "5.5.4"
   },
   "scripts": {
-    "build": "lerna run build",
-    "clean": "lerna run clean",
-    "lint": "npm-run-all --continue-on-error lint:** lint-workspaces",
+    "build": "pnpm run --recursive build",
+    "clean": "pnpm run --recursive clean",
+    "lint": "pnpm run --aggregate-output --if-present '/^lint:.*/' && pnpm run --recursive lint",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint --ext .js,.cjs,.mjs,.json,.jsx,.mdx,.ts,.tsx --report-unused-disable-directives .",
     "lint:md": "markdownlint '**/*.md'",
@@ -62,23 +60,20 @@
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --ext .js,.cjs,.mjs,.json,.jsx,.mdx,.ts,.tsx --fix --report-unused-disable-directives .",
     "lint-fix:md": "markdownlint --fix '**/*.md'",
-    "lint-workspaces": "lerna run --no-bail lint",
-    "lint-build": "lerna run --no-bail lint-build",
+    "lint-build": "pnpm run --if-present --recursive lint-build",
     "prepare": "husky",
     "prettier": "prettier --write .",
-    "publish": "lerna publish from-package --yes",
-    "release": "lerna version prerelease --conventional-prerelease --no-changelog --no-private --yes",
+    "publish": "changeset publish",
     "start": "node_modules/http-server/bin packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
-    "test": "npm run test-workspaces",
+    "test": "pnpm run --if-present --recursive test",
     "test-update": "npm-run-all --sequential clean lint build test",
-    "test-workspaces": "lerna run --no-bail test",
-    "prewatch:storybook": "lerna run build:stencil && lerna run build:style-dictionary",
+    "prewatch:storybook": "pnpm run --recursive build:stencil && pnpm run --recursive build:style-dictionary",
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
-    "watch:storybook": "npm run --workspace packages/storybook storybook",
-    "watch:style-dictionary": "lerna run watch:style-dictionary"
+    "watch:storybook": "pnpm run --filter @lux/storybook storybook",
+    "watch:tokens-studio": "pnpm run --filter @lux/design-tokens watch:tokens-studio"
   },
   "dependencies": {
     "http-server": "14.1.1"
