@@ -65,11 +65,11 @@ Ga naar `packages/web-components-stencil` en voer het commando `pnpm run generat
   - `Stylesheet (.scss)`
   - `Spec test (.spec.tsx)`
 
-Er worden een aantal bestanden voor je gegenereerd. Je mag overal de `lux` prefix verwijderen, behalve in StencilJS's `@Component` class decorator.
+Er worden een aantal bestanden voor je gegenereerd in `/components/components`. Verplaats deze bestanden naar `/packages/web-components-stencil/src/components`. Verwijder overal de `lux` prefix, behalve waar het de naam van het HTML element beschrijft.
 
 > **Let op:**
 >
-> Kijk hierbij ook naar referenties en relative paden tussen de verschillende bestanden.
+> Kijk hierbij ook naar referenties en relatieve paden tussen de verschillende bestanden.
 
 In het gegenereerde SCSS bestand voeg je de volgende styling rules toe:
 
