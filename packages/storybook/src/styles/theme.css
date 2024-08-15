@@ -73,6 +73,7 @@
   font-style: normal;
   font-size: var(--lux-font-size-s);
   font-family: var(--lux-font-family-primary);
+  white-space: nowrap;
 
   a {
     color: var(--lux-color-foreground-link);
