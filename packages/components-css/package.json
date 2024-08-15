@@ -8,6 +8,11 @@
     "nl-design-system"
   ],
   "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/lux-community.git",
+    "directory": "packages/components-css"
+  },
   "devDependencies": {
     "@babel/core": "7.25.2",
     "@storybook/addon-docs": "8.2.7",
