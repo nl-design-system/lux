@@ -1,0 +1,14 @@
+:host {
+  --lux-icon-size: var(--lux-alert-icon-start-size);
+  --lux-icon-color-contrast: var(--lux-color-wit);
+
+  display: block;
+}
+
+:host([type="warning"]) {
+  --lux-icon-color-contrast: var(--lux-color-zwart);
+}
+
+:host([hidden]) {
+  display: none !important;
+}

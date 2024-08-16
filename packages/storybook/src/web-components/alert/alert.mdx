@@ -1,0 +1,49 @@
+import { Canvas, Controls, Description, /*Markdown,*/ Meta } from "@storybook/blocks";
+/* import markdown from "@utrecht/alert-css/README.md?raw"; */
+import * as AlertStories from "./alert.stories";
+
+<Meta of={AlertStories} />
+
+## Playground
+
+<Canvas of={AlertStories.Playground} />
+<Controls of={AlertStories.Playground} />
+
+## Variants (type)
+
+### Info
+
+<Description of={AlertStories.Info} />
+<Canvas of={AlertStories.Info} />
+
+### OK / Confirm
+
+<Description of={AlertStories.Ok} />
+<Canvas of={AlertStories.Ok} />
+
+### Warning
+
+<Description of={AlertStories.Warning} />
+<Canvas of={AlertStories.Warning} />
+
+### Error
+
+<Description of={AlertStories.Error} />
+<Canvas of={AlertStories.Error} />
+
+## Inhoud
+
+### Heading / Title
+
+<Description of={AlertStories.Heading} />
+<Canvas of={AlertStories.Heading} />
+
+### Custom Icon
+
+<Description of={AlertStories.Icon} />
+<Canvas of={AlertStories.Icon} />
+
+### No Icon
+
+<Description of={AlertStories.NoIcon} />
+<Canvas of={AlertStories.NoIcon} />

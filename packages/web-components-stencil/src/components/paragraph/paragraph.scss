@@ -1,0 +1,7 @@
+:host {
+  display: flow-root;
+}
+
+:host([hidden]) {
+  display: none !important;
+}

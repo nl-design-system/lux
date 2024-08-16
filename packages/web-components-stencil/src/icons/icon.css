@@ -1,5 +1,17 @@
+/* stylelint-disable custom-property-pattern */
 :host {
+  --_lux-icon-primary-color: var(
+    --lux-icon-color,
+    var(--utrecht-icon-color, var(--lux-color-foreground-on-emphasis, white))
+  );
+  --_lux-icon-secondary-color: var(--lux-icon-color-contrast, var(--lux-color-foreground-default, black));
+
   display: inline-grid;
+  padding-inline-start: var(--lux-icon-padding-inline-start, 0);
+  padding-inline-end: var(--lux-icon-padding-inline-end, 0);
+  padding-block-start: var(--lux-icon-padding-block-start, 0);
+  padding-block-end: var(--lux-icon-padding-block-end, 0);
   inline-size: var(--lux-icon-size, 1rem);
   block-size: var(--lux-icon-size, 1rem);
+  color: var(--_lux-icon-primary-color); /* currentColor */
 }
