@@ -1,7 +1,13 @@
 :host {
-  display: block;
+  display: contents;
 }
 
 :host([hidden]) {
   display: none !important;
+}
+
+.lux-link {
+  &.force-state--hover {
+    --utrecht-link-color: var(--lux-link-hover-color);
+  }
 }

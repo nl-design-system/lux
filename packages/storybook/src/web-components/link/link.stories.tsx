@@ -4,7 +4,11 @@ import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type PropsWithChildren } from 'react';
 import tokensDefinition from './tokens.json';
-import { createDesignTokensStory } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { userEvent, within } from '@storybook/test';
+import { VisualStates } from './visual/States';
+
+const href= 'http://logius.nl/';
 
 const LuxLink = (props: PropsWithChildren<JSX.LuxLink>) => <Link {...props} />;
 
@@ -38,7 +42,7 @@ export default meta;
 export const Playground: Story = {
   name: 'Playground',
   args: {
-    href: 'https://logius.nl',
+    href,
     download: undefined,
     target: undefined,
     children: 'Logius',
@@ -50,4 +54,55 @@ export const Playground: Story = {
   },
 };
 
+export const Hover: Story = {
+  name: 'Hover',
+  args: {
+    href,
+    children: 'Hover Link',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = await within(canvasElement);
+    const luxLink = canvas.getByShadowText('Hover Link');
+    await userEvent.hover(luxLink);
+  }
+};
+
+export const Active: Story = {
+  name: 'Active',
+  args: {
+    href,
+    children: 'Active Link',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = await within(canvasElement);
+    const luxLink = canvas.getByShadowText('Active Link');
+    await userEvent.pointer({ target: luxLink, keys: '[MouseLeft]'});
+  }
+};
+
+export const Focus: Story = {
+  name: 'Focus',
+  args: {
+    href,
+    children: 'Focus Link',
+  },
+  play: async () => {
+    await userEvent.keyboard('[Tab]');
+  }
+};
+
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="lux-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <Focus />
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <h4 className="lux-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
+));

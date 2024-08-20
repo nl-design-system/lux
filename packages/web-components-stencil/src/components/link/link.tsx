@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, Element, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'lux-link',
@@ -6,6 +6,8 @@ import { Component, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class Link {
+  @Element() private host!: HTMLElement;
+
   /**
    * Laat de browser de {@link href} als download aanbieden. Geef een string op om een bestandsnaam te suggereren
    *
@@ -25,10 +27,15 @@ export class Link {
   @Prop() public readonly target?: HTMLAnchorElement['target'];
 
   render() {
+    const className = {
+      [this.host.className]: Boolean(this.host.className),
+      'lux-link': true,
+    };
+    console.log({ className })
     const { href, download, target } = this;
 
     return (
-      <utrecht-link href={href} download={download} target={target}>
+      <utrecht-link className={className} href={href} download={download} target={target}>
         <slot />
       </utrecht-link>
     );
