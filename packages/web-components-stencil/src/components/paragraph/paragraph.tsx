@@ -10,9 +10,9 @@ export class Paragraph {
 
   render() {
     return (
-      <utrecht-paragraph part="utrecht-paragraph">
+      <p class="utrecht-paragraph">
         <slot />
-      </utrecht-paragraph>
+      </p>
     );
   }
 }

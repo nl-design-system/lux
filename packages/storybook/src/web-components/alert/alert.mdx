@@ -1,8 +1,16 @@
-import { Canvas, Controls, Description, /*Markdown,*/ Meta } from "@storybook/blocks";
-/* import markdown from "@utrecht/alert-css/README.md?raw"; */
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/alert-css/README.md?raw";
 import * as AlertStories from "./alert.stories";
 
 <Meta of={AlertStories} />
+
+<cite className="lsb-citation">
+  Documentatie afkomstig van
+  <a href="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-alert--docs">
+    Utrecht Alert
+  </a>
+</cite>
+<Markdown>{markdown}</Markdown>
 
 ## Playground
 
@@ -33,11 +41,6 @@ import * as AlertStories from "./alert.stories";
 
 ## Inhoud
 
-### Heading / Title
-
-<Description of={AlertStories.Heading} />
-<Canvas of={AlertStories.Heading} />
-
 ### Custom Icon
 
 <Description of={AlertStories.Icon} />
@@ -47,3 +50,8 @@ import * as AlertStories from "./alert.stories";
 
 <Description of={AlertStories.NoIcon} />
 <Canvas of={AlertStories.NoIcon} />
+
+### Aria `role=alert`
+
+<Description of={AlertStories.AriaRole} />
+<Canvas of={AlertStories.AriaRole} sourceState="shown" />

@@ -328,9 +328,15 @@ importers:
       '@types/react-dom':
         specifier: 18.3.0
         version: 18.3.0
+      '@utrecht/alert-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@utrecht/button-css':
         specifier: 1.2.0
         version: 1.2.0
+      '@utrecht/paragraph-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@vitejs/plugin-react':
         specifier: 4.3.1
         version: 4.3.1(vite@5.3.5(@types/node@22.1.0)(sass@1.77.8)(terser@5.29.2))
@@ -410,6 +416,9 @@ importers:
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
+      '@utrecht/paragraph-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@utrecht/web-component-library-stencil':
         specifier: 1.3.0
         version: 1.3.0
@@ -2914,11 +2923,17 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
+  '@utrecht/alert-css@1.1.0':
+    resolution: {integrity: sha512-UeX8qfd9LppHg4C0PwkRB/BMh2U7i3NPVavKX6p2KNSM3k6tPWajkLehfNODtfgn0bFlcplIwC+Tw2cGPxmedQ==}
+
   '@utrecht/button-css@1.2.0':
     resolution: {integrity: sha512-aYqnmuT5HOshv8Kr9IvBsJef+2KNKRNwLPQHxNC2fSGXWDFzROAeChUr0A1Ylt45aAApAD/bxxIHHBAeS1PwEA==}
 
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
+
+  '@utrecht/paragraph-css@1.1.0':
+    resolution: {integrity: sha512-HxkYL/W0tkHngucdBFHOK8t7OmUmlnz4uIXP4GBXdA299Hp+RGb/1vaH5A2RaIN0P7/4v6EkuV4lquOcHx0K0Q==}
 
   '@utrecht/web-component-library-stencil@1.3.0':
     resolution: {integrity: sha512-7/S36RhMXkjo17ShOyUGWbOVt7lQtMUt6aOtz/u0xuqccofEyFNp3bx77+3nT3esFFUZ7YW77CVjMtPpNJpAjQ==}
@@ -11814,11 +11829,15 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
+  '@utrecht/alert-css@1.1.0': {}
+
   '@utrecht/button-css@1.2.0': {}
 
   '@utrecht/components@4.0.0':
     dependencies:
       clsx: 1.2.1
+
+  '@utrecht/paragraph-css@1.1.0': {}
 
   '@utrecht/web-component-library-stencil@1.3.0':
     dependencies:

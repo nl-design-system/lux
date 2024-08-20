@@ -7,17 +7,17 @@ import { Component, Element, h, Prop } from '@stencil/core';
 })
 export class Alert {
   @Prop() type?: string;
-  @Prop() icon? = true;
+  @Prop() hideIcon? = false;
   @Element() hostElement!: HTMLElement;
 
   // private utrechtAlertElement?: HTMLUtrechtAlertElement;
 
   render() {
-    const { type, icon } = this;
+    const { type, hideIcon } = this;
 
     return (
       <utrecht-alert type={type} part="utrecht-alert">
-        {icon ? (
+        {!hideIcon ? (
           <slot name="icon" slot="icon">
             {(() => {
               switch (type) {

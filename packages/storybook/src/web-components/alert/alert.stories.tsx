@@ -1,23 +1,24 @@
-//import tokens from '@lux-design-system/design-tokens/dist/index.json';
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import {
   LuxAlert as Alert,
-  // LuxIconChevronLeft as IconChevronLeft,
+  LuxButton as Button,
   LuxIconMail as IconMail,
-  // LuxIconWarning as IconWarning,
   LuxParagraph as Paragraph,
-  // LuxIconChevronRight as IconChevronRight,
 } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
-// import { useArgs } from '@storybook/preview-api';
+import { useState } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
-// import { userEvent } from '@storybook/test';
-import { type PropsWithChildren } from 'react';
-// import { within } from 'shadow-dom-testing-library';
-// import tokensDefinition from './tokens.json';
-// import { createDesignTokensStory } from '../../utils';
+import { type HTMLAttributes, type PropsWithChildren } from 'react';
+import tokensDefinition from './tokens.json';
+import { createDesignTokensStory } from '../../utils';
 
-const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert>) => <Alert {...props} />;
+const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert> & HTMLAttributes<HTMLLuxButtonElement>) => (
+  <Alert {...props} />
+);
 const LuxParagraph = ({ children }: any) => <Paragraph>{children}</Paragraph>;
+const LuxButton = (props: PropsWithChildren<JSX.LuxButton> & HTMLAttributes<HTMLLuxButtonElement>) => (
+  <Button {...props} />
+);
 
 type Story = StoryObj<typeof meta>;
 
@@ -27,26 +28,31 @@ const meta = {
   component: LuxAlert,
   subcomponents: { LuxParagraph },
   parameters: {
-    // tokens,
-    // tokensPrefix: 'lux-alert',
-    // tokensDefinition,
+    tokens,
+    tokensPrefix: 'lux-alert',
+    tokensDefinition,
   },
   argTypes: {
     children: {
       name: 'content',
       description: 'Alert text',
       control: 'text',
+      table: {
+        type: {
+          summary: 'HTML Content',
+        },
+      },
     },
     type: {
       type: 'string',
       control: 'select',
       options: [undefined, 'info', 'ok', 'warning', 'error'],
     },
-    icon: {
+    hideIcon: {
       type: 'boolean',
       table: {
         defaultValue: {
-          summary: 'true',
+          summary: 'false',
         },
       },
     },
@@ -63,7 +69,7 @@ const AlertTemplate: Story = {
   ),
 };
 
-const textTemplate = (name = 'odor amet') =>
+const textTemplate = (name = 'dolor sit amet') =>
   `Lorem ipsum ${name}, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur lobortis aliquam lectus bibendum.`;
 
 export const Playground: Story = {
@@ -71,7 +77,7 @@ export const Playground: Story = {
   name: 'Playground',
   args: {
     children: textTemplate(),
-    type: undefined,
+    type: 'ok',
   },
   parameters: {
     docs: {
@@ -117,7 +123,9 @@ export const Error: Story = {
   },
 };
 
-export const Heading: Story = {
+// TODO: Remove comment tags when Heading is done
+// And add a Story to the MDX
+/*export const Heading: Story = {
   ...AlertTemplate,
   name: 'With a Heading',
   args: {
@@ -126,13 +134,13 @@ export const Heading: Story = {
   },
   render: (args) => (
     <LuxAlert {...args}>
-      <h2 title="NOTE: waiting for lux-heading" style={{ margin: 0 }}>
+      <LuxHeading level={2}>
         Title of the Alert
-      </h2>
+      </LuxHeading>
       <LuxParagraph>{args.children}</LuxParagraph>
     </LuxAlert>
   ),
-};
+};*/
 
 export const Icon: Story = {
   name: 'Custom Icon',
@@ -160,7 +168,47 @@ export const NoIcon: Story = {
   name: 'No Icon',
   args: {
     type: 'info',
-    icon: false,
+    hideIcon: true,
     children: textTemplate('No Icon alert'),
   },
 };
+
+export const AriaRole: Story = {
+  ...AlertTemplate,
+  name: 'Aria Role Alert',
+  args: {
+    type: 'error',
+    children: 'Houston, we hebben een probleem.',
+    role: 'alert',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Hint: test met een Screen reader',
+      },
+    },
+  },
+  render: (args: any) => {
+    const [shown, toggleAlert] = useState(false);
+
+    const onClick = () => {
+      toggleAlert(!shown);
+    };
+
+    return (
+      <>
+        {shown ? (
+          <LuxAlert {...args}>
+            <LuxParagraph>{args.children}</LuxParagraph>
+          </LuxAlert>
+        ) : null}
+        <br />
+        <LuxButton appearance="subtle-button" onClick={onClick}>
+          Toggle Alert
+        </LuxButton>
+      </>
+    );
+  },
+};
+
+export const DesignTokens = createDesignTokensStory(meta);

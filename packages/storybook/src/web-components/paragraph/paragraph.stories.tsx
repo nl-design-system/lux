@@ -1,19 +1,12 @@
-//import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import {
-  LuxParagraph as Paragraph,
-  // LuxIconChevronLeft as IconChevronLeft,
-  // LuxIconChevronRight as IconChevronRight,
-} from '@lux-design-system/web-components-react';
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
+import { LuxParagraph as Paragraph } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
-// import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
-// import { userEvent } from '@storybook/test';
-import { type PropsWithChildren } from 'react';
-// import { within } from 'shadow-dom-testing-library';
-// import tokensDefinition from './tokens.json';
-// import { createDesignTokensStory } from '../../utils';
+import { type HTMLAttributes, type PropsWithChildren } from 'react';
+import tokensDefinition from './tokens.json';
+import { createDesignTokensStory } from '../../utils';
 
-const LuxParagraph = (props: PropsWithChildren<JSX.LuxParagraph>) => <Paragraph {...props} />;
+const LuxParagraph = (props: PropsWithChildren<JSX.LuxParagraph> & HTMLAttributes<any>) => <Paragraph {...props} />;
 
 type Story = StoryObj<typeof meta>;
 
@@ -22,43 +15,21 @@ const meta = {
   id: 'web-components-paragraph',
   component: LuxParagraph,
   parameters: {
-    // tokens,
-    // tokensPrefix: 'lux-alert',
-    // tokensDefinition,
+    tokens,
+    tokensPrefix: 'lux-alert',
+    tokensDefinition,
   },
   argTypes: {
-    // appearance: {
-    //   control: { type: 'select' },
-    //   options: [undefined, 'button', 'primary-action-button', 'secondary-action-button', 'subtle-button'],
-    // },
     children: {
-      name: 'label',
-      description: 'Button text',
+      name: 'content',
+      description: 'Paragraph text',
       control: 'text',
+      table: {
+        type: {
+          summary: 'HTML Content',
+        },
+      },
     },
-    // busy: {
-    //   type: 'boolean',
-    // },
-    // disabled: {
-    //   type: 'boolean',
-    // },
-    // expanded: {
-    //   control: 'select',
-    //   options: [undefined, 'false', 'true'],
-    // },
-    // pressed: {
-    //   control: 'select',
-    //   options: [undefined, 'false', 'true', 'mixed'],
-    // },
-    // type: {
-    //   control: 'select',
-    //   options: [undefined, 'info', 'ok', 'warning', 'error'],
-    //   table: {
-    //     defaultValue: {
-    //       summary: 'info',
-    //     },
-    //   },
-    // },
   },
 } satisfies Meta<typeof LuxParagraph>;
 
@@ -67,7 +38,8 @@ export default meta;
 export const Playground: Story = {
   name: 'Playground',
   args: {
-    children: 'lalala',
+    role: 'alert',
+    children: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur lobortis aliquam lectus bibendum.`,
   },
   parameters: {
     docs: {
@@ -76,3 +48,5 @@ export const Playground: Story = {
   },
   tags: ['!autodocs'],
 };
+
+export const DesignTokens = createDesignTokensStory(meta);

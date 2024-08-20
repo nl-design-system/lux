@@ -1,12 +1,23 @@
-import { Canvas, Controls, /*Description, Markdown,*/ Meta } from "@storybook/blocks";
-/* import markdown from "@utrecht/paragraph-css/README.md?raw"; */
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/paragraph-css/README.md?raw";
 import * as ParagraphStories from "./paragraph.stories";
 
 <Meta of={ParagraphStories} />
+
+<cite className="lsb-citation">
+  Documentatie afkomstig van
+  <a href="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-paragraph--docs">
+    Utrecht Paragraph
+  </a>
+</cite>
+<Markdown>{markdown}</Markdown>
+
+## Wijzigingen tov huidig Utrecht Paragraph
+
+Het attribute `lead` en `small` is niet geimplementeerd in onze versie van het component.
+Het lijkt erop dat deze ook niet in het `nl-paragraph` gaan komen, maar in een los component.
 
 ## Playground
 
 <Canvas of={ParagraphStories.Playground} />
 <Controls of={ParagraphStories.Playground} />
-
-## Variants (type)

@@ -10,7 +10,9 @@ describe('lux-paragraph', () => {
     expect(page.root).toEqualHtml(`
       <lux-paragraph>
         <mock:shadow-root>
-          <slot></slot>
+          <p class="utrecht-paragraph">
+            <slot></slot>
+          </p>
         </mock:shadow-root>
       </lux-paragraph>
     `);
