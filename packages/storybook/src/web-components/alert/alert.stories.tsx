@@ -10,7 +10,7 @@ import { useState } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
 import tokensDefinition from './tokens.json';
-import { createDesignTokensStory } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert> & HTMLAttributes<HTMLLuxButtonElement>) => (
   <Alert {...props} />
@@ -212,3 +212,28 @@ export const AriaRole: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+const VisualAlertTemplate = ({ children, type }: PropsWithChildren<JSX.LuxAlert>) => (
+  <LuxAlert type={type}>
+    <LuxParagraph>{children}</LuxParagraph>
+  </LuxAlert>
+);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="lux-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <VisualAlertTemplate type="info">Info Alert</VisualAlertTemplate>
+      <VisualAlertTemplate type="ok">Okay Alert</VisualAlertTemplate>
+      <VisualAlertTemplate type="warning">Warning Alert</VisualAlertTemplate>
+      <VisualAlertTemplate type="error">Error Alert</VisualAlertTemplate>
+    </VisualRegressionWrapper>
+    <h4 className="lux-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualAlertTemplate type="info">Info Alert</VisualAlertTemplate>
+      <VisualAlertTemplate type="ok">Okay Alert</VisualAlertTemplate>
+      <VisualAlertTemplate type="warning">Warning Alert</VisualAlertTemplate>
+      <VisualAlertTemplate type="error">Error Alert</VisualAlertTemplate>
+    </VisualRegressionWrapper>
+  </>
+));

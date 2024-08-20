@@ -68,12 +68,12 @@
     "storybook": "npm-run-all --parallel watch:**",
     "test": "pnpm run --if-present --recursive test",
     "test-update": "npm-run-all --sequential clean lint build test",
-    "prewatch:storybook": "pnpm run --recursive build:stencil && pnpm run --recursive build:style-dictionary",
+    "prewatch:storybook": "pnpm run --recursive build:stencil && pnpm run --recursive build:tokens-studio",
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
-    "watch:storybook": "pnpm run --filter @lux/storybook storybook",
-    "watch:tokens-studio": "pnpm run --filter @lux/design-tokens watch:tokens-studio"
+    "watch:storybook": "pnpm run --filter @lux-design-system/storybook storybook",
+    "watch:tokens-studio": "pnpm run --filter @lux-design-system/design-tokens watch:tokens-studio"
   },
   "dependencies": {
     "http-server": "14.1.1"

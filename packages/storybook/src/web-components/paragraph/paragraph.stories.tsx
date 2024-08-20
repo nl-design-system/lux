@@ -4,7 +4,7 @@ import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
 import tokensDefinition from './tokens.json';
-import { createDesignTokensStory } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxParagraph = (props: PropsWithChildren<JSX.LuxParagraph> & HTMLAttributes<any>) => <Paragraph {...props} />;
 
@@ -50,3 +50,16 @@ export const Playground: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="lux-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <LuxParagraph>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</LuxParagraph>
+    </VisualRegressionWrapper>
+    <h4 className="lux-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <LuxParagraph>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</LuxParagraph>
+    </VisualRegressionWrapper>
+  </>
+));
