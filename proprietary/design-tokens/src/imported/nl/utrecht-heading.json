@@ -14,7 +14,7 @@
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{lux.heading-1.line-height",
+        "value": "{lux.heading-1.line-height"},
         "type": "lineHeights"
       },
       "font-size": {
