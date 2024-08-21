@@ -10,7 +10,7 @@
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{lux.paragraph.font-size}",
+        "value": "{lux.paragraph.default.font-size}",
         "type": "fontSizes"
       },
       "font-weight": {
@@ -18,7 +18,7 @@
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{lux.paragraph.line-height}",
+        "value": "{lux.paragraph.default.line-height}",
         "type": "lineHeights"
       },
       "margin-block-end": {

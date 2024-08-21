@@ -31,6 +31,7 @@
     "component/paragraph",
     "component/heading",
     "component/icon-logo",
+    "nl/utrecht-document",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",

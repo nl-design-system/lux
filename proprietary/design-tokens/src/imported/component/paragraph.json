@@ -9,17 +9,19 @@
         "value": "{lux.font-family.primary}",
         "type": "fontFamilies"
       },
-      "font-size": {
-        "value": "{lux.font-size.body.default}",
-        "type": "fontSizes"
+      "default": {
+        "font-size": {
+          "value": "{lux.font-size.body.default}",
+          "type": "fontSizes"
+        },
+        "line-height": {
+          "value": "{lux.line-height.body.default}",
+          "type": "lineHeights"
+        }
       },
       "font-weight": {
         "value": "{lux.font-weight.regular}",
         "type": "fontWeights"
-      },
-      "line-height": {
-        "value": "{lux.line-height.body.default}",
-        "type": "lineHeights"
       },
       "lead": {
         "font-size": {
