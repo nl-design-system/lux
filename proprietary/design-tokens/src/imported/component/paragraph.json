@@ -22,17 +22,9 @@
         "type": "lineHeights"
       },
       "lead": {
-        "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
-        },
         "font-size": {
           "value": "{lux.font-size.body.large}",
           "type": "fontSizes"
-        },
-        "font-weight": {
-          "value": "{lux.font-weight.regular}",
-          "type": "fontWeights"
         },
         "line-height": {
           "value": "{lux.line-height.body.large}",
@@ -40,17 +32,9 @@
         }
       },
       "small": {
-        "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
-        },
         "font-size": {
           "value": "{lux.font-size.body.small}",
           "type": "fontSizes"
-        },
-        "font-weight": {
-          "value": "{lux.font-weight.regular}",
-          "type": "fontWeights"
         },
         "line-height": {
           "value": "{lux.line-height.body.small}",

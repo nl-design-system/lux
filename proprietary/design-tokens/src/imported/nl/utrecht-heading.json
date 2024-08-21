@@ -6,7 +6,7 @@
         "type": "color"
       },
       "font-family": {
-        "value": "{lux.heading-1.font-family}",
+        "value": "{lux.heading.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -28,7 +28,7 @@
         "type": "color"
       },
       "font-family": {
-        "value": "{lux.heading-2.font-family}",
+        "value": "{lux.heading.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -50,7 +50,7 @@
         "type": "color"
       },
       "font-family": {
-        "value": "{lux.heading-3.font-family}",
+        "value": "{lux.heading.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -72,7 +72,7 @@
         "type": "color"
       },
       "font-family": {
-        "value": "{lux.heading-4.font-family}",
+        "value": "{lux.heading.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -85,50 +85,6 @@
       },
       "font-size": {
         "value": "{lux.heading-3.font-size}",
-        "type": "fontSizes"
-      }
-    },
-    "heading-5": {
-      "color": {
-        "value": "{lux.heading-5.color}",
-        "type": "color"
-      },
-      "font-family": {
-        "value": "{lux.heading-5.font-family}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{lux.heading.font-weight}",
-        "type": "fontWeights"
-      },
-      "line-height": {
-        "value": "{voorbeeld.typography.line-height.md}",
-        "type": "lineHeights"
-      },
-      "font-size": {
-        "value": "{voorbeeld.typography.font-size.md}",
-        "type": "fontSizes"
-      }
-    },
-    "heading-6": {
-      "color": {
-        "value": "{utrecht.heading-6.color}",
-        "type": "color"
-      },
-      "font-family": {
-        "value": "{utrecht.heading-6.font-family}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{utrecht.heading.font-weight}",
-        "type": "fontWeights"
-      },
-      "line-height": {
-        "value": "{voorbeeld.typography.line-height.md}",
-        "type": "lineHeights"
-      },
-      "font-size": {
-        "value": "{voorbeeld.typography.font-size.sm}",
         "type": "fontSizes"
       }
     }

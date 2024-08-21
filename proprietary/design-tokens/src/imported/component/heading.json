@@ -5,10 +5,6 @@
         "value": "{lux.color.foreground.default}",
         "type": "color"
       },
-      "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
-      },
       "font-weight": {
         "value": "{lux.font-weight.bold}",
         "type": "fontWeights"
@@ -22,14 +18,16 @@
         "type": "fontSizes"
       }
     },
+    "heading": {
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      }
+    },
     "heading-2": {
       "color": {
         "value": "{lux.color.foreground.default}",
         "type": "color"
-      },
-      "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
       },
       "font-weight": {
         "value": "{lux.font-weight.bold}",
@@ -49,10 +47,6 @@
         "value": "{lux.color.foreground.default}",
         "type": "color"
       },
-      "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
-      },
       "font-weight": {
         "value": "{lux.font-weight.bold}",
         "type": "fontWeights"
@@ -71,10 +65,6 @@
         "value": "{lux.color.foreground.default}",
         "type": "color"
       },
-      "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
-      },
       "font-weight": {
         "value": "{lux.font-weight.bold}",
         "type": "fontWeights"
@@ -85,50 +75,6 @@
       },
       "font-size": {
         "value": "{lux.font-size.heading.level-4}",
-        "type": "fontSizes"
-      }
-    },
-    "heading-5": {
-      "color": {
-        "value": "{utrecht.heading.color}",
-        "type": "color"
-      },
-      "font-family": {
-        "value": "{utrecht.heading.font-family}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{utrecht.heading.font-weight}",
-        "type": "fontWeights"
-      },
-      "line-height": {
-        "value": "{voorbeeld.typography.line-height.md}",
-        "type": "lineHeights"
-      },
-      "font-size": {
-        "value": "{voorbeeld.typography.font-size.md}",
-        "type": "fontSizes"
-      }
-    },
-    "heading-6": {
-      "color": {
-        "value": "{utrecht.heading.color}",
-        "type": "color"
-      },
-      "font-family": {
-        "value": "{utrecht.heading.font-family}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{utrecht.heading.font-weight}",
-        "type": "fontWeights"
-      },
-      "line-height": {
-        "value": "{voorbeeld.typography.line-height.md}",
-        "type": "lineHeights"
-      },
-      "font-size": {
-        "value": "{voorbeeld.typography.font-size.sm}",
         "type": "fontSizes"
       }
     }

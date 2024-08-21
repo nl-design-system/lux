@@ -39,7 +39,7 @@
           "type": "fontSizes"
         },
         "font-weight": {
-          "value": "{lux.font-weight.regular}",
+          "value": "{lux.paragraph.font-weight}",
           "type": "fontWeights"
         },
         "line-height": {
@@ -57,7 +57,7 @@
           "type": "fontSizes"
         },
         "font-weight": {
-          "value": "{lux.font-weight.regular}",
+          "value": "{lux.paragraph.font-weight}",
           "type": "fontWeights"
         },
         "line-height": {
