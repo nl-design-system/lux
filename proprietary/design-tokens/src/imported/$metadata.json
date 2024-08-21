@@ -28,11 +28,13 @@
     "component/button",
     "component/alert",
     "component/link",
+    "component/heading",
     "component/icon-logo",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-link",
+    "nl/utrecht-heading",
     "nl/utrecht-paragraph"
   ]
 }

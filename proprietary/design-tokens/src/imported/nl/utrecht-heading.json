@@ -1,0 +1,92 @@
+{
+  "utrecht": {
+    "heading-1": {
+      "color": {
+        "value": "{lux.heading-1.color}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.heading.font-family}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.heading-1.font-weight}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.heading-1.line-height}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.heading-1.font-size}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-2": {
+      "color": {
+        "value": "{lux.heading-2.color}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.heading.font-family}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.heading-2.font-weight}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.heading-2.line-height}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.heading-2.font-size}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-3": {
+      "color": {
+        "value": "{lux.heading-3.color}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.heading.font-family}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.heading-3.font-weight}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.heading-3.line-height}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.heading-3.font-size}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-4": {
+      "color": {
+        "value": "{lux.heading-4.color}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.heading.font-family}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.heading-4.font-weight}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.heading-4.line-height}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.heading-4.font-size}",
+        "type": "fontSizes"
+      }
+    }
+  }
+}
