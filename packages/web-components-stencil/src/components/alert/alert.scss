@@ -1,6 +1,8 @@
 :host {
   --lux-icon-size: var(--lux-alert-icon-start-size);
   --lux-icon-color-contrast: var(--lux-color-wit);
+  /* stylelint-disable-next-line custom-property-pattern */
+  --utrecht-paragraph-color: var(--lux-alert-color);
 
   display: block;
 }
