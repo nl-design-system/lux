@@ -48,14 +48,6 @@ const meta = {
       control: 'select',
       options: [undefined, 'info', 'ok', 'warning', 'error'],
     },
-    hideIcon: {
-      type: 'boolean',
-      table: {
-        defaultValue: {
-          summary: 'false',
-        },
-      },
-    },
   },
 } satisfies Meta<typeof LuxAlert>;
 
