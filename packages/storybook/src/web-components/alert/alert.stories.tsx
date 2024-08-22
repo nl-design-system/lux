@@ -15,7 +15,6 @@ import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionW
 const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert> & HTMLAttributes<HTMLLuxButtonElement>) => (
   <Alert {...props} />
 );
-LuxAlert.displayName = 'Test';
 const LuxParagraph = ({ children }: any) => <Paragraph>{children}</Paragraph>;
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton> & HTMLAttributes<HTMLLuxButtonElement>) => (
   <Button {...props} />
