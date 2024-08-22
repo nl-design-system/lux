@@ -95,13 +95,15 @@
         "error": {
           "color": {
             "type": "color",
-            "value": "{lux.color.feedback.error.default}"
+            "value": "{lux.color.feedback.error.default}",
+            "description": "Wat te doen met deze icon tokens? Hebben we niks aan toch? "
           }
         },
         "warning": {
           "color": {
             "type": "color",
-            "value": "{lux.color.feedback.warning.default}"
+            "value": "{lux.color.feedback.warning.default}",
+            "description": "Wat te doen met deze icon tokens? Hebben we niks aan toch? "
           }
         },
         "ok": {
@@ -121,7 +123,7 @@
           }
         },
         "size": {
-          "value": "1.5rem",
+          "value": "{lux.alert.icon.size}",
           "type": "sizing"
         }
       },
