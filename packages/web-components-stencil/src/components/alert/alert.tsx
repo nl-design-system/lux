@@ -10,8 +10,6 @@ export class Alert {
   @Prop() hideIcon? = false;
   @Element() hostElement!: HTMLElement;
 
-  // private utrechtAlertElement?: HTMLUtrechtAlertElement;
-
   render() {
     const { type, hideIcon } = this;
 

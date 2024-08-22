@@ -68,6 +68,9 @@ const preview: Preview = {
         headingSelector: 'h2',
         title: 'Op deze pagina',
       },
+      source: {
+        language: 'tsx',
+      },
     },
     options: {
       showPanel: true,
