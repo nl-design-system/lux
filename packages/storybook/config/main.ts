@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
@@ -23,11 +24,6 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
-  typescript: {
-    // Overrides the default Typescript configuration to allow multi-package components to be documented via Autodocs.
-    reactDocgen: 'react-docgen',
-    check: false,
-  },
   managerHead(head) {
     return `
       ${head}
@@ -36,6 +32,13 @@ const config: StorybookConfig = {
   },
   features: {},
   staticDirs: ['../../../proprietary/assets/src'],
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      build: {
+        minify: false,
+      },
+    });
+  },
 };
 
 export default config;
