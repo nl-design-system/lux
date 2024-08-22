@@ -47,11 +47,6 @@
           "type": "spacing"
         }
       },
-      "min-inline-size": {
-        "type": "sizing",
-        "value": "160px",
-        "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
-      },
       "close-button-size": {
         "type": "sizing",
         "value": "{lux.size.icon}",
@@ -85,35 +80,6 @@
         "background-color": {
           "type": "color",
           "value": "{lux.color.feedback.warning.subdued}"
-        }
-      },
-      "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.body.default}",
-        "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
-      },
-      "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.body.default}",
-        "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
-      },
-      "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}",
-        "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
-      },
-      "paragraph": {
-        "font-weight": {
-          "type": "fontWeights",
-          "value": "{lux.font-weight.regular}",
-          "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
-        }
-      },
-      "heading": {
-        "font-weight": {
-          "type": "fontWeights",
-          "value": "{lux.font-weight.regular}",
-          "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
         }
       }
     }
