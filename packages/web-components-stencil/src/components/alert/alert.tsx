@@ -6,7 +6,7 @@ import { Component, Element, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class Alert {
-  @Prop() type?: string;
+  @Prop() type!: 'info' | 'ok' | 'warning' | 'error';
   @Element() hostElement!: HTMLElement;
 
   render() {
