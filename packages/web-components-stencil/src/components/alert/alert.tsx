@@ -7,32 +7,29 @@ import { Component, Element, h, Prop } from '@stencil/core';
 })
 export class Alert {
   @Prop() type?: string;
-  @Prop() hideIcon? = false;
   @Element() hostElement!: HTMLElement;
 
   render() {
-    const { type, hideIcon } = this;
+    const { type } = this;
 
     return (
       <utrecht-alert type={type} part="utrecht-alert">
-        {!hideIcon ? (
-          <slot name="icon" slot="icon">
-            {(() => {
-              switch (type) {
-                case 'info':
-                  return <lux-icon-info />;
-                case 'ok':
-                  return <lux-icon-success />;
-                case 'warning':
-                  return <lux-icon-warning />;
-                case 'error':
-                  return <lux-icon-error />;
-                default:
-                  return null;
-              }
-            })()}
-          </slot>
-        ) : null}
+        <slot name="icon" slot="icon">
+          {(() => {
+            switch (type) {
+              case 'info':
+                return <lux-icon-info />;
+              case 'ok':
+                return <lux-icon-success />;
+              case 'warning':
+                return <lux-icon-warning />;
+              case 'error':
+                return <lux-icon-error />;
+              default:
+                return null;
+            }
+          })()}
+        </slot>
         <slot />
       </utrecht-alert>
     );
