@@ -90,8 +90,7 @@
       "icon": {
         "color": {
           "type": "color",
-          "value": "{lux.color.foreground.default}",
-          "description": "Deze token mist (nog) in utrecht component"
+          "value": "{lux.color.foreground.default}"
         },
         "error": {
           "color": {
@@ -112,7 +111,7 @@
           }
         },
         "inset-block-start": {
-          "value": "{lux.space.25}",
+          "value": "{lux.alert.icon.inset-block-start}",
           "type": "spacing"
         },
         "info": {
@@ -129,6 +128,10 @@
       "column-gap": {
         "type": "spacing",
         "value": "{lux.alert.column-gap}"
+      },
+      "row-gap": {
+        "type": "spacing",
+        "value": "{no-token}"
       },
       "message": {
         "row-gap": {
@@ -148,24 +151,6 @@
         "border-color": {
           "type": "color",
           "value": "{lux.alert.border-color}"
-        }
-      },
-      "heading": {
-        "font-family": {
-          "value": "{lux.alert.font-family}",
-          "type": "fontFamilies"
-        },
-        "font-weight": {
-          "value": "{lux.font-weight.bold}",
-          "type": "fontWeights"
-        },
-        "line-height": {
-          "value": "{lux.alert.line-height}",
-          "type": "lineHeights"
-        },
-        "font-size": {
-          "value": "{lux.alert.font-size}",
-          "type": "fontSizes"
         }
       }
     }
