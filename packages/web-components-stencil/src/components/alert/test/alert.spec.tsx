@@ -10,7 +10,7 @@ describe('lux-alert', () => {
     expect(page.root).toEqualHtml(`
       <lux-alert>
         <mock:shadow-root>
-          <utrecht-alert part="utrecht-alert">
+          <utrecht-alert>
             <slot name="icon" slot="icon"></slot>
             <slot></slot>
           </utrecht-alert>
@@ -32,7 +32,7 @@ describe('lux-alert', () => {
     expect(page.root).toEqualHtml(`
       <lux-alert type="${type}">
         <mock:shadow-root>
-          <utrecht-alert part="utrecht-alert" type="${type}">
+          <utrecht-alert type="${type}">
             <slot name="icon" slot="icon">
               <lux-${icon}></lux-${icon}>
             </slot>
