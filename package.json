@@ -49,6 +49,7 @@
   },
   "scripts": {
     "build": "pnpm run --recursive build",
+    "changeset": "changeset",
     "clean": "pnpm run --recursive clean",
     "lint": "pnpm run --aggregate-output --if-present '/^lint:.*/' && pnpm run --recursive lint",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
