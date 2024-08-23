@@ -46,7 +46,7 @@ const meta = {
     type: {
       type: 'string',
       control: 'select',
-      options: [undefined, 'info', 'ok', 'warning', 'error'],
+      options: ['info', 'ok', 'warning', 'error'],
     },
   },
 } satisfies Meta<typeof LuxAlert>;
