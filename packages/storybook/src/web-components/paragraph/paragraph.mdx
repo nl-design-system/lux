@@ -1,15 +1,16 @@
-import { Canvas, Controls, Meta } from "@storybook/blocks";
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
 import markdown from "@utrecht/paragraph-css/README.md?raw";
 import * as ParagraphStories from "./paragraph.stories";
-import { IncludeDocumentation } from "../../utils/IncludeDocumentation";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 <Meta of={ParagraphStories} />
 
-<IncludeDocumentation
+<CitationDocumentation
   component="Utrecht Paragraph"
   url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-paragraph--docs"
-  markdown={markdown}
 />
+
+<Markdown>{markdown}</Markdown>
 
 ## Wijzigingen t.o.v. Huidig Utrecht Paragraph
 

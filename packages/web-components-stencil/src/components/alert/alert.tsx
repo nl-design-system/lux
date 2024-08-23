@@ -13,7 +13,7 @@ export class Alert {
     const { type } = this;
 
     return (
-      <utrecht-alert type={type} part="utrecht-alert">
+      <utrecht-alert type={type}>
         <slot name="icon" slot="icon">
           {(() => {
             switch (type) {

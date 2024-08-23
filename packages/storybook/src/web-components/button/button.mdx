@@ -1,15 +1,16 @@
-import { Canvas, Controls, Description, Meta } from "@storybook/blocks";
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
 import markdown from "@utrecht/button-css/README.md?raw";
 import * as ButtonStories from "./button.stories";
-import { IncludeDocumentation } from "../../utils/IncludeDocumentation";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 <Meta of={ButtonStories} />
 
-<IncludeDocumentation
+<CitationDocumentation
   component="Utrecht Button"
   url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-button--docs"
-  markdown={markdown}
 />
+
+<Markdown>{markdown}</Markdown>
 
 ## Playground
 
