@@ -2,13 +2,13 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { LuxLink as Link } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent, within } from '@storybook/test';
 import { type PropsWithChildren } from 'react';
 import tokensDefinition from './tokens.json';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
-import { userEvent, within } from '@storybook/test';
 import { VisualStates } from './visual/States';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
-const href= 'http://logius.nl/';
+const href = 'http://logius.nl/';
 
 const LuxLink = (props: PropsWithChildren<JSX.LuxLink>) => <Link {...props} />;
 
@@ -64,7 +64,7 @@ export const Hover: Story = {
     const canvas = await within(canvasElement);
     const luxLink = canvas.getByShadowText('Hover Link');
     await userEvent.hover(luxLink);
-  }
+  },
 };
 
 export const Active: Story = {
@@ -76,8 +76,8 @@ export const Active: Story = {
   play: async ({ canvasElement }) => {
     const canvas = await within(canvasElement);
     const luxLink = canvas.getByShadowText('Active Link');
-    await userEvent.pointer({ target: luxLink, keys: '[MouseLeft]'});
-  }
+    await userEvent.pointer({ target: luxLink, keys: '[MouseLeft]' });
+  },
 };
 
 export const Focus: Story = {
@@ -88,7 +88,7 @@ export const Focus: Story = {
   },
   play: async () => {
     await userEvent.keyboard('[Tab]');
-  }
+  },
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
@@ -97,7 +97,6 @@ export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="lux-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <Focus />
       <VisualStates />
     </VisualRegressionWrapper>
     <h4 className="lux-heading-3">Dark</h4>

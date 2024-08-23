@@ -12,16 +12,19 @@ export class Link {
    * Laat de browser de {@link href} als download aanbieden. Geef een string op om een bestandsnaam te suggereren
    *
    * @member string
+   * @access public
    * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#download
    */
   @Prop() public readonly download?: string;
 
   /**
+   * @access public
    * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href
    */
   @Prop() public readonly href!: string;
 
   /**
+   * @access public
    * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target
    */
   @Prop() public readonly target?: HTMLAnchorElement['target'];
@@ -31,11 +34,11 @@ export class Link {
       [this.host.className]: Boolean(this.host.className),
       'lux-link': true,
     };
-    console.log({ className })
+    console.log({ className, host: this.host });
     const { href, download, target } = this;
 
     return (
-      <utrecht-link className={className} href={href} download={download} target={target}>
+      <utrecht-link className={`lux-link`} href={href} download={download} target={target}>
         <slot />
       </utrecht-link>
     );

@@ -6,8 +6,17 @@
   display: none !important;
 }
 
-.lux-link {
-  &.force-state--hover {
-    --utrecht-link-color: var(--lux-link-hover-color);
-  }
+:host(.force-state--hover) utrecht-link {
+  --lux-link-color: var(--lux-link-hover-color);
+  --lux-link-text-decoration: var(--lux-link-hover-text-decoration);
+}
+
+:host(.force-state--active) utrecht-link {
+  --lux-link-color: var(--lux-link-active-color);
+  --lux-link-text-decoration: var(--lux-link-active-text-decoration);
+}
+
+:host(.force-state--focus) utrecht-link {
+  --lux-link-color: var(--lux-link-focus-color);
+  --lux-link-text-decoration: var(--lux-link-focus-text-decoration);
 }
