@@ -6,8 +6,6 @@
 Wrapped Utrecht Alert als LUX Alert
 
 - Default iconen voor typed alerts (info, ok, warning en error)
-- Mogelijkheid om icoon te verbergen
-- Icon `slot` wordt doorgezet naar Utrecht Alert
 
 Nieuwe iconen: Info, Success, Warning, Error, Mail
 
