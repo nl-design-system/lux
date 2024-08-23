@@ -12,9 +12,7 @@ import tokensDefinition from './tokens.json';
 import { VisualTypes } from './visual/Types';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
-const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert> & HTMLAttributes<HTMLLuxButtonElement>) => (
-  <Alert {...props} />
-);
+const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert> & HTMLAttributes<HTMLLuxAlertElement>) => <Alert {...props} />;
 const LuxParagraph = ({ children }: any) => <Paragraph>{children}</Paragraph>;
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton> & HTMLAttributes<HTMLLuxButtonElement>) => (
   <Button {...props} />
@@ -54,11 +52,14 @@ const meta = {
 export default meta;
 
 const AlertTemplate: Story = {
-  render: (args) => (
+  render: ({ children, ...args }) => (
     <LuxAlert {...args}>
-      <LuxParagraph>{args.children}</LuxParagraph>
+      <LuxParagraph>{children}</LuxParagraph>
     </LuxAlert>
   ),
+  args: {
+    type: 'info',
+  },
 };
 
 const textTemplate = (name = 'dolor sit amet') =>
