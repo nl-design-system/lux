@@ -6,6 +6,13 @@
   display: flex;
   flex-flow: column wrap;
   gap: 16px 32px;
+  padding: 16px;
+}
+
+.lsb-visual-regression-wrapper--dark {
+  backdrop-filter: invert(1);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-backdrop-filter: invert(1);
 }
 
 .lsb-section {
