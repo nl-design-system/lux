@@ -49,6 +49,7 @@
   },
   "scripts": {
     "build": "pnpm run --recursive build",
+    "changeset": "changeset",
     "clean": "pnpm run --recursive clean",
     "lint": "pnpm run --aggregate-output --if-present '/^lint:.*/' && pnpm run --recursive lint",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
@@ -68,7 +69,7 @@
     "storybook": "npm-run-all --parallel watch:**",
     "test": "pnpm run --if-present --recursive test",
     "test-update": "npm-run-all --sequential clean lint build test",
-    "prewatch:storybook": "pnpm run --recursive build:stencil && pnpm run --recursive build:style-dictionary",
+    "prewatch:storybook": "pnpm run --recursive build:stencil && pnpm run --recursive build:tokens-studio",
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",

@@ -1,0 +1,16 @@
+:host {
+  --lux-icon-size: var(--lux-alert-icon-size);
+  --lux-icon-color-contrast: var(--lux-color-wit);
+  /* stylelint-disable-next-line custom-property-pattern */
+  --utrecht-paragraph-color: var(--lux-alert-color);
+
+  display: block;
+}
+
+:host([type="warning"]) {
+  --lux-icon-color-contrast: var(--lux-color-zwart);
+}
+
+:host([hidden]) {
+  display: none !important;
+}
