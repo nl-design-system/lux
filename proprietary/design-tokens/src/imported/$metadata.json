@@ -29,14 +29,16 @@
     "component/alert",
     "component/link",
     "component/icon-logo",
+    "component/form/form-label",
     "component/form/option-checkbox",
     "component/form/option-radio",
+    "nl/utrecht-form/form-label",
+    "nl/utrecht-form/option-checkbox",
+    "nl/utrecht-form/option-radio",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-link",
-    "nl/utrecht-paragraph",
-    "nl/utrecht-form/option-checkbox",
-    "nl/utrecht-form/option-radio"
+    "nl/utrecht-paragraph"
   ]
 }

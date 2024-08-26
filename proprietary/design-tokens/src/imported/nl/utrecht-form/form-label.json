@@ -1,0 +1,50 @@
+{
+  "utrecht": {
+    "form-label": {
+      "color": {
+        "value": "{lux.form-label.color}",
+        "type": "color"
+      },
+      "font-weight": {
+        "value": "{lux.form-label.font-weight}",
+        "type": "fontWeights"
+      },
+      "font-size": {
+        "value": "{lux.form-label.font-size}",
+        "type": "fontSizes"
+      },
+      "checkbox": {
+        "font-weight": {
+          "value": "{lux.form-label.option.font-weight}",
+          "type": "fontWeights"
+        },
+        "color": {
+          "value": "{lux.form-label.option.color}",
+          "type": "color"
+        }
+      },
+      "checked": {
+        "font-weight": {
+          "value": "{lux.form-label.option.font-weight}",
+          "type": "fontWeights"
+        }
+      },
+      "disabled": {
+        "color": {
+          "value": "{lux.form-label.disabled.color}",
+          "type": "color"
+        }
+      },
+      "radio": {
+        "color": {
+          "value": "{lux.form-label.option.color}",
+          "type": "color"
+        },
+        "font-weight": {
+          "value": "{lux.form-label.option.font-weight}",
+          "type": "fontWeights"
+        }
+      }
+    }
+  }
+}
