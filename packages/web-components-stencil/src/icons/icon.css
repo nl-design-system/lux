@@ -1,5 +1,15 @@
+/* stylelint-disable custom-property-pattern */
 :host {
+  --_lux-icon-primary-color: var(
+    --lux-icon-color,
+    var(--utrecht-icon-color, var(--lux-color-foreground-on-emphasis, white))
+  );
+  --_lux-icon-secondary-color: var(--lux-icon-color-contrast, var(--lux-color-foreground-default, black));
+
   display: inline-grid;
+  position: relative;
+  inset-block-start: var(--lux-alert-icon-inset-block-start, 0);
   inline-size: var(--lux-icon-size, 1rem);
   block-size: var(--lux-icon-size, 1rem);
+  color: var(--_lux-icon-primary-color); /* currentColor */
 }

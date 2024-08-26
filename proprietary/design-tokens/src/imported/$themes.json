@@ -797,8 +797,6 @@
       "lux.alert.padding-block-start": "34e1d62491bdcd700d224ffa439c4eaf8033aaab",
       "lux.alert.padding-inline-end": "007c0393cde00ccbc05b8dec4644e02db1d472b5",
       "lux.alert.padding-inline-start": "39240aa9255fe65a3664330a89bfed71397cee8e",
-      "lux.alert.icon-start-size": "d2a4831492e260ecd5376ede736bd53d92ca8de4",
-      "lux.alert.min-inline-size": "26ab25ebe5dd72d7918f33b1fba3d8f5d9813956",
       "lux.alert.close-button-size": "35eb243da7d0bb2f0226fe36df0ffaa912664b64",
       "lux.alert.info.background-color": "ff0e35224db7acfeb5fe9db0dc5402ff10168f45",
       "lux.alert.success.background-color": "a72d617bb89ea1faae36c8a4d7ae7195e7cd9aab",
@@ -882,7 +880,8 @@
       "lux.button-login.font-weight": "a1643e472c52569a9beb8b15368579e2fe09ae75",
       "lux.button-login.font-family": "4f871538e4cec521a825f5826c51f6fbd70c95bb",
       "lux.alert.message.row-gap": "54e9112131b776917517bd28db964371da1cf6a1",
-      "lux.alert.paragraph.font-weight": "f15a7d26f5139ee2a1310329ecb0d321897ea9b6"
+      "lux.alert.paragraph.font-weight": "f15a7d26f5139ee2a1310329ecb0d321897ea9b6",
+      "lux.alert.icon.size": "d2a4831492e260ecd5376ede736bd53d92ca8de4"
     },
     "group": "component"
   },
