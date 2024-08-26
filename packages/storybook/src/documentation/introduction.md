@@ -1,36 +1,25 @@
 <!-- @license CC0-1.0 -->
 
-# NL Design System introductie
+# LUX Design System introductie
 
-De Digitale Overheid stelt dat overheidsdienstverlening toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor zijn consistent ontworpen diensten en websites nodig.
-Daarom gaan we tussen overheidsorganisaties principes, interactiepatronen en code delen via een gezamenlijk design system. Dit NL Design System draagt niet alleen bij aan gebruiksvriendelijkere diensten van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel werk te voorkomen.
+Wekom op de documentatiewebsite van de components van het LUX Design System.
 
-> ⚠️ **LET OP**
->
-> Het NL Design System bevindt zich momenteel nog in de pilotfase.
-> Hierdoor is het nu nog niet volwassen genoeg om volledig gebruikt te worden.
-> Houdt hier dus rekening mee voor je aan de slag gaat.
-> We zouden het op prijs stellen als je wilt bijdragen om het NLDS tot een succes te maken.
-> Dit kan in onze GitHub of met een mailtje aan: [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl)
+## Veelgestelde vragen
 
-## Wat is een Design System
+### Wat is LUX?
 
-Een Design System, oftewel een ontwerpsysteem, is een verzameling afspraken tussen ontwerpers en ontwikkelaars voor het maken van digitale producten, zoals websites en apps. Het doel van deze afspraken is om de producten consistent en de gebruikerservaring zo prettig mogelijk te maken. Een Design System ‘leeft’: dankzij nieuwe inzichten en feedback van gebruikers worden de afspraken continu verbeterd.
+LUX staat voor "Logius UX", ofwel "Logius User eXperience" en is het design system dat Logius-breed ingezet wordt. LUX staat ook voor de verlichting die het diens gebruikers gaat bieden omdat ze zich hiermee vooral kunnen richten op hun business logic. Het is immers een LUXe dat de UI, UX en toegankelijkheid grotendeels voor hen wordt geregeld door LUX.
 
-## Hoe werkt een Design System
+### Wat is een design system?
 
-De afspraken in het Design System worden gemaakt aan de hand van bewezen oplossingen. Ze vormen een solide basis voor de ontwerpers en ontwikkelaars: doordat zij het wiel niet steeds opnieuw hoeven uit te vinden, kunnen ze snel en effectief nieuwe digitale producten bouwen. Als je als organisatie met een Design System werkt, bouw je voort op elkaars ervaringen en houd je meer tijd over voor unieke, eenmalige uitdagingen. Wel is er een betrokken, actieve community nodig om het Design System actueel en praktisch toepasbaar te houden.
+Een design system is als een gereedschapskist voor ontwerpers en ontwikkelaars. Het bevat herbruikbare componenten zoals kleuren, tekst stijlen, knoppen, en andere interactie elementen. Maar bevat ook richtlijnen voor hoe die componenten gebruikt moeten worden. Eigenlijk een set van bouwblokken voor het maken van kwalitatieve websites.
 
-## Waarom een NL Design System
+Met een design system zorg je voor consistentie en efficiëntie bij het maken van digitale producten zoals websites. Dat maakt het makkelijker om snel producten te maken terwijl de kwaliteit, zoals gebruikersvriendelijkheid en toegankelijkheid, overal volgens dezelfde standaard geborgd zijn.
 
-In een Design System staan principes, handvatten, elementen, patronen en richtlijnen beschreven. Allemaal basisonderdelen waarover je goed afspraken kunt maken. Juist overheidsorganisaties hebben baat bij één duidelijke set herbruikbare basisonderdelen. Vooral voor levensgebeurtenissen, waarbij vaak contact nodig is met meerdere instanties en organisaties.
+### Waar kan ik LUX voor gebruiken?
 
-Dankzij het NL Design System kan de hele overheid in Nederland samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening. Een dienstverlening die logisch en samenhangend is, maar niet per se uniform, want binnen de afspraken blijft er ruimte voor de eigen identiteit van overheidsorganisaties.
+LUX is er voor alle Logius websites die gebruikt worden door burgers, ondernemers en afnemers. Met LUX heb je een designstoolkit, componenten bibliotheek en richtlijnen voor het toepassen daar van. Je bouwt je applicatie en website nog steeds zelf maar kan gebruik maken van alle kennis en componenten die er al zijn. Dat scheelt je een hoop tijd!
 
-## Voor (en door) iedereen
+### Hoe verhoud LUX zich tot NL Design System?
 
-Het is belangrijk dat iedereen de online dienstverlening van de overheid kan gebruiken, ongeacht wie je bent en wat je situatie is. Dit heet inclusie: iedereen moet kunnen meedoen. Daarom testen we de afspraken in het Design System met een heel diverse gebruikersgroep, waaronder mensen met beperkingen. Zo nemen de kwaliteit, bruikbaarheid en toegankelijkheid toe en kunnen we iedereen in Nederland met onze digitale producten steeds beter van dienst zijn.
-
-De POC is te vinden op:
-
-<http://github.com/nl-design-system>
+LUX is het centrale punt binnen Logius om gebruik te maken van het NL Design System. LUX doet proactief mee in de NL Design System community door onder andere componenten uit LUX bij NL Design System aan te leveren.
