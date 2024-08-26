@@ -29,10 +29,12 @@
     "component/alert",
     "component/link",
     "component/icon-logo",
+    "component/form/option-radio",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-link",
-    "nl/utrecht-paragraph"
+    "nl/utrecht-paragraph",
+    "nl/utrecht-form/option-radio"
   ]
 }
