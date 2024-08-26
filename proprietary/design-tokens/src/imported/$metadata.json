@@ -36,6 +36,7 @@
     "nl/utrecht-button",
     "nl/utrecht-link",
     "nl/utrecht-paragraph",
+    "nl/utrecht-form/option-checkbox",
     "nl/utrecht-form/option-radio"
   ]
 }
