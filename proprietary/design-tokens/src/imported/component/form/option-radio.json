@@ -43,7 +43,7 @@
       },
       "hover": {
         "background-color": {
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.color.canvas}",
           "type": "color"
         },
         "border-color": {
@@ -57,7 +57,7 @@
       },
       "active": {
         "background-color": {
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.color.canvas}",
           "type": "color"
         },
         "border-color": {
@@ -75,11 +75,11 @@
           "type": "color"
         },
         "border-color": {
-          "value": "{lux.color.foreground.subdued}",
+          "value": "{lux.color.border.subdued}",
           "type": "color"
         },
         "color": {
-          "value": "{lux.color.foreground.subdued}",
+          "value": "{lux.color.border.subdued}",
           "type": "color"
         }
       },
