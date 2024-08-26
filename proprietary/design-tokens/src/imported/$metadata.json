@@ -29,6 +29,7 @@
     "component/alert",
     "component/link",
     "component/icon-logo",
+    "component/form/option-checkbox",
     "component/form/option-radio",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
