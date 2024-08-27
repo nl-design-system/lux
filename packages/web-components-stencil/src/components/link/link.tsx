@@ -6,8 +6,7 @@ import { Component, Element, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class Link {
-  @Element() private host!: HTMLElement;
-
+  @Element() hostElement!: HTMLElement;
   /**
    * Laat de browser de {@link href} als download aanbieden. Geef een string op om een bestandsnaam te suggereren
    *
@@ -29,16 +28,38 @@ export class Link {
    */
   @Prop() public readonly target?: HTMLAnchorElement['target'];
 
+  @Prop() forceState?: 'active' | 'focus' | 'hover';
+
+  private utrechtLinkElement?: HTMLUtrechtLinkElement;
+  private linkElement?: HTMLAnchorElement | null;
+
+  componentDidLoad() {
+    this.linkElement = this.utrechtLinkElement?.shadowRoot?.querySelector('a');
+    if (this.forceState) {
+      let forcedClass: string[] = [`utrecht-link--${this.forceState}`];
+      if (this.forceState === 'focus') {
+        forcedClass.push('utrecht-link--focus-visible');
+      }
+
+      console.log(forcedClass, this.linkElement);
+      this.linkElement?.classList.add(...forcedClass);
+    }
+  }
+
   render() {
-    const className = {
-      [this.host.className]: Boolean(this.host.className),
-      'lux-link': true,
-    };
-    console.log({ className, host: this.host });
+    const classNames = { [`force-state--${this.forceState}`]: Boolean(this.forceState), 'lux-link': true };
     const { href, download, target } = this;
 
     return (
-      <utrecht-link className={`lux-link`} href={href} download={download} target={target}>
+      <utrecht-link
+        class={classNames}
+        href={href}
+        download={download}
+        target={target}
+        ref={(el: HTMLUtrechtLinkElement) => {
+          this.utrechtLinkElement = el;
+        }}
+      >
         <slot />
       </utrecht-link>
     );

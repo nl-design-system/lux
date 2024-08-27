@@ -1,8 +1,7 @@
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import { LuxLink as Link } from '@lux-design-system/web-components-react';
+import { LuxLink as Link, LuxDocument, LuxParagraph } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
-import { userEvent, within } from '@storybook/test';
 import { type PropsWithChildren } from 'react';
 import tokensDefinition from './tokens.json';
 import { VisualStates } from './visual/States';
@@ -18,6 +17,13 @@ const meta = {
   title: 'Web Components/Link',
   id: 'web-components-link',
   component: LuxLink,
+  decorators: [
+    (Story) => (
+      <LuxDocument>
+        <Story />
+      </LuxDocument>
+    ),
+  ],
   parameters: {
     tokens,
     tokensPrefix: 'lux-link',
@@ -59,11 +65,7 @@ export const Hover: Story = {
   args: {
     href,
     children: 'Hover Link',
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = await within(canvasElement);
-    const luxLink = canvas.getByShadowText('Hover Link');
-    await userEvent.hover(luxLink);
+    forceState: 'hover',
   },
 };
 
@@ -72,11 +74,7 @@ export const Active: Story = {
   args: {
     href,
     children: 'Active Link',
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = await within(canvasElement);
-    const luxLink = canvas.getByShadowText('Active Link');
-    await userEvent.pointer({ target: luxLink, keys: '[MouseLeft]' });
+    forceState: 'active',
   },
 };
 
@@ -85,10 +83,63 @@ export const Focus: Story = {
   args: {
     href,
     children: 'Focus Link',
+    forceState: 'focus',
   },
-  play: async () => {
-    await userEvent.keyboard('[Tab]');
+};
+
+export const Download: Story = {
+  name: 'Download',
+  args: {
+    href: '/?path=/docs/web-components-link--docs',
+    children: 'Download Link',
+    download: 'link-docs.html',
   },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Laat de browser de href als download aanbieden. Geef een string op om een bestandsnaam te suggereren',
+      },
+    },
+  },
+};
+
+export const Target: Story = {
+  name: 'Target',
+  args: {
+    href: '/?path=/docs/web-components-link--docs',
+    children: 'Link with target',
+    target: '_parent',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Wees voorzichtig met `target="_blank"`. Zie ook de documentatie hierboven.',
+      },
+    },
+  },
+};
+
+export const InText: Story = {
+  name: 'In Text',
+  args: {
+    href,
+    children: 'Logius',
+  },
+  render: (args) => (
+    <LuxParagraph>
+      {`Lorem ipsum `}
+      <LuxLink {...args} />
+      {` sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu `}
+      <LuxLink href="#focus" forceState="focus">
+        focus
+      </LuxLink>
+      {` faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum `}
+      <LuxLink href="#hover" forceState="hover">
+        hoverium
+      </LuxLink>
+      {` arturient. Cursus nostra varius efficitur lobortis aliquam lectus bibendum.`}
+    </LuxParagraph>
+  ),
 };
 
 export const DesignTokens = createDesignTokensStory(meta);

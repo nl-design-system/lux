@@ -410,6 +410,9 @@ importers:
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
+      '@utrecht/document-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@utrecht/paragraph-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -2760,6 +2763,9 @@ packages:
 
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
+
+  '@utrecht/document-css@1.1.0':
+    resolution: {integrity: sha512-navpa20l9U2c/gMDNzZ83MF2/VfXJBXVIGw6CoZ7s3uNbR92H6MAvvSn29C/Kg9QGjDAhDd7P5dIyjQ1KrwJfg==}
 
   '@utrecht/link-css@1.1.0':
     resolution: {integrity: sha512-L/R5rGvA2RrXJFw/k2l2U7ZgeJuz92pdFDbW1Rtw+7XBK5Z/e+YMpnlDL8fx5VmFk95xO4Jmgv1j6BYiI6vnqA==}
@@ -10959,6 +10965,8 @@ snapshots:
   '@utrecht/components@4.0.0':
     dependencies:
       clsx: 1.2.1
+
+  '@utrecht/document-css@1.1.0': {}
 
   '@utrecht/link-css@1.1.0': {}
 

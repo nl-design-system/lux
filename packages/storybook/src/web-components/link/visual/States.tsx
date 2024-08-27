@@ -2,15 +2,14 @@ import { LuxLink } from '@lux-design-system/web-components-react';
 
 export const VisualStates = () => (
   <>
-    <h5 className="lux-heading-4">States</h5>
     <LuxLink href="#">Link</LuxLink>
-    <LuxLink href="#" className="force-state--hover">
+    <LuxLink href="#" forceState="hover">
       Hover link
     </LuxLink>
-    <LuxLink href="#" className="force-state--active">
+    <LuxLink href="#" forceState="active">
       Active link
     </LuxLink>
-    <LuxLink href="#" className="force-state--focus">
+    <LuxLink href="#" forceState="focus">
       Focus link
     </LuxLink>
   </>
