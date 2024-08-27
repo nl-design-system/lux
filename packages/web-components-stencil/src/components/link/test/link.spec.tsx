@@ -24,7 +24,7 @@ describe('lux-link', () => {
       html: `<lux-link download="download.file" href="url.html" target="_parent"></lux-link>`,
     });
     expect(page.root).toEqualHtml(`
-      <lux-link class="lux-link" download="download.file" href="url.html" target="_parent">
+      <lux-link download="download.file" href="url.html" target="_parent">
         <mock:shadow-root>
           <utrecht-link class="lux-link" download="download.file" href="url.html" target="_parent">
             <slot></slot>
