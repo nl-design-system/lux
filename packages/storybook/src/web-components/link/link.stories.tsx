@@ -31,6 +31,11 @@ const meta = {
   },
   tags: ['!autodocs'],
   argTypes: {
+    children: {
+      name: 'content (label)',
+      description: 'Link text',
+      control: 'text',
+    },
     href: {
       type: 'string',
     },
@@ -39,6 +44,11 @@ const meta = {
     },
     target: {
       type: 'string',
+    },
+    forceState: {
+      table: {
+        disable: true,
+      },
     },
   },
 } satisfies Meta<typeof LuxLink>;
