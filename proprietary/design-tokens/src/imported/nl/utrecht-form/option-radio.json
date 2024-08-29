@@ -1,6 +1,6 @@
 {
   "utrecht": {
-    "radio": {
+    "radio-button": {
       "active": {
         "border-width": {
           "value": "{lux.radio.border-width}",
@@ -19,7 +19,7 @@
         "value": "{lux.radio.size}",
         "type": "sizing"
       },
-      "dot": {
+      "icon": {
         "size": {
           "value": "{lux.radio.dot.size}",
           "type": "sizing"
