@@ -1,1 +1,32 @@
-{}
+{
+  "utrecht": {
+    "form-field": {
+      "invalid": {
+        "border-inline-start-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "border-inline-start-width": {
+          "value": "{lux.border-width.none}",
+          "type": "borderWidth"
+        },
+        "padding-inline-start": {
+          "value": "{lux.space.0}",
+          "type": "spacing"
+        }
+      }
+    },
+    "checkbox": {
+      "margin-inline-end": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      }
+    },
+    "radio": {
+      "margin-inline-end": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      }
+    }
+  }
+}
