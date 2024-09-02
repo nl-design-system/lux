@@ -36,6 +36,8 @@
     "nl/utrecht-form/option-checkbox",
     "nl/utrecht-form/option-radio",
     "nl/utrecht-form/form-field",
+    "nl/utrecht-form/textarea",
+    "nl/utrecht-form/pointer-target",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
