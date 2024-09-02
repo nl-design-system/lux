@@ -38,6 +38,7 @@
     "nl/utrecht-form/form-field",
     "nl/utrecht-form/textarea",
     "nl/utrecht-form/text-input",
+    "nl/utrecht-form/form-field-description",
     "nl/utrecht-form/pointer-target",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
