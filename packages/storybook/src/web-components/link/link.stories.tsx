@@ -1,5 +1,10 @@
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import { LuxLink as Link, LuxDocument, LuxParagraph } from '@lux-design-system/web-components-react';
+import {
+  LuxLink as Link,
+  LuxDocument,
+  LuxIconChevronLeft,
+  LuxParagraph,
+} from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type PropsWithChildren } from 'react';
@@ -127,6 +132,20 @@ export const Target: Story = {
       },
     },
   },
+};
+
+export const Icon: Story = {
+  name: 'Icon',
+  args: {
+    href,
+    children: 'Icon Link',
+  },
+  render: (args) => (
+    <LuxLink {...args}>
+      <LuxIconChevronLeft />
+      {args.children}
+    </LuxLink>
+  ),
 };
 
 export const InText: Story = {
