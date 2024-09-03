@@ -28,6 +28,10 @@ export class Link {
    */
   @Prop() public readonly target?: HTMLAnchorElement['target'];
 
+  /**
+   * Force the link to (visually) be in a specific user state.
+   * @access private
+   */
   @Prop() forceState?: 'active' | 'focus' | 'hover';
 
   private utrechtLinkElement?: HTMLUtrechtLinkElement;
