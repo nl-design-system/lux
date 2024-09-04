@@ -1,0 +1,9 @@
+@import "~@utrecht/paragraph-css/src/index";
+
+:host {
+  display: flow-root;
+}
+
+:host([hidden]) {
+  display: none !important;
+}
