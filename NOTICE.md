@@ -1,12 +1,12 @@
-# Auteursrecht {auteur}
+# Auteursrecht LUX / Logius
 
-Copyright (c) {jaar} {auteur}
+Copyright (c) 2024 LUX / Logius
 
 ## Logo en huisstijl
 
-Op het huisstijl en logo zijn auteursrechten van toepassing. Het gebruik van logo en huisstijl is alleen toegestaan voor gebruik door {auteur}.
+Op het huisstijl en logo zijn auteursrechten van toepassing. Het gebruik van logo en huisstijl is alleen toegestaan voor gebruik door gebruikers die gerechtigd zijn om de Rijkshuisstijl te gebruiken.
 
-Wanneer je een bewerking van de software wilt gebruiken voor andere doeleinden, mag je niet het logo van {auteur} gebruiken en je ontwerpt een eigen huisstijl.
+Wanneer je een bewerking van de software wilt gebruiken voor andere doeleinden, mag je niet het logo van LUX, Logius of de Rijkshuisstijl gebruiken en je ontwerpt een eigen huisstijl.
 
 ## Lettertype
 
