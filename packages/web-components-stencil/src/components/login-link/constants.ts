@@ -1,8 +1,8 @@
-import type { ButtonLoginAgent, ButtonLoginLabelTuple } from './types';
+import type { LoginLinkAgent, LoginLinkLabelTuple } from './types';
 
-export const COMPONENT_TAG = 'lux-button-login';
+export const COMPONENT_TAG = 'lux-login-link';
 
-export const loginAgentsLabels: Record<ButtonLoginAgent, ButtonLoginLabelTuple> = {
+export const loginAgentsLabels: Record<LoginLinkAgent, LoginLinkLabelTuple> = {
   digid: {
     label: 'Inloggen',
     agentLabel: 'met digid',

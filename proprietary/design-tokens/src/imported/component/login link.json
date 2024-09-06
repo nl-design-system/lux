@@ -1,38 +1,38 @@
 {
   "lux": {
-    "button-login": {
+    "login-link": {
       "color": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "color",
         "value": "{lux.color.foreground.default}"
       },
       "background-color": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "color",
         "value": "{lux.color.background.default}",
         "description": ""
       },
       "border-color": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "color",
         "value": "{lux.color.border.default}",
         "description": ""
       },
       "hover": {
         "color": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "color",
           "value": "{lux.color.foreground.default}",
           "description": ""
         },
         "background-color": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "color",
           "value": "{lux.color.background.hover}",
           "description": ""
         },
         "border-color": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "color",
           "value": "{lux.color.border.default}",
           "description": ""
@@ -40,79 +40,79 @@
       },
       "active": {
         "color": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "color",
           "value": "{lux.color.foreground.default}",
           "description": ""
         },
         "background-color": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "color",
-          "value": "{mode.button-login.active.background-color}",
+          "value": "{mode.login-link.active.background-color}",
           "description": ""
         },
         "border-color": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "color",
           "value": "{lux.color.border.strong}",
           "description": ""
         }
       },
       "padding-block-start": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "spacing",
         "value": "{lux.space.50}",
         "description": ""
       },
       "padding-block-end": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "spacing",
         "value": "{lux.space.50}",
         "description": ""
       },
       "font-size": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "fontSizes",
         "value": "{lux.font-size.large-scale.sm}"
       },
       "padding-inline-start": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "spacing",
         "value": "{lux.space.50}"
       },
       "padding-inline-end": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "spacing",
         "value": "{lux.space.200}"
       },
       "min-inline-size": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "sizing",
         "value": "48px"
       },
       "min-block-size": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "sizing",
         "value": "48px"
       },
       "column-gap": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "spacing",
         "value": "{lux.space.100}"
       },
       "border-radius": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "borderRadius",
         "value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "parent": "button login/default",
+        "parent": "login link/default",
         "type": "borderWidth",
         "value": "{lux.border-width.default}"
       },
       "icon": {
         "size": {
-          "parent": "button login/default",
+          "parent": "login link/default",
           "type": "sizing",
           "value": "2.5rem",
           "description": ""

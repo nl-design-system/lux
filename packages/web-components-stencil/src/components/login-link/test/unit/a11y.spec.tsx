@@ -1,13 +1,13 @@
 import { describe, expect, it } from '@jest/globals';
 import { newSpecPage } from '@stencil/core/testing';
 import { getTestableShadowElement } from '../../../../utils/test/element';
-import { ButtonLogin } from '../../button-login';
+import { LoginLink } from '../../login-link';
 
 describe('a11y', () => {
   it('hides logo icons from the a11y tree', async () => {
     const page = await newSpecPage({
-      components: [ButtonLogin],
-      html: `<lux-button-login agent="digid" />`,
+      components: [LoginLink],
+      html: `<lux-login-link agent="digid" />`,
     });
 
     const logoContainerElement = getTestableShadowElement(page, 'logo');
@@ -16,8 +16,8 @@ describe('a11y', () => {
 
   it('identifies the agent to assistive technologies', async () => {
     const page = await newSpecPage({
-      components: [ButtonLogin],
-      html: `<lux-button-login agent="digid" />`,
+      components: [LoginLink],
+      html: `<lux-login-link agent="digid" />`,
     });
 
     const { textContent }: HTMLElement = getTestableShadowElement(page, 'label');
