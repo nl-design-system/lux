@@ -1,15 +1,15 @@
 import { Component, Element, h, Prop } from '@stencil/core';
 import { HTMLStencilElement } from '@stencil/core/internal';
 import { COMPONENT_TAG, loginAgentsLabels } from './constants';
-import type { ButtonLoginAgent } from './types';
+import type { LoginLinkAgent } from './types';
 import { applyTestId } from '../../utils/test/testid';
 
 @Component({
-  tag: 'lux-button-login',
+  tag: 'lux-login-link',
   shadow: true,
-  styleUrl: 'button-login.scss',
+  styleUrl: 'login-link.scss',
 })
-export class ButtonLogin {
+export class LoginLink {
   private get printedLabel(): string {
     if (this.label) {
       return this.label;
@@ -26,9 +26,9 @@ export class ButtonLogin {
     return loginAgentsLabels[this.agent].agentLabel;
   }
 
-  @Element() el!: HTMLLuxButtonLoginElement;
+  @Element() el!: HTMLLuxLoginLinkElement;
 
-  @Prop() public readonly agent!: ButtonLoginAgent;
+  @Prop() public readonly agent!: LoginLinkAgent;
   @Prop() public readonly label?: string;
 
   renderLabel() {
@@ -42,14 +42,14 @@ export class ButtonLogin {
   }
 
   renderLogoIcon() {
-    const buttonLoginIcons: Record<ButtonLoginAgent, HTMLStencilElement> = {
+    const LoginLinkIcons: Record<LoginLinkAgent, HTMLStencilElement> = {
       digid: <lux-icon-logo-digid />,
       'digid-machtigen': <lux-icon-logo-digid />,
       eherkenning: <lux-icon-logo-eherkenning />,
       eidas: <lux-icon-logo-eidas />,
     };
 
-    return buttonLoginIcons[this.agent];
+    return LoginLinkIcons[this.agent];
   }
 
   renderLogoContainer() {

@@ -1,9 +1,9 @@
 import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
-import * as ButtonLoginStories from "./button-login.stories";
+import * as LoginLinkStories from "./login-link.stories";
 
-<Meta of={ButtonLoginStories} />
+<Meta of={LoginLinkStories} />
 
-# Button Login
+# Login Link
 
 Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.
 
@@ -15,12 +15,12 @@ Dit component is onderdeel van het patroon: [inlogstraat](https://www.logius.nl/
 
 ## Playground
 
-<Canvas of={ButtonLoginStories.Playground} />
-<Controls of={ButtonLoginStories.Playground} />
+<Canvas of={LoginLinkStories.Playground} />
+<Controls of={LoginLinkStories.Playground} />
 
 ## Gebruik
 
-Met de `Button Login` kunnen gebruikers inloggen met het gekozen inlogmiddel.
+Met de `Login Link` kunnen gebruikers inloggen met het gekozen inlogmiddel.
 
 ## Opmaak (voor buiten Logius)
 
@@ -36,9 +36,9 @@ Gebruik voor de volgende design tokens waardes uit uw huisstijl.
   {`
 | Token                                 | Waarde                 |
 | :------------------------------------ | :--------------------- |
-| \`--lux-button-login-font-family\`      | \`Rijksoverheid, Arial\` |
-| \`--lux-button-login-font-size\`        | \`18px\`                 |
-| \`--lux-button-login-line-height\` | \`28px\`                 |
+| \`--lux-login-link-font-family\`      | \`Rijksoverheid, Arial\` |
+| \`--lux-login-link-font-size\`        | \`18px\`                 |
+| \`--lux-login-link-line-height\` | \`28px\`                 |
 `}
 </Markdown>
 
@@ -52,8 +52,8 @@ Gebruik voor de volgende design tokens de aangeboden waardes, of waardes uit uw 
   {`
 | Token                              | Waarde |
 | :--------------------------------- | :----- |
-| \`--lux-button-login-border-width\`  | \`1px\`  |
-| \`--lux-button-login-border-radius\` | \`4px\`  |
+| \`--lux-login-link-border-width\`  | \`1px\`  |
+| \`--lux-login-link-border-radius\` | \`4px\`  |
 `}
 </Markdown>
 
@@ -65,15 +65,15 @@ Denk aan de contrastvereisten van de WCAG.
   {`
 | Token                                        | Waarde    |
 | :------------------------------------------- | :-------- |
-| \`--lux-button-login-background-color\`        | \`#282828\` |
-| \`--lux-button-login-border-color\`            | \`#696969\` |
-| \`--lux-button-login-color\`                   | \`#282828\` |
-| \`--lux-button-login-active-background-color\` | \`#a7a7a7\` |
-| \`--lux-button-login-active-border-color\`     | \`#282828\` |
-| \`--lux-button-login-active-color\`            | \`#282828\` |
-| \`--lux-button-login-hover-background-color\`  | \`#e6e6e6\` |
-| \`--lux-button-login-hover-border-color\`      | \`#696969\` |
-| \`--lux-button-login-hover-color\`             | \`#282828\` |
+| \`--lux-login-link-background-color\`        | \`#282828\` |
+| \`--lux-login-link-border-color\`            | \`#696969\` |
+| \`--lux-login-link-color\`                   | \`#282828\` |
+| \`--lux-login-link-active-background-color\` | \`#a7a7a7\` |
+| \`--lux-login-link-active-border-color\`     | \`#282828\` |
+| \`--lux-login-link-active-color\`            | \`#282828\` |
+| \`--lux-login-link-hover-background-color\`  | \`#e6e6e6\` |
+| \`--lux-login-link-hover-border-color\`      | \`#696969\` |
+| \`--lux-login-link-hover-color\`             | \`#282828\` |
 `}
 </Markdown>
 
@@ -85,8 +85,8 @@ Schaal het icoon mee met de hoogte van de button. Houd de button minimaal 48px h
   {`
 | Token                                | Waarde  |
 | :----------------------------------- | :------ |
-| \`--lux-button-login-min-inline-size\` | \`118px\` |
-| \`--lux-button-login-icon-size\`       | \`40px\`  |
+| \`--lux-login-link-min-inline-size\` | \`118px\` |
+| \`--lux-login-link-icon-size\`       | \`40px\`  |
 `}
 </Markdown>
 
@@ -94,19 +94,19 @@ Schaal het icoon mee met de hoogte van de button. Houd de button minimaal 48px h
 
 <ul className="lsb-section">
   <li>
-    <lux-button-login agent="digid"></lux-button-login>
+    <lux-login-link agent="digid"></lux-login-link>
     <span>Default</span>
   </li>
   <li>
-    <lux-button-login class="force-state--hover" agent="digid"></lux-button-login>
+    <lux-login-link class="force-state--hover" agent="digid"></lux-login-link>
     <span>Hover</span>
   </li>
   <li>
-    <lux-button-login class="force-state--active" agent="digid"></lux-button-login>
+    <lux-login-link class="force-state--active" agent="digid"></lux-login-link>
     <span>Active</span>
   </li>
   <li>
-    <lux-button-login class="force-state--focus" agent="digid"></lux-button-login>
+    <lux-login-link class="force-state--focus" agent="digid"></lux-login-link>
     <span>Focus</span>
   </li>
 </ul>
@@ -115,19 +115,19 @@ Schaal het icoon mee met de hoogte van de button. Houd de button minimaal 48px h
 
 <ul className="lsb-section">
   <li>
-    <lux-button-login agent="digid"></lux-button-login>
+    <lux-login-link agent="digid"></lux-login-link>
     <span>Digid</span>
   </li>
   <li>
-    <lux-button-login agent="digid-machtigen"></lux-button-login>
+    <lux-login-link agent="digid-machtigen"></lux-login-link>
     <span>Digid Machtigen</span>
   </li>
   <li>
-    <lux-button-login agent="eherkenning"></lux-button-login>
+    <lux-login-link agent="eherkenning"></lux-login-link>
     <span>eHerkenning</span>
   </li>
   <li>
-    <lux-button-login agent="eidas"></lux-button-login>
+    <lux-login-link agent="eidas"></lux-login-link>
     <span>eIDAS</span>
   </li>
 </ul>
@@ -137,24 +137,24 @@ Schaal het icoon mee met de hoogte van de button. Houd de button minimaal 48px h
 Gebruik de onderstaande Engelse vertalingen door het `label` attribuut toe te wijzen.
 
 ```html
-<lux-button-login agent="digid" label="Log in"></lux-button-login>
+<lux-login-link agent="digid" label="Log in"></lux-login-link>
 ```
 
 <ul className="lsb-section">
   <li>
-    <lux-button-login agent="digid" label="Log in"></lux-button-login>
+    <lux-login-link agent="digid" label="Log in"></lux-login-link>
     <span>Digid</span>
   </li>
   <li>
-    <lux-button-login agent="digid-machtigen" label="Log in as representative"></lux-button-login>
+    <lux-login-link agent="digid-machtigen" label="Log in as representative"></lux-login-link>
     <span>Digid Machtigen</span>
   </li>
   <li>
-    <lux-button-login agent="eherkenning" label="Login as a company or organisation"></lux-button-login>
+    <lux-login-link agent="eherkenning" label="Login as a company or organisation"></lux-login-link>
     <span>eHerkenning</span>
   </li>
   <li>
-    <lux-button-login agent="eidas"></lux-button-login>
+    <lux-login-link agent="eidas"></lux-login-link>
     <span>eIDAS</span>
   </li>
 </ul>
