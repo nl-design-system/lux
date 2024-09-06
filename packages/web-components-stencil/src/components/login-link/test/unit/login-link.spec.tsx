@@ -52,12 +52,12 @@ it('only emits a luxClick event when clicked', async () => {
 
   const clickHandler = jest.fn();
   const luxClickHandler = jest.fn();
-  const LoginLink = page.root;
+  const loginLink = page.root;
 
-  LoginLink?.addEventListener('click', luxClickHandler);
-  LoginLink?.addEventListener('luxClick', luxClickHandler);
+  loginLink?.addEventListener('click', luxClickHandler);
+  loginLink?.addEventListener('luxClick', luxClickHandler);
 
-  LoginLink?.click();
+  loginLink?.click();
 
   expect(clickHandler).not.toHaveBeenCalled();
   expect(luxClickHandler).toHaveBeenCalled();
