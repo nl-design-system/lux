@@ -79,6 +79,7 @@ const preview: Preview = {
           ['Design Tokens', 'Core', 'Common'],
           'Components',
           'Web Components',
+          ['Docs', 'Playground', '*', 'Design Tokens'],
           '*',
           'Colofon',
         ],
