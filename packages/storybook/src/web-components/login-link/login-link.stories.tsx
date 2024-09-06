@@ -1,7 +1,7 @@
 /* @license CC0-1.0 */
 
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import { LuxButtonLogin as ButtonLogin } from '@lux-design-system/web-components-react';
+import { LuxLoginLink as LoginLink } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type PropsWithoutRef } from 'react';
@@ -10,15 +10,15 @@ import { VisualAgents } from './visual/Agents';
 import { VisualStates } from './visual/States';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils/';
 
-const LuxButtonLogin = (props: PropsWithoutRef<JSX.LuxButtonLogin>) => <ButtonLogin {...props} />;
+const LuxLoginLink = (props: PropsWithoutRef<JSX.LuxLoginLink>) => <LoginLink {...props} />;
 
 const meta = {
-  title: 'Web Components/Button login',
-  id: 'web-components-button-login',
-  component: LuxButtonLogin,
+  title: 'Web Components/Login Link',
+  id: 'web-components-login-link',
+  component: LuxLoginLink,
   parameters: {
     tokens,
-    tokensPrefix: 'lux-button-login',
+    tokensPrefix: 'lux-login-link',
     tokensDefinition,
   },
   argTypes: {
@@ -32,7 +32,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof LuxButtonLogin>;
+} satisfies Meta<typeof LuxLoginLink>;
 
 export default meta;
 

@@ -1,12 +1,12 @@
 import { expect, it, jest } from '@jest/globals';
 import { newSpecPage } from '@stencil/core/testing';
 import { getTestableShadowElement } from '../../../../utils/test/element';
-import { ButtonLogin } from '../../button-login';
-import { ButtonLoginAgent } from '../../types';
+import { LoginLink } from '../../login-link';
+import { LoginLinkAgent } from '../../types';
 
 interface AgentTestConfig {
   label: string;
-  agent: ButtonLoginAgent;
+  agent: LoginLinkAgent;
 }
 
 const agents: AgentTestConfig[] = [
@@ -20,8 +20,8 @@ it.each(agents)(
   'renders the correct icon and label for [agent="$agent"]',
   async ({ agent, label }: AgentTestConfig) => {
     const page = await newSpecPage({
-      components: [ButtonLogin],
-      html: `<lux-button-login agent="${agent}" />`,
+      components: [LoginLink],
+      html: `<lux-login-link agent="${agent}" />`,
     });
 
     const labelElement = getTestableShadowElement<HTMLSpanElement>(page, 'label');
@@ -36,8 +36,8 @@ it.each(agents)(
 
 it('allows for a custom label to be provided', async () => {
   const page = await newSpecPage({
-    components: [ButtonLogin],
-    html: `<lux-button-login agent="digid" label="My Custom Label" />`,
+    components: [LoginLink],
+    html: `<lux-login-link agent="digid" label="My Custom Label" />`,
   });
 
   const { textContent }: HTMLElement = getTestableShadowElement(page, 'label');
@@ -46,18 +46,18 @@ it('allows for a custom label to be provided', async () => {
 
 it('only emits a luxClick event when clicked', async () => {
   const page = await newSpecPage({
-    components: [ButtonLogin],
-    html: `<lux-button-login agent="digid" />`,
+    components: [LoginLink],
+    html: `<lux-login-link agent="digid" />`,
   });
 
   const clickHandler = jest.fn();
   const luxClickHandler = jest.fn();
-  const buttonLogin = page.root;
+  const loginLink = page.root;
 
-  buttonLogin?.addEventListener('click', luxClickHandler);
-  buttonLogin?.addEventListener('luxClick', luxClickHandler);
+  loginLink?.addEventListener('click', luxClickHandler);
+  loginLink?.addEventListener('luxClick', luxClickHandler);
 
-  buttonLogin?.click();
+  loginLink?.click();
 
   expect(clickHandler).not.toHaveBeenCalled();
   expect(luxClickHandler).toHaveBeenCalled();
