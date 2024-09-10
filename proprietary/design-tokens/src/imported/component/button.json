@@ -73,27 +73,43 @@
         "type": "spacing",
         "value": "{lux.space.200}"
       },
-      "padding-block-start": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
-      },
       "padding-inline-end": {
         "type": "spacing",
         "value": "{lux.space.200}"
-      },
-      "padding-block-end": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
       },
       "column-gap": {
         "type": "spacing",
         "value": "{lux.space.100}"
       },
-      "min-inline-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
+      "default": {
+        "padding-block-end": {
+          "type": "spacing",
+          "value": "{lux.space.100}"
+        },
+        "padding-block-start": {
+          "type": "spacing",
+          "value": "{lux.space.100}"
+        },
+        "min-block-size": {
+          "type": "sizing",
+          "value": "{lux.size.target}"
+        }
       },
-      "min-block-size": {
+      "small": {
+        "padding-block-end": {
+          "type": "spacing",
+          "value": "{lux.space.100}"
+        },
+        "padding-block-start": {
+          "type": "spacing",
+          "value": "{lux.space.100}"
+        },
+        "min-block-size": {
+          "type": "sizing",
+          "value": "{lux.size.target}"
+        }
+      },
+      "min-inline-size": {
         "type": "sizing",
         "value": "{lux.size.target}"
       },
