@@ -93,6 +93,10 @@
         "min-block-size": {
           "type": "sizing",
           "value": "{lux.size.target}"
+        },
+        "min-inline-size": {
+          "type": "sizing",
+          "value": "{lux.size.target}"
         }
       },
       "small": {
@@ -107,11 +111,11 @@
         "min-block-size": {
           "type": "sizing",
           "value": "2rem"
+        },
+        "min-inline-size": {
+          "type": "sizing",
+          "value": "4rem"
         }
-      },
-      "min-inline-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
       },
       "border-radius": {
         "type": "borderRadius",

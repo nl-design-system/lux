@@ -48,7 +48,7 @@
       },
       "min-inline-size": {
         "type": "sizing",
-        "value": "{lux.button.min-inline-size}"
+        "value": "{lux.button.default.min-inline-size}"
       },
       "column-gap": {
         "type": "spacing",
