@@ -98,15 +98,15 @@
       "small": {
         "padding-block-end": {
           "type": "spacing",
-          "value": "{lux.space.100}"
+          "value": "{lux.space.25}"
         },
         "padding-block-start": {
           "type": "spacing",
-          "value": "{lux.space.100}"
+          "value": "{lux.space.25}"
         },
         "min-block-size": {
           "type": "sizing",
-          "value": "{lux.size.target}"
+          "value": "2rem"
         }
       },
       "min-inline-size": {
