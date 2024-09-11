@@ -1,0 +1,13 @@
+.lux-button {
+    min-width: var(--lux-button-default-min-inline-size);
+    min-height: var(--lux-button-default-min-block-size);
+    padding-top: var(--lux-button-default-padding-block-start);
+    padding-bottom: var(--lux-button-default-padding-block-end);
+}
+
+.lux-button--small {
+    min-width: var(--lux-button-small-min-inline-size);
+    min-height: var(--lux-button-small-min-block-size);
+    padding-top: var(--lux-button-small-padding-block-start);
+    padding-bottom: var(--lux-button-small-padding-block-end);
+}
