@@ -36,6 +36,7 @@
     "nl/utrecht-button",
     "nl/utrecht-link",
     "nl/utrecht-document",
+    "nl/utrecht-blockquote",
     "nl/utrecht-paragraph"
   ]
 }
