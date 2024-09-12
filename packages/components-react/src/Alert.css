@@ -1,0 +1,16 @@
+.lux-alert {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--lux-alert-column-gap);
+
+  .lux-alert-type-icon {
+    min-inline-size: var(--lux-alert-icon-size);
+    min-block-size: var(--lux-alert-icon-size);
+  }
+
+  .lux-alert-cross-icon {
+    min-inline-size: var(--lux-alert-close-button-size);
+    min-block-size: var(--lux-alert-close-button-size);
+  }
+}
