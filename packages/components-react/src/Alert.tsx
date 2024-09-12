@@ -4,7 +4,7 @@ import {
   AlertType as UtrechtAlertType,
   Icon as UtrechtIcon,
 } from '@utrecht/component-library-react/dist/css-module';
-import React, { PropsWithChildren, ReactNode, useState } from 'react';
+import { PropsWithChildren, ReactNode, useState } from 'react';
 import { CrossIcon, ErrorIcon, InfoIcon, SuccessIcon, WarningIcon } from './icons';
 import './Alert.css';
 
@@ -51,7 +51,7 @@ export const LuxAlert = ({
                 setClosed(true);
               }}
             >
-              {CrossIcon({})}
+              {CrossIcon()}
             </UtrechtIcon>
           )}
         </div>
