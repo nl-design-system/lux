@@ -13,12 +13,14 @@ type AlertType = Exclude<UtrechtAlertType, 'ok'> | 'success';
 export interface LuxAlertProps extends Omit<UtrechtAlertProps, 'type'> {
   type?: AlertType;
   closable?: boolean;
+  onClose?: Function;
 }
 
 export const LuxAlert = ({
   children,
   type = 'info',
   closable = false,
+  onClose,
   ...props
 }: PropsWithChildren<LuxAlertProps>): ReactNode => {
   const [_closed, setClosed] = useState(false);
@@ -47,6 +49,9 @@ export const LuxAlert = ({
               className="lux-alert-cross-icon"
               onClick={(e) => {
                 setClosed(true);
+                if (onClose) {
+                  onClose();
+                }
                 e.preventDefault();
               }}
             >
