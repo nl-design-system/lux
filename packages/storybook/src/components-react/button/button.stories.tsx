@@ -1,17 +1,5 @@
 import { LuxButton } from '@lux-design-system/components-react/src/button/Button';
-// import tokens from '@lux-design-system/design-tokens/dist/index.json';
-// import {
-// LuxButton as Button,
-//   LuxIconChevronLeft as IconChevronLeft,
-//   LuxIconChevronRight as IconChevronRight,
-// } from '@lux-design-system/web-components-react';
-// import type { JSX } from '@lux-design-system/web-components-stencil';
-// import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
-// import { userEvent } from '@storybook/test';
-// import { within } from 'shadow-dom-testing-library';
-// import tokensDefinition from './tokens.json';
-// import { createDesignTokensStory } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -19,11 +7,6 @@ const meta = {
   title: 'React/Button',
   id: 'components-react-button',
   component: LuxButton,
-  // parameters: {
-  //   tokens,
-  //   tokensPrefix: 'lux-button',
-  //   // tokensDefinition,
-  // },
   argTypes: {
     variant: {
       control: { type: 'select' },
@@ -48,10 +31,6 @@ const meta = {
     disabled: {
       type: 'boolean',
     },
-    // expanded: {
-    //   control: 'select',
-    //   options: [undefined, 'false', 'true'],
-    // },
     pressed: {
       control: 'select',
       options: [undefined, 'false', 'true', 'mixed'],
@@ -82,15 +61,11 @@ export const Playground: Story = {
     value: '',
     busy: false,
     disabled: false,
-    // expanded: undefined,
     pressed: undefined,
     form: undefined,
     formAction: '',
-    // formEnctype: '',
     formMethod: '',
     formNoValidate: false,
-    // popoverTarget: undefined,
-    // popoverTargetAction: '',
   },
   parameters: {
     docs: {
@@ -104,6 +79,7 @@ export const Primary: Story = {
   name: 'Primary',
   args: {
     variant: 'primary',
+    size: undefined,
     children: 'Primary Button',
   },
   parameters: {
@@ -114,211 +90,3 @@ export const Primary: Story = {
     },
   },
 };
-
-// export const Secondary: Story = {
-//   name: 'Secondary',
-//   args: {
-//     appearance: 'secondary-action-button',
-//     children: 'Secondary Button',
-//   },
-//   parameters: {
-//     docs: {
-//       description: {
-//         story: 'De Secondary styling zet je met `appearance="secondary-action-button"`',
-//       },
-//     },
-//   },
-// };
-
-// export const Tertiary: Story = {
-//   name: 'Tertiary',
-//   args: {
-//     appearance: 'subtle-button',
-//     children: 'Tertiary Button',
-//   },
-//   parameters: {
-//     docs: {
-//       description: {
-//         story: 'De Tertiary styling zet je met `appearance="subtle-button"`',
-//       },
-//     },
-//   },
-// };
-
-// export const Active: Story = {
-//   name: 'Active',
-//   args: {
-//     appearance: 'button',
-//     children: 'Active Button',
-//     forceState: 'active',
-//   },
-//   play: async ({ canvasElement }) => {
-//     const canvas = await within(canvasElement);
-//     const luxButton = canvas.getByShadowText('Active Button');
-//     await userEvent.pointer({ target: luxButton, keys: '[MouseLeft]' });
-//   },
-//   render: (args) => (
-//     <>
-//       <LuxButton {...args} appearance="primary-action-button">
-//         {args.children}
-//       </LuxButton>
-//       <LuxButton {...args} appearance="secondary-action-button">
-//         {args.children}
-//       </LuxButton>
-//       <LuxButton {...args} appearance="subtle-button">
-//         {args.children}
-//       </LuxButton>
-//     </>
-//   ),
-//   decorators: [
-//     (Story) => (
-//       <div className="lsb-story-grid">
-//         <Story />
-//       </div>
-//     ),
-//   ],
-// };
-
-// export const Hover: Story = {
-//   name: 'Hover',
-//   args: {
-//     appearance: 'button',
-//     children: 'Hover Button',
-//     forceState: 'hover',
-//   },
-//   render: (args) => (
-//     <>
-//       <LuxButton {...args} appearance="primary-action-button">
-//         {args.children}
-//       </LuxButton>
-//       <LuxButton {...args} appearance="secondary-action-button">
-//         {args.children}
-//       </LuxButton>
-//       <LuxButton {...args} appearance="subtle-button">
-//         {args.children}
-//       </LuxButton>
-//     </>
-//   ),
-//   decorators: [
-//     (Story) => (
-//       <div className="lsb-story-grid">
-//         <Story />
-//       </div>
-//     ),
-//   ],
-// };
-
-// export const Focus: Story = {
-//   name: 'Focus',
-//   args: {
-//     appearance: 'button',
-//     children: 'Focus Button',
-//     forceState: 'focus',
-//   },
-//   render: (args) => (
-//     <>
-//       <LuxButton {...args} appearance="primary-action-button">
-//         {args.children}
-//       </LuxButton>
-//       <LuxButton {...args} appearance="secondary-action-button">
-//         {args.children}
-//       </LuxButton>
-//       <LuxButton {...args} appearance="subtle-button">
-//         {args.children}
-//       </LuxButton>
-//     </>
-//   ),
-//   decorators: [
-//     (Story) => (
-//       <div className="lsb-story-grid">
-//         <Story />
-//       </div>
-//     ),
-//   ],
-// };
-
-// export const Busy: Story = {
-//   name: 'Busy',
-//   args: {
-//     appearance: 'primary-action-button',
-//     children: 'Busy Button',
-//     busy: true,
-//   },
-//   parameters: {
-//     docs: {
-//       description: {
-//         story:
-//           'Een busy button zet je met het `busy`-attribute (`true`/`false`, default: `undefined`). Toont een `wait` cursor en `aria-busy`-attribute.',
-//       },
-//     },
-//   },
-// };
-
-// export const Toggle: Story = {
-//   name: 'Toggle',
-//   args: {
-//     appearance: 'primary-action-button',
-//     pressed: true,
-//   },
-//   render: (args: any) => {
-//     const [{ pressed }, updateArgs] = useArgs();
-
-//     const onPress = () => {
-//       updateArgs({ pressed: !pressed });
-//     };
-
-//     return (
-//       <LuxButton {...args} onClick={onPress}>
-//         Toggle Button {args.pressed ? 'pressed' : 'not pressed'}
-//       </LuxButton>
-//     );
-//   },
-//   argTypes: {
-//     pressed: {
-//       control: 'boolean',
-//     },
-//     children: {
-//       table: {
-//         disable: true,
-//       },
-//     },
-//   },
-//   parameters: {
-//     docs: {
-//       description: {
-//         story:
-//           'Een pressed button zet je met het `pressed`-attribute (`true`/`false`/`"mixed"`, default: `undefined`). Zet `aria-pressed`-attribute.',
-//       },
-//     },
-//   },
-// };
-
-// export const WithStartIcon: Story = {
-//   name: 'Start Icon',
-//   args: {
-//     appearance: 'primary-action-button',
-//     children: 'Start Icon',
-//   },
-//   render: (args) => (
-//     <LuxButton {...args}>
-//       <IconChevronLeft />
-//       {args.children}
-//     </LuxButton>
-//   ),
-// };
-
-// export const WithEndIcon: Story = {
-//   name: 'End Icon',
-//   args: {
-//     appearance: 'primary-action-button',
-//     children: 'End Icon',
-//   },
-//   render: (args) => (
-//     <LuxButton {...args}>
-//       {args.children}
-//       <IconChevronRight />
-//     </LuxButton>
-//   ),
-// };
-
-// export const DesignTokens = createDesignTokensStory(meta);
