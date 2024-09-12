@@ -27,7 +27,6 @@
     "@chromatic-com/storybook": "1.6.1",
     "@lux-design-system/assets": "workspace:*",
     "@lux-design-system/components-css": "workspace:*",
-    "@lux-design-system/components-react": "workspace:*",
     "@lux-design-system/design-tokens": "workspace:*",
     "@lux-design-system/font": "workspace:*",
     "@lux-design-system/web-components-react": "workspace:*",
