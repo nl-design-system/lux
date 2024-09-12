@@ -821,12 +821,8 @@
       "lux.button.primary.disabled.color": "b045aa021820ff9bc622c6239e0991825502517e",
       "lux.button.line-height": "1f0ca2d64c5e950d1c58c87f2015aaa1fd24f51e",
       "lux.button.padding-inline-start": "a5b7ab5bd480561eff942d2284d1b3d07f8ac156",
-      "lux.button.padding-block-start": "16d752da1792d39e113c2303896334fce38332ad",
       "lux.button.padding-inline-end": "e2c01ad2f2951109f581d5cf57569719758f0d00",
-      "lux.button.padding-block-end": "ce35ee8f5482682ac7627540f5a3f70dca3cbb54",
       "lux.button.column-gap": "932b7c4668e29454c3209a8fd005083a094e0f57",
-      "lux.button.min-inline-size": "595e42830676f55c43a45d72ec0fae862ddbe704",
-      "lux.button.min-block-size": "13f835d1eb827dfa55118a50f97bf6b7c93c1785",
       "lux.button.border-radius": "bd1c529f671d43f35560df8b38d0492534f1444c",
       "lux.button.border-width": "db73ff380c8ee1081de5860bf145202da2f439c0",
       "lux.button.icon.size": "ea208b74061eb5f7bae1373be813e86ca5f7e028",
@@ -881,7 +877,11 @@
       "lux.login-link.font-family": "4f871538e4cec521a825f5826c51f6fbd70c95bb",
       "lux.alert.message.row-gap": "54e9112131b776917517bd28db964371da1cf6a1",
       "lux.alert.paragraph.font-weight": "f15a7d26f5139ee2a1310329ecb0d321897ea9b6",
-      "lux.alert.icon.size": "d2a4831492e260ecd5376ede736bd53d92ca8de4"
+      "lux.alert.icon.size": "d2a4831492e260ecd5376ede736bd53d92ca8de4",
+      "lux.button.default.min-block-size": "13f835d1eb827dfa55118a50f97bf6b7c93c1785",
+      "lux.button.default.padding-block-start": "16d752da1792d39e113c2303896334fce38332ad",
+      "lux.button.default.padding-block-end": "ce35ee8f5482682ac7627540f5a3f70dca3cbb54",
+      "lux.button.default.min-inline-size": "595e42830676f55c43a45d72ec0fae862ddbe704"
     },
     "group": "component"
   },
