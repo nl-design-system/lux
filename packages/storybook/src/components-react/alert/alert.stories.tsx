@@ -1,13 +1,14 @@
-import { LuxAlert as Alert } from '@lux-design-system/components-react/src/Alert';
+import { LuxAlert as Alert, LuxAlertProps } from '@lux-design-system/components-react/src/Alert';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { LuxButton as Button, LuxParagraph as Paragraph } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
 import { useState } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
-// import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
-const LuxAlert = (props: PropsWithChildren<JSX.LuxAlert> & HTMLAttributes<HTMLLuxAlertElement>) => <Alert {...props} />;
+const LuxAlert = (props: PropsWithChildren<LuxAlertProps> & HTMLAttributes<HTMLLuxAlertElement>) => (
+  <Alert {...props} />
+);
 const LuxParagraph = ({ children }: any) => <Paragraph>{children}</Paragraph>;
 const LuxButton = (props: PropsWithChildren<JSX.LuxButton> & HTMLAttributes<HTMLLuxButtonElement>) => (
   <Button {...props} />
@@ -23,7 +24,6 @@ const meta = {
   parameters: {
     tokens,
     tokensPrefix: 'react-alert',
-    // tokensDefinition,
   },
   argTypes: {
     children: {
@@ -91,7 +91,7 @@ export const Info: Story = {
   },
 };
 
-export const Ok: Story = {
+export const Success: Story = {
   ...AlertTemplate,
   name: 'Success',
   args: {
@@ -160,18 +160,3 @@ export const AriaRole: Story = {
     );
   },
 };
-
-// export const DesignTokens = createDesignTokensStory(meta);
-
-// export const Visual = createVisualRegressionStory(() => (
-//   <>
-//     <h4 className="lux-heading-3">Light</h4>
-//     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-//       <VisualTypes />
-//     </VisualRegressionWrapper>
-//     <h4 className="lux-heading-3">Dark</h4>
-//     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-//       <VisualTypes />
-//     </VisualRegressionWrapper>
-//   </>
-// ));

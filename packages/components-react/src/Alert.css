@@ -3,10 +3,6 @@
   flex-direction: row;
   align-items: flex-start;
   gap: var(--lux-alert-column-gap);
-  border: var(--lux-alert-border-width);
-  border-radius: var(--lux-alert-border-radius);
-  padding-inline: var(--lux-alert-padding-block-start) var(--lux-alert-padding-inline-end);
-  padding-block: var(--lux-alert-padding-block-end) var(--lux-alert-padding-inline-start);
 
   .lux-alert-type-icon {
     min-inline-size: var(--lux-alert-icon-size);

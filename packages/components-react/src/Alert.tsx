@@ -10,9 +10,8 @@ import './Alert.css';
 
 type AlertType = Exclude<UtrechtAlertType, 'ok'> | 'success';
 
-interface LuxAlertProps extends Omit<UtrechtAlertProps, 'type'> {
+export interface LuxAlertProps extends Omit<UtrechtAlertProps, 'type'> {
   type?: AlertType;
-  closed?: boolean;
   closable?: boolean;
 }
 
@@ -20,10 +19,9 @@ export const LuxAlert = ({
   children,
   type = 'info',
   closable = false,
-  closed = false,
   ...props
 }: PropsWithChildren<LuxAlertProps>): ReactNode => {
-  const [_closed, setClosed] = useState(closed);
+  const [_closed, setClosed] = useState(false);
   const utrechtAlertType: UtrechtAlertType = type === 'success' ? 'ok' : type;
 
   const icon =
@@ -47,8 +45,9 @@ export const LuxAlert = ({
           {closable && (
             <UtrechtIcon
               className="lux-alert-cross-icon"
-              onClick={() => {
+              onClick={(e) => {
                 setClosed(true);
+                e.preventDefault();
               }}
             >
               {CrossIcon()}
