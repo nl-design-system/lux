@@ -1,5 +1,3 @@
-import { LuxButton } from "./button/Button";
+import { LuxButton } from './button/Button';
 
-export {
-    LuxButton
-};
+export { LuxButton };

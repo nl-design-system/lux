@@ -1,7 +1,7 @@
-import { LuxButton } from "@lux-design-system/components-react/src/button/Button";
+import { LuxButton } from '@lux-design-system/components-react/src/button/Button';
 // import tokens from '@lux-design-system/design-tokens/dist/index.json';
 // import {
-  // LuxButton as Button,
+// LuxButton as Button,
 //   LuxIconChevronLeft as IconChevronLeft,
 //   LuxIconChevronRight as IconChevronRight,
 // } from '@lux-design-system/web-components-react';
@@ -30,8 +30,8 @@ const meta = {
       options: ['primary', 'secondary', 'tertiary'],
     },
     size: {
-      control: {type: 'select' },
-      options: [undefined, 'small']
+      control: { type: 'select' },
+      options: [undefined, 'small'],
     },
     hint: {
       control: { type: 'select' },

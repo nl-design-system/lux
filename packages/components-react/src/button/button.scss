@@ -1,13 +1,13 @@
 .lux-button {
-    min-width: var(--lux-button-default-min-inline-size);
-    min-height: var(--lux-button-default-min-block-size);
-    padding-top: var(--lux-button-default-padding-block-start);
-    padding-bottom: var(--lux-button-default-padding-block-end);
+  padding-block-start: var(--lux-button-default-padding-block-start);
+  padding-block-end: var(--lux-button-default-padding-block-end);
+  min-inline-size: var(--lux-button-default-min-inline-size);
+  min-block-size: var(--lux-button-default-min-block-size);
 }
 
 .lux-button--small {
-    min-width: var(--lux-button-small-min-inline-size);
-    min-height: var(--lux-button-small-min-block-size);
-    padding-top: var(--lux-button-small-padding-block-start);
-    padding-bottom: var(--lux-button-small-padding-block-end);
+  padding-block-start: var(--lux-button-small-padding-block-start);
+  padding-block-end: var(--lux-button-small-padding-block-end);
+  min-inline-size: var(--lux-button-small-min-inline-size);
+  min-block-size: var(--lux-button-small-min-block-size);
 }
