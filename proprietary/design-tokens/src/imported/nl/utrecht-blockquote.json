@@ -1,0 +1,94 @@
+{
+  "utrecht": {
+    "blockquote": {
+      "attribution": {
+        "font-size": {
+          "value": "{rhc.font-size.paragraph.default}",
+          "type": "fontSizes"
+        },
+        "font-family": {
+          "value": "{rhc.font-family.primary}",
+          "type": "fontFamilies"
+        },
+        "line-height": {
+          "value": "{rhc.line-height.paragraph}",
+          "type": "lineHeights"
+        },
+        "font-weight": {
+          "value": "{rhc.font-weight.regular}",
+          "type": "fontWeights"
+        },
+        "padding-block-start": {
+          "value": "{rhc.space.150}",
+          "type": "spacing"
+        },
+        "color": {
+          "value": "{rhc.color.foreground.subdued}",
+          "type": "color"
+        }
+      },
+      "content": {
+        "font-family": {
+          "value": "{rhc.font-family.secondary}",
+          "type": "fontFamilies"
+        },
+        "line-height": {
+          "value": "{rhc.line-height.paragraph}",
+          "type": "lineHeights"
+        },
+        "font-weight": {
+          "value": "{rhc.font-weight.regular}",
+          "type": "fontWeights"
+        },
+        "font-size": {
+          "value": "{rhc.font-size.paragraph.intro}",
+          "type": "fontSizes"
+        },
+        "color": {
+          "value": "{rhc.color.foreground.lint}",
+          "type": "color"
+        }
+      },
+      "padding-block-end": {
+        "value": "{rhc.space.400}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{rhc.space.400}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{rhc.space.400}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{rhc.space.400}",
+        "type": "spacing"
+      },
+      "row-gap": {
+        "value": "{rhc.space.150}",
+        "type": "spacing"
+      },
+      "background-color": {
+        "value": "transparent",
+        "type": "color"
+      },
+      "border": {
+        "color": {
+          "value": "{rhc.color.primary.500}",
+          "type": "color"
+        }
+      }
+    },
+    "blockqoute": {
+      "border-radius": {
+        "value": "0px, {rhc.border-radius.keep}, 0px, 0px",
+        "type": "borderRadius"
+      },
+      "border-width": {
+        "value": "{rhc.border-width.m}",
+        "type": "borderWidth"
+      }
+    }
+  }
+}
