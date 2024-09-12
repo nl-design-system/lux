@@ -259,6 +259,9 @@ importers:
       '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
+      '@lux-design-system/components-react':
+        specifier: workspace:*
+        version: link:../components-react
       '@lux-design-system/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
