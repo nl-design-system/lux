@@ -1,16 +1,19 @@
 .lux-alert {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: var(--lux-alert-column-gap);
-
-  .lux-alert-type-icon {
-    min-inline-size: var(--lux-alert-icon-size);
-    min-block-size: var(--lux-alert-icon-size);
+  * {
+    color: var(--utrecht-alert-color);
   }
 
-  .lux-alert-cross-icon {
-    min-inline-size: var(--lux-alert-close-button-size);
-    min-block-size: var(--lux-alert-close-button-size);
+  .lux-alert-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--lux-alert-column-gap);
+    
+    .lux-alert-cross-icon {
+      margin-inline-start: auto;
+      min-inline-size: var(--lux-alert-close-button-size);
+      min-block-size: var(--lux-alert-close-button-size);
+    }
   }
 }

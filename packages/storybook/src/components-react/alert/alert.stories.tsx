@@ -1,4 +1,5 @@
 import { LuxAlert as Alert, LuxAlertProps } from '@lux-design-system/components-react/src/Alert';
+import { LuxHeading } from '@lux-design-system/components-react/src/Heading';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { LuxButton as Button, LuxParagraph as Paragraph } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
@@ -53,6 +54,9 @@ export default meta;
 const AlertTemplate: Story = {
   render: ({ children, ...args }) => (
     <LuxAlert {...args}>
+      <LuxHeading level={3}>
+        {args.type ? args.type?.charAt(0).toUpperCase() + args.type?.slice(1) : 'Title'}
+      </LuxHeading>
       <LuxParagraph>{children}</LuxParagraph>
     </LuxAlert>
   ),
@@ -86,7 +90,6 @@ export const Info: Story = {
   args: {
     type: 'info',
     children: textTemplate('Info alert'),
-    title: 'Info',
     closable: true,
   },
 };
@@ -116,7 +119,6 @@ export const Error: Story = {
   name: 'Error',
   args: {
     type: 'error',
-    title: 'Error',
     children: textTemplate('Error alert'),
     closable: true,
   },
