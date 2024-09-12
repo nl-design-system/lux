@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "Community for NL Design System",
   "description": "React component library  for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "EUPL-1.2",
@@ -19,6 +19,7 @@
   },
   "scripts": {
     "prebuild": "npm run clean",
+    "prepack": "npm run build",
     "build": "npm-run-all build:**",
     "build:components": "vite build",
     "clean": "rimraf dist/ pages/",
