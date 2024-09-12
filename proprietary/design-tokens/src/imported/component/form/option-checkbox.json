@@ -160,6 +160,10 @@
         "type": "borderWidth"
       },
       "hover": {
+        "border-width": {
+          "value": "2.5px",
+          "type": "borderWidth"
+        },
         "background-color": {
           "value": "{lux.color.canvas}",
           "type": "color"
