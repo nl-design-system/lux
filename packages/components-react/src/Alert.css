@@ -1,7 +1,8 @@
 .lux-alert {
   gap: var(--lux-alert-column-gap);
+
   * {
-    color: var(--utrecht-alert-color);
+    color: var(--lux-alert-color);
   }
 
   .lux-alert-container {
@@ -9,7 +10,7 @@
     flex-direction: row;
     align-items: flex-start;
     gap: var(--lux-alert-column-gap);
-    
+
     .lux-alert-cross-icon {
       margin-inline-start: auto;
       min-inline-size: var(--lux-alert-close-button-size);

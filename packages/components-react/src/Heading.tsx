@@ -2,7 +2,6 @@ import {
   Heading as UtrechtHeading,
   HeadingProps as UtrechtHeadingProps,
 } from '@utrecht/component-library-react/dist/css-module';
-import React from 'react';
 import { PropsWithChildren, ReactNode } from 'react';
 
 export interface LuxHeadingProps extends UtrechtHeadingProps {}
