@@ -8,7 +8,10 @@
       "core/color": "enabled",
       "core/spacing": "enabled",
       "core/border": "enabled",
-      "core/other": "enabled"
+      "core/other": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:1003",
     "$figmaModeId": "7:30",
@@ -188,7 +191,10 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled"
+      "common/default": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -204,7 +210,10 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled"
+      "product/Logius": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -253,7 +262,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius Blauw": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2641:0",
@@ -302,7 +314,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -351,7 +366,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -399,7 +417,10 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc-mapping": "enabled"
+      "product/NLdoc-mapping": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -434,7 +455,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Elia": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -482,7 +506,10 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "viewport/xl": "enabled"
+      "viewport/xl": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -517,7 +544,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport/xl": "source",
-      "viewport/lg": "enabled"
+      "viewport/lg": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -552,7 +582,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport/xl": "source",
-      "viewport/md": "enabled"
+      "viewport/md": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -587,7 +620,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport/xl": "source",
-      "viewport/sm": "enabled"
+      "viewport/sm": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -621,7 +657,10 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "viewport/xs": "enabled"
+      "viewport/xs": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -655,7 +694,10 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled"
+      "mode/light": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -709,7 +751,10 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "enabled"
+      "mode/dark": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -767,7 +812,10 @@
       "component/alert": "enabled",
       "component/button": "enabled",
       "component/button login": "enabled",
-      "component/icon-logo": "enabled"
+      "component/icon-logo": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1503:3470",
     "$figmaModeId": "1503:2",
@@ -895,7 +943,10 @@
       "nl/utrecht-paragraph": "enabled",
       "nl/utrecht-button": "enabled",
       "nl/utrecht-alert": "enabled",
-      "nl/utrecht-link": "enabled"
+      "nl/utrecht-link": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",
@@ -997,7 +1048,10 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/default": "enabled"
+      "NLdoc/default": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1006,7 +1060,10 @@
     "name": "Rijksoverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Rijksoverheid": "enabled"
+      "NLdoc/Rijksoverheid": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1015,7 +1072,10 @@
     "name": "Ridderkerk",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Ridderkerk": "enabled"
+      "NLdoc/Ridderkerk": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1024,7 +1084,10 @@
     "name": "Waterschap Hollandse Delta",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Waterschap Hollandse Delta": "enabled"
+      "NLdoc/Waterschap Hollandse Delta": "enabled",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "group": "NLdoc"
   },
@@ -1034,7 +1097,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Digitoegankelijk": "enabled",
-      "product/Logius": "source"
+      "product/Logius": "source",
+      "component/form/form-field-option-label": "disabled",
+      "component/form/form-field-checkbox-option": "disabled",
+      "component/form/form-field-radio-option": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2690:0",

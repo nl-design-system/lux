@@ -1,0 +1,38 @@
+{
+  "lux": {
+    "form-field-radio-option": {
+      "label": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "disabled": {
+          "color": {
+            "value": "{lux.color.foreground.subdued}",
+            "type": "color"
+          }
+        }
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "column-gap": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      }
+    }
+  }
+}

@@ -31,6 +31,8 @@
     "component/icon-logo",
     "component/form/form-field-label-ander-voorstel",
     "component/form/form-field-option-label",
+    "component/form/form-field-checkbox-option",
+    "component/form/form-field-radio-option",
     "component/form/form-field-label",
     "component/form/option-checkbox",
     "component/form/option-radio",

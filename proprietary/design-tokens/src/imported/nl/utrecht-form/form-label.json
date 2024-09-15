@@ -10,38 +10,38 @@
         "type": "fontWeights"
       },
       "font-size": {
-        "value": "{lux.form-label-option.font-size}",
+        "value": "{lux.form-field-radio-option.font-size}",
         "type": "fontSizes"
       },
       "checkbox": {
         "font-weight": {
-          "value": "{lux.form-label-option.font-weight}",
+          "value": "{lux.form-field-radio-option.font-weight}",
           "type": "fontWeights"
         },
         "color": {
-          "value": "{lux.form-field-option-label.option.color}",
+          "value": "{lux.form-field-radio-option.label.color}",
           "type": "color"
         }
       },
       "checked": {
         "font-weight": {
-          "value": "{lux.form-label-option.font-weight}",
+          "value": "{lux.form-field-radio-option.font-weight}",
           "type": "fontWeights"
         }
       },
       "disabled": {
         "color": {
-          "value": "{lux.form-field-option-label.disabled.color}",
+          "value": "{lux.form-field-radio-option.label.disabled.color}",
           "type": "color"
         }
       },
       "radio": {
         "color": {
-          "value": "{lux.form-field-option-label.option.color}",
+          "value": "{lux.form-field-radio-option.label.color}",
           "type": "color"
         },
         "font-weight": {
-          "value": "{lux.form-label-option.font-weight}",
+          "value": "{lux.form-field-radio-option.font-weight}",
           "type": "fontWeights"
         }
       }
