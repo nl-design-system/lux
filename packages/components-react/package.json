@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "author": "Community for NL Design System",
   "description": "React component library  for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "EUPL-1.2",
@@ -31,8 +31,7 @@
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist/",
-    "src/"
+    "dist/"
   ],
   "dependencies": {
     "@utrecht/component-library-react": "5",
