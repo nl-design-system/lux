@@ -111,22 +111,22 @@
         "level-1": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "2rem"
+          "value": "2.5rem"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "1.5rem"
+          "value": "2rem"
         },
         "level-3": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "1.25rem"
+          "value": "1.5rem"
         },
         "level-4": {
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
-          "value": "1rem"
+          "value": "1.25rem"
         }
       }
     },
