@@ -40,10 +40,9 @@ export const LuxAlert = ({
     );
   return (
     !_closed && (
-      <UtrechtAlert icon={<></>} type={utrechtAlertType} {...props}>
-        <div className="lux-alert">
-          <UtrechtIcon className="lux-alert-type-icon">{icon}</UtrechtIcon>
-          {children}
+      <UtrechtAlert type={utrechtAlertType} className="lux-alert" icon={icon} {...props}>
+        <div className="lux-alert-container">
+          <div>{children}</div>
           {closable && (
             <UtrechtIcon
               className="lux-alert-cross-icon"
