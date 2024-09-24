@@ -5,19 +5,28 @@
         "default": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.paars.500}",
+          "value": "{lux.color.robijnrood.500}",
           "description": "kleur van het product"
         },
         "subdued": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.paars.100}",
+          "value": "{lux.color.robijnrood.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.paars.400}",
+          "value": "{lux.color.robijnrood.500}",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.3",
+                "space": "lch"
+              }
+            }
+          },
           "description": "Hover kleur van het product"
         }
       }
@@ -151,7 +160,7 @@
       }
     },
     "product": {
-      "value": "Elia",
+      "value": "EVA",
       "type": "text"
     }
   },
