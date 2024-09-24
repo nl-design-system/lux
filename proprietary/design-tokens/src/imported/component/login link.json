@@ -133,6 +133,25 @@
       "border-style": {
         "type": "other",
         "value": "solid"
+      },
+      "focus": {
+        "color": {
+          "parent": "login link/default",
+          "type": "color",
+          "value": "{lux.color.foreground.default}"
+        },
+        "background-color": {
+          "parent": "login link/default",
+          "type": "color",
+          "value": "{lux.color.background.default}",
+          "description": ""
+        },
+        "border-color": {
+          "parent": "login link/default",
+          "type": "color",
+          "value": "{lux.color.border.default}",
+          "description": ""
+        }
       }
     }
   }
