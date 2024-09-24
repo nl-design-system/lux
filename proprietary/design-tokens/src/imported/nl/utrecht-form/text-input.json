@@ -148,6 +148,10 @@
           "value": "{lux.color.foreground.default}",
           "type": "color"
         }
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
       }
     }
   }
