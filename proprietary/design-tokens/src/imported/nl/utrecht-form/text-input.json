@@ -135,7 +135,17 @@
         "border-width": {
           "value": "{lux.border-width.default}",
           "type": "borderWidth"
-        },
+        }
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
+      }
+    }
+  },
+  "todo": {
+    "textbox": {
+      "hover": {
         "background-color": {
           "value": "{lux.color.background.default}",
           "type": "color"
@@ -148,10 +158,6 @@
           "value": "{lux.color.foreground.default}",
           "type": "color"
         }
-      },
-      "min-block-size": {
-        "value": "{lux.size.target}",
-        "type": "sizing"
       }
     }
   }
