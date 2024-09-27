@@ -325,6 +325,9 @@ importers:
       '@utrecht/button-css':
         specifier: 1.2.0
         version: 1.2.0
+      '@utrecht/link-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@utrecht/paragraph-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -407,6 +410,9 @@ importers:
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
+      '@utrecht/document-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@utrecht/paragraph-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -2376,6 +2382,7 @@ packages:
 
   '@storybook/testing-library@0.2.2':
     resolution: {integrity: sha512-L8sXFJUHmrlyU2BsWWZGuAjv39Jl1uAqUHdxmN42JY15M4+XCMjGlArdCCjDe1wpTSW6USYISA9axjZojgtvnw==}
+    deprecated: In Storybook 8, this package functionality has been integrated to a new package called @storybook/test, which uses Vitest APIs for an improved experience. When upgrading to Storybook 8 with 'npx storybook@latest upgrade', you will get prompted and will get an automigration for the new package. Please migrate when you can.
 
   '@storybook/theming@8.2.8':
     resolution: {integrity: sha512-jt5oUO82LN3z5aygNdHucBZcErSicIAwzhR5Kz9E/C9wUbhyZhbWsWyhpZaytu8LJUj2YWAIPS8kq/jGx+qLZA==}
@@ -2757,6 +2764,12 @@ packages:
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
 
+  '@utrecht/document-css@1.1.0':
+    resolution: {integrity: sha512-navpa20l9U2c/gMDNzZ83MF2/VfXJBXVIGw6CoZ7s3uNbR92H6MAvvSn29C/Kg9QGjDAhDd7P5dIyjQ1KrwJfg==}
+
+  '@utrecht/link-css@1.1.0':
+    resolution: {integrity: sha512-L/R5rGvA2RrXJFw/k2l2U7ZgeJuz92pdFDbW1Rtw+7XBK5Z/e+YMpnlDL8fx5VmFk95xO4Jmgv1j6BYiI6vnqA==}
+
   '@utrecht/paragraph-css@1.1.0':
     resolution: {integrity: sha512-HxkYL/W0tkHngucdBFHOK8t7OmUmlnz4uIXP4GBXdA299Hp+RGb/1vaH5A2RaIN0P7/4v6EkuV4lquOcHx0K0Q==}
 
@@ -2992,6 +3005,7 @@ packages:
   are-we-there-yet@3.0.1:
     resolution: {integrity: sha512-QZW4EDmGwlYur0Yyf/b2uGucHQMa8aFUP7eu9ddR73vvhFyt4V0Vl3QHPcTNJ8l6qYOBdxgXdnBXQrHilfRQBg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -4422,6 +4436,7 @@ packages:
   gauge@4.0.4:
     resolution: {integrity: sha512-f9m+BEN5jkg6a0fZjleidjN51VE1X+mPFQ2DJ0uv1V39oCLCbsGe6yjbBnp7eK7z/+GAon99a3nHuqbuuthyPg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   generic-names@4.0.0:
     resolution: {integrity: sha512-ySFolZQfw9FoDb3ed9d80Cm9f0+r7qj+HJkWjeD9RBfpxEVTlVhol+gvaQB/78WbwYfbnNh8nWHHBSlg072y6A==}
@@ -4759,6 +4774,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -6026,6 +6042,7 @@ packages:
   npmlog@6.0.2:
     resolution: {integrity: sha512-/vBvz5Jfr9dT/aFWd0FIRf+T/Q2WBsLENygUaFUqstqsycmZAP/t5BvFJTK0viFmSUxiUKTUplWy5vt+rvKIxg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    deprecated: This package is no longer supported.
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -6794,6 +6811,7 @@ packages:
   read-package-json@6.0.4:
     resolution: {integrity: sha512-AEtWXYfopBj2z5N5PbkAOeNHRPUg5q+Nen7QLxV8M2zJq1ym6/lCz3fYNTCXe19puu2d06jfHhrP7v/S2PtMMw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   read-pkg-up@7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}
@@ -10947,6 +10965,10 @@ snapshots:
   '@utrecht/components@4.0.0':
     dependencies:
       clsx: 1.2.1
+
+  '@utrecht/document-css@1.1.0': {}
+
+  '@utrecht/link-css@1.1.0': {}
 
   '@utrecht/paragraph-css@1.1.0': {}
 
