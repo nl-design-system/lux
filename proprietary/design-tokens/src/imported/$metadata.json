@@ -37,6 +37,7 @@
     "nl/utrecht-document",
     "nl/utrecht-link-list",
     "nl/utrecht-page-footer",
+    "nl/utrecht-column-layout",
     "nl/utrecht-paragraph"
   ]
 }

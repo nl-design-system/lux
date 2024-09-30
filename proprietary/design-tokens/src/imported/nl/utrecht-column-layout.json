@@ -1,0 +1,23 @@
+{
+  "utrecht": {
+    "column-layout": {
+      "column-rule-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
+      },
+      "column-rule-width": {
+        "value": "{lux.border-width.none}",
+        "type": "borderWidth"
+      },
+      "column-width": {
+        "value": "auto",
+        "type": "sizing",
+        "description": "full-size, hoe stel ik dit in? "
+      },
+      "gap": {
+        "value": "{lux.grid.gutter}",
+        "type": "spacing"
+      }
+    }
+  }
+}
