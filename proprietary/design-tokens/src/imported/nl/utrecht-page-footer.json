@@ -24,15 +24,15 @@
       "padding-inline-end": {
         "value": "{lux.grid.margin}",
         "type": "spacing"
-      },
-      "border-color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
       }
     }
   },
   "todo": {
     "page-footer": {
+      "border-color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
       "column-gap": {
         "value": "{lux.grid.gutter}",
         "type": "spacing"
@@ -50,6 +50,10 @@
           "value": "{lux.space.200}",
           "type": "spacing"
         }
+      },
+      "row-gap": {
+        "value": "{lux.space.400}",
+        "type": "spacing"
       }
     }
   }

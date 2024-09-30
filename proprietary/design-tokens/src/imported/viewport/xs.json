@@ -48,6 +48,12 @@
           "type": "spacing"
         }
       }
+    },
+    "icon": {
+      "inset-block-start": {
+        "value": "0.25rem",
+        "type": "sizing"
+      }
     }
   },
   "viewport": {
