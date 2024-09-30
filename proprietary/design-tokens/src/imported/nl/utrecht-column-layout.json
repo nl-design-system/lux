@@ -10,7 +10,7 @@
         "type": "borderWidth"
       },
       "column-width": {
-        "value": "auto",
+        "value": "12.5rem",
         "type": "sizing",
         "description": "full-size, hoe stel ik dit in? "
       },
