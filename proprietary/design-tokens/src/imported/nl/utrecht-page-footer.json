@@ -33,17 +33,9 @@
   },
   "todo": {
     "page-footer": {
-      "gap": {
-        "value": "{no-token}",
+      "column-gap": {
+        "value": "{lux.grid.gutter}",
         "type": "spacing"
-      },
-      "column": {
-        "title": {
-          "margin-block-end": {
-            "value": "{no-token}",
-            "type": "spacing"
-          }
-        }
       },
       "max-block-size": {
         "value": "{lux.grid.max-block-size}",
@@ -52,6 +44,12 @@
       "border-width": {
         "value": "{lux.border-width.m}",
         "type": "borderWidth"
+      },
+      "column": {
+        "row-gap": {
+          "value": "{lux.space.200}",
+          "type": "spacing"
+        }
       }
     }
   }
