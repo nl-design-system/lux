@@ -35,6 +35,8 @@
     "nl/utrecht-button",
     "nl/utrecht-link",
     "nl/utrecht-document",
+    "nl/utrecht-link-list",
+    "nl/utrecht-page-footer",
     "nl/utrecht-paragraph"
   ]
 }
