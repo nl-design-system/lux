@@ -10,19 +10,19 @@
         "type": "color"
       },
       "padding-block-start": {
-        "value": "{rhc.space.600}",
+        "value": "{lux.space.600}",
         "type": "spacing"
       },
       "padding-block-end": {
-        "value": "{rhc.space.600}",
+        "value": "{lux.space.600}",
         "type": "spacing"
       },
       "padding-inline-start": {
-        "value": "80px",
+        "value": "{lux.grid.margin}",
         "type": "spacing"
       },
       "padding-inline-end": {
-        "value": "80px",
+        "value": "{lux.grid.margin}",
         "type": "spacing"
       }
     }
