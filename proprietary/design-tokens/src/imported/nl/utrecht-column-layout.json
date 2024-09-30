@@ -15,14 +15,10 @@
         "description": "full-size, hoe stel ik dit in? "
       },
       "gap": {
-        "value": "{todo.column-layout.column-gap}",
+        "value": "{utrecht.column-layout.column-gap}",
         "type": "spacing",
         "description": "Deze token uitfaseren"
-      }
-    }
-  },
-  "todo": {
-    "column-layout": {
+      },
       "column-gap": {
         "value": "{lux.grid.gutter}",
         "type": "spacing"
