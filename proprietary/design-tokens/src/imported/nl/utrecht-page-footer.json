@@ -2,11 +2,11 @@
   "utrecht": {
     "page-footer": {
       "background-color": {
-        "value": "{lux.color.lintblauw.500}",
+        "value": "{lux.color.background.default}",
         "type": "color"
       },
       "color": {
-        "value": "{lux.color.foreground.onEmphasis}",
+        "value": "{lux.color.foreground.default}",
         "type": "color"
       },
       "padding-block-start": {
@@ -26,7 +26,7 @@
         "type": "spacing"
       },
       "border-color": {
-        "value": "{lux.color.none}",
+        "value": "{lux.color.brand.default}",
         "type": "color"
       }
     }
@@ -50,7 +50,7 @@
         "type": "sizing"
       },
       "border-width": {
-        "value": "{lux.border-width.default}",
+        "value": "{lux.border-width.m}",
         "type": "borderWidth"
       }
     }
