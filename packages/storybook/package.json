@@ -36,7 +36,7 @@
     "@storybook/addon-backgrounds": "8.2.7",
     "@storybook/addon-docs": "8.2.7",
     "@storybook/addon-interactions": "8.2.7",
-    "@storybook/addon-links": "8.2.7",
+    "@storybook/addon-links": "8.3.4",
     "@storybook/addon-themes": "8.2.7",
     "@storybook/addon-viewport": "8.2.7",
     "@storybook/blocks": "8.2.7",
