@@ -65,6 +65,7 @@
     "prepare": "husky",
     "prettier": "prettier --write .",
     "publish": "changeset publish",
+    "publish:canary": "changeset publish --tag canary",
     "start": "node_modules/http-server/bin packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
     "test": "pnpm run --if-present --recursive test",
@@ -73,6 +74,8 @@
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
+    "version": "changeset version",
+    "version:canary": "changeset version --snapshot canary",
     "watch:storybook": "pnpm run --filter @lux-design-system/storybook storybook",
     "watch:tokens-studio": "pnpm run --filter @lux-design-system/design-tokens watch:tokens-studio"
   },
