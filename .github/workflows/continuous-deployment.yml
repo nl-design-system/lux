@@ -217,7 +217,9 @@ jobs:
         run: |
           git checkout main
           pnpm run version:canary
+          pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
           pnpm run publish:canary
+          pnpm config delete "//registry.npmjs.org/:_authToken"
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
