@@ -10,7 +10,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'Components React',
       // the proper extensions will be added
-      fileName: 'components-react',
+      fileName: 'index',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -24,6 +24,7 @@ export default defineConfig({
         },
       },
     },
+    minify: false,
   },
   plugins: [react()],
 });

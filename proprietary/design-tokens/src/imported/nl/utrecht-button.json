@@ -44,11 +44,11 @@
       },
       "min-block-size": {
         "type": "sizing",
-        "value": "{lux.button.min-block-size}"
+        "value": "{lux.button.default.min-block-size}"
       },
       "min-inline-size": {
         "type": "sizing",
-        "value": "{lux.button.min-inline-size}"
+        "value": "{lux.button.default.min-inline-size}"
       },
       "column-gap": {
         "type": "spacing",
@@ -56,11 +56,11 @@
       },
       "padding-block-start": {
         "type": "spacing",
-        "value": "{lux.button.padding-block-start}"
+        "value": "{lux.button.default.padding-block-start}"
       },
       "padding-block-end": {
         "type": "spacing",
-        "value": "{lux.button.padding-block-end}"
+        "value": "{lux.button.default.padding-block-end}"
       },
       "padding-inline-start": {
         "type": "spacing",

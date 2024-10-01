@@ -1,0 +1,17 @@
+.lux-button {
+  padding-block-start: var(--lux-button-default-padding-block-start);
+  padding-block-end: var(--lux-button-default-padding-block-end);
+  min-inline-size: var(--lux-button-default-min-inline-size);
+  min-block-size: var(--lux-button-default-min-block-size);
+}
+
+.lux-button--small {
+  padding-block-start: var(--lux-button-small-padding-block-start);
+  padding-block-end: var(--lux-button-small-padding-block-end);
+  min-inline-size: var(--lux-button-small-min-inline-size);
+  min-block-size: var(--lux-button-small-min-block-size);
+}
+
+.lux-remy {
+  color: blue;
+}
