@@ -29,8 +29,8 @@ Beschrijf het component en als er een community component gebruik wordt als basi
 #### Tests
 
 - [ ] Het component rendert
-- [ ] Aanpassingen en/of uitbreidingen werken
-- [ ] Visual regression test (LUX)
+- [ ] Aanpassingen en/of uitbreidingen werken (zie ook [Testing components](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-testing--docs))
+- [ ] Visual regression test (door LUX)
 
 ## Links
 
