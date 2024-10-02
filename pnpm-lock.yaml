@@ -111,11 +111,11 @@ importers:
   packages/components-react:
     dependencies:
       '@utrecht/component-library-css':
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 5.2.0
+        version: 5.2.0
       '@utrecht/component-library-react':
-        specifier: 5.0.0
-        version: 5.0.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 6.2.0
+        version: 6.2.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -262,6 +262,9 @@ importers:
       '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
+      '@lux-design-system/components-react':
+        specifier: workspace:*
+        version: link:../components-react
       '@lux-design-system/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
@@ -2767,11 +2770,11 @@ packages:
   '@utrecht/button-css@1.2.0':
     resolution: {integrity: sha512-aYqnmuT5HOshv8Kr9IvBsJef+2KNKRNwLPQHxNC2fSGXWDFzROAeChUr0A1Ylt45aAApAD/bxxIHHBAeS1PwEA==}
 
-  '@utrecht/component-library-css@4.0.0':
-    resolution: {integrity: sha512-QQD+/NrhTlWWBaTlivqiq4/LMoyhgR1vKjtGQh75QIphDud67Qw/PT/fq7/Poi2xasGQXgI7GIbF+aD5OSqlDQ==}
+  '@utrecht/component-library-css@5.2.0':
+    resolution: {integrity: sha512-yyFx/1N7ZodEv7EYuGSpACGNF+H5f+OAVN0EEEvDiGOjhfjTG3XuXqB8mTSkRtnWSLBfLOXI2Wderh9XPwdULg==}
 
-  '@utrecht/component-library-react@5.0.0':
-    resolution: {integrity: sha512-D8wSfBl1rCLA5zNj1wND2QaHBrlW5T5qZjlqvcYmQdvOOF+L+aQ8gxg3uo30FBvugvH2HDfOCc6qD8z7/+R+0A==}
+  '@utrecht/component-library-react@6.2.0':
+    resolution: {integrity: sha512-dloMLx5FKAiQefTdcsCLb0cbJCzNvjNjrpA7Mc3P4+oVO35VI/l1l0OHp6jnqtlMPDgkvWVpGn0qh0Y//SwpGQ==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       date-fns: ^2.30.0
@@ -10988,9 +10991,9 @@ snapshots:
 
   '@utrecht/button-css@1.2.0': {}
 
-  '@utrecht/component-library-css@4.0.0': {}
+  '@utrecht/component-library-css@5.2.0': {}
 
-  '@utrecht/component-library-react@5.0.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@6.2.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.25.0
       clsx: 2.1.1
