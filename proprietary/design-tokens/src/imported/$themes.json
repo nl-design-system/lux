@@ -873,7 +873,8 @@
       "nl/utrecht-paragraph": "enabled",
       "nl/utrecht-button": "enabled",
       "nl/utrecht-alert": "enabled",
-      "nl/utrecht-link": "enabled"
+      "nl/utrecht-link": "enabled",
+      "nl/utrecht-heading": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",
