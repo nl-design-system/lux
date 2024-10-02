@@ -107,10 +107,6 @@
           }
         },
         "inset-block-start": {
-          "value": "{lux.space.25}",
-          "type": "spacing"
-        },
-        "inset-block-start-copy": {
           "value": "{lux.space.0}",
           "type": "spacing"
         },

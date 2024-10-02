@@ -50,6 +50,14 @@
         "value": "0.25rem",
         "type": "spacing"
       }
+    },
+    "alert": {
+      "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.0}",
+          "type": "spacing"
+        }
+      }
     }
   },
   "viewport": {
