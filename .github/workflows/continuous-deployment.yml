@@ -209,12 +209,26 @@ jobs:
           setupGitUser: false
           title: "docs(release): design system packages"
           publish: "pnpm run publish"
+          version: "pnpm run version"
 
-      - name: "Continuous Deployment: publish to npm"
+      # Publish canary releases only if the packages weren't published already
+      - name: Publishing canary releases to npm
+        if: steps.changeset.outputs.published != 'true'
+        run: |
+          git checkout main
+          pnpm run version:canary
+          pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
+          pnpm run publish:canary
+          pnpm config delete "//registry.npmjs.org/:_authToken"
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
-          pnpm run publish
-          pnpm config delete "//registry.npmjs.org/:_authToken"
+
+      # - name: "Continuous Deployment: publish to npm"
+      #   env:
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   run: |
+      #     pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
+      #     pnpm run publish
+      #     pnpm config delete "//registry.npmjs.org/:_authToken"

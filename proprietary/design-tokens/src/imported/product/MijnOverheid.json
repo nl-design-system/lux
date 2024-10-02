@@ -84,6 +84,10 @@
         "level-4": {
           "value": "{lux.line-height.small-scale.sm}",
           "type": "lineHeights"
+        },
+        "level-5": {
+          "value": "{lux.line-height.small-scale.sm}",
+          "type": "lineHeights"
         }
       }
     },
@@ -125,6 +129,10 @@
           "parent": "viewport (beta)/xs",
           "type": "fontSizes",
           "value": "{lux.font-size.small-scale.sm}"
+        },
+        "level-5": {
+          "value": "{lux.font-size.small-scale.sm}",
+          "type": "fontSizes"
         }
       }
     },
