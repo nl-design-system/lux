@@ -37,17 +37,20 @@
         "type": "spacing",
         "value": "{lux.space.150}"
       },
-      "icon-start-size": {
-        "type": "sizing",
-        "value": "24px"
-      },
-      "min-inline-size": {
-        "type": "sizing",
-        "value": "160px"
+      "icon": {
+        "size": {
+          "type": "sizing",
+          "value": "24px"
+        },
+        "inset-block-start": {
+          "value": "{lux.space.25}",
+          "type": "spacing"
+        }
       },
       "close-button-size": {
         "type": "sizing",
-        "value": "{lux.size.icon}"
+        "value": "{lux.size.icon}",
+        "description": "Mist in utrecht alert, wat gaan we hiermee doen? "
       },
       "message": {
         "row-gap": {
@@ -77,30 +80,6 @@
         "background-color": {
           "type": "color",
           "value": "{lux.color.feedback.warning.subdued}"
-        }
-      },
-      "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.body.default}"
-      },
-      "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.body.default}"
-      },
-      "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}"
-      },
-      "paragraph": {
-        "font-weight": {
-          "type": "fontWeights",
-          "value": "{lux.font-weight.regular}"
-        }
-      },
-      "heading": {
-        "font-weight": {
-          "type": "fontWeights",
-          "value": "{lux.font-weight.regular}"
         }
       }
     }

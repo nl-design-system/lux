@@ -30,7 +30,7 @@
           "type": "color",
           "value": "{mode.link.active.color}"
         },
-        "tex-decoration": {
+        "text-decoration": {
           "value": "none",
           "type": "textDecoration"
         }

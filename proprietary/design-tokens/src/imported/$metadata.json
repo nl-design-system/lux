@@ -24,16 +24,18 @@
     "NLdoc/Ridderkerk",
     "NLdoc/Waterschap Hollandse Delta",
     "NLdoc/Rijksoverheid",
-    "component/button login",
+    "component/login link",
     "component/button",
     "component/alert",
     "component/link",
+    "component/paragraph",
     "component/icon-logo",
     "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-link",
     "nl/utrecht-heading",
+    "nl/utrecht-document",
     "nl/utrecht-paragraph"
   ]
 }
