@@ -43,7 +43,7 @@
           "value": "24px"
         },
         "inset-block-start": {
-          "value": "{lux.space.25}",
+          "value": "{lux.icon.inset-block-start}",
           "type": "spacing"
         }
       },
