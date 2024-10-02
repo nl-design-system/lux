@@ -1,0 +1,136 @@
+{
+  "utrecht": {
+    "heading-1": {
+      "color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.bold}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.heading.level-1}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.font-size.heading.level-1}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-2": {
+      "color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.bold}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.heading.level-2}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.font-size.heading.level-2}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-3": {
+      "color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.bold}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.heading.level-3}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{viewport.font-size.heading.level-3}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-4": {
+      "color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.bold}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.heading.level-4}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.font-size.heading.level-4}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-5": {
+      "color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.bold}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.heading.level-5}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.font-size.heading.level-5}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-6": {
+      "color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.bold}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.heading.level-5}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{lux.font-size.heading.level-5}",
+        "type": "fontSizes"
+      }
+    }
+  }
+}
