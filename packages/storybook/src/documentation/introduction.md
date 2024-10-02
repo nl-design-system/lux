@@ -1,36 +1,24 @@
 <!-- @license CC0-1.0 -->
 
-# NL Design System introductie
+[design-tokens]: /docs/design-tokens-design-tokens--docs
+[web-components]: /docs/web-components-alert--docs
+[nlds]: https://www.nldesignsystem.nl/
 
-De Digitale Overheid stelt dat overheidsdienstverlening toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor zijn consistent ontworpen diensten en websites nodig.
-Daarom gaan we tussen overheidsorganisaties principes, interactiepatronen en code delen via een gezamenlijk design system. Dit NL Design System draagt niet alleen bij aan gebruiksvriendelijkere diensten van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel werk te voorkomen.
+# LUX: Hét Logius Design System
 
-> ⚠️ **LET OP**
->
-> Het NL Design System bevindt zich momenteel nog in de pilotfase.
-> Hierdoor is het nu nog niet volwassen genoeg om volledig gebruikt te worden.
-> Houdt hier dus rekening mee voor je aan de slag gaat.
-> We zouden het op prijs stellen als je wilt bijdragen om het NLDS tot een succes te maken.
-> Dit kan in onze GitHub of met een mailtje aan: [kernteam@nldesignsystem.nl](mailto:kernteam@nldesignsystem.nl)
+LUX helpt jou Logius producten te bouwen zonder dat jij hoeft na te denken over hoe het er uit ziet. Jij kan je focussen op hoe het werkt. Momenteel biedt LUX een scala aan [Design Tokens][design-tokens] en [Web Componenten][web-components]. Meer elementen volgen binnenkort. Wij werken nauw samen met het [NL Design System][nlds] (NLDS), waarmee we samen met andere betrokken partijen kennis delen en eenheid creëeren voor de Nederlandse digitale overheid.
 
-## Wat is een Design System
+## 🎁 Onze code en packages
 
-Een Design System, oftewel een ontwerpsysteem, is een verzameling afspraken tussen ontwerpers en ontwikkelaars voor het maken van digitale producten, zoals websites en apps. Het doel van deze afspraken is om de producten consistent en de gebruikerservaring zo prettig mogelijk te maken. Een Design System ‘leeft’: dankzij nieuwe inzichten en feedback van gebruikers worden de afspraken continu verbeterd.
+<ul class="lsb-list--inline sb-unstyled">
+  <li>[<img src="github.png" height="18" alt="Github" /> Code op Github](https://github.com/nl-design-system/lux)</li>
+  <li>[<img src="npm.png" height="18" alt="NPM" /> Packages op NPM](https://www.npmjs.com/org/lux-design-system)</li>
+  <li>[<img src="figma.png" height="18" alt="NPM" /> UI Kit op Figma](https://www.figma.com/design/515tboh6xpSNziwQu6WyAy/LUX---UI-kit?node-id=265-14201)</li>
+</ul>
 
-## Hoe werkt een Design System
+## 🛎️ Neem Contact Met Ons Op
 
-De afspraken in het Design System worden gemaakt aan de hand van bewezen oplossingen. Ze vormen een solide basis voor de ontwerpers en ontwikkelaars: doordat zij het wiel niet steeds opnieuw hoeven uit te vinden, kunnen ze snel en effectief nieuwe digitale producten bouwen. Als je als organisatie met een Design System werkt, bouw je voort op elkaars ervaringen en houd je meer tijd over voor unieke, eenmalige uitdagingen. Wel is er een betrokken, actieve community nodig om het Design System actueel en praktisch toepasbaar te houden.
-
-## Waarom een NL Design System
-
-In een Design System staan principes, handvatten, elementen, patronen en richtlijnen beschreven. Allemaal basisonderdelen waarover je goed afspraken kunt maken. Juist overheidsorganisaties hebben baat bij één duidelijke set herbruikbare basisonderdelen. Vooral voor levensgebeurtenissen, waarbij vaak contact nodig is met meerdere instanties en organisaties.
-
-Dankzij het NL Design System kan de hele overheid in Nederland samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening. Een dienstverlening die logisch en samenhangend is, maar niet per se uniform, want binnen de afspraken blijft er ruimte voor de eigen identiteit van overheidsorganisaties.
-
-## Voor (en door) iedereen
-
-Het is belangrijk dat iedereen de online dienstverlening van de overheid kan gebruiken, ongeacht wie je bent en wat je situatie is. Dit heet inclusie: iedereen moet kunnen meedoen. Daarom testen we de afspraken in het Design System met een heel diverse gebruikersgroep, waaronder mensen met beperkingen. Zo nemen de kwaliteit, bruikbaarheid en toegankelijkheid toe en kunnen we iedereen in Nederland met onze digitale producten steeds beter van dienst zijn.
-
-De POC is te vinden op:
-
-<http://github.com/nl-design-system>
+<ul class="lsb-list--inline sb-unstyled">
+  <li>[<img src="slack.png" height="18" alt="Slack" /> Join us on Slack](https://join.slack.com/t/logius-ux/shared_invite/zt-2isbt3hue-A6ksce6Qz5g~eYxez_DF5g)</li>
+  <li>Of mail ons op [lux.design.system@logius.nl]</li>
+</ul>

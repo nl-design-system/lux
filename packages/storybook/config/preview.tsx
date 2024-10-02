@@ -72,6 +72,18 @@ const preview: Preview = {
     options: {
       showPanel: true,
       panelPosition: 'bottom',
+      storySort: {
+        order: [
+          'Intro',
+          'Design Tokens',
+          ['Design Tokens', 'Core', 'Common'],
+          'Components',
+          'Web Components',
+          ['Docs', 'Playground', '*', 'Design Tokens'],
+          '*',
+          'Colofon',
+        ],
+      },
     },
   },
 };

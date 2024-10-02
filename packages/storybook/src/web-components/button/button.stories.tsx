@@ -32,7 +32,7 @@ const meta = {
       options: [undefined, 'button', 'primary-action-button', 'secondary-action-button', 'subtle-button'],
     },
     children: {
-      name: 'label',
+      name: 'content (label)',
       description: 'Button text',
       control: 'text',
     },
@@ -57,6 +57,11 @@ const meta = {
         defaultValue: {
           summary: 'button',
         },
+      },
+    },
+    forceState: {
+      table: {
+        disable: true,
       },
     },
   },
@@ -144,6 +149,13 @@ export const Active: Story = {
     children: 'Active Button',
     forceState: 'active',
   },
+  argTypes: {
+    appearance: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   play: async ({ canvasElement }) => {
     const canvas = await within(canvasElement);
     const luxButton = canvas.getByShadowText('Active Button');
@@ -178,6 +190,13 @@ export const Hover: Story = {
     children: 'Hover Button',
     forceState: 'hover',
   },
+  argTypes: {
+    appearance: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   render: (args) => (
     <>
       <LuxButton {...args} appearance="primary-action-button">
@@ -206,6 +225,13 @@ export const Focus: Story = {
     appearance: 'button',
     children: 'Focus Button',
     forceState: 'focus',
+  },
+  argTypes: {
+    appearance: {
+      table: {
+        disable: true,
+      },
+    },
   },
   render: (args) => (
     <>

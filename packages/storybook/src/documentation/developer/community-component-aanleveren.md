@@ -196,8 +196,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 const LuxComponentNaam = (props: PropsWithoutRef<JSX.LuxComponentNaam>) => <ComponentNaam {...props} />;
 
 const meta = {
-  title: "Web Components/Button login",
-  id: "web-components-button-login",
+  title: "Web Components/Login Link",
+  id: "web-components-login-link",
   component: LuxComponentNaam,
 } satisfies Meta<typeof LuxComponentNaam>;
 
@@ -264,7 +264,7 @@ export const Visual = createVisualRegressionStory(() => (
 
 De design tokens zijn de kracht van elk LUX component. Alle visuele aspecten van het component wordt bepaald door de design tokens en zorgen ervoor dat het component in meerdere contexten is in te zetten. Bijvoorbeeld in die van Logius, Digid, MijnOverheid, of zelfs door deelnemers van de NLDS community.
 
-Maak een bestand genaamd `/packages/storybook/web-components/[component-naam]/tokens.json` en reflecteer de juiste structuur in JSON formaat. Gebruik hiervoor `/proprietary/design-tokens/src/imported/components/[component-naam].json` en verander het naar het formaat in bvb. `/packages/storybook/web-components/button-login/tokens.json`. Wij kunnen je hierbij helpen. Dit bestand importeer je in je `.stories.tsx` bestand.
+Maak een bestand genaamd `/packages/storybook/web-components/[component-naam]/tokens.json` en reflecteer de juiste structuur in JSON formaat. Gebruik hiervoor `/proprietary/design-tokens/src/imported/components/[component-naam].json` en verander het naar het formaat in bvb. `/packages/storybook/web-components/login-link/tokens.json`. Wij kunnen je hierbij helpen. Dit bestand importeer je in je `.stories.tsx` bestand.
 
 ```ts
 import tokens from '@lux-design-system/design-tokens/dist/index.json';

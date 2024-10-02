@@ -8,7 +8,7 @@
 ## @lux-design-system/web-components-react
 
 - Nieuw component: LuxButton
-- Nieuw component: LuxButtonLogin
+- Nieuw component: LuxLoginLink
 - Nieuw Icoon: LuxIconChevronLeft
 - Nieuw Icoon: LuxIconChevronRight
 - Nieuw Icoon: LuxIconLogoDigid
@@ -18,7 +18,7 @@
 ## @lux-design-system/web-components-stencil
 
 - Nieuw component: lux-button
-- Nieuw component: lux-button-login
+- Nieuw component: lux-login-link
 - Nieuw Icoon: lux-icon-chevron-left
 - Nieuw Icoon: lux-icon-chevron-right
 - Nieuw Icoon: lux-icon-logo-digid
