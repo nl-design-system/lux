@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@divriots/style-dictionary-to-figma": "0.4.0",
-    "@prantlf/jsonlint": "14.0.3",
+    "@prantlf/jsonlint": "16.0.0",
     "@tokens-studio/sd-transforms": "0.15.2",
     "chokidar-cli": "3.0.0",
     "cpy-cli": "5.0.0",
