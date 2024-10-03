@@ -4,7 +4,8 @@
 
 ### Minor Changes
 
-- e39de1f: ## @lux-design-system/web-components-react
+- e39de1f: 
+## @lux-design-system/web-components-react
 
   - Nieuw component: LuxAlert
   - Nieuw component: LuxButton
