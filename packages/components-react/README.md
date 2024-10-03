@@ -17,4 +17,4 @@ Het CSS component dat het LUX design system en de `lux-`- en `utrecht-`-classnam
 
 ### PNPM
 
-`pnpm add -D @lux-design-system/components-react --save-dev`
+`pnpm add @lux-design-system/components-react --save-dev`
