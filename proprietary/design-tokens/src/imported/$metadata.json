@@ -35,9 +35,8 @@
     "nl/utrecht-column-layout",
     "nl/utrecht-document",
     "nl/utrecht-heading",
-    "nl/utrecht-link",  
-    "nl/utrecht-focus",
     "nl/utrecht-link",
+    "nl/utrecht-focus",
     "nl/utrecht-link-list",
     "nl/utrecht-page-footer",
     "nl/utrecht-paragraph"
