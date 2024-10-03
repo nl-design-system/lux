@@ -13,7 +13,7 @@
       },
       "color": {
         "type": "color",
-        "value": "{lux.color.foreground.default}"
+        "value": "{lux.color.feedback.error.default}"
       },
       "font-family": {
         "value": "{lux.font-family.primary}",
@@ -28,7 +28,7 @@
         "type": "fontWeights"
       },
       "background-color": {
-        "value": "{lux.alert.error.background-color}",
+        "value": "{lux.color.none}",
         "type": "color"
       },
       "border-radius": {
@@ -37,19 +37,19 @@
         "description": "todo token"
       },
       "padding-block-end": {
-        "value": "{lux.space.150}",
+        "value": "{lux.space.0}",
         "type": "spacing"
       },
       "padding-block-start": {
-        "value": "{lux.space.150}",
+        "value": "{lux.space.0}",
         "type": "spacing"
       },
       "padding-inline-end": {
-        "value": "{lux.space.150}",
+        "value": "{lux.space.0}",
         "type": "spacing"
       },
       "padding-inline-start": {
-        "value": "{lux.space.150}",
+        "value": "{lux.space.0}",
         "type": "spacing"
       },
       "column-gap": {
@@ -59,6 +59,14 @@
       "line-height": {
         "value": "{lux.line-height.body.default}",
         "type": "lineHeights"
+      },
+      "border-width": {
+        "value": "{lux.alert.border-width}",
+        "type": "borderWidth"
+      },
+      "border-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
       }
     },
     "alert": {

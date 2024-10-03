@@ -15,18 +15,6 @@
           "type": "spacing"
         }
       }
-    },
-    "checkbox": {
-      "margin-inline-end": {
-        "value": "{lux.space.100}",
-        "type": "spacing"
-      }
-    },
-    "radio": {
-      "margin-inline-end": {
-        "value": "{lux.space.100}",
-        "type": "spacing"
-      }
     }
   }
 }
