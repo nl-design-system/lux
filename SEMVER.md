@@ -34,7 +34,7 @@ Het artikel ["Visual Breaking Change in Design Systems"](https://medium.com/eigh
 ### Canary releases
 
 Bij elke merge naar de `main`-branch wordt er een release naar NPM gedaan onder de tag `canary`. Wil je de versie met de laatste, maar misschien niet stabiele, versie installeer het package met bijv `npm install @lux-design-system/<package>@canary`.  
-Voor de stabiele semver-versies kan je de `latest`-tag gebruiken (de deafault van NPM).
+Voor de stabiele semver-versies kan je de `latest`-tag gebruiken (de default van NPM).
 
 ## Contact
 
