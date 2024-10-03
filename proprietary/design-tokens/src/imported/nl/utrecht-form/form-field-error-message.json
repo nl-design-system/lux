@@ -26,6 +26,15 @@
       "font-weight": {
         "value": "{lux.font-weight.regular}",
         "type": "fontWeights"
+      },
+      "background-color": {
+        "value": "{lux.alert.error.background-color}",
+        "type": "color"
+      },
+      "border-radius": {
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius",
+        "description": "todo token"
       }
     }
   }
