@@ -42,7 +42,7 @@
   "devDependencies": {
     "@jest/globals": "29.7.0",
     "@lux-design-system/components-css": "workspace:*",
-    "@stencil/react-output-target": "0.5.3",
+    "@stencil/react-output-target": "0.7.1",
     "@stencil/sass": "3.0.12",
     "@types/jest": "29.5.12",
     "@utrecht/document-css": "1.1.0",
