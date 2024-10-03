@@ -15,7 +15,7 @@ In design tokens worden de design beslissingen vastgelegd voor het design system
 
 ### PNPM
 
-`pnpm add -D @lux-design-system/design-tokens --save-dev`
+`pnpm add @lux-design-system/design-tokens --save-dev`
 
 Daarna zijn de volgende tokens beschikbaar:
 
