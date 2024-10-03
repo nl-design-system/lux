@@ -6,14 +6,14 @@
           "type": "sizing",
           "value": "1.5rem"
         },
-        "margin-inline-end": {
-          "value": "{lux.space.100}",
-          "type": "spacing"
+        "color": {
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
         }
       },
       "color": {
         "type": "color",
-        "value": "{lux.color.feedback.error.default}"
+        "value": "{lux.color.foreground.default}"
       },
       "font-family": {
         "value": "{lux.font-family.primary}",
@@ -35,6 +35,38 @@
         "value": "{lux.border-radius.default}",
         "type": "borderRadius",
         "description": "todo token"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.150}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.150}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.150}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.150}",
+        "type": "spacing"
+      },
+      "column-gap": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      }
+    },
+    "alert": {
+      "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.25}",
+          "type": "spacing"
+        }
       }
     }
   }
