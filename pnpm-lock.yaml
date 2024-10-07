@@ -110,6 +110,9 @@ importers:
 
   packages/components-react:
     dependencies:
+      '@utrecht/component-library-react':
+        specifier: '6.2'
+        version: 6.2.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -256,6 +259,9 @@ importers:
       '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
+      '@lux-design-system/components-react':
+        specifier: workspace:*
+        version: link:../components-react
       '@lux-design-system/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
@@ -2760,6 +2766,23 @@ packages:
 
   '@utrecht/button-css@1.2.0':
     resolution: {integrity: sha512-aYqnmuT5HOshv8Kr9IvBsJef+2KNKRNwLPQHxNC2fSGXWDFzROAeChUr0A1Ylt45aAApAD/bxxIHHBAeS1PwEA==}
+
+  '@utrecht/component-library-react@6.2.0':
+    resolution: {integrity: sha512-dloMLx5FKAiQefTdcsCLb0cbJCzNvjNjrpA7Mc3P4+oVO35VI/l1l0OHp6jnqtlMPDgkvWVpGn0qh0Y//SwpGQ==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      date-fns: ^2.30.0
+      react: '18'
+      react-dom: '18'
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
 
   '@utrecht/components@4.0.0':
     resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
@@ -10961,6 +10984,16 @@ snapshots:
   '@utrecht/alert-css@1.1.0': {}
 
   '@utrecht/button-css@1.2.0': {}
+
+  '@utrecht/component-library-react@6.2.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.25.0
+      clsx: 2.1.1
+      lodash.chunk: 4.2.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      date-fns: 3.6.0
 
   '@utrecht/components@4.0.0':
     dependencies:

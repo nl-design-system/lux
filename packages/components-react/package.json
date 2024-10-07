@@ -1,16 +1,16 @@
 {
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "Community for NL Design System",
-  "description": "React component library for the Example repository, based on the NL Design System architecture",
+  "description": "React component library for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "name": "@lux-design-system/components-react",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "lux-design-system"
   ],
-  "private": true,
+  "private": false,
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "repository": {
     "type": "git+ssh",
@@ -19,6 +19,7 @@
   },
   "scripts": {
     "prebuild": "npm run clean",
+    "prepack": "npm run build",
     "build": "npm-run-all build:**",
     "build:components": "vite build",
     "clean": "rimraf dist/ pages/",
@@ -33,6 +34,7 @@
     "dist/"
   ],
   "dependencies": {
+    "@utrecht/component-library-react": "6.2",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
     "lodash.chunk": "4.2.0"
