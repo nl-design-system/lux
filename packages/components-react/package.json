@@ -34,7 +34,8 @@
     "dist/"
   ],
   "dependencies": {
-    "@utrecht/component-library-react": "6.2",
+    "@utrecht/component-library-css": "5.2.0",
+    "@utrecht/component-library-react": "6.2.0",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
     "lodash.chunk": "4.2.0"

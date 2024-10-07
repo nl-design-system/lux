@@ -1,3 +1,4 @@
+import '@utrecht/component-library-css/dist/index.css';
 export {
   LuxHeading,
   LuxHeading1,

@@ -15,7 +15,7 @@ Deze package bevat de referenties naar de lettertypes RijksoverheidSerif en Rijk
 
 ### PNPM
 
-`pnpm add -D @lux-design-system/font --save-dev`
+`pnpm add @lux-design-system/font --save-dev`
 
 Daarna zijn de volgende `@font-face` `font-family`s beschikbaar:
 
