@@ -30,12 +30,19 @@
     "component/link",
     "component/paragraph",
     "component/icon-logo",
-    "nl/utrecht-focus",
     "nl/utrecht-alert",
     "nl/utrecht-button",
-    "nl/utrecht-link",
-    "nl/utrecht-heading",
     "nl/utrecht-document",
-    "nl/utrecht-paragraph"
+    "nl/utrecht-focus",
+    "nl/utrecht-form-field",
+    "nl/utrecht-form-field-description",
+    "nl/utrecht-form-field-error-message",
+    "nl/utrecht-form-label",
+    "nl/utrecht-heading",
+    "nl/utrecht-link",
+    "nl/utrecht-paragraph",
+    "nl/utrecht-pointer-target",
+    "nl/utrecht-textarea",
+    "nl/utrecht-text-input"
   ]
 }

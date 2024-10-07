@@ -1,0 +1,164 @@
+{
+  "utrecht": {
+    "textbox": {
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{lux.border-radius.default}"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      },
+      "max-inline-size": {
+        "value": "400px",
+        "type": "sizing"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      },
+      "background-color": {
+        "value": "{lux.color.background.default}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{lux.color.border.strong}",
+        "type": "color"
+      },
+      "color": {
+        "value": "{lux.color.foreground.default}",
+        "type": "color"
+      },
+      "invalid": {
+        "background-color": {
+          "value": "{lux.color.background.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.strong}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "border-width": {
+          "value": "{lux.border-width.default}",
+          "type": "borderWidth"
+        }
+      },
+      "placeholder": {
+        "color": {
+          "value": "{lux.color.foreground.subdued}",
+          "type": "color"
+        }
+      },
+      "border-block-end-width": {
+        "value": "{lux.border-width.default}",
+        "type": "borderWidth"
+      },
+      "border-width": {
+        "value": "{lux.border-width.default}",
+        "type": "borderWidth"
+      },
+      "focus": {
+        "border-width": {
+          "value": "{lux.border-width.m}",
+          "type": "borderWidth"
+        },
+        "background-color": {
+          "value": "{lux.color.background.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.strong}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "value": "{lux.color.background.subdued}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.subdued}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.subdued}",
+          "type": "color"
+        }
+      },
+      "read-only": {
+        "background-color": {
+          "value": "{lux.color.grijs.100}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "border-width": {
+          "value": "{lux.border-width.default}",
+          "type": "borderWidth"
+        }
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
+      }
+    }
+  },
+  "todo": {
+    "textbox": {
+      "hover": {
+        "background-color": {
+          "value": "{lux.color.background.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.strong}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
