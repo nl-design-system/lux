@@ -20,6 +20,10 @@
       "font-size": {
         "value": "{lux.font-size.body.default}",
         "type": "fontSizes"
+      },
+      "background-color": {
+        "value": "{lux.color.background.default}",
+        "type": "color"
       }
     }
   }
