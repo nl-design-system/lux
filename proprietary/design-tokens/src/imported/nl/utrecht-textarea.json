@@ -91,15 +91,15 @@
       },
       "read-only": {
         "background-color": {
-          "value": "{no-token}",
+          "value": "{lux.color.grijs.100}",
           "type": "color"
         },
         "border-color": {
-          "value": "{no-token}",
+          "value": "{lux.color.none}",
           "type": "color"
         },
         "color": {
-          "value": "{no-token}",
+          "value": "{lux.color.foreground.default}",
           "type": "color"
         }
       },
