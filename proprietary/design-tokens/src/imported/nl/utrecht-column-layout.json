@@ -1,0 +1,28 @@
+{
+  "utrecht": {
+    "column-layout": {
+      "column-rule-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
+      },
+      "column-rule-width": {
+        "value": "{lux.border-width.none}",
+        "type": "borderWidth"
+      },
+      "column-width": {
+        "value": "12.5rem",
+        "type": "sizing",
+        "description": "full-size, hoe stel ik dit in? "
+      },
+      "gap": {
+        "value": "{utrecht.column-layout.column-gap}",
+        "type": "spacing",
+        "description": "Deze token uitfaseren"
+      },
+      "column-gap": {
+        "value": "{lux.grid.gutter}",
+        "type": "spacing"
+      }
+    }
+  }
+}
