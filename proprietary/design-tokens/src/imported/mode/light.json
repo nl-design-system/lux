@@ -278,7 +278,7 @@
         }
       }
     },
-    "button-login": {
+    "login-link": {
       "active": {
         "background-color": {
           "parent": "mode/light",

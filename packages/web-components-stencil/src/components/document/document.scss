@@ -1,0 +1,9 @@
+@import "~@utrecht/document-css/src/index";
+
+:host {
+  display: block;
+}
+
+:host([hidden]) {
+  display: none !important;
+}

@@ -2,23 +2,23 @@
   "utrecht": {
     "paragraph": {
       "color": {
-        "value": "{lux.color.foreground.default}",
+        "value": "{lux.paragraph.color}",
         "type": "color"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
+        "value": "{lux.paragraph.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{lux.font-size.body.default}",
+        "value": "{lux.paragraph.default.font-size}",
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{lux.font-weight.regular}",
+        "value": "{lux.paragraph.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{lux.line-height.body.default}",
+        "value": "{lux.paragraph.default.line-height}",
         "type": "lineHeights"
       },
       "margin-block-end": {
@@ -31,37 +31,37 @@
       },
       "lead": {
         "color": {
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.paragraph.color}",
           "type": "color"
         },
         "font-size": {
-          "value": "{lux.font-size.body.large}",
+          "value": "{lux.paragraph.lead.font-size}",
           "type": "fontSizes"
         },
         "font-weight": {
-          "value": "{lux.font-weight.regular}",
+          "value": "{lux.paragraph.font-weight}",
           "type": "fontWeights"
         },
         "line-height": {
-          "value": "{lux.line-height.body.large}",
+          "value": "{lux.paragraph.lead.line-height}",
           "type": "lineHeights"
         }
       },
       "small": {
         "color": {
-          "value": "{lux.color.foreground.default}",
+          "value": "{lux.paragraph.color}",
           "type": "color"
         },
         "font-size": {
-          "value": "{lux.font-size.body.small}",
+          "value": "{lux.paragraph.small.font-size}",
           "type": "fontSizes"
         },
         "font-weight": {
-          "value": "{lux.font-weight.regular}",
+          "value": "{lux.paragraph.font-weight}",
           "type": "fontWeights"
         },
         "line-height": {
-          "value": "{lux.line-height.body.small}",
+          "value": "{lux.paragraph.small.line-height}",
           "type": "lineHeights"
         }
       }

@@ -1,0 +1,11 @@
+:host {
+  /* stylelint-disable-next-line custom-property-pattern */
+  --lux-icon-size: var(--lux-link-font-size, var(--utrecht-document-font-size));
+  --lux-icon-color: currentColor;
+
+  display: contents;
+}
+
+:host([hidden]) {
+  display: none !important;
+}

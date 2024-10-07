@@ -22,8 +22,8 @@
           "type": "color",
           "value": "{lux.link.active.color}"
         },
-        "tex-decoration": {
-          "value": "{lux.link.active.tex-decoration}",
+        "text-decoration": {
+          "value": "{lux.link.active.text-decoration}",
           "type": "textDecoration"
         }
       },

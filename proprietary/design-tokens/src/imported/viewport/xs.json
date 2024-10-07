@@ -40,6 +40,14 @@
         "value": "1rem",
         "description": ""
       }
+    },
+    "alert": {
+      "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.0}",
+          "type": "spacing"
+        }
+      }
     }
   },
   "viewport": {
@@ -136,16 +144,6 @@
         "small": {
           "value": "{lux.font-size.small-scale.xs}",
           "type": "fontSizes"
-        }
-      }
-    }
-  },
-  "utrecht": {
-    "alert": {
-      "icon": {
-        "inset-block-start": {
-          "value": "{lux.space.0}",
-          "type": "spacing"
         }
       }
     }
