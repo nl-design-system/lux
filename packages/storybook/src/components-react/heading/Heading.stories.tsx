@@ -113,9 +113,9 @@ export const Heading5: Story = {
 
 export const Heading6: Story = {
   ...HeadingTemplate,
-  name: 'Heading 5',
+  name: 'Heading 6',
   args: {
     children: textTemplate('Heading 6'),
-    level: 5,
+    level: 6,
   },
 };
