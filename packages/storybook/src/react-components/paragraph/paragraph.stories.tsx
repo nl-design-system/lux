@@ -1,4 +1,4 @@
-import { Paragraph } from '@lux-design-system/components-react';
+import { LuxParagraph } from '@lux-design-system/components-react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 type Story = StoryObj<typeof meta>;
@@ -6,7 +6,7 @@ type Story = StoryObj<typeof meta>;
 const meta = {
   title: 'React Components/Paragraph',
   id: 'react-components-paragraph',
-  component: Paragraph,
+  component: LuxParagraph,
   argTypes: {
     children: {
       name: 'content (children)',
@@ -25,7 +25,7 @@ const meta = {
       options: [undefined, 'lead', 'small'],
     },
   },
-} satisfies Meta<typeof Paragraph>;
+} satisfies Meta<typeof LuxParagraph>;
 
 export default meta;
 

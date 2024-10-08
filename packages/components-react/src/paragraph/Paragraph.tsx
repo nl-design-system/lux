@@ -1,17 +1,14 @@
-import {
-  Paragraph as UtrechtParagraph,
-  type ParagraphProps as UtrechtParagraphProps,
-} from '@utrecht/component-library-react';
+import { Paragraph, type ParagraphProps } from '@utrecht/component-library-react';
 
-export type ParagraphProps = Omit<UtrechtParagraphProps, 'lead' | 'small'> & {
+export type LuxParagraphProps = Omit<ParagraphProps, 'lead' | 'small'> & {
   appearance?: 'lead' | 'small';
 };
 
-export const Paragraph = (props: ParagraphProps) => {
+export const LuxParagraph = (props: LuxParagraphProps) => {
   const { appearance, ...restProps } = props;
 
   const lead: boolean = appearance === 'lead';
   const small: boolean = appearance === 'small';
 
-  return <UtrechtParagraph {...restProps} lead={lead} small={small} />;
+  return <Paragraph {...restProps} lead={lead} small={small} />;
 };
