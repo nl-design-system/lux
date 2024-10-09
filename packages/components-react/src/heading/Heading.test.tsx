@@ -1,5 +1,4 @@
 import { describe, expect, it } from '@jest/globals';
-import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { LuxHeading, LuxHeading1, LuxHeading2, LuxHeading3, LuxHeading4, LuxHeading5, LuxHeading6 } from './Heading';

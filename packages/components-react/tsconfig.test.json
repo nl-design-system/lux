@@ -1,13 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "types": ["@testing-library/jest-dom"]
   },
-  "include": [
-    "next-env.d.ts",
-    "src/**/*.test.ts",
-    "src/**/*.test.tsx",
-    "../../node_modules/.pnpm/@types+jest@29.5.1/node_modules/@types/jest/index.d.ts"
-  ],
+  "include": ["next-env.d.ts", "src/**/*.test.ts", "src/**/*.test.tsx"],
   "exclude": ["**/node_modules/*"]
 }
