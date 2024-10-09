@@ -19,6 +19,9 @@ const meta = {
       },
     },
   },
+  parameters: {
+    withDocument: false,
+  },
 } satisfies Meta<typeof LuxDocument>;
 
 export default meta;

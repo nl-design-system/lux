@@ -1,3 +1,4 @@
+import { LuxDocument } from '@lux-design-system/components-react';
 import { defineCustomElements } from '@lux-design-system/web-components-stencil/loader/index.js';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview, ReactRenderer } from '@storybook/react';
@@ -24,6 +25,14 @@ const preview: Preview = {
       },
       defaultTheme: 'Logius light',
     }),
+    (Story, { parameters: { withDocument = true } }) =>
+      withDocument ? (
+        <LuxDocument>
+          <Story />
+        </LuxDocument>
+      ) : (
+        <Story />
+      ),
   ],
   parameters: {
     backgrounds: {

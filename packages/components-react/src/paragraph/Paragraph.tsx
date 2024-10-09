@@ -1,4 +1,4 @@
-import { Paragraph, type ParagraphProps } from '@utrecht/component-library-react';
+import { Paragraph, type ParagraphProps } from '@utrecht/component-library-react/dist/css-module';
 
 export type LuxParagraphProps = Omit<ParagraphProps, 'lead' | 'small'> & {
   appearance?: 'lead' | 'small';
