@@ -4,6 +4,6 @@
     "noEmit": true,
     "types": ["@testing-library/jest-dom"]
   },
-  "include": ["next-env.d.ts", "src/**/*.test.ts", "src/**/*.test.tsx"],
+  "include": ["next-env.d.ts", "src/**/*.test.ts", "src/**/*.test.tsx", "./jest-setup.ts"],
   "exclude": ["**/node_modules/*"]
 }

@@ -1,6 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
-import React from 'react';
 import { LuxHeading, LuxHeading1, LuxHeading2, LuxHeading3, LuxHeading4, LuxHeading5, LuxHeading6 } from './Heading';
 
 describe('Dynamic Heading', () => {
@@ -70,6 +69,7 @@ describe('Dynamic Heading', () => {
   });
 
   it('can should fall back to level 6 when the level is outside of the heading range', () => {
+    /* @ts-ignore */
     render(<LuxHeading level={8}>Lux Heading</LuxHeading>);
     const heading = screen.getByRole('heading', {
       name: 'Lux Heading',
