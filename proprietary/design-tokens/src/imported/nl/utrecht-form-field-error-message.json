@@ -9,6 +9,10 @@
         "color": {
           "value": "{lux.color.feedback.error.default}",
           "type": "color"
+        },
+        "inset-block-start": {
+          "value": "{lux.space.25}",
+          "type": "spacing"
         }
       },
       "color": {
@@ -67,14 +71,6 @@
       "border-color": {
         "value": "{lux.color.none}",
         "type": "color"
-      }
-    },
-    "alert": {
-      "icon": {
-        "inset-block-start": {
-          "value": "{lux.space.25}",
-          "type": "spacing"
-        }
       }
     }
   }

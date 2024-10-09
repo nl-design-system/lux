@@ -746,7 +746,8 @@
       "component/alert": "enabled",
       "component/button": "enabled",
       "component/login link": "enabled",
-      "component/icon-logo": "enabled"
+      "component/icon-logo": "enabled",
+      "component/paragraph": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1503:3470",
     "$figmaModeId": "1503:2",
