@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
-import '@testing-library/jest-dom';
+// import '@testing-library/jest-dom/jest-globals';
 import { render, screen } from '@testing-library/react';
 import { LuxDocument } from '../Document';
 

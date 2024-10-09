@@ -1,5 +1,4 @@
 import { describe, expect, it } from '@jest/globals';
-import '@testing-library/jest-dom';
 import { render, screen, within } from '@testing-library/react';
 import { LuxParagraph } from '../Paragraph';
 
