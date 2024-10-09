@@ -334,6 +334,9 @@ importers:
       '@utrecht/button-css':
         specifier: 1.2.0
         version: 1.2.0
+      '@utrecht/heading-css':
+        specifier: 1.2.0
+        version: 1.2.0
       '@utrecht/link-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -2510,6 +2513,9 @@ packages:
 
   '@utrecht/document-css@1.1.0':
     resolution: {integrity: sha512-navpa20l9U2c/gMDNzZ83MF2/VfXJBXVIGw6CoZ7s3uNbR92H6MAvvSn29C/Kg9QGjDAhDd7P5dIyjQ1KrwJfg==}
+
+  '@utrecht/heading-css@1.2.0':
+    resolution: {integrity: sha512-d+H5TfhOKYN+YMau3l/4DR/K3mYjYGbZvxfzflxMD2HnHgOxgYC9YvH/FQysE19mKbepGZPzV1rMYoW/vcwmvg==}
 
   '@utrecht/link-css@1.1.0':
     resolution: {integrity: sha512-L/R5rGvA2RrXJFw/k2l2U7ZgeJuz92pdFDbW1Rtw+7XBK5Z/e+YMpnlDL8fx5VmFk95xO4Jmgv1j6BYiI6vnqA==}
@@ -10369,6 +10375,8 @@ snapshots:
       clsx: 1.2.1
 
   '@utrecht/document-css@1.1.0': {}
+
+  '@utrecht/heading-css@1.2.0': {}
 
   '@utrecht/link-css@1.1.0': {}
 
