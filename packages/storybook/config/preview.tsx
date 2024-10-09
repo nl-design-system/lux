@@ -77,7 +77,7 @@ const preview: Preview = {
           'Intro',
           'Design Tokens',
           ['Design Tokens', 'Core', 'Common'],
-          'Components',
+          'React Components',
           'Web Components',
           ['Docs', 'Playground', '*', 'Design Tokens'],
           '*',

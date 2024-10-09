@@ -1,1 +1,4 @@
-export { Document as LuxDocument, type DocumentProps as LuxDocumentProps } from '@utrecht/component-library-react';
+import { Document, DocumentProps } from '@utrecht/component-library-react';
+
+export const LuxDocument = Document;
+export type LuxDocumentProps = DocumentProps;
