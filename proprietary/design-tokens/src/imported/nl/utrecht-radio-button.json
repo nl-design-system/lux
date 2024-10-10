@@ -185,7 +185,7 @@
           }
         },
         "border-width": {
-          "value": "1.5px",
+          "value": "{utrecht.radio-button.border-width}",
           "type": "borderWidth"
         }
       }
