@@ -188,6 +188,10 @@
           "value": "{utrecht.radio-button.border-width}",
           "type": "borderWidth"
         }
+      },
+      "margin-inline-end": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
       }
     }
   }
