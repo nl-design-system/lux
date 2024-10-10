@@ -40,7 +40,7 @@
         "value": "2rem",
         "description": ""
       },
-      "max-block-size": {
+      "max-inline-size": {
         "value": "82.5rem",
         "type": "sizing"
       }

@@ -32,42 +32,24 @@
       "border-width": {
         "value": "{lux.border-width.m}",
         "type": "borderWidth"
-      }
-    }
-  },
-  "rhc": {
-    "page-footer": {
-      "column-gap": {
-        "value": "{lux.grid.gutter}",
-        "type": "spacing"
       },
-      "column": {
-        "row-gap": {
-          "value": "{lux.space.200}",
+      "content": {
+        "column-gap": {
+          "value": "{lux.grid.gutter}",
           "type": "spacing"
-        }
-      },
-      "row-gap": {
-        "value": "{lux.space.400}",
-        "type": "spacing"
-      },
-      "column-width": {
-        "value": "25rem",
-        "type": "sizing"
-      },
-      "column-end": {
+        },
+        "row-gap": {
+          "value": "{lux.space.400}",
+          "type": "spacing"
+        },
         "column-width": {
-          "value": "{utrecht.column-layout.column-width}",
+          "value": "12.5rem",
+          "type": "sizing"
+        },
+        "max-inline-size": {
+          "value": "{lux.grid.max-inline-size}",
           "type": "sizing"
         }
-      }
-    }
-  },
-  "todo": {
-    "page-footer": {
-      "max-block-size": {
-        "value": "{lux.grid.max-block-size}",
-        "type": "sizing"
       }
     }
   }
