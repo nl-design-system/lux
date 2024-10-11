@@ -10,24 +10,24 @@ describe('Paragraph', () => {
   it('renders a paragraph', () => {
     render(<LuxParagraph>{paragraphText}</LuxParagraph>);
 
-    expect(
-      within(screen.getByRole('paragraph')).getByText(paragraphText, { selector: '.utrecht-paragraph' }),
-    ).toBeInTheDocument();
+    const paragraph = screen.getByRole('paragraph');
+
+    expect(within(paragraph).getByText(paragraphText, { selector: '.utrecht-paragraph' })).toBeInTheDocument();
   });
 
   it('renders a lead paragraph', () => {
     render(<LuxParagraph appearance="lead">{leadParagraphText}</LuxParagraph>);
 
-    expect(
-      within(screen.getByRole('paragraph')).getByText('', { selector: '.utrecht-paragraph--lead' }),
-    ).toBeInTheDocument();
+    const paragraph = screen.getByRole('paragraph');
+
+    expect(within(paragraph).getByText('', { selector: '.utrecht-paragraph--lead' })).toBeInTheDocument();
   });
 
   it('renders a small paragraph', () => {
     render(<LuxParagraph appearance="small">{smallParagraphText}</LuxParagraph>);
 
-    expect(
-      within(screen.getByRole('paragraph')).getByText('', { selector: '.utrecht-paragraph--small' }),
-    ).toBeInTheDocument();
+    const paragraph = screen.getByRole('paragraph');
+
+    expect(within(paragraph).getByText('', { selector: '.utrecht-paragraph--small' })).toBeInTheDocument();
   });
 });
