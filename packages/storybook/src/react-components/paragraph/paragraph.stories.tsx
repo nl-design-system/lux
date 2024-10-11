@@ -1,6 +1,9 @@
 import { LuxParagraph } from '@lux-design-system/components-react';
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import tokensDefinition from './tokens.json';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -25,6 +28,11 @@ const meta = {
       control: 'select',
       options: [undefined, 'lead', 'small'],
     },
+  },
+  parameters: {
+    tokens,
+    tokensPrefix: 'utrecht-paragraph',
+    tokensDefinition,
   },
 } satisfies Meta<typeof LuxParagraph>;
 
@@ -70,11 +78,14 @@ export const Small: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'De `small` styling wordt toegepast. De content wordt in een `<small>` geplaatst t.b.v. visueel verschil als CSS niet geladen kan worden.',
+        story:
+          'De `small` styling wordt toegepast. De content wordt in een `<small>` geplaatst t.b.v. visueel verschil als CSS niet geladen kan worden.',
       },
     },
   },
 };
+
+export const DesignTokens = createDesignTokensStory(meta);
 
 export const Visual = createVisualRegressionStory(
   () => (

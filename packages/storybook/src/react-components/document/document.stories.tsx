@@ -1,6 +1,9 @@
 import { LuxDocument, LuxParagraph } from '@lux-design-system/components-react';
+import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import tokensDefinition from './tokens.json';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -21,6 +24,9 @@ const meta = {
     },
   },
   parameters: {
+    tokens,
+    tokensPrefix: 'utrecht-document',
+    tokensDefinition,
     withDocument: false,
   },
 } satisfies Meta<typeof LuxDocument>;
@@ -48,6 +54,8 @@ export const Playground: Story = {
   },
   tags: ['!autodocs'],
 };
+
+export const DesignTokens = createDesignTokensStory(meta);
 
 export const Visual = createVisualRegressionStory(() => (
   <>
