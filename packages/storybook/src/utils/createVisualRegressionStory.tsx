@@ -48,6 +48,7 @@ export const createVisualRegressionStory: CreateVisualRegressionStoryFn = (
         disable: false,
         disableSnapshot: false,
       },
+      withDocument: false,
     },
     render,
   };
