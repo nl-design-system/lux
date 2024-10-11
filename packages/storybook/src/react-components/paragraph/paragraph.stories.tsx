@@ -70,7 +70,7 @@ export const Small: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'De `small` styling wordt toegepast. De content wordt in een `<small>` geplaatst.',
+        story: 'De `small` styling wordt toegepast. De content wordt in een `<small>` geplaatst t.b.v. visueel verschil als CSS niet geladen kan worden.',
       },
     },
   },
