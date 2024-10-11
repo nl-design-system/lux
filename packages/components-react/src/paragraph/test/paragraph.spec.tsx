@@ -12,7 +12,8 @@ describe('Paragraph', () => {
 
     const paragraph = screen.getByRole('paragraph');
 
-    expect(within(paragraph).getByText(paragraphText, { selector: '.utrecht-paragraph' })).toBeInTheDocument();
+    const utrechtParagraph = within(paragraph).getByText(paragraphText, { selector: '.utrecht-paragraph' });
+    expect(utrechtParagraph).toBeInTheDocument();
   });
 
   it('renders a lead paragraph', () => {
