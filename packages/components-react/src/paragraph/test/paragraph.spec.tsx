@@ -11,8 +11,8 @@ describe('Paragraph', () => {
     render(<LuxParagraph>{paragraphText}</LuxParagraph>);
 
     const paragraph = screen.getByRole('paragraph');
-
     const utrechtParagraph = within(paragraph).getByText(paragraphText, { selector: '.utrecht-paragraph' });
+
     expect(utrechtParagraph).toBeInTheDocument();
   });
 
@@ -20,15 +20,17 @@ describe('Paragraph', () => {
     render(<LuxParagraph appearance="lead">{leadParagraphText}</LuxParagraph>);
 
     const paragraph = screen.getByRole('paragraph');
+    const utrechtLeadParagraph = within(paragraph).getByText('', { selector: '.utrecht-paragraph--lead' });
 
-    expect(within(paragraph).getByText('', { selector: '.utrecht-paragraph--lead' })).toBeInTheDocument();
+    expect(utrechtLeadParagraph).toBeInTheDocument();
   });
 
   it('renders a small paragraph', () => {
     render(<LuxParagraph appearance="small">{smallParagraphText}</LuxParagraph>);
 
     const paragraph = screen.getByRole('paragraph');
+    const utrechtSmallParagraph = within(paragraph).getByText('', { selector: '.utrecht-paragraph--small' });
 
-    expect(within(paragraph).getByText('', { selector: '.utrecht-paragraph--small' })).toBeInTheDocument();
+    expect(utrechtSmallParagraph).toBeInTheDocument();
   });
 });
