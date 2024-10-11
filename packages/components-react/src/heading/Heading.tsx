@@ -8,40 +8,46 @@ export interface LuxHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   level: HeadingLevels;
 }
 
+const APPEARANCES: { [key: number]: string } = {
+  1: 'utrecht-heading-1',
+  2: 'utrecht-heading-2',
+  3: 'utrecht-heading-3',
+  4: 'utrecht-heading-4',
+  5: 'utrecht-heading-5',
+  6: 'utrecht-heading-6',
+};
+
 export const LuxHeading = ({
   children,
-  level = 6,
+  level,
   appearance = level,
-  ...props
+  ...restProps
 }: PropsWithChildren<LuxHeadingProps>): ReactNode => {
-  const _level = level > 6 || level < 1 ? 6 : level;
-  const _appearance = appearance > 6 || appearance < 1 ? 6 : appearance;
+  const _level = Math.max(Math.min(level, 6), 1);
+  const _appearance = Math.max(Math.min(appearance, 6), 1);
+
   return (
-    <UtrechtHeading
-      level={_level}
-      {...(_appearance ? { appearance: `utrecht-heading-${_appearance}` } : {})}
-      {...props}
-    >
+    <UtrechtHeading {...restProps} level={_level} {...(_appearance ? { appearance: APPEARANCES[_appearance] } : {})}>
       {children}
     </UtrechtHeading>
   );
 };
 
 export const LuxHeading1 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading level={1} appearance={1} {...props} />
+  <LuxHeading {...props} level={1} />
 );
 export const LuxHeading2 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading level={2} appearance={2} {...props} />
+  <LuxHeading {...props} level={2} />
 );
 export const LuxHeading3 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading level={3} appearance={3} {...props} />
+  <LuxHeading {...props} level={3} />
 );
 export const LuxHeading4 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading level={4} appearance={4} {...props} />
+  <LuxHeading {...props} level={4} />
 );
 export const LuxHeading5 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading level={5} appearance={5} {...props} />
+  <LuxHeading {...props} level={5} />
 );
 export const LuxHeading6 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading level={6} appearance={6} {...props} />
+  <LuxHeading {...props} level={6} />
 );

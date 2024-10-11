@@ -16,11 +16,9 @@ Lux Heading is gebasseerd op Utrecht Heading.
 
 <Markdown>{markdown}</Markdown>
 
-## Utbreidingen in Lux Heading ten opzichte van Utrecht Heading
+## Uitbreidingen in Lux Heading ten opzichte van Utrecht Heading
 
-- De property `appearance` krijgt een nummer mee (`1` t/m `6`) in plaats van de classname (string) `utrecht-heading-1` t/m `utrecht-heading-6`. De classname wordt automatisch doorgegeven aan het "Utrecht Heading" component.
 - Als de waarde voor de property `appearance` niet gedefinieerd is krijgt het de waarde van de property `level`
-- Een onjuiste invoer voor de properties `appearance` en `level` wordt vervangen door een `6`.
 - De componenten "Heading1" t/m "Heading6" zijn gebouwd met het dynamische "Heading" component.
 
 ## Playground
@@ -28,34 +26,7 @@ Lux Heading is gebasseerd op Utrecht Heading.
 <Canvas of={HeadingStories.Playground} />
 <Controls of={HeadingStories.Playground} />
 
-## Variants (type)
+## Heading 1-6
 
-### Heading 1
-
-<Description of={HeadingStories.Heading1} />
-<Canvas of={HeadingStories.Heading1} />
-
-### Heading 2
-
-<Description of={HeadingStories.Heading2} />
-<Canvas of={HeadingStories.Heading2} />
-
-### Heading 3
-
-<Description of={HeadingStories.Heading3} />
-<Canvas of={HeadingStories.Heading3} />
-
-### Heading 4
-
-<Description of={HeadingStories.Heading4} />
-<Canvas of={HeadingStories.Heading4} />
-
-### Heading 5
-
-<Description of={HeadingStories.Heading5} />
-<Canvas of={HeadingStories.Heading5} />
-
-### Heading 6
-
-<Description of={HeadingStories.Heading6} />
-<Canvas of={HeadingStories.Heading6} />
+<Description of={HeadingStories.Headings} />
+<Canvas of={HeadingStories.Headings} />
