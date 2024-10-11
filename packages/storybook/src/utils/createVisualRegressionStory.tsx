@@ -3,8 +3,14 @@ import { PropsWithChildren, ReactElement } from 'react';
 
 type VisualRegressionRenderFn = () => ReactElement<void, any>;
 interface CreateVisualRegressionStoryFn {
-  // eslint-disable-next-line no-unused-vars
-  (render: VisualRegressionRenderFn): StoryObj;
+  /* eslint-disable no-unused-vars */
+  (
+    render: VisualRegressionRenderFn,
+    options?: {
+      withDocument?: boolean;
+    },
+  ): StoryObj;
+  /* eslint-enable */
 }
 
 /**
@@ -29,11 +35,14 @@ interface CreateVisualRegressionStoryFn {
  *
  * @see {@link VisualRegressionWrapper}
  * @param render function which renders the story's body
+ * @param options set options for the story
  * @returns a storybook story
  */
 export const createVisualRegressionStory: CreateVisualRegressionStoryFn = (
   render: VisualRegressionRenderFn,
+  options = {},
 ): StoryObj => {
+  const { withDocument = false } = options;
   return {
     parameters: {
       options: {
@@ -48,7 +57,7 @@ export const createVisualRegressionStory: CreateVisualRegressionStoryFn = (
         disable: false,
         disableSnapshot: false,
       },
-      withDocument: false,
+      withDocument,
     },
     render,
   };

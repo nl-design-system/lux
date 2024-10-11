@@ -1,5 +1,6 @@
 import { LuxParagraph } from '@lux-design-system/components-react';
 import type { Meta, StoryObj } from '@storybook/react';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -74,3 +75,31 @@ export const Small: Story = {
     },
   },
 };
+
+export const Visual = createVisualRegressionStory(
+  () => (
+    <>
+      <h4 className="utrecht-heading-3">Light</h4>
+      <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+        <LuxParagraph>Lorem ipsum dolor sit amet, content staat in een LuxParagraph.</LuxParagraph>
+        <LuxParagraph appearance="lead">
+          Lorem ipsum dolor sit amet, content staat in een LuxParagraph met appearance: lead.
+        </LuxParagraph>
+        <LuxParagraph appearance="small">
+          Lorem ipsum dolor sit amet, content staat in een LuxParagraph met appearance: small.
+        </LuxParagraph>
+      </VisualRegressionWrapper>
+      <h4 className="utrecht-heading-3">Dark</h4>
+      <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+        <LuxParagraph>Lorem ipsum dolor sit amet, content staat in een LuxParagraph.</LuxParagraph>
+        <LuxParagraph appearance="lead">
+          Lorem ipsum dolor sit amet, content staat in een LuxParagraph met appearance: lead.
+        </LuxParagraph>
+        <LuxParagraph appearance="small">
+          Lorem ipsum dolor sit amet, content staat in een LuxParagraph met appearance: small.
+        </LuxParagraph>
+      </VisualRegressionWrapper>
+    </>
+  ),
+  { withDocument: true },
+);
