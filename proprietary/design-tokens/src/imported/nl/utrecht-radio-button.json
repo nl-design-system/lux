@@ -16,7 +16,7 @@
         }
       },
       "background-color": {
-        "value": "{lux.color.none}",
+        "value": "{lux.color.background.default}",
         "type": "color"
       },
       "border-color": {
@@ -47,7 +47,7 @@
       },
       "hover": {
         "background-color": {
-          "value": "{lux.color.none}",
+          "value": "{lux.color.background.default}",
           "type": "color"
         },
         "border-color": {
@@ -65,7 +65,7 @@
       },
       "active": {
         "background-color": {
-          "value": "{lux.color.none}",
+          "value": "{lux.color.background.default}",
           "type": "color"
         },
         "border-color": {
@@ -119,7 +119,7 @@
       },
       "checked": {
         "background-color": {
-          "value": "{lux.color.none}",
+          "value": "{lux.color.background.default}",
           "type": "color"
         },
         "border-color": {
@@ -132,7 +132,7 @@
         },
         "hover": {
           "background-color": {
-            "value": "{lux.color.canvas}",
+            "value": "{lux.color.background.default}",
             "type": "color"
           },
           "border-color": {
@@ -150,7 +150,7 @@
         },
         "active": {
           "background-color": {
-            "value": "{lux.color.canvas}",
+            "value": "{lux.color.background.default}",
             "type": "color"
           },
           "border-color": {
