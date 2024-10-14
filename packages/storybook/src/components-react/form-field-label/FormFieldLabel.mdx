@@ -1,0 +1,55 @@
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/form-label-css/README.md?raw";
+import * as FormFieldLabelStories from "./FormFieldLabel.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={FormFieldLabelStories} />
+
+# Lux Form Field Label
+
+Lux Form Field Label is gebaseerd op Utrecht Form Label.
+
+<CitationDocumentation
+  component="Utrecht Form Label"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-form-label--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Uitbreidingen in Lux Form Field Label ten opzichte van Utrecht Form Label
+
+- De property `type` kan de waarden `'checkbox'` of `'radio'` krijgen om specifieke stijlen toe te passen.
+- De properties `disabled` en `checked` zijn toegevoegd om de status van het gekoppelde formulierelement weer te geven.
+- De classnames `lux-form-label--${type}`, `lux-form-label--disabled`, en `lux-form-label--checked` worden automatisch toegepast op basis van de properties.
+
+## Playground
+
+<Canvas of={FormFieldLabelStories.Playground} />
+<Controls of={FormFieldLabelStories.Playground} />
+
+## Form Field Label varianten
+
+### Default Form Label
+
+<Description of={FormFieldLabelStories.Default} />
+<Canvas of={FormFieldLabelStories.Default} />
+
+### Checkbox Label
+
+<Description of={FormFieldLabelStories.CheckboxLabel} />
+<Canvas of={FormFieldLabelStories.CheckboxLabel} />
+
+### Radio Label
+
+<Description of={FormFieldLabelStories.RadioLabel} />
+<Canvas of={FormFieldLabelStories.RadioLabel} />
+
+### Uitgeschakeld Label
+
+<Description of={FormFieldLabelStories.DisabledLabel} />
+<Canvas of={FormFieldLabelStories.DisabledLabel} />
+
+### Aangevinkt Label
+
+<Description of={FormFieldLabelStories.CheckedLabel} />
+<Canvas of={FormFieldLabelStories.CheckedLabel} />

@@ -334,6 +334,9 @@ importers:
       '@utrecht/button-css':
         specifier: 1.2.0
         version: 1.2.0
+      '@utrecht/form-label-css':
+        specifier: 1.2.0
+        version: 1.2.0
       '@utrecht/heading-css':
         specifier: 1.2.0
         version: 1.2.0
@@ -2513,6 +2516,9 @@ packages:
 
   '@utrecht/document-css@1.1.0':
     resolution: {integrity: sha512-navpa20l9U2c/gMDNzZ83MF2/VfXJBXVIGw6CoZ7s3uNbR92H6MAvvSn29C/Kg9QGjDAhDd7P5dIyjQ1KrwJfg==}
+
+  '@utrecht/form-label-css@1.2.0':
+    resolution: {integrity: sha512-QX0TuK0dck5TwnlBnEqU+Roj3k1/B01L7sv7XDzXyuQze0FbX0lOZJ7sSEEfJ/91pxewshg22fy6GlHXIsB2uQ==}
 
   '@utrecht/heading-css@1.2.0':
     resolution: {integrity: sha512-d+H5TfhOKYN+YMau3l/4DR/K3mYjYGbZvxfzflxMD2HnHgOxgYC9YvH/FQysE19mKbepGZPzV1rMYoW/vcwmvg==}
@@ -10375,6 +10381,8 @@ snapshots:
       clsx: 1.2.1
 
   '@utrecht/document-css@1.1.0': {}
+
+  '@utrecht/form-label-css@1.2.0': {}
 
   '@utrecht/heading-css@1.2.0': {}
 

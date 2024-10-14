@@ -9,3 +9,5 @@ export {
   LuxHeading6,
 } from './heading/Heading';
 export type { LuxHeadingProps } from './heading/Heading';
+export { LuxFormFieldLabel } from './form-field-label/FormFieldLabel';
+export type { LuxFormFieldLabelProps } from './form-field-label/FormFieldLabel';
