@@ -2,47 +2,47 @@
   "utrecht": {
     "form-label": {
       "color": {
-        "value": "{lux.color.foreground.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.foreground.default}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "font-size": {
-        "value": "{lux.font-size.body.default}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.body.default}"
       },
       "checkbox": {
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{lux.font-weight.bold}"
         },
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         }
       },
       "checked": {
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{lux.font-weight.bold}"
         }
       },
       "disabled": {
         "color": {
-          "value": "{lux.color.foreground.subdued}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.foreground.subdued}"
         }
       },
       "radio": {
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         },
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{lux.font-weight.bold}"
         }
       }
     }

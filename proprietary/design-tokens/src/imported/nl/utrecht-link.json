@@ -2,98 +2,98 @@
   "utrecht": {
     "link": {
       "color": {
-        "type": "color",
-        "value": "{lux.link.color}"
+        "$type": "color",
+        "$value": "{lux.link.color}"
       },
       "text-decoration-color": {
-        "type": "color",
-        "value": "{lux.link.color}"
+        "$type": "color",
+        "$value": "{lux.link.color}"
       },
       "text-decoration-thickness": {
-        "type": "other",
-        "value": "auto"
+        "$type": "other",
+        "$value": "auto"
       },
       "text-underline-offset": {
-        "type": "other",
-        "value": "auto"
+        "$type": "other",
+        "$value": "auto"
       },
       "active": {
         "color": {
-          "type": "color",
-          "value": "{lux.link.active.color}"
+          "$type": "color",
+          "$value": "{lux.link.active.color}"
         },
         "text-decoration": {
-          "value": "{lux.link.active.text-decoration}",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "{lux.link.active.text-decoration}"
         }
       },
       "focus": {
         "color": {
-          "type": "color",
-          "value": "{lux.link.focus.color}"
+          "$type": "color",
+          "$value": "{lux.link.focus.color}"
         },
         "text-decoration-thickness": {
-          "type": "other",
-          "value": "auto"
+          "$type": "other",
+          "$value": "auto"
         },
         "background-color": {
-          "value": "{lux.link.focus.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.link.focus.background-color}"
         },
         "text-decoration": {
-          "value": "{lux.link.focus.text-decoration}",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "{lux.link.focus.text-decoration}"
         }
       },
       "hover": {
         "color": {
-          "type": "color",
-          "value": "{lux.link.hover.color}"
+          "$type": "color",
+          "$value": "{lux.link.hover.color}"
         },
         "text-decoration-thickness": {
-          "type": "other",
-          "value": "auto"
+          "$type": "other",
+          "$value": "auto"
         },
         "text-decoration": {
-          "value": "{lux.link.hover.text-decoration}",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "{lux.link.hover.text-decoration}"
         }
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.link.font-weight}"
+        "$type": "fontWeights",
+        "$value": "{lux.link.font-weight}"
       },
       "visited": {
         "color": {
-          "type": "color",
-          "value": "{lux.link.visited.color}"
+          "$type": "color",
+          "$value": "{lux.link.visited.color}"
         }
       },
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "{lux.link.icon.size}"
+          "$type": "sizing",
+          "$value": "{lux.link.icon.size}"
         }
       },
       "font-family": {
-        "value": "{lux.link.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.link.font-family}"
       },
       "line-height": {
-        "value": "{lux.link.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.link.line-height}"
       },
       "font-size": {
-        "value": "{lux.link.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.link.font-size}"
       },
       "text-decoration": {
-        "value": "{lux.link.text-decoration}",
-        "type": "textDecoration"
+        "$type": "textDecoration",
+        "$value": "{lux.link.text-decoration}"
       },
       "column-gap": {
-        "value": "{lux.link.column-gap}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.link.column-gap}"
       }
     }
   }
