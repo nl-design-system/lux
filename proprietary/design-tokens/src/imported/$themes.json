@@ -874,7 +874,16 @@
       "nl/utrecht-button": "enabled",
       "nl/utrecht-alert": "enabled",
       "nl/utrecht-link": "enabled",
-      "nl/utrecht-heading": "enabled"
+      "nl/utrecht-pointer-target": "enabled",
+      "nl/utrecht-form-field-error-message": "enabled",
+      "nl/utrecht-form-field-description": "enabled",
+      "nl/utrecht-text-input": "enabled",
+      "nl/utrecht-textarea": "enabled",
+      "nl/utrecht-form-field": "enabled",
+      "nl/utrecht-form-label": "enabled",
+      "nl/utrecht-document": "enabled",
+      "nl/utrecht-heading": "enabled",
+      "nl/utrecht-pre-heading": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",

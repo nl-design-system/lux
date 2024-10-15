@@ -1,0 +1,34 @@
+{
+  "lux": {
+    "section": {
+      "background-color": {
+        "value": "{lux.color.background.default}",
+        "type": "color"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.400}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.400}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.400}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.400}",
+        "type": "spacing"
+      },
+      "row-gap": {
+        "value": "{lux.space.400}",
+        "type": "spacing"
+      },
+      "border-radius": {
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius"
+      }
+    }
+  }
+}

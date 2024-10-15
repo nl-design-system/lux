@@ -35,6 +35,7 @@ export const createDesignTokensStory = (meta: any): StoryObj => {
           code: '',
         },
       },
+      withDocument: true,
     },
     render: (({ tokens, definition, component }: Props) => {
       return <ComponentTokensSection tokens={tokens} definition={definition} component={component} />;

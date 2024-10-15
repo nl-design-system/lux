@@ -1,0 +1,81 @@
+{
+  "utrecht": {
+    "form-field-error-message": {
+      "icon": {
+        "size": {
+          "type": "sizing",
+          "value": "1.5rem"
+        },
+        "color": {
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
+        }
+      },
+      "color": {
+        "type": "color",
+        "value": "{lux.color.feedback.error.default}"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
+      },
+      "background-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
+      },
+      "border-radius": {
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius",
+        "description": "todo token"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "column-gap": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      },
+      "border-width": {
+        "value": "{lux.alert.border-width}",
+        "type": "borderWidth"
+      },
+      "border-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
+      }
+    },
+    "alert": {
+      "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.25}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
+}
