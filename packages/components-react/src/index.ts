@@ -1,6 +1,5 @@
 import '@utrecht/component-library-css/dist/index.css';
 export { LuxDocument, type LuxDocumentProps } from './document/Document';
-export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
 export {
   LuxHeading,
   LuxHeading1,
@@ -9,5 +8,6 @@ export {
   LuxHeading4,
   LuxHeading5,
   LuxHeading6,
+  type LuxHeadingProps,
 } from './heading/Heading';
-export type { LuxHeadingProps } from './heading/Heading';
+export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';

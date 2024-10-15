@@ -7,7 +7,7 @@ import {
   LuxHeading5,
   LuxHeading6,
   type LuxHeadingProps,
-} from '@lux-design-system/components-react/src/';
+} from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';

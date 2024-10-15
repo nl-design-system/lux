@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
-import { LuxHeading, LuxHeading1, LuxHeading2, LuxHeading3, LuxHeading4, LuxHeading5, LuxHeading6 } from './Heading';
+import { LuxHeading, LuxHeading1, LuxHeading2, LuxHeading3, LuxHeading4, LuxHeading5, LuxHeading6 } from '../Heading';
 
 describe('Heading', () => {
   it('renders a heading at heading level 1', () => {
