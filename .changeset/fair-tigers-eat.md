@@ -1,5 +1,5 @@
 ---
-"@lux-design-system/components-react": major
+"@lux-design-system/components-react": minor
 ---
 
 In deze commit:
