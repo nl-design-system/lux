@@ -31,6 +31,7 @@
     "component/link",
     "component/paragraph",
     "component/section",
+    "component/single-checkbox",
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-document",
