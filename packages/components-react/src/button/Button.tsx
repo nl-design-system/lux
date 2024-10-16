@@ -40,7 +40,7 @@ export const LuxButton = (props: LuxButtonProps) => {
       return null;
     }
 
-    if (!React.isValidElement(iconElement)) {
+    if (!React.isValidElement<HTMLElement>(iconElement)) {
       return iconElement;
     }
 
