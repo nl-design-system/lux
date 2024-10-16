@@ -77,12 +77,24 @@
         "row-gap": {
           "$type": "spacing",
           "$value": "{lux.space.100}"
+        },
+        "padding-inline-start": {
+          "$type": "spacing",
+          "$value": "{lux.space.200}"
+        },
+        "border-inline-start-color": {
+          "$type": "color",
+          "$value": "{lux.color.feedback.error.default}"
+        },
+        "border-inline-start-width": {
+          "$type": "borderWidth",
+          "$value": "{lux.border-width.m}"
         }
       },
       "hover": {
         "background-color": {
           "$type": "color",
-          "$value": "{lux.color.brand.subdued}"
+          "$value": "{lux.color.none}"
         },
         "color": {
           "$type": "color",
