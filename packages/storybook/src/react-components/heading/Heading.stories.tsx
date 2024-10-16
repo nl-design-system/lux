@@ -19,8 +19,8 @@ const LuxHeading = (props: PropsWithChildren<LuxHeadingProps> & HTMLAttributes<H
 type Story = StoryObj<typeof meta>;
 
 const meta = {
-  title: 'Components React/Heading',
-  id: 'components-react-heading',
+  title: 'React Components/Heading',
+  id: 'react-components-heading',
   component: LuxHeading,
   subcomponents: {},
   parameters: {
