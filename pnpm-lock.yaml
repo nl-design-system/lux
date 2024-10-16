@@ -110,15 +110,12 @@ importers:
 
   packages/components-react:
     dependencies:
-      '@utrecht/button-react':
-        specifier: 2.0.0
-        version: 2.0.0(@babel/runtime@7.25.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/component-library-css':
         specifier: 6.0.0
         version: 6.0.0
       '@utrecht/component-library-react':
-        specifier: 7.0.0
-        version: 7.0.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 7.1.0
+        version: 7.1.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2729,18 +2726,11 @@ packages:
   '@utrecht/button-css@1.2.0':
     resolution: {integrity: sha512-aYqnmuT5HOshv8Kr9IvBsJef+2KNKRNwLPQHxNC2fSGXWDFzROAeChUr0A1Ylt45aAApAD/bxxIHHBAeS1PwEA==}
 
-  '@utrecht/button-react@2.0.0':
-    resolution: {integrity: sha512-Adnp/huqbd0G+FzRxeF+yUgohUOjsKke3dp7qA2vc2JMu231nZ0+BFgXayh+NVCW2Ur/Ua+GTKZ5rQ1ZlFSOeA==}
-    peerDependencies:
-      '@babel/runtime': '*'
-      react: '18'
-      react-dom: '18'
-
   '@utrecht/component-library-css@6.0.0':
     resolution: {integrity: sha512-N+sCB7GSKOeuM06EYmVVbg2JA6t739Z9beXKuqu7Xuvb+0tjQDzPdgzm1vEtTqCMC5L8U1wO7v0HO1d0KlejQw==}
 
-  '@utrecht/component-library-react@7.0.0':
-    resolution: {integrity: sha512-mPKNpPZqnRv3CIrDuwQwQtDqVvuBnJJkPK+5+vK79nalQmMnRrXMgNhM4vdF0bJ4QHyhWYGRU/WemNXIMRvfbQ==}
+  '@utrecht/component-library-react@7.1.0':
+    resolution: {integrity: sha512-TPYDkuGWKfvhkdFBPtVfUMEXjqqabSia++Ewf2FyRYuCSud/ZxWCkw53Pf7HXlEloAngQMc/BbrJB4f2Ok9B+Q==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       date-fns: ^2.30.0
@@ -10387,16 +10377,9 @@ snapshots:
 
   '@utrecht/button-css@1.2.0': {}
 
-  '@utrecht/button-react@2.0.0(@babel/runtime@7.25.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@babel/runtime': 7.25.0
-      clsx: 2.1.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
   '@utrecht/component-library-css@6.0.0': {}
 
-  '@utrecht/component-library-react@7.0.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@7.1.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.25.0
       clsx: 2.1.1

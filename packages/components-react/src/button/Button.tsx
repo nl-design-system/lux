@@ -1,4 +1,7 @@
-import { Button as UtrechtButton, type ButtonProps as UtrechtButtonProps } from '@utrecht/button-react/dist/css'; //Utrecht/components-react/dist/css doesn't have css code included
+import {
+  Button as UtrechtButton,
+  type ButtonProps as UtrechtButtonProps,
+} from '@utrecht/component-library-react/dist/css-module';
 import './button.css';
 import React, { ReactElement } from 'react';
 
