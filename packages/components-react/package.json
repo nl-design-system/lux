@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "Community for NL Design System",
   "description": "React component library for LUX, the Design System for Logius, based on the NL Design System architecture",
   "license": "EUPL-1.2",
@@ -57,7 +57,7 @@
     "@jest/globals": "29.7.0",
     "@lux-design-system/components-css": "workspace:*",
     "@testing-library/dom": "10.4.0",
-    "@testing-library/jest-dom": "6.4.8",
+    "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.0",
     "@testing-library/user-event": "14.5.2",
     "@types/jest": "29.5.12",
