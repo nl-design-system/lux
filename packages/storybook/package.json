@@ -45,7 +45,7 @@
     "@storybook/manager-api": "8.2.7",
     "@storybook/preview-api": "8.2.7",
     "@storybook/react": "8.2.7",
-    "@storybook/react-vite": "8.2.7",
+    "@storybook/react-vite": "8.3.5",
     "@storybook/test": "8.2.7",
     "@storybook/testing-library": "0.2.2",
     "@types/react": "18.3.3",
