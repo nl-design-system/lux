@@ -2,7 +2,7 @@ import {
   Button as UtrechtButton,
   type ButtonProps as UtrechtButtonProps,
 } from '@utrecht/component-library-react/dist/css-module';
-import './button.css';
+import './Button.css';
 import React, { ReactElement } from 'react';
 
 type Variant = 'primary' | 'secondary' | 'tertiary';
