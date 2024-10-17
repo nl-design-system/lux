@@ -11,3 +11,9 @@ export {
   type LuxHeadingProps,
 } from './heading/Heading';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
+export { LuxFormFieldLabel, type LuxFormFieldLabelProps } from './form-field-label/FormFieldLabel';
+export {
+  LuxFormFieldTextInput,
+  INPUT_TYPES,
+  type LuxFormFieldTextInputProps,
+} from './form-field-text-input/FormFieldTextInput';
