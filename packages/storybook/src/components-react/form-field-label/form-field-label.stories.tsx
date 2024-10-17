@@ -10,8 +10,8 @@ const LuxFormFieldLabel = (
 type Story = StoryObj<typeof meta>;
 
 const meta = {
-  title: 'Components React/Form Field Label',
-  id: 'components-react-FormFieldLabel',
+  title: 'Components React/Form Field/Label',
+  id: 'components-react-form-field-label',
   component: LuxFormFieldLabel,
   subcomponents: {},
   parameters: {
