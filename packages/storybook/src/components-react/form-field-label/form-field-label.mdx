@@ -1,13 +1,11 @@
 import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
 import markdown from "@utrecht/form-label-css/README.md?raw";
-import * as FormFieldLabelStories from "./FormFieldLabel.stories";
+import * as FormFieldLabelStories from "./form-field-label.stories";
 import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 <Meta of={FormFieldLabelStories} />
 
 # Lux Form Field Label
-
-Lux Form Field Label is gebaseerd op Utrecht Form Label.
 
 <CitationDocumentation
   component="Utrecht Form Label"
@@ -16,9 +14,9 @@ Lux Form Field Label is gebaseerd op Utrecht Form Label.
 
 <Markdown>{markdown}</Markdown>
 
-## Uitbreidingen in Lux Form Field Label ten opzichte van Utrecht Form Label
+## Opmerkingen
 
-- De property `type` kan de waarden `'checkbox'` of `'radio'` krijgen om specifieke stijlen toe te passen.
+- De property `type` kan de waarden `checkbox` of `radio` krijgen om specifieke stijlen toe te passen.
 - De properties `disabled` en `checked` zijn toegevoegd om de status van het gekoppelde formulierelement weer te geven.
 - De classnames `lux-form-label--${type}`, `lux-form-label--disabled`, en `lux-form-label--checked` worden automatisch toegepast op basis van de properties.
 

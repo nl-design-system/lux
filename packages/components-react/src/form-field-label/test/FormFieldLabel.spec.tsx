@@ -61,10 +61,6 @@ describe('Form Field Label', () => {
       </LuxFormFieldLabel>,
     );
     const label = screen.getByTestId('rich-text-label');
-
-    // const label = screen.getByText((content, element) => {
-    //   return element?.tagName.toLowerCase() === 'label' && content.includes('Bold Label');
-    // });
     expect(label).toBeInTheDocument();
 
     const boldText = label.querySelector('strong');

@@ -1,4 +1,5 @@
 import { FormLabel as UtrechtFormLabel } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
 import { ForwardedRef, forwardRef, LabelHTMLAttributes, PropsWithChildren } from 'react';
 
 const FORM_LABEL_CLASSES: { [key: string]: string } = {
@@ -20,18 +21,18 @@ export const LuxFormFieldLabel = forwardRef(
     { children, className, type, disabled, checked, ...restProps }: PropsWithChildren<LuxFormFieldLabelProps>,
     ref: ForwardedRef<HTMLLabelElement>,
   ) => {
-    const classes = [
-      FORM_LABEL_CLASSES.base,
-      type && FORM_LABEL_CLASSES[type],
-      disabled && FORM_LABEL_CLASSES.disabled,
-      checked && FORM_LABEL_CLASSES.checked,
+    const classNames = clsx(
+      {
+        [FORM_LABEL_CLASSES.base]: true,
+        [FORM_LABEL_CLASSES.type]: type,
+        [FORM_LABEL_CLASSES.disabled]: disabled,
+        [FORM_LABEL_CLASSES.checked]: checked,
+      },
       className,
-    ]
-      .filter(Boolean)
-      .join(' ');
+    );
 
     return (
-      <UtrechtFormLabel {...restProps} ref={ref} className={classes}>
+      <UtrechtFormLabel {...restProps} ref={ref} className={classNames}>
         {children}
       </UtrechtFormLabel>
     );
