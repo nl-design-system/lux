@@ -154,7 +154,7 @@
       "checked": {
         "background-color": {
           "$type": "color",
-          "$value": "{lux.color.none}"
+          "$value": "{lux.color.brand.subdued}"
         },
         "color": {
           "$type": "color",
@@ -162,7 +162,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "{lux.color.feedback.error.default}"
+          "$value": "{lux.color.brand.default}"
         }
       }
     }
