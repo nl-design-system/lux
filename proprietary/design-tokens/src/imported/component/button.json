@@ -2,234 +2,234 @@
   "lux": {
     "button": {
       "font-size": {
-        "type": "fontSizes",
-        "value": "{product.button.font-size}"
+        "$type": "fontSizes",
+        "$value": "{product.button.font-size}"
       },
       "primary": {
         "font-size": {
-          "type": "fontSizes",
-          "value": "{product.button.primary.font-size}"
+          "$type": "fontSizes",
+          "$value": "{product.button.primary.font-size}"
         },
         "background-color": {
-          "type": "color",
-          "value": "{lux.color.brand.default}"
+          "$type": "color",
+          "$value": "{lux.color.brand.default}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.color.foreground.onEmphasis}"
+          "$type": "color",
+          "$value": "{lux.color.foreground.onEmphasis}"
         },
         "hover": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.brand.hover}"
+            "$type": "color",
+            "$value": "{lux.color.brand.hover}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{lux.color.foreground.onEmphasis}"
+            "$type": "color",
+            "$value": "{lux.color.foreground.onEmphasis}"
           }
         },
         "active": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.brand.default}"
+            "$type": "color",
+            "$value": "{lux.color.brand.default}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{lux.color.foreground.onEmphasis}"
+            "$type": "color",
+            "$value": "{lux.color.foreground.onEmphasis}"
           }
         },
         "disabled": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.background.subdued}"
+            "$type": "color",
+            "$value": "{lux.color.background.subdued}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{lux.color.foreground.subdued}"
+            "$type": "color",
+            "$value": "{lux.color.foreground.subdued}"
           }
         }
       },
       "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.large-scale.sm}"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.large-scale.sm}"
       },
       "padding-inline-start": {
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "$type": "spacing",
+        "$value": "{lux.space.200}"
       },
       "padding-block-start": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "padding-inline-end": {
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "$type": "spacing",
+        "$value": "{lux.space.200}"
       },
       "padding-block-end": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "column-gap": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "min-inline-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
+        "$type": "sizing",
+        "$value": "{lux.size.target}"
       },
       "min-block-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
+        "$type": "sizing",
+        "$value": "{lux.size.target}"
       },
       "border-radius": {
-        "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
+        "$type": "borderRadius",
+        "$value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "type": "borderWidth",
-        "value": "{lux.border-width.default}"
+        "$type": "borderWidth",
+        "$value": "{lux.border-width.default}"
       },
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "{lux.size.icon}"
+          "$type": "sizing",
+          "$value": "{lux.size.icon}"
         }
       },
       "secondary": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{mode.button.secondary.border-color}"
+          "$type": "color",
+          "$value": "{mode.button.secondary.border-color}"
         },
         "color": {
-          "type": "color",
-          "value": "{mode.button.secondary.color}"
+          "$type": "color",
+          "$value": "{mode.button.secondary.color}"
         },
         "hover": {
           "background-color": {
-            "type": "color",
-            "value": "{mode.button.secondary.hover.background-color}"
+            "$type": "color",
+            "$value": "{mode.button.secondary.hover.background-color}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{mode.button.secondary.hover.border-color}"
+            "$type": "color",
+            "$value": "{mode.button.secondary.hover.border-color}"
           },
           "color": {
-            "type": "color",
-            "value": "{mode.button.secondary.hover.color}"
+            "$type": "color",
+            "$value": "{mode.button.secondary.hover.color}"
           }
         },
         "active": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{mode.button.secondary.border-color}"
+            "$type": "color",
+            "$value": "{mode.button.secondary.border-color}"
           },
           "color": {
-            "type": "color",
-            "value": "{mode.button.secondary.color}"
+            "$type": "color",
+            "$value": "{mode.button.secondary.color}"
           }
         },
         "disabled": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.background.subdued}"
+            "$type": "color",
+            "$value": "{lux.color.background.subdued}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{lux.color.foreground.subdued}"
+            "$type": "color",
+            "$value": "{lux.color.foreground.subdued}"
           }
         }
       },
       "tertiary": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.color.none}"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "color": {
-          "type": "color",
-          "value": "{mode.button.tertiary.color}"
+          "$type": "color",
+          "$value": "{mode.button.tertiary.color}"
         },
         "hover": {
           "background-color": {
-            "type": "color",
-            "value": "{mode.button.tertiary.hover.background-color}"
+            "$type": "color",
+            "$value": "{mode.button.tertiary.hover.background-color}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{mode.button.tertiary.hover.color}"
+            "$type": "color",
+            "$value": "{mode.button.tertiary.hover.color}"
           }
         },
         "active": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{mode.button.tertiary.color}"
+            "$type": "color",
+            "$value": "{mode.button.tertiary.color}"
           }
         },
         "disabled": {
           "background-color": {
-            "type": "color",
-            "value": "{lux.color.background.subdued}"
+            "$type": "color",
+            "$value": "{lux.color.background.subdued}"
           },
           "border-color": {
-            "type": "color",
-            "value": "{lux.color.none}"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "type": "color",
-            "value": "{lux.color.foreground.subdued}"
+            "$type": "color",
+            "$value": "{lux.color.foreground.subdued}"
           }
         }
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.font-weight.bold}"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       }
     }
   }

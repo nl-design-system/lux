@@ -2,134 +2,134 @@
   "utrecht": {
     "heading-1": {
       "color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "line-height": {
-        "value": "{lux.line-height.heading.level-1}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.heading.level-1}"
       },
       "font-size": {
-        "value": "{lux.font-size.heading.level-1}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.heading.level-1}"
       }
     },
     "heading-2": {
       "color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "line-height": {
-        "value": "{lux.line-height.heading.level-2}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.heading.level-2}"
       },
       "font-size": {
-        "value": "{lux.font-size.heading.level-2}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.heading.level-2}"
       }
     },
     "heading-3": {
       "color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "line-height": {
-        "value": "{lux.line-height.heading.level-3}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.heading.level-3}"
       },
       "font-size": {
-        "value": "{viewport.font-size.heading.level-3}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{viewport.font-size.heading.level-3}"
       }
     },
     "heading-4": {
       "color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "line-height": {
-        "value": "{lux.line-height.heading.level-4}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.heading.level-4}"
       },
       "font-size": {
-        "value": "{lux.font-size.heading.level-4}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.heading.level-4}"
       }
     },
     "heading-5": {
       "color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "line-height": {
-        "value": "{lux.line-height.heading.level-5}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.heading.level-5}"
       },
       "font-size": {
-        "value": "{lux.font-size.heading.level-5}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.heading.level-5}"
       }
     },
     "heading-6": {
       "color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.bold}"
       },
       "line-height": {
-        "value": "{lux.line-height.heading.level-5}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.heading.level-5}"
       },
       "font-size": {
-        "value": "{lux.font-size.heading.level-5}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.heading.level-5}"
       }
     }
   }

@@ -3,21 +3,21 @@
     "form-field": {
       "invalid": {
         "border-inline-start-color": {
-          "value": "{lux.color.feedback.error.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.feedback.error.default}"
         },
         "border-inline-start-width": {
-          "value": "{lux.border-width.m}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{lux.border-width.m}"
         },
         "padding-inline-start": {
-          "value": "{lux.space.200}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{lux.space.200}"
         }
       },
       "row-gap": {
-        "value": "{lux.space.100}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       }
     }
   }

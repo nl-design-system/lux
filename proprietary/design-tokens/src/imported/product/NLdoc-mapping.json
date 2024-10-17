@@ -4,92 +4,92 @@
       "brand": {
         "default": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{nldoc.color.brand.default}",
-          "description": "kleur van het product"
+          "$type": "color",
+          "$value": "{nldoc.color.brand.default}",
+          "$description": "kleur van het product"
         },
         "subdued": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{nldoc.color.brand.subdued}",
-          "description": "Subtiele kleur van het product"
+          "$type": "color",
+          "$value": "{nldoc.color.brand.subdued}",
+          "$description": "Subtiele kleur van het product"
         },
         "hover": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{nldoc.color.brand.hover}",
-          "description": "Hover kleur van het product"
+          "$type": "color",
+          "$value": "{nldoc.color.brand.hover}",
+          "$description": "Hover kleur van het product"
         }
       }
     },
     "border-radius": {
       "default": {
         "parent": "product/NLdoc",
-        "type": "borderRadius",
-        "value": "0px"
+        "$type": "borderRadius",
+        "$value": "0px"
       }
     },
     "focus": {
       "outline-width": {
         "parent": "product/NLdoc",
-        "type": "borderWidth",
-        "value": "1px"
+        "$type": "borderWidth",
+        "$value": "1px"
       },
       "outline": {
         "style": {
-          "type": "other",
-          "value": "dotted"
+          "$type": "other",
+          "$value": "dotted"
         }
       }
     },
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "{nldoc.font-family.primary}"
+        "$type": "fontFamilies",
+        "$value": "{nldoc.font-family.primary}"
       }
     },
     "line-height": {
       "body": {
         "small": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.body.small} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.body.small} * 1.5"
         },
         "default": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.body.default} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.body.default} * 1.5"
         },
         "large": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.body.large} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.body.large} * 1.5"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-1} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.heading.level-1} * 1.5"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-2} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.heading.level-2} * 1.5"
         },
         "level-3": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-3} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.heading.level-3} * 1.5"
         },
         "level-4": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-4} * 1.5"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.heading.level-4} * 1.5"
         },
         "level-5": {
-          "value": "{lux.font-size.heading.level-5} * 1.5",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "{lux.font-size.heading.level-5} * 1.5"
         }
       }
     },
@@ -97,52 +97,52 @@
       "body": {
         "small": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "0.875rem"
+          "$type": "fontSizes",
+          "$value": "0.875rem"
         },
         "default": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1rem"
+          "$type": "fontSizes",
+          "$value": "1rem"
         },
         "large": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.25rem"
+          "$type": "fontSizes",
+          "$value": "1.25rem"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "2.5rem"
+          "$type": "fontSizes",
+          "$value": "2.5rem"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "2rem"
+          "$type": "fontSizes",
+          "$value": "2rem"
         },
         "level-3": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.5rem"
+          "$type": "fontSizes",
+          "$value": "1.5rem"
         },
         "level-4": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.25rem"
+          "$type": "fontSizes",
+          "$value": "1.25rem"
         },
         "level-5": {
-          "value": "1rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "1rem"
         }
       }
     },
     "size": {
       "target": {
-        "type": "sizing",
-        "value": "2.5rem",
-        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+        "$type": "sizing",
+        "$value": "2.5rem",
+        "$description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
     }
   },
@@ -150,15 +150,15 @@
     "focus": {
       "outline-radius": {
         "parent": "product/NLdoc",
-        "type": "borderRadius",
-        "value": "0px"
+        "$type": "borderRadius",
+        "$value": "0px"
       }
     },
     "size": {
       "icon": {
         "wrapper-height": {
-          "value": "1.5rem",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "1.5rem"
         }
       }
     }
@@ -168,73 +168,73 @@
       "secondary": {
         "background-color": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{lux.color.none}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "border-color": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{nldoc.button.color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{nldoc.button.color}"
         },
         "color": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{nldoc.button.color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{nldoc.button.color}"
         },
         "hover": {
           "border-color": {
             "parent": "product/NLdoc",
-            "type": "color",
-            "value": "{nldoc.color.brand.hover}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{nldoc.color.brand.hover}"
           },
           "color": {
             "parent": "product/NLdoc",
-            "type": "color",
-            "value": "{nldoc.button.color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{nldoc.button.color}"
           },
           "background-color": {
             "parent": "product/NLdoc",
-            "type": "color",
-            "value": "{nldoc.color.brand.subdued}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{nldoc.color.brand.subdued}"
           }
         }
       },
       "tertiary": {
         "color": {
           "parent": "product/NLdoc",
-          "type": "color",
-          "value": "{nldoc.button.color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{nldoc.button.color}"
         },
         "hover": {
           "color": {
             "parent": "product/NLdoc",
-            "type": "color",
-            "value": "{nldoc.button.color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{nldoc.button.color}"
           },
           "background-color": {
             "parent": "product/NLdoc",
-            "type": "color",
-            "value": "{nldoc.color.brand.subdued}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{nldoc.color.brand.subdued}"
           }
         }
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "1rem"
+        "$type": "fontSizes",
+        "$value": "1rem"
       },
       "primary": {
         "font-size": {
-          "type": "fontSizes",
-          "value": "1rem"
+          "$type": "fontSizes",
+          "$value": "1rem"
         }
       }
     }

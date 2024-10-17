@@ -2,77 +2,77 @@
   "lux": {
     "link": {
       "color": {
-        "type": "color",
-        "value": "{mode.link.color}"
+        "$type": "color",
+        "$value": "{mode.link.color}"
       },
       "column-gap": {
-        "type": "spacing",
-        "value": "{lux.space.50}"
+        "$type": "spacing",
+        "$value": "{lux.space.50}"
       },
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "{lux.size.icon}"
+          "$type": "sizing",
+          "$value": "{lux.size.icon}"
         }
       },
       "hover": {
         "color": {
-          "type": "color",
-          "value": "{mode.link.hover.color}"
+          "$type": "color",
+          "$value": "{mode.link.hover.color}"
         },
         "text-decoration": {
-          "value": "none",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "none"
         }
       },
       "active": {
         "color": {
-          "type": "color",
-          "value": "{mode.link.active.color}"
+          "$type": "color",
+          "$value": "{mode.link.active.color}"
         },
         "text-decoration": {
-          "value": "none",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "none"
         }
       },
       "visited": {
         "color": {
-          "type": "color",
-          "value": "{mode.link.visited.color}"
+          "$type": "color",
+          "$value": "{mode.link.visited.color}"
         }
       },
       "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.font-weight.regular}"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.regular}"
       },
       "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.body.default}"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.body.default}"
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.body.default}"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.body.default}"
       },
       "text-decoration": {
-        "value": "underline",
-        "type": "textDecoration"
+        "$type": "textDecoration",
+        "$value": "underline"
       },
       "focus": {
         "text-decoration": {
-          "value": "none",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "none"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.color.foreground.link}"
+          "$type": "color",
+          "$value": "{lux.color.foreground.link}"
         },
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         }
       }
     }

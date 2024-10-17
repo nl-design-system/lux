@@ -4,137 +4,137 @@
       "foreground": {
         "default": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.grijs.700}",
-          "description": "Standaard kleur voor teksten en iconen. Gebruik deze voor body content, titels en labels."
+          "$type": "color",
+          "$value": "{lux.color.grijs.700}",
+          "$description": "Standaard kleur voor teksten en iconen. Gebruik deze voor body content, titels en labels."
         },
         "subdued": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.grijs.500}",
-          "description": "Gebruik voor content die extra context biedt, maar niet essentieel is om de interface te begrijpen."
+          "$type": "color",
+          "$value": "{lux.color.grijs.500}",
+          "$description": "Gebruik voor content die extra context biedt, maar niet essentieel is om de interface te begrijpen."
         },
         "onEmphasis": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.wit}",
-          "description": "Tekst en iconen die op een sterke achtergrond staan. Zoals het label in de primaire button of links in de footer."
+          "$type": "color",
+          "$value": "{lux.color.wit}",
+          "$description": "Tekst en iconen die op een sterke achtergrond staan. Zoals het label in de primaire button of links in de footer."
         },
         "link": {
-          "value": "{lux.color.donkerblauw.500}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.donkerblauw.500}"
         }
       },
       "background": {
         "default": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.wit}",
-          "description": "Achtergrond kleur"
+          "$type": "color",
+          "$value": "{lux.color.wit}",
+          "$description": "Achtergrond kleur"
         },
         "subdued": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.grijs.200}",
-          "description": "Subtiele achtergrond kleur"
+          "$type": "color",
+          "$value": "{lux.color.grijs.200}",
+          "$description": "Subtiele achtergrond kleur"
         },
         "hover": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.grijs.300}",
-          "description": "Kleur van elementen als je eroverheen gaat met je muis"
+          "$type": "color",
+          "$value": "{lux.color.grijs.300}",
+          "$description": "Kleur van elementen als je eroverheen gaat met je muis"
         }
       },
       "border": {
         "default": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.grijs.500}",
-          "description": "Border kleur"
+          "$type": "color",
+          "$value": "{lux.color.grijs.500}",
+          "$description": "Border kleur"
         },
         "subdued": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.grijs.400}",
-          "description": "Subtiele border"
+          "$type": "color",
+          "$value": "{lux.color.grijs.400}",
+          "$description": "Subtiele border"
         },
         "strong": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.foreground.default}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         }
       },
       "canvas": {
         "parent": "mode/light",
-        "type": "color",
-        "value": "{lux.color.grijs.200}",
-        "description": "Gebruik deze kleur voor de achtergrond van de website, hierbovenop komen de background kleuren."
+        "$type": "color",
+        "$value": "{lux.color.grijs.200}",
+        "$description": "Gebruik deze kleur voor de achtergrond van de website, hierbovenop komen de background kleuren."
       },
       "feedback": {
         "success": {
           "default": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.groen.500}",
-            "description": "Gebruik deze kleur om een positieve boodschap te benadrukken."
+            "$type": "color",
+            "$value": "{lux.color.groen.500}",
+            "$description": "Gebruik deze kleur om een positieve boodschap te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.groen.50}",
-            "description": "Gebruik deze kleur om een positieve boodschap te highlighten."
+            "$type": "color",
+            "$value": "{lux.color.groen.50}",
+            "$description": "Gebruik deze kleur om een positieve boodschap te highlighten."
           }
         },
         "info": {
           "default": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.hemelblauw.500}",
-            "description": "Gebruik deze kleur om een informatieve boodschap te benadrukken."
+            "$type": "color",
+            "$value": "{lux.color.hemelblauw.500}",
+            "$description": "Gebruik deze kleur om een informatieve boodschap te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.hemelblauw.50}",
-            "description": "Gebruik deze kleur om een informatieve boodschap te highlighten."
+            "$type": "color",
+            "$value": "{lux.color.hemelblauw.50}",
+            "$description": "Gebruik deze kleur om een informatieve boodschap te highlighten."
           }
         },
         "error": {
           "default": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.rood.500}",
-            "description": "Gebruik deze kleur om een negatieve boodschap te benadrukken."
+            "$type": "color",
+            "$value": "{lux.color.rood.500}",
+            "$description": "Gebruik deze kleur om een negatieve boodschap te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.rood.50}",
-            "description": "Gebruik deze kleur om een negatieve boodschap te highlighten."
+            "$type": "color",
+            "$value": "{lux.color.rood.50}",
+            "$description": "Gebruik deze kleur om een negatieve boodschap te highlighten."
           }
         },
         "warning": {
           "default": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.donkergeel.500}",
-            "description": "Gebruik deze kleur om een waarschuwing te benadrukken."
+            "$type": "color",
+            "$value": "{lux.color.donkergeel.500}",
+            "$description": "Gebruik deze kleur om een waarschuwing te benadrukken."
           },
           "subdued": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{lux.color.donkergeel.50}",
-            "description": "Gebruik deze kleur om een waarschuwing te highlighten."
+            "$type": "color",
+            "$value": "{lux.color.donkergeel.50}",
+            "$description": "Gebruik deze kleur om een waarschuwing te highlighten."
           }
         }
       },
       "focus": {
         "outline": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.border.strong}",
-          "description": "Outline kleur voor de focus state."
+          "$type": "color",
+          "$value": "{lux.color.border.strong}",
+          "$description": "Outline kleur voor de focus state."
         }
       }
     }
@@ -143,30 +143,30 @@
     "link": {
       "color": {
         "parent": "mode/dark (beta)",
-        "type": "color",
-        "value": "{lux.color.donkerblauw.500}",
-        "description": "Gebruik deze kleur voor link tekst"
+        "$type": "color",
+        "$value": "{lux.color.donkerblauw.500}",
+        "$description": "Gebruik deze kleur voor link tekst"
       },
       "visited": {
         "color": {
           "parent": "mode/dark (beta)",
-          "type": "color",
-          "value": "{lux.color.paars.500}"
+          "$type": "color",
+          "$value": "{lux.color.paars.500}"
         }
       },
       "hover": {
         "color": {
           "parent": "mode/dark (beta)",
-          "type": "color",
-          "value": "{lux.color.donkerblauw.700}",
-          "description": "Gebruik deze kleur voor de hover van link tekst"
+          "$type": "color",
+          "$value": "{lux.color.donkerblauw.700}",
+          "$description": "Gebruik deze kleur voor de hover van link tekst"
         }
       },
       "active": {
         "color": {
           "parent": "mode/dark (beta)",
-          "type": "color",
-          "value": "{lux.color.paars.500}"
+          "$type": "color",
+          "$value": "{lux.color.paars.500}"
         }
       }
     },
@@ -174,63 +174,63 @@
       "tertiary": {
         "color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{product.button.tertiary.color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{product.button.tertiary.color}"
         },
         "hover": {
           "background-color": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{product.button.tertiary.hover.background-color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{product.button.tertiary.hover.background-color}"
           },
           "color": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{product.button.tertiary.hover.color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{product.button.tertiary.hover.color}"
           }
         }
       },
       "secondary": {
         "color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{product.button.secondary.color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{product.button.secondary.color}"
         },
         "hover": {
           "background-color": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{product.button.secondary.hover.background-color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{product.button.secondary.hover.background-color}"
           },
           "color": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{product.button.secondary.hover.color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{product.button.secondary.hover.color}"
           },
           "border-color": {
             "parent": "mode/light",
-            "type": "color",
-            "value": "{product.button.secondary.hover.border-color}",
-            "description": ""
+            "description": "",
+            "$type": "color",
+            "$value": "{product.button.secondary.hover.border-color}"
           }
         },
         "border-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{product.button.secondary.border-color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{product.button.secondary.border-color}"
         },
         "background-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{product.button.secondary.background-color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{product.button.secondary.background-color}"
         }
       }
     },
@@ -238,43 +238,43 @@
       "eherkenning": {
         "e-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "#203a70",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#203a70"
         }
       },
       "eidas": {
         "stars-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "#f1cc49",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#f1cc49"
         },
         "lock-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "#ffffff",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#ffffff"
         },
         "lines-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "#6ba6f1",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#6ba6f1"
         },
         "background-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "#1d336a",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#1d336a"
         }
       },
       "digid": {
         "border-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{lux.color.none}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.none}"
         }
       }
     },
@@ -283,18 +283,18 @@
         "background-color": {
           "parent": "mode/light",
           "oldValue": "{lux.color.grijs.400}",
-          "type": "color",
-          "value": "{lux.color.grijs.400}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.grijs.400}"
         }
       }
     },
     "rijkslogo": {
       "color": {
         "parent": "mode/light",
-        "type": "color",
-        "value": "{lux.color.zwart}",
-        "description": ""
+        "description": "",
+        "$type": "color",
+        "$value": "{lux.color.zwart}"
       }
     }
   }

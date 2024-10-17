@@ -3,154 +3,154 @@
     "login-link": {
       "color": {
         "parent": "login link/default",
-        "type": "color",
-        "value": "{lux.color.foreground.default}"
+        "$type": "color",
+        "$value": "{lux.color.foreground.default}"
       },
       "background-color": {
         "parent": "login link/default",
-        "type": "color",
-        "value": "{lux.color.background.default}",
-        "description": ""
+        "description": "",
+        "$type": "color",
+        "$value": "{lux.color.background.default}"
       },
       "border-color": {
         "parent": "login link/default",
-        "type": "color",
-        "value": "{lux.color.border.default}",
-        "description": ""
+        "description": "",
+        "$type": "color",
+        "$value": "{lux.color.border.default}"
       },
       "hover": {
         "color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.foreground.default}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         },
         "background-color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.background.hover}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.background.hover}"
         },
         "border-color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.border.default}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.border.default}"
         }
       },
       "active": {
         "color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.foreground.default}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         },
         "background-color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{mode.login-link.active.background-color}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{mode.login-link.active.background-color}"
         },
         "border-color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.border.strong}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.border.strong}"
         }
       },
       "padding-block-start": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.50}",
-        "description": ""
+        "description": "",
+        "$type": "spacing",
+        "$value": "{lux.space.50}"
       },
       "padding-block-end": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.50}",
-        "description": ""
+        "description": "",
+        "$type": "spacing",
+        "$value": "{lux.space.50}"
       },
       "font-size": {
         "parent": "login link/default",
-        "type": "fontSizes",
-        "value": "{lux.font-size.large-scale.sm}"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.large-scale.sm}"
       },
       "padding-inline-start": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.50}"
+        "$type": "spacing",
+        "$value": "{lux.space.50}"
       },
       "padding-inline-end": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "$type": "spacing",
+        "$value": "{lux.space.200}"
       },
       "min-inline-size": {
         "parent": "login link/default",
-        "type": "sizing",
-        "value": "48px"
+        "$type": "sizing",
+        "$value": "48px"
       },
       "min-block-size": {
         "parent": "login link/default",
-        "type": "sizing",
-        "value": "48px"
+        "$type": "sizing",
+        "$value": "48px"
       },
       "column-gap": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "border-radius": {
         "parent": "login link/default",
-        "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
+        "$type": "borderRadius",
+        "$value": "{lux.border-radius.default}"
       },
       "border-width": {
         "parent": "login link/default",
-        "type": "borderWidth",
-        "value": "{lux.border-width.default}"
+        "$type": "borderWidth",
+        "$value": "{lux.border-width.default}"
       },
       "icon": {
         "size": {
           "parent": "login link/default",
-          "type": "sizing",
-          "value": "2.5rem",
-          "description": ""
+          "description": "",
+          "$type": "sizing",
+          "$value": "2.5rem"
         }
       },
       "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.large-scale.sm}"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.large-scale.sm}"
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.font-weight.regular}"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.regular}"
       },
       "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "border-style": {
-        "type": "other",
-        "value": "solid"
+        "$type": "other",
+        "$value": "solid"
       },
       "focus": {
         "color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.foreground.default}"
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         },
         "background-color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.background.default}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.background.default}"
         },
         "border-color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.border.default}",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "{lux.color.border.default}"
         }
       }
     }
