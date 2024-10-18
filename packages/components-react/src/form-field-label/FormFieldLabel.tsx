@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import { ForwardedRef, forwardRef, LabelHTMLAttributes, PropsWithChildren } from 'react';
 
 const FORM_LABEL_CLASSES: { [key: string]: string } = {
-  base: 'utrecht-form-label',
   checkbox: 'utrecht-form-label--checkbox',
   radio: 'utrecht-form-label--radio',
   disabled: 'utrecht-form-label--disabled',
@@ -23,7 +22,6 @@ export const LuxFormFieldLabel = forwardRef(
   ) => {
     const classNames = clsx(
       {
-        [FORM_LABEL_CLASSES.base]: true,
         [FORM_LABEL_CLASSES.radio]: type === 'radio',
         [FORM_LABEL_CLASSES.checkbox]: type === 'checkbox',
         [FORM_LABEL_CLASSES.disabled]: disabled,

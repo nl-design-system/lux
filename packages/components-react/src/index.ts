@@ -10,6 +10,7 @@ export {
   LuxHeading6,
   type LuxHeadingProps,
 } from './heading/Heading';
+export { LuxFormField, type LuxFormFieldProps } from './form-field/FormField';
 export {
   LuxFormFieldDescription,
   type LuxFormFieldDescriptionProps,

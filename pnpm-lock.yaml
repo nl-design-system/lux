@@ -346,6 +346,9 @@ importers:
       '@utrecht/button-css':
         specifier: 1.2.0
         version: 1.2.0
+      '@utrecht/form-field-css':
+        specifier: 1.3.0
+        version: 1.3.0
       '@utrecht/form-field-description-css':
         specifier: 1.3.0
         version: 1.3.0
@@ -2913,6 +2916,9 @@ packages:
 
   '@utrecht/document-css@1.1.0':
     resolution: {integrity: sha512-navpa20l9U2c/gMDNzZ83MF2/VfXJBXVIGw6CoZ7s3uNbR92H6MAvvSn29C/Kg9QGjDAhDd7P5dIyjQ1KrwJfg==}
+
+  '@utrecht/form-field-css@1.3.0':
+    resolution: {integrity: sha512-AcMdfFMznH/h1RYwqSij93AR35Wv7ov/1pk6jEZXegCyvqPQi1L636QYNBmPN+HyZJUXymRbA85gXONVIRoMBg==}
 
   '@utrecht/form-field-description-css@1.3.0':
     resolution: {integrity: sha512-Be38ejgdCGmEpLdlJTwhqqQPUbRufjKXT9NNqxrVrHnsqfdmNkXaFXQmRTHVBE3I4Jp+JhG+Qsnw6nghytQKTA==}
@@ -11449,6 +11455,8 @@ snapshots:
       clsx: 1.2.1
 
   '@utrecht/document-css@1.1.0': {}
+
+  '@utrecht/form-field-css@1.3.0': {}
 
   '@utrecht/form-field-description-css@1.3.0': {}
 
