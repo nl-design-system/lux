@@ -2,6 +2,7 @@ import { LuxFormFieldLabel as FormFieldLabel, LuxFormFieldLabelProps } from '@lu
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type LabelHTMLAttributes, type PropsWithChildren } from 'react';
+import { BADGES } from '../../../config/preview';
 
 const LuxFormFieldLabel = (
   props: PropsWithChildren<LuxFormFieldLabelProps> & LabelHTMLAttributes<HTMLLabelElement>,
@@ -15,6 +16,7 @@ const meta = {
   component: LuxFormFieldLabel,
   subcomponents: {},
   parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
     tokensPrefix: 'react-form-label',
   },

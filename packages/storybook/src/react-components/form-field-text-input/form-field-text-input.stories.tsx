@@ -2,6 +2,7 @@ import { INPUT_TYPES, LuxFormFieldTextInput, LuxFormFieldTextInputProps } from '
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, InputHTMLAttributes, PropsWithChildren } from 'react';
+import { BADGES } from '../../../config/preview';
 
 // Create a wrapper component to handle the forwardRef
 const WrappedLuxFormFieldTextInput = forwardRef<
@@ -16,6 +17,7 @@ const meta = {
   id: 'react-components-form-field-textbox',
   component: WrappedLuxFormFieldTextInput,
   parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
     tokensPrefix: 'react-textbox',
   },
