@@ -346,6 +346,9 @@ importers:
       '@utrecht/form-field-description-css':
         specifier: 1.3.0
         version: 1.3.0
+      '@utrecht/form-field-error-message-css':
+        specifier: 1.3.1
+        version: 1.3.1
       '@utrecht/form-label-css':
         specifier: 1.3.0
         version: 1.3.0
@@ -2892,6 +2895,9 @@ packages:
 
   '@utrecht/form-field-description-css@1.3.0':
     resolution: {integrity: sha512-Be38ejgdCGmEpLdlJTwhqqQPUbRufjKXT9NNqxrVrHnsqfdmNkXaFXQmRTHVBE3I4Jp+JhG+Qsnw6nghytQKTA==}
+
+  '@utrecht/form-field-error-message-css@1.3.1':
+    resolution: {integrity: sha512-G8NLWwzL4LuCODpOyMH4fuisgYGBJ+YiBT55w+HVbUR9SyrIBL2gWs3jNyEnTFF4HtjCTUHSS/n/CZqqrq+Yhg==}
 
   '@utrecht/form-label-css@1.3.0':
     resolution: {integrity: sha512-EwjgD5Rw0LjJffv2dyAwhHwD0cuMjAPfM/H4395ldPuACnYiqavOF2IB0l0fB8nMvj3XC/VO2Q2m15neocXssg==}
@@ -11413,6 +11419,8 @@ snapshots:
   '@utrecht/document-css@1.1.0': {}
 
   '@utrecht/form-field-description-css@1.3.0': {}
+
+  '@utrecht/form-field-error-message-css@1.3.1': {}
 
   '@utrecht/form-label-css@1.3.0': {}
 

@@ -16,6 +16,10 @@ export {
 } from './form-field-description/FormFieldDescription';
 export { LuxFormFieldLabel, type LuxFormFieldLabelProps } from './form-field-label/FormFieldLabel';
 export {
+  LuxFormFieldErrorMessage,
+  type LuxFormFieldErrorMessageProps,
+} from './form-field-error-message/FormFieldErrorMessage';
+export {
   LuxFormFieldTextInput,
   INPUT_TYPES,
   type LuxFormFieldTextInputProps,
