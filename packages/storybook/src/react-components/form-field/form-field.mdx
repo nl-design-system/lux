@@ -1,0 +1,88 @@
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/form-field-css/README.md?raw";
+import * as FormFieldStories from "./form-field.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={FormFieldStories} />
+
+# Lux Form Field
+
+<CitationDocumentation
+  component="Utrecht Form Field"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-form-field--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Opmerkingen
+
+- Het Form Field component bundelt verschillende onderdelen van een formulierveld: label, invoerveld, beschrijving, en eventueel foutmelding.
+- De `type` prop bepaalt het soort invoerveld en past de bijbehorende styling toe.
+- Gebruik de `invalid` prop in combinatie met `errorMessage` om fouttoestanden weer te geven.
+- De `description` prop kan worden gebruikt om extra context of instructies te geven bij het invoerveld.
+
+## Anatomie
+
+Een Form Field kan de volgende onderdelen bevatten:
+
+- Label (verplicht)
+- Invoerveld (verplicht)
+- Beschrijving (optioneel)
+- Foutmelding (optioneel, alleen zichtbaar als `invalid={true}`)
+
+## Playground
+
+<Canvas of={FormFieldStories.TextInput} />
+<Controls of={FormFieldStories.TextInput} />
+
+## Varianten
+
+### Text Input
+
+<Description of={FormFieldStories.TextInput} />
+<Canvas of={FormFieldStories.TextInput} />
+
+### Checkbox
+
+<Description of={FormFieldStories.Checkbox} />
+<Canvas of={FormFieldStories.Checkbox} />
+
+### Radio
+
+<Description of={FormFieldStories.Radio} />
+<Canvas of={FormFieldStories.Radio} />
+
+### Met Foutmelding
+
+<Description of={FormFieldStories.WithError} />
+<Canvas of={FormFieldStories.WithError} />
+
+### Met Beschrijving
+
+<Description of={FormFieldStories.WithDescription} />
+<Canvas of={FormFieldStories.WithDescription} />
+
+## Gebruik
+
+```jsx
+<LuxFormField
+  label="Gebruikersnaam"
+  input={<input type="text" />}
+  description="Kies een unieke gebruikersnaam"
+  type="text"
+/>
+
+<LuxFormField
+  label="Accepteer voorwaarden"
+  input={<input type="checkbox" />}
+  type="checkbox"
+/>
+
+<LuxFormField
+  label="E-mailadres"
+  input={<input type="email" />}
+  errorMessage="Voer een geldig e-mailadres in"
+  invalid={true}
+  type="text"
+/>
+```

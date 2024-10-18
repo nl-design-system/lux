@@ -4,6 +4,7 @@ import { mergeConfig } from 'vite';
 const config: StorybookConfig = {
   stories: ['../src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
   addons: [
+    '@geometricpanda/storybook-addon-badges',
     '@storybook/addon-a11y',
     '@storybook/addon-backgrounds',
     '@storybook/addon-themes',
