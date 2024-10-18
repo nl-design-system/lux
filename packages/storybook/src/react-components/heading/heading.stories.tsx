@@ -1,20 +1,16 @@
 import {
-  LuxHeading as Heading,
+  LuxHeading,
   LuxHeading1,
   LuxHeading2,
   LuxHeading3,
   LuxHeading4,
   LuxHeading5,
   LuxHeading6,
-  type LuxHeadingProps,
 } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
-import { type HTMLAttributes, type PropsWithChildren } from 'react';
-
-const LuxHeading = (props: PropsWithChildren<LuxHeadingProps> & HTMLAttributes<HTMLHeadingElement>) => (
-  <Heading {...props} />
-);
+import tokensDefinition from '@utrecht/heading-css/src/tokens.json';
+import { createDesignTokensStory } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -25,7 +21,8 @@ const meta = {
   subcomponents: {},
   parameters: {
     tokens,
-    tokensPrefix: 'react-heading',
+    tokensPrefix: 'utrecht-heading-1',
+    tokensDefinition,
   },
   argTypes: {
     children: {
@@ -97,3 +94,5 @@ export const HeadingWithDifferentAppearance: Story = {
     appearance: 1,
   },
 };
+
+export const DesignTokens = createDesignTokensStory(meta);

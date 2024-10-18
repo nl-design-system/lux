@@ -2,8 +2,7 @@ import { LuxParagraph } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokensDefinition from './tokens.json';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
-import { createDesignTokensStory } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
