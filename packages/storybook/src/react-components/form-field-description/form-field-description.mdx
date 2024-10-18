@@ -1,0 +1,42 @@
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/form-field-description-css/README.md?raw";
+import * as FormFieldDescriptionStories from "./form-field-description.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={FormFieldDescriptionStories} />
+
+# Lux Form Field Description
+
+<CitationDocumentation
+  component="Utrecht Form Field Description"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-form-field-description--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Opmerkingen
+
+- De property `status` kan de waarden `valid` of `invalid` krijgen om de validatiestatus van het gekoppelde formulierelement weer te geven.
+- De classnames `lux-form-field-description--valid` en `lux-form-field-description--invalid` worden automatisch toegepast op basis van de property `status`.
+
+## Playground
+
+<Canvas of={FormFieldDescriptionStories.Playground} />
+<Controls of={FormFieldDescriptionStories.Playground} />
+
+## Varianten
+
+### Default Form Field Description
+
+<Description of={FormFieldDescriptionStories.Default} />
+<Canvas of={FormFieldDescriptionStories.Default} />
+
+### Geldige Beschrijving
+
+<Description of={FormFieldDescriptionStories.Valid} />
+<Canvas of={FormFieldDescriptionStories.Valid} />
+
+### Ongeldige Beschrijving
+
+<Description of={FormFieldDescriptionStories.Invalid} />
+<Canvas of={FormFieldDescriptionStories.Invalid} />

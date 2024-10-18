@@ -10,10 +10,14 @@ export {
   LuxHeading6,
   type LuxHeadingProps,
 } from './heading/Heading';
-export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
+export {
+  LuxFormFieldDescription,
+  type LuxFormFieldDescriptionProps,
+} from './form-field-description/FormFieldDescription';
 export { LuxFormFieldLabel, type LuxFormFieldLabelProps } from './form-field-label/FormFieldLabel';
 export {
   LuxFormFieldTextInput,
   INPUT_TYPES,
   type LuxFormFieldTextInputProps,
 } from './form-field-text-input/FormFieldTextInput';
+export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
