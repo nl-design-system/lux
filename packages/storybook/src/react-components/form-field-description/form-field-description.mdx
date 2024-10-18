@@ -16,8 +16,9 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 ## Opmerkingen
 
-- De property `status` kan de waarden `valid` of `invalid` krijgen om de validatiestatus van het gekoppelde formulierelement weer te geven.
-- De classnames `lux-form-field-description--valid` en `lux-form-field-description--invalid` worden automatisch toegepast op basis van de property `status`.
+- De component gebruikt `valid` en `invalid` props om de validatiestatus van het gekoppelde formulierelement weer te geven.
+- De classnames `utrecht-form-field-description--valid` en `utrecht-form-field-description--invalid` worden automatisch toegepast op basis van de `valid` en `invalid` props.
+- Let op: het is niet aanbevolen om zowel `valid` als `invalid` tegelijkertijd als `true` in te stellen.
 
 ## Playground
 
