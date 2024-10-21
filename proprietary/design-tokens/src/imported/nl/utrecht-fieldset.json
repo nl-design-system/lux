@@ -39,6 +39,22 @@
           "value": "{lux.color.foreground.default}",
           "type": "color"
         }
+      },
+      "invalid": {
+        "border-inline-start": {
+          "color": {
+            "value": "{utrecht.form-field.invalid.border-inline-start-color}",
+            "type": "color"
+          }
+        },
+        "border-inline-start-width": {
+          "value": "{utrecht.form-field.invalid.border-inline-start-width}",
+          "type": "borderWidth"
+        },
+        "padding-inline-start": {
+          "value": "{utrecht.form-field.invalid.padding-inline-start}",
+          "type": "spacing"
+        }
       }
     }
   }
