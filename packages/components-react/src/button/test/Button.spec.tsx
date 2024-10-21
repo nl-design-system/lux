@@ -2,6 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
 import { LuxButton } from '../Button';
 
+//TODO replace icon in #308
 const ExampleIcon = (
   <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
     <circle r="6" cx="7" cy="7" fill="white" stroke="green" />
