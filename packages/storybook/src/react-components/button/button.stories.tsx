@@ -201,7 +201,6 @@ export const Hover: Story = {
   },
   args: {
     children: 'Hover Button',
-    forceState: 'hover',
   },
 };
 
@@ -209,11 +208,10 @@ export const Focus: Story = {
   ...AllButtonVariantsTemplate,
   name: 'Focus',
   parameters: {
-    pseudo: { focus: true },
+    pseudo: { focus: true, focusVisible: true },
   },
   args: {
     children: 'Focus Button',
-    forceState: 'focus',
   },
 };
 
