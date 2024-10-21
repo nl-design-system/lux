@@ -43,8 +43,9 @@
     "nl/utrecht-link",
     "nl/utrecht-paragraph",
     "nl/utrecht-pointer-target",
-    "nl/utrecht-textarea",
     "nl/utrecht-pre-heading",
+    "nl/utrecht-select",
+    "nl/utrecht-textarea",
     "nl/utrecht-text-input"
   ]
 }
