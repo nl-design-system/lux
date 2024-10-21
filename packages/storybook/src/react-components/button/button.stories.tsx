@@ -89,7 +89,7 @@ const ButtonTemplate: Story = {
   },
 };
 
-export const AllButtonVariantsTemplate: Story = {
+const AllButtonVariantsTemplate: Story = {
   ...ButtonTemplate,
   render: (args) => (
     <>
@@ -212,6 +212,15 @@ export const Focus: Story = {
   },
   args: {
     children: 'Focus Button',
+  },
+};
+
+export const Disabled: Story = {
+  ...AllButtonVariantsTemplate,
+  name: 'Disabled',
+  args: {
+    children: 'Disabled Button',
+    disabled: true,
   },
 };
 
