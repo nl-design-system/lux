@@ -39,6 +39,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const FormFieldTemplate: Story = {
+  args: {
+    label: '',
+    input: <></>,
+  },
   render: (args) => <LuxFormField {...args} />,
 };
 

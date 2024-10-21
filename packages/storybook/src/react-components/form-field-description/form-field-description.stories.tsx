@@ -1,20 +1,11 @@
-import { LuxFormFieldDescription, type LuxFormFieldDescriptionProps } from '@lux-design-system/components-react';
+import { LuxFormFieldDescription } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
-import { forwardRef, PropsWithChildren } from 'react';
-
-// Create a wrapper component to handle the forwardRef
-const WrappedLuxFormFieldDescription = forwardRef<
-  HTMLParagraphElement,
-  PropsWithChildren<LuxFormFieldDescriptionProps>
->((props, ref) => <LuxFormFieldDescription {...props} ref={ref} />);
-
-WrappedLuxFormFieldDescription.displayName = 'WrappedLuxFormFieldDescription';
 
 const meta = {
   title: 'React Components/Form Field/Description',
   id: 'react-components-form-field-description',
-  component: WrappedLuxFormFieldDescription,
+  component: LuxFormFieldDescription,
   parameters: {
     tokens,
     tokensPrefix: 'react-form-field-description',
@@ -33,13 +24,13 @@ const meta = {
       description: 'Whether the input is invalid',
     },
   },
-} satisfies Meta<typeof WrappedLuxFormFieldDescription>;
+} satisfies Meta<typeof LuxFormFieldDescription>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 const FormFieldDescriptionTemplate: Story = {
-  render: (args) => <WrappedLuxFormFieldDescription {...args} />,
+  render: (args) => <LuxFormFieldDescription {...args} />,
 };
 
 export const Playground: Story = {
