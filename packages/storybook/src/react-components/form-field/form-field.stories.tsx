@@ -1,36 +1,33 @@
-import { LuxFormField } from '@lux-design-system/components-react';
+import {
+  LuxFormField,
+  LuxFormFieldDescription,
+  LuxFormFieldErrorMessage,
+  LuxFormFieldLabel,
+  LuxFormFieldTextInput,
+} from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { BADGES } from '../../../config/preview';
 
 const meta = {
   title: 'React Components/Form Field',
   id: 'react-components-form-field',
   component: LuxFormField,
   parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
     tokensPrefix: 'react-form-field',
   },
   argTypes: {
-    label: {
-      control: 'text',
-      description: 'The label for the form field',
-    },
-    description: {
-      control: 'text',
-      description: 'Additional description for the form field',
-    },
-    errorMessage: {
-      control: 'text',
-      description: 'Error message to display when the field is invalid',
-    },
-    invalid: {
-      control: 'boolean',
-      description: 'Whether the field is in an invalid state',
-    },
     type: {
       control: 'select',
       options: ['text', 'checkbox', 'radio'],
       description: 'The type of the form field',
+    },
+    invalid: {
+      control: 'boolean',
+      description: 'Whether the field is in an invalid state',
+      defaultValue: false,
     },
   },
 } satisfies Meta<typeof LuxFormField>;
@@ -38,66 +35,117 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const FormFieldTemplate: Story = {
-  args: {
-    label: '',
-    input: <></>,
-  },
-  render: (args) => <LuxFormField {...args} />,
-};
+interface FormFieldProps {
+  invalid?: boolean;
+}
+
+// Text Input Component
+const TextInputField = ({ invalid }: FormFieldProps) => (
+  <LuxFormField type="text" invalid={invalid}>
+    <LuxFormFieldLabel htmlFor="name-input">Name</LuxFormFieldLabel>
+    <LuxFormFieldTextInput id="name-input" type="text" />
+    <LuxFormFieldDescription>
+      <p id="name-description">Enter your full name</p>
+    </LuxFormFieldDescription>
+    {invalid && <LuxFormFieldErrorMessage id="name-error">This field is required</LuxFormFieldErrorMessage>}
+  </LuxFormField>
+);
+
+// Checkbox Component
+const CheckboxField = ({ invalid }: FormFieldProps) => (
+  <LuxFormField type="checkbox" invalid={invalid}>
+    <LuxFormFieldLabel htmlFor="terms-checkbox">Accept terms and conditions</LuxFormFieldLabel>
+    <LuxFormFieldTextInput id="terms-checkbox" type="checkbox" aria-describedby={invalid ? 'terms-error' : undefined} />
+    {invalid && <LuxFormFieldErrorMessage id="terms-error">You must accept the terms</LuxFormFieldErrorMessage>}
+  </LuxFormField>
+);
+
+// Radio Component
+const RadioField = ({ invalid }: FormFieldProps) => (
+  <LuxFormField type="radio" invalid={invalid}>
+    <LuxFormFieldLabel id="gender-group-label">Select one</LuxFormFieldLabel>
+    <div role="radiogroup" aria-labelledby="gender-group-label">
+      <div>
+        <input
+          type="radio"
+          id="gender-male"
+          name="gender"
+          value="male"
+          aria-describedby={invalid ? 'gender-error' : undefined}
+        />
+        <label htmlFor="gender-male">Male</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="gender-female"
+          name="gender"
+          value="female"
+          aria-describedby={invalid ? 'gender-error' : undefined}
+        />
+        <label htmlFor="gender-female">Female</label>
+      </div>
+    </div>
+    {invalid && <LuxFormFieldErrorMessage id="gender-error">Please select an option</LuxFormFieldErrorMessage>}
+  </LuxFormField>
+);
+
+// Error Component
+const ErrorField = ({ invalid }: FormFieldProps) => (
+  <LuxFormField type="text" invalid={invalid}>
+    <LuxFormFieldLabel htmlFor="email-input">Email</LuxFormFieldLabel>
+    <LuxFormFieldTextInput id="email-input" type="email" aria-describedby={invalid ? 'email-error' : undefined} />
+    <LuxFormFieldErrorMessage id="email-error">Please enter a valid email address</LuxFormFieldErrorMessage>
+  </LuxFormField>
+);
+
+// Description Component
+const DescriptionField = ({ invalid }: FormFieldProps) => (
+  <LuxFormField type="text" invalid={invalid}>
+    <LuxFormFieldLabel htmlFor="password-input">Password</LuxFormFieldLabel>
+    <LuxFormFieldTextInput
+      id="password-input"
+      type="password"
+      aria-describedby={`password-description${invalid ? ' password-error' : ''}`}
+    />
+    <LuxFormFieldDescription>
+      <p id="password-description">Password must be at least 8 characters long</p>
+    </LuxFormFieldDescription>
+    {invalid && <LuxFormFieldErrorMessage id="password-error">Password is too short</LuxFormFieldErrorMessage>}
+  </LuxFormField>
+);
 
 export const TextInput: Story = {
-  ...FormFieldTemplate,
+  render: (args) => <TextInputField {...args} />,
   args: {
-    label: 'Name',
-    input: <input type="text" />,
-    description: 'Enter your full name',
-    type: 'text',
+    invalid: false,
   },
 };
 
 export const Checkbox: Story = {
-  ...FormFieldTemplate,
+  render: (args) => <CheckboxField {...args} />,
   args: {
-    label: 'Accept terms and conditions',
-    input: <input type="checkbox" />,
-    type: 'checkbox',
+    invalid: false,
   },
 };
 
 export const Radio: Story = {
-  ...FormFieldTemplate,
+  render: (args) => <RadioField {...args} />,
   args: {
-    label: 'Gender',
-    input: (
-      <>
-        <input type="radio" id="male" name="gender" value="male" />
-        <label htmlFor="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label htmlFor="female">Female</label>
-      </>
-    ),
-    type: 'radio',
+    invalid: false,
   },
 };
 
 export const WithError: Story = {
-  ...FormFieldTemplate,
+  render: (args) => <ErrorField {...args} />,
   args: {
-    label: 'Email',
-    input: <input type="email" />,
-    errorMessage: 'Please enter a valid email address',
     invalid: true,
-    type: 'text',
   },
 };
 
 export const WithDescription: Story = {
-  ...FormFieldTemplate,
+  render: (args) => <DescriptionField {...args} />,
   args: {
-    label: 'Password',
-    input: <input type="password" />,
-    description: 'Password must be at least 8 characters long',
-    type: 'text',
+    invalid: false,
   },
 };

@@ -4,9 +4,6 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import React, { ForwardedRef, forwardRef } from 'react';
-import { LuxFormFieldDescription } from '../form-field-description/FormFieldDescription';
-import { LuxFormFieldErrorMessage } from '../form-field-error-message/FormFieldErrorMessage';
-import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
 
 const FORM_FIELD_CLASSES: { [key: string]: string } = {
   checkbox: 'utrecht-form-field--checkbox',
@@ -15,29 +12,11 @@ const FORM_FIELD_CLASSES: { [key: string]: string } = {
 };
 
 export interface LuxFormFieldProps extends Omit<UtrechtFormFieldProps, 'type'> {
-  label: React.ReactNode;
-  input: React.ReactNode;
-  description?: React.ReactNode;
-  errorMessage?: React.ReactNode;
-  invalid?: boolean;
   type?: 'checkbox' | 'radio' | 'text';
 }
 
 export const LuxFormField = forwardRef(
-  (
-    {
-      label,
-      input,
-      description,
-      errorMessage,
-      invalid = false,
-      children,
-      type,
-      className,
-      ...restProps
-    }: LuxFormFieldProps,
-    ref: ForwardedRef<HTMLDivElement>,
-  ) => {
+  ({ children, type, className, ...restProps }: LuxFormFieldProps, ref: ForwardedRef<HTMLDivElement>) => {
     const classNames = clsx(
       {
         [FORM_FIELD_CLASSES.checkbox]: type === 'checkbox',
@@ -49,10 +28,6 @@ export const LuxFormField = forwardRef(
 
     return (
       <UtrechtFormField ref={ref} className={classNames} {...restProps}>
-        <LuxFormFieldLabel>{label}</LuxFormFieldLabel>
-        {description && <LuxFormFieldDescription>{description}</LuxFormFieldDescription>}
-        {input}
-        {invalid && errorMessage && <LuxFormFieldErrorMessage>{errorMessage}</LuxFormFieldErrorMessage>}
         {children}
       </UtrechtFormField>
     );

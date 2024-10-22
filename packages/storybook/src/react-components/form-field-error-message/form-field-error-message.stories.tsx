@@ -2,6 +2,7 @@ import { LuxFormFieldErrorMessage, type LuxFormFieldErrorMessageProps } from '@l
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, PropsWithChildren } from 'react';
+import { BADGES } from '../../../config/preview';
 
 const WrappedLuxFormFieldErrorMessage = forwardRef<
   HTMLParagraphElement,
@@ -11,10 +12,11 @@ const WrappedLuxFormFieldErrorMessage = forwardRef<
 WrappedLuxFormFieldErrorMessage.displayName = 'WrappedLuxFormFieldErrorMessage';
 
 const meta = {
-  title: 'React Components/Form Field/Error Message',
+  title: 'React Components/Form Field Error Message',
   id: 'react-components-form-field-error-message',
   component: WrappedLuxFormFieldErrorMessage,
   parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
     tokensPrefix: 'react-form-field-error-message',
   },

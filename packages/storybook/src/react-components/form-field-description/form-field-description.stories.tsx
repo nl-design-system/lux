@@ -1,27 +1,38 @@
 import { LuxFormFieldDescription } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { BADGES } from '../../../config/preview';
 
 const meta = {
-  title: 'React Components/Form Field/Description',
+  title: 'React Components/Form Field Description',
   id: 'react-components-form-field-description',
   component: LuxFormFieldDescription,
   parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
     tokensPrefix: 'react-form-field-description',
+    docs: {
+      description: {
+        component: 'A description component for form fields that provides additional context or validation feedback.',
+      },
+    },
   },
   argTypes: {
     children: {
       control: 'text',
-      description: 'The content of the form field description',
+      description: 'The content of the description',
+      table: {
+        type: { summary: 'ReactNode' },
+      },
     },
-    valid: {
-      control: 'boolean',
-      description: 'Whether the input is valid',
-    },
-    invalid: {
-      control: 'boolean',
-      description: 'Whether the input is invalid',
+    appearance: {
+      control: 'select',
+      options: [undefined, 'valid', 'invalid'],
+      description: 'Sets the appearance state of the description',
+      table: {
+        type: { summary: "'valid' | 'invalid' | undefined" },
+        defaultValue: { summary: 'undefined' },
+      },
     },
   },
 } satisfies Meta<typeof LuxFormFieldDescription>;
@@ -29,41 +40,70 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const FormFieldDescriptionTemplate: Story = {
-  render: (args) => <LuxFormFieldDescription {...args} />,
-};
-
 export const Playground: Story = {
-  ...FormFieldDescriptionTemplate,
   args: {
-    children: 'Enter a description for the form field',
+    children: 'This is a form field description',
   },
   parameters: {
     docs: {
-      sourceState: 'shown',
+      description: {
+        story: 'Interactive playground for the description component.',
+      },
     },
   },
 };
 
 export const Default: Story = {
-  ...FormFieldDescriptionTemplate,
   args: {
-    children: 'Default form field description',
+    children: 'Enter your full name',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Default description without any validation state.',
+      },
+    },
   },
 };
 
 export const Valid: Story = {
-  ...FormFieldDescriptionTemplate,
   args: {
-    children: 'This is a valid input',
-    valid: true,
+    children: 'Your input meets the requirements',
+    appearance: 'valid',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Description with valid appearance.',
+      },
+    },
   },
 };
 
 export const Invalid: Story = {
-  ...FormFieldDescriptionTemplate,
   args: {
-    children: 'This input is invalid',
-    invalid: true,
+    children: 'Please check the input requirements',
+    appearance: 'invalid',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Description with invalid appearance.',
+      },
+    },
+  },
+};
+
+export const LongDescription: Story = {
+  args: {
+    children:
+      'This is a longer description that provides more detailed information about what is expected in this form field. It can span multiple lines if needed.',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Example of a longer description text.',
+      },
+    },
   },
 };

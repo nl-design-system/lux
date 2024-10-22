@@ -16,9 +16,10 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 ## Opmerkingen
 
-- De component gebruikt `valid` en `invalid` props om de validatiestatus van het gekoppelde formulierelement weer te geven.
-- De classnames `utrecht-form-field-description--valid` en `utrecht-form-field-description--invalid` worden automatisch toegepast op basis van de `valid` en `invalid` props.
-- Let op: het is niet aanbevolen om zowel `valid` als `invalid` tegelijkertijd als `true` in te stellen.
+- De component gebruikt een `appearance` prop om de validatiestatus van het gekoppelde formulierelement weer te geven.
+- De `appearance` prop kan worden ingesteld op 'valid' of 'invalid' om de juiste validatiestatus te tonen.
+- De classnames `utrecht-form-field-description--valid` en `utrecht-form-field-description--invalid` worden automatisch toegepast op basis van de `appearance` prop.
+- Wanneer geen `appearance` is ingesteld, wordt de standaard weergave gebruikt.
 
 ## Playground
 
@@ -27,17 +28,47 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 ## Varianten
 
-### Default Form Field Description
+### Standaard Beschrijving
 
 <Description of={FormFieldDescriptionStories.Default} />
 <Canvas of={FormFieldDescriptionStories.Default} />
 
-### Geldige Beschrijving
+### Geldige Status
 
 <Description of={FormFieldDescriptionStories.Valid} />
 <Canvas of={FormFieldDescriptionStories.Valid} />
 
-### Ongeldige Beschrijving
+### Ongeldige Status
 
 <Description of={FormFieldDescriptionStories.Invalid} />
 <Canvas of={FormFieldDescriptionStories.Invalid} />
+
+### Lange Beschrijving
+
+<Description of={FormFieldDescriptionStories.LongDescription} />
+<Canvas of={FormFieldDescriptionStories.LongDescription} />
+
+## Properties
+
+- `children`: De inhoud van de beschrijving (ReactNode)
+- `appearance`: De weergavestatus van de beschrijving ('valid' | 'invalid' | undefined)
+- `className`: Extra CSS-klassen voor styling
+
+## Voorbeelden
+
+```tsx
+// Standaard gebruik
+<LuxFormFieldDescription>
+  Voer uw gegevens in
+</LuxFormFieldDescription>
+
+// Met geldige status
+<LuxFormFieldDescription appearance="valid">
+  Uw invoer voldoet aan de vereisten
+</LuxFormFieldDescription>
+
+// Met ongeldige status
+<LuxFormFieldDescription appearance="invalid">
+  Controleer uw invoer
+</LuxFormFieldDescription>
+```

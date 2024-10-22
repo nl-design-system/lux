@@ -13,7 +13,7 @@ const WrappedLuxFormFieldTextInput = forwardRef<
 WrappedLuxFormFieldTextInput.displayName = 'WrappedLuxFormFieldTextInput';
 
 const meta = {
-  title: 'React Components/Form Field/Textbox',
+  title: 'React Components/Form Field TextInput',
   id: 'react-components-form-field-textbox',
   component: WrappedLuxFormFieldTextInput,
   parameters: {
