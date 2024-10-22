@@ -30,6 +30,7 @@
     "component/login link",
     "component/link",
     "component/paragraph",
+    "component/lux-radio-group",
     "component/section",
     "nl/utrecht-alert",
     "nl/utrecht-button",
