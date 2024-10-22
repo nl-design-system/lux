@@ -1,7 +1,7 @@
 import { LuxButton } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { useArgs } from '@storybook/preview-api';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 
 type Story = StoryObj<typeof meta>;
 
@@ -69,7 +69,6 @@ const ExampleIcon = (
 );
 
 const ButtonTemplate: Story = {
-  render: ({ children, ...args }) => <LuxButton {...args}>{children}</LuxButton>,
   args: {
     appearance: 'primary-action-button',
     size: undefined,
@@ -79,11 +78,12 @@ const ButtonTemplate: Story = {
     busy: false,
     label: 'Klik hier!',
   },
+  render: ({ ...args }) => <LuxButton {...args}>{args['children']}</LuxButton>,
 };
 
 const AllButtonVariantsTemplate: Story = {
   ...ButtonTemplate,
-  render: (args) => (
+  render: ({ ...args }) => (
     <>
       <LuxButton {...args} appearance="primary-action-button">
         {args['children']}
@@ -97,7 +97,7 @@ const AllButtonVariantsTemplate: Story = {
     </>
   ),
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <div className="lsb-story-grid">
         <Story />
       </div>

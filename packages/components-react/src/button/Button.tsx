@@ -7,10 +7,11 @@ import React, { ReactElement } from 'react';
 
 type IconPosition = 'start' | 'end';
 type Size = 'small';
-export interface LuxButtonProps extends UtrechtButtonProps {
+
+export type LuxButtonProps = UtrechtButtonProps & {
   size?: Size;
   iconPosition?: IconPosition;
-}
+};
 
 const SIZE_CLASSNAME: { [key: string]: string } = {
   small: 'lux-button--small',
@@ -22,7 +23,7 @@ const ICON_POSITIONS: { [key: string]: string } = {
 };
 
 export const LuxButton = (props: LuxButtonProps) => {
-  const { appearance, size, icon: iconNode, iconPosition, ...otherProps } = props;
+  const { size, icon: iconNode, iconPosition, ...otherProps } = props;
 
   const className = `lux-button ${size !== undefined ? SIZE_CLASSNAME[size] : ''}`;
 
@@ -40,12 +41,5 @@ export const LuxButton = (props: LuxButtonProps) => {
     });
   });
 
-  return (
-    <UtrechtButton
-      {...otherProps}
-      appearance={appearance}
-      className={className}
-      {...(positionedIcon ? { icon: positionedIcon } : {})}
-    />
-  );
+  return <UtrechtButton {...otherProps} className={className} {...(positionedIcon ? { icon: positionedIcon } : {})} />;
 };
