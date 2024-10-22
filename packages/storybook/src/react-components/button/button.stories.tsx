@@ -1,5 +1,6 @@
 import { LuxButton } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
+import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryObj } from '@storybook/react';
 
 type Story = StoryObj<typeof meta>;
@@ -14,10 +15,10 @@ const meta = {
     tokensPrefix: 'utrecht-button',
   },
   argTypes: {
-    variant: {
-      description: 'Variant modifier',
+    appearance: {
+      description: 'Appearance modifier',
       control: 'select',
-      options: [undefined, 'primary', 'secondary', 'tertiary'],
+      options: [undefined, 'primary-action-button', 'secondary-action-button', 'subtle-button'],
     },
     size: {
       description: 'Size modifier',
@@ -55,10 +56,6 @@ const meta = {
         },
       },
     },
-    hint: {
-      description: 'Hint text',
-      control: 'text',
-    },
   },
 } satisfies Meta<typeof LuxButton>;
 
@@ -74,18 +71,13 @@ const ExampleIcon = (
 const ButtonTemplate: Story = {
   render: ({ children, ...args }) => <LuxButton {...args}>{children}</LuxButton>,
   args: {
-    variant: 'primary',
+    appearance: 'primary-action-button',
     size: undefined,
     iconPosition: undefined,
     icon: undefined,
     pressed: false,
     busy: false,
     label: 'Klik hier!',
-    hint: 'Klik op de button',
-    onClick: () => {
-      // eslint-disable-next-line no-alert
-      alert('Geklikt!');
-    },
   },
 };
 
@@ -93,13 +85,13 @@ const AllButtonVariantsTemplate: Story = {
   ...ButtonTemplate,
   render: (args) => (
     <>
-      <LuxButton {...args} variant="primary">
+      <LuxButton {...args} appearance="primary-action-button">
         {args['children']}
       </LuxButton>
-      <LuxButton {...args} variant="secondary">
+      <LuxButton {...args} appearance="secondary-action-button">
         {args['children']}
       </LuxButton>
-      <LuxButton {...args} variant="tertiary">
+      <LuxButton {...args} appearance="subtle-button">
         {args['children']}
       </LuxButton>
     </>
@@ -140,7 +132,7 @@ export const SmallButton: Story = {
 export const Primary: Story = {
   name: 'Primary',
   args: {
-    variant: 'primary',
+    appearance: 'primary-action-button',
     children: 'Primary Button',
   },
   parameters: {
@@ -155,7 +147,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
   name: 'Secondary',
   args: {
-    variant: 'secondary',
+    appearance: 'secondary-action-button',
     children: 'Secondary Button',
   },
   parameters: {
@@ -170,7 +162,7 @@ export const Secondary: Story = {
 export const Tertiary: Story = {
   name: 'Tertiary',
   args: {
-    variant: 'tertiary',
+    appearance: 'subtle-button',
     children: 'Tertiary Button',
   },
   parameters: {
@@ -236,6 +228,36 @@ export const Busy: Story = {
       description: {
         story:
           'Een busy button zet je met het `busy`-attribute (`true`/`false`, default: `undefined`). Toont een `wait` cursor en `aria-busy`-attribute.',
+      },
+    },
+  },
+};
+
+export const Toggle: Story = {
+  ...ButtonTemplate,
+  name: 'Toggle',
+  args: {
+    appearance: 'primary-action-button',
+    pressed: true,
+  },
+  render: (args: any) => {
+    const [{ pressed }, updateArgs] = useArgs();
+
+    const onPress = () => {
+      updateArgs({ pressed: !pressed });
+    };
+
+    return (
+      <LuxButton {...args} onClick={onPress}>
+        Toggle Button {args.pressed ? 'pressed' : 'not pressed'}
+      </LuxButton>
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Een pressed button zet je met het `pressed`-attribute (`true`/`false`/`"mixed"`, default: `undefined`). Zet `aria-pressed`-attribute.',
       },
     },
   },
