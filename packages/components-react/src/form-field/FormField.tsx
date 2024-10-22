@@ -3,7 +3,7 @@ import {
   FormFieldProps as UtrechtFormFieldProps,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import React, { ForwardedRef, forwardRef } from 'react';
+import { ForwardedRef, forwardRef } from 'react';
 
 const FORM_FIELD_CLASSES: { [key: string]: string } = {
   checkbox: 'utrecht-form-field--checkbox',
