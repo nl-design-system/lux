@@ -2,7 +2,7 @@
   "utrecht": {
     "radio-button": {
       "border-width": {
-        "value": "1.5px",
+        "value": "0.094rem",
         "type": "borderWidth"
       },
       "size": {
@@ -59,7 +59,7 @@
           "type": "color"
         },
         "border-width": {
-          "value": "{lux.border-width.m}",
+          "value": "0.125rem",
           "type": "borderWidth"
         }
       },
@@ -113,7 +113,7 @@
           "type": "color"
         },
         "border-width": {
-          "value": "{lux.border-width.m}",
+          "value": "0.125rem",
           "type": "borderWidth"
         }
       },
@@ -144,7 +144,7 @@
             "type": "color"
           },
           "border-width": {
-            "value": "{lux.border-width.m}",
+            "value": "0.125rem",
             "type": "borderWidth"
           }
         },
@@ -180,7 +180,7 @@
             "type": "color"
           },
           "border-width": {
-            "value": "{lux.border-width.m}",
+            "value": "0.125rem",
             "type": "borderWidth"
           }
         },
