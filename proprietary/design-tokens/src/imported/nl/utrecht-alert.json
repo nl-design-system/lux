@@ -107,7 +107,7 @@
           }
         },
         "inset-block-start": {
-          "value": "{lux.alert.icon.inset-block-start}",
+          "value": "{lux.space.0}",
           "type": "spacing"
         },
         "info": {
