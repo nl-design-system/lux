@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0-alpha-1",
+  "author": "Community for NL Design System",
+  "description": "Icon assets for LUX, the Design System for Logius, based on the NL Design System architecture",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "name": "@lux-design-system/icons",
+  "main": "dist/index.js",
+  "keywords": [
+    "nl-design-system",
+    "lux-design-system"
+  ],
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "npm-run-all clean:**",
+    "clean:dist": "rimraf dist/",
+    "prebuild": "npm run clean",
+    "build": "npm-run-all build:icons",
+    "build:icons": "node ./build/run-build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@std/text": "npm:@jsr/std__text@1.0.7",
+    "@svgr/core": "8.1.0",
+    "@svgr/plugin-jsx": "8.1.0",
+    "@svgr/plugin-prettier": "8.1.0",
+    "@svgr/plugin-svgo": "8.1.0",
+    "cpy-cli": "5.0.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "6.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "proprietary/icons"
+  }
+}
