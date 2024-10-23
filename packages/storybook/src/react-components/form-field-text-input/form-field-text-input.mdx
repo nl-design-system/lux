@@ -1,0 +1,37 @@
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/textbox-css/README.md?raw";
+import * as FormFieldTextInputStories from "./form-field-text-input.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={FormFieldTextInputStories} />
+
+# Lux Form Field Text Input
+
+Lux Form Field Text Input is gebaseerd op Utrecht Textbox.
+
+<CitationDocumentation
+  component="Utrecht Textbox"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-textbox--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={FormFieldTextInputStories.Playground} />
+<Controls of={FormFieldTextInputStories.Playground} />
+
+## Gebruik
+
+De Lux Form Field Text Input component kan worden gebruikt voor het invoeren van tekst in formulieren. Het ondersteunt verschillende types en staten.
+
+```jsx
+import { LuxFormFieldTextInput } from '@lux-design-system/components-react';
+
+<LuxFormFieldTextInput placeholder="Enter your name" />
+<LuxFormFieldTextInput type="email" placeholder="Enter your email" />
+<LuxFormFieldTextInput type="password" placeholder="Enter your password" />
+<LuxFormFieldTextInput type="number" placeholder="Enter a number" />
+<LuxFormFieldTextInput required placeholder="Required field" />
+<LuxFormFieldTextInput dir="rtl" placeholder="RTL input" />
+```
