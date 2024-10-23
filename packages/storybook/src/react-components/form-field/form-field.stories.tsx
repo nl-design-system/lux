@@ -41,14 +41,18 @@ interface FormFieldProps {
 
 // Text Input Component
 const TextInputField = ({ invalid }: FormFieldProps) => (
-  <LuxFormField type="text" invalid={invalid}>
-    <LuxFormFieldLabel htmlFor="name-input">Name</LuxFormFieldLabel>
-    <LuxFormFieldTextInput id="name-input" type="text" />
-    <LuxFormFieldDescription>
-      <p id="name-description">Enter your full name</p>
-    </LuxFormFieldDescription>
-    {invalid && <LuxFormFieldErrorMessage id="name-error">This field is required</LuxFormFieldErrorMessage>}
-  </LuxFormField>
+  <LuxFormField
+    type="text"
+    invalid={invalid}
+    input={<LuxFormFieldTextInput id="name-input" type="text" />}
+    label={<LuxFormFieldLabel htmlFor="name-input">Name</LuxFormFieldLabel>}
+    description={
+      <LuxFormFieldDescription>
+        <p id="name-description">Enter your full name</p>
+      </LuxFormFieldDescription>
+    }
+    errorMessage={<LuxFormFieldErrorMessage id="name-error">This field is required</LuxFormFieldErrorMessage>}
+  />
 );
 
 //TODO: Add checkbox component when available
@@ -96,26 +100,35 @@ const ErrorField = ({ invalid }: FormFieldProps) => (
     type="text"
     invalid={invalid}
     label={<LuxFormFieldLabel htmlFor="email-input">Email</LuxFormFieldLabel>}
-  >
-    <LuxFormFieldTextInput id="email-input" type="email" aria-describedby={invalid ? 'email-error' : undefined} />
-    <LuxFormFieldErrorMessage id="email-error">Please enter a valid email address</LuxFormFieldErrorMessage>
-  </LuxFormField>
+    input={
+      <LuxFormFieldTextInput id="email-input" type="email" aria-describedby={invalid ? 'email-error' : undefined} />
+    }
+    errorMessage={
+      <LuxFormFieldErrorMessage id="email-error">Please enter a valid email address</LuxFormFieldErrorMessage>
+    }
+  />
 );
 
 // Description Component
 const DescriptionField = ({ invalid }: FormFieldProps) => (
-  <LuxFormField type="text" invalid={invalid}>
-    <LuxFormFieldLabel htmlFor="password-input">Password</LuxFormFieldLabel>
-    <LuxFormFieldTextInput
-      id="password-input"
-      type="password"
-      aria-describedby={`password-description${invalid ? ' password-error' : ''}`}
-    />
-    <LuxFormFieldDescription>
-      <p id="password-description">Password must be at least 8 characters long</p>
-    </LuxFormFieldDescription>
-    {invalid && <LuxFormFieldErrorMessage id="password-error">Password is too short</LuxFormFieldErrorMessage>}
-  </LuxFormField>
+  <LuxFormField
+    type="text"
+    invalid={invalid}
+    label={<LuxFormFieldLabel htmlFor="password-input">Password</LuxFormFieldLabel>}
+    input={
+      <LuxFormFieldTextInput
+        id="password-input"
+        type="password"
+        aria-describedby={`password-description${invalid ? ' password-error' : ''}`}
+      />
+    }
+    description={
+      <LuxFormFieldDescription>
+        <p id="password-description">Password must be at least 8 characters long</p>
+      </LuxFormFieldDescription>
+    }
+    errorMessage={<LuxFormFieldErrorMessage id="password-error">Password is too short</LuxFormFieldErrorMessage>}
+  />
 );
 
 export const TextInput: Story = {
