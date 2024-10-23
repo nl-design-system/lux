@@ -5,7 +5,7 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
 
 <Meta of={ButtonStories} />
 
-# Lux Button
+# Button
 
 <CitationDocumentation
   component="Utrecht Button"
@@ -27,12 +27,23 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
 ## Small Button
 
 <Canvas of={ButtonStories.SmallButton} />
-<Controls of={ButtonStories.SmallButton} />
+
+## Variants
+
+<Canvas of={ButtonStories.Primary} />
+<Canvas of={ButtonStories.Secondary} />
+<Canvas of={ButtonStories.Tertiary} />
+
+## Button states
+
+<Canvas of={ButtonStories.Active} />
+<Canvas of={ButtonStories.Focus} />
+<Canvas of={ButtonStories.Hover} />
+<Canvas of={ButtonStories.Disabled} />
+<Canvas of={ButtonStories.Busy} />
+<Canvas of={ButtonStories.Toggle} />
 
 ## Button With Icon
 
 <Canvas of={ButtonStories.ButtonWithIconAtPositionStart} />
-<Controls of={ButtonStories.ButtonWithIconAtPositionStart} />
-
 <Canvas of={ButtonStories.ButtonWithIconAtPositionEnd} />
-<Controls of={ButtonStories.ButtonWithIconAtPositionEnd} />
