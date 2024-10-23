@@ -53,6 +53,7 @@
     "@utrecht/alert-css": "1.1.0",
     "@utrecht/button-css": "1.2.0",
     "@utrecht/heading-css": "1.2.0",
+    "@utrecht/pre-heading-css": "1.2.0",
     "@utrecht/link-css": "1.1.0",
     "@utrecht/paragraph-css": "1.1.0",
     "@vitejs/plugin-react": "4.3.1",

@@ -352,6 +352,9 @@ importers:
       '@utrecht/paragraph-css':
         specifier: 1.1.0
         version: 1.1.0
+      '@utrecht/pre-heading-css':
+        specifier: 1.2.0
+        version: 1.2.0
       '@vitejs/plugin-react':
         specifier: 4.3.1
         version: 4.3.1(vite@5.3.5(@types/node@22.7.4)(sass@1.77.8)(terser@5.34.1))
@@ -2887,6 +2890,9 @@ packages:
 
   '@utrecht/paragraph-css@1.1.0':
     resolution: {integrity: sha512-HxkYL/W0tkHngucdBFHOK8t7OmUmlnz4uIXP4GBXdA299Hp+RGb/1vaH5A2RaIN0P7/4v6EkuV4lquOcHx0K0Q==}
+
+  '@utrecht/pre-heading-css@1.2.0':
+    resolution: {integrity: sha512-64r4F/uXyEnQkquCdP5hSQsSfqg0i4tME0/yQ02q1EkU3grUXSebIYi2nwD0Cq2weBBNdyelNwdI2f/slNMMVA==}
 
   '@utrecht/web-component-library-stencil@2.0.0':
     resolution: {integrity: sha512-tl4YctoEi9nzSrbFLgmIm/BOJzke82NF7TJcmNgzQhBDmWykZNbeNHdx7CE07+TmMR81ZWs8s/umiTCTC6pRUQ==}
@@ -11396,6 +11402,8 @@ snapshots:
   '@utrecht/link-css@1.1.0': {}
 
   '@utrecht/paragraph-css@1.1.0': {}
+
+  '@utrecht/pre-heading-css@1.2.0': {}
 
   '@utrecht/web-component-library-stencil@2.0.0':
     dependencies:
