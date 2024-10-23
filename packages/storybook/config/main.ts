@@ -14,6 +14,7 @@ const config: StorybookConfig = {
     '@storybook/addon-actions',
     '@storybook/addon-interactions',
     '@storybook/addon-links',
+    'storybook-addon-pseudo-states',
   ],
   framework: {
     name: '@storybook/react-vite',
