@@ -107,7 +107,7 @@
           }
         },
         "inset-block-start": {
-          "value": "{lux.alert.icon.inset-block-start}",
+          "value": "{lux.space.0}",
           "type": "spacing"
         },
         "info": {
@@ -139,6 +139,28 @@
         "border-color": {
           "type": "color",
           "value": "{lux.alert.border-color}"
+        }
+      }
+    }
+  },
+  "lux": {
+    "alert": {
+      "heading": {
+        "font-family": {
+          "value": "{lux.font-family.primary}",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "value": "{lux.font-weight.bold}",
+          "type": "fontWeights"
+        },
+        "line-height": {
+          "value": "{lux.line-height.heading.level-4}",
+          "type": "lineHeights"
+        },
+        "font-size": {
+          "value": "{lux.font-size.heading.level-4}",
+          "type": "fontSizes"
         }
       }
     }
