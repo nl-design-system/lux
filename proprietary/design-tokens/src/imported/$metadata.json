@@ -35,6 +35,7 @@
     "nl/utrecht-alert",
     "nl/utrecht-button",
     "nl/utrecht-document",
+    "nl/utrecht-fieldset",
     "nl/utrecht-focus",
     "nl/utrecht-form-field-description",
     "nl/utrecht-form-field-error-message",
@@ -44,6 +45,7 @@
     "nl/utrecht-link",
     "nl/utrecht-paragraph",
     "nl/utrecht-pointer-target",
+    "nl/utrecht-pre-heading",
     "nl/utrecht-radio-button",
     "nl/utrecht-text-input",
     "nl/utrecht-textarea"
