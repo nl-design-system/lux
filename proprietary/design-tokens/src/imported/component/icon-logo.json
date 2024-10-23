@@ -4,37 +4,37 @@
       "eherkenning": {
         "e-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{mode.icon-logo.eherkenning.e-color}"
+          "value": "{mode.icon-logo.eherkenning.e-color}",
+          "type": "color"
         }
       },
       "eidas": {
         "stars-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{mode.icon-logo.eidas.stars-color}"
+          "value": "{mode.icon-logo.eidas.stars-color}",
+          "type": "color"
         },
         "lock-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{mode.icon-logo.eidas.lock-color}"
+          "value": "{mode.icon-logo.eidas.lock-color}",
+          "type": "color"
         },
         "lines-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{mode.icon-logo.eidas.lines-color}"
+          "value": "{mode.icon-logo.eidas.lines-color}",
+          "type": "color"
         },
         "background-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{mode.icon-logo.eidas.background-color}"
+          "value": "{mode.icon-logo.eidas.background-color}",
+          "type": "color"
         }
       },
       "digid": {
         "border-color": {
           "parent": "mode/light",
-          "type": "color",
-          "value": "{mode.icon-logo.digid.border-color}"
+          "value": "{mode.icon-logo.digid.border-color}",
+          "type": "color"
         }
       }
     }

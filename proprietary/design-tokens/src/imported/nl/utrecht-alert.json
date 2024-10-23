@@ -2,118 +2,118 @@
   "utrecht": {
     "alert": {
       "background-color": {
-        "type": "color",
-        "value": "{lux.color.background.subdued}"
+        "value": "{lux.color.background.subdued}",
+        "type": "color"
       },
       "border-color": {
-        "type": "color",
-        "value": "{lux.alert.border-color}"
+        "value": "{lux.alert.border-color}",
+        "type": "color"
       },
       "border-radius": {
-        "type": "borderRadius",
-        "value": "{lux.alert.border-radius}"
+        "value": "{lux.alert.border-radius}",
+        "type": "borderRadius"
       },
       "border-width": {
-        "type": "borderWidth",
-        "value": "{lux.alert.border-width}"
+        "value": "{lux.alert.border-width}",
+        "type": "borderWidth"
       },
       "color": {
-        "type": "color",
-        "value": "{lux.alert.color}"
+        "value": "{lux.alert.color}",
+        "type": "color"
       },
       "column-gap": {
-        "type": "spacing",
-        "value": "{lux.alert.column-gap}"
+        "value": "{lux.alert.column-gap}",
+        "type": "spacing"
       },
       "padding-block-start": {
-        "type": "spacing",
-        "value": "{lux.alert.padding-block-start}"
+        "value": "{lux.alert.padding-block-start}",
+        "type": "spacing"
       },
       "padding-block-end": {
-        "type": "spacing",
-        "value": "{lux.alert.padding-block-end}"
+        "value": "{lux.alert.padding-block-end}",
+        "type": "spacing"
       },
       "padding-inline-start": {
-        "type": "spacing",
-        "value": "{lux.alert.padding-inline-start}"
+        "value": "{lux.alert.padding-inline-start}",
+        "type": "spacing"
       },
       "padding-inline-end": {
-        "type": "spacing",
-        "value": "{lux.alert.padding-inline-end}"
+        "value": "{lux.alert.padding-inline-end}",
+        "type": "spacing"
       },
       "warning": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.alert.warning.background-color}"
+          "value": "{lux.alert.warning.background-color}",
+          "type": "color"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.alert.color}"
+          "value": "{lux.alert.color}",
+          "type": "color"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.alert.border-color}"
+          "value": "{lux.alert.border-color}",
+          "type": "color"
         }
       },
       "error": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.alert.error.background-color}"
+          "value": "{lux.alert.error.background-color}",
+          "type": "color"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.alert.color}"
+          "value": "{lux.alert.color}",
+          "type": "color"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.alert.border-color}"
+          "value": "{lux.alert.border-color}",
+          "type": "color"
         }
       },
       "ok": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.alert.success.background-color}"
+          "value": "{lux.alert.success.background-color}",
+          "type": "color"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.alert.color}"
+          "value": "{lux.alert.color}",
+          "type": "color"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.alert.border-color}"
+          "value": "{lux.alert.border-color}",
+          "type": "color"
         }
       },
       "icon": {
         "color": {
-          "type": "color",
-          "value": "{lux.color.grijs.700}"
+          "value": "{lux.color.grijs.700}",
+          "type": "color"
         },
         "error": {
           "color": {
-            "type": "color",
-            "value": "{lux.color.feedback.error.default}"
+            "value": "{lux.color.feedback.error.default}",
+            "type": "color"
           }
         },
         "warning": {
           "color": {
-            "type": "color",
-            "value": "{lux.color.feedback.warning.default}"
+            "value": "{lux.color.feedback.warning.default}",
+            "type": "color"
           }
         },
         "ok": {
           "color": {
-            "type": "color",
-            "value": "{lux.color.feedback.success.default}"
+            "value": "{lux.color.feedback.success.default}",
+            "type": "color"
           }
         },
         "inset-block-start": {
-          "value": "{lux.space.0}",
+          "value": "{lux.alert.icon.inset-block-start}",
           "type": "spacing"
         },
         "info": {
           "color": {
-            "type": "color",
-            "value": "{lux.color.feedback.info.default}"
+            "value": "{lux.color.feedback.info.default}",
+            "type": "color"
           }
         },
         "size": {
@@ -129,38 +129,16 @@
       },
       "info": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.alert.info.background-color}"
+          "value": "{lux.alert.info.background-color}",
+          "type": "color"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.alert.color}"
+          "value": "{lux.alert.color}",
+          "type": "color"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.alert.border-color}"
-        }
-      }
-    }
-  },
-  "lux": {
-    "alert": {
-      "heading": {
-        "font-family": {
-          "value": "{lux.font-family.primary}",
-          "type": "fontFamilies"
-        },
-        "font-weight": {
-          "value": "{lux.font-weight.bold}",
-          "type": "fontWeights"
-        },
-        "line-height": {
-          "value": "{lux.line-height.heading.level-4}",
-          "type": "lineHeights"
-        },
-        "font-size": {
-          "value": "{lux.font-size.heading.level-4}",
-          "type": "fontSizes"
+          "value": "{lux.alert.border-color}",
+          "type": "color"
         }
       }
     }

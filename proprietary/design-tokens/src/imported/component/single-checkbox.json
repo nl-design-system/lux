@@ -1,0 +1,170 @@
+{
+  "lux": {
+    "single-checkbox": {
+      "background-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
+      },
+      "color": {
+        "value": "{lux.color.foreground.default}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{lux.color.brand.default}",
+        "type": "color"
+      },
+      "border-radius": {
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius"
+      },
+      "border-width": {
+        "value": "{lux.border-width.default}",
+        "type": "borderWidth"
+      },
+      "column-gap": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
+      },
+      "invalid": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
+        },
+        "row-gap": {
+          "value": "{lux.space.100}",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{lux.space.200}",
+          "type": "spacing"
+        },
+        "border-inline-start-color": {
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
+        },
+        "border-inline-start-width": {
+          "value": "{lux.border-width.m}",
+          "type": "borderWidth"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        },
+        "border-width": {
+          "value": "{lux.border-width.m}",
+          "type": "borderWidth"
+        }
+      },
+      "active": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "focus-visable": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.single-checkbox.border-color}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "value": "{lux.color.none}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.subdued}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.border.subdued}",
+          "type": "color"
+        }
+      },
+      "checked": {
+        "background-color": {
+          "value": "{lux.color.brand.subdued}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

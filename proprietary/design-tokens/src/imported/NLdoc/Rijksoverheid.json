@@ -4,36 +4,36 @@
       "brand": {
         "default": {
           "parent": "NLdoc / Organisatie/Rijksoverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.donkerblauw.500}",
-          "description": ""
+          "type": "color"
         },
         "subdued": {
           "parent": "NLdoc / Organisatie/Rijksoverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.donkerblauw.50}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "parent": "NLdoc / Organisatie/Rijksoverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.donkerblauw.700}",
-          "description": ""
+          "type": "color"
         }
       }
     },
     "button": {
       "color": {
         "parent": "NLdoc / Organisatie/Rijksoverheid",
-        "type": "color",
+        "description": "",
         "value": "{nldoc.color.brand.default}",
-        "description": ""
+        "type": "color"
       }
     },
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "{ro.font-family.primary}"
+        "value": "{ro.font-family.primary}",
+        "type": "fontFamilies"
       }
     }
   }
