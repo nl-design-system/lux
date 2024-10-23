@@ -51,49 +51,52 @@ const TextInputField = ({ invalid }: FormFieldProps) => (
   </LuxFormField>
 );
 
-// Checkbox Component
-const CheckboxField = ({ invalid }: FormFieldProps) => (
-  <LuxFormField type="checkbox" invalid={invalid}>
-    <LuxFormFieldLabel htmlFor="terms-checkbox">Accept terms and conditions</LuxFormFieldLabel>
-    <LuxFormFieldTextInput id="terms-checkbox" type="checkbox" aria-describedby={invalid ? 'terms-error' : undefined} />
-    {invalid && <LuxFormFieldErrorMessage id="terms-error">You must accept the terms</LuxFormFieldErrorMessage>}
-  </LuxFormField>
-);
+//TODO: Add checkbox component when available
+// const CheckboxField = ({ invalid }: FormFieldProps) => (
+//   <LuxFormField type="checkbox" invalid={invalid}>
+//     <LuxFormFieldLabel htmlFor="terms-checkbox">Accept terms and conditions</LuxFormFieldLabel>
+//     <LuxFormFieldTextInput id="terms-checkbox" type="checkbox" aria-describedby={invalid ? 'terms-error' : undefined} />
+//     {invalid && <LuxFormFieldErrorMessage id="terms-error">You must accept the terms</LuxFormFieldErrorMessage>}
+//   </LuxFormField>
+// );
 
-// Radio Component
-const RadioField = ({ invalid }: FormFieldProps) => (
-  <LuxFormField type="radio" invalid={invalid}>
-    <LuxFormFieldLabel id="gender-group-label">Select one</LuxFormFieldLabel>
-    <div role="radiogroup" aria-labelledby="gender-group-label">
-      <div>
-        <input
-          type="radio"
-          id="gender-male"
-          name="gender"
-          value="male"
-          aria-describedby={invalid ? 'gender-error' : undefined}
-        />
-        <label htmlFor="gender-male">Male</label>
-      </div>
-      <div>
-        <input
-          type="radio"
-          id="gender-female"
-          name="gender"
-          value="female"
-          aria-describedby={invalid ? 'gender-error' : undefined}
-        />
-        <label htmlFor="gender-female">Female</label>
-      </div>
-    </div>
-    {invalid && <LuxFormFieldErrorMessage id="gender-error">Please select an option</LuxFormFieldErrorMessage>}
-  </LuxFormField>
-);
+//TODO: Add radio button component when available
+// const RadioField = ({ invalid }: FormFieldProps) => (
+//   <LuxFormField type="radio" invalid={invalid}>
+//     <LuxFormFieldLabel id="gender-group-label">Select one</LuxFormFieldLabel>
+//     <div role="radiogroup" aria-labelledby="gender-group-label">
+//       <div>
+//         <input
+//           type="radio"
+//           id="gender-male"
+//           name="gender"
+//           value="male"
+//           aria-describedby={invalid ? 'gender-error' : undefined}
+//         />
+//         <label htmlFor="gender-male">Male</label>
+//       </div>
+//       <div>
+//         <input
+//           type="radio"
+//           id="gender-female"
+//           name="gender"
+//           value="female"
+//           aria-describedby={invalid ? 'gender-error' : undefined}
+//         />
+//         <label htmlFor="gender-female">Female</label>
+//       </div>
+//     </div>
+//     {invalid && <LuxFormFieldErrorMessage id="gender-error">Please select an option</LuxFormFieldErrorMessage>}
+//   </LuxFormField>
+// );
 
 // Error Component
 const ErrorField = ({ invalid }: FormFieldProps) => (
-  <LuxFormField type="text" invalid={invalid}>
-    <LuxFormFieldLabel htmlFor="email-input">Email</LuxFormFieldLabel>
+  <LuxFormField
+    type="text"
+    invalid={invalid}
+    label={<LuxFormFieldLabel htmlFor="email-input">Email</LuxFormFieldLabel>}
+  >
     <LuxFormFieldTextInput id="email-input" type="email" aria-describedby={invalid ? 'email-error' : undefined} />
     <LuxFormFieldErrorMessage id="email-error">Please enter a valid email address</LuxFormFieldErrorMessage>
   </LuxFormField>
@@ -122,19 +125,19 @@ export const TextInput: Story = {
   },
 };
 
-export const Checkbox: Story = {
-  render: (args) => <CheckboxField {...args} />,
-  args: {
-    invalid: false,
-  },
-};
+// export const Checkbox: Story = {
+//   render: (args) => <CheckboxField {...args} />,
+//   args: {
+//     invalid: false,
+//   },
+// };
 
-export const Radio: Story = {
-  render: (args) => <RadioField {...args} />,
-  args: {
-    invalid: false,
-  },
-};
+// export const Radio: Story = {
+//   render: (args) => <RadioField {...args} />,
+//   args: {
+//     invalid: false,
+//   },
+// };
 
 export const WithError: Story = {
   render: (args) => <ErrorField {...args} />,
