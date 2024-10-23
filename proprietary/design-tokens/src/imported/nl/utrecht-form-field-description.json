@@ -1,0 +1,43 @@
+{
+  "utrecht": {
+    "form-field-description": {
+      "color": {
+        "type": "color",
+        "value": "{lux.color.foreground.subdued}"
+      },
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      },
+      "invalid": {
+        "color": {
+          "value": "{lux.color.foreground.subdued}",
+          "type": "color",
+          "description": "Checkvraag dev: bestaat deze echt in code? "
+        }
+      },
+      "valid": {
+        "color": {
+          "value": "{lux.color.foreground.subdued}",
+          "type": "color",
+          "description": "Checkvraag dev: bestaat deze echt in code? "
+        }
+      }
+    },
+    "invalid": {
+      "font-weight": {
+        "value": "{no-token}",
+        "type": "fontWeights",
+        "description": "Controle vraag aan devs: bestaat deze echt in utrecht code?"
+      }
+    }
+  }
+}

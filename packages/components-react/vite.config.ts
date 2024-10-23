@@ -2,6 +2,8 @@
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   build: {
@@ -10,7 +12,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'Components React',
       // the proper extensions will be added
-      fileName: 'components-react',
+      fileName: 'index',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -22,8 +24,10 @@ export default defineConfig({
         globals: {
           react: 'React',
         },
+        manualChunks: undefined,
       },
     },
+    minify: false,
   },
-  plugins: [react()],
+  plugins: [dts(), react(), cssInjectedByJsPlugin({ topExecutionPriority: false })],
 });
