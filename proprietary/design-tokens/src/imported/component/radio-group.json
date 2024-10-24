@@ -1,0 +1,18 @@
+{
+  "lux": {
+    "radio-group": {
+      "padding-block-start": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "row-gap": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      }
+    }
+  }
+}
