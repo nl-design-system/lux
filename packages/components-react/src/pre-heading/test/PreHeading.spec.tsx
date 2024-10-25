@@ -18,7 +18,7 @@ describe('Heading', () => {
     );
 
     const preHeading = container.querySelector(':only-child');
-    const richText = preHeading.querySelector('strong');
+    const richText = preHeading?.querySelector('strong');
 
     expect(richText).toBeInTheDocument();
   });
