@@ -322,6 +322,9 @@ importers:
       '@utrecht/heading-css':
         specifier: 1.2.0
         version: 1.2.0
+      '@utrecht/heading-group-css':
+        specifier: 1.2.0
+        version: 1.2.0
       '@utrecht/link-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -2767,6 +2770,9 @@ packages:
 
   '@utrecht/heading-css@1.2.0':
     resolution: {integrity: sha512-d+H5TfhOKYN+YMau3l/4DR/K3mYjYGbZvxfzflxMD2HnHgOxgYC9YvH/FQysE19mKbepGZPzV1rMYoW/vcwmvg==}
+
+  '@utrecht/heading-group-css@1.2.0':
+    resolution: {integrity: sha512-EfLu0TxBZRw0TeEMX61ygs2wWubVjMVAWVfDnYHhoqgX5Wq1tmz0lR4TJuxWgVAyiIuTFOObJtS7x35k0/yPAg==}
 
   '@utrecht/link-css@1.1.0':
     resolution: {integrity: sha512-L/R5rGvA2RrXJFw/k2l2U7ZgeJuz92pdFDbW1Rtw+7XBK5Z/e+YMpnlDL8fx5VmFk95xO4Jmgv1j6BYiI6vnqA==}
@@ -10422,6 +10428,8 @@ snapshots:
   '@utrecht/document-css@1.1.0': {}
 
   '@utrecht/heading-css@1.2.0': {}
+
+  '@utrecht/heading-group-css@1.2.0': {}
 
   '@utrecht/link-css@1.1.0': {}
 
