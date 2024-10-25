@@ -11,3 +11,4 @@ export {
   type LuxHeadingProps,
 } from './heading/Heading';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
+export { LuxLink, type LuxLinkProps } from './link/Link';

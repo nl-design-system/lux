@@ -1,0 +1,43 @@
+.lux-link {
+  display: inline-flex;
+  gap: var(--lux-link-column-gap);
+  color: var(--lux-link-color);
+  font-weight: var(--lux-link-font-weight);
+  font-size: var(--lux-link-font-size);
+  line-height: var(--lux-link-line-height);
+  font-family: var(--lux-link-font-family);
+  text-decoration: var(--lux-link-text-decoration);
+
+  &:active {
+    color: var(--lux-link-active-color);
+    text-decoration: var(--lux-link-active-text-decoration);
+  }
+
+  &:focus {
+    background-color: var(--lux-link-focus-background-color);
+    color: var(--lux-link-focus-color);
+    text-decoration: var(--lux-link-focus-text-decoration);
+  }
+
+  &:hover {
+    color: var(--lux-link-hover-color);
+    text-decoration: var(--lux-link-hover-text-decoration);
+  }
+
+  &:visited {
+    color: var(--lux-link-visited-color);
+  }
+}
+
+.lux-link__icon {
+  inline-size: var(--lux-link-icon-size);
+  block-size: var(--lux-link-icon-size);
+}
+
+.lux-link-icon--start {
+  order: 0;
+}
+
+.lux-link-icon--end {
+  order: 1;
+}
