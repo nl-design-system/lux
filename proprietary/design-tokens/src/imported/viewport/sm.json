@@ -39,6 +39,10 @@
         "type": "spacing",
         "value": "1.5rem",
         "description": ""
+      },
+      "max-inline-size": {
+        "value": "82.5rem",
+        "type": "sizing"
       }
     }
   },

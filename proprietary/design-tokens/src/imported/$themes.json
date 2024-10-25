@@ -883,7 +883,8 @@
       "nl/utrecht-form-label": "enabled",
       "nl/utrecht-document": "enabled",
       "nl/utrecht-heading": "enabled",
-      "nl/utrecht-pre-heading": "enabled"
+      "nl/utrecht-pre-heading": "enabled",
+      "nl/utrecht-fieldset": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2536:6472",
     "$figmaModeId": "2536:0",
