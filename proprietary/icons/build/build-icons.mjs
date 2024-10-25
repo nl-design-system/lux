@@ -3,27 +3,33 @@ import path from 'path';
 import { transform } from '@svgr/core';
 import { toKebabCase } from "@std/text/to-kebab-case";
 import { toPascalCase } from "@std/text/to-pascal-case";
+import { luxTemplate } from '../src/templates/svgrTemplate.mjs';
 
-import { IMPORTED_SRC_FOLDER, DIST_FOLDER } from './constants.mjs';
+import { IMPORTED_SRC_FOLDER, DIST_FOLDER, REACT_ICONS_FOLDER } from './constants.mjs';
 
 const svgrConfig = {
   plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'/*, '@svgr/plugin-prettier'*/],
   icon: true,
+  template: luxTemplate,
   typescript: true,
+  jsxRuntime: 'automatic',
   // ref: true,
 };
 
-const cleanFileName = fileName => fileName.replaceAll(/(svg|zwart|\(|\)|\d{4})/gi, '').replaceAll(/\d+px/gi, 'inline');
+const cleanFileName = fileName => fileName
+  .replaceAll(/(svg|zwart|\(|\))/gi, '')
+  .replaceAll(/\d{4}/gi, 'bzk')
+  .replaceAll(/\d+px/gi, 'inline');
 
 export const buildIcons = async () => {
   console.info('Building Icons');
 
   const dir = IMPORTED_SRC_FOLDER;
-  const out = DIST_FOLDER;
+  const out = REACT_ICONS_FOLDER;
   let files = await readdir(dir);
 
   // TODO: check if exists
-  await mkdir(path.join(out)).then(() => {
+  await mkdir(path.join(out), { recursive: true }).then(() => {
     console.info(`Folder ${out} created.`);
   })
 
@@ -32,7 +38,7 @@ export const buildIcons = async () => {
       const filePath = path.join(dir, file);
       const iconName = `Icon${toPascalCase(cleanFileName(file))}`;
       const iconId = toKebabCase(cleanFileName(file));
-      const fileName = `${iconName}.tsx`
+      const fileName = `${iconName}.tsx`;
 
       // console.log(file, iconName, iconId, path.join(dir, `${iconName}.tsx`));
 
@@ -60,13 +66,13 @@ export const buildIcons = async () => {
     iconName,
     iconId,
     fileName,
-  }) => `export { ${iconName} } from './${fileName}'; // ${iconId} 
+  }) => `export { default as ${iconName} } from './${iconName}'; // ${iconId} 
 `);
 
   await writeFile(path.join(out, 'index.tsx'), barrelCode, ).then(() => {
-   console.info(`Icons directory file created.`);
+    console.info(`Icons directory file created.`);
   });
 
 
-  console.log(barrelCode);
+  // console.log(barrelCode);
 };

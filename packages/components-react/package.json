@@ -55,6 +55,7 @@
     "@babel/runtime": "7.25.0",
     "@jest/globals": "29.7.0",
     "@lux-design-system/components-css": "workspace:*",
+    "@lux-design-system/icons": "workspace:*",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-commonjs": "26.0.1",
     "@rollup/plugin-node-resolve": "15.2.3",

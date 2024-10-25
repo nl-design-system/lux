@@ -150,6 +150,9 @@ importers:
       '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
+      '@lux-design-system/icons':
+        specifier: workspace:*
+        version: link:../../proprietary/icons
       '@rollup/plugin-babel':
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.25.2)(@types/babel__core@7.20.5)(rollup@4.20.0)
@@ -280,6 +283,9 @@ importers:
       '@lux-design-system/font':
         specifier: workspace:*
         version: link:../../proprietary/font
+      '@lux-design-system/icons':
+        specifier: workspace:*
+        version: link:../../proprietary/icons
       '@lux-design-system/web-components-react':
         specifier: workspace:*
         version: link:../web-components-react
@@ -504,14 +510,10 @@ importers:
         version: 1.77.8
 
   proprietary/icons:
-    dependencies:
+    devDependencies:
       '@std/text':
         specifier: npm:@jsr/std__text@1.0.7
         version: '@jsr/std__text@1.0.7'
-      '@svgr/plugin-svgo':
-        specifier: 8.1.0
-        version: 8.1.0(@svgr/core@8.1.0(typescript@5.5.4))(typescript@5.5.4)
-    devDependencies:
       '@svgr/core':
         specifier: 8.1.0
         version: 8.1.0(typescript@5.5.4)
@@ -521,6 +523,12 @@ importers:
       '@svgr/plugin-prettier':
         specifier: 8.1.0
         version: 8.1.0(@svgr/core@8.1.0(typescript@5.5.4))
+      '@svgr/plugin-svgo':
+        specifier: 8.1.0
+        version: 8.1.0(@svgr/core@8.1.0(typescript@5.5.4))(typescript@5.5.4)
+      '@types/react':
+        specifier: 18.3.3
+        version: 18.3.3
       cpy-cli:
         specifier: 5.0.0
         version: 5.0.0
@@ -530,6 +538,12 @@ importers:
       rimraf:
         specifier: 6.0.1
         version: 6.0.1
+      tslib:
+        specifier: 2.6.3
+        version: 2.6.3
+      typescript:
+        specifier: 5.5.4
+        version: 5.5.4
 
 packages:
 
