@@ -162,7 +162,97 @@
           "border-width": {
             "$type": "borderWidth",
             "$value": "2px"
+          }
+        },
+        "hover": {
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "2px"
+          }
+        },
+        "active": {
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "1.5px"
+          }
+        }
+      },
+      "indeterminate": {
+        "active": {
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "1.5px"
           },
+          "background-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.active.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.active.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.active.color}"
+          }
+        },
+        "hover": {
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "2px"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.hover.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.hover.color}"
+          }
+        },
+        "focus": {
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "2px"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.focus.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.focus.color}"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.disabled.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{lux.checkbox.checked.disabled.color}"
+          }
+        }
+      }
+    }
+  },
+  "lux": {
+    "checkbox": {
+      "checked": {
+        "focus": {
           "background-color": {
             "$type": "color",
             "$value": "{utrecht.checkbox.checked.background-color}"
@@ -177,10 +267,6 @@
           }
         },
         "hover": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "2px"
-          },
           "background-color": {
             "$type": "color",
             "$value": "{lux.color.brand.hover}"
@@ -195,10 +281,6 @@
           }
         },
         "active": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "1.5px"
-          },
           "background-color": {
             "$type": "color",
             "$value": "{lux.color.brand.hover}"
@@ -224,76 +306,6 @@
           "color": {
             "$type": "color",
             "$value": "{lux.color.foreground.subdued}"
-          }
-        }
-      },
-      "indeterminate": {
-        "active": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "1.5px"
-          },
-          "background-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.active.background-color}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.active.border-color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.active.color}"
-          }
-        },
-        "hover": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "2px"
-          },
-          "background-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.hover.background-color}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "transparent"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.hover.color}"
-          }
-        },
-        "focus": {
-          "border-width": {
-            "$type": "borderWidth",
-            "$value": "2px"
-          },
-          "background-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.focus.background-color}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.focus.border-color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.focus.color}"
-          }
-        },
-        "disabled": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.disabled.background-color}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.disabled.border-color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{todo.checkbox.checked.disabled.color}"
           }
         }
       }
