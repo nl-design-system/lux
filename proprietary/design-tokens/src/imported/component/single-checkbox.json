@@ -126,7 +126,7 @@
       "focus-visable": {
         "background-color": {
           "$type": "color",
-          "$value": "{lux.color.background.subdued}"
+          "$value": "{lux.color.none}"
         },
         "color": {
           "$type": "color",
