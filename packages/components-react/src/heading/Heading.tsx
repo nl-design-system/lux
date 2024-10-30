@@ -4,6 +4,8 @@ import { clamp } from '../utils/number';
 
 type HeadingLevels = 1 | 2 | 3 | 4 | 5 | 6;
 
+type HeadingProps = PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>;
+
 export interface LuxHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   appearance?: HeadingLevels;
   level: HeadingLevels;
@@ -34,21 +36,9 @@ export const LuxHeading = ({
   );
 };
 
-export const LuxHeading1 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading {...props} level={1} />
-);
-export const LuxHeading2 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading {...props} level={2} />
-);
-export const LuxHeading3 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading {...props} level={3} />
-);
-export const LuxHeading4 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading {...props} level={4} />
-);
-export const LuxHeading5 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading {...props} level={5} />
-);
-export const LuxHeading6 = ({ ...props }: PropsWithChildren<HTMLAttributes<HTMLHeadingElement>>): ReactNode => (
-  <LuxHeading {...props} level={6} />
-);
+export const LuxHeading1 = ({ ...props }: HeadingProps): ReactNode => <LuxHeading {...props} level={1} />;
+export const LuxHeading2 = ({ ...props }: HeadingProps): ReactNode => <LuxHeading {...props} level={2} />;
+export const LuxHeading3 = ({ ...props }: HeadingProps): ReactNode => <LuxHeading {...props} level={3} />;
+export const LuxHeading4 = ({ ...props }: HeadingProps): ReactNode => <LuxHeading {...props} level={4} />;
+export const LuxHeading5 = ({ ...props }: HeadingProps): ReactNode => <LuxHeading {...props} level={5} />;
+export const LuxHeading6 = ({ ...props }: HeadingProps): ReactNode => <LuxHeading {...props} level={6} />;
