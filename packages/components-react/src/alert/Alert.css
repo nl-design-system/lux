@@ -1,0 +1,8 @@
+.lux-alert {
+  /* stylelint-disable-next-line custom-property-pattern */
+  --utrecht-heading-1-color: var(--utrecht-alert-color);
+  /* stylelint-disable-next-line custom-property-pattern */
+  --utrecht-heading-1-font-size: var(--lux-alert-heading-font-size);
+  /* stylelint-disable-next-line custom-property-pattern */
+  --utrecht-heading-1-line-height: var(--lux-alert-heading-font-size);
+}

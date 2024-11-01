@@ -1,3 +1,4 @@
+export { LuxAlert, type LuxAlertProps } from './alert/Alert';
 export { LuxButton, type LuxButtonProps } from './button/Button';
 export { LuxDocument, type LuxDocumentProps } from './document/Document';
 export {
