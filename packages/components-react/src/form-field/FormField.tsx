@@ -14,4 +14,6 @@ export const LuxFormField = forwardRef(
   },
 );
 
+export type LuxFormFieldProps = UtrechtFormFieldProps;
+
 LuxFormField.displayName = 'LuxFormField';

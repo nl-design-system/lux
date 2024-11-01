@@ -1,56 +1,56 @@
-import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
-import markdown from "@utrecht/form-field-css/README.md?raw";
+import LinkTo from "@storybook/addon-links/react";
+import { Canvas, Controls, Description, Meta } from "@storybook/blocks";
+import mdAnatomy from "@utrecht/form-field-css/docs/anatomy.nl.md?raw";
+import mdWcag from "@utrecht/form-field-css/docs/wcag.nl.md?raw";
 import * as FormFieldStories from "./form-field.stories";
 import { CitationDocumentation } from "../../utils/CitationDocumentation";
+import { MarkdownDocumentation } from "../../utils/MarkdownDocumentation";
+import FormFieldTextboxMeta from "../form-field-textbox/form-field-textbox.stories";
 
 <Meta of={FormFieldStories} />
 
-# Lux Form Field
+# Form Field
 
 <CitationDocumentation
   component="Utrecht Form Field"
   url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-form-field--docs"
 />
 
-<Markdown>{markdown}</Markdown>
+<MarkdownDocumentation>{mdAnatomy}</MarkdownDocumentation>
 
-## Opmerkingen
+## Wanneer gebruik je dit component?
 
-- Het Form Field component bundelt verschillende onderdelen van een formulierveld: label, invoerveld, beschrijving, en eventueel foutmelding.
-- De `type` prop bepaalt het soort invoerveld en past de bijbehorende styling toe.
-- Gebruik de `invalid` prop in combinatie met `errorMessage` om fouttoestanden weer te geven.
-- De `description` prop kan worden gebruikt om extra context of instructies te geven bij het invoerveld.
+Dit component gebruik je als een van de voorgedefinieerde FormField*Type*'s niet voldoen. Bekijk ook:
 
-## Anatomie
+- <LinkTo kind={FormFieldTextboxMeta.title} story="docs">
+    FormFieldTextbox
+  </LinkTo>
 
-Een Form Field kan de volgende onderdelen bevatten:
+**Let op:** Op dit moment rendert het de foutmelding onder het input.
 
-- Label (verplicht)
-- Invoerveld (verplicht)
-- Beschrijving (optioneel)
-- Foutmelding (optioneel, alleen zichtbaar als `invalid={true}`)
+<MarkdownDocumentation>{mdWcag}</MarkdownDocumentation>
 
 ## Playground
 
-<Canvas of={FormFieldStories.TextInput} />
-<Controls of={FormFieldStories.TextInput} />
+<Canvas of={FormFieldStories.Playground} />
+<Controls of={FormFieldStories.Playground} />
 
 ## Varianten
 
-### Text Input
+### Textbox
 
-<Description of={FormFieldStories.TextInput} />
-<Canvas of={FormFieldStories.TextInput} />
+<Description of={FormFieldStories.FormFieldTextbox} />
+<Canvas of={FormFieldStories.FormFieldTextbox} />
 
-### Met Foutmelding
+### Textbox met beschrijving
 
-<Description of={FormFieldStories.WithError} />
-<Canvas of={FormFieldStories.WithError} />
+<Description of={FormFieldStories.FormFieldDescription} />
+<Canvas of={FormFieldStories.FormFieldDescription} />
 
-### Met Beschrijving
+### Textbox met foutmelding
 
-<Description of={FormFieldStories.WithDescription} />
-<Canvas of={FormFieldStories.WithDescription} />
+<Description of={FormFieldStories.FormFieldError} />
+<Canvas of={FormFieldStories.FormFieldError} />
 
 ## Gebruik
 

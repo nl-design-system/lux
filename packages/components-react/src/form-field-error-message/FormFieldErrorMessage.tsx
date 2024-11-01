@@ -9,9 +9,9 @@ const FORM_FIELD_ERROR_MESSAGE_CLASSES: { [key: string]: string } = {
   distanced: 'utrecht-form-field-error-message--distanced',
 };
 
-export interface LuxFormFieldErrorMessageProps extends Omit<UtrechtFormFieldErrorMessageProps, 'appearance'> {
+export type LuxFormFieldErrorMessageProps = UtrechtFormFieldErrorMessageProps & {
   distanced?: boolean;
-}
+};
 
 export const LuxFormFieldErrorMessage = forwardRef(
   (

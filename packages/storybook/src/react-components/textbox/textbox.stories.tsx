@@ -1,25 +1,25 @@
-import { INPUT_TYPES, LuxFormFieldTextInput, LuxFormFieldTextInputProps } from '@lux-design-system/components-react';
+import { INPUT_TYPES, LuxTextbox, LuxTextboxProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, InputHTMLAttributes, PropsWithChildren } from 'react';
 import { BADGES } from '../../../config/preview';
 
 // Create a wrapper component to handle the forwardRef
-const WrappedLuxFormFieldTextInput = forwardRef<
+const WrappedLuxTextbox = forwardRef<
   HTMLInputElement,
-  PropsWithChildren<LuxFormFieldTextInputProps> & InputHTMLAttributes<HTMLInputElement>
->((props, ref) => <LuxFormFieldTextInput {...props} ref={ref} />);
+  PropsWithChildren<LuxTextboxProps> & InputHTMLAttributes<HTMLInputElement>
+>((props, ref) => <LuxTextbox {...props} ref={ref} />);
 
-WrappedLuxFormFieldTextInput.displayName = 'WrappedLuxFormFieldTextInput';
+WrappedLuxTextbox.displayName = 'LuxTextbox';
 
 const meta = {
-  title: 'React Components/Form Field TextInput',
+  title: 'React Components/Form Field/Textbox',
   id: 'react-components-form-field-textbox',
-  component: WrappedLuxFormFieldTextInput,
+  component: WrappedLuxTextbox,
   parameters: {
     badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
-    tokensPrefix: 'react-textbox',
+    tokensPrefix: 'utrecht-textbox',
   },
   argTypes: {
     type: {
@@ -131,13 +131,13 @@ const meta = {
       control: 'boolean',
     },
   },
-} satisfies Meta<typeof WrappedLuxFormFieldTextInput>;
+} satisfies Meta<typeof WrappedLuxTextbox>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 const TextInputTemplate: Story = {
-  render: (args) => <WrappedLuxFormFieldTextInput {...args} />,
+  render: (args) => <WrappedLuxTextbox {...args} />,
 };
 
 export const Playground: Story = {

@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { BADGES } from '../../../config/preview';
 
 const meta = {
-  title: 'React Components/Form Field Description',
+  title: 'React Components/Form Field/Form Field Description',
   id: 'react-components-form-field-description',
   component: LuxFormFieldDescription,
   parameters: {

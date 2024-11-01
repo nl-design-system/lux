@@ -29,7 +29,7 @@ export const INPUT_TYPES = {
 export type InputType = (typeof INPUT_TYPES)[keyof typeof INPUT_TYPES];
 type Direction = 'ltr' | 'rtl' | 'auto';
 
-export interface LuxFormFieldTextInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'type'> {
+export interface LuxTextboxProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'type'> {
   type?: InputType;
   invalid?: boolean;
   dir?: Direction;
@@ -41,7 +41,7 @@ export interface LuxFormFieldTextInputProps extends Omit<InputHTMLAttributes<HTM
   spellCheck?: boolean;
 }
 
-export const LuxFormFieldTextInput = forwardRef(
+export const LuxTextbox = forwardRef(
   (
     {
       className,
@@ -60,7 +60,7 @@ export const LuxFormFieldTextInput = forwardRef(
       placeholderDir,
       spellCheck,
       ...restProps
-    }: PropsWithChildren<LuxFormFieldTextInputProps>,
+    }: PropsWithChildren<LuxTextboxProps>,
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
     const classes = clsx(
@@ -99,4 +99,4 @@ export const LuxFormFieldTextInput = forwardRef(
   },
 );
 
-LuxFormFieldTextInput.displayName = 'LuxFormFieldTextInput';
+LuxTextbox.displayName = 'LuxTextbox';

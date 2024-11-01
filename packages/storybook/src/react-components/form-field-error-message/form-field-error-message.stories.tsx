@@ -12,7 +12,7 @@ const WrappedLuxFormFieldErrorMessage = forwardRef<
 WrappedLuxFormFieldErrorMessage.displayName = 'WrappedLuxFormFieldErrorMessage';
 
 const meta = {
-  title: 'React Components/Form Field Error Message',
+  title: 'React Components/Form Field/Form Field Error Message',
   id: 'react-components-form-field-error-message',
   component: WrappedLuxFormFieldErrorMessage,
   parameters: {

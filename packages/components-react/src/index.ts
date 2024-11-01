@@ -20,9 +20,6 @@ export {
   LuxFormFieldErrorMessage,
   type LuxFormFieldErrorMessageProps,
 } from './form-field-error-message/FormFieldErrorMessage';
-export {
-  LuxFormFieldTextInput,
-  INPUT_TYPES,
-  type LuxFormFieldTextInputProps,
-} from './form-field-text-input/FormFieldTextInput';
+export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
+export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
