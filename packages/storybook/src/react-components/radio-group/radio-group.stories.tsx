@@ -1,0 +1,208 @@
+import { LuxRadioGroup } from '@lux-design-system/components-react';
+import { Meta, StoryObj } from '@storybook/react';
+import { useState } from 'react';
+
+type Story = StoryObj<typeof meta>;
+
+const meta = {
+  title: 'React Components/Radio Group',
+  component: LuxRadioGroup,
+  subcomponents: {},
+  args: {
+    name: 'contact',
+    label: 'Voorkeur contactmethode',
+    options: [
+      { value: 'email', label: 'E-mail' },
+      { value: 'phone', label: 'Telefoon' },
+      { value: 'mail', label: 'Post' },
+    ],
+  },
+  argTypes: {
+    label: {
+      description: 'Label for the radio group',
+      control: 'text',
+      table: {
+        type: { summary: 'string' },
+      },
+    },
+    name: {
+      description: 'Name attribute for the radio group (used for form submission and ID generation)',
+      control: 'text',
+      table: {
+        type: { summary: 'string' },
+        category: 'HTML attribute',
+      },
+    },
+    options: {
+      description: 'Array of radio options with value and label properties',
+      control: 'object',
+      table: {
+        type: {
+          summary: 'Array<{ value: string; label: string; disabled?: boolean; }>',
+        },
+      },
+    },
+    invalid: {
+      description: 'Invalid state indicator',
+      control: 'boolean',
+      table: {
+        type: { summary: 'boolean' },
+      },
+    },
+    required: {
+      description: 'Required field indicator',
+      control: 'boolean',
+      table: {
+        type: { summary: 'boolean' },
+        category: 'HTML attribute',
+      },
+    },
+    value: {
+      description: 'Currently selected value (only needed for controlled components)',
+      control: 'text',
+      table: {
+        type: { summary: 'string' },
+      },
+    },
+    className: {
+      table: {
+        disable: true,
+      },
+    },
+    onChange: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+} satisfies Meta<typeof LuxRadioGroup>;
+
+export default meta;
+
+const contactMethodOptions = [
+  { value: 'email', label: 'E-mail' },
+  { value: 'phone', label: 'Telefoon' },
+  { value: 'mail', label: 'Post' },
+];
+
+const RadioGroupTemplate: Story = {
+  args: {
+    ...meta.args,
+  },
+};
+
+export const Playground: Story = {
+  ...RadioGroupTemplate,
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Interactieve demo van de RadioGroup component. De radio buttons krijgen automatisch unieke IDs gebaseerd op de name en value combinatie (bijvoorbeeld: "contact-email").',
+      },
+      sourceState: 'shown',
+    },
+  },
+  tags: ['!autodocs'],
+};
+
+export const Default: Story = {
+  ...RadioGroupTemplate,
+  parameters: {
+    docs: {
+      description: {
+        story: 'Standaard weergave van een radio group met meerdere opties. Geen voorgeselecteerde waarde.',
+      },
+    },
+  },
+};
+
+export const Controlled: Story = {
+  render: () => {
+    const [selectedValue, setSelectedValue] = useState('email');
+
+    return (
+      <LuxRadioGroup
+        name="contact"
+        label="Voorkeur contactmethode (met state)"
+        options={contactMethodOptions}
+        value={selectedValue}
+        onChange={setSelectedValue}
+      />
+    );
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Voorbeeld van een controlled radio group met React state management.',
+      },
+    },
+  },
+};
+
+export const Required: Story = {
+  ...RadioGroupTemplate,
+  args: {
+    ...RadioGroupTemplate.args,
+    required: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Verplicht veld met een asterisk indicator.',
+      },
+    },
+  },
+};
+
+export const Invalid: Story = {
+  ...RadioGroupTemplate,
+  args: {
+    ...RadioGroupTemplate.args,
+    invalid: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Radio group in foutmelding status.',
+      },
+    },
+  },
+};
+
+export const WithDisabledOption: Story = {
+  ...RadioGroupTemplate,
+  args: {
+    ...RadioGroupTemplate.args,
+    options: [
+      { value: 'email', label: 'E-mail' },
+      { value: 'phone', label: 'Telefoon', disabled: true },
+      { value: 'mail', label: 'Post' },
+    ],
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Radio group met een uitgeschakelde optie.',
+      },
+    },
+  },
+};
+
+export const WithLongLabels: Story = {
+  ...RadioGroupTemplate,
+  args: {
+    ...RadioGroupTemplate.args,
+    options: [
+      { value: 'email', label: 'Contact via e-mail (standaard reactietijd: 1 werkdag)' },
+      { value: 'phone', label: 'Contact via telefoon (standaard reactietijd: direct)' },
+      { value: 'mail', label: 'Contact via post (standaard reactietijd: 3-5 werkdagen)' },
+    ],
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Radio group met langere, beschrijvende labels.',
+      },
+    },
+  },
+};

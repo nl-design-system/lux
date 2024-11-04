@@ -1,0 +1,64 @@
+.lux-radio-button__container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.lux-radio-button {
+  margin-inline-end: var(--utrecht-radio-button-margin-inline-end);
+  border-width: var(--utrecht-radio-button-border-width);
+  border-color: var(--utrecht-radio-button-border-color);
+  background-color: var(--utrecht-radio-button-background-color);
+  inline-size: var(--utrecht-radio-button-size);
+  block-size: var(--utrecht-radio-button-size);
+  color: var(--utrecht-radio-button-color);
+}
+
+.lux-radio-button:hover {
+  border-width: var(--utrecht-radio-button-hover-border-width);
+  border-color: var(--utrecht-radio-button-hover-border-color);
+  background-color: var(--utrecht-radio-button-hover-background-color);
+  color: var(--utrecht-radio-button-hover-color);
+}
+
+.lux-radio-button:checked {
+  border-width: var(--utrecht-radio-button-checked-border-width);
+  border-color: var(--utrecht-radio-button-checked-border-color);
+  background-color: var(--utrecht-radio-button-checked-background-color);
+  color: var(--utrecht-radio-button-checked-color);
+}
+
+.lux-radio-button:disabled {
+  cursor: not-allowed;
+  border-width: var(--utrecht-radio-button-disabled-border-width);
+  border-color: var(--utrecht-radio-button-disabled-border-color);
+  background-color: var(--utrecht-radio-button-disabled-background-color);
+  color: var(--utrecht-radio-button-disabled-color);
+}
+
+.lux-radio-button:checked:hover {
+  border-width: var(--utrecht-radio-button-checked-hover-border-width);
+  border-color: var(--utrecht-radio-button-checked-hover-border-color);
+  background-color: var(--utrecht-radio-button-checked-hover-background-color);
+  color: var(--utrecht-radio-button-checked-hover-color);
+}
+
+.lux-radio-button:checked:active {
+  border-width: var(--utrecht-radio-button-checked-active-border-width);
+  border-color: var(--utrecht-radio-button-checked-active-border-color);
+  background-color: var(--utrecht-radio-button-checked-active-background-color);
+  color: var(--utrecht-radio-button-checked-active-color);
+}
+
+.lux-radio-button:checked:focus {
+  border-width: var(--utrecht-radio-button-checked-focus-border-width);
+  border-color: var(--utrecht-radio-button-checked-focus-border-color);
+  background-color: var(--utrecht-radio-button-checked-focus-background-color);
+  color: var(--utrecht-radio-button-checked-focus-color);
+}
+
+.lux-radio-button[aria-invalid="true"] {
+  border-width: var(--utrecht-radio-button-invalid-border-width);
+  border-color: var(--utrecht-radio-button-invalid-border-color);
+  background-color: var(--utrecht-radio-button-invalid-background-color);
+  color: var(--utrecht-radio-button-invalid-color);
+}

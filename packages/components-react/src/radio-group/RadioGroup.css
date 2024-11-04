@@ -1,0 +1,11 @@
+.lux-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lux-space-100);
+}
+
+.lux-radio-group__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lux-space-100);
+}

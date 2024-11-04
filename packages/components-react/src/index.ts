@@ -11,3 +11,5 @@ export {
   type LuxHeadingProps,
 } from './heading/Heading';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
+export { LuxRadioButton, type LuxRadioButtonProps } from './radio-button/RadioButton';
+export { LuxRadioGroup, type LuxRadioGroupProps } from './radio-group/RadioGroup';
