@@ -1,0 +1,26 @@
+{
+  "utrecht": {
+    "button-group": {
+      "background-color": {
+        "value": "{lux.color.none}",
+        "type": "color"
+      },
+      "column-gap": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.0}",
+        "type": "spacing"
+      },
+      "row-gap": {
+        "value": "{lux.space.100}",
+        "type": "spacing"
+      }
+    }
+  }
+}
