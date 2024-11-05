@@ -4,8 +4,8 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { PropsWithChildren, ReactNode } from 'react';
 
-export const LuxHeadingGroup = ({ children, ...restProps }: PropsWithChildren<HeadingGroupProps>): ReactNode => {
-  return <UtrechtHeadingGroup {...restProps}>{children}</UtrechtHeadingGroup>;
-};
+HeadingGroup.displayName = 'LuxHeadingGroup';
+
+export const LuxHeadingGroup = HeadingGroup;
 
 export type LuxHeadingGroupProps = HeadingGroupProps;
