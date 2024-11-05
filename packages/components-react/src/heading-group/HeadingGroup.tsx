@@ -1,11 +1,5 @@
-import {
-  type HeadingGroupProps,
-  HeadingGroup as UtrechtHeadingGroup,
-} from '@utrecht/component-library-react/dist/css-module';
-import { PropsWithChildren, ReactNode } from 'react';
+import { HeadingGroup, type HeadingGroupProps } from '@utrecht/component-library-react/dist/css-module';
 
 HeadingGroup.displayName = 'LuxHeadingGroup';
-
 export const LuxHeadingGroup = HeadingGroup;
-
 export type LuxHeadingGroupProps = HeadingGroupProps;

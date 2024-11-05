@@ -1,11 +1,6 @@
-import {
-  type PreHeadingProps,
-  PreHeading as UtrechtPreHeading,
-} from '@utrecht/component-library-react/dist/css-module';
-import { PropsWithChildren, ReactNode } from 'react';
+import { PreHeading, type PreHeadingProps } from '@utrecht/component-library-react/dist/css-module';
 
-export const LuxPreHeading = ({ children, ...restProps }: PropsWithChildren<PreHeadingProps>): ReactNode => {
-  return <UtrechtPreHeading {...restProps}>{children}</UtrechtPreHeading>;
-};
+PreHeading.displayName = 'LuxPreHeading';
+export const LuxPreHeading = PreHeading;
 
 export type LuxPreHeadingProps = PreHeadingProps;
