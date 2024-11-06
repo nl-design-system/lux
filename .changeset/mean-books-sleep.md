@@ -2,4 +2,5 @@
 "@lux-design-system/components-react": minor
 ---
 
-Nieuwe componenten: Radio Button, Radio Group
+Nieuw component: Radio Button
+Nieuw component: Radio Group
