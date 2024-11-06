@@ -27,7 +27,7 @@ export const INPUT_TYPES = {
 } as const;
 
 export type InputType = (typeof INPUT_TYPES)[keyof typeof INPUT_TYPES];
-type Direction = 'ltr' | 'rtl' | 'auto';
+export type Direction = 'ltr' | 'rtl' | 'auto';
 
 export interface LuxTextboxProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'type'> {
   type?: InputType;

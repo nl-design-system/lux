@@ -1,8 +1,9 @@
-import { LuxFormFieldTextbox } from '@lux-design-system/components-react';
+import { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
-// import { forwardRef, InputHTMLAttributes, PropsWithChildren } from 'react';
 import { BADGES } from '../../../config/preview';
+import FormFieldDescriptionMeta from '../form-field-description/form-field-description.stories';
+import FormFieldErrorMessageMeta from '../form-field-error-message/form-field-error-message.stories';
 import TextboxMeta from '../textbox/textbox.stories';
 
 const meta = {
@@ -12,22 +13,27 @@ const meta = {
   parameters: {
     badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
-    tokensPrefix: 'react-form-field',
+    tokensPrefix: 'utrecht-form-field-textbox',
   },
   argTypes: {
     ...TextboxMeta.argTypes,
-    // type: {
-    //   control: 'select',
-    //   options: ['text', 'checkbox', 'radio'],
-    //   description: 'The type of the form field',
-    // },
-    // invalid: {
-    //   control: 'boolean',
-    //   description: 'Whether the field is in an invalid state',
-    //   defaultValue: false,
-    // },
+    appearance: {
+      ...FormFieldDescriptionMeta.argTypes.appearance,
+    },
+    distanced: {
+      ...FormFieldErrorMessageMeta.argTypes.distanced,
+    },
+    disabled: {
+      type: 'boolean',
+    },
+    errorMessage: {
+      if: {
+        arg: 'invalid',
+        truthy: true,
+      },
+    },
   },
-} satisfies Meta<typeof LuxFormFieldTextbox>;
+} satisfies Meta<LuxFormFieldTextboxProps>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -35,16 +41,11 @@ type Story = StoryObj<typeof meta>;
 export const Playground: Story = {
   name: 'Playground',
   args: {
-    label: 'test',
-    description: '', // ReactNode;
-    errorMessage: '', // ReactNode;
-    inputDir: undefined, //TextboxProps['dir'];
-    inputRef: undefined, // Ref<HTMLInputElement>;
+    label: 'Form Field Textbox',
+    description: 'Textbox in een FormField',
+    errorMessage: 'Zo kan het ook een ErrorMessage hebben',
     invalid: false,
-    status: '', // ReactNode;
-    // appearance: undefined,
-    // children:
-    //   'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur lobortis aliquam lectus bibendum.',
+    appearance: undefined,
   },
   parameters: {
     docs: {
