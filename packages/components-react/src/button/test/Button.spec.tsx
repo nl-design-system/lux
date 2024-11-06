@@ -18,7 +18,6 @@ describe('Button', () => {
     });
     expect(button).toBeInTheDocument();
   });
-
   it('renders a small button', () => {
     render(<LuxButton label="LUX Button" size="small" />);
 

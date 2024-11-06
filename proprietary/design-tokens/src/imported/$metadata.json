@@ -52,6 +52,7 @@
     "nl/utrecht-radio-button",
     "nl/utrecht-select",
     "nl/utrecht-text-input",
+    "nl/utrecht-checkbox",
     "nl/utrecht-textarea"
   ]
 }
