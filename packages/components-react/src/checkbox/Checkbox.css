@@ -1,0 +1,27 @@
+.lux-checkbox .lux-checkbox__input:checked:focus {
+  border-color: var(--lux-checkbox-checked-focus-border-color);
+  background-color: var(--lux-checkbox-checked-focus-background-color);
+  color: var(--lux-checkbox-checked-focus-color);
+}
+
+.lux-checkbox .lux-checkbox__input:checked:hover {
+  border-color: var(--lux-checkbox-checked-hover-border-color);
+  background-color: var(--lux-checkbox-checked-hover-background-color);
+  color: var(--lux-checkbox-checked-hover-color);
+}
+
+.lux-checkbox .lux-checkbox__input:checked:active {
+  border-color: var(--lux-checkbox-checked-active-border-color);
+  background-color: var(--lux-checkbox-checked-active-background-color);
+  color: var(--lux-checkbox-checked-active-color);
+}
+
+.lux-checkbox .lux-checkbox__input:checked:disabled {
+  border-color: var(--lux-checkbox-checked-disabled-border-color);
+  background-color: var(--lux-checkbox-checked-disabled-background-color);
+  color: var(--lux-checkbox-checked-disabled-color);
+}
+
+.lux-checkbox .lux-checkbox__input--disabled {
+  cursor: not-allowed;
+}
