@@ -162,7 +162,97 @@
           "border-width": {
             "value": "2px",
             "type": "borderWidth"
+          }
+        },
+        "hover": {
+          "border-width": {
+            "value": "2px",
+            "type": "borderWidth"
+          }
+        },
+        "active": {
+          "border-width": {
+            "value": "1.5px",
+            "type": "borderWidth"
+          }
+        }
+      },
+      "indeterminate": {
+        "active": {
+          "border-width": {
+            "value": "1.5px",
+            "type": "borderWidth"
           },
+          "background-color": {
+            "value": "{lux.checkbox.checked.active.background-color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{lux.checkbox.checked.active.border-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{lux.checkbox.checked.active.color}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "border-width": {
+            "value": "2px",
+            "type": "borderWidth"
+          },
+          "background-color": {
+            "value": "{lux.checkbox.checked.hover.background-color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "transparent",
+            "type": "color"
+          },
+          "color": {
+            "value": "{lux.checkbox.checked.hover.color}",
+            "type": "color"
+          }
+        },
+        "focus": {
+          "border-width": {
+            "value": "2px",
+            "type": "borderWidth"
+          },
+          "background-color": {
+            "value": "{lux.checkbox.checked.focus.background-color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{lux.checkbox.checked.focus.border-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{lux.checkbox.checked.focus.color}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "value": "{lux.checkbox.checked.disabled.background-color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{lux.checkbox.checked.disabled.border-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{lux.checkbox.checked.disabled.color}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  },
+  "lux": {
+    "checkbox": {
+      "checked": {
+        "focus": {
           "background-color": {
             "value": "{utrecht.checkbox.checked.background-color}",
             "type": "color"
@@ -177,10 +267,6 @@
           }
         },
         "hover": {
-          "border-width": {
-            "value": "2px",
-            "type": "borderWidth"
-          },
           "background-color": {
             "value": "{lux.color.brand.hover}",
             "type": "color"
@@ -195,10 +281,6 @@
           }
         },
         "active": {
-          "border-width": {
-            "value": "1.5px",
-            "type": "borderWidth"
-          },
           "background-color": {
             "value": "{lux.color.brand.hover}",
             "type": "color"
@@ -223,76 +305,6 @@
           },
           "color": {
             "value": "{lux.color.foreground.subdued}",
-            "type": "color"
-          }
-        }
-      },
-      "indeterminate": {
-        "active": {
-          "border-width": {
-            "value": "1.5px",
-            "type": "borderWidth"
-          },
-          "background-color": {
-            "value": "{todo.checkbox.checked.active.background-color}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{todo.checkbox.checked.active.border-color}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{todo.checkbox.checked.active.color}",
-            "type": "color"
-          }
-        },
-        "hover": {
-          "border-width": {
-            "value": "2px",
-            "type": "borderWidth"
-          },
-          "background-color": {
-            "value": "{todo.checkbox.checked.hover.background-color}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "transparent",
-            "type": "color"
-          },
-          "color": {
-            "value": "{todo.checkbox.checked.hover.color}",
-            "type": "color"
-          }
-        },
-        "focus": {
-          "border-width": {
-            "value": "2px",
-            "type": "borderWidth"
-          },
-          "background-color": {
-            "value": "{todo.checkbox.checked.focus.background-color}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{todo.checkbox.checked.focus.border-color}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{todo.checkbox.checked.focus.color}",
-            "type": "color"
-          }
-        },
-        "disabled": {
-          "background-color": {
-            "value": "{todo.checkbox.checked.disabled.background-color}",
-            "type": "color"
-          },
-          "border-color": {
-            "value": "{todo.checkbox.checked.disabled.border-color}",
-            "type": "color"
-          },
-          "color": {
-            "value": "{todo.checkbox.checked.disabled.color}",
             "type": "color"
           }
         }
