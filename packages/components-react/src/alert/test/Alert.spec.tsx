@@ -70,7 +70,7 @@ describe('Alert', () => {
 
   it('can have an additional class name', () => {
     const { container } = render(
-      <LuxAlert type="info" className="eva-alert">
+      <LuxAlert type="info" className="custom-alert">
         <LuxHeading1>Heading</LuxHeading1>
         <LuxParagraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis massa lorem. Ut laoreet varius rhoncus.
@@ -80,7 +80,7 @@ describe('Alert', () => {
 
     const alert = container.querySelector(':only-child');
 
-    expect(alert).toHaveClass('eva-alert');
+    expect(alert).toHaveClass('custom-alert');
 
     expect(alert).toHaveClass('lux-alert');
   });

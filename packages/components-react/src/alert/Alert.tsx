@@ -5,49 +5,48 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import './Alert.css';
 
+type AlertType = Exclude<UtrechtAlertType, 'ok'> | 'success';
+
 export interface LuxAlertProps extends Omit<UtrechtAlertProps, 'type'> {
   type: AlertType;
 }
+
 //TODO replace icons in #308
 const InfoIcon = () => (
   <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="blue" />
+    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-info-color)" />
   </svg>
 );
 const SuccessIcon = () => (
   <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="green" />
+    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-ok-color)" />
   </svg>
 );
 const WarningIcon = () => (
   <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="#FFB612" />
+    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-warning-color)" />
   </svg>
 );
 const ErrorIcon = () => (
   <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="red" />
+    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-error-color)" />
   </svg>
 );
-
-type AlertType = Exclude<UtrechtAlertType, 'ok'> | 'success';
 
 export const LuxAlert = (props: LuxAlertProps) => {
   const { children, type, className, ...otherProps } = props;
   const utrechtAlertType: UtrechtAlertType = type === 'success' ? 'ok' : type;
 
-  const icon =
-    type === 'info' ? (
-      <InfoIcon />
-    ) : type === 'success' ? (
-      <SuccessIcon />
-    ) : type === 'warning' ? (
-      <WarningIcon />
-    ) : type === 'error' ? (
-      <ErrorIcon />
-    ) : (
-      <></>
-    );
+  const icons = {
+    info: InfoIcon,
+    success: SuccessIcon,
+    warning: WarningIcon,
+    error: ErrorIcon,
+  };
+
+  const Icon = icons[type];
+  const icon = Icon ? <Icon /> : <></>;
+
   return (
     <UtrechtAlert
       type={utrechtAlertType}
