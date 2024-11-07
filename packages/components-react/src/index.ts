@@ -1,3 +1,4 @@
+export { LuxAlert, type LuxAlertProps } from './alert/Alert';
 export { LuxButton, type LuxButtonProps } from './button/Button';
 export { LuxDocument, type LuxDocumentProps } from './document/Document';
 export {
@@ -13,3 +14,4 @@ export {
 export { LuxHeadingGroup, type LuxHeadingGroupProps } from './heading-group/HeadingGroup';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
 export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading';
+export { LuxSection, type LuxSectionProps } from './section/Section';
