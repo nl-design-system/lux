@@ -2,9 +2,9 @@ import {
   RadioButton as UtrechtRadioButton,
   type RadioButtonProps as UtrechtRadioButtonProps,
 } from '@utrecht/component-library-react/dist/css-module';
-import './RadioButton.css';
 import clsx from 'clsx';
-import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
+import './RadioButton.css';
+import { ForwardedRef, forwardRef, PropsWithChildren, useId } from 'react';
 
 export type LuxRadioButtonProps = UtrechtRadioButtonProps & {
   invalid?: boolean;
@@ -13,9 +13,10 @@ export type LuxRadioButtonProps = UtrechtRadioButtonProps & {
   checked?: boolean;
 };
 
-const CLASSNAME: { [key: string]: string } = {
-  disabled: 'lux-radio-button--disabled',
-  invalid: 'lux-radio-button--invalid',
+const CLASSNAME = {
+  container: 'lux-radio-button__container',
+  button: 'lux-radio-button',
+  label: 'utrecht-form-label',
 };
 
 export const LuxRadioButton = forwardRef(
@@ -25,28 +26,20 @@ export const LuxRadioButton = forwardRef(
       required,
       className,
       invalid,
-      value,
       name,
       label,
       id,
       checked,
+      value,
       ...restProps
     }: PropsWithChildren<LuxRadioButtonProps>,
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
-    const radioId = id || `${name}-${value}`;
-
-    const combinedClassName = clsx(
-      'lux-radio-button',
-      {
-        [CLASSNAME.disabled]: disabled,
-        [CLASSNAME.invalid]: invalid,
-      },
-      className,
-    );
+    const radioId = id || useId();
+    const combinedClassName = clsx(CLASSNAME.button, className);
 
     return (
-      <div className="lux-radio-button__container">
+      <div className={CLASSNAME.container}>
         <UtrechtRadioButton
           ref={ref}
           aria-invalid={invalid || undefined}
@@ -59,11 +52,12 @@ export const LuxRadioButton = forwardRef(
           checked={checked}
           {...restProps}
         />
-        <label className="lux-radio-button__label" htmlFor={radioId}>
+        <label className={CLASSNAME.label} htmlFor={radioId}>
           {label}
         </label>
       </div>
     );
   },
 );
+
 LuxRadioButton.displayName = 'LuxRadioButton';

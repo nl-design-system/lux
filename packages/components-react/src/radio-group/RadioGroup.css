@@ -1,11 +1,15 @@
 .lux-radio-group {
   display: flex;
+  row-gap: var(--lux-radio-group-row-gap);
   flex-direction: column;
-  gap: var(--lux-space-100);
 }
 
 .lux-radio-group__options {
   display: flex;
+  row-gap: var(--lux-radio-group-row-gap);
   flex-direction: column;
-  gap: var(--lux-space-100);
+}
+
+.lux-radio-group__fieldset {
+  border: 0;
 }

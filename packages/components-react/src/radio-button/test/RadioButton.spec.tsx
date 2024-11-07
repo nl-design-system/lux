@@ -24,7 +24,7 @@ describe('RadioButton', () => {
 
     const radio = screen.getByRole('radio');
     expect(radio).toBeDisabled();
-    expect(radio).toHaveClass('lux-radio-button--disabled');
+    expect(radio).toHaveClass('utrecht-radio-button--disabled');
   });
 
   it('renders an invalid radio button', () => {
@@ -32,11 +32,10 @@ describe('RadioButton', () => {
 
     const radio = screen.getByRole('radio');
     expect(radio).toHaveAttribute('aria-invalid', 'true');
-    expect(radio).toHaveClass('lux-radio-button--invalid');
   });
 
   it('renders a checked radio button', () => {
-    render(<LuxRadioButton {...defaultProps} checked />);
+    render(<LuxRadioButton {...defaultProps} defaultChecked />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toBeChecked();
@@ -50,11 +49,24 @@ describe('RadioButton', () => {
     expect(radio).toHaveAttribute('id', customId);
   });
 
-  it('generates id from name and value when not provided', () => {
+  it('generates unique id and maintains label association', () => {
     render(<LuxRadioButton {...defaultProps} />);
 
     const radio = screen.getByRole('radio');
-    expect(radio).toHaveAttribute('id', 'test-radio-option1');
+    const label = screen.getByText('Test Option');
+
+    expect(radio).toHaveAttribute('id');
+
+    const radioId = radio.getAttribute('id');
+    expect(label).toHaveAttribute('for', radioId);
+  });
+
+  it('uses provided id when specified', () => {
+    const customId = 'custom-radio-id';
+    render(<LuxRadioButton {...defaultProps} id={customId} />);
+
+    const radio = screen.getByRole('radio');
+    expect(radio).toHaveAttribute('id', customId);
   });
 
   it('applies additional className when provided', () => {

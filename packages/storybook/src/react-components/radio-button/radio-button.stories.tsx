@@ -45,13 +45,6 @@ const meta = {
         category: 'HTML attribute',
       },
     },
-    value: {
-      description: 'Input value',
-      control: 'text',
-      table: {
-        category: 'HTML attribute',
-      },
-    },
     // Hide other HTML attributes from controls
     name: {
       table: {
@@ -78,7 +71,6 @@ export default meta;
 
 const RadioButtonTemplate: Story = {
   args: {
-    value: 'option1',
     label: 'Option 1',
     name: 'radio-group',
   },

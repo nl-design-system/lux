@@ -16,8 +16,6 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation";
 
 ## Gebruik
 
-### Uncontrolled (Basic Usage)
-
 ```tsx
 <LuxRadioGroup
   name="contact"
@@ -28,24 +26,6 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation";
     { value: "mail", label: "Post" },
   ]}
 />
-```
-
-### Controlled (With State Management)
-
-```tsx
-const [selectedValue, setSelectedValue] = useState("");
-
-<LuxRadioGroup
-  name="contact"
-  label="Voorkeur contactmethode"
-  options={[
-    { value: "email", label: "E-mail" },
-    { value: "phone", label: "Telefoon" },
-    { value: "mail", label: "Post" },
-  ]}
-  value={selectedValue}
-  onChange={setSelectedValue}
-/>;
 ```
 
 ## Playground
@@ -62,12 +42,6 @@ Experimenteer met de verschillende properties van de RadioGroup component.
 Standaard weergave van een radio group zonder voorgeselecteerde waarde.
 
 <Canvas of={RadioGroupStories.Default} />
-
-### Controlled
-
-Voorbeeld van een radio group met React state management. De waarde wordt beheerd door de parent component.
-
-<Canvas of={RadioGroupStories.Controlled} />
 
 ### Required
 
