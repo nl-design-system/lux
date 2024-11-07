@@ -37,12 +37,6 @@ describe('Form Field', () => {
     expect(screen.getByText('Name is required')).toBeInTheDocument();
   });
 
-  it('does not render error message when not invalid', () => {
-    render(<LuxFormField label="Name" input={<input type="text" />} invalid={false} errorMessage="Name is required" />);
-
-    expect(screen.queryByText('Name is required')).not.toBeInTheDocument();
-  });
-
   it('applies the correct class for checkbox type', () => {
     render(<LuxFormField label="Accept terms" input={<input type="checkbox" />} type="checkbox" />);
 

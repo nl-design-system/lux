@@ -62,7 +62,7 @@ export const LuxFormFieldTextbox = ({
 
   // TODO: naar utils
   function pick<T extends object, U extends keyof T>(obj: T, paths: Array<U>): Pick<T, U> {
-    const ret = Object.create(null);
+    const ret = {} as Pick<T, U>;
     for (const k of paths) {
       ret[k] = obj[k];
     }
@@ -91,6 +91,8 @@ export const LuxFormFieldTextbox = ({
     'onChange',
   ]);
 
+  const formFieldAttrs = pick(restProps, ['children']);
+
   return (
     <LuxFormField
       label={labelNode}
@@ -114,7 +116,7 @@ export const LuxFormFieldTextbox = ({
         />
       }
       className={className}
-      {...restProps}
+      {...formFieldAttrs}
     />
   );
 };
