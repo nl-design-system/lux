@@ -2,8 +2,6 @@
 "@lux-design-system/design-tokens": minor
 ---
 
-In deze commit
-
 - Nieuwe tokens: utrecht common pointer target
 - Nieuwe tokens: utrecht component form field
 - Nieuwe tokens: utrecht component form field description
