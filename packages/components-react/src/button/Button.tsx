@@ -25,7 +25,7 @@ const ICON_POSITIONS: { [key: string]: string } = {
 export const LuxButton = (props: LuxButtonProps) => {
   const { size, icon: iconNode, iconPosition, ...otherProps } = props;
 
-  const className = `lux-button ${size !== undefined ? SIZE_CLASSNAME[size] : ''}`;
+  const className = `lux-button ${size !== undefined ? SIZE_CLASSNAME[size] : ''} ${otherProps.className || ''}`;
 
   const positionedIcon = React.Children.map(iconNode, (iconElement) => {
     if (!iconElement) {
