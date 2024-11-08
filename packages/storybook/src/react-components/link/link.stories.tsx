@@ -12,9 +12,24 @@ const meta = {
     tokens,
     tokensPrefix: 'utrecht-link',
   },
+  args: {
+    children: 'Read more',
+    href: '#',
+  },
   argTypes: {
     external: {
       description: 'External link indicator',
+      control: 'boolean',
+    },
+    placeholder: {
+      description: 'Shows link in placeholder/loading state',
+      control: 'boolean',
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
+    openInNewTab: {
+      description: 'Controls whether the link opens in a new tab',
       control: 'boolean',
     },
     href: {
@@ -36,6 +51,15 @@ const meta = {
         type: {
           summary: 'HTML Content',
         },
+      },
+    },
+    iconPosition: {
+      description: 'Position of the icon relative to the text',
+      control: 'radio',
+      options: ['start', 'end'],
+      table: {
+        type: { summary: 'start | end' },
+        defaultValue: { summary: 'start' },
       },
     },
   },
@@ -60,9 +84,9 @@ const ExampleIcon = (
 
 const LinkTemplate: Story = {
   args: {
-    href: '#',
-    children: 'Link text',
     external: false,
+    openInNewTab: false,
+    placeholder: false,
     icon: undefined,
     iconPosition: undefined,
   },
@@ -82,10 +106,6 @@ export const Playground: Story = {
 
 export const Hover: Story = {
   name: 'Hover',
-  args: {
-    href: '#',
-    children: 'Hover Link',
-  },
   parameters: {
     pseudo: { hover: true },
   },
@@ -93,32 +113,50 @@ export const Hover: Story = {
 
 export const Active: Story = {
   name: 'Active',
-  args: {
-    href: '#',
-    children: 'Active Link',
-  },
   parameters: {
     pseudo: { active: true },
+  },
+};
+export const Visisted: Story = {
+  name: 'Visited',
+  parameters: {
+    pseudo: { visited: true },
   },
 };
 
 export const Focus: Story = {
   name: 'Focus',
-  args: {
-    href: '#',
-    children: 'Focus Link',
-  },
   parameters: {
-    pseudo: { focus: true, focusVisible: true },
+    pseudo: { focus: true },
   },
 };
 
+export const FocusVisible: Story = {
+  name: 'Focus Visible',
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
+};
+
+export const Placeholder: Story = {
+  name: 'Placeholder',
+  args: {
+    placeholder: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Link in placeholder/loading state, useful for loading states or progressive enhancement.',
+      },
+    },
+  },
+};
 export const External: Story = {
   name: 'External',
   args: {
-    href: 'https://example.com',
+    href: 'https://google.com',
     external: true,
-    children: 'External Link',
+    openInNewTab: true,
   },
   parameters: {
     docs: {
@@ -132,9 +170,7 @@ export const External: Story = {
 export const LinkWithIcon: Story = {
   name: 'Link with Icon',
   args: {
-    href: '#',
     icon: ExampleIcon,
-    children: 'Link with Icon',
   },
   parameters: {
     docs: {
@@ -148,10 +184,8 @@ export const LinkWithIcon: Story = {
 export const LinkWithIconStart: Story = {
   name: 'Link with Icon at Start',
   args: {
-    href: '#',
     icon: ExampleIcon,
     iconPosition: 'start',
-    children: 'Link with Start Icon',
   },
   parameters: {
     docs: {
@@ -165,10 +199,8 @@ export const LinkWithIconStart: Story = {
 export const LinkWithIconEnd: Story = {
   name: 'Link with Icon at End',
   args: {
-    href: '#',
     icon: ExampleIcon,
     iconPosition: 'end',
-    children: 'Link with End Icon',
   },
   parameters: {
     docs: {
