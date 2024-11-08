@@ -1,6 +1,6 @@
 import {
-  Select as UtrechtSelect,
-  SelectOption as UtrechtSelectOption,
+  Select,
+  SelectOption,
   type SelectOptionProps as UtrechtSelectOptionProps,
   type SelectProps as UtrechtSelectProps,
 } from '@utrecht/component-library-react/dist/css-module';
@@ -8,5 +8,8 @@ import {
 export type LuxSelectProps = UtrechtSelectProps;
 export type LuxSelectOptionProps = UtrechtSelectOptionProps;
 
-export const LuxSelect = UtrechtSelect;
-export const LuxSelectOption = UtrechtSelectOption;
+Select.displayName = 'LuxSelect';
+SelectOption.displayName = 'LuxSelectOption';
+
+export const LuxSelect = Select;
+export const LuxSelectOption = SelectOption;

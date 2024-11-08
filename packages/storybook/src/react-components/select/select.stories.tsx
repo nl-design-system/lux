@@ -43,13 +43,11 @@ const SelectTemplate: Story = {
   args: {},
   render: ({ ...args }) => (
     <LuxSelect {...args}>
-      {selectOptions &&
-        selectOptions.length > 0 &&
-        selectOptions.map(({ label, value, disabled }, index) => (
-          <LuxSelectOption key={index} value={value} disabled={disabled}>
-            {label}
-          </LuxSelectOption>
-        ))}
+      {selectOptions.map(({ label, value, disabled }, index) => (
+        <LuxSelectOption key={index} value={value} disabled={disabled}>
+          {label}
+        </LuxSelectOption>
+      ))}
     </LuxSelect>
   ),
 };
