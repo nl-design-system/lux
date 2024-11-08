@@ -2,6 +2,8 @@ import { LuxButton } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
+import tokensDefinition from '@utrecht/button-css/src/tokens.json';
+import { createDesignTokensStory } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -12,6 +14,7 @@ const meta = {
   subcomponents: {},
   parameters: {
     tokens,
+    tokensDefinition,
     tokensPrefix: 'utrecht-button',
   },
   argTypes: {
@@ -29,6 +32,11 @@ const meta = {
       description: 'Icon Position modifier',
       control: 'select',
       options: [undefined, 'start', 'end'],
+      table: {
+        defaultValue: {
+          summary: 'start',
+        },
+      },
     },
     busy: {
       description: 'Busy indicator',
@@ -40,16 +48,16 @@ const meta = {
     },
     icon: {
       description: 'Icon Node',
-      control: 'object',
+      control: 'boolean',
       table: {
         type: {
           summary: 'HTML Content',
+          detail: 'Use the boolean switch to show an Icon',
         },
       },
     },
     label: {
       description: 'Label Node',
-      control: 'object',
       table: {
         type: {
           summary: 'HTML Content',
@@ -76,9 +84,13 @@ const ButtonTemplate: Story = {
     icon: undefined,
     pressed: false,
     busy: false,
-    label: 'Klik hier!',
+    label: 'Button',
   },
-  render: ({ ...args }) => <LuxButton {...args}>{args['children']}</LuxButton>,
+  render: ({ icon, children, ...args }: { icon: boolean; children: any; args: unknown }) => (
+    <LuxButton icon={icon ? ExampleIcon : null} {...args}>
+      {children}
+    </LuxButton>
+  ),
 };
 
 const AllButtonVariantsTemplate: Story = {
@@ -114,19 +126,6 @@ export const Playground: Story = {
     },
   },
   tags: ['!autodocs'],
-};
-
-export const SmallButton: Story = {
-  ...ButtonTemplate,
-  args: {
-    ...ButtonTemplate.args,
-    size: 'small',
-  },
-  parameters: {
-    docs: {
-      sourceState: 'shown',
-    },
-  },
 };
 
 export const Primary: Story = {
@@ -169,6 +168,22 @@ export const Tertiary: Story = {
     docs: {
       description: {
         story: 'De Tertiary styling zet je met `appearance="subtle-button"`',
+      },
+    },
+  },
+};
+
+export const SmallButton: Story = {
+  ...ButtonTemplate,
+  args: {
+    ...ButtonTemplate.args,
+    label: 'Small button',
+    size: 'small',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Een kleine variant zet je met `size="small"`.',
       },
     },
   },
@@ -226,8 +241,8 @@ export const Busy: Story = {
   parameters: {
     docs: {
       description: {
-        story:
-          'Een busy button zet je met het `busy`-attribute (`true`/`false`, default: `undefined`). Toont een `wait` cursor en `aria-busy`-attribute.',
+        story: `Een busy button zet je met het \`busy\`-attribute (\`true\`/\`false\`, default: \`undefined\`). Toont een \`wait\` cursor en \`aria-busy\`-attribute. Dit gebruik je 
+          bijvoorbeeld als een gebruiker met een knop een actie in gang zet die langer kan duren, zoals een download.`,
       },
     },
   },
@@ -253,6 +268,16 @@ export const Toggle: Story = {
       </LuxButton>
     );
   },
+  argTypes: {
+    pressed: {
+      control: 'boolean',
+    },
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -267,6 +292,7 @@ export const ButtonWithIconAtPositionStart: Story = {
   ...ButtonTemplate,
   args: {
     ...ButtonTemplate.args,
+    label: 'Icon at start',
     icon: ExampleIcon,
     iconPosition: 'start',
   },
@@ -281,6 +307,7 @@ export const ButtonWithIconAtPositionEnd: Story = {
   ...ButtonTemplate,
   args: {
     ...ButtonTemplate.args,
+    label: 'Icon at end',
     icon: ExampleIcon,
     iconPosition: 'end',
   },
@@ -290,3 +317,7 @@ export const ButtonWithIconAtPositionEnd: Story = {
     },
   },
 };
+
+export const DesignTokens = createDesignTokensStory(meta);
+
+// TODO: vis regr
