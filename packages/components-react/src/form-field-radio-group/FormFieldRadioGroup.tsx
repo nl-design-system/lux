@@ -1,6 +1,7 @@
+'use client';
 import { ForwardedRef, forwardRef, useId, useState } from 'react';
-import './RadioGroup.css';
-import { LuxRadioButton } from '../radio-button/RadioButton';
+import './FormFieldRadioGroup.css';
+import { LuxFormFieldRadioOption } from '../form-field-radio-button/FormFieldRadioOption';
 
 interface RadioOption {
   value: string;
@@ -9,7 +10,7 @@ interface RadioOption {
   [key: string]: any;
 }
 
-export interface LuxRadioGroupProps {
+export interface LuxFormFieldRadioGroupProps {
   name: string;
   label: string;
   description?: string;
@@ -31,7 +32,7 @@ const CLASSNAME: { [key: string]: string } = {
   error: 'utrecht-form-field-error-message',
 };
 
-export const LuxRadioGroup = forwardRef(
+export const LuxFormFieldRadioGroup = forwardRef(
   (
     {
       name,
@@ -44,7 +45,7 @@ export const LuxRadioGroup = forwardRef(
       errorMessage = '',
       className,
       onChange,
-    }: LuxRadioGroupProps,
+    }: LuxFormFieldRadioGroupProps,
     ref: ForwardedRef<HTMLFieldSetElement>,
   ) => {
     const uniqueId = useId();
@@ -102,7 +103,7 @@ export const LuxRadioGroup = forwardRef(
             const optionId = `${uniqueId}-${optionValue}`;
 
             return (
-              <LuxRadioButton
+              <LuxFormFieldRadioOption
                 key={optionId}
                 id={optionId}
                 name={name}
@@ -124,4 +125,4 @@ export const LuxRadioGroup = forwardRef(
   },
 );
 
-LuxRadioGroup.displayName = 'LuxRadioGroup';
+LuxFormFieldRadioGroup.displayName = 'LuxFormFieldRadioGroup';

@@ -1,11 +1,11 @@
-import { LuxRadioGroup } from '@lux-design-system/components-react';
+import { LuxFormFieldRadioGroup } from '@lux-design-system/components-react';
 import { Meta, StoryObj } from '@storybook/react';
 
 type Story = StoryObj<typeof meta>;
 
 const meta = {
   title: 'React Components/Radio Group',
-  component: LuxRadioGroup,
+  component: LuxFormFieldRadioGroup,
   subcomponents: {},
   args: {
     name: 'contact-default',
@@ -89,7 +89,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof LuxRadioGroup>;
+} satisfies Meta<typeof LuxFormFieldRadioGroup>;
 
 export default meta;
 

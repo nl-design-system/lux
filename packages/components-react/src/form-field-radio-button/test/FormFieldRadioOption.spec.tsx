@@ -1,8 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
-import { LuxRadioButton } from '../RadioButton';
+import { LuxFormFieldRadioOption } from '../FormFieldRadioOption';
 
-describe('RadioButton', () => {
+describe('FormFieldRadioOption', () => {
   const defaultProps = {
     name: 'test-radio',
     value: 'option1',
@@ -10,7 +10,7 @@ describe('RadioButton', () => {
   };
 
   it('renders a radio button with label', () => {
-    render(<LuxRadioButton {...defaultProps} />);
+    render(<LuxFormFieldRadioOption {...defaultProps} />);
 
     const radio = screen.getByRole('radio', {
       name: 'Test Option',
@@ -20,7 +20,7 @@ describe('RadioButton', () => {
   });
 
   it('renders a disabled radio button', () => {
-    render(<LuxRadioButton {...defaultProps} disabled />);
+    render(<LuxFormFieldRadioOption {...defaultProps} disabled />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toBeDisabled();
@@ -28,14 +28,14 @@ describe('RadioButton', () => {
   });
 
   it('renders an invalid radio button', () => {
-    render(<LuxRadioButton {...defaultProps} invalid />);
+    render(<LuxFormFieldRadioOption {...defaultProps} invalid />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toHaveAttribute('aria-invalid', 'true');
   });
 
   it('renders a checked radio button', () => {
-    render(<LuxRadioButton {...defaultProps} defaultChecked />);
+    render(<LuxFormFieldRadioOption {...defaultProps} defaultChecked />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toBeChecked();
@@ -43,14 +43,14 @@ describe('RadioButton', () => {
 
   it('uses custom id when provided', () => {
     const customId = 'custom-radio-id';
-    render(<LuxRadioButton {...defaultProps} id={customId} />);
+    render(<LuxFormFieldRadioOption {...defaultProps} id={customId} />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toHaveAttribute('id', customId);
   });
 
   it('generates unique id and maintains label association', () => {
-    render(<LuxRadioButton {...defaultProps} />);
+    render(<LuxFormFieldRadioOption {...defaultProps} />);
 
     const radio = screen.getByRole('radio');
     const label = screen.getByText('Test Option');
@@ -63,21 +63,21 @@ describe('RadioButton', () => {
 
   it('uses provided id when specified', () => {
     const customId = 'custom-radio-id';
-    render(<LuxRadioButton {...defaultProps} id={customId} />);
+    render(<LuxFormFieldRadioOption {...defaultProps} id={customId} />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toHaveAttribute('id', customId);
   });
 
   it('applies additional className when provided', () => {
-    render(<LuxRadioButton {...defaultProps} className="custom-class" />);
+    render(<LuxFormFieldRadioOption {...defaultProps} className="custom-class" />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toHaveClass('lux-radio-button', 'custom-class');
   });
 
   it('renders a required radio button', () => {
-    render(<LuxRadioButton {...defaultProps} required />);
+    render(<LuxFormFieldRadioOption {...defaultProps} required />);
 
     const radio = screen.getByRole('radio');
     expect(radio).toHaveAttribute('required');

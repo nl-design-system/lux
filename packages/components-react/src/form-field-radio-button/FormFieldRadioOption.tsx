@@ -3,10 +3,11 @@ import {
   type RadioButtonProps as UtrechtRadioButtonProps,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import './RadioButton.css';
+import './FormFieldRadioOption.css';
 import { ForwardedRef, forwardRef, PropsWithChildren, useId } from 'react';
+import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
 
-export type LuxRadioButtonProps = UtrechtRadioButtonProps & {
+export type LuxFormFieldRadioOptionProps = UtrechtRadioButtonProps & {
   invalid?: boolean;
   name: string;
   label: string;
@@ -16,10 +17,9 @@ export type LuxRadioButtonProps = UtrechtRadioButtonProps & {
 const CLASSNAME = {
   container: 'lux-radio-button__container',
   button: 'lux-radio-button',
-  label: 'utrecht-form-label',
 };
 
-export const LuxRadioButton = forwardRef(
+export const LuxFormFieldRadioOption = forwardRef(
   (
     {
       disabled,
@@ -32,7 +32,7 @@ export const LuxRadioButton = forwardRef(
       checked,
       value,
       ...restProps
-    }: PropsWithChildren<LuxRadioButtonProps>,
+    }: PropsWithChildren<LuxFormFieldRadioOptionProps>,
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
     const radioId = id || useId();
@@ -52,12 +52,12 @@ export const LuxRadioButton = forwardRef(
           checked={checked}
           {...restProps}
         />
-        <label className={CLASSNAME.label} htmlFor={radioId}>
+        <LuxFormFieldLabel htmlFor={radioId} type="radio">
           {label}
-        </label>
+        </LuxFormFieldLabel>
       </div>
     );
   },
 );
 
-LuxRadioButton.displayName = 'LuxRadioButton';
+LuxFormFieldRadioOption.displayName = 'LuxFormFieldRadioOption';

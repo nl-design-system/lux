@@ -25,7 +25,10 @@ export {
 export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
 export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
-export { LuxRadioButton, type LuxRadioButtonProps } from './radio-button/RadioButton';
-export { LuxRadioGroup, type LuxRadioGroupProps } from './radio-group/RadioGroup';
+export {
+  LuxFormFieldRadioOption,
+  type LuxFormFieldRadioOptionProps,
+} from './form-field-radio-button/FormFieldRadioOption';
+export { LuxFormFieldRadioGroup, type LuxFormFieldRadioGroupProps } from './form-field-radio-group/FormFieldRadioGroup';
 export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading';
 export { LuxSection, type LuxSectionProps } from './section/Section';

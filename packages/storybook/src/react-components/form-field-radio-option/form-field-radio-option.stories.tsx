@@ -1,4 +1,4 @@
-import { LuxRadioButton } from '@lux-design-system/components-react';
+import { LuxFormFieldRadioOption } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -7,7 +7,7 @@ type Story = StoryObj<typeof meta>;
 const meta = {
   title: 'React Components/Radio Button',
   id: 'react-components-radio-button',
-  component: LuxRadioButton,
+  component: LuxFormFieldRadioOption,
   subcomponents: {},
   parameters: {
     tokens,
@@ -65,7 +65,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof LuxRadioButton>;
+} satisfies Meta<typeof LuxFormFieldRadioOption>;
 
 export default meta;
 

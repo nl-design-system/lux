@@ -1,8 +1,8 @@
 import { describe, expect, it, jest } from '@jest/globals';
 import { fireEvent, render, screen } from '@testing-library/react';
-import { LuxRadioGroup } from '../RadioGroup';
+import { LuxFormFieldRadioGroup } from '../FormFieldRadioGroup';
 
-describe('RadioGroup', () => {
+describe('FormFieldRadioGroup', () => {
   const defaultProps = {
     name: 'test-group',
     label: 'Test Group',
@@ -14,21 +14,21 @@ describe('RadioGroup', () => {
   };
 
   it('renders radio group with options', () => {
-    render(<LuxRadioGroup {...defaultProps} />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} />);
 
-    const radioGroup = screen.getByRole('radiogroup', { name: 'Test Group' });
-    expect(radioGroup).toBeInTheDocument();
+    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup', { name: 'Test Group' });
+    expect(FormFieldRadioGroup).toBeInTheDocument();
 
     const options = screen.getAllByRole('radio');
     expect(options).toHaveLength(3);
   });
 
   it('renders radio group with custom className', () => {
-    render(<LuxRadioGroup {...defaultProps} className="custom-class" />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} className="custom-class" />);
 
-    const radioGroup = screen.getByRole('radiogroup');
+    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup');
 
-    const elements = radioGroup.getElementsByClassName('custom-class');
+    const elements = FormFieldRadioGroup.getElementsByClassName('custom-class');
     expect(elements.length).toBeGreaterThan(0);
   });
 
@@ -41,7 +41,7 @@ describe('RadioGroup', () => {
       ],
     };
 
-    render(<LuxRadioGroup {...propsWithDisabled} />);
+    render(<LuxFormFieldRadioGroup {...propsWithDisabled} />);
 
     const disabledOption = screen.getByRole('radio', { name: 'Option 1' });
     const enabledOption = screen.getByRole('radio', { name: 'Option 2' });
@@ -51,7 +51,7 @@ describe('RadioGroup', () => {
   });
 
   it('renders invalid state for all radio buttons', () => {
-    render(<LuxRadioGroup {...defaultProps} invalid />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} invalid />);
 
     const options = screen.getAllByRole('radio');
     options.forEach((option) => {
@@ -60,10 +60,10 @@ describe('RadioGroup', () => {
   });
 
   it('renders required state', () => {
-    render(<LuxRadioGroup {...defaultProps} required />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} required />);
 
-    const radioGroup = screen.getByRole('radiogroup');
-    expect(radioGroup).toHaveAttribute('aria-required', 'true');
+    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup');
+    expect(FormFieldRadioGroup).toHaveAttribute('aria-required', 'true');
 
     const options = screen.getAllByRole('radio');
     options.forEach((option) => {
@@ -72,14 +72,14 @@ describe('RadioGroup', () => {
   });
 
   it('renders with controlled value', () => {
-    render(<LuxRadioGroup {...defaultProps} value="option2" />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} value="option2" />);
 
     const selectedOption = screen.getByRole('radio', { name: 'Option 2' });
     expect(selectedOption).toBeChecked();
   });
 
   it('handles uncontrolled state correctly', () => {
-    render(<LuxRadioGroup {...defaultProps} />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} />);
 
     const option1 = screen.getByRole('radio', { name: 'Option 1' });
     const option2 = screen.getByRole('radio', { name: 'Option 2' });
@@ -101,7 +101,7 @@ describe('RadioGroup', () => {
 
   it('calls onChange with selected value', () => {
     const onChange = jest.fn();
-    render(<LuxRadioGroup {...defaultProps} onChange={onChange} />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} onChange={onChange} />);
 
     const option = screen.getByRole('radio', { name: 'Option 1' });
     fireEvent.click(option);
@@ -110,7 +110,7 @@ describe('RadioGroup', () => {
   });
 
   it('generates unique ids for options', () => {
-    render(<LuxRadioGroup {...defaultProps} />);
+    render(<LuxFormFieldRadioGroup {...defaultProps} />);
 
     const options = screen.getAllByRole('radio');
 
@@ -127,14 +127,14 @@ describe('RadioGroup', () => {
     });
   });
 
-  it('associates legend with radiogroup through aria-labelledby', () => {
-    render(<LuxRadioGroup {...defaultProps} />);
+  it('associates legend with FormFieldRadioGroup through aria-labelledby', () => {
+    render(<LuxFormFieldRadioGroup {...defaultProps} />);
 
-    const radioGroup = screen.getByRole('radiogroup');
+    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup');
     const legend = screen.getByText(defaultProps.label);
 
     // Get the generated aria-labelledby value
-    const labelledById = radioGroup.getAttribute('aria-labelledby');
+    const labelledById = FormFieldRadioGroup.getAttribute('aria-labelledby');
 
     // Verify the relationship exists
     expect(labelledById).toBeTruthy();
