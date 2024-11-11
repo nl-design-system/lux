@@ -16,8 +16,8 @@ describe('FormFieldRadioGroup', () => {
   it('renders radio group with options', () => {
     render(<LuxFormFieldRadioGroup {...defaultProps} />);
 
-    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup', { name: 'Test Group' });
-    expect(FormFieldRadioGroup).toBeInTheDocument();
+    const radioGroup = screen.getByRole('radiogroup', { name: 'Test Group' });
+    expect(radioGroup).toBeInTheDocument();
 
     const options = screen.getAllByRole('radio');
     expect(options).toHaveLength(3);
@@ -26,9 +26,9 @@ describe('FormFieldRadioGroup', () => {
   it('renders radio group with custom className', () => {
     render(<LuxFormFieldRadioGroup {...defaultProps} className="custom-class" />);
 
-    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup');
+    const radioGroup = screen.getByRole('radiogroup');
 
-    const elements = FormFieldRadioGroup.getElementsByClassName('custom-class');
+    const elements = radioGroup.getElementsByClassName('custom-class');
     expect(elements.length).toBeGreaterThan(0);
   });
 
@@ -62,8 +62,8 @@ describe('FormFieldRadioGroup', () => {
   it('renders required state', () => {
     render(<LuxFormFieldRadioGroup {...defaultProps} required />);
 
-    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup');
-    expect(FormFieldRadioGroup).toHaveAttribute('aria-required', 'true');
+    const radioGroup = screen.getByRole('radiogroup');
+    expect(radioGroup).toHaveAttribute('aria-required', 'true');
 
     const options = screen.getAllByRole('radio');
     options.forEach((option) => {
@@ -130,11 +130,11 @@ describe('FormFieldRadioGroup', () => {
   it('associates legend with FormFieldRadioGroup through aria-labelledby', () => {
     render(<LuxFormFieldRadioGroup {...defaultProps} />);
 
-    const FormFieldRadioGroup = screen.getByRole('FormFieldRadioGroup');
+    const radioGroup = screen.getByRole('radiogroup');
     const legend = screen.getByText(defaultProps.label);
 
     // Get the generated aria-labelledby value
-    const labelledById = FormFieldRadioGroup.getAttribute('aria-labelledby');
+    const labelledById = radioGroup.getAttribute('aria-labelledby');
 
     // Verify the relationship exists
     expect(labelledById).toBeTruthy();
