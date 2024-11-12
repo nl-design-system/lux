@@ -1,3 +1,4 @@
+import { BADGE_LOCATION } from '@geometricpanda/storybook-addon-badges';
 import { LuxDocument } from '@lux-design-system/components-react';
 import { defineCustomElements } from '@lux-design-system/web-components-stencil/loader/index.js';
 import { withThemeByClassName } from '@storybook/addon-themes';
@@ -6,6 +7,14 @@ import type { Preview, ReactRenderer } from '@storybook/react';
 import '@lux-design-system/font/src/index.scss';
 import './themes';
 import '../src/styles/theme.css';
+
+/* eslint-disable no-unused-vars */
+export enum BADGES {
+  WIP = 'wip',
+  CANARY = 'canary',
+  LATEST = 'latest',
+}
+/* eslint-enable */
 
 defineCustomElements();
 
@@ -65,6 +74,34 @@ const preview: Preview = {
           value: 'black',
         },
       ],
+    },
+    badgesConfig: {
+      [BADGES.WIP]: {
+        location: [BADGE_LOCATION.TOOLBAR],
+        title: 'W.I.P.',
+        tooltip: 'Work in progress',
+      },
+      [BADGES.CANARY]: {
+        styles: {
+          backgroundColor: '#FFFF8F', // Canary Yellow
+          borderColor: '#bfbf6b',
+          textTransform: 'none',
+        },
+        location: [BADGE_LOCATION.TOOLBAR_EXTRA],
+        title: 'Canary',
+        tooltip: 'Alleen beschikbaar in de canary release packages',
+      },
+      [BADGES.LATEST]: {
+        styles: {
+          backgroundColor: '#4cbb17',
+          borderColor: '#398c11',
+          color: '#181920', // Contrast Ratio: 7.03:1
+          textTransform: 'none',
+        },
+        location: [BADGE_LOCATION.TOOLBAR_EXTRA],
+        title: 'Latest',
+        tooltip: 'Beschikbaar in de latest release package',
+      },
     },
     chromatic: {
       disable: true,
