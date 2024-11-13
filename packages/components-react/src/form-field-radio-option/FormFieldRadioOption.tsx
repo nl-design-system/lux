@@ -1,14 +1,9 @@
-import {
-  RadioButton as UtrechtRadioButton,
-  type RadioButtonProps as UtrechtRadioButtonProps,
-} from '@utrecht/component-library-react/dist/css-module';
-import clsx from 'clsx';
-import './FormFieldRadioOption.css';
 import { ForwardedRef, forwardRef, PropsWithChildren, useId } from 'react';
 import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
+import { LuxRadioButton, type LuxRadioButtonProps } from '../radio-button/RadioButton';
+import './FormFieldRadioOption.css';
 
-export type LuxFormFieldRadioOptionProps = UtrechtRadioButtonProps & {
-  invalid?: boolean;
+export type LuxFormFieldRadioOptionProps = LuxRadioButtonProps & {
   name: string;
   label: string;
   checked?: boolean;
@@ -16,7 +11,6 @@ export type LuxFormFieldRadioOptionProps = UtrechtRadioButtonProps & {
 
 const CLASSNAME = {
   container: 'lux-radio-button__container',
-  button: 'lux-radio-button',
 };
 
 export const LuxFormFieldRadioOption = forwardRef(
@@ -36,12 +30,10 @@ export const LuxFormFieldRadioOption = forwardRef(
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
     const radioId = id || useId();
-    const combinedClassName = clsx(CLASSNAME.button, className);
 
     return (
       <div className={CLASSNAME.container}>
-        {/* TODO: create LuxRadioButton en replace: */}
-        <UtrechtRadioButton
+        <LuxRadioButton
           ref={ref}
           aria-invalid={invalid || undefined}
           disabled={disabled}
@@ -49,7 +41,7 @@ export const LuxFormFieldRadioOption = forwardRef(
           id={radioId}
           name={name}
           value={value}
-          className={combinedClassName}
+          className={className}
           checked={checked}
           {...restProps}
         />
