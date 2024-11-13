@@ -1,10 +1,7 @@
-.lux-link__container {
-  display: flex;
+.lux-link {
+  display: inline flex;
   align-items: baseline;
   gap: var(--lux-link-column-gap);
-}
-
-.lux-link {
   color: var(--lux-link-color);
   font-weight: var(--lux-link-font-weight);
   font-size: var(--lux-link-font-size);
@@ -36,4 +33,12 @@
 .lux-link__icon {
   inline-size: var(--lux-link-icon-size);
   block-size: var(--lux-link-icon-size);
+}
+
+.lux-link-icon--start {
+  order: 0;
+}
+
+.lux-link-icon--end {
+  order: 1;
 }

@@ -24,13 +24,6 @@ const meta = {
     placeholder: {
       description: 'Shows link in placeholder/loading state',
       control: 'boolean',
-      table: {
-        defaultValue: { summary: false },
-      },
-    },
-    openInNewTab: {
-      description: 'Controls whether the link opens in a new tab',
-      control: 'boolean',
     },
     href: {
       description: 'URL',
@@ -85,7 +78,6 @@ const ExampleIcon = (
 const LinkTemplate: Story = {
   args: {
     external: false,
-    openInNewTab: false,
     placeholder: false,
     icon: undefined,
     iconPosition: undefined,
@@ -156,7 +148,6 @@ export const External: Story = {
   args: {
     href: 'https://google.com',
     external: true,
-    openInNewTab: true,
   },
   parameters: {
     docs: {

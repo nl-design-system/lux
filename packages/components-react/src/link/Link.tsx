@@ -12,12 +12,16 @@ export type LuxLinkProps = UtrechtLinkProps & {
   external?: boolean;
   icon?: ReactElement;
   iconPosition?: IconPosition;
-  openInNewTab?: boolean;
 };
 
 const CLASSNAMES = {
-  container: 'lux-link__container',
   link: 'lux-link',
+  icon: 'lux-link__icon',
+};
+
+const ICON_POSITIONS: { [key: string]: string } = {
+  start: 'lux-link-icon--start',
+  end: 'lux-link-icon--end',
 };
 
 export const LuxLink = (props: LuxLinkProps) => {
@@ -27,7 +31,6 @@ export const LuxLink = (props: LuxLinkProps) => {
     children,
     icon: iconNode,
     iconPosition: providedIconPosition,
-    openInNewTab = false,
     ...otherProps
   } = props;
 
@@ -46,27 +49,16 @@ export const LuxLink = (props: LuxLinkProps) => {
     }
 
     return React.cloneElement(iconElement as ReactElement, {
-      className: clsx('lux-link__icon', iconElement?.props?.className),
+      className: clsx(CLASSNAMES.icon, iconElement?.props?.className, iconPosition && ICON_POSITIONS[iconPosition]),
     });
   });
 
   const externalProps = external ? { rel: 'external noopener noreferrer' } : {};
-  const newTabProps = openInNewTab
-    ? {
-        target: '_blank',
-        rel: `noopener noreferrer${external ? ' external' : ''}`, // Combine rel attributes if external
-        'aria-label': `${children} (opent in nieuw venster)`,
-      }
-    : {};
 
   return (
-    <div className={CLASSNAMES.container}>
-      {iconPosition === 'start' && positionedIcon}
-      <UtrechtLink className={combinedClassName} {...externalProps} {...newTabProps} {...otherProps}>
-        {children}
-      </UtrechtLink>
-      {iconPosition === 'end' && positionedIcon}
-      {openInNewTab && <span>(opent in nieuw venster)</span>}
-    </div>
+    <UtrechtLink className={combinedClassName} {...externalProps} {...otherProps}>
+      {positionedIcon}
+      <span className="utrecht-link__text">{children}</span>
+    </UtrechtLink>
   );
 };

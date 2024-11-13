@@ -21,6 +21,7 @@ describe('Link', () => {
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', '#');
     expect(link).toHaveClass('lux-link', 'custom-class');
+    expect(link.querySelector('.utrecht-link__text')).toHaveTextContent('Test Link');
   });
 
   // External link tests
@@ -36,38 +37,26 @@ describe('Link', () => {
       expect(link).toHaveAttribute('rel', 'external noopener noreferrer');
     });
 
-    it('renders external link in new tab with correct attributes and text', () => {
-      const linkText = 'External Link';
-      render(
-        <LuxLink href="https://example.com" external openInNewTab>
-          {linkText}
-        </LuxLink>,
-      );
+    it('does not add external attributes when external prop is false', () => {
+      render(<LuxLink href="https://example.com">Regular Link</LuxLink>);
 
-      const link = screen.getByRole('link', {
-        name: `${linkText} (opent in nieuw venster)`,
-      });
-      expect(link).toHaveAttribute('target', '_blank');
-      expect(link).toHaveAttribute('rel', 'noopener noreferrer external');
-
-      const newWindowText = screen.getByText('(opent in nieuw venster)');
-      expect(newWindowText).toBeInTheDocument();
+      const link = screen.getByRole('link', { name: 'Regular Link' });
+      expect(link).not.toHaveAttribute('rel');
     });
   });
 
   // Icon tests
   describe('Icon rendering', () => {
-    it('renders icon at start position by default', () => {
+    it('renders icon with default start position', () => {
       render(
         <LuxLink href="#" icon={ExampleIcon}>
           Link with Icon
         </LuxLink>,
       );
 
-      const container = screen.getByRole('link').closest('div');
-      const svg = container?.querySelector('svg');
-      expect(svg).toHaveClass('lux-link__icon');
-      expect(container?.firstElementChild).toBe(svg);
+      const link = screen.getByRole('link');
+      const svg = link.querySelector('svg');
+      expect(svg).toHaveClass('lux-link__icon', 'lux-link-icon--start');
     });
 
     it('renders icon at end position', () => {
@@ -77,13 +66,12 @@ describe('Link', () => {
         </LuxLink>,
       );
 
-      const container = screen.getByRole('link').closest('div');
-      const svg = container?.querySelector('svg');
-      expect(svg).toHaveClass('lux-link__icon');
-      expect(container?.children[1]).toBe(svg);
+      const link = screen.getByRole('link');
+      const svg = link.querySelector('svg');
+      expect(svg).toHaveClass('lux-link__icon', 'lux-link-icon--end');
     });
 
-    it('applies custom className to icon', () => {
+    it('applies custom className to icon while preserving default classes', () => {
       const iconWithClass = (
         <svg className="custom-icon-class" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
           <circle r="6" cx="7" cy="7" fill="currentColor" />
@@ -96,8 +84,8 @@ describe('Link', () => {
         </LuxLink>,
       );
 
-      const svg = screen.getByRole('link').closest('div')?.querySelector('svg');
-      expect(svg).toHaveClass('lux-link__icon', 'custom-icon-class');
+      const svg = screen.getByRole('link').querySelector('svg');
+      expect(svg).toHaveClass('lux-link__icon', 'custom-icon-class', 'lux-link-icon--start');
     });
   });
 
@@ -114,60 +102,39 @@ describe('Link', () => {
     expect(link).toHaveAttribute('lang', 'nl');
   });
 
-  // Container tests
-  describe('Container structure', () => {
-    it('wraps content in container with correct class', () => {
-      render(<LuxLink href="#">Test Link</LuxLink>);
+  // Text wrapper test
+  it('wraps text content in span with correct class', () => {
+    render(<LuxLink href="#">Test Link</LuxLink>);
 
-      const container = screen.getByRole('link').closest('div');
-      expect(container).toHaveClass('lux-link__container');
-    });
-
-    it('renders new window text at the end', () => {
-      render(
-        <LuxLink href="#" openInNewTab icon={ExampleIcon} iconPosition="end">
-          Test Link
-        </LuxLink>,
-      );
-
-      const container = screen.getByRole('link').closest('div');
-      const lastChild = container?.lastElementChild;
-      expect(lastChild).toHaveTextContent('(opent in nieuw venster)');
-    });
+    const textWrapper = screen.getByRole('link').querySelector('.utrecht-link__text');
+    expect(textWrapper).toBeInTheDocument();
+    expect(textWrapper).toHaveTextContent('Test Link');
   });
 
   // Combined features test
   it('renders correctly with all features combined', () => {
-    const linkText = 'Complex Link';
     render(
       <LuxLink
         href="https://example.com"
         external
-        openInNewTab
         icon={ExampleIcon}
         iconPosition="end"
         className="custom-class"
         hrefLang="en"
       >
-        {linkText}
+        Complex Link
       </LuxLink>,
     );
 
-    const container = screen
-      .getByRole('link', {
-        name: `${linkText} (opent in nieuw venster)`,
-      })
-      .closest('div');
-
     const link = screen.getByRole('link');
-    const svg = container?.querySelector('svg');
-    const newWindowText = screen.getByText('(opent in nieuw venster)');
+    const svg = link.querySelector('svg');
+    const textWrapper = link.querySelector('.utrecht-link__text');
 
     expect(link).toHaveAttribute('href', 'https://example.com');
-    expect(link).toHaveAttribute('target', '_blank');
-    expect(link).toHaveAttribute('rel', 'noopener noreferrer external');
+    expect(link).toHaveAttribute('rel', 'external noopener noreferrer');
     expect(link).toHaveAttribute('hrefLang', 'en');
-    expect(svg).toHaveClass('lux-link__icon');
-    expect(newWindowText).toBeInTheDocument();
+    expect(link).toHaveClass('lux-link', 'custom-class');
+    expect(svg).toHaveClass('lux-link__icon', 'lux-link-icon--end');
+    expect(textWrapper).toHaveTextContent('Complex Link');
   });
 });
