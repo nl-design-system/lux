@@ -1,7 +1,7 @@
 'use client';
 import { ForwardedRef, forwardRef, useId, useState } from 'react';
 import './FormFieldRadioGroup.css';
-import { LuxFormFieldRadioOption } from '../form-field-radio-button/FormFieldRadioOption';
+import { LuxFormFieldRadioOption } from '../form-field-radio-option/FormFieldRadioOption';
 
 interface RadioOption {
   value: string;

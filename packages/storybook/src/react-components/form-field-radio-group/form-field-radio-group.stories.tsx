@@ -1,12 +1,16 @@
 import { LuxFormFieldRadioGroup } from '@lux-design-system/components-react';
 import { Meta, StoryObj } from '@storybook/react';
+import { BADGES } from '../../../config/preview';
 
 type Story = StoryObj<typeof meta>;
 
 const meta = {
-  title: 'React Components/Radio Group',
+  title: 'React Components/Form Field/Form Field Radio Group',
   component: LuxFormFieldRadioGroup,
   subcomponents: {},
+  parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
+  },
   args: {
     name: 'contact-default',
     label: 'Voorkeur contactmethode',

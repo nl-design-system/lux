@@ -28,7 +28,7 @@ export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
 export {
   LuxFormFieldRadioOption,
   type LuxFormFieldRadioOptionProps,
-} from './form-field-radio-button/FormFieldRadioOption';
+} from './form-field-radio-option/FormFieldRadioOption';
 export { LuxFormFieldRadioGroup, type LuxFormFieldRadioGroupProps } from './form-field-radio-group/FormFieldRadioGroup';
 export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading';
 export { LuxSection, type LuxSectionProps } from './section/Section';

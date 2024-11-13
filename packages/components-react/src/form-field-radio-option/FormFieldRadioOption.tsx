@@ -40,6 +40,7 @@ export const LuxFormFieldRadioOption = forwardRef(
 
     return (
       <div className={CLASSNAME.container}>
+        {/* TODO: create LuxRadioButton en replace: */}
         <UtrechtRadioButton
           ref={ref}
           aria-invalid={invalid || undefined}
