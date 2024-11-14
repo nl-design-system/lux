@@ -6,6 +6,9 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
+  optimizeDeps: {
+    exclude: ['@storybook/addon-interactions', '@storybook/addon-essentials'],
+  },
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
