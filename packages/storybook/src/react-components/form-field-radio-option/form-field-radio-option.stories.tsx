@@ -31,16 +31,15 @@ const meta = {
         category: 'HTML attribute',
       },
     },
-    disabled: {
-      description: 'Disabled state',
-      control: 'boolean',
+    description: {
+      description: 'Description for an option',
+      control: 'text',
       table: {
-        type: { summary: 'boolean' },
-        category: 'HTML attribute',
+        type: { summary: 'text' },
       },
     },
-    required: {
-      description: 'Required field',
+    disabled: {
+      description: 'Disabled state',
       control: 'boolean',
       table: {
         type: { summary: 'boolean' },
@@ -74,13 +73,12 @@ export default meta;
 const RadioButtonTemplate: Story = {
   args: {
     label: 'Option 1',
-    name: 'radio-group',
   },
 };
 
 export const Playground: Story = {
   ...RadioButtonTemplate,
-  name: 'Playground',
+  name: 'playground',
   parameters: {
     docs: {
       sourceState: 'shown',
@@ -91,7 +89,7 @@ export const Playground: Story = {
 
 export const Default: Story = {
   ...RadioButtonTemplate,
-  name: 'Default',
+  name: 'default',
 };
 
 export const Checked: Story = {
@@ -100,6 +98,7 @@ export const Checked: Story = {
     ...RadioButtonTemplate.args,
     checked: true,
   },
+  name: 'checked',
 };
 
 export const Invalid: Story = {
@@ -108,14 +107,7 @@ export const Invalid: Story = {
     ...RadioButtonTemplate.args,
     invalid: true,
   },
-};
-
-export const Required: Story = {
-  ...RadioButtonTemplate,
-  args: {
-    ...RadioButtonTemplate.args,
-    required: true,
-  },
+  name: 'invalid',
 };
 
 export const Disabled: Story = {
@@ -124,17 +116,20 @@ export const Disabled: Story = {
     ...RadioButtonTemplate.args,
     disabled: true,
   },
+  name: 'disabled',
 };
 
 export const Hover: Story = {
   ...RadioButtonTemplate,
+  name: 'hover',
   parameters: {
     pseudo: { hover: true },
   },
 };
 
-export const Focus: Story = {
+export const FocusVisible: Story = {
   ...RadioButtonTemplate,
+  name: 'focus-visible',
   parameters: {
     pseudo: { focus: true, focusVisible: true },
   },

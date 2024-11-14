@@ -1,41 +1,37 @@
 import { Canvas, Controls, Meta } from "@storybook/blocks";
-import * as RadioButtonStories from "./form-field-radio-option.stories.tsx";
+import * as FormFieldRadioOptionStories from "./form-field-radio-option.stories.tsx";
 
-<Meta of={RadioButtonStories} />
+<Meta of={FormFieldRadioOptionStories} />
 
 # Form field Radio Option
 
 ## Playground
 
-<Canvas of={RadioButtonStories.Playground} />
-<Controls of={RadioButtonStories.Playground} />
-
-## Default
-
-<Canvas of={RadioButtonStories.Default} />
+<Canvas of={FormFieldRadioOptionStories.Playground} />
+<Controls of={FormFieldRadioOptionStories.Playground} />
 
 ## States
 
+## Default
+
+<Canvas of={FormFieldRadioOptionStories.Default} />
+
 ### Checked
 
-<Canvas of={RadioButtonStories.Checked} />
+<Canvas of={FormFieldRadioOptionStories.Checked} />
 
 ### Invalid
 
-<Canvas of={RadioButtonStories.Invalid} />
-
-### Required
-
-<Canvas of={RadioButtonStories.Required} />
+<Canvas of={FormFieldRadioOptionStories.Invalid} />
 
 ### Disabled
 
-<Canvas of={RadioButtonStories.Disabled} />
+<Canvas of={FormFieldRadioOptionStories.Disabled} />
 
 ### Hover
 
-<Canvas of={RadioButtonStories.Hover} />
+<Canvas of={FormFieldRadioOptionStories.Hover} />
 
-### Focus
+### Focus visible
 
-<Canvas of={RadioButtonStories.Focus} />
+<Canvas of={FormFieldRadioOptionStories.FocusVisible} />

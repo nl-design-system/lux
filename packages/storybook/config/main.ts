@@ -36,6 +36,10 @@ const config: StorybookConfig = {
   staticDirs: ['../../../proprietary/assets/src', '../src/assets'],
   async viteFinal(config) {
     return mergeConfig(config, {
+      optimizeDeps: {
+        ...config.optimizeDeps,
+        exclude: ['@storybook/addon-interactions', '@storybook/addon-essentials'],
+      },
       build: {
         minify: false,
       },

@@ -16,8 +16,16 @@ const meta = {
     label: 'Voorkeur contactmethode',
     errorMessage: 'Selecteer een contactmethode.',
     options: [
-      { value: 'email', label: 'E-mail' },
-      { value: 'phone', label: 'Telefoon' },
+      { value: 'email', label: 'E-mail', description: 'Gebruik het e-mailadres dat bij ons bekend is.' },
+      {
+        value: 'phone',
+        label: 'Telefoon',
+        description: (
+          <>
+            Gebruik een <strong>geldig</strong> telefoonnummer.
+          </>
+        ),
+      },
       { value: 'mail', label: 'Post' },
     ],
   },
@@ -56,7 +64,7 @@ const meta = {
       control: 'object',
       table: {
         type: {
-          summary: 'Array<{ value: string; label: string; disabled?: boolean; }>',
+          summary: 'Array<{ value: string; label: string; description?: React.ReactNode; disabled?: boolean; }>',
         },
       },
     },

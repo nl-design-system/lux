@@ -1,4 +1,4 @@
 .lux-radio-button__container {
-  display: inline-flex;
-  align-items: center;
+  display: inline flex;
+  align-items: start;
 }

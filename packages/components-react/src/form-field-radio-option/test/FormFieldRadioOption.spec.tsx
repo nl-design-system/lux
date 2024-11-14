@@ -75,11 +75,4 @@ describe('FormFieldRadioOption', () => {
     const radio = screen.getByRole('radio');
     expect(radio).toHaveClass('custom-class');
   });
-
-  it('renders a required radio button', () => {
-    render(<LuxFormFieldRadioOption {...defaultProps} required />);
-
-    const radio = screen.getByRole('radio');
-    expect(radio).toHaveAttribute('required');
-  });
 });

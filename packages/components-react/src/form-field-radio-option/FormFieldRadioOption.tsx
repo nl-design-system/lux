@@ -1,11 +1,12 @@
-import { ForwardedRef, forwardRef, PropsWithChildren, useId } from 'react';
+import React, { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
+import { LuxFormFieldDescription } from '../form-field-description/FormFieldDescription';
 import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
 import { LuxRadioButton, type LuxRadioButtonProps } from '../radio-button/RadioButton';
 import './FormFieldRadioOption.css';
 
 export type LuxFormFieldRadioOptionProps = LuxRadioButtonProps & {
-  name: string;
-  label: string;
+  label: string | React.ReactNode;
+  description?: React.ReactNode;
   checked?: boolean;
 };
 
@@ -17,11 +18,11 @@ export const LuxFormFieldRadioOption = forwardRef(
   (
     {
       disabled,
-      required,
       className,
       invalid,
       name,
       label,
+      description,
       id,
       checked,
       value,
@@ -29,7 +30,7 @@ export const LuxFormFieldRadioOption = forwardRef(
     }: PropsWithChildren<LuxFormFieldRadioOptionProps>,
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
-    const radioId = id || useId();
+    const radioId = id || React.useId();
 
     return (
       <div className={CLASSNAME.container}>
@@ -37,7 +38,6 @@ export const LuxFormFieldRadioOption = forwardRef(
           ref={ref}
           aria-invalid={invalid || undefined}
           disabled={disabled}
-          required={required}
           id={radioId}
           name={name}
           value={value}
@@ -45,9 +45,12 @@ export const LuxFormFieldRadioOption = forwardRef(
           checked={checked}
           {...restProps}
         />
-        <LuxFormFieldLabel htmlFor={radioId} type="radio">
-          {label}
-        </LuxFormFieldLabel>
+        <div>
+          <LuxFormFieldLabel htmlFor={radioId} type="radio" disabled={disabled}>
+            {label}
+          </LuxFormFieldLabel>
+          {description ? <LuxFormFieldDescription>{description}</LuxFormFieldDescription> : null}
+        </div>
       </div>
     );
   },

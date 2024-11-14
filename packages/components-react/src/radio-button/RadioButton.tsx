@@ -12,17 +12,7 @@ export type LuxRadioButtonProps = UtrechtRadioButtonProps & {
 
 export const LuxRadioButton = forwardRef(
   (
-    {
-      disabled,
-      required,
-      className,
-      invalid,
-      name,
-      id,
-      checked,
-      value,
-      ...restProps
-    }: PropsWithChildren<LuxRadioButtonProps>,
+    { disabled, className, invalid, name, id, checked, value, ...restProps }: PropsWithChildren<LuxRadioButtonProps>,
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
     return (
@@ -30,7 +20,6 @@ export const LuxRadioButton = forwardRef(
         ref={ref}
         aria-invalid={invalid || undefined}
         disabled={disabled}
-        required={required}
         id={id}
         name={name}
         value={value}

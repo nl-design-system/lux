@@ -1,5 +1,5 @@
 'use client';
-import { ForwardedRef, forwardRef, useId, useState } from 'react';
+import React, { ForwardedRef, forwardRef } from 'react';
 import './FormFieldRadioGroup.css';
 import { LuxFormFieldRadioOption } from '../form-field-radio-option/FormFieldRadioOption';
 
@@ -7,7 +7,7 @@ interface RadioOption {
   value: string;
   label: string;
   disabled?: boolean;
-  [key: string]: any;
+  description?: React.ReactNode;
 }
 
 export interface LuxFormFieldRadioGroupProps {
@@ -48,13 +48,13 @@ export const LuxFormFieldRadioGroup = forwardRef(
     }: LuxFormFieldRadioGroupProps,
     ref: ForwardedRef<HTMLFieldSetElement>,
   ) => {
-    const uniqueId = useId();
+    const uniqueId = React.useId();
     const descriptionId = description ? `${uniqueId}-description` : undefined;
     const errorId = invalid ? `${uniqueId}-error` : undefined;
     const legendId = `${uniqueId}-legend`;
 
     // Local state for uncontrolled mode (when no value prop is provided)
-    const [internalValue, setInternalValue] = useState<string>('');
+    const [internalValue, setInternalValue] = React.useState<string>('');
 
     // Check if component is controlled by parent (through value prop)
     const isControlled = value !== undefined;
@@ -99,7 +99,13 @@ export const LuxFormFieldRadioGroup = forwardRef(
 
         <div className={CLASSNAME.options}>
           {options.map((option) => {
-            const { value: optionValue, label: optionLabel, disabled, ...optionRestProps } = option;
+            const {
+              value: optionValue,
+              label: optionLabel,
+              description: optionDescription,
+              disabled,
+              ...optionRestProps
+            } = option;
             const optionId = `${uniqueId}-${optionValue}`;
 
             return (
@@ -110,6 +116,7 @@ export const LuxFormFieldRadioGroup = forwardRef(
                 value={optionValue}
                 label={optionLabel}
                 checked={currentValue === optionValue}
+                description={optionDescription}
                 disabled={disabled}
                 required={required}
                 invalid={invalid}
