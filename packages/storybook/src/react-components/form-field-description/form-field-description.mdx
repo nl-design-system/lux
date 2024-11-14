@@ -1,0 +1,74 @@
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/form-field-description-css/README.md?raw";
+import * as FormFieldDescriptionStories from "./form-field-description.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={FormFieldDescriptionStories} />
+
+# Lux Form Field Description
+
+<CitationDocumentation
+  component="Utrecht Form Field Description"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-form-field-description--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Opmerkingen
+
+- De component gebruikt een `appearance` prop om de validatiestatus van het gekoppelde formulierelement weer te geven.
+- De `appearance` prop kan worden ingesteld op 'valid' of 'invalid' om de juiste validatiestatus te tonen.
+- De classnames `utrecht-form-field-description--valid` en `utrecht-form-field-description--invalid` worden automatisch toegepast op basis van de `appearance` prop.
+- Wanneer geen `appearance` is ingesteld, wordt de standaard weergave gebruikt.
+
+## Playground
+
+<Canvas of={FormFieldDescriptionStories.Playground} />
+<Controls of={FormFieldDescriptionStories.Playground} />
+
+## Varianten
+
+### Standaard Beschrijving
+
+<Description of={FormFieldDescriptionStories.Default} />
+<Canvas of={FormFieldDescriptionStories.Default} />
+
+### Geldige Status
+
+<Description of={FormFieldDescriptionStories.Valid} />
+<Canvas of={FormFieldDescriptionStories.Valid} />
+
+### Ongeldige Status
+
+<Description of={FormFieldDescriptionStories.Invalid} />
+<Canvas of={FormFieldDescriptionStories.Invalid} />
+
+### Lange Beschrijving
+
+<Description of={FormFieldDescriptionStories.LongDescription} />
+<Canvas of={FormFieldDescriptionStories.LongDescription} />
+
+## Properties
+
+- `children`: De inhoud van de beschrijving (ReactNode)
+- `appearance`: De weergavestatus van de beschrijving ('valid' | 'invalid' | undefined)
+- `className`: Extra CSS-klassen voor styling
+
+## Voorbeelden
+
+```tsx
+// Standaard gebruik
+<LuxFormFieldDescription>
+  Voer uw gegevens in
+</LuxFormFieldDescription>
+
+// Met geldige status
+<LuxFormFieldDescription appearance="valid">
+  Uw invoer voldoet aan de vereisten
+</LuxFormFieldDescription>
+
+// Met ongeldige status
+<LuxFormFieldDescription appearance="invalid">
+  Controleer uw invoer
+</LuxFormFieldDescription>
+```

@@ -1,0 +1,13 @@
+.lux-section {
+  display: flex;
+  row-gap: var(--lux-section-row-gap);
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: var(--lux-section-border-radius);
+  background-color: var(--lux-section-background-color);
+  padding-inline-start: var(--lux-section-padding-inline-start);
+  padding-inline-end: var(--lux-section-padding-inline-end);
+  padding-block-start: var(--lux-section-padding-block-start);
+  padding-block-end: var(--lux-section-padding-block-end);
+}
