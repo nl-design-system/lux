@@ -13,23 +13,23 @@ export interface LuxAlertProps extends Omit<UtrechtAlertProps, 'type'> {
 
 //TODO replace icons in #308
 const InfoIcon = () => (
-  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-info-color)" />
+  <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <circle r="11" cx="12" cy="12" fill="transparent" stroke="var(--utrecht-alert-icon-info-color)" />
   </svg>
 );
 const SuccessIcon = () => (
-  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-ok-color)" />
+  <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <circle r="11" cx="12" cy="12" fill="transparent" stroke="var(--utrecht-alert-icon-ok-color)" />
   </svg>
 );
 const WarningIcon = () => (
-  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-warning-color)" />
+  <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg" style={{ height: 'var(--utrecht.alert.icon.size)' }}>
+    <circle r="11" cx="12" cy="12" fill="transparent" stroke="var(--utrecht-alert-icon-warning-color)" />
   </svg>
 );
 const ErrorIcon = () => (
-  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="7" cx="8" cy="8" fill="transparent" stroke="var(--utrecht-alert-icon-error-color)" />
+  <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <circle r="11" cx="12" cy="12" fill="transparent" stroke="var(--utrecht-alert-icon-error-color)" />
   </svg>
 );
 

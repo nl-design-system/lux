@@ -37,16 +37,17 @@ export default meta;
 const AlertTemplate: Story = {
   args: {
     type: 'info',
-    children: (
+  },
+  render: ({ ...args }: LuxAlertProps, context) => (
+    <LuxAlert {...args}>
       <>
-        <LuxHeading1>Heading</LuxHeading1>
+        <LuxHeading1>{context.name}</LuxHeading1>
         <LuxParagraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis massa lorem. Ut laoreet varius rhoncus.
         </LuxParagraph>
       </>
-    ),
-  },
-  render: ({ children, ...args }: LuxAlertProps) => <LuxAlert {...args}>{children}</LuxAlert>,
+    </LuxAlert>
+  ),
 };
 
 export const Playground: Story = {
