@@ -42,10 +42,11 @@ const meta = {
     },
     icon: {
       description: 'Icon Node',
-      control: 'object',
+      control: 'boolean',
       table: {
         type: {
           summary: 'HTML Content',
+          detail: 'Use the boolean switch to show an Icon',
         },
       },
     },
@@ -77,7 +78,11 @@ const LinkTemplate: Story = {
     icon: undefined,
     iconPosition: undefined,
   },
-  render: ({ ...args }) => <LuxLink {...args}>{args['children']}</LuxLink>,
+  render: (args) => (
+    <LuxLink {...args} icon={args.icon ? ExampleIcon : undefined}>
+      {args.children}
+    </LuxLink>
+  ),
 };
 
 export const Playground: Story = {

@@ -10,7 +10,7 @@ type IconPosition = 'start' | 'end';
 
 export type LuxLinkProps = UtrechtLinkProps & {
   external?: boolean;
-  icon?: ReactElement;
+  icon?: ReactElement | undefined;
   iconPosition?: IconPosition;
 };
 
