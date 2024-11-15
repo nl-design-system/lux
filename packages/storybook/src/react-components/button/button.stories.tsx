@@ -53,16 +53,16 @@ const meta = {
       control: 'boolean',
       table: {
         type: {
-          summary: 'HTML Content',
+          summary: 'HTML/SVG Content / React Node',
           detail: 'Use the boolean switch to show an Icon',
         },
       },
     },
-    label: {
-      description: 'Label Node',
+    children: {
+      description: 'Label (children)',
       table: {
         type: {
-          summary: 'HTML Content',
+          summary: 'HTML Content / React Node',
         },
       },
     },
@@ -73,8 +73,8 @@ export default meta;
 
 //TODO replace icon in #308
 const ExampleIcon = (
-  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <circle r="6" cx="7" cy="7" fill="white" stroke="green" />
+  <svg height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <circle r="6" cx="7" cy="7" fill="white" stroke="currentColor" />
   </svg>
 );
 
@@ -86,7 +86,7 @@ const ButtonTemplate: Story = {
     icon: undefined,
     pressed: false,
     busy: false,
-    label: 'Button',
+    children: 'Button',
   },
   render: ({ icon, children, ...args }: { icon: boolean; children: any; args: unknown }) => (
     <LuxButton icon={icon ? ExampleIcon : null} {...args}>
@@ -131,10 +131,11 @@ export const Playground: Story = {
 };
 
 export const Primary: Story = {
+  ...ButtonTemplate,
   name: 'Primary',
   args: {
+    ...ButtonTemplate.args,
     appearance: 'primary-action-button',
-    children: 'Primary Button',
   },
   parameters: {
     docs: {
@@ -146,10 +147,11 @@ export const Primary: Story = {
 };
 
 export const Secondary: Story = {
+  ...ButtonTemplate,
   name: 'Secondary',
   args: {
+    ...ButtonTemplate.args,
     appearance: 'secondary-action-button',
-    children: 'Secondary Button',
   },
   parameters: {
     docs: {
@@ -161,10 +163,11 @@ export const Secondary: Story = {
 };
 
 export const Tertiary: Story = {
+  ...ButtonTemplate,
   name: 'Tertiary',
   args: {
+    ...ButtonTemplate.args,
     appearance: 'subtle-button',
-    children: 'Tertiary Button',
   },
   parameters: {
     docs: {
@@ -177,9 +180,9 @@ export const Tertiary: Story = {
 
 export const SmallButton: Story = {
   ...ButtonTemplate,
+  name: 'Small',
   args: {
     ...ButtonTemplate.args,
-    label: 'Small button',
     size: 'small',
   },
   parameters: {
@@ -198,7 +201,7 @@ export const Active: Story = {
     pseudo: { active: true },
   },
   args: {
-    children: 'Active Button',
+    ...ButtonTemplate.args,
   },
 };
 
@@ -209,7 +212,7 @@ export const Hover: Story = {
     pseudo: { hover: true },
   },
   args: {
-    children: 'Hover Button',
+    ...ButtonTemplate.args,
   },
 };
 
@@ -220,7 +223,7 @@ export const Focus: Story = {
     pseudo: { focus: true, focusVisible: true },
   },
   args: {
-    children: 'Focus Button',
+    ...ButtonTemplate.args,
   },
 };
 
@@ -228,7 +231,7 @@ export const Disabled: Story = {
   ...AllButtonVariantsTemplate,
   name: 'Disabled',
   args: {
-    children: 'Disabled Button',
+    ...ButtonTemplate.args,
     disabled: true,
   },
 };
@@ -237,7 +240,7 @@ export const Busy: Story = {
   ...AllButtonVariantsTemplate,
   name: 'Busy',
   args: {
-    children: 'Busy Button',
+    ...ButtonTemplate.args,
     busy: true,
   },
   parameters: {
@@ -254,6 +257,7 @@ export const Toggle: Story = {
   ...ButtonTemplate,
   name: 'Toggle',
   args: {
+    ...ButtonTemplate.args,
     appearance: 'primary-action-button',
     pressed: true,
   },
@@ -266,7 +270,7 @@ export const Toggle: Story = {
 
     return (
       <LuxButton {...args} onClick={onPress}>
-        Toggle Button {args.pressed ? 'pressed' : 'not pressed'}
+        Button {args.pressed ? 'pressed' : 'not pressed'}
       </LuxButton>
     );
   },
@@ -294,7 +298,6 @@ export const ButtonWithIconAtPositionStart: Story = {
   ...ButtonTemplate,
   args: {
     ...ButtonTemplate.args,
-    label: 'Icon at start',
     icon: ExampleIcon,
     iconPosition: 'start',
   },
@@ -309,7 +312,6 @@ export const ButtonWithIconAtPositionEnd: Story = {
   ...ButtonTemplate,
   args: {
     ...ButtonTemplate.args,
-    label: 'Icon at end',
     icon: ExampleIcon,
     iconPosition: 'end',
   },
