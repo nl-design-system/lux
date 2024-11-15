@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 type Story = StoryObj<typeof meta>;
 
 const meta = {
-  title: 'React Components/Select',
+  title: 'React Components/Form Field/Select',
   id: 'react-components-select',
   component: LuxSelect,
   subcomponents: {},
