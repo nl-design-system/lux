@@ -50,7 +50,10 @@
     "nl/utrecht-pointer-target",
     "nl/utrecht-pre-heading",
     "nl/utrecht-radio-button",
+    "nl/utrecht-select",
     "nl/utrecht-text-input",
+    "nl/utrecht-button-group",
+    "nl/utrecht-checkbox",
     "nl/utrecht-textarea"
   ]
 }
