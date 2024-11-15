@@ -16,7 +16,7 @@ export type LuxLinkProps = UtrechtLinkProps & {
 
 const CLASSNAMES = {
   link: 'lux-link',
-  icon: 'lux-link__icon',
+  text: 'lux-link__text',
 };
 
 const ICON_POSITIONS: { [key: string]: string } = {
@@ -49,7 +49,7 @@ export const LuxLink = (props: LuxLinkProps) => {
     }
 
     return React.cloneElement(iconElement as ReactElement, {
-      className: clsx(CLASSNAMES.icon, iconElement?.props?.className, iconPosition && ICON_POSITIONS[iconPosition]),
+      className: clsx(iconElement?.props?.className, iconPosition && ICON_POSITIONS[iconPosition]),
     });
   });
 
@@ -58,7 +58,7 @@ export const LuxLink = (props: LuxLinkProps) => {
   return (
     <UtrechtLink className={combinedClassName} {...externalProps} {...otherProps}>
       {positionedIcon}
-      <span className="utrecht-link__text">{children}</span>
+      <span className={CLASSNAMES.text}>{children}</span>
     </UtrechtLink>
   );
 };
