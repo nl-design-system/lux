@@ -16,7 +16,6 @@ export type LuxCheckboxProps = UtrechtCheckboxProps & {
 
 const CLASSNAME = {
   checkbox: 'lux-checkbox',
-  input: 'lux-checkbox__input',
   disabled: 'lux-checkbox--disabled',
 };
 
@@ -26,7 +25,7 @@ export const LuxCheckbox = forwardRef(
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
     const combinedClassName = clsx(
-      CLASSNAME.input,
+      CLASSNAME.checkbox,
       {
         [CLASSNAME.disabled]: disabled,
       },
@@ -34,16 +33,14 @@ export const LuxCheckbox = forwardRef(
     );
 
     return (
-      <div className={CLASSNAME.checkbox}>
-        <UtrechtCheckbox
-          ref={ref}
-          name={name}
-          className={combinedClassName}
-          checked={checked}
-          disabled={disabled}
-          {...restProps}
-        />
-      </div>
+      <UtrechtCheckbox
+        ref={ref}
+        name={name}
+        className={combinedClassName}
+        checked={checked}
+        disabled={disabled}
+        {...restProps}
+      />
     );
   },
 );
