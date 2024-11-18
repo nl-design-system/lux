@@ -73,6 +73,7 @@ export default meta;
 const RadioButtonTemplate: Story = {
   args: {
     label: 'Option 1',
+    name: 'playground',
   },
 };
 
@@ -89,6 +90,10 @@ export const Playground: Story = {
 
 export const Default: Story = {
   ...RadioButtonTemplate,
+  args: {
+    ...RadioButtonTemplate.args,
+    name: 'default',
+  },
   name: 'default',
 };
 
@@ -96,6 +101,7 @@ export const Checked: Story = {
   ...RadioButtonTemplate,
   args: {
     ...RadioButtonTemplate.args,
+    name: 'checked',
     checked: true,
   },
   name: 'checked',
@@ -105,6 +111,7 @@ export const Invalid: Story = {
   ...RadioButtonTemplate,
   args: {
     ...RadioButtonTemplate.args,
+    name: 'invalid',
     invalid: true,
   },
   name: 'invalid',
@@ -114,6 +121,7 @@ export const Disabled: Story = {
   ...RadioButtonTemplate,
   args: {
     ...RadioButtonTemplate.args,
+    name: 'disabled',
     disabled: true,
   },
   name: 'disabled',
@@ -121,6 +129,10 @@ export const Disabled: Story = {
 
 export const Hover: Story = {
   ...RadioButtonTemplate,
+  args: {
+    ...RadioButtonTemplate.args,
+    name: 'hover',
+  },
   name: 'hover',
   parameters: {
     pseudo: { hover: true },
@@ -129,6 +141,10 @@ export const Hover: Story = {
 
 export const FocusVisible: Story = {
   ...RadioButtonTemplate,
+  args: {
+    ...RadioButtonTemplate.args,
+    name: 'focus-visible',
+  },
   name: 'focus-visible',
   parameters: {
     pseudo: { focus: true, focusVisible: true },
