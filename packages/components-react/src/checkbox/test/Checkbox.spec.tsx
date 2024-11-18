@@ -59,7 +59,7 @@ describe('Checkbox', () => {
     render(<LuxCheckbox name="test-checkbox" className="custom-class" disabled={true} />);
 
     const checkbox = screen.getByRole('checkbox');
-    expect(checkbox).toHaveClass('lux-checkbox__input');
+    expect(checkbox).toHaveClass('lux-checkbox');
     expect(checkbox).toHaveClass('lux-checkbox--disabled');
     expect(checkbox).toHaveClass('custom-class');
   });
