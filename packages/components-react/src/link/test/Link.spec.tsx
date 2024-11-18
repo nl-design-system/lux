@@ -21,7 +21,7 @@ describe('Link', () => {
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', '#');
     expect(link).toHaveClass('lux-link', 'custom-class');
-    expect(link.querySelector('.utrecht-link__text')).toHaveTextContent('Test Link');
+    expect(link.querySelector('.lux-link__text')).toHaveTextContent('Test Link');
   });
 
   // External link tests
@@ -56,7 +56,7 @@ describe('Link', () => {
 
       const link = screen.getByRole('link');
       const svg = link.querySelector('svg');
-      expect(svg).toHaveClass('lux-link__icon', 'lux-link-icon--start');
+      expect(svg).toHaveClass('lux-link-icon--start');
     });
 
     it('renders icon at end position', () => {
@@ -68,7 +68,7 @@ describe('Link', () => {
 
       const link = screen.getByRole('link');
       const svg = link.querySelector('svg');
-      expect(svg).toHaveClass('lux-link__icon', 'lux-link-icon--end');
+      expect(svg).toHaveClass('lux-link-icon--end');
     });
 
     it('applies custom className to icon while preserving default classes', () => {
@@ -85,7 +85,7 @@ describe('Link', () => {
       );
 
       const svg = screen.getByRole('link').querySelector('svg');
-      expect(svg).toHaveClass('lux-link__icon', 'custom-icon-class', 'lux-link-icon--start');
+      expect(svg).toHaveClass('custom-icon-class', 'lux-link-icon--start');
     });
   });
 
@@ -106,7 +106,7 @@ describe('Link', () => {
   it('wraps text content in span with correct class', () => {
     render(<LuxLink href="#">Test Link</LuxLink>);
 
-    const textWrapper = screen.getByRole('link').querySelector('.utrecht-link__text');
+    const textWrapper = screen.getByRole('link').querySelector('.lux-link__text');
     expect(textWrapper).toBeInTheDocument();
     expect(textWrapper).toHaveTextContent('Test Link');
   });
@@ -128,13 +128,13 @@ describe('Link', () => {
 
     const link = screen.getByRole('link');
     const svg = link.querySelector('svg');
-    const textWrapper = link.querySelector('.utrecht-link__text');
+    const textWrapper = link.querySelector('.lux-link__text');
 
     expect(link).toHaveAttribute('href', 'https://example.com');
     expect(link).toHaveAttribute('rel', 'external noopener noreferrer');
     expect(link).toHaveAttribute('hrefLang', 'en');
     expect(link).toHaveClass('lux-link', 'custom-class');
-    expect(svg).toHaveClass('lux-link__icon', 'lux-link-icon--end');
+    expect(svg).toHaveClass('lux-link-icon--end');
     expect(textWrapper).toHaveTextContent('Complex Link');
   });
 });
