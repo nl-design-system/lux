@@ -1,0 +1,56 @@
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/checkbox-css/README.md?raw";
+import * as CheckboxStories from "./checkbox.stories.tsx";
+import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+<CitationDocumentation
+  component="Utrecht Checkbox"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-checkbox--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Notes
+
+- The checkbox supports different states: checked, disabled, invalid, required
+- All states can be combined
+- The component inherits its styling from the Utrecht Design System
+
+## Playground
+
+<Canvas of={CheckboxStories.Playground} />
+<Controls of={CheckboxStories.Playground} />
+
+## Default
+
+<Canvas of={CheckboxStories.Default} />
+
+## States
+
+### Checked
+
+<Canvas of={CheckboxStories.Checked} />
+
+### Disabled
+
+<Canvas of={CheckboxStories.Disabled} />
+
+### Checked and Disabled
+
+<Canvas of={CheckboxStories.CheckedAndDisabled} />
+
+### Hover
+
+<Canvas of={CheckboxStories.Hover} />
+
+### Focus
+
+<Canvas of={CheckboxStories.Focus} />
+
+### Focus Visible
+
+<Canvas of={CheckboxStories.FocusVisible} />
