@@ -26,6 +26,11 @@ export { LuxLink, type LuxLinkProps } from './link/Link';
 export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
 export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
+export {
+  LuxFormFieldRadioOption,
+  type LuxFormFieldRadioOptionProps,
+} from './form-field-radio-option/FormFieldRadioOption';
+export { LuxFormFieldRadioGroup, type LuxFormFieldRadioGroupProps } from './form-field-radio-group/FormFieldRadioGroup';
 export { LuxCheckbox, type LuxCheckboxProps } from './checkbox/Checkbox';
 export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading';
 export { LuxSection, type LuxSectionProps } from './section/Section';
