@@ -22,6 +22,7 @@ export {
   LuxFormFieldErrorMessage,
   type LuxFormFieldErrorMessageProps,
 } from './form-field-error-message/FormFieldErrorMessage';
+export { LuxLink, type LuxLinkProps } from './link/Link';
 export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
 export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
