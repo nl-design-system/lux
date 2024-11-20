@@ -27,6 +27,8 @@ const preview: Preview = {
         'DigiD dark': 'lux-theme--digid-dark',
         'Logius light': 'lux-theme--logius-light',
         'Logius dark': 'lux-theme--logius-dark',
+        'Mijn Aansluitingen light': 'lux-theme--eva-light',
+        'Mijn Aansluitingen dark': 'lux-theme--eva-dark',
         'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
         'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
         'NLdoc light': 'lux-theme--nldoc-light',
