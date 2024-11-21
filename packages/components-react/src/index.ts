@@ -22,9 +22,10 @@ export {
   LuxFormFieldErrorMessage,
   type LuxFormFieldErrorMessageProps,
 } from './form-field-error-message/FormFieldErrorMessage';
-export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
+export { LuxFormFieldSelect, type LuxFormFieldSelectProps } from './form-field-select/FormFieldSelect';
 export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
 export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading';
 export { LuxSection, type LuxSectionProps } from './section/Section';
 export { LuxSelect, LuxSelectOption, type LuxSelectProps, type LuxSelectOptionProps } from './select/Select';
+export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';

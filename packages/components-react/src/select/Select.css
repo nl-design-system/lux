@@ -1,0 +1,15 @@
+/* TODO: Replace tokens or fix in Utrecht code */
+.lux-select {
+  line-height: var(--lux-line-height-body-default);
+
+  & :focus {
+    border-width: var(--lux-border-width-m);
+  }
+
+  & :hover {
+    border-width: var(--lux-border-width-m);
+    border-color: var(--lux-border-strong);
+    background-color: var(--lux-color-background-default);
+    color: var(--lux-color-foreground-default);
+  }
+}

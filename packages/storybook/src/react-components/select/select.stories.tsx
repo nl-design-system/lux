@@ -32,15 +32,19 @@ const meta = {
 export default meta;
 
 const selectOptions: LuxSelectOptionProps[] = [
-  { value: '', label: 'Select an option', disabled: true },
-  { value: '1', label: 'Option #1' },
-  { value: '2', label: 'Option #2' },
-  { value: '3', label: 'Option #3' },
-  { value: '4', label: 'Option #4' },
+  { value: '0', label: 'Select an option', disabled: true },
+  { value: '1', label: 'Disabled' },
+  { value: '2', label: 'Required', selected: true },
+  { value: '3', label: 'Invalid' },
+  { value: '4', label: 'Focus' },
+  { value: '5', label: 'FocusVisible' },
+  { value: '6', label: 'Hover' },
 ];
 
 const SelectTemplate: Story = {
-  args: {},
+  args: {
+    defaultValue: '0',
+  },
   render: ({ ...args }) => (
     <LuxSelect {...args}>
       {selectOptions.map(({ label, value, disabled }, index) => (
@@ -64,36 +68,60 @@ export const Playground: Story = {
 };
 
 export const Disabled: Story = {
+  ...SelectTemplate,
   args: {
+    ...SelectTemplate.args,
     disabled: true,
+    defaultValue: '1',
   },
 };
 
 export const Required: Story = {
+  ...SelectTemplate,
   args: {
+    ...SelectTemplate.args,
     required: true,
+    defaultValue: '2',
   },
 };
 
 export const Invalid: Story = {
+  ...SelectTemplate,
   args: {
+    ...SelectTemplate.args,
     invalid: true,
+    defaultValue: '3',
   },
 };
 
 export const Focus: Story = {
+  ...SelectTemplate,
+  args: {
+    ...SelectTemplate.args,
+    defaultValue: '4',
+  },
   parameters: {
     pseudo: { focus: true },
   },
 };
 
 export const FocusVisible: Story = {
+  ...SelectTemplate,
+  args: {
+    ...SelectTemplate.args,
+    defaultValue: '5',
+  },
   parameters: {
     pseudo: { focusVisible: true, focus: true },
   },
 };
 
 export const Hover: Story = {
+  ...SelectTemplate,
+  args: {
+    ...SelectTemplate.args,
+    defaultValue: '6',
+  },
   parameters: {
     pseudo: { hover: true },
   },
