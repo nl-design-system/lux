@@ -3,7 +3,6 @@
   row-gap: var(--lux-section-row-gap);
   flex-direction: column;
   justify-content: start;
-  align-items: center;
   border-radius: var(--lux-section-border-radius);
   background-color: var(--lux-section-background-color);
   padding-inline-start: var(--lux-section-padding-inline-start);
