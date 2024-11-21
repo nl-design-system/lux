@@ -38,7 +38,14 @@
   .utrecht-form-label.utrecht-form-label--checkbox {
     display: block;
     margin-inline-start: revert;
+    padding-inline: var(--lux-form-field-checkbox-inner-padding-inline-start);
+    padding-block: var(--lux-form-field-checkbox-inner-padding-block-start);
     text-indent: calc(-1 * var(--lux-indent));
+
+    &:hover {
+      border-color: var(--lux-form-field-checkbox-hover-inner-border-color);
+      background-color: var(--lux-form-field-checkbox-hover-inner-background-color);
+    }
 
     &::before {
       position: absolute;
