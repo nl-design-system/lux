@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ReactNode, useId } from 'react';
+import { useId } from 'react';
 import { LuxCheckbox } from '../checkbox/Checkbox';
 import { LuxFormField, LuxFormFieldProps } from '../form-field/FormField';
 import {
@@ -11,24 +11,22 @@ import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
 import './FormFieldCheckbox.scss';
 
 export type LuxFormFieldCheckboxProps = LuxFormFieldProps & {
-  label: ReactNode;
-  description: ReactNode;
-  errorMessage: ReactNode;
-  disabled: boolean;
-  invalid: boolean;
-  appearance: LuxFormFieldDescriptionAppearance;
-  distanced: boolean;
-  children: any;
-  restProps: any;
+  checked?: boolean;
+  disabled?: boolean;
+  appearance?: LuxFormFieldDescriptionAppearance;
+  withTarget?: boolean;
+  distanced?: boolean;
 };
 
 export const LuxFormFieldCheckbox = ({
   label,
   description,
   errorMessage,
+  checked,
   disabled,
   invalid,
   appearance,
+  withTarget,
   distanced,
   children,
   ...restProps
@@ -77,6 +75,7 @@ export const LuxFormFieldCheckbox = ({
 
   return (
     <>
+      <h2 className="utrecht-heading-4">Robbert&apos;s versie:</h2>
       <LuxFormField type="custom" className={clsx('lux-form-field-checkbox--robbert')} invalid={invalid} {...restProps}>
         <LuxFormFieldLabel type="checkbox">
           <LuxCheckbox />
@@ -86,22 +85,31 @@ export const LuxFormFieldCheckbox = ({
         <LuxFormFieldErrorMessage>{errorMessage}</LuxFormFieldErrorMessage>
         {children}
       </LuxFormField>
-      <hr />
+      <br />
+      <h2 className="utrecht-heading-4">J-H&apos;s versie:</h2>
       <LuxFormField
         type="checkbox"
         label={labelNode}
         description={descriptionNode}
         errorMessage={errorMessageNode}
         invalid={invalid}
-        input={<LuxCheckbox id={inputId} disabled={disabled} invalid={invalid} />}
+        input={
+          <LuxCheckbox id={inputId} disabled={disabled} invalid={invalid} checked={checked} withTarget={withTarget} />
+        }
         className={clsx('lux-form-field-checkbox', {
           'lux-form-field-checkbox--invalid': invalid,
           'lux-form-field-checkbox--disabled': disabled,
+          'lux-form-field-checkbox--with-target': withTarget,
         })}
         {...restProps}
       >
         {children}
       </LuxFormField>
+      <br />
+      <small>
+        <span style={{ outline: '1pt dotted gold' }}>Yellow outline</span> is for testing, it shows the root of the
+        component
+      </small>
     </>
   );
 };

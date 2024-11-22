@@ -17,6 +17,9 @@ const meta = {
   },
   argTypes: {
     ...CheckboxMeta.argTypes,
+    description: {
+      ...FormFieldDescriptionMeta.argTypes.children,
+    },
     appearance: {
       ...FormFieldDescriptionMeta.argTypes.appearance,
     },
@@ -25,6 +28,10 @@ const meta = {
     },
     disabled: {
       type: 'boolean',
+    },
+    withTarget: {
+      type: 'boolean',
+      description: 'Makes the whole inner part a click target.',
     },
     errorMessage: {
       if: {
@@ -42,7 +49,6 @@ export const Playground: Story = {
   name: 'Playground',
   args: {
     label: 'Label',
-    description: 'Description',
     errorMessage: 'ErrorMessage',
     invalid: false,
     appearance: undefined,
@@ -53,6 +59,14 @@ export const Playground: Story = {
     },
   },
   tags: ['!autodocs'],
+};
+
+export const WithDescription: Story = {
+  name: 'With Description',
+  args: {
+    ...Playground.args,
+    description: 'Description',
+  },
 };
 
 export const Invalid: Story = {
@@ -68,5 +82,13 @@ export const Disabled: Story = {
   args: {
     ...Playground.args,
     disabled: true,
+  },
+};
+
+export const WithTarget: Story = {
+  name: 'With Target',
+  args: {
+    ...Playground.args,
+    withTarget: true,
   },
 };

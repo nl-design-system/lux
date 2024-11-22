@@ -8,19 +8,27 @@
   --lux-form-field-checkbox-inner-border-radius: var(--lux-border-radius-default);
   --lux-form-field-checkbox-inner-border-width: var(--lux-border-width-default, 1px);
   --lux-form-field-checkbox-inner-border-style: solid;
+  --lux-form-field-checkbox-inner-color: var(--lux-color-foreground-default);
   --lux-form-field-checkbox-inner-border-color: var(--lux-color-brand-default);
   --lux-form-field-checkbox-inner-background-color: var(--lux-color-none);
   --lux-form-field-checkbox-invalid-inner-border-color: var(--lux-color-feedback-error-default);
   --lux-form-field-checkbox-invalid-inner-background-color: var(--lux-color-none);
   --lux-form-field-checkbox-invalid-inner-row-gap: var(--lux-space-100);
+  --lux-form-field-checkbox-hover-inner-color: var(--lux-color-foreground-default);
   --lux-form-field-checkbox-hover-inner-border-color: var(--lux-color-brand-default);
   --lux-form-field-checkbox-hover-inner-background-color: var(--lux-color-brand-subdued);
-  --lux-form-field-checkbox-active-inner-border-color: var(--lux-color-brand-default);
-  --lux-form-field-checkbox-active-inner-background-color: var(--lux-color-none);
+  --lux-form-field-checkbox-focus-visible-inner-color: var(--lux-color-foreground-default);
   --lux-form-field-checkbox-focus-visible-inner-border-color: var(--lux-color-brand-default);
   --lux-form-field-checkbox-focus-visible-background-color: var(--lux-color-none);
+  --lux-form-field-checkbox-disabled-inner-color: var(--lux-color-foreground-default);
   --lux-form-field-checkbox-disabled-inner-border-color: var(--lux-color-border-subdued);
   --lux-form-field-checkbox-disabled-inner-background-color: var(--lux-color-none);
+
+  /* there's no active state for inputs
+  --lux-form-field-checkbox-active-inner-color: var(--lux-color-foreground-default);
+  --lux-form-field-checkbox-active-inner-border-color: var(--lux-color-brand-default);
+  --lux-form-field-checkbox-active-inner-background-color: var(--lux-color-none); 
+  */
 }
 
 .lux-form-field-checkbox--robbert {
@@ -45,6 +53,7 @@
     &:hover {
       border-color: var(--lux-form-field-checkbox-hover-inner-border-color);
       background-color: var(--lux-form-field-checkbox-hover-inner-background-color);
+      color: var(--lux-form-field-checkbox-hover-inner-color);
     }
 
     &::before {
@@ -96,10 +105,12 @@
   outline-offset: 2px;
 
   &::before {
+    position: relative;
     grid-row-start: label;
     grid-row-end: description;
     grid-column-start: input;
     grid-column-end: description;
+    z-index: -1;
     border: var(--lux-form-field-checkbox-inner-border-width) var(--lux-form-field-checkbox-inner-border-style)
       var(--lux-form-field-checkbox-inner-border-color);
     border-radius: var(--lux-form-field-checkbox-inner-border-radius);
@@ -110,11 +121,13 @@
   &--disabled::before {
     border-color: var(--lux-form-field-checkbox-disabled-inner-border-color);
     background-color: var(--lux-form-field-checkbox-disabled-inner-background-color);
+    color: var(--lux-form-field-checkbox-disabled-inner-color);
   }
 
   &--invalid::before {
     border-color: var(--lux-form-field-checkbox-invalid-inner-border-color);
     background-color: var(--lux-form-field-checkbox-invalid-inner-background-color);
+    color: var(--lux-form-field-checkbox-invalid-inner-color);
   }
 
   &:has(:focus-visible)::before {
@@ -129,6 +142,7 @@
     box-shadow: var(--_utrecht-focus-ring-box-shadow);
     border-color: var(--lux-form-field-checkbox-focus-visible-inner-border-color);
     background-color: var(--lux-form-field-checkbox-focus-visible-inner-background-color);
+    color: var(--lux-form-field-checkbox-focus-visible-inner-color);
   }
 
   .utrecht-checkbox:focus-visible {
@@ -138,19 +152,23 @@
   &:not(#{&}--disabled):has(.utrecht-form-field__input .utrecht-checkbox:hover)::before {
     border-color: var(--lux-form-field-checkbox-hover-inner-border-color);
     background-color: var(--lux-form-field-checkbox-hover-inner-background-color);
+    color: var(--lux-form-field-checkbox-hover-inner-color);
   }
 
-  /* TODO: only when block prop is set?? */
-  &__label::before {
+  &--with-target &__label::before,
+  &--with-target &__description label::before {
     position: absolute;
     inset-block-end: 0;
     inset-block-start: 0;
     inset-inline-end: 0;
-    inset-inline-start: 0;
+    inset-inline-start: calc(-1 * var(--_lux-checkbox-size) - var(--_lux-column-gap));
     pointer-events: visible;
-
-    /* outline: 1mm dashed salmon; */
     content: "";
+  }
+
+  .utrecht-form-field__label,
+  .utrecht-form-field__description {
+    position: relative;
   }
 
   .utrecht-form-field__label,
