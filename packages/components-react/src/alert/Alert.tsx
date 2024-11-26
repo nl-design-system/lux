@@ -29,8 +29,8 @@ const InfoIcon = () => (
     />
     <path
       className="lux-icon"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M11.04 6.05C10.82 6.3 10.71 6.59 10.71 6.93C10.71 7.28 10.82 7.57 11.04 7.81C11.27 8.04 11.58 8.16 11.99 8.16C12.39 8.16 12.71 8.04 12.93 7.79C13.15 7.54 13.26 7.25 13.26 6.93C13.26 6.57 13.15 6.27 12.93 6.03C12.71 5.79 12.4 5.67 11.99 5.67C11.58 5.67 11.26 5.8 11.04 6.05ZM13.11 18.28V9.32L10.9 9.41V18.28H13.11Z"
       style={{ fill: 'var(--lux-icon-secondary-color, white)' }}
     />
@@ -73,8 +73,8 @@ const WarningIcon = () => (
       style={{ fill: 'var(--lux-icon-primary-color, #FFB612)' }}
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M13.33 6.98L10.85 7.18H10.84V15.17L13.11 15.12V12.49L13.33 6.98ZM10.9 16.33C10.66 16.63 10.54 17.01 10.54 17.45C10.54 17.96 10.67 18.34 10.92 18.59C11.17 18.85 11.54 18.98 12.02 18.98C12.51 18.98 12.87 18.83 13.11 18.54C13.35 18.25 13.47 17.88 13.47 17.45C13.47 16.93 13.34 16.54 13.09 16.27C12.84 16.01 12.47 15.87 11.99 15.87C11.5 15.87 11.14 16.02 10.9 16.33Z"
       style={{ fill: 'var(--lux-icon-secondary-color, black)' }}
     />
