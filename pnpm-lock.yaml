@@ -116,6 +116,9 @@ importers:
       '@utrecht/component-library-react':
         specifier: 7.1.0
         version: 7.1.0(@babel/runtime@7.25.0)(date-fns@3.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.0
+        version: 2.3.0
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -352,10 +355,10 @@ importers:
       '@utrecht/pre-heading-css':
         specifier: 1.2.0
         version: 1.2.0
-      '@utrecht/textbox-css':
+      '@utrecht/radio-button-css':
         specifier: 1.3.1
         version: 1.3.1
-      '@utrecht/radio-button-css':
+      '@utrecht/textbox-css':
         specifier: 1.3.1
         version: 1.3.1
       '@vitejs/plugin-react':
@@ -2791,6 +2794,7 @@ packages:
 
   '@utrecht/component-library-css@6.1.0':
     resolution: {integrity: sha512-+2qarCIgsNpLpxOcG5Rw3WLqNBASoWJFHMI4RlZJm5JTFfnhnl2wC/ylK23wOOooLNNCmsGrLdvSHHrEThJynw==}
+
   '@utrecht/component-library-react@7.1.0':
     resolution: {integrity: sha512-TPYDkuGWKfvhkdFBPtVfUMEXjqqabSia++Ewf2FyRYuCSud/ZxWCkw53Pf7HXlEloAngQMc/BbrJB4f2Ok9B+Q==}
     peerDependencies:
@@ -2813,6 +2817,9 @@ packages:
 
   '@utrecht/document-css@1.1.0':
     resolution: {integrity: sha512-navpa20l9U2c/gMDNzZ83MF2/VfXJBXVIGw6CoZ7s3uNbR92H6MAvvSn29C/Kg9QGjDAhDd7P5dIyjQ1KrwJfg==}
+
+  '@utrecht/focus-ring-css@2.3.0':
+    resolution: {integrity: sha512-HYsULqosoFp9zMypvGuEaGpsl01cW6qKGIYGQa9FZCcCtwXcS0dqFEcjeZJ1yue0RJsk0QuGVBrQOXjsNPNkBg==}
 
   '@utrecht/form-field-css@1.3.0':
     resolution: {integrity: sha512-AcMdfFMznH/h1RYwqSij93AR35Wv7ov/1pk6jEZXegCyvqPQi1L636QYNBmPN+HyZJUXymRbA85gXONVIRoMBg==}
@@ -2841,11 +2848,11 @@ packages:
   '@utrecht/pre-heading-css@1.2.0':
     resolution: {integrity: sha512-64r4F/uXyEnQkquCdP5hSQsSfqg0i4tME0/yQ02q1EkU3grUXSebIYi2nwD0Cq2weBBNdyelNwdI2f/slNMMVA==}
 
-  '@utrecht/textbox-css@1.3.1':
-    resolution: {integrity: sha512-O0ouypWFt3SQRIrtUoEw5jnHdnHmT1b9AX8lQmoGPHRP0nbg/pRNasNRca9JAxAzc8I6dGe9KyDF94utmjNL+A==}
-
   '@utrecht/radio-button-css@1.3.1':
     resolution: {integrity: sha512-eLO9J+OThXetZRyr777zo1DPNXwCWIoCvvlk9o2EtoLubNhzgt6ECGKN0zGoP8AwbqHxymSvvaP8SmwdpoHTbA==}
+
+  '@utrecht/textbox-css@1.3.1':
+    resolution: {integrity: sha512-O0ouypWFt3SQRIrtUoEw5jnHdnHmT1b9AX8lQmoGPHRP0nbg/pRNasNRca9JAxAzc8I6dGe9KyDF94utmjNL+A==}
 
   '@utrecht/web-component-library-stencil@2.0.0':
     resolution: {integrity: sha512-tl4YctoEi9nzSrbFLgmIm/BOJzke82NF7TJcmNgzQhBDmWykZNbeNHdx7CE07+TmMR81ZWs8s/umiTCTC6pRUQ==}
@@ -10505,6 +10512,8 @@ snapshots:
 
   '@utrecht/document-css@1.1.0': {}
 
+  '@utrecht/focus-ring-css@2.3.0': {}
+
   '@utrecht/form-field-css@1.3.0': {}
 
   '@utrecht/form-field-description-css@1.3.0': {}
@@ -10523,9 +10532,9 @@ snapshots:
 
   '@utrecht/pre-heading-css@1.2.0': {}
 
-  '@utrecht/textbox-css@1.3.1': {}
-
   '@utrecht/radio-button-css@1.3.1': {}
+
+  '@utrecht/textbox-css@1.3.1': {}
 
   '@utrecht/web-component-library-stencil@2.0.0':
     dependencies:

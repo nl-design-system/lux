@@ -1,4 +1,6 @@
-/* stylelint-disable selector-class-pattern */
+/* stylelint-disable-next-line scss/load-no-partial-leading-underscore */
+@use "@utrecht/focus-ring-css/src/_mixin.scss" as focus-ring;
+
 :root {
   --lux-form-field-checkbox-inner-column-gap: var(--lux-space-100);
   --lux-form-field-checkbox-inner-padding-inline-start: var(--lux-space-200, 0.5rem);
@@ -19,72 +21,10 @@
   --lux-form-field-checkbox-hover-inner-background-color: var(--lux-color-brand-subdued);
   --lux-form-field-checkbox-focus-visible-inner-color: var(--lux-color-foreground-default);
   --lux-form-field-checkbox-focus-visible-inner-border-color: var(--lux-color-brand-default);
-  --lux-form-field-checkbox-focus-visible-background-color: var(--lux-color-none);
+  --lux-form-field-checkbox-focus-visible-inner-background-color: var(--lux-color-none);
   --lux-form-field-checkbox-disabled-inner-color: var(--lux-color-foreground-default);
   --lux-form-field-checkbox-disabled-inner-border-color: var(--lux-color-border-subdued);
   --lux-form-field-checkbox-disabled-inner-background-color: var(--lux-color-none);
-
-  /* there's no active state for inputs
-  --lux-form-field-checkbox-active-inner-color: var(--lux-color-foreground-default);
-  --lux-form-field-checkbox-active-inner-border-color: var(--lux-color-brand-default);
-  --lux-form-field-checkbox-active-inner-background-color: var(--lux-color-none); 
-  */
-}
-
-.lux-form-field-checkbox--robbert {
-  --utrecht-checkbox-size: 24px;
-  --utrecht-checkbox-margin-inline-end: 12px;
-  --lux-indent: calc(var(--utrecht-checkbox-size) + var(--utrecht-checkbox-margin-inline-end));
-
-  position: relative;
-  margin-inline-start: var(--lux-indent);
-
-  /* FIXME: remove */
-  outline: 1pt dotted gold;
-  outline-offset: 2px;
-
-  .utrecht-form-label.utrecht-form-label--checkbox {
-    display: block;
-    margin-inline-start: revert;
-    padding-inline: var(--lux-form-field-checkbox-inner-padding-inline-start);
-    padding-block: var(--lux-form-field-checkbox-inner-padding-block-start);
-    text-indent: calc(-1 * var(--lux-indent));
-
-    &:hover {
-      border-color: var(--lux-form-field-checkbox-hover-inner-border-color);
-      background-color: var(--lux-form-field-checkbox-hover-inner-background-color);
-      color: var(--lux-form-field-checkbox-hover-inner-color);
-    }
-
-    &::before {
-      position: absolute;
-
-      /* stylelint-disable property-disallowed-list */
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: calc(-1 * var(--lux-indent));
-      border: var(--lux-form-field-checkbox-inner-border-width) var(--lux-form-field-checkbox-inner-border-style)
-        var(--lux-form-field-checkbox-inner-border-color);
-      border-radius: var(--lux-form-field-checkbox-inner-border-radius);
-      pointer-events: none;
-      content: "";
-
-      /* stylelint-enable property-disallowed-list */
-    }
-  }
-
-  .utrecht-checkbox {
-    margin-inline-end: var(--lux-form-field-checkbox-inner-column-gap);
-  }
-
-  .utrecht-form-field-description {
-    text-indent: -0.25rem;
-  }
-
-  .utrecht-form-field-error-message {
-    text-indent: calc(-1 * var(--lux-indent));
-  }
 }
 
 .lux-form-field-checkbox {
@@ -99,10 +39,6 @@
     ". description"
     "error-message error-message";
   gap: 0 var(--_lux-column-gap);
-
-  /* FIXME: remove */
-  outline: 1pt dotted gold;
-  outline-offset: 2px;
 
   &::before {
     position: relative;
@@ -134,12 +70,9 @@
     --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
       var(--utrecht-focus-inverse-outline-color, transparent);
 
-    /* TODO: maybe use utrecht mixin */
-    outline-color: var(--utrecht-focus-outline-color, revert);
-    outline-style: var(--utrecht-focus-outline-style, revert);
-    outline-width: var(--utrecht-focus-outline-width, revert);
-    outline-offset: var(--utrecht-focus-outline-offset, revert);
-    box-shadow: var(--_utrecht-focus-ring-box-shadow);
+    @include focus-ring.utrecht-focus-ring;
+
+    z-index: -1;
     border-color: var(--lux-form-field-checkbox-focus-visible-inner-border-color);
     background-color: var(--lux-form-field-checkbox-focus-visible-inner-background-color);
     color: var(--lux-form-field-checkbox-focus-visible-inner-color);
@@ -182,6 +115,8 @@
   }
 
   .utrecht-form-field__input {
+    display: grid;
+    place-content: baseline center;
     padding-inline-start: var(--lux-form-field-checkbox-inner-padding-inline-start);
   }
 
