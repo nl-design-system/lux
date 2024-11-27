@@ -61,14 +61,6 @@ export const Playground: Story = {
   tags: ['!autodocs'],
 };
 
-export const WithDescription: Story = {
-  name: 'With Description',
-  args: {
-    ...Playground.args,
-    description: 'Description',
-  },
-};
-
 export const Invalid: Story = {
   name: 'Invalid',
   args: {
@@ -85,10 +77,31 @@ export const Disabled: Story = {
   },
 };
 
+export const WithDescription: Story = {
+  name: 'With Description',
+  args: {
+    ...Playground.args,
+    description: 'Description',
+  },
+};
+
 export const WithTarget: Story = {
   name: 'With Target',
   args: {
     ...Playground.args,
+    withTarget: true,
+  },
+};
+
+export const withLongTexts: Story = {
+  name: 'With long texts',
+  args: {
+    ...Playground.args,
+    label: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+    description:
+      'Dolor ante id varius, aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient.',
+    errorMessage: 'Cursus nostra varius efficitur lobortis aliquam lectus bibendum',
+    invalid: true,
     withTarget: true,
   },
 };
