@@ -25,6 +25,7 @@
     "clean": "rimraf dist/ pages/",
     "lint": "tsc --project ./tsconfig.json --noEmit && tsc --noEmit --project ./tsconfig.test.json",
     "test": "mkdirp pages && cross-env NODE_OPTIONS=--experimental-vm-modules jest --verbose",
+    "watch:components": "vite build --watch",
     "watch:test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --verbose --watch"
   },
   "main": "./dist/index.umd.js",
@@ -42,6 +43,7 @@
   "dependencies": {
     "@utrecht/component-library-css": "6.1.0",
     "@utrecht/component-library-react": "7.1.0",
+    "@utrecht/focus-ring-css": "2.3.0",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
     "lodash.chunk": "4.2.0"
@@ -77,9 +79,9 @@
     "tslib": "2.6.3",
     "typescript": "5.5.4",
     "vite": "5.3.5",
+    "vite-plugin-css-injected-by-js": "3.5.2",
     "vite-plugin-dts": "4.2.3",
-    "vite-plugin-runtime-config": "1.0.2",
-    "vite-plugin-css-injected-by-js": "3.5.2"
+    "vite-plugin-runtime-config": "1.0.2"
   },
   "peerDependencies": {
     "react": "18",
