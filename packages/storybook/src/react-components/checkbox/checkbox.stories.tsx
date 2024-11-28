@@ -22,18 +22,16 @@ const meta = {
       description: 'Disabled state',
       control: 'boolean',
     },
+    withTarget: {
+      description: 'Sets a 44px by 44px click target around the checkbox (WCAG 2.5.5)',
+      control: 'boolean',
+    },
   },
 } satisfies Meta<typeof LuxCheckbox>;
 
 export default meta;
 
 const CheckboxTemplate: Story = {
-  args: {
-    checked: false,
-    disabled: false,
-    invalid: false,
-    required: false,
-  },
   render: ({ ...args }) => <LuxCheckbox {...args} />,
 };
 
@@ -56,7 +54,7 @@ export const Default: Story = {
 export const Checked: Story = {
   name: 'Checked',
   args: {
-    checked: true,
+    defaultChecked: true,
   },
 };
 
@@ -70,7 +68,7 @@ export const Disabled: Story = {
 export const CheckedAndDisabled: Story = {
   name: 'Checked and Disabled',
   args: {
-    checked: true,
+    defaultChecked: true,
     disabled: true,
   },
 };
@@ -91,10 +89,10 @@ export const Focus: Story = {
   },
 };
 
-export const FocusVisible: Story = {
+export const WithTarget: Story = {
   ...CheckboxTemplate,
-  name: 'Focus Visible',
-  parameters: {
-    pseudo: { focusVisible: true },
+  name: 'With Target',
+  args: {
+    withTarget: true,
   },
 };

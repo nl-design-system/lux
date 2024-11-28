@@ -6,42 +6,31 @@ import './Checkbox.css';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 
-export type LuxCheckboxProps = UtrechtCheckboxProps & {
-  invalid?: boolean;
-  name?: string;
-  checked?: boolean;
-  disabled?: boolean;
-  className?: string;
+export type LuxCheckboxProps = Omit<UtrechtCheckboxProps, 'appearance'> & {
+  withTarget?: boolean;
 };
 
 const CLASSNAME = {
   checkbox: 'lux-checkbox',
   disabled: 'lux-checkbox--disabled',
+  withTarget: 'lux-checkbox--with-target',
 };
 
 export const LuxCheckbox = forwardRef(
   (
-    { disabled, className, name, checked, ...restProps }: PropsWithChildren<LuxCheckboxProps>,
+    { disabled, withTarget, className, ...restProps }: PropsWithChildren<LuxCheckboxProps>,
     ref: ForwardedRef<HTMLInputElement>,
   ) => {
     const combinedClassName = clsx(
       CLASSNAME.checkbox,
       {
         [CLASSNAME.disabled]: disabled,
+        [CLASSNAME.withTarget]: withTarget,
       },
       className,
     );
 
-    return (
-      <UtrechtCheckbox
-        ref={ref}
-        name={name}
-        className={combinedClassName}
-        checked={checked}
-        disabled={disabled}
-        {...restProps}
-      />
-    );
+    return <UtrechtCheckbox ref={ref} className={combinedClassName} disabled={disabled} {...restProps} />;
   },
 );
 

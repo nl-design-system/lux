@@ -1,3 +1,9 @@
+:root {
+  /* Just for an example */
+  --lux-checkbox-target-hover-background-color: hsla(0 0% 76% / 19%);
+  --lux-checkbox-target-border-radius: 50%;
+}
+
 .lux-checkbox:checked:focus {
   border-color: var(--lux-checkbox-checked-focus-border-color);
   background-color: var(--lux-checkbox-checked-focus-background-color);
@@ -24,4 +30,27 @@
 
 .lux-checkbox--disabled {
   cursor: not-allowed;
+}
+
+.lux-checkbox--with-target {
+  display: inline-grid;
+  grid-template-areas: "input";
+  place-content: center center;
+}
+
+.lux-checkbox--with-target::before,
+.lux-checkbox--with-target::after {
+  grid-area: input;
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  content: "";
+}
+
+.lux-checkbox--with-target::after {
+  z-index: -1;
+}
+
+.lux-checkbox--with-target:hover::after {
+  border-radius: var(--lux-checkbox-target-border-radius);
+  background-color: var(--lux-checkbox-target-hover-background-color);
 }

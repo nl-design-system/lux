@@ -14,6 +14,7 @@ export {
 } from './heading/Heading';
 export { LuxHeadingGroup, type LuxHeadingGroupProps } from './heading-group/HeadingGroup';
 export { LuxFormField, type LuxFormFieldProps } from './form-field/FormField';
+export { LuxFormFieldCheckbox, type LuxFormFieldCheckboxProps } from './form-field-checkbox/FormFieldCheckbox';
 export {
   LuxFormFieldDescription,
   type LuxFormFieldDescriptionProps,
