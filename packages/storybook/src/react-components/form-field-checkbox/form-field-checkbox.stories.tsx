@@ -91,6 +91,14 @@ export const WithTarget: Story = {
     ...Playground.args,
     withTarget: true,
   },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Met `withTarget` wordt het hele component (behalve de foutmelding) een klikdoel. _Let op:_ dit kan voor gebruikers onverwacht zijn.',
+      },
+    },
+  },
 };
 
 export const withLongTexts: Story = {

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useId } from 'react';
-import { LuxCheckbox } from '../checkbox/Checkbox';
+import { LuxCheckbox, LuxCheckboxProps } from '../checkbox/Checkbox';
 import { LuxFormField, LuxFormFieldProps } from '../form-field/FormField';
 import {
   LuxFormFieldDescription,
@@ -9,14 +9,16 @@ import {
 import { LuxFormFieldErrorMessage } from '../form-field-error-message/FormFieldErrorMessage';
 import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
 import './FormFieldCheckbox.scss';
+import { pick } from '../utils/object';
 
-export type LuxFormFieldCheckboxProps = LuxFormFieldProps & {
-  checked?: boolean;
-  disabled?: boolean;
-  appearance?: LuxFormFieldDescriptionAppearance;
-  withTarget?: boolean;
-  distanced?: boolean;
-};
+export type LuxFormFieldCheckboxProps = LuxFormFieldProps &
+  LuxCheckboxProps & {
+    checked?: boolean;
+    disabled?: boolean;
+    appearance?: LuxFormFieldDescriptionAppearance;
+    withTarget?: boolean;
+    distanced?: boolean;
+  };
 
 export const LuxFormFieldCheckbox = ({
   label,
@@ -73,6 +75,17 @@ export const LuxFormFieldCheckbox = ({
       errorMessage
     );
 
+  const checkBoxAttrs = pick(restProps, [
+    'required',
+    'inputRequired',
+    'value',
+    'defaultValue',
+    'onFocus',
+    'onBlur',
+    'onInput',
+    'onChange',
+  ]);
+
   return (
     <LuxFormField
       type="checkbox"
@@ -81,7 +94,14 @@ export const LuxFormFieldCheckbox = ({
       errorMessage={errorMessageNode}
       invalid={invalid}
       input={
-        <LuxCheckbox id={inputId} disabled={disabled} invalid={invalid} checked={checked} withTarget={withTarget} />
+        <LuxCheckbox
+          id={inputId}
+          disabled={disabled}
+          invalid={invalid}
+          checked={checked}
+          withTarget={withTarget}
+          {...checkBoxAttrs}
+        />
       }
       className={clsx('lux-form-field-checkbox', {
         'lux-form-field-checkbox--invalid': invalid,
