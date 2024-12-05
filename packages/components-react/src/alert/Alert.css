@@ -17,4 +17,5 @@
   --utrecht-heading-6-color: var(--utrecht-alert-color);
   --utrecht-heading-6-font-size: var(--lux-alert-heading-font-size);
   --utrecht-heading-6-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-paragraph-color: var(--utrecht-alert-color);
 }
