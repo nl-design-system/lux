@@ -1,0 +1,72 @@
+var _a, _b, _c;
+import { j as LuxFormFieldSelect } from "./index-C4izKWdF.js";
+import { t as tokens } from "./index-BLZ711uc.js";
+import { B as BADGES } from "./preview-B916UyCr.js";
+import { m as meta$2 } from "./form-field-description.stories-BElHjbMX.js";
+import { m as meta$3 } from "./form-field-error-message.stories-DFO5PYca.js";
+import { m as meta$1 } from "./select.stories-JQdK778A.js";
+const meta = {
+  title: "React Components/Form Field/Form Field Select",
+  id: "react-components-form-field-form-field-select",
+  component: LuxFormFieldSelect,
+  parameters: {
+    badges: [BADGES.WIP, BADGES.CANARY],
+    tokens,
+    tokensPrefix: "utrecht-form-field-select"
+  },
+  argTypes: {
+    ...meta$1.argTypes,
+    appearance: {
+      ...meta$2.argTypes.appearance
+    },
+    distanced: {
+      ...meta$3.argTypes.distanced
+    },
+    disabled: {
+      type: "boolean"
+    },
+    errorMessage: {
+      if: {
+        arg: "invalid",
+        truthy: true
+      }
+    }
+  }
+};
+const Playground = {
+  name: "Playground",
+  args: {
+    label: "Form Field Select",
+    description: "Select in een FormField",
+    errorMessage: "Zo kan het ook een ErrorMessage hebben",
+    invalid: false,
+    appearance: void 0
+  },
+  parameters: {
+    docs: {
+      sourceState: "shown"
+    }
+  },
+  tags: ["!autodocs"]
+};
+Playground.parameters = {
+  ...Playground.parameters,
+  docs: {
+    ...(_a = Playground.parameters) == null ? void 0 : _a.docs,
+    source: {
+      originalSource: "{\n  name: 'Playground',\n  args: {\n    label: 'Form Field Select',\n    description: 'Select in een FormField',\n    errorMessage: 'Zo kan het ook een ErrorMessage hebben',\n    invalid: false,\n    appearance: undefined\n  },\n  parameters: {\n    docs: {\n      sourceState: 'shown'\n    }\n  },\n  tags: ['!autodocs']\n}",
+      ...(_c = (_b = Playground.parameters) == null ? void 0 : _b.docs) == null ? void 0 : _c.source
+    }
+  }
+};
+const __namedExportsOrder = ["Playground"];
+const FormFieldSelectStories = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  Playground,
+  __namedExportsOrder,
+  default: meta
+}, Symbol.toStringTag, { value: "Module" }));
+export {
+  FormFieldSelectStories as F,
+  Playground as P
+};

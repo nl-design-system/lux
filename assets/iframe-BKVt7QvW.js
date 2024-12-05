@@ -1,0 +1,210 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./border-tokens-DcHGvG_K.js","./jsx-runtime-DnIIMar6.js","./index-aC1ZMUrs.js","./_commonjsHelpers-CcAunmGO.js","./index-DXHhUSGJ.js","./index-Dm9k26tp.js","./index-B63kQkss.js","./index-vKye6HrD.js","./index-DtSuK_9N.js","./index-BdOSk9or.js","./DesignTokenSpacingPreview-BcGKECY1.js","./createVisualRegressionStory-Ckg-wQz5.js","./color-tokens-DA-TYo_b.js","./focus-tokens-DQgzHdfR.js","./font-tokens-CUF8IKze.js","./grid-tokens-DRaqdZEn.js","./sizing-tokens-CeaMx9sg.js","./community-components-BqIm-fUx.js","./border-tokens-BP51XxT8.js","./color-tokens-BgQ3fiRb.js","./font-tokens-Deq0OelV.js","./spacing-tokens-DkTvvkDk.js","./design-tokens-C9X8xjvg.js","./community-component-aanleveren-Duys2QYZ.js","./versioning-DHpQ2Jt-.js","./introduction-qUEN722G.js","./license-B7b1wQSh.js","./notice-DgX7TPAH.js","./alert-C6YkquFN.js","./README-i1AxuvIj.js","./alert.stories-Bl6IZJFb.js","./index-C4izKWdF.js","./index-BLZ711uc.js","./CitationDocumentation-B3Shsstx.js","./button-C9rwoaWH.js","./README-8lw3oO5y.js","./button.stories-zcuqmVax.js","./createDesignTokensStory-HiB5Jh-Q.js","./checkbox-PH15910i.js","./checkbox.stories-CWKfYMbh.js","./document-BlG3l_oO.js","./document.stories-C7uat1DF.js","./form-field-checkbox-CDY9CiJZ.js","./form-field-checkbox.stories-r6Nid5VE.js","./preview-B916UyCr.js","./preview-zY9OWzgw.css","./form-field-description.stories-BElHjbMX.js","./form-field-error-message.stories-DFO5PYca.js","./form-field-description-BwHKva_e.js","./form-field-error-message-DL0afZss.js","./form-field-label-ipBzCYpx.js","./form-field-label.stories-DCYMJAOm.js","./form-field-radio-group-B-a64t4U.js","./form-field-radio-group.stories-Crf1_DVQ.js","./form-field-radio-option-BtH1OrS_.js","./form-field-radio-option.stories-BXJrxIzg.js","./form-field-select-C-6oMlCG.js","./form-field-select.stories-B8Gb0iC0.js","./select.stories-JQdK778A.js","./form-field-textbox-CIo7oJU8.js","./form-field-textbox.stories-xWYU31br.js","./textbox.stories-DDHd6Jbc.js","./form-field-C6mjyHgF.js","./index-cEa3Pm8r.js","./form-field.stories-DC3rzJX1.js","./heading-group-y2SiteeP.js","./heading-group.stories-CMfs8W4k.js","./heading-D6AsgAde.js","./heading.stories-CCUX3GEL.js","./link-B8UbS9J2.js","./README-CSNxhwJ5.js","./link.stories-L8xUAaGg.js","./paragraph-CTH67UQH.js","./paragraph.stories-C5_QI3qh.js","./pre-heading-CKrzBgS2.js","./pre-heading.stories-B-RakWyp.js","./section-Cv3f7NeJ.js","./section.stories-Cqj3MIvv.js","./select-BFCRU8Sp.js","./textbox-C_DpdJ9B.js","./alert-BCIx5Ubv.js","./alert.stories-DtFtqMG0.js","./components-Cp22cNJ4.js","./button-CftOLSId.js","./button.stories-Cla13ruH.js","./index-DbgQBs_-.js","./document.stories-Dd3Ck1Wg.js","./link-BUoW_Ru0.js","./link.stories-BYB9WVwU.js","./inlogstraat-BbzamMHD.js","./login-link-themes-CaWzNjxP.js","./login-link.stories-Dage0K5g.js","./login-link-9_Ogppqw.js","./paragraph-Bd4ZDN-X.js","./paragraph.stories-BOb511GI.js","./entry-preview-DfrG9HCd.js","./react-18-BEw2RJX7.js","./entry-preview-docs-IjMUzxCw.js","./preview-CZJh5rGw.js","./preview-BslIZH-n.js","./preview-DyC47xhJ.js"])))=>i.map(i=>d[i]);
+import "../sb-preview/runtime.js";
+(function polyfill() {
+  const relList = document.createElement("link").relList;
+  if (relList && relList.supports && relList.supports("modulepreload")) {
+    return;
+  }
+  for (const link of document.querySelectorAll('link[rel="modulepreload"]')) {
+    processPreload(link);
+  }
+  new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      if (mutation.type !== "childList") {
+        continue;
+      }
+      for (const node of mutation.addedNodes) {
+        if (node.tagName === "LINK" && node.rel === "modulepreload")
+          processPreload(node);
+      }
+    }
+  }).observe(document, { childList: true, subtree: true });
+  function getFetchOpts(link) {
+    const fetchOpts = {};
+    if (link.integrity) fetchOpts.integrity = link.integrity;
+    if (link.referrerPolicy) fetchOpts.referrerPolicy = link.referrerPolicy;
+    if (link.crossOrigin === "use-credentials")
+      fetchOpts.credentials = "include";
+    else if (link.crossOrigin === "anonymous") fetchOpts.credentials = "omit";
+    else fetchOpts.credentials = "same-origin";
+    return fetchOpts;
+  }
+  function processPreload(link) {
+    if (link.ep)
+      return;
+    link.ep = true;
+    const fetchOpts = getFetchOpts(link);
+    fetch(link.href, fetchOpts);
+  }
+})();
+const scriptRel = "modulepreload";
+const assetsURL = function(dep, importerUrl) {
+  return new URL(dep, importerUrl).href;
+};
+const seen = {};
+const __vitePreload = function preload(baseModule, deps, importerUrl) {
+  let promise = Promise.resolve();
+  if (deps && deps.length > 0) {
+    const links = document.getElementsByTagName("link");
+    const cspNonceMeta = document.querySelector(
+      "meta[property=csp-nonce]"
+    );
+    const cspNonce = (cspNonceMeta == null ? void 0 : cspNonceMeta.nonce) || (cspNonceMeta == null ? void 0 : cspNonceMeta.getAttribute("nonce"));
+    promise = Promise.all(
+      deps.map((dep) => {
+        dep = assetsURL(dep, importerUrl);
+        if (dep in seen) return;
+        seen[dep] = true;
+        const isCss = dep.endsWith(".css");
+        const cssSelector = isCss ? '[rel="stylesheet"]' : "";
+        const isBaseRelative = !!importerUrl;
+        if (isBaseRelative) {
+          for (let i = links.length - 1; i >= 0; i--) {
+            const link2 = links[i];
+            if (link2.href === dep && (!isCss || link2.rel === "stylesheet")) {
+              return;
+            }
+          }
+        } else if (document.querySelector(`link[href="${dep}"]${cssSelector}`)) {
+          return;
+        }
+        const link = document.createElement("link");
+        link.rel = isCss ? "stylesheet" : scriptRel;
+        if (!isCss) {
+          link.as = "script";
+          link.crossOrigin = "";
+        }
+        link.href = dep;
+        if (cspNonce) {
+          link.setAttribute("nonce", cspNonce);
+        }
+        document.head.appendChild(link);
+        if (isCss) {
+          return new Promise((res, rej) => {
+            link.addEventListener("load", res);
+            link.addEventListener(
+              "error",
+              () => rej(new Error(`Unable to preload CSS for ${dep}`))
+            );
+          });
+        }
+      })
+    );
+  }
+  return promise.then(() => baseModule()).catch((err) => {
+    const e = new Event("vite:preloadError", { cancelable: true });
+    e.payload = err;
+    window.dispatchEvent(e);
+    if (!e.defaultPrevented) {
+      throw err;
+    }
+  });
+};
+const { createBrowserChannel } = __STORYBOOK_MODULE_CHANNELS__;
+const { addons } = __STORYBOOK_MODULE_PREVIEW_API__;
+const channel = createBrowserChannel({ page: "preview" });
+addons.setChannel(channel);
+window.__STORYBOOK_ADDONS_CHANNEL__ = channel;
+if (window.CONFIG_TYPE === "DEVELOPMENT") {
+  window.__STORYBOOK_SERVER_CHANNEL__ = channel;
+}
+const importers = {
+  "./src/design-tokens/common/border-tokens.mdx": async () => __vitePreload(() => import("./border-tokens-DcHGvG_K.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/common/color-tokens.mdx": async () => __vitePreload(() => import("./color-tokens-DA-TYo_b.js"), true ? __vite__mapDeps([12,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/common/focus-tokens.mdx": async () => __vitePreload(() => import("./focus-tokens-DQgzHdfR.js"), true ? __vite__mapDeps([13,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/common/font-tokens.mdx": async () => __vitePreload(() => import("./font-tokens-CUF8IKze.js"), true ? __vite__mapDeps([14,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/common/grid-tokens.mdx": async () => __vitePreload(() => import("./grid-tokens-DRaqdZEn.js"), true ? __vite__mapDeps([15,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/common/sizing-tokens.mdx": async () => __vitePreload(() => import("./sizing-tokens-CeaMx9sg.js"), true ? __vite__mapDeps([16,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/community-components.mdx": async () => __vitePreload(() => import("./community-components-BqIm-fUx.js"), true ? __vite__mapDeps([17,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/design-tokens/core/border-tokens.mdx": async () => __vitePreload(() => import("./border-tokens-BP51XxT8.js"), true ? __vite__mapDeps([18,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/core/color-tokens.mdx": async () => __vitePreload(() => import("./color-tokens-BgQ3fiRb.js"), true ? __vite__mapDeps([19,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/core/font-tokens.mdx": async () => __vitePreload(() => import("./font-tokens-Deq0OelV.js"), true ? __vite__mapDeps([20,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/core/spacing-tokens.mdx": async () => __vitePreload(() => import("./spacing-tokens-DkTvvkDk.js"), true ? __vite__mapDeps([21,1,2,3,4,5,6,7,8,9,10,11]) : void 0, import.meta.url),
+  "./src/design-tokens/design-tokens.mdx": async () => __vitePreload(() => import("./design-tokens-C9X8xjvg.js"), true ? __vite__mapDeps([22,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/documentation/developer/community-component-aanleveren.mdx": async () => __vitePreload(() => import("./community-component-aanleveren-Duys2QYZ.js"), true ? __vite__mapDeps([23,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/documentation/developer/versioning.mdx": async () => __vitePreload(() => import("./versioning-DHpQ2Jt-.js"), true ? __vite__mapDeps([24,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/documentation/introduction.mdx": async () => __vitePreload(() => import("./introduction-qUEN722G.js"), true ? __vite__mapDeps([25,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/documentation/license.mdx": async () => __vitePreload(() => import("./license-B7b1wQSh.js"), true ? __vite__mapDeps([26,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/documentation/notice.mdx": async () => __vitePreload(() => import("./notice-DgX7TPAH.js"), true ? __vite__mapDeps([27,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/react-components/alert/alert.mdx": async () => __vitePreload(() => import("./alert-C6YkquFN.js"), true ? __vite__mapDeps([28,1,2,3,4,5,6,7,8,9,29,30,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/alert/alert.stories.tsx": async () => __vitePreload(() => import("./alert.stories-Bl6IZJFb.js").then((n) => n.A), true ? __vite__mapDeps([30,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/button/button.mdx": async () => __vitePreload(() => import("./button-C9rwoaWH.js"), true ? __vite__mapDeps([34,1,2,3,4,5,6,7,8,9,35,36,31,32,37,11,33]) : void 0, import.meta.url),
+  "./src/react-components/button/button.stories.tsx": async () => __vitePreload(() => import("./button.stories-zcuqmVax.js").then((n) => n.B), true ? __vite__mapDeps([36,1,2,3,31,32,37,11]) : void 0, import.meta.url),
+  "./src/react-components/checkbox/checkbox.mdx": async () => __vitePreload(() => import("./checkbox-PH15910i.js"), true ? __vite__mapDeps([38,1,2,3,4,5,6,7,8,9,39,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/checkbox/checkbox.stories.tsx": async () => __vitePreload(() => import("./checkbox.stories-CWKfYMbh.js").then((n) => n.C), true ? __vite__mapDeps([39,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/document/document.mdx": async () => __vitePreload(() => import("./document-BlG3l_oO.js"), true ? __vite__mapDeps([40,1,2,3,4,5,6,7,8,9,41,31,32,37,11]) : void 0, import.meta.url),
+  "./src/react-components/document/document.stories.tsx": async () => __vitePreload(() => import("./document.stories-C7uat1DF.js").then((n) => n.D), true ? __vite__mapDeps([41,1,2,3,31,32,37,11]) : void 0, import.meta.url),
+  "./src/react-components/form-field-checkbox/form-field-checkbox.mdx": async () => __vitePreload(() => import("./form-field-checkbox-CDY9CiJZ.js"), true ? __vite__mapDeps([42,1,2,3,4,5,6,7,8,9,43,31,32,44,45,39,46,47]) : void 0, import.meta.url),
+  "./src/react-components/form-field-checkbox/form-field-checkbox.stories.tsx": async () => __vitePreload(() => import("./form-field-checkbox.stories-r6Nid5VE.js").then((n) => n.F), true ? __vite__mapDeps([43,31,2,3,32,44,1,45,39,46,47]) : void 0, import.meta.url),
+  "./src/react-components/form-field-description/form-field-description.mdx": async () => __vitePreload(() => import("./form-field-description-BwHKva_e.js"), true ? __vite__mapDeps([48,1,2,3,4,5,6,7,8,9,46,31,32,44,45,33]) : void 0, import.meta.url),
+  "./src/react-components/form-field-description/form-field-description.stories.tsx": async () => __vitePreload(() => import("./form-field-description.stories-BElHjbMX.js").then((n) => n.F), true ? __vite__mapDeps([46,31,2,3,32,44,1,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-error-message/form-field-error-message.mdx": async () => __vitePreload(() => import("./form-field-error-message-DL0afZss.js"), true ? __vite__mapDeps([49,1,2,3,4,5,6,7,8,9,47,31,32,44,45,33]) : void 0, import.meta.url),
+  "./src/react-components/form-field-error-message/form-field-error-message.stories.tsx": async () => __vitePreload(() => import("./form-field-error-message.stories-DFO5PYca.js").then((n) => n.F), true ? __vite__mapDeps([47,1,2,3,31,32,44,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-label/form-field-label.mdx": async () => __vitePreload(() => import("./form-field-label-ipBzCYpx.js"), true ? __vite__mapDeps([50,1,2,3,4,5,6,7,8,9,51,31,32,44,45,33]) : void 0, import.meta.url),
+  "./src/react-components/form-field-label/form-field-label.stories.tsx": async () => __vitePreload(() => import("./form-field-label.stories-DCYMJAOm.js").then((n) => n.F), true ? __vite__mapDeps([51,1,2,3,31,32,44,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-radio-group/form-field-radio-group.mdx": async () => __vitePreload(() => import("./form-field-radio-group-B-a64t4U.js"), true ? __vite__mapDeps([52,1,2,3,4,5,6,7,8,9,53,31,44,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-radio-group/form-field-radio-group.stories.tsx": async () => __vitePreload(() => import("./form-field-radio-group.stories-Crf1_DVQ.js").then((n) => n.R), true ? __vite__mapDeps([53,1,2,3,31,44,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-radio-option/form-field-radio-option.mdx": async () => __vitePreload(() => import("./form-field-radio-option-BtH1OrS_.js"), true ? __vite__mapDeps([54,1,2,3,4,5,6,7,8,9,55,31,32,44,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-radio-option/form-field-radio-option.stories.tsx": async () => __vitePreload(() => import("./form-field-radio-option.stories-BXJrxIzg.js").then((n) => n.F), true ? __vite__mapDeps([55,31,2,3,32,44,1,45]) : void 0, import.meta.url),
+  "./src/react-components/form-field-select/form-field-select.mdx": async () => __vitePreload(() => import("./form-field-select-C-6oMlCG.js"), true ? __vite__mapDeps([56,1,2,3,4,5,6,7,8,9,57,31,32,44,45,46,47,58]) : void 0, import.meta.url),
+  "./src/react-components/form-field-select/form-field-select.stories.tsx": async () => __vitePreload(() => import("./form-field-select.stories-B8Gb0iC0.js").then((n) => n.F), true ? __vite__mapDeps([57,31,2,3,32,44,1,45,46,47,58]) : void 0, import.meta.url),
+  "./src/react-components/form-field-textbox/form-field-textbox.mdx": async () => __vitePreload(() => import("./form-field-textbox-CIo7oJU8.js"), true ? __vite__mapDeps([59,1,2,3,4,5,6,7,8,9,60,31,32,44,45,46,47,61]) : void 0, import.meta.url),
+  "./src/react-components/form-field-textbox/form-field-textbox.stories.tsx": async () => __vitePreload(() => import("./form-field-textbox.stories-xWYU31br.js").then((n) => n.F), true ? __vite__mapDeps([60,31,2,3,32,44,1,45,46,47,61]) : void 0, import.meta.url),
+  "./src/react-components/form-field/form-field.mdx": async () => __vitePreload(() => import("./form-field-C6mjyHgF.js"), true ? __vite__mapDeps([62,1,2,3,4,63,7,5,6,8,9,64,31,32,44,45,33,60,46,47,61]) : void 0, import.meta.url),
+  "./src/react-components/form-field/form-field.stories.tsx": async () => __vitePreload(() => import("./form-field.stories-DC3rzJX1.js").then((n) => n.F), true ? __vite__mapDeps([64,1,2,3,31,32,44,45]) : void 0, import.meta.url),
+  "./src/react-components/heading-group/heading-group.mdx": async () => __vitePreload(() => import("./heading-group-y2SiteeP.js"), true ? __vite__mapDeps([65,1,2,3,4,5,6,7,8,9,66,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/heading-group/heading-group.stories.tsx": async () => __vitePreload(() => import("./heading-group.stories-CMfs8W4k.js").then((n) => n.H), true ? __vite__mapDeps([66,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/heading/heading.mdx": async () => __vitePreload(() => import("./heading-D6AsgAde.js"), true ? __vite__mapDeps([67,1,2,3,4,5,6,7,8,9,68,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/heading/heading.stories.tsx": async () => __vitePreload(() => import("./heading.stories-CCUX3GEL.js").then((n) => n.H), true ? __vite__mapDeps([68,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/link/link.mdx": async () => __vitePreload(() => import("./link-B8UbS9J2.js"), true ? __vite__mapDeps([69,1,2,3,4,5,6,7,8,9,70,71,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/link/link.stories.tsx": async () => __vitePreload(() => import("./link.stories-L8xUAaGg.js").then((n) => n.L), true ? __vite__mapDeps([71,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/paragraph/paragraph.mdx": async () => __vitePreload(() => import("./paragraph-CTH67UQH.js"), true ? __vite__mapDeps([72,1,2,3,4,5,6,7,8,9,73,31,32,37,11]) : void 0, import.meta.url),
+  "./src/react-components/paragraph/paragraph.stories.tsx": async () => __vitePreload(() => import("./paragraph.stories-C5_QI3qh.js").then((n) => n.P), true ? __vite__mapDeps([73,1,2,3,31,32,37,11]) : void 0, import.meta.url),
+  "./src/react-components/pre-heading/pre-heading.mdx": async () => __vitePreload(() => import("./pre-heading-CKrzBgS2.js"), true ? __vite__mapDeps([74,1,2,3,4,5,6,7,8,9,75,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/pre-heading/pre-heading.stories.tsx": async () => __vitePreload(() => import("./pre-heading.stories-B-RakWyp.js").then((n) => n.P), true ? __vite__mapDeps([75,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/section/section.mdx": async () => __vitePreload(() => import("./section-Cv3f7NeJ.js"), true ? __vite__mapDeps([76,1,2,3,4,5,6,7,8,9,77,31,32]) : void 0, import.meta.url),
+  "./src/react-components/section/section.stories.tsx": async () => __vitePreload(() => import("./section.stories-Cqj3MIvv.js").then((n) => n.S), true ? __vite__mapDeps([77,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/select/select.mdx": async () => __vitePreload(() => import("./select-BFCRU8Sp.js"), true ? __vite__mapDeps([78,1,2,3,4,5,6,7,8,9,58,31,32,33]) : void 0, import.meta.url),
+  "./src/react-components/select/select.stories.tsx": async () => __vitePreload(() => import("./select.stories-JQdK778A.js").then((n) => n.S), true ? __vite__mapDeps([58,1,2,3,31,32]) : void 0, import.meta.url),
+  "./src/react-components/textbox/textbox.mdx": async () => __vitePreload(() => import("./textbox-C_DpdJ9B.js"), true ? __vite__mapDeps([79,1,2,3,4,63,7,5,6,8,9,61,31,32,44,45,33,60,46,47]) : void 0, import.meta.url),
+  "./src/react-components/textbox/textbox.stories.tsx": async () => __vitePreload(() => import("./textbox.stories-DDHd6Jbc.js").then((n) => n.T), true ? __vite__mapDeps([61,1,2,3,31,32,44,45]) : void 0, import.meta.url),
+  "./src/web-components/alert/alert.mdx": async () => __vitePreload(() => import("./alert-BCIx5Ubv.js"), true ? __vite__mapDeps([80,1,2,3,4,5,6,7,8,9,29,81,32,82,37,11,33]) : void 0, import.meta.url),
+  "./src/web-components/alert/alert.stories.tsx": async () => __vitePreload(() => import("./alert.stories-DtFtqMG0.js").then((n) => n.A), true ? __vite__mapDeps([81,1,2,3,32,82,37,11]) : void 0, import.meta.url),
+  "./src/web-components/button/button.mdx": async () => __vitePreload(() => import("./button-CftOLSId.js"), true ? __vite__mapDeps([83,1,2,3,4,5,6,7,8,9,35,84,32,85,37,11,82,33]) : void 0, import.meta.url),
+  "./src/web-components/button/button.stories.tsx": async () => __vitePreload(() => import("./button.stories-Cla13ruH.js").then((n) => n.B), true ? __vite__mapDeps([84,1,2,3,32,85,37,11,82]) : void 0, import.meta.url),
+  "./src/web-components/document/document.stories.tsx": async () => __vitePreload(() => import("./document.stories-Dd3Ck1Wg.js"), true ? __vite__mapDeps([86,1,2,3,32,37,11,82]) : void 0, import.meta.url),
+  "./src/web-components/link/link.mdx": async () => __vitePreload(() => import("./link-BUoW_Ru0.js"), true ? __vite__mapDeps([87,1,2,3,4,5,6,7,8,9,70,88,32,82,37,11]) : void 0, import.meta.url),
+  "./src/web-components/link/link.stories.tsx": async () => __vitePreload(() => import("./link.stories-BYB9WVwU.js").then((n) => n.L), true ? __vite__mapDeps([88,1,2,3,32,82,37,11]) : void 0, import.meta.url),
+  "./src/web-components/login-link/inlogstraat.mdx": async () => __vitePreload(() => import("./inlogstraat-BbzamMHD.js"), true ? __vite__mapDeps([89,1,2,3,4,5,6,7,8,9]) : void 0, import.meta.url),
+  "./src/web-components/login-link/login-link-themes.mdx": async () => __vitePreload(() => import("./login-link-themes-CaWzNjxP.js"), true ? __vite__mapDeps([90,1,2,3,4,5,6,7,8,9,91,32,82,37,11]) : void 0, import.meta.url),
+  "./src/web-components/login-link/login-link.mdx": async () => __vitePreload(() => import("./login-link-9_Ogppqw.js"), true ? __vite__mapDeps([92,1,2,3,4,5,6,7,8,9,91,32,82,37,11]) : void 0, import.meta.url),
+  "./src/web-components/login-link/login-link.stories.tsx": async () => __vitePreload(() => import("./login-link.stories-Dage0K5g.js").then((n) => n.L), true ? __vite__mapDeps([91,1,2,3,32,82,37,11]) : void 0, import.meta.url),
+  "./src/web-components/paragraph/paragraph.mdx": async () => __vitePreload(() => import("./paragraph-Bd4ZDN-X.js"), true ? __vite__mapDeps([93,1,2,3,4,5,6,7,8,9,94,32,37,11,82,33]) : void 0, import.meta.url),
+  "./src/web-components/paragraph/paragraph.stories.tsx": async () => __vitePreload(() => import("./paragraph.stories-BOb511GI.js").then((n) => n.P), true ? __vite__mapDeps([94,1,2,3,32,37,11,82]) : void 0, import.meta.url)
+};
+async function importFn(path) {
+  return importers[path]();
+}
+const { composeConfigs, PreviewWeb, ClientApi } = __STORYBOOK_MODULE_PREVIEW_API__;
+const getProjectAnnotations = async (hmrPreviewAnnotationModules = []) => {
+  const configs = await Promise.all([
+    hmrPreviewAnnotationModules.at(0) ?? __vitePreload(() => import("./entry-preview-DfrG9HCd.js"), true ? __vite__mapDeps([95,2,3,96,6]) : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(1) ?? __vitePreload(() => import("./entry-preview-docs-IjMUzxCw.js"), true ? __vite__mapDeps([97,8,3,9,2]) : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(2) ?? __vitePreload(() => import("./preview-9M-vqW-k.js"), true ? [] : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(3) ?? __vitePreload(() => import("./preview-CZJh5rGw.js"), true ? __vite__mapDeps([98,9]) : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(4) ?? __vitePreload(() => import("./preview-CYVgFl-m.js"), true ? [] : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(5) ?? __vitePreload(() => import("./preview-BiV8cBfe.js"), true ? [] : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(6) ?? __vitePreload(() => import("./preview-D8RdHa_w.js"), true ? [] : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(7) ?? __vitePreload(() => import("./preview-AqyFk0el.js"), true ? [] : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(8) ?? __vitePreload(() => import("./preview-BslIZH-n.js"), true ? __vite__mapDeps([99,85]) : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(9) ?? __vitePreload(() => import("./preview-DyC47xhJ.js"), true ? __vite__mapDeps([100,7]) : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(10) ?? __vitePreload(() => import("./preview-QeHyMOLA.js"), true ? [] : void 0, import.meta.url),
+    hmrPreviewAnnotationModules.at(11) ?? __vitePreload(() => import("./preview-B916UyCr.js").then((n) => n.p), true ? __vite__mapDeps([44,1,2,3,31,45]) : void 0, import.meta.url)
+  ]);
+  return composeConfigs(configs);
+};
+window.__STORYBOOK_PREVIEW__ = window.__STORYBOOK_PREVIEW__ || new PreviewWeb(importFn, getProjectAnnotations);
+window.__STORYBOOK_STORY_STORE__ = window.__STORYBOOK_STORY_STORE__ || window.__STORYBOOK_PREVIEW__.storyStore;
+export {
+  __vitePreload as _
+};
