@@ -15,11 +15,12 @@ import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionW
 
 type Story = StoryObj<typeof meta>;
 
+const headingText = "Pa's wijze lynx bezag vroom het fikse aquaduct!";
+
 const meta = {
   title: 'React Components/Heading',
   id: 'react-components-heading',
   component: LuxHeading,
-  subcomponents: {},
   parameters: {
     tokens,
     tokensPrefix: 'utrecht-heading-1',
@@ -48,8 +49,6 @@ const meta = {
 } satisfies Meta<typeof LuxHeading>;
 
 export default meta;
-
-const headingText = "Pa's wijze lynx bezag vroom het fikse aquaduct!";
 
 const HeadingTemplate: Story = {
   render: ({ children, ...args }) => <LuxHeading {...args}>{children}</LuxHeading>,
@@ -98,40 +97,38 @@ export const HeadingWithDifferentAppearance: Story = {
 
 export const DesignTokens = createDesignTokensStory(meta);
 
-const headings = ['indefinitus', 'primus', 'secundus', 'tertius', 'quārtus', 'quīntus', 'sextus', 'invalidus'];
-
 export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`} key={'light'}>
-      {headings.map((heading, index) => (
+      {[1, 2, 3, 4, 5, 6].map((level) => (
         <>
-          <LuxHeading level={index as LuxHeadingProps['level']} key={'light-level-' + index}>
-            Lorem ipsum dolor sit amet, titulus {heading}.
+          <LuxHeading level={level as LuxHeadingProps['level']} key={'light-level-' + level}>
+            H{level}: {headingText}
           </LuxHeading>
           <LuxHeading
             level={99 as LuxHeadingProps['level']}
-            appearance={index as LuxHeadingProps['appearance']}
-            key={'light-appeareance-' + index}
+            appearance={level as LuxHeadingProps['appearance']}
+            key={'light-appeareance-' + level}
           >
-            Lorem ipsum dolor sit amet, aspectus {heading}.
+            Lijkt op een H{level}: {headingText}
           </LuxHeading>
         </>
       ))}
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`} key="dark">
-      {headings.map((heading, index) => (
+      {[1, 2, 3, 4, 5, 6].map((level) => (
         <>
-          <LuxHeading level={index as LuxHeadingProps['level']} key={'dark-level-' + index}>
-            Lorem ipsum dolor sit amet, titulus {heading}.
+          <LuxHeading level={level as LuxHeadingProps['level']} key={'dark-level-' + level}>
+            H{level}: {headingText}
           </LuxHeading>
           <LuxHeading
             level={99 as LuxHeadingProps['level']}
-            appearance={index as LuxHeadingProps['appearance']}
-            key={'dark-appearance-' + index}
+            appearance={level as LuxHeadingProps['appearance']}
+            key={'dark-appeareance-' + level}
           >
-            Lorem ipsum dolor sit amet, aspectus {heading}.
+            Lijkt op een H{level}: {headingText}
           </LuxHeading>
         </>
       ))}
