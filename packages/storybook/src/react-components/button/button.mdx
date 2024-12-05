@@ -1,4 +1,4 @@
-import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
 import markdown from "@utrecht/button-css/README.md?raw";
 import * as ButtonStories from "./button.stories.tsx";
 import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
@@ -12,6 +12,8 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
   url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-button--docs"
 />
 
+{/* TODO: New way of doc md */}
+
 <Markdown>{markdown}</Markdown>
 
 ## Opmerkingen
@@ -24,26 +26,68 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
 <Canvas of={ButtonStories.Playground} />
 <Controls of={ButtonStories.Playground} />
 
-## Small Button
-
-<Canvas of={ButtonStories.SmallButton} />
-
 ## Variants
 
+### Primary / primary action button
+
+<Description of={ButtonStories.Primary} />
 <Canvas of={ButtonStories.Primary} />
+
+### Secondary / secondary action button
+
+<Description of={ButtonStories.Secondary} />
 <Canvas of={ButtonStories.Secondary} />
+
+### Tertiary / subtle button
+
+<Description of={ButtonStories.Tertiary} />
 <Canvas of={ButtonStories.Tertiary} />
 
-## Button states
+### Small Button
 
+<Description of={ButtonStories.SmallButton} />
+<Canvas of={ButtonStories.SmallButton} />
+
+<h2 id="states_examples">States</h2>
+
+### Active
+
+<Description of={ButtonStories.Active} />
 <Canvas of={ButtonStories.Active} />
+
+### Focus
+
+<Description of={ButtonStories.Focus} />
 <Canvas of={ButtonStories.Focus} />
+
+### Hover
+
+<Description of={ButtonStories.Hover} />
 <Canvas of={ButtonStories.Hover} />
+
+### Disabled
+
+<Description of={ButtonStories.Disabled} />
 <Canvas of={ButtonStories.Disabled} />
+
+### Busy
+
+<Description of={ButtonStories.Busy} />
 <Canvas of={ButtonStories.Busy} />
+
+### Toggle / Pressed
+
+<Description of={ButtonStories.Toggle} />
 <Canvas of={ButtonStories.Toggle} />
 
 ## Button With Icon
 
+### At start position
+
+<Description of={ButtonStories.ButtonWithIconAtPositionStart} />
 <Canvas of={ButtonStories.ButtonWithIconAtPositionStart} />
+
+### At end position
+
+<Description of={ButtonStories.ButtonWithIconAtPositionEnd} />
 <Canvas of={ButtonStories.ButtonWithIconAtPositionEnd} />
