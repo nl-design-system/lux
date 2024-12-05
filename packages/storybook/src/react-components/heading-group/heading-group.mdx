@@ -1,0 +1,20 @@
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/heading-group-css/README.md?raw";
+import * as HeadingGroupStories from "./heading-group.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={HeadingGroupStories} />
+
+# Heading-Group
+
+<CitationDocumentation
+  component="Utrecht Heading-Group"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-pre-heading--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={HeadingGroupStories.Playground} />
+<Controls of={HeadingGroupStories.Playground} />

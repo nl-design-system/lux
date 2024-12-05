@@ -1,0 +1,20 @@
+.utrecht-link--html-span:active,
+.utrecht-link--html-a:any-link:active,
+.utrecht-link--active,
+.utrecht-link--visited {
+  --_utrecht-link-state-text-decoration-color: var(--utrecht-link-active-color);
+}
+
+.lux-link {
+  display: inline flex;
+  align-items: baseline;
+  gap: var(--lux-link-column-gap);
+}
+
+.lux-link-icon--start {
+  order: 0;
+}
+
+.lux-link-icon--end {
+  order: 1;
+}
