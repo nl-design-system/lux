@@ -7,6 +7,8 @@ import {
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
+import { VisualStates } from './visual/States';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxSection = (props: PropsWithChildren<LuxSectionProps> & HTMLAttributes<HTMLDivElement>) => (
   <Section {...props} />
@@ -18,7 +20,6 @@ const meta = {
   title: 'React Components/Section',
   id: 'react-components-section',
   component: LuxSection,
-  subcomponents: {},
   parameters: {
     tokens,
     tokensPrefix: 'react-section',
@@ -76,3 +77,15 @@ export const Playground: Story = {
   },
   tags: ['!autodocs'],
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className="lux-theme--logius-light">
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <VisualRegressionWrapper className="lux-theme--logius-dark">
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
+));
