@@ -1,6 +1,8 @@
 import { LuxLink } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { VisualStates } from './visual/States';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -204,3 +206,16 @@ export const LinkWithIconEnd: Story = {
     },
   },
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
+));
