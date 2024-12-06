@@ -84,6 +84,7 @@ export const Visual = createVisualRegressionStory(() => (
     <VisualRegressionWrapper className="lux-theme--logius-light">
       <VisualStates />
     </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className="lux-theme--logius-dark">
       <VisualStates />
     </VisualRegressionWrapper>
