@@ -2,6 +2,18 @@ import { LuxFormFieldDescription } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { BADGES } from '../../../config/preview';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+
+const CustomStyleBlock = () => (
+  <style>
+    {`
+  .lux-theme--logius-custom {
+    --utrecht-form-field-description-valid-color: green;
+    --utrecht-form-field-description-invalid-color: red;
+  }
+  `}
+  </style>
+);
 
 const meta = {
   title: 'React Components/Form Field/Form Field Description',
@@ -94,6 +106,35 @@ export const Invalid: Story = {
   },
 };
 
+export const CustomAppearance: Story = {
+  args: {},
+  render: () => (
+    <>
+      <CustomStyleBlock />
+      <LuxFormFieldDescription appearance="valid" className={`lux-theme--logius-custom`}>
+        Valid Form Field Description
+      </LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="invalid" className={`lux-theme--logius-custom`}>
+        Invalid Form Field Description
+      </LuxFormFieldDescription>
+    </>
+  ),
+  parameters: {
+    controls: {
+      disable: true,
+    },
+    docs: {
+      source: {
+        code: null,
+      },
+      description: {
+        story:
+          'Om de `valid` en `invalid` _appearance_ een styling te geven kan dit met de `...valid.color`- en `...invalid.color`-tokens.',
+      },
+    },
+  },
+};
+
 export const LongDescription: Story = {
   args: {
     children:
@@ -107,3 +148,44 @@ export const LongDescription: Story = {
     },
   },
 };
+
+export const DesignTokens = createDesignTokensStory(meta);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <LuxFormFieldDescription>Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="valid">Valid Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="invalid">Invalid Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription>
+        Long Form Field Description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius,
+        aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus
+        nostra varius efficitur lobortis aliquam lectus bibendum.
+      </LuxFormFieldDescription>
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <LuxFormFieldDescription>Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="valid">Valid Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="invalid">Invalid Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription>
+        Long Form Field Description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius,
+        aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus
+        nostra varius efficitur lobortis aliquam lectus bibendum.
+      </LuxFormFieldDescription>
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Custom</h4>
+    <CustomStyleBlock />
+    <VisualRegressionWrapper className={`lux-theme--logius-light lux-theme--logius-custom`}>
+      <LuxFormFieldDescription>Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="valid">Valid Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription appearance="invalid">Invalid Form Field Description</LuxFormFieldDescription>
+      <LuxFormFieldDescription>
+        Long Form Field Description. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius,
+        aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus
+        nostra varius efficitur lobortis aliquam lectus bibendum.
+      </LuxFormFieldDescription>
+    </VisualRegressionWrapper>
+  </>
+));

@@ -3,6 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, PropsWithChildren } from 'react';
 import { BADGES } from '../../../config/preview';
+import { /*createDesignTokensStory,*/ createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const WrappedLuxFormFieldErrorMessage = forwardRef<
   HTMLParagraphElement,
@@ -72,3 +73,18 @@ export const Distanced: Story = {
     distanced: true,
   },
 };
+
+// export const DesignTokens = createDesignTokensStory(meta);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <LuxFormFieldErrorMessage>Error Message</LuxFormFieldErrorMessage>
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <LuxFormFieldErrorMessage>Error Message</LuxFormFieldErrorMessage>
+    </VisualRegressionWrapper>
+  </>
+));
