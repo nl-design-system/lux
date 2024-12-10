@@ -80,6 +80,7 @@
     "watch:tokens-studio": "pnpm run --filter @lux-design-system/design-tokens watch:tokens-studio"
   },
   "dependencies": {
+    "@guidepup/guidepup": "0.24.0",
     "http-server": "14.1.1"
   },
   "pnpm": {

@@ -92,6 +92,14 @@
         ]
       },
       "plugins": ["@typescript-eslint"]
+    },
+    {
+      "extends": ["eslint-config-prettier", "./.eslintrc.ts.json"],
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": ["utils/screenreader/tsconfig.json"]
+      }
     }
   ]
 }
