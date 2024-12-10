@@ -150,6 +150,9 @@ importers:
       '@babel/runtime':
         specifier: 7.25.0
         version: 7.25.0
+      '@guidepup/virtual-screen-reader':
+        specifier: 0.28.0
+        version: 0.28.0
       '@jest/globals':
         specifier: 29.7.0
         version: 29.7.0
@@ -1816,6 +1819,9 @@ packages:
 
   '@guidepup/guidepup@0.24.0':
     resolution: {integrity: sha512-bbbcJPbZ01Zkxi+L51R4iI7iZ3b2ax3SocqAF0hCgS+Vax6TOft5eZJ37QWRSQM6Xis6OOEVlRhzpM2807WyiA==}
+
+  '@guidepup/virtual-screen-reader@0.28.0':
+    resolution: {integrity: sha512-Ke4oyYkO4wtiTUt8o98sgN0G0p0sVqvh+0tImEL8nf/+eMQ3HpeIB2lqc95tk1/N0EZMBHaCmnc+8moX0N/PnQ==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -3910,6 +3916,9 @@ packages:
 
   dom-accessibility-api@0.6.3:
     resolution: {integrity: sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w==}
+
+  dom-accessibility-api@0.7.0:
+    resolution: {integrity: sha512-LjjdFmd9AITAet3Hy6Y6rwB7Sq1+x5NiwbOpnkLHC1bCXJqJKiV9DyppSSWobuSKvjKXt9G2u3hW402MPt6m+g==}
 
   domexception@4.0.0:
     resolution: {integrity: sha512-A2is4PLG+eeSfoTMA95/s4pvAoSo2mKtiM5jlHkAVewmiO8ISFTFKZjH7UAM1Atli/OT/7JHOrJRJiMKUZKYBw==}
@@ -9287,6 +9296,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@guidepup/virtual-screen-reader@0.28.0':
+    dependencies:
+      '@testing-library/dom': 10.4.0
+      '@testing-library/user-event': 14.5.2(@testing-library/dom@10.4.0)
+      aria-query: 5.3.2
+      dom-accessibility-api: 0.7.0
+
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.2
@@ -10154,7 +10170,7 @@ snapshots:
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.25.0
-      aria-query: 5.3.0
+      aria-query: 5.3.2
       chalk: 3.0.0
       css.escape: 1.5.1
       dom-accessibility-api: 0.6.3
@@ -11784,6 +11800,8 @@ snapshots:
   dom-accessibility-api@0.5.16: {}
 
   dom-accessibility-api@0.6.3: {}
+
+  dom-accessibility-api@0.7.0: {}
 
   domexception@4.0.0:
     dependencies:

@@ -55,6 +55,7 @@
     "@babel/preset-react": "7.24.7",
     "@babel/preset-typescript": "7.24.7",
     "@babel/runtime": "7.25.0",
+    "@guidepup/virtual-screen-reader": "0.28.0",
     "@jest/globals": "29.7.0",
     "@lux-design-system/components-css": "workspace:*",
     "@testing-library/dom": "10.4.0",
