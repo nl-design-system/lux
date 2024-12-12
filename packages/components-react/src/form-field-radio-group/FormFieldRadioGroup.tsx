@@ -4,7 +4,7 @@ import './FormFieldRadioGroup.css';
 import { LuxFormFieldRadioOption } from '../form-field-radio-option/FormFieldRadioOption';
 
 interface RadioOption {
-  value: string;
+  value: string | number;
   label: string;
   disabled?: boolean;
   description?: React.ReactNode;

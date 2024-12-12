@@ -3,7 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, PropsWithChildren } from 'react';
 import { BADGES } from '../../../config/preview';
-import { /*createDesignTokensStory,*/ createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const WrappedLuxFormFieldErrorMessage = forwardRef<
   HTMLParagraphElement,
@@ -19,7 +19,7 @@ const meta = {
   parameters: {
     badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
-    tokensPrefix: 'react-form-field-error-message',
+    tokensPrefix: 'utrecht-form-field-error-message',
   },
   argTypes: {
     children: {
@@ -74,7 +74,7 @@ export const Distanced: Story = {
   },
 };
 
-// export const DesignTokens = createDesignTokensStory(meta);
+export const DesignTokens = createDesignTokensStory(meta);
 
 export const Visual = createVisualRegressionStory(() => (
   <>

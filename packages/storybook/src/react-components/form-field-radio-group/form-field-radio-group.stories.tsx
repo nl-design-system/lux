@@ -1,6 +1,7 @@
 import { LuxFormFieldRadioGroup } from '@lux-design-system/components-react';
 import { Meta, StoryObj } from '@storybook/react';
 import { BADGES } from '../../../config/preview';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -208,3 +209,84 @@ export const WithLongLabels: Story = {
     },
   },
 };
+
+const options = [
+  { value: 1, label: 'Radio Option 1' },
+  { value: 2, label: 'Radio Option 2' },
+  { value: 3, label: 'Radio Option 3' },
+];
+
+export const Visual = createVisualRegressionStory(() => (
+  <div className="utrecht-document">
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <LuxFormFieldRadioGroup name="radiogroup-default-light" label="Radio Group" options={options} />
+      <LuxFormFieldRadioGroup
+        name="radiogroup-descriptions-light"
+        label="Radio Group"
+        description="Description"
+        options={options.map((option) =>
+          Object.assign({}, { ...option }, { description: `Option Description ${option.value}` }),
+        )}
+      />
+      <div className="pseudo-hover-all">
+        <LuxFormFieldRadioGroup name="radiogroup-hover-light" label="Radio Group Hover" options={options} />
+      </div>
+      <div className="pseudo-focus-all pseudo-focus-visible-all">
+        <LuxFormFieldRadioGroup name="radiogroup-hover-light" label="Radio Group Focus" options={options} />
+      </div>
+      <LuxFormFieldRadioGroup
+        name="radiogroup-checked-light"
+        label="Radio Group Checked"
+        options={options.map((option) => Object.assign({}, { ...option }, { checked: option.value === 2 }))}
+      />
+      <LuxFormFieldRadioGroup
+        name="radiogroup-disabled-light"
+        label="Radio Group Disabled"
+        options={options.map((option) => Object.assign({}, { ...option }, { disabled: option.value === 2 }))}
+      />
+      <LuxFormFieldRadioGroup
+        name="radiogroup-invalid-light"
+        label="Radio Group Invalid"
+        errorMessage="Error Message"
+        invalid
+        options={options}
+      />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <LuxFormFieldRadioGroup name="radiogroup-default-dark" label="Radio Group" options={options} />
+      <LuxFormFieldRadioGroup
+        name="radiogroup-descriptions-dark"
+        label="Radio Group"
+        description="Description"
+        options={options.map((option) =>
+          Object.assign({}, { ...option }, { description: `Option Description ${option.value}` }),
+        )}
+      />
+      <div className="pseudo-hover-all">
+        <LuxFormFieldRadioGroup name="radiogroup-hover-light" label="Radio Group Hover" options={options} />
+      </div>
+      <div className="pseudo-focus-all pseudo-focus-visible-all">
+        <LuxFormFieldRadioGroup name="radiogroup-hover-light" label="Radio Group Focus" options={options} />
+      </div>
+      <LuxFormFieldRadioGroup
+        name="radiogroup-checked-dark"
+        label="Radio Group Checked"
+        options={options.map((option) => Object.assign({}, { ...option }, { checked: option.value === 2 }))}
+      />
+      <LuxFormFieldRadioGroup
+        name="radiogroup-disabled-dark"
+        label="Radio Group Disabled"
+        options={options.map((option) => Object.assign({}, { ...option }, { disabled: option.value === 2 }))}
+      />
+      <LuxFormFieldRadioGroup
+        name="radiogroup-invalid-dark"
+        label="Radio Group Invalid"
+        errorMessage="Error Message"
+        invalid
+        options={options}
+      />
+    </VisualRegressionWrapper>
+  </div>
+));

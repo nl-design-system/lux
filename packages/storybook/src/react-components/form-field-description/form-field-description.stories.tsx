@@ -22,7 +22,7 @@ const meta = {
   parameters: {
     badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
-    tokensPrefix: 'react-form-field-description',
+    tokensPrefix: 'utrecht-form-field-description',
     docs: {
       description: {
         component: 'A description component for form fields that provides additional context or validation feedback.',

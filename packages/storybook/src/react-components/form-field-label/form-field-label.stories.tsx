@@ -3,7 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type LabelHTMLAttributes, type PropsWithChildren } from 'react';
 import { BADGES } from '../../../config/preview';
-import { /*createDesignTokensStory,*/ createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxFormFieldLabel = (
   props: PropsWithChildren<LuxFormFieldLabelProps> & LabelHTMLAttributes<HTMLLabelElement>,
@@ -19,7 +19,7 @@ const meta = {
   parameters: {
     badges: [BADGES.WIP, BADGES.CANARY],
     tokens,
-    tokensPrefix: 'react-form-label',
+    tokensPrefix: 'utrecht-form-label',
   },
   argTypes: {
     children: {
@@ -112,17 +112,25 @@ export const CheckedLabel: Story = {
   },
 };
 
-// export const DesignTokens = createDesignTokensStory(meta);
+export const DesignTokens = createDesignTokensStory(meta);
 
 export const Visual = createVisualRegressionStory(() => (
   <div className="utrecht-document">
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
       <LuxFormFieldLabel>Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel type="checkbox">Checkbox Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel type="radio">Radio Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel checked>Checked Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel disabled>Disabled Label</LuxFormFieldLabel>
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
       <LuxFormFieldLabel>Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel type="checkbox">Checkbox Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel type="radio">Radio Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel checked>Checked Label</LuxFormFieldLabel>
+      <LuxFormFieldLabel disabled>Disabled Label</LuxFormFieldLabel>
     </VisualRegressionWrapper>
   </div>
 ));
