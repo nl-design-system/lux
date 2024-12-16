@@ -2,6 +2,7 @@ import { LuxFormFieldRadioOption } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { BADGES } from '../../../config/preview';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -150,3 +151,36 @@ export const FocusVisible: Story = {
     pseudo: { focus: true, focusVisible: true },
   },
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <div className="utrecht-document">
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <LuxFormFieldRadioOption name="radiooption-default-light" label="Radio Option" />
+      <LuxFormFieldRadioOption name="radiooption-descriptions-light" label="Radio Option" description="Description" />
+      <div className="pseudo-hover-all">
+        <LuxFormFieldRadioOption name="radiooption-default-light" label="Radio Option Hover" />
+      </div>
+      <div className="pseudo-focus-all pseudo-focus-visible-all">
+        <LuxFormFieldRadioOption name="radiooption-default-light" label="Radio Option Focus" />
+      </div>
+      <LuxFormFieldRadioOption name="radiooption-checked-light" label="Radio Option Checked" checked />
+      <LuxFormFieldRadioOption name="radiooption-disabled-light" label="Radio Option Disabled" disabled />
+      <LuxFormFieldRadioOption name="radiooption-invalid-light" label="Radio Option Invalid" invalid />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <LuxFormFieldRadioOption name="radiooption-default-dark" label="Radio Option" />
+      <LuxFormFieldRadioOption name="radiooption-descriptions-dark" label="Radio Option" description="Description" />
+      <div className="pseudo-hover-all">
+        <LuxFormFieldRadioOption name="radiooption-default-dark" label="Radio Option Hover" />
+      </div>
+      <div className="pseudo-focus-all pseudo-focus-visible-all">
+        <LuxFormFieldRadioOption name="radiooption-default-dark" label="Radio Option Focus" />
+      </div>
+      <LuxFormFieldRadioOption name="radiooption-checked-dark" label="Radio Option Checked" checked />
+      <LuxFormFieldRadioOption name="radiooption-disabled-dark" label="Radio Option Disabled" disabled />
+      <LuxFormFieldRadioOption name="radiooption-invalid-dark" label="Radio Option Invalid" invalid />
+    </VisualRegressionWrapper>
+  </div>
+));

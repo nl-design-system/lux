@@ -24,7 +24,11 @@ export {
   type LuxFormFieldErrorMessageProps,
 } from './form-field-error-message/FormFieldErrorMessage';
 export { LuxFormFieldLabel, type LuxFormFieldLabelProps } from './form-field-label/FormFieldLabel';
-export { LuxFormFieldSelect, type LuxFormFieldSelectProps } from './form-field-select/FormFieldSelect';
+export {
+  LuxFormFieldSelect,
+  type LuxFormFieldSelectProps,
+  type LuxFormFieldSelectOptionsProps,
+} from './form-field-select/FormFieldSelect';
 export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
 export {
