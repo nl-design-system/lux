@@ -8,7 +8,11 @@ import {
 } from '../form-field-description/FormFieldDescription';
 import { LuxFormFieldErrorMessage } from '../form-field-error-message/FormFieldErrorMessage';
 import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
-import { LuxSelect, type LuxSelectProps } from '../select/Select';
+import { LuxSelect, LuxSelectOption, type LuxSelectOptionProps, type LuxSelectProps } from '../select/Select';
+
+export type LuxFormFieldSelectOptionsProps = LuxSelectOptionProps & {
+  label?: string | number;
+};
 
 export interface LuxFormFieldSelectProps
   extends Omit<UtrechtFormFieldProps, 'type' | 'onBlur' | 'onChange' | 'onFocus'>,
@@ -27,6 +31,7 @@ export interface LuxFormFieldSelectProps
       | 'size'
       | 'value'
     > {
+  options?: LuxFormFieldSelectOptionsProps[];
   appearance?: LuxFormFieldDescriptionAppearance;
   distanced?: boolean;
   inputRef?: Ref<HTMLSelectElement>;
@@ -34,6 +39,7 @@ export interface LuxFormFieldSelectProps
 
 export const LuxFormFieldSelect = ({
   label,
+  options,
   description,
   errorMessage,
   disabled,
@@ -96,8 +102,6 @@ export const LuxFormFieldSelect = ({
 
   const formFieldAttrs = pick(restProps, ['children']);
 
-  // TODO: Options
-
   return (
     <LuxFormField
       label={labelNode}
@@ -116,10 +120,17 @@ export const LuxFormFieldSelect = ({
             }) || undefined
           }
           {...selectAttrs}
-        />
+        >
+          {options
+            ? options.map((option) => (
+                <LuxSelectOption {...option} key={option.value}>
+                  {option.label}
+                </LuxSelectOption>
+              ))
+            : formFieldAttrs['children']}
+        </LuxSelect>
       }
       className={className}
-      {...formFieldAttrs}
     />
   );
 };
