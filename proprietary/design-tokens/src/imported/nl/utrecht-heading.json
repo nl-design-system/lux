@@ -132,5 +132,59 @@
         "type": "fontSizes"
       }
     }
+  },
+  "heading-1": {
+    "value": {
+      "fontFamily": "{utrecht.heading-1.font-family}",
+      "fontWeight": "{utrecht.heading-1.font-weight}",
+      "fontSize": "{utrecht.heading-1.font-size}",
+      "lineHeight": "{utrecht.heading-1.line-height}"
+    },
+    "type": "typography"
+  },
+  "heading-2": {
+    "value": {
+      "fontFamily": "{utrecht.heading-2.font-family}",
+      "fontWeight": "{utrecht.heading-2.font-weight}",
+      "fontSize": "{utrecht.heading-2.font-size}",
+      "lineHeight": "{utrecht.heading-2.line-height}"
+    },
+    "type": "typography"
+  },
+  "heading-3": {
+    "value": {
+      "fontFamily": "{utrecht.heading-3.font-family}",
+      "fontWeight": "{utrecht.heading-3.font-weight}",
+      "fontSize": "{utrecht.heading-3.font-size}",
+      "lineHeight": "{utrecht.heading-3.line-height}"
+    },
+    "type": "typography"
+  },
+  "heading-4": {
+    "value": {
+      "fontFamily": "{utrecht.heading-4.font-family}",
+      "fontWeight": "{utrecht.heading-4.font-weight}",
+      "fontSize": "{utrecht.heading-4.font-size}",
+      "lineHeight": "{utrecht.heading-4.line-height}"
+    },
+    "type": "typography"
+  },
+  "heading-5": {
+    "value": {
+      "fontFamily": "{utrecht.heading-5.font-family}",
+      "fontWeight": "{utrecht.heading-5.font-weight}",
+      "fontSize": "{utrecht.heading-5.font-size}",
+      "lineHeight": "{utrecht.heading-5.line-height}"
+    },
+    "type": "typography"
+  },
+  "heading-6": {
+    "value": {
+      "fontFamily": "{utrecht.heading-6.font-family}",
+      "fontWeight": "{utrecht.heading-6.font-weight}",
+      "fontSize": "{utrecht.heading-6.font-size}",
+      "lineHeight": "{utrecht.heading-6.line-height}"
+    },
+    "type": "typography"
   }
 }
