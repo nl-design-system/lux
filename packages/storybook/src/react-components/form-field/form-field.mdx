@@ -1,0 +1,78 @@
+import LinkTo from "@storybook/addon-links/react";
+import { Canvas, Controls, Description, Meta } from "@storybook/blocks";
+import mdAnatomy from "@utrecht/form-field-css/docs/anatomy.nl.md?raw";
+import mdWcag from "@utrecht/form-field-css/docs/wcag.nl.md?raw";
+import * as FormFieldStories from "./form-field.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+import { MarkdownDocumentation } from "../../utils/MarkdownDocumentation";
+import FormFieldTextboxMeta from "../form-field-textbox/form-field-textbox.stories";
+
+<Meta of={FormFieldStories} />
+
+# Form Field
+
+<CitationDocumentation
+  component="Utrecht Form Field"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-form-field--docs"
+/>
+
+<MarkdownDocumentation>{mdAnatomy}</MarkdownDocumentation>
+
+## Wanneer gebruik je dit component?
+
+Dit component gebruik je als een van de voorgedefinieerde FormField*Type*'s niet voldoen. Bekijk ook:
+
+- <LinkTo kind={FormFieldTextboxMeta.title} story="docs">
+    FormFieldTextbox
+  </LinkTo>
+
+**Let op:** Op dit moment rendert het de foutmelding onder het input.
+
+<MarkdownDocumentation>{mdWcag}</MarkdownDocumentation>
+
+## Playground
+
+<Canvas of={FormFieldStories.Playground} />
+<Controls of={FormFieldStories.Playground} />
+
+## Varianten
+
+### Textbox
+
+<Description of={FormFieldStories.FormFieldTextbox} />
+<Canvas of={FormFieldStories.FormFieldTextbox} />
+
+### Textbox met beschrijving
+
+<Description of={FormFieldStories.FormFieldDescription} />
+<Canvas of={FormFieldStories.FormFieldDescription} />
+
+### Textbox met foutmelding
+
+<Description of={FormFieldStories.FormFieldError} />
+<Canvas of={FormFieldStories.FormFieldError} />
+
+## Gebruik
+
+```jsx
+<LuxFormField
+  label="Gebruikersnaam"
+  input={<input type="text" />}
+  description="Kies een unieke gebruikersnaam"
+  type="text"
+/>
+
+<LuxFormField
+  label="Accepteer voorwaarden"
+  input={<input type="checkbox" />}
+  type="checkbox"
+/>
+
+<LuxFormField
+  label="E-mailadres"
+  input={<input type="email" />}
+  errorMessage="Voer een geldig e-mailadres in"
+  invalid={true}
+  type="text"
+/>
+```

@@ -15,7 +15,7 @@
       },
       "checkbox": {
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
+          "value": "{lux.font-weight.regular}",
           "type": "fontWeights"
         },
         "color": {
@@ -25,7 +25,7 @@
       },
       "checked": {
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
+          "value": "{lux.font-weight.regular}",
           "type": "fontWeights"
         }
       },
@@ -41,7 +41,7 @@
           "type": "color"
         },
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
+          "value": "{lux.font-weight.regular}",
           "type": "fontWeights"
         }
       }

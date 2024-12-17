@@ -1,0 +1,126 @@
+/* stylelint-disable-next-line scss/load-no-partial-leading-underscore */
+@use "@utrecht/focus-ring-css/src/_mixin.scss" as focus-ring;
+
+:root {
+  --lux-form-field-checkbox-inner-column-gap: var(--lux-space-100);
+  --lux-form-field-checkbox-inner-padding-inline-start: var(--lux-space-200, 0.5rem);
+  --lux-form-field-checkbox-inner-padding-inline-end: var(--lux-space-200, 0.5rem);
+  --lux-form-field-checkbox-inner-padding-block-start: var(--lux-space-200, 0.5rem);
+  --lux-form-field-checkbox-inner-padding-block-end: var(--lux-space-200, 0.5rem);
+  --lux-form-field-checkbox-inner-border-radius: var(--lux-border-radius-default);
+  --lux-form-field-checkbox-inner-border-width: var(--lux-border-width-default, 1px);
+  --lux-form-field-checkbox-inner-border-style: solid;
+  --lux-form-field-checkbox-inner-color: var(--lux-color-foreground-default);
+  --lux-form-field-checkbox-inner-border-color: var(--lux-color-brand-default);
+  --lux-form-field-checkbox-inner-background-color: var(--lux-color-none);
+  --lux-form-field-checkbox-invalid-inner-border-color: var(--lux-color-feedback-error-default);
+  --lux-form-field-checkbox-invalid-inner-background-color: var(--lux-color-none);
+  --lux-form-field-checkbox-invalid-inner-row-gap: var(--lux-space-100);
+  --lux-form-field-checkbox-hover-inner-color: var(--lux-color-foreground-default);
+  --lux-form-field-checkbox-hover-inner-border-color: var(--lux-color-brand-default);
+  --lux-form-field-checkbox-hover-inner-background-color: var(--lux-color-brand-subdued);
+  --lux-form-field-checkbox-focus-visible-inner-color: var(--lux-color-foreground-default);
+  --lux-form-field-checkbox-focus-visible-inner-border-color: var(--lux-color-brand-default);
+  --lux-form-field-checkbox-focus-visible-inner-background-color: var(--lux-color-none);
+  --lux-form-field-checkbox-disabled-inner-color: var(--lux-color-foreground-default);
+  --lux-form-field-checkbox-disabled-inner-border-color: var(--lux-color-border-subdued);
+  --lux-form-field-checkbox-disabled-inner-background-color: var(--lux-color-none);
+}
+
+.lux-form-field-checkbox {
+  /* prettier-ignore */
+  --_lux-checkbox-size: calc(var(--utrecht-checkbox-size) + var(--utrecht-checkbox-margin-inline-end) + var(--lux-form-field-checkbox-inner-padding-inline-start));
+  --_lux-column-gap: var(--lux-form-field-checkbox-inner-column-gap, var(--utrecht-checkbox-margin-inline-end, 12px));
+
+  position: relative;
+  grid-template-columns: var(--_lux-checkbox-size) 100fr;
+  grid-template-areas:
+    "input label"
+    ". description"
+    "error-message error-message";
+  gap: 0 var(--_lux-column-gap);
+
+  &::before {
+    position: relative;
+    grid-row-start: label;
+    grid-row-end: description;
+    grid-column-start: input;
+    grid-column-end: description;
+    z-index: -1;
+    border: var(--lux-form-field-checkbox-inner-border-width) var(--lux-form-field-checkbox-inner-border-style)
+      var(--lux-form-field-checkbox-inner-border-color);
+    border-radius: var(--lux-form-field-checkbox-inner-border-radius);
+    pointer-events: none;
+    content: "";
+  }
+
+  &--disabled::before {
+    border-color: var(--lux-form-field-checkbox-disabled-inner-border-color);
+    background-color: var(--lux-form-field-checkbox-disabled-inner-background-color);
+    color: var(--lux-form-field-checkbox-disabled-inner-color);
+  }
+
+  &--invalid::before {
+    border-color: var(--lux-form-field-checkbox-invalid-inner-border-color);
+    background-color: var(--lux-form-field-checkbox-invalid-inner-background-color);
+    color: var(--lux-form-field-checkbox-invalid-inner-color);
+  }
+
+  &:has(:focus-visible)::before {
+    --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+      var(--utrecht-focus-inverse-outline-color, transparent);
+
+    @include focus-ring.utrecht-focus-ring;
+
+    z-index: -1;
+    border-color: var(--lux-form-field-checkbox-focus-visible-inner-border-color);
+    background-color: var(--lux-form-field-checkbox-focus-visible-inner-background-color);
+    color: var(--lux-form-field-checkbox-focus-visible-inner-color);
+  }
+
+  .utrecht-checkbox:focus-visible {
+    outline: none;
+  }
+
+  &:not(#{&}--disabled):has(.utrecht-form-field__input .utrecht-checkbox:hover)::before {
+    border-color: var(--lux-form-field-checkbox-hover-inner-border-color);
+    background-color: var(--lux-form-field-checkbox-hover-inner-background-color);
+    color: var(--lux-form-field-checkbox-hover-inner-color);
+  }
+
+  &--with-target &__label::before,
+  &--with-target &__description label::before {
+    position: absolute;
+    inset-block-end: 0;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inset-inline-start: calc(-1 * var(--_lux-checkbox-size) - var(--_lux-column-gap));
+    pointer-events: visible;
+    content: "";
+  }
+
+  .utrecht-form-field__label,
+  .utrecht-form-field__description {
+    position: relative;
+  }
+
+  .utrecht-form-field__label,
+  .utrecht-form-field__input {
+    padding-block-start: var(--lux-form-field-checkbox-inner-padding-block-start);
+  }
+
+  .utrecht-form-field__label + .utrecht-form-field__input,
+  .utrecht-form-field__description {
+    padding-block-end: var(--lux-form-field-checkbox-inner-padding-block-end);
+  }
+
+  .utrecht-form-field__input {
+    display: grid;
+    place-content: baseline center;
+    padding-inline-start: var(--lux-form-field-checkbox-inner-padding-inline-start);
+  }
+
+  .utrecht-form-field__error-message {
+    padding-block-start: var(--lux-form-field-checkbox-invalid-inner-row-gap);
+  }
+}

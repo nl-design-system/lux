@@ -12,10 +12,10 @@
       }
     ],
     "order/properties-alphabetical-order": null,
-    "scss/dollar-variable-pattern": "^(lux)-[a-z0-9-]+$",
-    "scss/percent-placeholder-pattern": "^(lux)-[a-z0-9-]+$",
-    "custom-property-pattern": "^_?(lux)-[a-z0-9-]+$",
-    "selector-class-pattern": "^(lux)-[a-z0-9_-]+|(force-state)--[a-z]+$",
-    "keyframes-name-pattern": "^(lux)-[a-z0-9-]+$"
+    "scss/dollar-variable-pattern": "^(lux|utrecht)-[a-z0-9-]+$",
+    "scss/percent-placeholder-pattern": "^(lux|utrecht)-[a-z0-9-]+$",
+    "custom-property-pattern": "^_?(lux|utrecht)-[a-z0-9-]+$",
+    "selector-class-pattern": "^(lux|utrecht)-[a-z0-9_-]+|(force-state)--[a-z]+$",
+    "keyframes-name-pattern": "^(lux|utrecht)-[a-z0-9-]+$"
   }
 }

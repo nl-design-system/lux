@@ -1,0 +1,40 @@
+import LinkTo from "@storybook/addon-links/react";
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/textbox-css/README.md?raw";
+import * as TextboxStories from "./textbox.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+import FormFieldTextboxMeta from "../form-field-textbox/form-field-textbox.stories";
+
+<Meta of={TextboxStories} />
+
+# Textbox
+
+Lux Textbox is gebaseerd op Utrecht Textbox. Dit is alleen het input-element, over het algemeen wordt deze binnen het FormField component gebruikt.
+Zie ook het <LinkTo kind={FormFieldTextboxMeta.title} story="docs">FormFieldTextbox</LinkTo>-component.
+
+<CitationDocumentation
+  component="Utrecht Textbox"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-textbox--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={TextboxStories.Playground} />
+<Controls of={TextboxStories.Playground} />
+
+## Gebruik
+
+De Lux Form Field Text Input component kan worden gebruikt voor het invoeren van tekst in formulieren. Het ondersteunt verschillende types en staten.
+
+```jsx
+import { LuxTextbox } from '@lux-design-system/components-react';
+
+<LuxTextbox placeholder="Enter your name" />
+<LuxTextbox type="email" placeholder="Enter your email" />
+<LuxTextbox type="password" placeholder="Enter your password" />
+<LuxTextbox type="number" placeholder="Enter a number" />
+<LuxTextbox required placeholder="Required field" />
+<LuxTextbox dir="rtl" placeholder="RTL input" />
+```

@@ -39,6 +39,16 @@
         "type": "spacing",
         "value": "1rem",
         "description": ""
+      },
+      "max-inline-size": {
+        "value": "82.5rem",
+        "type": "sizing"
+      }
+    },
+    "icon": {
+      "inset-block-start": {
+        "value": "0.25rem",
+        "type": "spacing"
       }
     },
     "alert": {
@@ -144,6 +154,16 @@
         "small": {
           "value": "{lux.font-size.small-scale.xs}",
           "type": "fontSizes"
+        }
+      }
+    }
+  },
+  "utrecht": {
+    "alert": {
+      "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.0}",
+          "type": "spacing"
         }
       }
     }
