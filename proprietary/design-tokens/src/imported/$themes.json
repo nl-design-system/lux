@@ -897,12 +897,12 @@
     "id": "a1cd2c8a749def15791df638cbc27a1d91ff8e93",
     "name": "default",
     "$figmaStyleReferences": {
-      "heading-1": "S:003f82760e008219befef2593d57d16f886f4dc4,",
-      "heading-2": "S:6cd4736451b736630396275718c8ba3cf3b9e6d6,",
-      "heading-3": "S:8c8ae0adbe337fe086c0c4571265c4990bf37785,",
-      "heading-4": "S:8b7fcfee4f3343ea28a3564e7bac8d09958f295c,",
-      "heading-5": "S:b9a68c03f169b9bbe3bed0dc66616d76ffa585e7,",
-      "heading-6": "S:48975a9bc257496fdf21b00f37ad3123fe43d375,"
+      "heading.1": "S:003f82760e008219befef2593d57d16f886f4dc4,",
+      "heading.2": "S:6cd4736451b736630396275718c8ba3cf3b9e6d6,",
+      "heading.3": "S:8c8ae0adbe337fe086c0c4571265c4990bf37785,",
+      "heading.4": "S:8b7fcfee4f3343ea28a3564e7bac8d09958f295c,",
+      "heading.5": "S:b9a68c03f169b9bbe3bed0dc66616d76ffa585e7,",
+      "heading.6": "S:48975a9bc257496fdf21b00f37ad3123fe43d375,"
     },
     "selectedTokenSets": {
       "nl/utrecht-heading": "enabled"
