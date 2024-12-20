@@ -1,5 +1,6 @@
 import {
   LuxHeading1,
+  LuxHeading2,
   LuxParagraph,
   type LuxSectionProps,
   LuxSection as Section,
@@ -7,6 +8,8 @@ import {
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
+import { VisualStates } from './visual/States';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxSection = (props: PropsWithChildren<LuxSectionProps> & HTMLAttributes<HTMLDivElement>) => (
   <Section {...props} />
@@ -56,7 +59,7 @@ export const Playground: Story = {
         </LuxParagraph>
       </div>,
       <div>
-        <LuxHeading1>Morbi commodo</LuxHeading1>
+        <LuxHeading2>Morbi commodo</LuxHeading2>
         <LuxParagraph>
           Morbi commodo augue eget consequat tempus. Nulla scelerisque cursus fermentum. Aenean placerat ligula libero,
           sit amet malesuada neque maximus et. Phasellus at massa nulla. Quisque sagittis tempor ante, quis sollicitudin
@@ -70,9 +73,23 @@ export const Playground: Story = {
     ],
   },
   parameters: {
+    backgrounds: {
+      default: 'canvas',
+    },
     docs: {
       sourceState: 'shown',
     },
   },
   tags: ['!autodocs'],
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <VisualRegressionWrapper className="lux-theme--logius-light">
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <VisualRegressionWrapper className="lux-theme--logius-dark">
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
+));
