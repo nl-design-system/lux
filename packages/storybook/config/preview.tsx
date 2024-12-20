@@ -54,10 +54,6 @@ const preview: Preview = {
           value: 'var(--lux-color-background-default)',
         },
         {
-          name: 'canvas',
-          value: 'var(--lux-color-canvas)',
-        },
-        {
           /*
           Deliberately provide a background which we'd never use in production.
           This helps us identify the component boundaries. Use purple because
@@ -69,7 +65,7 @@ const preview: Preview = {
         {
           name: 'transparent',
           value:
-            'fixed repeating-conic-gradient(#EFEFEF 0% 25%, var(--lux-color-background-default) 0% 50%) 50% / 20px 20px',
+            'fixed repeating-conic-gradient(#CCC 0% 25%, var(--lux-color-background-default) 0% 50%) 50% / 20px 20px',
         },
         {
           name: 'light',
