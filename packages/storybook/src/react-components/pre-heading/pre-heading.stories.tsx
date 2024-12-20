@@ -1,11 +1,12 @@
 import { LuxPreHeading } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
 const meta = {
-  title: 'React Components/Pre-heading',
+  title: 'React Components/PreHeading',
   id: 'react-components-pre-heading',
   component: LuxPreHeading,
   subcomponents: {},
@@ -48,3 +49,16 @@ export const Playground: Story = {
   },
   tags: ['!autodocs'],
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className="lux-theme--logius-light">
+      <LuxPreHeading>LuxPreHeading: {preHeadingText}</LuxPreHeading>
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className="lux-theme--logius-dark">
+      <LuxPreHeading>LuxPreHeading: {preHeadingText}</LuxPreHeading>
+    </VisualRegressionWrapper>
+  </>
+));
