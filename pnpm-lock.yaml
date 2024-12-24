@@ -110,6 +110,12 @@ importers:
 
   packages/components-react:
     dependencies:
+      '@lux-design-system/icons':
+        specifier: workspace:*
+        version: link:../../proprietary/icons
+      '@tabler/icons-react':
+        specifier: 3.26.0
+        version: 3.26.0(react@18.3.1)
       '@utrecht/component-library-css':
         specifier: 6.1.0
         version: 6.1.0
@@ -153,9 +159,6 @@ importers:
       '@lux-design-system/components-css':
         specifier: workspace:*
         version: link:../components-css
-      '@lux-design-system/icons':
-        specifier: workspace:*
-        version: link:../../proprietary/icons
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -319,6 +322,9 @@ importers:
       '@storybook/testing-library':
         specifier: 0.2.2
         version: 0.2.2
+      '@tabler/icons-react':
+        specifier: 3.26.0
+        version: 3.26.0(react@18.3.1)
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -2544,6 +2550,14 @@ packages:
 
   '@swc/helpers@0.5.5':
     resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
+
+  '@tabler/icons-react@3.26.0':
+    resolution: {integrity: sha512-t18Zmu1ROktB7M8hWQ6vJw+mNpI/LPk5PPxLuE+kNB+4Zzf38GfETL8VF98inhzcfHohsggdROzMzwSAfjcAxw==}
+    peerDependencies:
+      react: '>= 16'
+
+  '@tabler/icons@3.26.0':
+    resolution: {integrity: sha512-oO3D4ss+DxzxqU1aDy0f1HmToyrO0gcQWIMpzHAfV1quPUx0BZYvNm5xz1DQb4DxNm/+xNvbBGLJy4pzTLYWag==}
 
   '@testing-library/dom@10.1.0':
     resolution: {integrity: sha512-wdsYKy5zupPyLCW2Je5DLHSxSfbIp6h80WoHOQc+RPtmPGA52O9x5MJEkv92Sjonpq+poOAtUKhh1kBGAXBrNA==}
@@ -10326,6 +10340,13 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
       tslib: 2.6.3
+
+  '@tabler/icons-react@3.26.0(react@18.3.1)':
+    dependencies:
+      '@tabler/icons': 3.26.0
+      react: 18.3.1
+
+  '@tabler/icons@3.26.0': {}
 
   '@testing-library/dom@10.1.0':
     dependencies:

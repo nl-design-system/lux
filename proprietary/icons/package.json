@@ -18,19 +18,19 @@
   ],
   "exports": {
     ".": {
-      "default": null
+      "default": "./dist"
     },
-    "./react-icons": {
-      "import": "./dist/react-icons/index.tsx",
-      "require": "./dist/react-icons/index.tsx"
+    "./react-icons/": {
+      "default": "./dist/react-icons/"
     }
   },
   "scripts": {
     "clean": "npm-run-all clean:**",
     "clean:dist": "rimraf dist/",
     "prebuild": "npm run clean",
-    "build": "npm-run-all build:icons",
+    "build": "npm-run-all build:*",
     "build:icons": "node ./build/run-build.mjs",
+    "build:types": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

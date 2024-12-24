@@ -1,6 +1,6 @@
 import { LuxParagraph } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import { IconChip } from '@lux-design-system/icons/dist/react-icons';
+// import { IconChip } from '@lux-design-system/icons/dist/react-icons';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokensDefinition from './tokens.json';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
@@ -45,7 +45,6 @@ export const Playground: Story = {
     appearance: undefined,
     children: (
       <>
-        <IconChip />
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae
         malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur
         lobortis aliquam lectus bibendum.

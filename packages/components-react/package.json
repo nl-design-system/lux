@@ -41,6 +41,7 @@
     "dist/"
   ],
   "dependencies": {
+    "@lux-design-system/icons": "workspace:*",
     "@utrecht/component-library-css": "6.1.0",
     "@utrecht/component-library-react": "7.1.0",
     "@utrecht/focus-ring-css": "2.3.0",
@@ -57,7 +58,6 @@
     "@babel/runtime": "7.25.0",
     "@jest/globals": "29.7.0",
     "@lux-design-system/components-css": "workspace:*",
-    "@lux-design-system/icons": "workspace:*",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.0",

@@ -13,6 +13,7 @@ export {
   type LuxHeadingProps,
 } from './heading/Heading';
 export { LuxHeadingGroup, type LuxHeadingGroupProps } from './heading-group/HeadingGroup';
+export { Icon, type IconProps } from './icon/Icon';
 export { LuxFormField, type LuxFormFieldProps } from './form-field/FormField';
 export { LuxFormFieldCheckbox, type LuxFormFieldCheckboxProps } from './form-field-checkbox/FormFieldCheckbox';
 export {
