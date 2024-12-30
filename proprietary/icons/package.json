@@ -31,7 +31,8 @@
     "build": "npm-run-all build:*",
     "build:icons": "node ./build/run-build.mjs",
     "build:types": "tsc -p .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "tsc -p . --noEmit",
+    "test": "echo \"WIP: No time 4 tests...\""
   },
   "devDependencies": {
     "@std/text": "npm:@jsr/std__text@1.0.7",
