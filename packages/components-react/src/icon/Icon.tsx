@@ -4,13 +4,13 @@ import { Icon as UtrechtIcon, type IconProps as UtrechtIconProps } from '@utrech
 import { PropsWithChildren, ReactNode } from 'react';
 import FallbackIcon from './FallbackIcon';
 
-export type IconProps = UtrechtIconProps & {
+export type LuxIconProps = UtrechtIconProps & {
   iconId: IconId | string;
-  iconLibrary?: Partial<Record<string, ReactNode>>;
+  library?: Partial<Record<string, ReactNode>>;
 };
 
-export const Icon = ({ iconId, iconLibrary, children }: PropsWithChildren<IconProps>): ReactNode => {
-  const iconSet: Partial<Record<string, ReactNode>> = iconLibrary || IconSet;
+export const LuxIcon = ({ iconId, library, children }: PropsWithChildren<LuxIconProps>): ReactNode => {
+  const iconSet: Partial<Record<string, ReactNode>> = library || IconSet;
 
   return (
     <UtrechtIcon>

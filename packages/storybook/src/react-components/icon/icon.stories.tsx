@@ -1,10 +1,8 @@
-import { Icon, IconProps } from '@lux-design-system/components-react';
+import { LuxIcon, LuxIconProps } from '@lux-design-system/components-react';
 import { IconId, iconIds } from '@lux-design-system/icons';
 import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
 import * as tablerIcons from '@tabler/icons-react';
 import { ReactNode } from 'react';
-
-console.log(tablerIcons);
 
 const CustomLibrary: Partial<Record<string, ReactNode>> = {
   candle: <tablerIcons.IconCandle />,
@@ -22,9 +20,9 @@ type Story = StoryObj<typeof meta> & { args: ExtraArgs };
 const meta = {
   title: 'React Components/Icon',
   id: 'react-components-icon',
-  component: Icon,
+  component: LuxIcon,
   decorators: [
-    (Story, { args }: { args: IconProps & ExtraArgs }) => (
+    (Story, { args }: { args: LuxIconProps & ExtraArgs }) => (
       <>
         <style>
           {`:root {
@@ -48,7 +46,7 @@ const meta = {
     },
   },
   parameters: {},
-} satisfies Meta<typeof Icon> & { args: ExtraArgs; argTypes: ArgTypes<ExtraArgs> };
+} satisfies Meta<typeof LuxIcon> & { args: ExtraArgs; argTypes: ArgTypes<ExtraArgs> };
 
 export default meta;
 
@@ -67,7 +65,7 @@ export const Playground: Story = {
       control: 'select',
       options: iconIds,
     },
-    iconLibrary: {
+    library: {
       control: 'object',
     },
   },
@@ -77,7 +75,7 @@ export const Playground: Story = {
 export const IconLibrary: Story = {
   name: 'Icon Library',
   args: {
-    iconLibrary: CustomLibrary,
+    library: CustomLibrary,
     iconId: 'candle',
   },
   argTypes: {
