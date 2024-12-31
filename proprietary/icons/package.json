@@ -28,12 +28,12 @@
     "clean": "npm-run-all clean:**",
     "clean:dist": "rimraf dist/",
     "prebuild": "npm run clean",
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:**",
     "build:icons": "node ./build/run-build.mjs",
     "build:types": "tsc -p .",
-    "lint": "npm-run-all clean build:icons lint:*",
+    "lint": "npm-run-all clean build:icons lint:**",
     "lint:types": "tsc -p . --noEmit",
-    "test": "echo \"WIP: No time anymore for tests...\""
+    "test": "npm-run-all build"
   },
   "devDependencies": {
     "@std/text": "npm:@jsr/std__text@1.0.7",
