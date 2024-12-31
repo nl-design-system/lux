@@ -3,8 +3,10 @@ import React, { ForwardedRef, forwardRef } from 'react';
 import './FormFieldRadioGroup.css';
 import { LuxFormFieldRadioOption } from '../form-field-radio-option/FormFieldRadioOption';
 
+type RadioOptionValue = string | number;
+
 interface RadioOption {
-  value: string | number;
+  value: RadioOptionValue;
   label: string;
   disabled?: boolean;
   description?: React.ReactNode;
@@ -16,7 +18,7 @@ export interface LuxFormFieldRadioGroupProps {
   description?: string;
   errorMessage?: string;
   options: RadioOption[];
-  value?: string;
+  value?: RadioOptionValue;
   invalid?: boolean;
   required?: boolean;
   className?: string;
