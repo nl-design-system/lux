@@ -65,3 +65,4 @@ components.d.ts
 # Do not ignore our build scripts 
 # (This leaves other build/ folders ignored, see line #9)
 !/proprietary/design-tokens/build
+!/proprietary/icons/build

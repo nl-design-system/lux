@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0-alpha-1",
+  "author": "Community for NL Design System",
+  "description": "Icon assets for LUX, the Design System for Logius, based on the NL Design System architecture",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "name": "@lux-design-system/icons",
+  "main": "dist/index.tsx",
+  "keywords": [
+    "nl-design-system",
+    "lux-design-system"
+  ],
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "default": "./dist"
+    },
+    "./react-icons/": {
+      "default": "./dist/react-icons/"
+    }
+  },
+  "scripts": {
+    "clean": "npm-run-all clean:**",
+    "clean:dist": "rimraf dist/",
+    "prebuild": "npm run clean",
+    "build": "npm-run-all build:**",
+    "build:icons": "node ./build/run-build.mjs",
+    "build:types": "tsc -p .",
+    "lint": "npm-run-all clean build:icons lint:**",
+    "lint:types": "tsc -p . --noEmit",
+    "test": "npm-run-all build"
+  },
+  "devDependencies": {
+    "@std/text": "npm:@jsr/std__text@1.0.7",
+    "@svgr/core": "8.1.0",
+    "@svgr/plugin-jsx": "8.1.0",
+    "@svgr/plugin-prettier": "8.1.0",
+    "@svgr/plugin-svgo": "8.1.0",
+    "@types/react": "18.3.3",
+    "cpy-cli": "5.0.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "6.0.1",
+    "tslib": "2.6.3",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/lux.git",
+    "directory": "proprietary/icons"
+  }
+}
