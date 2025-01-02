@@ -16,7 +16,7 @@ const meta = {
   id: 'react-components-form-field-error-message',
   component: WrappedLuxFormFieldErrorMessage,
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'react-form-field-error-message',
   },

@@ -16,7 +16,7 @@ const meta = {
   component: LuxFormFieldLabel,
   subcomponents: {},
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'react-form-label',
   },

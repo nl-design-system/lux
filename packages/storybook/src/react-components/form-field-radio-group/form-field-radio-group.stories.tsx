@@ -9,7 +9,7 @@ const meta = {
   component: LuxFormFieldRadioGroup,
   subcomponents: {},
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
   },
   args: {
     name: 'contact-default',

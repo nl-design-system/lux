@@ -8,7 +8,7 @@ const meta = {
   id: 'react-components-form-field-description',
   component: LuxFormFieldDescription,
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'react-form-field-description',
     docs: {

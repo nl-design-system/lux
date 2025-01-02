@@ -15,7 +15,7 @@ const meta = {
   id: 'react-components-form-field',
   component: LuxFormField,
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'react-form-field',
   },
