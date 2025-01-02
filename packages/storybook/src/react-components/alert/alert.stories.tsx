@@ -1,6 +1,8 @@
 import { LuxAlert, type LuxAlertProps, LuxHeading1, LuxParagraph } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { VisualTypes } from './visual/Types';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -8,7 +10,6 @@ const meta = {
   title: 'React Components/Alert',
   id: 'react-components-alert',
   component: LuxAlert,
-  subcomponents: {},
   parameters: {
     tokens,
     tokensPrefix: 'utrecht-alert',
@@ -112,3 +113,16 @@ export const ErrorAlert: Story = {
     },
   },
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <VisualTypes />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualTypes />
+    </VisualRegressionWrapper>
+  </>
+));
