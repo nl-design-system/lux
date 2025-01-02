@@ -42,8 +42,13 @@ export const Playground: Story = {
   name: 'Playground',
   args: {
     appearance: undefined,
-    children:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur lobortis aliquam lectus bibendum.',
+    children: (
+      <>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae
+        malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur
+        lobortis aliquam lectus bibendum.
+      </>
+    ),
   },
   parameters: {
     docs: {

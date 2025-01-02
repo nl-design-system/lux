@@ -41,6 +41,7 @@
     "dist/"
   ],
   "dependencies": {
+    "@lux-design-system/icons": "workspace:*",
     "@utrecht/component-library-css": "6.1.0",
     "@utrecht/component-library-react": "7.1.0",
     "@utrecht/focus-ring-css": "2.3.0",
