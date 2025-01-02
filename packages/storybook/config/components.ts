@@ -1,0 +1,33 @@
+import {
+  LuxButton,
+  LuxDocument,
+  LuxHeading1,
+  LuxHeading2,
+  LuxHeading3,
+  LuxHeading4,
+  LuxHeading5,
+  LuxHeading6,
+  LuxHeadingGroup,
+  LuxLink,
+  LuxParagraph,
+  LuxSection,
+  LuxSelect,
+  LuxTextbox,
+} from '@lux-design-system/components-react';
+
+export default {
+  a: LuxLink,
+  body: LuxDocument,
+  button: LuxButton,
+  h1: LuxHeading1,
+  h2: LuxHeading2,
+  h3: LuxHeading3,
+  h4: LuxHeading4,
+  h5: LuxHeading5,
+  h6: LuxHeading6,
+  hgroup: LuxHeadingGroup,
+  input: LuxTextbox,
+  p: LuxParagraph,
+  section: LuxSection,
+  select: LuxSelect,
+};

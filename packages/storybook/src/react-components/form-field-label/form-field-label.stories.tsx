@@ -2,6 +2,7 @@ import { LuxFormFieldLabel as FormFieldLabel, LuxFormFieldLabelProps } from '@lu
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type LabelHTMLAttributes, type PropsWithChildren } from 'react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
@@ -118,19 +119,11 @@ export const Visual = createVisualRegressionStory(() => (
   <div className="utrecht-document">
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <LuxFormFieldLabel>Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel type="checkbox">Checkbox Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel type="radio">Radio Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel checked>Checked Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel disabled>Disabled Label</LuxFormFieldLabel>
+      <VisualStates />
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <LuxFormFieldLabel>Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel type="checkbox">Checkbox Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel type="radio">Radio Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel checked>Checked Label</LuxFormFieldLabel>
-      <LuxFormFieldLabel disabled>Disabled Label</LuxFormFieldLabel>
+      <VisualStates />
     </VisualRegressionWrapper>
   </div>
 ));

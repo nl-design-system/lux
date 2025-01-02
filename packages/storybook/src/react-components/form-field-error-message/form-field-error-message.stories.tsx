@@ -2,6 +2,7 @@ import { LuxFormFieldErrorMessage, type LuxFormFieldErrorMessageProps } from '@l
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, PropsWithChildren } from 'react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
@@ -80,11 +81,11 @@ export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <LuxFormFieldErrorMessage>Error Message</LuxFormFieldErrorMessage>
+      <VisualStates />
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <LuxFormFieldErrorMessage>Error Message</LuxFormFieldErrorMessage>
+      <VisualStates />
     </VisualRegressionWrapper>
   </>
 ));

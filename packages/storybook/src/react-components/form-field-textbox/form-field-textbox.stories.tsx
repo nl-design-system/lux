@@ -1,6 +1,7 @@
 import { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 import FormFieldDescriptionMeta from '../form-field-description/form-field-description.stories';
@@ -62,39 +63,11 @@ export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <LuxFormFieldTextbox label="Label" />
-      <LuxFormFieldTextbox label="Label" description="Description" />
-      <h5 className="utrecht-heading-4">Hover &amp; Focus</h5>
-      <div className="pseudo-hover-all">
-        <LuxFormFieldTextbox label="Label" />
-      </div>
-      <div className="pseudo-focus-all pseudo-focus-visible-all">
-        <LuxFormFieldTextbox label="Label" />
-      </div>
-      <h5 className="utrecht-heading-4">Invalid</h5>
-      <LuxFormFieldTextbox label="Label" errorMessage="Error Message" invalid />
-      <LuxFormFieldTextbox label="Label" description="Description" errorMessage="Error Message" invalid />
-      <h5 className="utrecht-heading-4">Disabled</h5>
-      <LuxFormFieldTextbox label="Label" disabled />
-      <LuxFormFieldTextbox label="Label" description="Description" disabled />
+      <VisualStates />
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <LuxFormFieldTextbox label="Label" />
-      <LuxFormFieldTextbox label="Label" description="Description" />
-      <h5 className="utrecht-heading-4">Hover &amp; Focus</h5>
-      <div className="pseudo-hover-all">
-        <LuxFormFieldTextbox label="Label" />
-      </div>
-      <div className="pseudo-focus-all pseudo-focus-visible-all">
-        <LuxFormFieldTextbox label="Label" />
-      </div>
-      <h5 className="utrecht-heading-4">Invalid</h5>
-      <LuxFormFieldTextbox label="Label" errorMessage="Error Message" invalid />
-      <LuxFormFieldTextbox label="Label" description="Description" errorMessage="Error Message" invalid />
-      <h5 className="utrecht-heading-4">Disabled</h5>
-      <LuxFormFieldTextbox label="Label" disabled />
-      <LuxFormFieldTextbox label="Label" description="Description" disabled />
+      <VisualStates />
     </VisualRegressionWrapper>
   </>
 ));

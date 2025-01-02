@@ -5,6 +5,7 @@ import {
 } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 import FormFieldDescriptionMeta from '../form-field-description/form-field-description.stories';
@@ -107,51 +108,11 @@ export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <LuxFormFieldSelect label="Label" options={options}></LuxFormFieldSelect>
-      <LuxFormFieldSelect label="Label" options={options} description="Description" />
-      <h5 className="utrecht-heading-4">Hover &amp; Focus</h5>
-      <div className="pseudo-hover-all">
-        <LuxFormFieldSelect label="Label" options={options} />
-      </div>
-      <div className="pseudo-focus-all pseudo-focus-visible-all">
-        <LuxFormFieldSelect label="Label" options={options} />
-      </div>
-      <h5 className="utrecht-heading-4">Invalid</h5>
-      <LuxFormFieldSelect label="Label" options={options} errorMessage="Error Message" invalid />
-      <LuxFormFieldSelect
-        label="Label"
-        options={options}
-        description="Description"
-        errorMessage="Error Message"
-        invalid
-      />
-      <h5 className="utrecht-heading-4">Disabled</h5>
-      <LuxFormFieldSelect label="Label" options={options} disabled />
-      <LuxFormFieldSelect label="Label" options={options} description="Description" disabled />
+      <VisualStates options={options} />
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <LuxFormFieldSelect label="Label" options={options} />
-      <LuxFormFieldSelect label="Label" options={options} description="Description" />
-      <h5 className="utrecht-heading-4">Hover &amp; Focus</h5>
-      <div className="pseudo-hover-all">
-        <LuxFormFieldSelect label="Label" options={options} />
-      </div>
-      <div className="pseudo-focus-all pseudo-focus-visible-all">
-        <LuxFormFieldSelect label="Label" options={options} />
-      </div>
-      <h5 className="utrecht-heading-4">Invalid</h5>
-      <LuxFormFieldSelect label="Label" options={options} errorMessage="Error Message" invalid />
-      <LuxFormFieldSelect
-        label="Label"
-        options={options}
-        description="Description"
-        errorMessage="Error Message"
-        invalid
-      />
-      <h5 className="utrecht-heading-4">Disabled</h5>
-      <LuxFormFieldSelect label="Label" options={options} disabled />
-      <LuxFormFieldSelect label="Label" options={options} description="Description" disabled />
+      <VisualStates options={options} />
     </VisualRegressionWrapper>
   </>
 ));

@@ -1,6 +1,7 @@
 import { LuxFormFieldCheckbox, type LuxFormFieldCheckboxProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 import CheckboxMeta from '../checkbox/checkbox.stories';
@@ -121,43 +122,11 @@ export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <LuxFormFieldCheckbox label="Label" />
-      <LuxFormFieldCheckbox label="Label" checked />
-      <LuxFormFieldCheckbox label="Label" description="Description" />
-      <h5 className="utrecht-heading-4">Hover &amp; Focus</h5>
-      <div className="pseudo-hover-all">
-        <LuxFormFieldCheckbox label="Label" />
-      </div>
-      <div className="pseudo-focus-all pseudo-focus-visible-all">
-        <LuxFormFieldCheckbox label="Label" />
-      </div>
-      <h5 className="utrecht-heading-4">Invalid</h5>
-      <LuxFormFieldCheckbox label="Label" errorMessage="Error Message" invalid />
-      <LuxFormFieldCheckbox label="Label" description="Description" errorMessage="Error Message" invalid />
-      <h5 className="utrecht-heading-4">Disabled</h5>
-      <LuxFormFieldCheckbox label="Label" disabled />
-      <LuxFormFieldCheckbox label="Label" disabled checked />
-      <LuxFormFieldCheckbox label="Label" description="Description" disabled />
+      <VisualStates />
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <LuxFormFieldCheckbox label="Label" />
-      <LuxFormFieldCheckbox label="Label" checked />
-      <LuxFormFieldCheckbox label="Label" description="Description" />
-      <h5 className="utrecht-heading-4">Hover &amp; Focus</h5>
-      <div className="pseudo-hover-all">
-        <LuxFormFieldCheckbox label="Label" />
-      </div>
-      <div className="pseudo-focus-all pseudo-focus-visible-all">
-        <LuxFormFieldCheckbox label="Label" />
-      </div>
-      <h5 className="utrecht-heading-4">Invalid</h5>
-      <LuxFormFieldCheckbox label="Label" errorMessage="Error Message" invalid />
-      <LuxFormFieldCheckbox label="Label" description="Description" errorMessage="Error Message" invalid />
-      <h5 className="utrecht-heading-4">Disabled</h5>
-      <LuxFormFieldCheckbox label="Label" disabled />
-      <LuxFormFieldCheckbox label="Label" disabled checked />
-      <LuxFormFieldCheckbox label="Label" description="Description" disabled />
+      <VisualStates />
     </VisualRegressionWrapper>
   </>
 ));
