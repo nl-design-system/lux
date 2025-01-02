@@ -10,6 +10,7 @@ import {
 import { LuxFormFieldErrorMessage } from '../form-field-error-message/FormFieldErrorMessage';
 import { LuxFormFieldLabel } from '../form-field-label/FormFieldLabel';
 import { type Direction, LuxTextbox } from '../textbox/Textbox';
+import { pick } from '../utils/object';
 
 export type LuxFormFieldTextboxProps = UtrechtFormFieldTextboxProps & {
   appearance?: LuxFormFieldDescriptionAppearance;
@@ -59,15 +60,6 @@ export const LuxFormFieldTextbox = ({
     ) : (
       errorMessage
     );
-
-  // TODO: naar utils
-  function pick<T extends object, U extends keyof T>(obj: T, paths: Array<U>): Pick<T, U> {
-    const ret = {} as Pick<T, U>;
-    for (const k of paths) {
-      ret[k] = obj[k];
-    }
-    return ret;
-  }
 
   const textBoxAttrs = pick(restProps, [
     'autoComplete',
