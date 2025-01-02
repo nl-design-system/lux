@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useId } from 'react';
-import { LuxCheckbox, LuxCheckboxProps } from '../checkbox/Checkbox';
-import { LuxFormField, LuxFormFieldProps } from '../form-field/FormField';
+import { LuxCheckbox, type LuxCheckboxProps } from '../checkbox/Checkbox';
+import { LuxFormField, type LuxFormFieldProps } from '../form-field/FormField';
 import {
   LuxFormFieldDescription,
   type LuxFormFieldDescriptionAppearance,
