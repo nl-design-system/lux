@@ -13,11 +13,11 @@ const WrappedLuxTextbox = forwardRef<
 WrappedLuxTextbox.displayName = 'LuxTextbox';
 
 const meta = {
-  title: 'React Components/Form Field/Textbox',
+  title: 'React Components/Textbox',
   id: 'react-components-form-field-textbox',
   component: WrappedLuxTextbox,
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'utrecht-textbox',
   },

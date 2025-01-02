@@ -1,4 +1,4 @@
-import { BADGE_LOCATION } from '@geometricpanda/storybook-addon-badges';
+import { BADGE, BADGE_LOCATION } from '@geometricpanda/storybook-addon-badges';
 import { LuxDocument } from '@lux-design-system/components-react';
 import { defineCustomElements } from '@lux-design-system/web-components-stencil/loader/index.js';
 import { withThemeByClassName } from '@storybook/addon-themes';
@@ -9,12 +9,17 @@ import './themes';
 import '../src/styles/theme.css';
 
 /* eslint-disable no-unused-vars */
-export enum BADGES {
+export enum LUXBADGE {
   WIP = 'wip',
   CANARY = 'canary',
   LATEST = 'latest',
 }
 /* eslint-enable */
+
+export const BADGES = {
+  ...BADGE,
+  ...LUXBADGE,
+};
 
 defineCustomElements();
 

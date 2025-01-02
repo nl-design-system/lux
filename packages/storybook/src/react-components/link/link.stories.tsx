@@ -2,6 +2,7 @@ import { LuxLink } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
+import { BADGES } from '../../../config/preview';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
@@ -11,6 +12,7 @@ const meta = {
   id: 'react-components-link',
   component: LuxLink,
   parameters: {
+    badges: [BADGES.BETA, BADGES.LATEST],
     tokens,
     tokensPrefix: 'utrecht-link',
   },

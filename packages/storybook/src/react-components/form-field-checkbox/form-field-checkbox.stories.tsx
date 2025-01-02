@@ -11,7 +11,7 @@ const meta = {
   id: 'react-components-form-field-form-field-checkbox',
   component: LuxFormFieldCheckbox,
   parameters: {
-    badges: [BADGES.WIP, BADGES.CANARY],
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'utrecht-form-field-checkbox',
   },

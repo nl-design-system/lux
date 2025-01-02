@@ -2,6 +2,7 @@ import { LuxAlert, type LuxAlertProps, LuxHeading1, LuxParagraph } from '@lux-de
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualTypes } from './visual/Types';
+import { BADGES } from '../../../config/preview';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
@@ -11,6 +12,7 @@ const meta = {
   id: 'react-components-alert',
   component: LuxAlert,
   parameters: {
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'utrecht-alert',
   },

@@ -5,6 +5,7 @@ import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import tokensDefinition from '@utrecht/button-css/src/tokens.json';
 import { InteractiveStates, PropertyStates } from './visual/States';
 import { Appearances, Sizes } from './visual/Variants';
+import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
@@ -15,6 +16,7 @@ const meta = {
   component: LuxButton,
   subcomponents: {},
   parameters: {
+    badges: [BADGES.BETA, BADGES.LATEST],
     tokens,
     tokensDefinition,
     tokensPrefix: 'utrecht-button',

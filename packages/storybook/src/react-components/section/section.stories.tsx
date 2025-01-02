@@ -9,6 +9,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
 import { VisualStates } from './visual/States';
+import { BADGES } from '../../../config/preview';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxSection = (props: PropsWithChildren<LuxSectionProps> & HTMLAttributes<HTMLDivElement>) => (
@@ -22,6 +23,7 @@ const meta = {
   id: 'react-components-section',
   component: LuxSection,
   parameters: {
+    badges: [BADGES.BETA, BADGES.LATEST],
     tokens,
     tokensPrefix: 'react-section',
   },

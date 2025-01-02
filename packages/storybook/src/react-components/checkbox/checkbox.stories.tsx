@@ -1,6 +1,7 @@
 import { LuxCheckbox } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { BADGES } from '../../../config/preview';
 
 type Story = StoryObj<typeof meta>;
 
@@ -10,6 +11,7 @@ const meta = {
   component: LuxCheckbox,
   subcomponents: {},
   parameters: {
+    badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
     tokensPrefix: 'utrecht-checkbox',
   },
