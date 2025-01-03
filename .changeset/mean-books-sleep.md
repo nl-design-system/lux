@@ -2,6 +2,8 @@
 "@lux-design-system/components-react": major
 ---
 
-- Nieuw component: Radio Button
-- Nieuw component: Form Field Radio Option
-- Nieuw component: Form Field Radio Group
+Nieuwe componenten:
+
+- Radio Button
+- Form Field Radio Option
+- Form Field Radio Group

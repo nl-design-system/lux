@@ -3,5 +3,7 @@
 ---
 
 
-- Nieuw component: LuxDocument
-- Nieuw component: LuxParagraph
+Nieuwe componenten:
+
+- LuxDocument
+- LuxParagraph
