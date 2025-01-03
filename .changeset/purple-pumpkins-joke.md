@@ -1,7 +1,5 @@
 ---
-"@lux-design-system/components-react": patch
+"@lux-design-system/components-react": major
 ---
-
-In deze commit:
 
 Nieuw component: Form Field Checkbox
