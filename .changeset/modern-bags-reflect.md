@@ -3,11 +3,16 @@
 ---
 
 
-- Nieuwe tokens: utrecht common pointer target
-- Nieuwe tokens: utrecht component form field
-- Nieuwe tokens: utrecht component form field description
-- Nieuwe tokens: utrecht component form field error message
-- Nieuwe tokens: utrecht component form label
-- Nieuwe tokens: utrecht component textarea
-- Nieuwe tokens: utrecht component text input
-- Wijziging tokens: utrecht component document background-color toegevoegd
+Nieuwe tokens:
+
+- utrecht common pointer target
+- utrecht component form field
+- utrecht component form field description
+- utrecht component form field error message
+- utrecht component form label
+- utrecht component textarea
+- utrecht component text input
+
+Wijziging tokens:
+
+- utrecht component document background-color toegevoegd
