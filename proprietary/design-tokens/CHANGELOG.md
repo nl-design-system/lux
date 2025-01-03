@@ -4,33 +4,32 @@
 
 ### Major Changes
 
-- 3b4c5ce: In deze commit:
+- 3b4c5ce: 
 
   - Gewijzigde tokens:
+
     - utrecht heading-1: color van `brand` naar `foreground`, font-weight van `bold` naar `regular`
     - utrecht heading-3: color van `brand` naar `foreground`
 
-  **Let op:** visuele wijziging op alle thema's, H1 en H3 hebben nu een andere vormgeving.
+**Let op:** visuele wijziging op alle thema's, H1 en H3 hebben nu een andere vormgeving.
 
 ### Minor Changes
 
-- 599a16f: Nieuwe tokens: Utrecht Column layout
-  Nieuwe tokens: Utrecht Link list
-  Nieuwe tokens: Utrecht Page footer
-- 8887460: In deze commit:
-
-  - Nieuwe tokens: utrecht component button group
-
-- 6e97df6: - Nieuwe tokens: lux component button - smalle variant
+- 599a16f: 
+  - Nieuwe tokens: Utrecht Column layout
+  - Nieuwe tokens: Utrecht Link list
+  - Nieuwe tokens: Utrecht Page footer
+- 8887460: Nieuwe tokens: utrecht component button group
+- 6e97df6: 
+  - Nieuwe tokens: lux component button - smalle variant
   - Wijziging tokens: line-height en font-size tokens voor secondary en subtle button toegevoegd
-- fbb693b: Nieuwe tokens: Radio group
-  Nieuwe tokens: Utrecht Form label
-  Nieuwe tokens: Utrecht radio button
-- 6de5a79: In deze commit:
-
-  - Nieuwe tokens: utrecht component checkbox
-
-- 46d8608: - Nieuwe tokens: utrecht common pointer target
+- fbb693b: 
+  - Nieuwe tokens: Radio group
+  - Nieuwe tokens: Utrecht Form label
+  - Nieuwe tokens: Utrecht radio button
+- 6de5a79: Nieuwe tokens: utrecht component checkbox
+- 46d8608: 
+  - Nieuwe tokens: utrecht common pointer target
   - Nieuwe tokens: utrecht component form field
   - Nieuwe tokens: utrecht component form field description
   - Nieuwe tokens: utrecht component form field error message
@@ -38,20 +37,11 @@
   - Nieuwe tokens: utrecht component textarea
   - Nieuwe tokens: utrecht component text input
   - Wijziging tokens: utrecht component document background-color toegevoegd
-- eaf684a: In deze commit:
-
-  - Wijziging tokens: vormgeving invalid form field
-
+- eaf684a: Wijziging tokens: vormgeving invalid form field
 - 988f7d8: Nieuwe tokens: lux-alert-heading
 - aefc298: Nieuwe tokens: Utrecht Fieldset
-- f6f75ba: In deze commit
-
-  - Nieuwe tokens: lux component section
-
-- 9926fb8: In deze commit:
-
-  - Nieuwe tokens: component utrecht pre-heading
-
+- f6f75ba: Nieuwe tokens: lux component section
+- 9926fb8: Nieuwe tokens: component utrecht pre-heading
 - e56d6bc: Nieuwe tokens: Utrecht component Select
 
 ## 1.1.0

@@ -26,3 +26,6 @@ packages/web-components-react/src/components.ts
 
 # Ignore imported files
 imported/
+
+# Other
+.changeset/*.md
