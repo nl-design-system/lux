@@ -2,7 +2,6 @@
 "@lux-design-system/design-tokens": major
 ---
 
-In deze commit:
 
 - Gewijzigde tokens:
   - utrecht heading-1: color van `brand` naar `foreground`, font-weight van `bold` naar `regular`
