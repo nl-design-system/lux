@@ -3,5 +3,7 @@
 ---
 
 
-- Nieuw component: LuxPreHeading
-- Nieuw component: LuxHeadingGroup
+Nieuwe componenten:
+
+- LuxPreHeading
+- LuxHeadingGroup
