@@ -1,9 +1,9 @@
 import { LuxParagraph } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
-import tokensDefinition from './tokens.json';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
-import { createDesignTokensStory } from '../../utils';
+import tokensDefinition from '@utrecht/paragraph-css/src/tokens.json';
+import { BADGES } from '../../../config/preview';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -30,6 +30,7 @@ const meta = {
     },
   },
   parameters: {
+    badges: [BADGES.STABLE, BADGES.LATEST],
     tokens,
     tokensPrefix: 'utrecht-paragraph',
     tokensDefinition,
@@ -42,8 +43,13 @@ export const Playground: Story = {
   name: 'Playground',
   args: {
     appearance: undefined,
-    children:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur lobortis aliquam lectus bibendum.',
+    children: (
+      <>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Dolor ante id varius, aenean eu faucibus vitae
+        malesuada. Viverra malesuada aliquam et placerat justo porta ipsum parturient. Cursus nostra varius efficitur
+        lobortis aliquam lectus bibendum.
+      </>
+    ),
   },
   parameters: {
     docs: {

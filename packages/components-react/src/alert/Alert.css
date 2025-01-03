@@ -1,0 +1,21 @@
+.lux-alert {
+  --utrecht-heading-1-color: var(--utrecht-alert-color);
+  --utrecht-heading-1-font-size: var(--lux-alert-heading-font-size);
+  --utrecht-heading-1-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-heading-2-color: var(--utrecht-alert-color);
+  --utrecht-heading-2-font-size: var(--lux-alert-heading-font-size);
+  --utrecht-heading-2-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-heading-3-color: var(--utrecht-alert-color);
+  --utrecht-heading-3-font-size: var(--lux-alert-heading-font-size);
+  --utrecht-heading-3-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-heading-4-color: var(--utrecht-alert-color);
+  --utrecht-heading-4-font-size: var(--lux-alert-heading-font-size);
+  --utrecht-heading-4-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-heading-5-color: var(--utrecht-alert-color);
+  --utrecht-heading-5-font-size: var(--lux-alert-heading-font-size);
+  --utrecht-heading-5-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-heading-6-color: var(--utrecht-alert-color);
+  --utrecht-heading-6-font-size: var(--lux-alert-heading-font-size);
+  --utrecht-heading-6-line-height: var(--lux-alert-heading-font-size);
+  --utrecht-paragraph-color: var(--utrecht-alert-color);
+}

@@ -1,5 +1,6 @@
 import {
   LuxHeading1,
+  LuxHeading2,
   LuxParagraph,
   type LuxSectionProps,
   LuxSection as Section,
@@ -7,6 +8,9 @@ import {
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
+import { VisualStates } from './visual/States';
+import { BADGES } from '../../../config/preview';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const LuxSection = (props: PropsWithChildren<LuxSectionProps> & HTMLAttributes<HTMLDivElement>) => (
   <Section {...props} />
@@ -18,8 +22,8 @@ const meta = {
   title: 'React Components/Section',
   id: 'react-components-section',
   component: LuxSection,
-  subcomponents: {},
   parameters: {
+    badges: [BADGES.BETA, BADGES.LATEST],
     tokens,
     tokensPrefix: 'react-section',
   },
@@ -56,7 +60,7 @@ export const Playground: Story = {
         </LuxParagraph>
       </div>,
       <div>
-        <LuxHeading1>Morbi commodo</LuxHeading1>
+        <LuxHeading2>Morbi commodo</LuxHeading2>
         <LuxParagraph>
           Morbi commodo augue eget consequat tempus. Nulla scelerisque cursus fermentum. Aenean placerat ligula libero,
           sit amet malesuada neque maximus et. Phasellus at massa nulla. Quisque sagittis tempor ante, quis sollicitudin
@@ -70,9 +74,25 @@ export const Playground: Story = {
     ],
   },
   parameters: {
+    backgrounds: {
+      default: 'canvas',
+    },
     docs: {
       sourceState: 'shown',
     },
   },
   tags: ['!autodocs'],
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className="lux-theme--logius-light">
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className="lux-theme--logius-dark">
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
+));

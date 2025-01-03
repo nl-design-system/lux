@@ -1,0 +1,27 @@
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/alert-css/README.md?raw";
+import * as AlertStories from "./alert.stories.tsx";
+import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
+
+<Meta of={AlertStories} />
+
+# Alert
+
+<CitationDocumentation
+  component="Utrecht Alert"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-alert--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={AlertStories.Playground} />
+<Controls of={AlertStories.Playground} />
+
+## Variants
+
+<Canvas of={AlertStories.InfoAlert} />
+<Canvas of={AlertStories.SuccessAlert} />
+<Canvas of={AlertStories.WarningAlert} />
+<Canvas of={AlertStories.ErrorAlert} />
