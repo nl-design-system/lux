@@ -8,7 +8,9 @@ import {
 } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { FormFieldType } from './visual/FormFieldTypes';
 import { BADGES } from '../../../config/preview';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const meta = {
   title: 'React Components/Form Field',
@@ -141,3 +143,49 @@ export const FormFieldError: Story = {
     invalid: true,
   },
 };
+
+export const DesignTokens = createDesignTokensStory(meta);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <LuxParagraph>
+      <strong>Note:</strong> Dit is alleen een test voor het FormField, de verschillende inputs hebben hun eigen tests.
+    </LuxParagraph>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <h5 className="utrecht-heading-4">Type: text</h5>
+      <FormFieldType type="text" />
+      <FormFieldType type="text" show={{ description: false }} />
+      <FormFieldType type="text" show={{ extra: true }} />
+      <FormFieldType type="text" invalid />
+      <h5 className="utrecht-heading-4">Type: checkbox</h5>
+      <FormFieldType type="checkbox" />
+      <FormFieldType type="checkbox" show={{ description: false }} />
+      <FormFieldType type="checkbox" show={{ extra: true }} />
+      <FormFieldType type="checkbox" invalid />
+      <h5 className="utrecht-heading-4">Type: radio</h5>
+      <FormFieldType type="radio" />
+      <FormFieldType type="radio" show={{ description: false }} />
+      <FormFieldType type="radio" show={{ extra: true }} />
+      <FormFieldType type="radio" invalid />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <h5 className="utrecht-heading-4">Type: text</h5>
+      <FormFieldType type="text" />
+      <FormFieldType type="text" show={{ description: false }} />
+      <FormFieldType type="text" show={{ extra: true }} />
+      <FormFieldType type="text" invalid />
+      <h5 className="utrecht-heading-4">Type: checkbox</h5>
+      <FormFieldType type="checkbox" />
+      <FormFieldType type="checkbox" show={{ description: false }} />
+      <FormFieldType type="checkbox" show={{ extra: true }} />
+      <FormFieldType type="checkbox" invalid />
+      <h5 className="utrecht-heading-4">Type: radio</h5>
+      <FormFieldType type="radio" />
+      <FormFieldType type="radio" show={{ description: false }} />
+      <FormFieldType type="radio" show={{ extra: true }} />
+      <FormFieldType type="radio" invalid />
+    </VisualRegressionWrapper>
+  </>
+));

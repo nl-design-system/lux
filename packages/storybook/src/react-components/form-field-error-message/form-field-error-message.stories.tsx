@@ -2,7 +2,9 @@ import { LuxFormFieldErrorMessage, type LuxFormFieldErrorMessageProps } from '@l
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { forwardRef, PropsWithChildren } from 'react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 const WrappedLuxFormFieldErrorMessage = forwardRef<
   HTMLParagraphElement,
@@ -18,7 +20,7 @@ const meta = {
   parameters: {
     badges: [BADGES.WIP, BADGES.LATEST],
     tokens,
-    tokensPrefix: 'react-form-field-error-message',
+    tokensPrefix: 'utrecht-form-field-error-message',
   },
   argTypes: {
     children: {
@@ -72,3 +74,18 @@ export const Distanced: Story = {
     distanced: true,
   },
 };
+
+export const DesignTokens = createDesignTokensStory(meta);
+
+export const Visual = createVisualRegressionStory(() => (
+  <>
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <VisualStates />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualStates />
+    </VisualRegressionWrapper>
+  </>
+));
