@@ -6,11 +6,11 @@ const options = [
   { value: '3', label: 'Radio Option 3' },
 ];
 
-export const VisualStates = () => (
+export const VisualStates = ({ mode }: { mode: 'light' | 'dark' }) => (
   <>
-    <LuxFormFieldRadioGroup name="radiogroup-default-light" label="Radio Group" options={options} />
+    <LuxFormFieldRadioGroup name={`radiogroup-default-${mode}`} label="Radio Group" options={options} />
     <LuxFormFieldRadioGroup
-      name="radiogroup-descriptions-light"
+      name={`radiogroup-descriptions-${mode}`}
       label="Radio Group"
       description="Description"
       options={options.map((option) =>
@@ -18,23 +18,23 @@ export const VisualStates = () => (
       )}
     />
     <div className="pseudo-hover-all">
-      <LuxFormFieldRadioGroup name="radiogroup-hover-light" label="Radio Group Hover" options={options} />
+      <LuxFormFieldRadioGroup name={`radiogroup-hover-${mode}`} label="Radio Group Hover" options={options} />
     </div>
     <div className="pseudo-focus-all pseudo-focus-visible-all">
-      <LuxFormFieldRadioGroup name="radiogroup-hover-light" label="Radio Group Focus" options={options} />
+      <LuxFormFieldRadioGroup name={`radiogroup-hover-${mode}`} label="Radio Group Focus" options={options} />
     </div>
     <LuxFormFieldRadioGroup
-      name="radiogroup-checked-light"
+      name={`radiogroup-checked-${mode}`}
       label="Radio Group Checked"
-      options={options.map((option) => Object.assign({}, { ...option }, { checked: option.value === 2 }))}
+      options={options.map((option) => Object.assign({}, { ...option }, { checked: option.value === '2' }))}
     />
     <LuxFormFieldRadioGroup
-      name="radiogroup-disabled-light"
+      name={`radiogroup-disabled-${mode}`}
       label="Radio Group Disabled"
-      options={options.map((option) => Object.assign({}, { ...option }, { disabled: option.value === 2 }))}
+      options={options.map((option) => Object.assign({}, { ...option }, { disabled: option.value === '2' }))}
     />
     <LuxFormFieldRadioGroup
-      name="radiogroup-invalid-light"
+      name={`radiogroup-invalid-${mode}`}
       label="Radio Group Invalid"
       errorMessage="Error Message"
       invalid

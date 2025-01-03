@@ -215,11 +215,11 @@ export const Visual = createVisualRegressionStory(() => (
   <div className="utrecht-document">
     <h4 className="utrecht-heading-3">Light</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <VisualStates />
+      <VisualStates mode="light" />
     </VisualRegressionWrapper>
     <h4 className="utrecht-heading-3">Dark</h4>
     <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <VisualStates />
+      <VisualStates mode="dark" />
     </VisualRegressionWrapper>
   </div>
 ));
