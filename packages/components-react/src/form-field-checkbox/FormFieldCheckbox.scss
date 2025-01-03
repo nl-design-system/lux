@@ -82,7 +82,7 @@
     outline: none;
   }
 
-  &:not(#{&}--disabled):has(.utrecht-form-field__input .utrecht-checkbox:hover)::before {
+  &--with-target:not(#{&}--disabled):has(.utrecht-form-field__input .utrecht-checkbox:hover)::before {
     border-color: var(--lux-form-field-checkbox-hover-inner-border-color);
     background-color: var(--lux-form-field-checkbox-hover-inner-background-color);
     color: var(--lux-form-field-checkbox-hover-inner-color);

@@ -1,7 +1,9 @@
 import { LuxFormFieldRadioOption } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
+import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
+import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -150,3 +152,16 @@ export const FocusVisible: Story = {
     pseudo: { focus: true, focusVisible: true },
   },
 };
+
+export const Visual = createVisualRegressionStory(() => (
+  <div className="utrecht-document">
+    <h4 className="utrecht-heading-3">Light</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
+      <VisualStates mode="light" />
+    </VisualRegressionWrapper>
+    <h4 className="utrecht-heading-3">Dark</h4>
+    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
+      <VisualStates mode="dark" />
+    </VisualRegressionWrapper>
+  </div>
+));
