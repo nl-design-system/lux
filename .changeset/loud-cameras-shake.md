@@ -2,4 +2,4 @@
 "@lux-design-system/design-tokens": minor
 ---
 
-- Nieuwe tokens: utrecht component checkbox
+Nieuwe tokens: utrecht component checkbox
