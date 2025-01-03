@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- 3b4c5ce: - Gewijzigde tokens:
+- 3b4c5ce: Gewijzigde tokens:
 
   - utrecht heading-1: color van `brand` naar `foreground`, font-weight van `bold` naar `regular`
   - utrecht heading-3: color van `brand` naar `foreground`
@@ -13,24 +13,36 @@
 
 ### Minor Changes
 
-- 599a16f: - Nieuwe tokens: Utrecht Column layout
-  - Nieuwe tokens: Utrecht Link list
-  - Nieuwe tokens: Utrecht Page footer
+- 599a16f: Nieuwe tokens:
+
+  - Utrecht Column layout
+  - Utrecht Link list
+  - Utrecht Page footer
+
 - 8887460: Nieuwe tokens: utrecht component button group
 - 6e97df6: - Nieuwe tokens: lux component button - smalle variant
   - Wijziging tokens: line-height en font-size tokens voor secondary en subtle button toegevoegd
-- fbb693b: - Nieuwe tokens: Radio group
-  - Nieuwe tokens: Utrecht Form label
-  - Nieuwe tokens: Utrecht radio button
+- fbb693b: Nieuwe tokens:
+
+  - Lux Radio group
+  - Utrecht Form label
+  - Utrecht radio button
+
 - 6de5a79: Nieuwe tokens: utrecht component checkbox
-- 46d8608: - Nieuwe tokens: utrecht common pointer target
-  - Nieuwe tokens: utrecht component form field
-  - Nieuwe tokens: utrecht component form field description
-  - Nieuwe tokens: utrecht component form field error message
-  - Nieuwe tokens: utrecht component form label
-  - Nieuwe tokens: utrecht component textarea
-  - Nieuwe tokens: utrecht component text input
-  - Wijziging tokens: utrecht component document background-color toegevoegd
+- 46d8608: Nieuwe tokens:
+
+  - utrecht common pointer target
+  - utrecht component form field
+  - utrecht component form field description
+  - utrecht component form field error message
+  - utrecht component form label
+  - utrecht component textarea
+  - utrecht component text input
+
+  Wijziging tokens:
+
+  - utrecht component document background-color toegevoegd
+
 - eaf684a: Wijziging tokens: vormgeving invalid form field
 - 988f7d8: Nieuwe tokens: lux-alert-heading
 - aefc298: Nieuwe tokens: Utrecht Fieldset
