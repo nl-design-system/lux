@@ -3,6 +3,8 @@
 ---
 
 
-- Nieuwe tokens: Utrecht Column layout
-- Nieuwe tokens: Utrecht Link list
-- Nieuwe tokens: Utrecht Page footer
+Nieuwe tokens:
+
+- Utrecht Column layout
+- Utrecht Link list
+- Utrecht Page footer
