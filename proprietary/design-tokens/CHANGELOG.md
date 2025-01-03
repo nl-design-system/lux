@@ -4,32 +4,26 @@
 
 ### Major Changes
 
-- 3b4c5ce: 
+- 3b4c5ce: - Gewijzigde tokens:
 
-  - Gewijzigde tokens:
+  - utrecht heading-1: color van `brand` naar `foreground`, font-weight van `bold` naar `regular`
+  - utrecht heading-3: color van `brand` naar `foreground`
 
-    - utrecht heading-1: color van `brand` naar `foreground`, font-weight van `bold` naar `regular`
-    - utrecht heading-3: color van `brand` naar `foreground`
-
-**Let op:** visuele wijziging op alle thema's, H1 en H3 hebben nu een andere vormgeving.
+  **Let op:** visuele wijziging op alle thema's, H1 en H3 hebben nu een andere vormgeving.
 
 ### Minor Changes
 
-- 599a16f: 
-  - Nieuwe tokens: Utrecht Column layout
+- 599a16f: - Nieuwe tokens: Utrecht Column layout
   - Nieuwe tokens: Utrecht Link list
   - Nieuwe tokens: Utrecht Page footer
 - 8887460: Nieuwe tokens: utrecht component button group
-- 6e97df6: 
-  - Nieuwe tokens: lux component button - smalle variant
+- 6e97df6: - Nieuwe tokens: lux component button - smalle variant
   - Wijziging tokens: line-height en font-size tokens voor secondary en subtle button toegevoegd
-- fbb693b: 
-  - Nieuwe tokens: Radio group
+- fbb693b: - Nieuwe tokens: Radio group
   - Nieuwe tokens: Utrecht Form label
   - Nieuwe tokens: Utrecht radio button
 - 6de5a79: Nieuwe tokens: utrecht component checkbox
-- 46d8608: 
-  - Nieuwe tokens: utrecht common pointer target
+- 46d8608: - Nieuwe tokens: utrecht common pointer target
   - Nieuwe tokens: utrecht component form field
   - Nieuwe tokens: utrecht component form field description
   - Nieuwe tokens: utrecht component form field error message
