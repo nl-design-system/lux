@@ -148,6 +148,10 @@
       "font-size": {
         "value": "{lux.font-size.body.default}",
         "type": "fontSizes"
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
       }
     }
   },
@@ -158,21 +162,11 @@
           "value": "4 * {utrecht.textarea.line-height}",
           "type": "sizing",
           "description": "4 * lineheight "
-        },
-        "block-size-2": {
-          "value": "4 * {utrecht.textarea.line-height} + {utrecht.textarea.padding-block-start} + {utrecht.textarea.padding-block-end}",
-          "type": "sizing",
-          "description": "4 * lineheight "
         }
       },
       "8-rows": {
         "block-size": {
           "value": "8 * {utrecht.textarea.line-height}",
-          "type": "sizing",
-          "description": "4 * lineheight "
-        },
-        "block-size-2": {
-          "value": "8 * {utrecht.textarea.line-height} + {utrecht.textarea.padding-block-start} + {utrecht.textarea.padding-block-end}",
           "type": "sizing",
           "description": "4 * lineheight "
         }

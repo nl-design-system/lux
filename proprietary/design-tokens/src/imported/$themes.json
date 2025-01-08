@@ -988,7 +988,8 @@
     "selectedTokenSets": {
       "NLdoc/default": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "5a579e9a45428a1c218461931b7d72ff86cf798f",
@@ -997,7 +998,8 @@
     "selectedTokenSets": {
       "NLdoc/Rijksoverheid": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "5252df7c6782827fd088a497c11f04326060cffe",
@@ -1006,7 +1008,8 @@
     "selectedTokenSets": {
       "NLdoc/Ridderkerk": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "636f384651b16ba46aca2cc94d071476e0d716b2",
@@ -1015,7 +1018,8 @@
     "selectedTokenSets": {
       "NLdoc/Waterschap Hollandse Delta": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "457e23ac6f8506672b0bcefbc480a7f3b6d30e2b",
