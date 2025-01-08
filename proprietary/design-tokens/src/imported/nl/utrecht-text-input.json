@@ -160,5 +160,13 @@
         }
       }
     }
+  },
+  "figma": {
+    "textbox": {
+      "block-size": {
+        "value": "{utrecht.textbox.line-height} + {utrecht.textbox.padding-block-start} + {utrecht.textbox.padding-block-end}",
+        "type": "sizing"
+      }
+    }
   }
 }
