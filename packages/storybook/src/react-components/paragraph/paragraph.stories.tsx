@@ -3,7 +3,12 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokensDefinition from '@utrecht/paragraph-css/src/tokens.json';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import {
+  createDesignTokensStory,
+  createVisualRegressionStory,
+  VisualRegressionTest,
+  VisualRegressionWrapper,
+} from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -92,6 +97,22 @@ export const Small: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const VisualNew = createVisualRegressionStory(() => (
+  <VisualRegressionTest
+    testCase={() => (
+      <>
+        <LuxParagraph>Lorem ipsum dolor sit amet, content staat in een LuxParagraph.</LuxParagraph>
+        <LuxParagraph appearance="lead">
+          Lorem ipsum dolor sit amet, content staat in een LuxParagraph met appearance: lead.
+        </LuxParagraph>
+        <LuxParagraph appearance="small">
+          Lorem ipsum dolor sit amet, content staat in een LuxParagraph met appearance: small.
+        </LuxParagraph>
+      </>
+    )}
+  />
+));
 
 export const Visual = createVisualRegressionStory(
   () => (

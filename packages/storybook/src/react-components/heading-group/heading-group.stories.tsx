@@ -2,7 +2,7 @@ import { LuxHeading, LuxHeading1, LuxHeadingGroup, LuxPreHeading } from '@lux-de
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { BADGES } from '../../../config/preview';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createVisualRegressionStory, VisualRegressionTest, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -50,6 +50,17 @@ export const Playground: Story = {
   },
   tags: ['!autodocs'],
 };
+
+export const VisualNew = createVisualRegressionStory(() => (
+  <VisualRegressionTest
+    testCase={() => (
+      <LuxHeadingGroup>
+        <LuxHeading1>LuxHeading1</LuxHeading1>
+        <LuxPreHeading>LuxPreHeading</LuxPreHeading>
+      </LuxHeadingGroup>
+    )}
+  />
+));
 
 export const Visual = createVisualRegressionStory(() => (
   <>

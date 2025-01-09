@@ -1,6 +1,7 @@
 import { LuxFormFieldRadioOption } from '@lux-design-system/components-react';
+import { LuxMode } from '../../../utils';
 
-export const VisualStates = ({ mode }: { mode: 'light' | 'dark' }) => (
+export const VisualStates = ({ mode }: { mode: LuxMode }) => (
   <>
     <LuxFormFieldRadioOption name={`radiooption-default-${mode}`} label="Radio Option" />
     <LuxFormFieldRadioOption name={`radiooption-descriptions-${mode}`} label="Radio Option" description="Description" />

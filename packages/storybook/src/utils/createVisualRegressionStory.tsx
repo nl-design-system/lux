@@ -15,16 +15,16 @@ interface CreateVisualRegressionStoryFn {
   /* eslint-enable */
 }
 
-type LuxMode = 'light' | 'dark';
-type Product = 'digid' | 'digitoegankelijk' | 'eva' | 'logius' | 'mijnoverheid' | 'nldoc';
-type TestCaseProps = {
-  mode?: LuxMode;
-  product?: Product;
-};
+export type LuxMode = 'light' | 'dark';
+export type Product = 'digid' | 'digitoegankelijk' | 'eva' | 'logius' | 'mijnoverheid' | 'nldoc';
+export type TestCaseProps<T = unknown> = {
+  mode: LuxMode;
+  product: Product;
+} & T;
 
 type VisualRegressionTestProps = {
   // eslint-disable-next-line no-unused-vars
-  testCase: (props?: PropsWithChildren<TestCaseProps>) => JSX.Element;
+  testCase: (props: TestCaseProps) => JSX.Element;
   products?: Product[];
 };
 

@@ -3,7 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createVisualRegressionStory, VisualRegressionTest, VisualRegressionWrapper } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -152,6 +152,8 @@ export const FocusVisible: Story = {
     pseudo: { focus: true, focusVisible: true },
   },
 };
+
+export const VisualNew = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualStates} />);
 
 export const Visual = createVisualRegressionStory(() => (
   <div className="utrecht-document">

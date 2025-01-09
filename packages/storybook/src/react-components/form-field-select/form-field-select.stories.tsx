@@ -7,7 +7,12 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import {
+  createDesignTokensStory,
+  createVisualRegressionStory,
+  VisualRegressionTest,
+  VisualRegressionWrapper,
+} from '../../utils';
 import FormFieldDescriptionMeta from '../form-field-description/form-field-description.stories';
 import FormFieldErrorMessageMeta from '../form-field-error-message/form-field-error-message.stories';
 import SelectMeta from '../select/select.stories';
@@ -103,6 +108,10 @@ export const Focus: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const VisualNew = createVisualRegressionStory(() => (
+  <VisualRegressionTest testCase={() => <VisualStates options={options} />} />
+));
 
 export const Visual = createVisualRegressionStory(() => (
   <>

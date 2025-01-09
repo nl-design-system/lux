@@ -12,7 +12,12 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokensDefinition from '@utrecht/heading-css/src/tokens.json';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import {
+  createDesignTokensStory,
+  createVisualRegressionStory,
+  VisualRegressionTest,
+  VisualRegressionWrapper,
+} from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -98,6 +103,29 @@ export const HeadingWithDifferentAppearance: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const VisualNew = createVisualRegressionStory(() => (
+  <VisualRegressionTest
+    testCase={() => (
+      <>
+        {[1, 2, 3, 4, 5, 6].map((level) => (
+          <>
+            <LuxHeading level={level as LuxHeadingProps['level']} key={'light-level-' + level}>
+              H{level}: {headingText}
+            </LuxHeading>
+            <LuxHeading
+              level={99 as LuxHeadingProps['level']}
+              appearance={level as LuxHeadingProps['appearance']}
+              key={'light-appeareance-' + level}
+            >
+              Lijkt op een H{level}: {headingText}
+            </LuxHeading>
+          </>
+        ))}
+      </>
+    )}
+  />
+));
 
 export const Visual = createVisualRegressionStory(() => (
   <>

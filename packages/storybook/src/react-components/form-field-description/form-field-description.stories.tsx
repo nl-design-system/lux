@@ -3,7 +3,12 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import {
+  createDesignTokensStory,
+  createVisualRegressionStory,
+  VisualRegressionTest,
+  VisualRegressionWrapper,
+} from '../../utils';
 
 const CustomStyleBlock = () => (
   <style>
@@ -151,6 +156,8 @@ export const LongDescription: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const VisualNew = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualStates} />);
 
 export const Visual = createVisualRegressionStory(() => (
   <>

@@ -6,7 +6,12 @@ import tokensDefinition from '@utrecht/button-css/src/tokens.json';
 import { InteractiveStates, PropertyStates } from './visual/States';
 import { Appearances, Sizes } from './visual/Variants';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import {
+  createDesignTokensStory,
+  createVisualRegressionStory,
+  VisualRegressionTest,
+  VisualRegressionWrapper,
+} from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -248,7 +253,7 @@ export const Busy: Story = {
   parameters: {
     docs: {
       description: {
-        story: `Een busy button zet je met het \`busy\`-attribute (\`true\`/\`false\`, default: \`undefined\`). Toont een \`wait\` cursor en \`aria-busy\`-attribute. Dit gebruik je 
+        story: `Een busy button zet je met het \`busy\`-attribute (\`true\`/\`false\`, default: \`undefined\`). Toont een \`wait\` cursor en \`aria-busy\`-attribute. Dit gebruik je
           bijvoorbeeld als een gebruiker met een knop een actie in gang zet die langer kan duren, zoals een download.`,
       },
     },
@@ -325,6 +330,20 @@ export const ButtonWithIconAtPositionEnd: Story = {
 };
 
 export const DesignTokens = createDesignTokensStory(meta);
+
+export const VisualNew = createVisualRegressionStory(() => (
+  <VisualRegressionTest
+    products={['eva']}
+    testCase={() => (
+      <>
+        <Appearances />
+        <Sizes />
+        <InteractiveStates />
+        <PropertyStates />
+      </>
+    )}
+  />
+));
 
 export const Visual = createVisualRegressionStory(() => (
   <>

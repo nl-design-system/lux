@@ -10,7 +10,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createVisualRegressionStory, VisualRegressionTest, VisualRegressionWrapper } from '../../utils';
 
 const LuxSection = (props: PropsWithChildren<LuxSectionProps> & HTMLAttributes<HTMLDivElement>) => (
   <Section {...props} />
@@ -83,6 +83,8 @@ export const Playground: Story = {
   },
   tags: ['!autodocs'],
 };
+
+export const VisualNew = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualStates} />);
 
 export const Visual = createVisualRegressionStory(() => (
   <>
