@@ -145,6 +145,12 @@
   },
   "lux": {
     "alert": {
+      "icon": {
+        "size": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      },
       "heading": {
         "font-family": {
           "value": "{lux.font-family.primary}",
