@@ -2,7 +2,7 @@
   "utrecht": {
     "textarea": {
       "max-inline-size": {
-        "value": "400px",
+        "value": "25rem",
         "type": "sizing"
       },
       "padding-block-end": {
