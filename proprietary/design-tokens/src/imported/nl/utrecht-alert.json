@@ -145,6 +145,10 @@
   },
   "lux": {
     "alert": {
+      "color": {
+        "type": "color",
+        "value": "{lux.color.grijs.700}"
+      },
       "icon": {
         "inset-block-start": {
           "value": "{lux.space.25}",
