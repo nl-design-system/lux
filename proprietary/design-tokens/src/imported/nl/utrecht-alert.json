@@ -146,6 +146,10 @@
   "lux": {
     "alert": {
       "icon": {
+        "inset-block-start": {
+          "value": "{lux.space.25}",
+          "type": "spacing"
+        },
         "size": {
           "value": "1.5rem",
           "type": "sizing"
