@@ -17,16 +17,7 @@
         "hover": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.robijnrood.500}",
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {
-                "type": "darken",
-                "value": "0.3",
-                "space": "lch"
-              }
-            }
-          },
+          "value": "#8A1641",
           "description": "Hover kleur van het product"
         }
       }
