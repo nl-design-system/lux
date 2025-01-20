@@ -59,7 +59,7 @@
           "type": "color"
         },
         "border-color": {
-          "value": "{lux.color.border.strong}",
+          "value": "{lux.color.feedback.error.default}",
           "type": "color"
         },
         "color": {
