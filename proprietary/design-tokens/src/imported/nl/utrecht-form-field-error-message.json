@@ -31,11 +31,6 @@
         "value": "{lux.color.none}",
         "type": "color"
       },
-      "border-radius": {
-        "value": "{lux.border-radius.default}",
-        "type": "borderRadius",
-        "description": "todo token"
-      },
       "padding-block-end": {
         "value": "{lux.space.0}",
         "type": "spacing"
@@ -60,10 +55,6 @@
         "value": "{lux.line-height.body.default}",
         "type": "lineHeights"
       },
-      "border-width": {
-        "value": "{lux.alert.border-width}",
-        "type": "borderWidth"
-      },
       "border-color": {
         "value": "{lux.color.none}",
         "type": "color"
@@ -75,6 +66,19 @@
           "value": "{lux.space.25}",
           "type": "spacing"
         }
+      }
+    }
+  },
+  "todo": {
+    "form-field-error-message": {
+      "border-radius": {
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius",
+        "description": "todo token"
+      },
+      "border-width": {
+        "value": "{lux.border-width.default}",
+        "type": "borderWidth"
       }
     }
   }
