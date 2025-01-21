@@ -742,9 +742,6 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "component/link": "enabled",
-      "component/alert": "enabled",
-      "component/button": "enabled",
       "component/login link": "enabled",
       "component/icon-logo": "enabled"
     },
