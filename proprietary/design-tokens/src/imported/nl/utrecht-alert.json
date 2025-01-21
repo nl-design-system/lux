@@ -19,7 +19,7 @@
       },
       "color": {
         "type": "color",
-        "value": "{lux.alert.color}"
+        "value": "{lux.color.grijs.700}"
       },
       "column-gap": {
         "type": "spacing",
