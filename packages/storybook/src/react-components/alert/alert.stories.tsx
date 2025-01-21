@@ -3,7 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualTypes } from './visual/Types';
 import { BADGES } from '../../../config/preview';
-import { createVisualRegressionStory, VisualRegressionTest, VisualRegressionWrapper } from '../../utils';
+import { createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -116,17 +116,4 @@ export const ErrorAlert: Story = {
   },
 };
 
-export const VisualNew = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualTypes} />);
-
-export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <VisualTypes />
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <VisualTypes />
-    </VisualRegressionWrapper>
-  </>
-));
+export const Visual = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualTypes} />);

@@ -7,12 +7,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import {
-  createDesignTokensStory,
-  createVisualRegressionStory,
-  VisualRegressionTest,
-  VisualRegressionWrapper,
-} from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 import FormFieldDescriptionMeta from '../form-field-description/form-field-description.stories';
 import FormFieldErrorMessageMeta from '../form-field-error-message/form-field-error-message.stories';
 import SelectMeta from '../select/select.stories';
@@ -109,19 +104,6 @@ export const Focus: Story = {
 
 export const DesignTokens = createDesignTokensStory(meta);
 
-export const VisualNew = createVisualRegressionStory(() => (
-  <VisualRegressionTest testCase={() => <VisualStates options={options} />} />
-));
-
 export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <VisualStates options={options} />
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <VisualStates options={options} />
-    </VisualRegressionWrapper>
-  </>
+  <VisualRegressionTest testCase={(defaultProps) => <VisualStates {...defaultProps} options={options} />} />
 ));

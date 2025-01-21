@@ -6,12 +6,7 @@ import tokensDefinition from '@utrecht/button-css/src/tokens.json';
 import { InteractiveStates, PropertyStates } from './visual/States';
 import { Appearances, Sizes } from './visual/Variants';
 import { BADGES } from '../../../config/preview';
-import {
-  createDesignTokensStory,
-  createVisualRegressionStory,
-  VisualRegressionTest,
-  VisualRegressionWrapper,
-} from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -331,7 +326,7 @@ export const ButtonWithIconAtPositionEnd: Story = {
 
 export const DesignTokens = createDesignTokensStory(meta);
 
-export const VisualNew = createVisualRegressionStory(() => (
+export const Visual = createVisualRegressionStory(() => (
   <VisualRegressionTest
     products={['eva']}
     testCase={() => (
@@ -343,39 +338,4 @@ export const VisualNew = createVisualRegressionStory(() => (
       </>
     )}
   />
-));
-
-export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <h5 className="utrecht-heading-4">Logius</h5>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <Appearances />
-      <Sizes />
-      <InteractiveStates />
-      <PropertyStates />
-    </VisualRegressionWrapper>
-    <h5 className="utrecht-heading-4">MijnAansluitingen</h5>
-    <VisualRegressionWrapper className={`lux-theme--eva-light`}>
-      <Appearances />
-      <Sizes />
-      <InteractiveStates />
-      <PropertyStates />
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <h5 className="utrecht-heading-4">Logius</h5>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <Appearances />
-      <Sizes />
-      <InteractiveStates />
-      <PropertyStates />
-    </VisualRegressionWrapper>
-    <h5 className="utrecht-heading-4">MijnAansluitingen</h5>
-    <VisualRegressionWrapper className={`lux-theme--eva-dark`}>
-      <Appearances />
-      <Sizes />
-      <InteractiveStates />
-      <PropertyStates />
-    </VisualRegressionWrapper>
-  </>
 ));
