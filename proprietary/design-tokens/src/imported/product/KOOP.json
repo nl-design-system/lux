@@ -1,0 +1,244 @@
+{
+  "lux": {
+    "color": {
+      "brand": {
+        "default": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.lintblauw.500}",
+          "description": "kleur van het product"
+        },
+        "subdued": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.lintblauw.50}",
+          "description": "Subtiele kleur van het product"
+        },
+        "hover": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "#10345c",
+          "description": "Hover kleur van het product"
+        }
+      }
+    },
+    "border-radius": {
+      "default": {
+        "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "value": "4px"
+      }
+    },
+    "focus": {
+      "outline-width": {
+        "parent": "product/MijnOverheid",
+        "type": "borderWidth",
+        "value": "2px"
+      },
+      "outline": {
+        "style": {
+          "type": "other",
+          "value": "solid"
+        }
+      }
+    },
+    "font-family": {
+      "primary": {
+        "type": "fontFamilies",
+        "value": "{ro.font-family.primary}"
+      }
+    },
+    "line-height": {
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.xs}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.sm}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.md}"
+        }
+      },
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.xl}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "lineHeights",
+          "value": "{lux.line-height.small-scale.lg}"
+        },
+        "level-3": {
+          "value": "{lux.line-height.small-scale.md}",
+          "type": "lineHeights"
+        },
+        "level-4": {
+          "value": "{lux.line-height.small-scale.sm}",
+          "type": "lineHeights"
+        },
+        "level-5": {
+          "value": "{lux.line-height.small-scale.sm}",
+          "type": "lineHeights"
+        }
+      }
+    },
+    "font-size": {
+      "body": {
+        "small": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.xs}"
+        },
+        "default": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.sm}"
+        },
+        "large": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.md}"
+        }
+      },
+      "heading": {
+        "level-1": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.xl}"
+        },
+        "level-2": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.lg}"
+        },
+        "level-3": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.md}"
+        },
+        "level-4": {
+          "parent": "viewport (beta)/xs",
+          "type": "fontSizes",
+          "value": "{lux.font-size.small-scale.sm}"
+        },
+        "level-5": {
+          "value": "{lux.font-size.small-scale.sm}",
+          "type": "fontSizes"
+        }
+      }
+    },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3.125rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+      }
+    }
+  },
+  "figma": {
+    "focus": {
+      "outline-radius": {
+        "parent": "product/MijnOverheid",
+        "type": "borderRadius",
+        "value": "6px"
+      }
+    },
+    "size": {
+      "icon": {
+        "wrapper-height": {
+          "value": "1.5rem",
+          "type": "sizing"
+        }
+      }
+    },
+    "product": {
+      "value": "MijnOverheid",
+      "type": "text"
+    }
+  },
+  "product": {
+    "button": {
+      "secondary": {
+        "background-color": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.none}",
+          "description": ""
+        },
+        "border-color": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "color": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "hover": {
+          "border-color": {
+            "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
+            "description": ""
+          },
+          "color": {
+            "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
+            "description": ""
+          },
+          "background-color": {
+            "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "tertiary": {
+        "color": {
+          "parent": "product/MijnOverheid",
+          "type": "color",
+          "value": "{lux.color.brand.default}",
+          "description": ""
+        },
+        "hover": {
+          "color": {
+            "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.hover}",
+            "description": ""
+          },
+          "background-color": {
+            "parent": "product/MijnOverheid",
+            "type": "color",
+            "value": "{lux.color.brand.subdued}",
+            "description": ""
+          }
+        }
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "1rem"
+      },
+      "primary": {
+        "font-size": {
+          "type": "fontSizes",
+          "value": "1rem"
+        }
+      }
+    }
+  }
+}
