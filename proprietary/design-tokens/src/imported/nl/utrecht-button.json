@@ -480,7 +480,7 @@
     "button": {
       "small": {
         "min-block-size": {
-          "value": "{product.button.small.min-block-size}",
+          "value": "2rem",
           "type": "sizing"
         },
         "padding-block-end": {

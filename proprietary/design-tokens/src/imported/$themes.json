@@ -245,8 +245,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -297,8 +296,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -349,7 +347,6 @@
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
       "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8",
       "figma.product": "b6cce40714cdeb549f9741c138ce9c63f82d287a"
     },
     "group": "product"
@@ -401,8 +398,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -487,8 +483,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -1021,7 +1016,8 @@
     "selectedTokenSets": {
       "NLdoc/default": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "5a579e9a45428a1c218461931b7d72ff86cf798f",
@@ -1030,7 +1026,8 @@
     "selectedTokenSets": {
       "NLdoc/Rijksoverheid": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "5252df7c6782827fd088a497c11f04326060cffe",
@@ -1039,7 +1036,8 @@
     "selectedTokenSets": {
       "NLdoc/Ridderkerk": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "636f384651b16ba46aca2cc94d071476e0d716b2",
@@ -1048,7 +1046,8 @@
     "selectedTokenSets": {
       "NLdoc/Waterschap Hollandse Delta": "enabled"
     },
-    "group": "NLdoc"
+    "group": "NLdoc",
+    "$figmaVariableReferences": {}
   },
   {
     "id": "457e23ac6f8506672b0bcefbc480a7f3b6d30e2b",
@@ -1097,8 +1096,7 @@
       "product.button.tertiary.hover.color": "824c190bc51af04fa7deb3e78b7f9d4ce9866ee5",
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
-      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8"
+      "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568"
     },
     "group": "product"
   },
@@ -1149,7 +1147,6 @@
       "product.button.tertiary.hover.background-color": "8bf076fce339bc2db2b1e546937c198a9775a7f1",
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
       "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
-      "product.button.small.min-block-size": "8edcd663a8961c868152f259b16bf4eba38f89c8",
       "figma.product": "b6cce40714cdeb549f9741c138ce9c63f82d287a"
     }
   }
