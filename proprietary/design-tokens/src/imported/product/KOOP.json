@@ -48,45 +48,52 @@
         "value": "{ro.font-family.primary}"
       }
     },
+    "size": {
+      "target": {
+        "type": "sizing",
+        "value": "3rem",
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+      }
+    },
     "line-height": {
       "body": {
         "small": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.xs}"
+          "value": "{viewport.line-height.body.small}"
         },
         "default": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.sm}"
+          "value": "{viewport.line-height.body.default}"
         },
         "large": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.md}"
+          "value": "{viewport.line-height.body.large}"
         }
       },
       "heading": {
         "level-1": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.xl}"
+          "value": "{viewport.line-height.heading.level-1}"
         },
         "level-2": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.lg}"
+          "value": "{viewport.line-height.heading.level-2}"
         },
         "level-3": {
-          "value": "{lux.line-height.small-scale.md}",
+          "value": "{viewport.line-height.heading.level-3}",
           "type": "lineHeights"
         },
         "level-4": {
-          "value": "{lux.line-height.small-scale.sm}",
+          "value": "{viewport.line-height.heading.level-4}",
           "type": "lineHeights"
         },
         "level-5": {
-          "value": "{lux.line-height.small-scale.sm}",
+          "value": "{viewport.line-height.heading.level-4}",
           "type": "lineHeights"
         }
       }
@@ -94,53 +101,44 @@
     "font-size": {
       "body": {
         "small": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.xs}"
+          "value": "{viewport.font-size.body.small}"
         },
         "default": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.sm}"
+          "value": "{viewport.font-size.body.default}"
         },
         "large": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.md}"
+          "value": "{viewport.font-size.body.large}"
         }
       },
       "heading": {
         "level-1": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.xl}"
+          "value": "{viewport.font-size.heading.level-1}"
         },
         "level-2": {
-          "parent": "viewport (beta)/xs",
+          "parent": "viewport (beta)/xl",
           "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.lg}"
+          "value": "{viewport.font-size.heading.level-2}"
         },
         "level-3": {
-          "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.md}"
+          "value": "{viewport.font-size.heading.level-3}",
+          "type": "fontSizes"
         },
         "level-4": {
-          "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.sm}"
+          "value": "{viewport.font-size.heading.level-4}",
+          "type": "fontSizes"
         },
         "level-5": {
-          "value": "{lux.font-size.small-scale.sm}",
+          "value": "{viewport.font-size.heading.level-4}",
           "type": "fontSizes"
         }
-      }
-    },
-    "size": {
-      "target": {
-        "type": "sizing",
-        "value": "3rem",
-        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
       }
     }
   },

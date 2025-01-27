@@ -1079,6 +1079,7 @@
       "lux.border-radius.default": "64b2ef7d77250ea0baf36a3bf871e9722afe0270",
       "lux.focus.outline-width": "f5a4a57f5903a4b25c23bdbf214560fd3e56083f",
       "lux.font-family.primary": "6ca41422b4800497ec7ad853c83135355adb2435",
+      "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
       "lux.line-height.body.small": "2619c094136954bb145674fa4efc4a4d2ff5ce9a",
       "lux.line-height.body.default": "fc7b0d711005fd3ef0bcec985dddc059afaf665a",
       "lux.line-height.body.large": "17edc5cda06d4c6a665326c1b6a541c3e81aa308",
@@ -1095,9 +1096,9 @@
       "lux.font-size.heading.level-3": "7e9de3506e67a831e3003f4fd0fe598f289e5bb9",
       "lux.font-size.heading.level-4": "3327ac67dc90fc97a13b9d42b6d85cdc960f042f",
       "lux.font-size.heading.level-5": "8bf794b9f3c62157653a600d2490062f73782880",
-      "lux.size.target": "4ea055b586b578a6c700046888aa99d660d1bafc",
       "figma.focus.outline-radius": "6ff2aa7a455af6da2186616eb91e4b961d65c85d",
       "figma.size.icon.wrapper-height": "73ddfa6479edcfd7f028cf491accf299e34cad52",
+      "figma.product": "b6cce40714cdeb549f9741c138ce9c63f82d287a",
       "product.button.secondary.background-color": "467c8346bb98fd26172ff6535d4047f4e7a7368f",
       "product.button.secondary.border-color": "4f64fa12c59b87d66a2b3e4a769e0b7fa93d206a",
       "product.button.secondary.color": "c86bfa8fb14d9a0baeea896141a00c05a00c0895",
@@ -1110,12 +1111,12 @@
       "product.button.font-size": "51343e03bcc4e8f5f37dedbfcccee27bde12e85a",
       "product.button.primary.font-size": "d0b6c6d3831059cd1da47de5a0a81e4405238568",
       "product.heading.1.color": "78c2d99b00adce9c9153c68243a61e7d0c72ae2b",
+      "product.heading.1.font-weight": "ca3aebde7527cb5a369f0fcc1efaa2ad4078f082",
       "product.heading.2.color": "4474137f1e9f78ef78423c932fc80c58a01cbdd9",
+      "product.heading.3.color": "2d3cf34946dcc7837e17fd0c7acbfd500e2d05c5",
       "product.heading.4.color": "0820714b4d772d2b38a2309fb96cef937ecb1395",
       "product.heading.5.color": "311fbf3bcb6c755a0aeca5c3193eaf8c75600859",
-      "product.heading.6.color": "dc453b48acd14b5ca73e23b20b8e9fd8af827489",
-      "figma.product": "b6cce40714cdeb549f9741c138ce9c63f82d287a",
-      "product.heading.3.color": "2d3cf34946dcc7837e17fd0c7acbfd500e2d05c5"
+      "product.heading.6.color": "dc453b48acd14b5ca73e23b20b8e9fd8af827489"
     }
   }
 ]
