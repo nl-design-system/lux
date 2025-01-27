@@ -155,7 +155,7 @@
     "size": {
       "icon": {
         "wrapper-height": {
-          "value": "1.5rem",
+          "value": "{figma.viewport.size.icon.wrapper-height}",
           "type": "sizing"
         }
       }
