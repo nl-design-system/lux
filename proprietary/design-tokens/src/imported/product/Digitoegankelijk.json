@@ -236,6 +236,12 @@
           "type": "fontSizes",
           "value": "{lux.font-size.large-scale.sm}"
         }
+      },
+      "small": {
+        "min-block-size": {
+          "value": "2rem",
+          "type": "sizing"
+        }
       }
     }
   }

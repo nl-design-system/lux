@@ -236,6 +236,12 @@
           "type": "fontSizes",
           "value": "1.1875rem"
         }
+      },
+      "small": {
+        "min-block-size": {
+          "value": "2rem",
+          "type": "sizing"
+        }
       }
     }
   }
