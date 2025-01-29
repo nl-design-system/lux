@@ -11,7 +11,7 @@
         "subdued": {
           "parent": "product/MijnOverheid",
           "type": "color",
-          "value": "{lux.color.lintblauw.50}",
+          "value": "{lux.color.lintblauw.100}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
