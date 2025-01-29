@@ -1,3 +1,4 @@
+import { LuxDocument } from '@lux-design-system/components-react';
 // @ts-expect-error no definition file
 import { ComponentTokensSection } from '@nl-design-system-unstable/theme-toolkit';
 import type { StoryObj } from '@storybook/react';
@@ -38,7 +39,11 @@ export const createDesignTokensStory = (meta: any): StoryObj => {
       withDocument: true,
     },
     render: (({ tokens, definition, component }: Props) => {
-      return <ComponentTokensSection tokens={tokens} definition={definition} component={component} />;
+      return (
+        <LuxDocument>
+          <ComponentTokensSection tokens={tokens} definition={definition} component={component} />
+        </LuxDocument>
+      );
     }) as any,
   };
 

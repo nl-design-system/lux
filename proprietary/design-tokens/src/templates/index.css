@@ -1,5 +1,5 @@
 @import "./lightdark.css";
-@import "./light/lg.css" (prefers-color-scheme: light);
-@import "./dark/lg.css" (prefers-color-scheme: dark);
+@import "./light/md.css" (prefers-color-scheme: light);
+@import "./dark/md.css" (prefers-color-scheme: dark);
 
 /* TODO: In the future with breakpoints */

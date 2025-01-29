@@ -24,6 +24,7 @@ export const BADGES = {
 defineCustomElements();
 
 const preview: Preview = {
+  tags: ['!autodocs'],
   decorators: [
     // LUX-303: Spike - Mogelijkheid thema's en modus te splitsen in Storybook themes.
     withThemeByClassName<ReactRenderer>({
@@ -32,12 +33,8 @@ const preview: Preview = {
         'DigiD dark': 'lux-theme--digid-dark',
         'Logius light': 'lux-theme--logius-light',
         'Logius dark': 'lux-theme--logius-dark',
-        'Mijn Aansluitingen light': 'lux-theme--eva-light',
-        'Mijn Aansluitingen dark': 'lux-theme--eva-dark',
         'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
         'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
-        'NLdoc light': 'lux-theme--nldoc-light',
-        'NLdoc dark': 'lux-theme--nldoc-dark',
       },
       defaultTheme: 'Logius light',
     }),

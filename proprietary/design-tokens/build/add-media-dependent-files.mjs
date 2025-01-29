@@ -2,7 +2,7 @@ import { readdir, stat, cp } from 'node:fs/promises';
 import path from 'path';
 
 const isModeFolder = (file) => ['light', 'dark'].includes(file);
-const isProjectFolder = (file) => !isModeFolder(file); // && !['nldoc'].includes(file);
+const isProjectFolder = (file) => !isModeFolder(file);
 
 /**
  * Loops recursively through project folders and adds index files to them.
