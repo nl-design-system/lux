@@ -2,7 +2,7 @@
   "utrecht": {
     "heading-1": {
       "color": {
-        "value": "{lux.color.foreground.default}",
+        "value": "{product.heading.1.color}",
         "type": "color"
       },
       "font-family": {
@@ -10,7 +10,7 @@
         "type": "fontFamilies"
       },
       "font-weight": {
-        "value": "{lux.font-weight.regular}",
+        "value": "{product.heading.1.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
@@ -24,7 +24,7 @@
     },
     "heading-2": {
       "color": {
-        "value": "{lux.color.brand.default}",
+        "value": "{product.heading.2.color}",
         "type": "color"
       },
       "font-family": {
@@ -46,7 +46,7 @@
     },
     "heading-3": {
       "color": {
-        "value": "{lux.color.foreground.default}",
+        "value": "{product.heading.3.color}",
         "type": "color"
       },
       "font-family": {
@@ -68,7 +68,7 @@
     },
     "heading-4": {
       "color": {
-        "value": "{lux.color.brand.default}",
+        "value": "{product.heading.4.color}",
         "type": "color"
       },
       "font-family": {
@@ -90,7 +90,7 @@
     },
     "heading-5": {
       "color": {
-        "value": "{lux.color.brand.default}",
+        "value": "{product.heading.5.color}",
         "type": "color"
       },
       "font-family": {
@@ -112,7 +112,7 @@
     },
     "heading-6": {
       "color": {
-        "value": "{lux.color.brand.default}",
+        "value": "{product.heading.6.color}",
         "type": "color"
       },
       "font-family": {
