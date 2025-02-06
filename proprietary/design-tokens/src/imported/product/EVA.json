@@ -234,6 +234,48 @@
           "value": "{lux.font-size.large-scale.sm}"
         }
       }
+    },
+    "heading": {
+      "1": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "font-weight": {
+          "value": "{lux.font-weight.regular}",
+          "type": "fontWeights"
+        }
+      },
+      "2": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "3": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        }
+      },
+      "4": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "5": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "6": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      }
     }
   }
 }
