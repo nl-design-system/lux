@@ -46,7 +46,7 @@
     "@utrecht/component-library-react": "7.1.0",
     "@utrecht/focus-ring-css": "2.3.0",
     "clsx": "2.1.1",
-    "date-fns": "3.6.0",
+    "date-fns": "4.1.0",
     "lodash.chunk": "4.2.0"
   },
   "devDependencies": {
