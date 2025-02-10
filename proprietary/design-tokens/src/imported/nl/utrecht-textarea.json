@@ -2,7 +2,7 @@
   "utrecht": {
     "textarea": {
       "max-inline-size": {
-        "value": "400px",
+        "value": "25rem",
         "type": "sizing"
       },
       "padding-block-end": {
@@ -148,6 +148,28 @@
       "font-size": {
         "value": "{lux.font-size.body.default}",
         "type": "fontSizes"
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
+      }
+    }
+  },
+  "figma": {
+    "textarea": {
+      "4-rows": {
+        "block-size": {
+          "value": "4 * {utrecht.textarea.line-height}",
+          "type": "sizing",
+          "description": "4 * lineheight "
+        }
+      },
+      "8-rows": {
+        "block-size": {
+          "value": "8 * {utrecht.textarea.line-height}",
+          "type": "sizing",
+          "description": "4 * lineheight "
+        }
       }
     }
   }
