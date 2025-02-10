@@ -87,7 +87,6 @@ const VisualRegressionWrapperNew = ({
   const classNames = clsx({
     'lsb-visual-regression-wrapper': true,
     'lsb-visual-regression-wrapper--dark': mode === 'dark',
-    'utrecht-document': true,
     [`lux-theme--${product}-${mode}`]: true,
     [className ?? '']: true,
   });
