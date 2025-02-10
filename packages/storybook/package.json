@@ -78,7 +78,7 @@
     "storybook": "8.2.7",
     "storybook-addon-pseudo-states": "4.0.2",
     "typescript": "5.5.4",
-    "vite": "5.3.5"
+    "vite": "6.1.0"
   },
   "dependencies": {
     "@nl-design-system-unstable/theme-toolkit": "1.0.0",
