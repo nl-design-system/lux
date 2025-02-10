@@ -43,7 +43,7 @@
   "dependencies": {
     "@lux-design-system/icons": "workspace:*",
     "@utrecht/component-library-css": "6.1.0",
-    "@utrecht/component-library-react": "7.1.0",
+    "@utrecht/component-library-react": "8.0.5",
     "@utrecht/focus-ring-css": "2.3.0",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
