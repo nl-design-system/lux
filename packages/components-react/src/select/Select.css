@@ -2,6 +2,11 @@
 .lux-select {
   line-height: var(--lux-line-height-body-default);
 
+  &:not([multiple]) {
+    background-position: center right var(--utrecht-select-padding-inline-end);
+    background-size: var(--lux-size-icon);
+  }
+
   & :focus {
     border-width: var(--lux-border-width-m);
   }

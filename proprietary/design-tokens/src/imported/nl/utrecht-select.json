@@ -5,6 +5,10 @@
         "type": "color",
         "value": "{lux.color.background.default}"
       },
+      "background-image": {
+        "type": "other",
+        "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath d='M2.459 4.51c.5-.502 1.151-.702 1.651-.151l3.854 3.857 3.904-3.907c.5-.501 1.152-.35 1.652.15.5.501.7 1.152.15 1.653L8.865 10.92c-.5.501-1.301.501-1.802 0L2.31 6.162c-.5-.5-.35-1.152.15-1.653Z' fill='%23282828'/%3E%3C/svg%3E\")"
+      },
       "border-block-end-width": {
         "type": "borderWidth",
         "value": "{utrecht.select.border-width}"
