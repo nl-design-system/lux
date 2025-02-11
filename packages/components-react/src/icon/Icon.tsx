@@ -1,5 +1,8 @@
 import IconSet, { type IconId } from '@lux-design-system/icons';
-import { Icon as UtrechtIcon, type IconProps as UtrechtIconProps } from '@utrecht/component-library-react';
+import {
+  Icon as UtrechtIcon,
+  type IconProps as UtrechtIconProps,
+} from '@utrecht/component-library-react/dist/css-module';
 import { PropsWithChildren, ReactNode } from 'react';
 import FallbackIcon from './FallbackIcon';
 
