@@ -6,11 +6,10 @@ import { PropsWithChildren, ReactNode } from 'react';
 import FallbackIcon from './FallbackIcon';
 
 export type LuxIconProps = UtrechtIconProps & {
-  iconId: string;
-  library?: Record<string, ReactNode>;
+  icon?: ReactNode;
 };
 
-export const LuxIcon = ({ iconId, library, children }: PropsWithChildren<LuxIconProps>): ReactNode => {
+export const LuxIcon = ({ icon, children }: PropsWithChildren<LuxIconProps>): ReactNode => {
   return (
     <UtrechtIcon>
       <style>
@@ -18,7 +17,7 @@ export const LuxIcon = ({ iconId, library, children }: PropsWithChildren<LuxIcon
   fill: currentColor;
           }`}
       </style>
-      {library !== undefined && iconId in library ? library[iconId] : <FallbackIcon />}
+      {icon !== undefined ? icon : <FallbackIcon />}
       {children}
     </UtrechtIcon>
   );
