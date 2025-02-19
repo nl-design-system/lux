@@ -17,7 +17,7 @@ export const LuxIcon = ({ icon, children }: PropsWithChildren<LuxIconProps>): Re
   fill: currentColor;
           }`}
       </style>
-      {icon !== undefined ? icon : <FallbackIcon />}
+      {icon ?? <FallbackIcon />}
       {children}
     </UtrechtIcon>
   );
