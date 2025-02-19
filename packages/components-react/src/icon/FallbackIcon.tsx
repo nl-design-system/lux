@@ -1,4 +1,6 @@
 import type { SVGProps } from 'react';
+
+export const LuxIconFallbackSVGTestId = 'lux-icon-fallback-svg';
 /**
  * Lux lamp icoon
  *
@@ -12,6 +14,7 @@ const FallbackIcon = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     data-icon-name="zoek"
+    data-testid={LuxIconFallbackSVGTestId}
     {...props}
   >
     <g>
