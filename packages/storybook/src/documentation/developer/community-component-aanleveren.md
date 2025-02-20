@@ -262,7 +262,7 @@ export const Visual = createVisualRegressionStory(() => (
 
 #### Design Tokens
 
-De design tokens zijn de kracht van elk LUX component. Alle visuele aspecten van het component wordt bepaald door de design tokens en zorgen ervoor dat het component in meerdere contexten is in te zetten. Bijvoorbeeld in die van Logius, Digid, MijnOverheid, of zelfs door deelnemers van de NLDS community.
+De design tokens zijn de kracht van elk LUX component. Alle visuele aspecten van het component wordt bepaald door de design tokens en zorgen ervoor dat het component in meerdere contexten is in te zetten. Bijvoorbeeld in die van Logius, Digid, MijnOverheid, KOOP of zelfs door deelnemers van de NLDS community.
 
 Maak een bestand genaamd `/packages/storybook/web-components/[component-naam]/tokens.json` en reflecteer de juiste structuur in JSON formaat. Gebruik hiervoor `/proprietary/design-tokens/src/imported/components/[component-naam].json` en verander het naar het formaat in bvb. `/packages/storybook/web-components/login-link/tokens.json`. Wij kunnen je hierbij helpen. Dit bestand importeer je in je `.stories.tsx` bestand.
 

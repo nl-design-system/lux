@@ -36,6 +36,8 @@ const preview: Preview = {
         'Mijn Aansluitingen dark': 'lux-theme--eva-dark',
         'Mijn Overheid light': 'lux-theme--mijnoverheid-light',
         'Mijn Overheid dark': 'lux-theme--mijnoverheid-dark',
+        'KOOP light': 'lux-theme--koop-light',
+        'KOOP dark': 'lux-theme--koop-dark',
         'NLdoc light': 'lux-theme--nldoc-light',
         'NLdoc dark': 'lux-theme--nldoc-dark',
       },
