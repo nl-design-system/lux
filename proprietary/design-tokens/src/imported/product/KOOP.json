@@ -3,19 +3,19 @@
     "color": {
       "brand": {
         "default": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "{lux.color.lintblauw.500}",
           "description": "kleur van het product"
         },
         "subdued": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "{lux.color.lintblauw.50}",
           "description": "Subtiele kleur van het product"
         },
         "hover": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "#10345c",
           "description": "Hover kleur van het product"
@@ -24,14 +24,14 @@
     },
     "border-radius": {
       "default": {
-        "parent": "product/MijnOverheid",
+        "parent": "product/KOOP",
         "type": "borderRadius",
         "value": "4px"
       }
     },
     "focus": {
       "outline-width": {
-        "parent": "product/MijnOverheid",
+        "parent": "product/KOOP",
         "type": "borderWidth",
         "value": "2px"
       },
@@ -145,7 +145,7 @@
   "figma": {
     "focus": {
       "outline-radius": {
-        "parent": "product/MijnOverheid",
+        "parent": "product/KOOP",
         "type": "borderRadius",
         "value": "6px"
       }
@@ -167,38 +167,38 @@
     "button": {
       "secondary": {
         "background-color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "{lux.color.none}",
           "description": ""
         },
         "border-color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "{lux.color.brand.default}",
           "description": ""
         },
         "color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "border-color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/KOOP",
             "type": "color",
             "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/KOOP",
             "type": "color",
             "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "background-color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/KOOP",
             "type": "color",
             "value": "{lux.color.brand.subdued}",
             "description": ""
@@ -207,20 +207,20 @@
       },
       "tertiary": {
         "color": {
-          "parent": "product/MijnOverheid",
+          "parent": "product/KOOP",
           "type": "color",
           "value": "{lux.color.brand.default}",
           "description": ""
         },
         "hover": {
           "color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/KOOP",
             "type": "color",
             "value": "{lux.color.brand.hover}",
             "description": ""
           },
           "background-color": {
-            "parent": "product/MijnOverheid",
+            "parent": "product/KOOP",
             "type": "color",
             "value": "{lux.color.brand.subdued}",
             "description": ""
