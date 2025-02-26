@@ -7,13 +7,16 @@
     background-size: var(--lux-size-icon);
   }
 
-  & :focus {
-    border-width: var(--lux-border-width-m);
+  &:focus {
+    box-shadow: 0 0 0 var(--lux-border-width-m) var(--lux-color-border-strong);
   }
 
-  & :hover {
-    border-width: var(--lux-border-width-m);
-    border-color: var(--lux-border-strong);
+  &:focus-visible {
+    outline-offset: calc(var(--utrecht-focus-outline-offset, revert) + var(--lux-border-width-m));
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 var(--lux-border-width-m) var(--lux-color-border-strong);
     background-color: var(--lux-color-background-default);
     color: var(--lux-color-foreground-default);
   }
