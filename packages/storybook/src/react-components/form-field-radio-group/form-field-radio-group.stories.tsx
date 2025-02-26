@@ -2,7 +2,7 @@ import { LuxFormFieldRadioGroup } from '@lux-design-system/components-react';
 import { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -211,15 +211,4 @@ export const WithLongLabels: Story = {
   },
 };
 
-export const Visual = createVisualRegressionStory(() => (
-  <div className="utrecht-document">
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <VisualStates mode="light" />
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <VisualStates mode="dark" />
-    </VisualRegressionWrapper>
-  </div>
-));
+export const Visual = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualStates} />);
