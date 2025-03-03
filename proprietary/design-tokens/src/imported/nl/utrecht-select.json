@@ -41,14 +41,18 @@
         "type": "fontWeights",
         "value": "{utrecht.document.font-weight}"
       },
-      "max-inline-size": {
-        "type": "sizing",
-        "value": "400px"
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{lux.line-height.body.default}"
       },
       "min-block-size": {
         "type": "sizing",
         "value": "{lux.size.target}"
       },
+      "max-inline-size": {
+        "type": "sizing",
+        "value": "400px"
+      },      
       "padding-block-end": {
         "type": "spacing",
         "value": "{lux.space.100}"
@@ -79,6 +83,20 @@
           "value": "{lux.color.foreground.subdued}"
         }
       },
+      "hover": {
+        "background-color": {
+          "type": "color",
+          "value": "{lux.color.background.default}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{lux.color.border.strong}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{lux.color.foreground.default}"
+        }
+      },
       "focus": {
         "background-color": {
           "type": "color",
@@ -94,13 +112,13 @@
         }
       },
       "invalid": {
-        "border-block-end-width": {
-          "type": "borderWidth",
-          "value": "{utrecht.select.invalid.border-width}"
-        },
         "background-color": {
           "type": "color",
           "value": "{lux.color.background.default}"
+        },
+        "border-block-end-width": {
+          "type": "borderWidth",
+          "value": "{utrecht.select.invalid.border-width}"
         },
         "border-color": {
           "type": "color",
@@ -113,12 +131,8 @@
       }
     }
   },
-  "todo": {
+  "lux": {
     "select": {
-      "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.body.default}"
-      },
       "icon": {
         "size": {
           "type": "sizing",
@@ -132,18 +146,6 @@
         }
       },
       "hover": {
-        "background-color": {
-          "type": "color",
-          "value": "{lux.color.background.default}"
-        },
-        "border-color": {
-          "type": "color",
-          "value": "{lux.color.border.strong}"
-        },
-        "color": {
-          "type": "color",
-          "value": "{lux.color.foreground.default}"
-        },
         "border-width": {
           "type": "borderWidth",
           "value": "{lux.border-width.m}"
