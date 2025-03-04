@@ -6,19 +6,19 @@
         "type": "color"
       },
       "padding-block-end": {
-        "value": "{lux.space.400}",
+        "value": "{viewport.section.padding-block-end}",
         "type": "spacing"
       },
       "padding-block-start": {
-        "value": "{lux.space.400}",
+        "value": "{viewport.section.padding-block-start}",
         "type": "spacing"
       },
       "padding-inline-start": {
-        "value": "{lux.space.400}",
+        "value": "{viewport.section.padding-inline-start}",
         "type": "spacing"
       },
       "padding-inline-end": {
-        "value": "{lux.space.400}",
+        "value": "{viewport.section.padding-inline-end}",
         "type": "spacing"
       },
       "row-gap": {
