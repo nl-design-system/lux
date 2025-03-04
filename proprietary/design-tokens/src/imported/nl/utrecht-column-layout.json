@@ -2,26 +2,26 @@
   "utrecht": {
     "column-layout": {
       "column-rule-color": {
-        "value": "{lux.color.none}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.none}"
       },
       "column-rule-width": {
-        "value": "{lux.border-width.none}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{lux.border-width.none}"
       },
       "column-width": {
-        "value": "12.5rem",
-        "type": "sizing",
-        "description": "full-size, hoe stel ik dit in? "
+        "$type": "sizing",
+        "$value": "12.5rem",
+        "$description": "full-size, hoe stel ik dit in? "
       },
       "gap": {
-        "value": "{utrecht.column-layout.column-gap}",
-        "type": "spacing",
-        "description": "Deze token uitfaseren"
+        "$type": "spacing",
+        "$value": "{utrecht.column-layout.column-gap}",
+        "$description": "Deze token uitfaseren"
       },
       "column-gap": {
-        "value": "{lux.grid.gutter}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.grid.gutter}"
       }
     }
   }

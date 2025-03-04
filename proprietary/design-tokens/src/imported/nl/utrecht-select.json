@@ -2,109 +2,109 @@
   "utrecht": {
     "select": {
       "background-color": {
-        "type": "color",
-        "value": "{lux.color.background.default}"
+        "$type": "color",
+        "$value": "{lux.color.background.default}"
       },
       "border-block-end-width": {
-        "type": "borderWidth",
-        "value": "{utrecht.select.border-width}"
+        "$type": "borderWidth",
+        "$value": "{utrecht.select.border-width}"
       },
       "border-color": {
-        "type": "color",
-        "value": "{lux.color.border.strong}"
+        "$type": "color",
+        "$value": "{lux.color.border.strong}"
       },
       "border-radius": {
-        "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
+        "$type": "borderRadius",
+        "$value": "{lux.border-radius.default}"
       },
       "border-width": {
-        "type": "borderWidth",
-        "value": "{lux.border-width.default}"
+        "$type": "borderWidth",
+        "$value": "{lux.border-width.default}"
       },
       "color": {
-        "type": "color",
-        "value": "{lux.color.foreground.default}"
+        "$type": "color",
+        "$value": "{lux.color.foreground.default}"
       },
       "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.body.default}"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.body.default}"
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{utrecht.document.font-weight}"
+        "$type": "fontWeights",
+        "$value": "{utrecht.document.font-weight}"
       },
       "max-inline-size": {
-        "type": "sizing",
-        "value": "400px"
+        "$type": "sizing",
+        "$value": "400px"
       },
       "min-block-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
+        "$type": "sizing",
+        "$value": "{lux.size.target}"
       },
       "padding-block-end": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "padding-block-start": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "padding-inline-end": {
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "$type": "spacing",
+        "$value": "{lux.space.200}"
       },
       "padding-inline-start": {
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "$type": "spacing",
+        "$value": "{lux.space.200}"
       },
       "disabled": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.color.background.subdued}"
+          "$type": "color",
+          "$value": "{lux.color.background.subdued}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.color.border.subdued}"
+          "$type": "color",
+          "$value": "{lux.color.border.subdued}"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.color.foreground.subdued}"
+          "$type": "color",
+          "$value": "{lux.color.foreground.subdued}"
         }
       },
       "focus": {
         "background-color": {
-          "type": "color",
-          "value": "{utrecht.select.background-color}"
+          "$type": "color",
+          "$value": "{utrecht.select.background-color}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{utrecht.select.border-color}"
+          "$type": "color",
+          "$value": "{utrecht.select.border-color}"
         },
         "color": {
-          "type": "color",
-          "value": "{utrecht.select.color}"
+          "$type": "color",
+          "$value": "{utrecht.select.color}"
         }
       },
       "invalid": {
         "border-block-end-width": {
-          "type": "borderWidth",
-          "value": "{utrecht.select.invalid.border-width}"
+          "$type": "borderWidth",
+          "$value": "{utrecht.select.invalid.border-width}"
         },
         "background-color": {
-          "type": "color",
-          "value": "{lux.color.background.default}"
+          "$type": "color",
+          "$value": "{lux.color.background.default}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.color.feedback.error.default}"
+          "$type": "color",
+          "$value": "{lux.color.feedback.error.default}"
         },
         "border-width": {
-          "type": "borderWidth",
-          "value": "{lux.border-width.default}"
+          "$type": "borderWidth",
+          "$value": "{lux.border-width.default}"
         }
       }
     }
@@ -112,37 +112,37 @@
   "todo": {
     "select": {
       "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.body.default}"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.body.default}"
       },
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "{lux.size.icon}"
+          "$type": "sizing",
+          "$value": "{lux.size.icon}"
         }
       },
       "focus": {
         "border-width": {
-          "type": "borderWidth",
-          "value": "{lux.border-width.m}"
+          "$type": "borderWidth",
+          "$value": "{lux.border-width.m}"
         }
       },
       "hover": {
         "background-color": {
-          "type": "color",
-          "value": "{lux.color.background.default}"
+          "$type": "color",
+          "$value": "{lux.color.background.default}"
         },
         "border-color": {
-          "type": "color",
-          "value": "{lux.color.border.strong}"
+          "$type": "color",
+          "$value": "{lux.color.border.strong}"
         },
         "color": {
-          "type": "color",
-          "value": "{lux.color.foreground.default}"
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         },
         "border-width": {
-          "type": "borderWidth",
-          "value": "{lux.border-width.m}"
+          "$type": "borderWidth",
+          "$value": "{lux.border-width.m}"
         }
       }
     }
