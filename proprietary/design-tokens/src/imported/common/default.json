@@ -2,24 +2,24 @@
   "lux": {
     "focus": {
       "outline-offset": {
-        "type": "spacing",
-        "value": "{lux.space.25}"
+        "$type": "spacing",
+        "$value": "{lux.space.25}"
       }
     },
     "size": {
       "icon": {
         "parent": "common/default",
-        "type": "sizing",
-        "value": "1rem",
-        "description": ""
+        "description": "",
+        "$type": "sizing",
+        "$value": "1rem"
       }
     },
     "grid": {
       "max-inline": {
         "parent": "common/default",
-        "type": "sizing",
-        "value": "77.5rem",
-        "description": ""
+        "description": "",
+        "$type": "sizing",
+        "$value": "77.5rem"
       }
     }
   }
