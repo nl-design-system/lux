@@ -1,5 +1,7 @@
 /* TODO: Replace tokens or fix in Utrecht code */
 .lux-select {
+  box-shadow: inset 0 0 0 var(--utrecht-select-border-width) var(--utrecht-select-border-color);
+  border: 0;
   line-height: var(--utrecht-select-line-height);
 
   &:not([multiple]) {
@@ -8,15 +10,15 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 var(--lux-select-focus-border-width) var(--utrecht-select-focus-border-color);
+    box-shadow: inset 0 0 0 var(--lux-select-focus-border-width) var(--utrecht-select-focus-border-color);
   }
 
   &:focus-visible {
-    outline-offset: calc(var(--utrecht-focus-outline-offset, revert) + var(--lux-select-focus-border-width));
+    outline-offset: var(--utrecht-focus-outline-offset, revert);
   }
 
   &:hover {
-    box-shadow: 0 0 0 var(--lux-select-hover-border-width) var(--utrecht-select-hover-border-color);
+    box-shadow: inset 0 0 0 var(--lux-select-hover-border-width) var(--utrecht-select-hover-border-color);
     background-color: var(--utrecht-select-hover-background-color);
     color: var(--utrecht-select-hover-color);
   }
