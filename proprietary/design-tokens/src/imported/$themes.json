@@ -683,14 +683,12 @@
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
     "$figmaVariableReferences": {
-      "utrecht.alert.icon.inset-block-start": "1f1e576bc68d93a66bfbb8a6cdff0507fc8d3511",
-      "lux.alert.icon.inset-block-start": "dde0bccddfb2180973e39e5b63a9edaed255128b",
       "figma.screen-size": "bd0f39c7c8c9102a0b039d307c83b865a9397bc4",
       "figma.viewport.size.icon.wrapper-height": "2ba54b791c9e25156587576bce4d200b6a981f1a",
       "lux.grid.gutter": "fb62d65a5e23361346244bc73f4dfcaae9ba7b93",
       "lux.grid.margin": "54f0a94e363bd74617e3cd548fa8f620d094c276",
-      "lux.grid.max-inline-size": "7e2483551a5058a0fa6f20a6c020c1794288dd4c",
-      "lux.icon.inset-block-start": "15c53c753c4e3830e56817f0d24fb7c1e3c84c1d",
+      "lux.grid.max-inline-size": "bbc0e1955b1bccc13959631374e22e27ba36eae8",
+      "lux.icon.inset-block-start": "81c961bcc10879bb1a517fdc3fdd709ac9e2546f",
       "viewport.font-size.heading.level-1": "0e26c1015df14ef3a881ca6e444598c57f537a2b",
       "viewport.font-size.heading.level-2": "9cdf244ae7a4a82fafc1479d18fa618cf97c812d",
       "viewport.font-size.heading.level-3": "5a8cd715a6e2a5530ab2b514539d5d53290e7920",
@@ -710,7 +708,9 @@
       "viewport.section.padding-block-end": "3448ea2c5704acc9bf9150ecff5f6decca78c58b",
       "viewport.section.padding-block-start": "0beed804d7ab49631e2e60e5d1a7b73efd23231c",
       "viewport.section.padding-inline-start": "d13b72e54d4d89b71c1044f605628167fd33402f",
-      "viewport.section.padding-inline-end": "bcf46b2c6b7d6ec6bc0a5a62369611ec71c3a915"
+      "viewport.section.padding-inline-end": "bcf46b2c6b7d6ec6bc0a5a62369611ec71c3a915",
+      "utrecht.alert.icon.inset-block-start": "23b103b25250c56d91ab92f38f0ec584a2af2836",
+      "lux.alert.icon.inset-block-start": "78606359271ad9e80e5ca4a5553f19cd0d7ab092"
     },
     "group": "viewport (beta)"
   },
