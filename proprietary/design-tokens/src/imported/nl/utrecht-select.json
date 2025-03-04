@@ -52,7 +52,7 @@
       "max-inline-size": {
         "type": "sizing",
         "value": "400px"
-      },      
+      },
       "padding-block-end": {
         "type": "spacing",
         "value": "{lux.space.100}"
@@ -100,15 +100,15 @@
       "focus": {
         "background-color": {
           "type": "color",
-          "value": "{utrecht.select.background-color}"
+          "value": "{lux.color.background.default}"
         },
         "border-color": {
           "type": "color",
-          "value": "{utrecht.select.border-color}"
+          "value": "{lux.color.border.strong}"
         },
         "color": {
           "type": "color",
-          "value": "{utrecht.select.color}"
+          "value": "{lux.color.foreground.default}"
         }
       },
       "invalid": {
