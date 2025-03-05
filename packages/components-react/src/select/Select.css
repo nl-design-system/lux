@@ -22,4 +22,8 @@
     background-color: var(--utrecht-select-hover-background-color);
     color: var(--utrecht-select-hover-color);
   }
+
+  &.utrecht-select--invalid {
+    box-shadow: inset 0 0 0 var(--utrecht-select-invalid-border-width) var(--utrecht-select-invalid-border-color);
+  }
 }
