@@ -4,6 +4,10 @@
   border: 0;
   line-height: var(--utrecht-select-line-height);
 
+  &.utrecht-select--invalid {
+    box-shadow: inset 0 0 0 var(--utrecht-select-invalid-border-width) var(--utrecht-select-invalid-border-color);
+  }
+
   &:not([multiple]) {
     background-position: center right var(--utrecht-select-padding-inline-end);
     background-size: var(--lux-select-icon-size);
@@ -21,9 +25,5 @@
     box-shadow: inset 0 0 0 var(--lux-select-hover-border-width) var(--utrecht-select-hover-border-color);
     background-color: var(--utrecht-select-hover-background-color);
     color: var(--utrecht-select-hover-color);
-  }
-
-  &.utrecht-select--invalid {
-    box-shadow: inset 0 0 0 var(--utrecht-select-invalid-border-width) var(--utrecht-select-invalid-border-color);
   }
 }
