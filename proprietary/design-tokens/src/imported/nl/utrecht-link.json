@@ -2,25 +2,25 @@
   "utrecht": {
     "link": {
       "color": {
-        "type": "color",
-        "value": "{lux.color.foreground.link}"
+        "value": "{lux.color.foreground.link}",
+        "type": "color"
       },
       "text-decoration-color": {
-        "type": "color",
-        "value": "{lux.color.foreground.link}"
+        "value": "{lux.color.foreground.link}",
+        "type": "color"
       },
       "text-decoration-thickness": {
-        "type": "other",
-        "value": "auto"
+        "value": "auto",
+        "type": "other"
       },
       "text-underline-offset": {
-        "type": "other",
-        "value": "auto"
+        "value": "auto",
+        "type": "other"
       },
       "active": {
         "color": {
-          "type": "color",
-          "value": "{mode.link.active.color}"
+          "value": "{mode.link.active.color}",
+          "type": "color"
         },
         "text-decoration": {
           "value": "none",
@@ -29,12 +29,12 @@
       },
       "focus": {
         "color": {
-          "type": "color",
-          "value": "{lux.color.foreground.link}"
+          "value": "{lux.color.foreground.link}",
+          "type": "color"
         },
         "text-decoration-thickness": {
-          "type": "other",
-          "value": "auto"
+          "value": "auto",
+          "type": "other"
         },
         "background-color": {
           "value": "{lux.color.none}",
@@ -47,12 +47,12 @@
       },
       "hover": {
         "color": {
-          "type": "color",
-          "value": "{mode.link.hover.color}"
+          "value": "{mode.link.hover.color}",
+          "type": "color"
         },
         "text-decoration-thickness": {
-          "type": "other",
-          "value": "auto"
+          "value": "auto",
+          "type": "other"
         },
         "text-decoration": {
           "value": "none",
@@ -60,19 +60,19 @@
         }
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.font-weight.regular}"
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
       },
       "visited": {
         "color": {
-          "type": "color",
-          "value": "{mode.link.visited.color}"
+          "value": "{mode.link.visited.color}",
+          "type": "color"
         }
       },
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "{lux.size.icon}"
+          "value": "{lux.size.icon}",
+          "type": "sizing"
         }
       },
       "font-family": {

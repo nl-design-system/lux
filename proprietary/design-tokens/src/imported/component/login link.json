@@ -3,154 +3,154 @@
     "login-link": {
       "color": {
         "parent": "login link/default",
-        "type": "color",
-        "value": "{lux.color.foreground.default}"
+        "value": "{lux.color.foreground.default}",
+        "type": "color"
       },
       "background-color": {
         "parent": "login link/default",
-        "type": "color",
+        "description": "",
         "value": "{lux.color.background.default}",
-        "description": ""
+        "type": "color"
       },
       "border-color": {
         "parent": "login link/default",
-        "type": "color",
+        "description": "",
         "value": "{lux.color.border.default}",
-        "description": ""
+        "type": "color"
       },
       "hover": {
         "color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.foreground.default}",
-          "description": ""
+          "type": "color"
         },
         "background-color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.background.hover}",
-          "description": ""
+          "type": "color"
         },
         "border-color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.border.default}",
-          "description": ""
+          "type": "color"
         }
       },
       "active": {
         "color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.foreground.default}",
-          "description": ""
+          "type": "color"
         },
         "background-color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{mode.login-link.active.background-color}",
-          "description": ""
+          "type": "color"
         },
         "border-color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.border.strong}",
-          "description": ""
+          "type": "color"
         }
       },
       "padding-block-start": {
         "parent": "login link/default",
-        "type": "spacing",
+        "description": "",
         "value": "{lux.space.50}",
-        "description": ""
+        "type": "spacing"
       },
       "padding-block-end": {
         "parent": "login link/default",
-        "type": "spacing",
+        "description": "",
         "value": "{lux.space.50}",
-        "description": ""
+        "type": "spacing"
       },
       "font-size": {
         "parent": "login link/default",
-        "type": "fontSizes",
-        "value": "{lux.font-size.large-scale.sm}"
+        "value": "{lux.font-size.large-scale.sm}",
+        "type": "fontSizes"
       },
       "padding-inline-start": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.50}"
+        "value": "{lux.space.50}",
+        "type": "spacing"
       },
       "padding-inline-end": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "value": "{lux.space.200}",
+        "type": "spacing"
       },
       "min-inline-size": {
         "parent": "login link/default",
-        "type": "sizing",
-        "value": "48px"
+        "value": "48px",
+        "type": "sizing"
       },
       "min-block-size": {
         "parent": "login link/default",
-        "type": "sizing",
-        "value": "48px"
+        "value": "48px",
+        "type": "sizing"
       },
       "column-gap": {
         "parent": "login link/default",
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "value": "{lux.space.100}",
+        "type": "spacing"
       },
       "border-radius": {
         "parent": "login link/default",
-        "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius"
       },
       "border-width": {
         "parent": "login link/default",
-        "type": "borderWidth",
-        "value": "{lux.border-width.default}"
+        "value": "{lux.border-width.default}",
+        "type": "borderWidth"
       },
       "icon": {
         "size": {
           "parent": "login link/default",
-          "type": "sizing",
+          "description": "",
           "value": "2.5rem",
-          "description": ""
+          "type": "sizing"
         }
       },
       "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.large-scale.sm}"
+        "value": "{lux.line-height.large-scale.sm}",
+        "type": "lineHeights"
       },
       "font-weight": {
-        "type": "fontWeights",
-        "value": "{lux.font-weight.regular}"
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
       },
       "font-family": {
-        "type": "fontFamilies",
-        "value": "{lux.font-family.primary}"
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
       },
       "border-style": {
-        "type": "other",
-        "value": "solid"
+        "value": "solid",
+        "type": "other"
       },
       "focus": {
         "color": {
           "parent": "login link/default",
-          "type": "color",
-          "value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "background-color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.background.default}",
-          "description": ""
+          "type": "color"
         },
         "border-color": {
           "parent": "login link/default",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.border.default}",
-          "description": ""
+          "type": "color"
         }
       }
     }

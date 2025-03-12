@@ -3,30 +3,30 @@
     "border-radius": {
       "circle": {
         "parent": "core/default",
-        "type": "borderRadius",
-        "value": "999px"
+        "value": "999px",
+        "type": "borderRadius"
       },
       "none": {
         "parent": "core/default",
-        "type": "borderRadius",
-        "value": "0px"
+        "value": "0px",
+        "type": "borderRadius"
       }
     },
     "border-width": {
       "default": {
         "parent": "core/default",
-        "type": "borderWidth",
-        "value": "1px"
+        "value": "1px",
+        "type": "borderWidth"
       },
       "m": {
         "parent": "core/default",
-        "type": "borderWidth",
-        "value": "2px"
+        "value": "2px",
+        "type": "borderWidth"
       },
       "none": {
         "parent": "core/default",
-        "type": "borderWidth",
-        "value": "0px"
+        "value": "0px",
+        "type": "borderWidth"
       }
     }
   }

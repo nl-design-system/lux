@@ -2,67 +2,67 @@
   "lux": {
     "font-weight": {
       "regular": {
-        "type": "fontWeights",
-        "value": "Regular"
+        "value": "Regular",
+        "type": "fontWeights"
       },
       "bold": {
-        "type": "fontWeights",
-        "value": "Bold"
+        "value": "Bold",
+        "type": "fontWeights"
       }
     },
     "line-height": {
       "large-scale": {
         "xs": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "1.5rem"
+          "value": "1.5rem",
+          "type": "lineHeights"
         },
         "sm": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "1.75rem"
+          "value": "1.75rem",
+          "type": "lineHeights"
         },
         "md": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "2rem"
+          "value": "2rem",
+          "type": "lineHeights"
         },
         "lg": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "2.25rem"
+          "value": "2.25rem",
+          "type": "lineHeights"
         },
         "xl": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "3.5rem"
+          "value": "3.5rem",
+          "type": "lineHeights"
         }
       },
       "small-scale": {
         "xs": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "1.5rem"
+          "value": "1.5rem",
+          "type": "lineHeights"
         },
         "sm": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "1.5rem"
+          "value": "1.5rem",
+          "type": "lineHeights"
         },
         "md": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "1.75rem"
+          "value": "1.75rem",
+          "type": "lineHeights"
         },
         "lg": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "2rem"
+          "value": "2rem",
+          "type": "lineHeights"
         },
         "xl": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "3rem"
+          "value": "3rem",
+          "type": "lineHeights"
         }
       }
     },
@@ -70,55 +70,55 @@
       "large-scale": {
         "xs": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "1rem"
+          "value": "1rem",
+          "type": "fontSizes"
         },
         "sm": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "1.125rem"
+          "value": "1.125rem",
+          "type": "fontSizes"
         },
         "md": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "1.375rem"
+          "value": "1.375rem",
+          "type": "fontSizes"
         },
         "lg": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "1.625rem"
+          "value": "1.625rem",
+          "type": "fontSizes"
         },
         "xl": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "2.5rem"
+          "value": "2.5rem",
+          "type": "fontSizes"
         }
       },
       "small-scale": {
         "xs": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "0.875rem"
+          "value": "0.875rem",
+          "type": "fontSizes"
         },
         "sm": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1rem"
+          "value": "1rem",
+          "type": "fontSizes"
         },
         "md": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.25rem"
+          "value": "1.25rem",
+          "type": "fontSizes"
         },
         "lg": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.5rem"
+          "value": "1.5rem",
+          "type": "fontSizes"
         },
         "xl": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "2.25rem"
+          "value": "2.25rem",
+          "type": "fontSizes"
         }
       }
     }
@@ -126,12 +126,12 @@
   "ro": {
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif"
+        "value": "RijksoverheidSansWebText, Arial, Verdana, sans-serif",
+        "type": "fontFamilies"
       },
       "secondary": {
-        "type": "fontFamilies",
-        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif"
+        "value": "RijksoverheidSerifWeb, 'Times New Roman', serif",
+        "type": "fontFamilies"
       }
     }
   }

@@ -2,8 +2,8 @@
   "utrecht": {
     "form-field-description": {
       "color": {
-        "type": "color",
-        "value": "{lux.color.foreground.subdued}"
+        "value": "{lux.color.foreground.subdued}",
+        "type": "color"
       },
       "font-family": {
         "value": "{lux.font-family.primary}",
@@ -20,23 +20,23 @@
       "invalid": {
         "color": {
           "value": "{lux.color.foreground.subdued}",
-          "type": "color",
-          "description": "Checkvraag dev: bestaat deze echt in code? "
+          "description": "Checkvraag dev: bestaat deze echt in code? ",
+          "type": "color"
         }
       },
       "valid": {
         "color": {
           "value": "{lux.color.foreground.subdued}",
-          "type": "color",
-          "description": "Checkvraag dev: bestaat deze echt in code? "
+          "description": "Checkvraag dev: bestaat deze echt in code? ",
+          "type": "color"
         }
       }
     },
     "invalid": {
       "font-weight": {
         "value": "{no-token}",
-        "type": "fontWeights",
-        "description": "Controle vraag aan devs: bestaat deze echt in utrecht code?"
+        "description": "Controle vraag aan devs: bestaat deze echt in utrecht code?",
+        "type": "fontWeights"
       }
     }
   }

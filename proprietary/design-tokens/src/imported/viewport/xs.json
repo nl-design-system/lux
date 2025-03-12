@@ -3,24 +3,24 @@
     "rijkslint": {
       "variant": {
         "parent": "viewport (beta)/xs",
-        "type": "text",
+        "description": "",
         "value": "small",
-        "description": ""
+        "type": "text"
       }
     },
     "screen-size": {
       "parent": "viewport (beta)/xs",
-      "type": "sizing",
+      "description": "",
       "value": "23.4375rem",
-      "description": ""
+      "type": "sizing"
     },
     "viewport": {
       "size": {
         "icon": {
           "wrapper-height": {
             "parent": "viewport (beta)/xs",
-            "type": "sizing",
-            "value": "1.5rem"
+            "value": "1.5rem",
+            "type": "sizing"
           }
         }
       }
@@ -30,15 +30,15 @@
     "grid": {
       "gutter": {
         "parent": "viewport (beta)/xs",
-        "type": "spacing",
+        "description": "",
         "value": "0rem",
-        "description": ""
+        "type": "spacing"
       },
       "margin": {
         "parent": "viewport (beta)/xs",
-        "type": "spacing",
+        "description": "",
         "value": "1rem",
-        "description": ""
+        "type": "spacing"
       },
       "max-inline-size": {
         "value": "82.5rem",
@@ -66,17 +66,17 @@
         "75%": {
           "padding-block-start": {
             "parent": "viewport (beta)/xs",
-            "type": "spacing",
+            "description": "",
             "value": "1.25rem",
-            "description": ""
+            "type": "spacing"
           }
         },
         "default": {
           "padding-block-start": {
             "parent": "viewport (beta)/xs",
-            "type": "spacing",
+            "description": "",
             "value": "1.25rem",
-            "description": ""
+            "type": "spacing"
           }
         }
       }
@@ -85,23 +85,23 @@
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.xl}"
+          "value": "{lux.line-height.small-scale.xl}",
+          "type": "lineHeights"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.lg}"
+          "value": "{lux.line-height.small-scale.lg}",
+          "type": "lineHeights"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.md}"
+          "value": "{lux.line-height.small-scale.md}",
+          "type": "lineHeights"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.sm}"
+          "value": "{lux.line-height.small-scale.sm}",
+          "type": "lineHeights"
         }
       },
       "body": {
@@ -123,23 +123,23 @@
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.xl}"
+          "value": "{lux.font-size.small-scale.xl}",
+          "type": "fontSizes"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.lg}"
+          "value": "{lux.font-size.small-scale.lg}",
+          "type": "fontSizes"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.md}"
+          "value": "{lux.font-size.small-scale.md}",
+          "type": "fontSizes"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.sm}"
+          "value": "{lux.font-size.small-scale.sm}",
+          "type": "fontSizes"
         }
       },
       "body": {

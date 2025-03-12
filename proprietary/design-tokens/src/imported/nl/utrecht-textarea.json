@@ -122,8 +122,8 @@
         }
       },
       "border-radius": {
-        "type": "borderRadius",
-        "value": "{lux.border-radius.default}"
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius"
       },
       "border-bottom-width": {
         "value": "auto",

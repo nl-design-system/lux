@@ -4,87 +4,87 @@
       "grijs": {
         "100": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#fbfbfb",
-          "description": ""
+          "type": "color"
         },
         "200": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#f3f3f3",
-          "description": ""
+          "type": "color"
         },
         "300": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#e6e6e6",
-          "description": ""
+          "type": "color"
         },
         "400": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#a7a7a7",
-          "description": ""
+          "type": "color"
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#696969",
-          "description": ""
+          "type": "color"
         },
         "600": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#383838",
-          "description": ""
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#282828",
-          "description": ""
+          "type": "color"
         },
         "800": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#1d1d1d",
-          "description": ""
+          "type": "color"
         },
         "900": {
           "parent": "core/default",
-          "type": "color",
+          "description": "",
           "value": "#171717",
-          "description": ""
+          "type": "color"
         }
       },
       "zwart": {
         "parent": "core/default",
-        "type": "color",
+        "description": "",
         "value": "#000000",
-        "description": ""
+        "type": "color"
       },
       "wit": {
         "parent": "core/default",
-        "type": "color",
+        "description": "",
         "value": "#ffffff",
-        "description": ""
+        "type": "color"
       },
       "none": {
         "parent": "core/default",
-        "type": "color",
+        "description": "",
         "value": "#ffffff00",
-        "description": ""
+        "type": "color"
       },
       "lichtblauw": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#eef7fb"
+          "value": "#eef7fb",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#ddeff8"
+          "value": "#ddeff8",
+          "type": "color"
         },
         "200": {
           "value": "#CCE7F4",
@@ -100,20 +100,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#8fcae7"
+          "value": "#8fcae7",
+          "type": "color"
         }
       },
       "violet": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f2d9e7"
+          "value": "#f2d9e7",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#e5b3d0"
+          "value": "#e5b3d0",
+          "type": "color"
         },
         "200": {
           "value": "#D88CB7",
@@ -129,25 +129,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#a90061"
+          "value": "#a90061",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#52002f"
+          "value": "#52002f",
+          "type": "color"
         }
       },
       "paars": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#e3dce7"
+          "value": "#e3dce7",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#c6b9cf"
+          "value": "#c6b9cf",
+          "type": "color"
         },
         "200": {
           "value": "#A995B7",
@@ -159,25 +159,25 @@
         },
         "400": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#714f87"
+          "value": "#714f87",
+          "type": "color"
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#42145f"
+          "value": "#42145f",
+          "type": "color"
         }
       },
       "hemelblauw": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#d9ebf7"
+          "value": "#d9ebf7",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#b3d7ee"
+          "value": "#b3d7ee",
+          "type": "color"
         },
         "200": {
           "value": "#8CC3E6",
@@ -193,25 +193,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#007bc7"
+          "value": "#007bc7",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#00436c"
+          "value": "#00436c",
+          "type": "color"
         }
       },
       "donkerblauw": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#d9e8f0"
+          "value": "#d9e8f0",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#b3d2e1"
+          "value": "#b3d2e1",
+          "type": "color"
         },
         "200": {
           "value": "#8CBBD2",
@@ -227,25 +227,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#01689b"
+          "value": "#01689b",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#013f5e"
+          "value": "#013f5e",
+          "type": "color"
         }
       },
       "mintgroen": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#eaf8f4"
+          "value": "#eaf8f4",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#d6f2e9"
+          "value": "#d6f2e9",
+          "type": "color"
         },
         "200": {
           "value": "#C1EBDE",
@@ -261,20 +261,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#76d2b6"
+          "value": "#76d2b6",
+          "type": "color"
         }
       },
       "mosgroen": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#ebebd9"
+          "value": "#ebebd9",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#d6d7b3"
+          "value": "#d6d7b3",
+          "type": "color"
         },
         "200": {
           "value": "#C1C38C",
@@ -290,20 +290,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#777b00"
+          "value": "#777b00",
+          "type": "color"
         }
       },
       "groen": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#e1eddb"
+          "value": "#e1eddb",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#c4dbb6"
+          "value": "#c4dbb6",
+          "type": "color"
         },
         "200": {
           "value": "#A5C991",
@@ -319,25 +319,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#39870c"
+          "value": "#39870c",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#004b17"
+          "value": "#004b17",
+          "type": "color"
         }
       },
       "donkergroen": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#dfe6e1"
+          "value": "#dfe6e1",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#becdc3"
+          "value": "#becdc3",
+          "type": "color"
         },
         "200": {
           "value": "#9DB4A4",
@@ -353,20 +353,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#275937"
+          "value": "#275937",
+          "type": "color"
         }
       },
       "bruin": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#efeada"
+          "value": "#efeada",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#dfd4b6"
+          "value": "#dfd4b6",
+          "type": "color"
         },
         "200": {
           "value": "#CFBF90",
@@ -382,20 +382,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#94710a"
+          "value": "#94710a",
+          "type": "color"
         }
       },
       "donkerbruin": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#e8e0df"
+          "value": "#e8e0df",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#d1c2be"
+          "value": "#d1c2be",
+          "type": "color"
         },
         "200": {
           "value": "#BAA39D",
@@ -411,20 +411,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#673327"
+          "value": "#673327",
+          "type": "color"
         }
       },
       "geel": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#fefbdd"
+          "value": "#fefbdd",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#fdf6bc"
+          "value": "#fdf6bc",
+          "type": "color"
         },
         "200": {
           "value": "#FCF199",
@@ -440,20 +440,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f9e11e"
+          "value": "#f9e11e",
+          "type": "color"
         }
       },
       "donkergeel": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#fff4db"
+          "value": "#fff4db",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#ffe9b8"
+          "value": "#ffe9b8",
+          "type": "color"
         },
         "200": {
           "value": "#FDDE94",
@@ -469,25 +469,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#ffb612"
+          "value": "#ffb612",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#bf880d"
+          "value": "#bf880d",
+          "type": "color"
         }
       },
       "oranje": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#fbead9"
+          "value": "#fbead9",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f6d4b3"
+          "value": "#f6d4b3",
+          "type": "color"
         },
         "200": {
           "value": "#F1BE8C",
@@ -503,25 +503,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#e17000"
+          "value": "#e17000",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#b35900"
+          "value": "#b35900",
+          "type": "color"
         }
       },
       "rood": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f9dfdd"
+          "value": "#f9dfdd",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f2bfbc"
+          "value": "#f2bfbc",
+          "type": "color"
         },
         "200": {
           "value": "#EC9F99",
@@ -537,25 +537,25 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#d52b1e"
+          "value": "#d52b1e",
+          "type": "color"
         },
         "700": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#542621"
+          "value": "#542621",
+          "type": "color"
         }
       },
       "roze": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#fdeff8"
+          "value": "#fdeff8",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#fbdef0"
+          "value": "#fbdef0",
+          "type": "color"
         },
         "200": {
           "value": "#F8CEE8",
@@ -571,20 +571,20 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f092cd"
+          "value": "#f092cd",
+          "type": "color"
         }
       },
       "robijnrood": {
         "50": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#f7d9e7"
+          "value": "#f7d9e7",
+          "type": "color"
         },
         "100": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#efb3ce"
+          "value": "#efb3ce",
+          "type": "color"
         },
         "200": {
           "value": "#E78CB6",
@@ -600,8 +600,8 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#ca005d"
+          "value": "#ca005d",
+          "type": "color"
         }
       },
       "lintblauw": {
@@ -627,15 +627,15 @@
         },
         "500": {
           "parent": "core/default",
-          "type": "color",
-          "value": "#154273"
+          "value": "#154273",
+          "type": "color"
         }
       }
     }
   },
   "no-token": {
-    "type": "other",
     "value": "/* */",
-    "description": "Discussie nodig"
+    "description": "Discussie nodig",
+    "type": "other"
   }
 }

@@ -4,88 +4,88 @@
       "brand": {
         "default": {
           "parent": "product/NLdoc",
-          "type": "color",
           "value": "{nldoc.color.brand.default}",
-          "description": "kleur van het product"
+          "description": "kleur van het product",
+          "type": "color"
         },
         "subdued": {
           "parent": "product/NLdoc",
-          "type": "color",
           "value": "{nldoc.color.brand.subdued}",
-          "description": "Subtiele kleur van het product"
+          "description": "Subtiele kleur van het product",
+          "type": "color"
         },
         "hover": {
           "parent": "product/NLdoc",
-          "type": "color",
           "value": "{nldoc.color.brand.hover}",
-          "description": "Hover kleur van het product"
+          "description": "Hover kleur van het product",
+          "type": "color"
         }
       }
     },
     "border-radius": {
       "default": {
         "parent": "product/NLdoc",
-        "type": "borderRadius",
-        "value": "0px"
+        "value": "0px",
+        "type": "borderRadius"
       }
     },
     "focus": {
       "outline-width": {
         "parent": "product/NLdoc",
-        "type": "borderWidth",
-        "value": "1px"
+        "value": "1px",
+        "type": "borderWidth"
       },
       "outline": {
         "style": {
-          "type": "other",
-          "value": "dotted"
+          "value": "dotted",
+          "type": "other"
         }
       }
     },
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "{nldoc.font-family.primary}"
+        "value": "{nldoc.font-family.primary}",
+        "type": "fontFamilies"
       }
     },
     "line-height": {
       "body": {
         "small": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.body.small} * 1.5"
+          "value": "{lux.font-size.body.small} * 1.5",
+          "type": "lineHeights"
         },
         "default": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.body.default} * 1.5"
+          "value": "{lux.font-size.body.default} * 1.5",
+          "type": "lineHeights"
         },
         "large": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.body.large} * 1.5"
+          "value": "{lux.font-size.body.large} * 1.5",
+          "type": "lineHeights"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-1} * 1.5"
+          "value": "{lux.font-size.heading.level-1} * 1.5",
+          "type": "lineHeights"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-2} * 1.5"
+          "value": "{lux.font-size.heading.level-2} * 1.5",
+          "type": "lineHeights"
         },
         "level-3": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-3} * 1.5"
+          "value": "{lux.font-size.heading.level-3} * 1.5",
+          "type": "lineHeights"
         },
         "level-4": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.font-size.heading.level-4} * 1.5"
+          "value": "{lux.font-size.heading.level-4} * 1.5",
+          "type": "lineHeights"
         },
         "level-5": {
           "value": "{lux.font-size.heading.level-5} * 1.5",
@@ -97,40 +97,40 @@
       "body": {
         "small": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "0.875rem"
+          "value": "0.875rem",
+          "type": "fontSizes"
         },
         "default": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1rem"
+          "value": "1rem",
+          "type": "fontSizes"
         },
         "large": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.25rem"
+          "value": "1.25rem",
+          "type": "fontSizes"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "2.5rem"
+          "value": "2.5rem",
+          "type": "fontSizes"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "2rem"
+          "value": "2rem",
+          "type": "fontSizes"
         },
         "level-3": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.5rem"
+          "value": "1.5rem",
+          "type": "fontSizes"
         },
         "level-4": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "1.25rem"
+          "value": "1.25rem",
+          "type": "fontSizes"
         },
         "level-5": {
           "value": "1rem",
@@ -140,9 +140,9 @@
     },
     "size": {
       "target": {
-        "type": "sizing",
         "value": "2.5rem",
-        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. ",
+        "type": "sizing"
       }
     }
   },
@@ -150,8 +150,8 @@
     "focus": {
       "outline-radius": {
         "parent": "product/NLdoc",
-        "type": "borderRadius",
-        "value": "0px"
+        "value": "0px",
+        "type": "borderRadius"
       }
     },
     "size": {
@@ -168,73 +168,73 @@
       "secondary": {
         "background-color": {
           "parent": "product/NLdoc",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.none}",
-          "description": ""
+          "type": "color"
         },
         "border-color": {
           "parent": "product/NLdoc",
-          "type": "color",
+          "description": "",
           "value": "{nldoc.button.color}",
-          "description": ""
+          "type": "color"
         },
         "color": {
           "parent": "product/NLdoc",
-          "type": "color",
+          "description": "",
           "value": "{nldoc.button.color}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "border-color": {
             "parent": "product/NLdoc",
-            "type": "color",
+            "description": "",
             "value": "{nldoc.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "color": {
             "parent": "product/NLdoc",
-            "type": "color",
+            "description": "",
             "value": "{nldoc.button.color}",
-            "description": ""
+            "type": "color"
           },
           "background-color": {
             "parent": "product/NLdoc",
-            "type": "color",
+            "description": "",
             "value": "{nldoc.color.brand.subdued}",
-            "description": ""
+            "type": "color"
           }
         }
       },
       "tertiary": {
         "color": {
           "parent": "product/NLdoc",
-          "type": "color",
+          "description": "",
           "value": "{nldoc.button.color}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "color": {
             "parent": "product/NLdoc",
-            "type": "color",
+            "description": "",
             "value": "{nldoc.button.color}",
-            "description": ""
+            "type": "color"
           },
           "background-color": {
             "parent": "product/NLdoc",
-            "type": "color",
+            "description": "",
             "value": "{nldoc.color.brand.subdued}",
-            "description": ""
+            "type": "color"
           }
         }
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "1rem"
+        "value": "1rem",
+        "type": "fontSizes"
       },
       "primary": {
         "font-size": {
-          "type": "fontSizes",
-          "value": "1rem"
+          "value": "1rem",
+          "type": "fontSizes"
         }
       }
     },

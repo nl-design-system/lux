@@ -4,85 +4,85 @@
       "brand": {
         "default": {
           "parent": "product/KOOP",
-          "type": "color",
           "value": "{lux.color.lintblauw.500}",
-          "description": "kleur van het product"
+          "description": "kleur van het product",
+          "type": "color"
         },
         "subdued": {
           "parent": "product/KOOP",
-          "type": "color",
           "value": "{lux.color.lintblauw.50}",
-          "description": "Subtiele kleur van het product"
+          "description": "Subtiele kleur van het product",
+          "type": "color"
         },
         "hover": {
           "parent": "product/KOOP",
-          "type": "color",
           "value": "#10345c",
-          "description": "Hover kleur van het product"
+          "description": "Hover kleur van het product",
+          "type": "color"
         }
       }
     },
     "border-radius": {
       "default": {
         "parent": "product/KOOP",
-        "type": "borderRadius",
-        "value": "4px"
+        "value": "4px",
+        "type": "borderRadius"
       }
     },
     "focus": {
       "outline-width": {
         "parent": "product/KOOP",
-        "type": "borderWidth",
-        "value": "2px"
+        "value": "2px",
+        "type": "borderWidth"
       },
       "outline": {
         "style": {
-          "type": "other",
-          "value": "solid"
+          "value": "solid",
+          "type": "other"
         }
       }
     },
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "{ro.font-family.primary}"
+        "value": "{ro.font-family.primary}",
+        "type": "fontFamilies"
       }
     },
     "size": {
       "target": {
-        "type": "sizing",
         "value": "3rem",
-        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. ",
+        "type": "sizing"
       }
     },
     "line-height": {
       "body": {
         "small": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.body.small}"
+          "value": "{viewport.line-height.body.small}",
+          "type": "lineHeights"
         },
         "default": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.body.default}"
+          "value": "{viewport.line-height.body.default}",
+          "type": "lineHeights"
         },
         "large": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.body.large}"
+          "value": "{viewport.line-height.body.large}",
+          "type": "lineHeights"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.heading.level-1}"
+          "value": "{viewport.line-height.heading.level-1}",
+          "type": "lineHeights"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
-          "type": "lineHeights",
-          "value": "{viewport.line-height.heading.level-2}"
+          "value": "{viewport.line-height.heading.level-2}",
+          "type": "lineHeights"
         },
         "level-3": {
           "value": "{viewport.line-height.heading.level-3}",
@@ -102,30 +102,30 @@
       "body": {
         "small": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{viewport.font-size.body.small}"
+          "value": "{viewport.font-size.body.small}",
+          "type": "fontSizes"
         },
         "default": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{viewport.font-size.body.default}"
+          "value": "{viewport.font-size.body.default}",
+          "type": "fontSizes"
         },
         "large": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{viewport.font-size.body.large}"
+          "value": "{viewport.font-size.body.large}",
+          "type": "fontSizes"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{viewport.font-size.heading.level-1}"
+          "value": "{viewport.font-size.heading.level-1}",
+          "type": "fontSizes"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
-          "type": "fontSizes",
-          "value": "{viewport.font-size.heading.level-2}"
+          "value": "{viewport.font-size.heading.level-2}",
+          "type": "fontSizes"
         },
         "level-3": {
           "value": "{viewport.font-size.heading.level-3}",
@@ -146,8 +146,8 @@
     "focus": {
       "outline-radius": {
         "parent": "product/KOOP",
-        "type": "borderRadius",
-        "value": "6px"
+        "value": "6px",
+        "type": "borderRadius"
       }
     },
     "size": {
@@ -168,73 +168,73 @@
       "secondary": {
         "background-color": {
           "parent": "product/KOOP",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.none}",
-          "description": ""
+          "type": "color"
         },
         "border-color": {
           "parent": "product/KOOP",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.brand.default}",
-          "description": ""
+          "type": "color"
         },
         "color": {
           "parent": "product/KOOP",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.brand.default}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "border-color": {
             "parent": "product/KOOP",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "color": {
             "parent": "product/KOOP",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "background-color": {
             "parent": "product/KOOP",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.subdued}",
-            "description": ""
+            "type": "color"
           }
         }
       },
       "tertiary": {
         "color": {
           "parent": "product/KOOP",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.brand.default}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "color": {
             "parent": "product/KOOP",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "background-color": {
             "parent": "product/KOOP",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.subdued}",
-            "description": ""
+            "type": "color"
           }
         }
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.large-scale.sm}"
+        "value": "{lux.font-size.large-scale.sm}",
+        "type": "fontSizes"
       },
       "primary": {
         "font-size": {
-          "type": "fontSizes",
-          "value": "{lux.font-size.large-scale.sm}"
+          "value": "{lux.font-size.large-scale.sm}",
+          "type": "fontSizes"
         }
       }
     },

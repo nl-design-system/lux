@@ -3,8 +3,8 @@
     "form-field-error-message": {
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "1.5rem"
+          "value": "1.5rem",
+          "type": "sizing"
         },
         "color": {
           "value": "{lux.color.feedback.error.default}",
@@ -12,8 +12,8 @@
         }
       },
       "color": {
-        "type": "color",
-        "value": "{lux.color.feedback.error.default}"
+        "value": "{lux.color.feedback.error.default}",
+        "type": "color"
       },
       "font-family": {
         "value": "{lux.font-family.primary}",
@@ -73,8 +73,8 @@
     "form-field-error-message": {
       "border-radius": {
         "value": "{lux.border-radius.default}",
-        "type": "borderRadius",
-        "description": "todo token"
+        "description": "todo token",
+        "type": "borderRadius"
       },
       "border-width": {
         "value": "{lux.border-width.default}",

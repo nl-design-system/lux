@@ -4,78 +4,78 @@
       "brand": {
         "default": {
           "parent": "product/MijnOverheid",
-          "type": "color",
           "value": "{lux.color.hemelblauw.500}",
-          "description": "kleur van het product"
+          "description": "kleur van het product",
+          "type": "color"
         },
         "subdued": {
           "parent": "product/MijnOverheid",
-          "type": "color",
           "value": "{lux.color.hemelblauw.50}",
-          "description": "Subtiele kleur van het product"
+          "description": "Subtiele kleur van het product",
+          "type": "color"
         },
         "hover": {
           "parent": "product/MijnOverheid",
-          "type": "color",
           "value": "{lux.color.hemelblauw.700}",
-          "description": "Hover kleur van het product"
+          "description": "Hover kleur van het product",
+          "type": "color"
         }
       }
     },
     "border-radius": {
       "default": {
         "parent": "product/MijnOverheid",
-        "type": "borderRadius",
-        "value": "4px"
+        "value": "4px",
+        "type": "borderRadius"
       }
     },
     "focus": {
       "outline-width": {
         "parent": "product/MijnOverheid",
-        "type": "borderWidth",
-        "value": "2px"
+        "value": "2px",
+        "type": "borderWidth"
       },
       "outline": {
         "style": {
-          "type": "other",
-          "value": "solid"
+          "value": "solid",
+          "type": "other"
         }
       }
     },
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "{ro.font-family.primary}"
+        "value": "{ro.font-family.primary}",
+        "type": "fontFamilies"
       }
     },
     "line-height": {
       "body": {
         "small": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.xs}"
+          "value": "{lux.line-height.small-scale.xs}",
+          "type": "lineHeights"
         },
         "default": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.sm}"
+          "value": "{lux.line-height.small-scale.sm}",
+          "type": "lineHeights"
         },
         "large": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.md}"
+          "value": "{lux.line-height.small-scale.md}",
+          "type": "lineHeights"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.xl}"
+          "value": "{lux.line-height.small-scale.xl}",
+          "type": "lineHeights"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
-          "type": "lineHeights",
-          "value": "{lux.line-height.small-scale.lg}"
+          "value": "{lux.line-height.small-scale.lg}",
+          "type": "lineHeights"
         },
         "level-3": {
           "value": "{lux.line-height.small-scale.md}",
@@ -95,40 +95,40 @@
       "body": {
         "small": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.xs}"
+          "value": "{lux.font-size.small-scale.xs}",
+          "type": "fontSizes"
         },
         "default": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.sm}"
+          "value": "{lux.font-size.small-scale.sm}",
+          "type": "fontSizes"
         },
         "large": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.md}"
+          "value": "{lux.font-size.small-scale.md}",
+          "type": "fontSizes"
         }
       },
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.xl}"
+          "value": "{lux.font-size.small-scale.xl}",
+          "type": "fontSizes"
         },
         "level-2": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.lg}"
+          "value": "{lux.font-size.small-scale.lg}",
+          "type": "fontSizes"
         },
         "level-3": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.md}"
+          "value": "{lux.font-size.small-scale.md}",
+          "type": "fontSizes"
         },
         "level-4": {
           "parent": "viewport (beta)/xs",
-          "type": "fontSizes",
-          "value": "{lux.font-size.small-scale.sm}"
+          "value": "{lux.font-size.small-scale.sm}",
+          "type": "fontSizes"
         },
         "level-5": {
           "value": "{lux.font-size.small-scale.sm}",
@@ -138,9 +138,9 @@
     },
     "size": {
       "target": {
-        "type": "sizing",
         "value": "3rem",
-        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. "
+        "description": "Gebruik deze als minimale hit erea. Bijvoorbeeld als min-height en min-width bij de button. ",
+        "type": "sizing"
       }
     }
   },
@@ -148,8 +148,8 @@
     "focus": {
       "outline-radius": {
         "parent": "product/MijnOverheid",
-        "type": "borderRadius",
-        "value": "6px"
+        "value": "6px",
+        "type": "borderRadius"
       }
     },
     "size": {
@@ -170,73 +170,73 @@
       "secondary": {
         "background-color": {
           "parent": "product/MijnOverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.none}",
-          "description": ""
+          "type": "color"
         },
         "border-color": {
           "parent": "product/MijnOverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.brand.default}",
-          "description": ""
+          "type": "color"
         },
         "color": {
           "parent": "product/MijnOverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.brand.default}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "border-color": {
             "parent": "product/MijnOverheid",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "color": {
             "parent": "product/MijnOverheid",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "background-color": {
             "parent": "product/MijnOverheid",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.subdued}",
-            "description": ""
+            "type": "color"
           }
         }
       },
       "tertiary": {
         "color": {
           "parent": "product/MijnOverheid",
-          "type": "color",
+          "description": "",
           "value": "{lux.color.brand.default}",
-          "description": ""
+          "type": "color"
         },
         "hover": {
           "color": {
             "parent": "product/MijnOverheid",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.hover}",
-            "description": ""
+            "type": "color"
           },
           "background-color": {
             "parent": "product/MijnOverheid",
-            "type": "color",
+            "description": "",
             "value": "{lux.color.brand.subdued}",
-            "description": ""
+            "type": "color"
           }
         }
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.large-scale.sm}"
+        "value": "{lux.font-size.large-scale.sm}",
+        "type": "fontSizes"
       },
       "primary": {
         "font-size": {
-          "type": "fontSizes",
-          "value": "{lux.font-size.large-scale.sm}"
+          "value": "{lux.font-size.large-scale.sm}",
+          "type": "fontSizes"
         }
       }
     },

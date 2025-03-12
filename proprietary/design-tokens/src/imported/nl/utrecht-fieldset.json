@@ -25,8 +25,8 @@
         "disabled": {
           "color": {
             "value": "{lux.color.foreground.subdued}",
-            "type": "color",
-            "description": "Do not use a disabled state"
+            "description": "Do not use a disabled state",
+            "type": "color"
           }
         }
       },

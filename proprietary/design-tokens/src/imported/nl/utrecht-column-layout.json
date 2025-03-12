@@ -11,13 +11,13 @@
       },
       "column-width": {
         "value": "12.5rem",
-        "type": "sizing",
-        "description": "full-size, hoe stel ik dit in? "
+        "description": "full-size, hoe stel ik dit in? ",
+        "type": "sizing"
       },
       "gap": {
         "value": "{utrecht.column-layout.column-gap}",
-        "type": "spacing",
-        "description": "Deze token uitfaseren"
+        "description": "Deze token uitfaseren",
+        "type": "spacing"
       },
       "column-gap": {
         "value": "{lux.grid.gutter}",
