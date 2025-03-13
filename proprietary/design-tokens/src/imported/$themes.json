@@ -871,7 +871,8 @@
       "nl/utrecht-text-input": "enabled",
       "nl/utrecht-button-group": "enabled",
       "nl/utrecht-checkbox": "enabled",
-      "nl/utrecht-textarea": "enabled"
+      "nl/utrecht-textarea": "enabled",
+      "nl/utrecht-skip-link": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4948:761",
     "$figmaModeId": "4948:0",
