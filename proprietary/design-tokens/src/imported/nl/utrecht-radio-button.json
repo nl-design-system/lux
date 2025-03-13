@@ -29,7 +29,7 @@
       },
       "invalid": {
         "background-color": {
-          "value": "{lux.alert.error.background-color}",
+          "value": "{lux.color.feedback.error.default}",
           "type": "color"
         },
         "border-color": {
@@ -101,15 +101,15 @@
       },
       "focus": {
         "background-color": {
-          "value": "{utrecht.radio-button.background-color}",
+          "value": "{lux.color.background.default}",
           "type": "color"
         },
         "border-color": {
-          "value": "{utrecht.radio-button.border-color}",
+          "value": "{lux.color.foreground.default}",
           "type": "color"
         },
         "color": {
-          "value": "{utrecht.radio-button.focus.border-color}",
+          "value": "{lux.color.foreground.default}",
           "type": "color"
         },
         "border-width": {
@@ -168,15 +168,15 @@
         },
         "focus": {
           "background-color": {
-            "value": "{utrecht.radio-button.checked.background-color}",
+            "value": "{lux.color.background.default}",
             "type": "color"
           },
           "border-color": {
-            "value": "{utrecht.radio-button.checked.border-color}",
+            "value": "{lux.color.foreground.default}",
             "type": "color"
           },
           "color": {
-            "value": "{utrecht.radio-button.checked.color}",
+            "value": "{lux.color.foreground.default}",
             "type": "color"
           },
           "border-width": {

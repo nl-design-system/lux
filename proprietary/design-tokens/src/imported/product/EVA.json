@@ -17,16 +17,7 @@
         "hover": {
           "parent": "product/Eila",
           "type": "color",
-          "value": "{lux.color.robijnrood.500}",
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {
-                "type": "darken",
-                "value": "0.3",
-                "space": "lch"
-              }
-            }
-          },
+          "value": "#8A1641",
           "description": "Hover kleur van het product"
         }
       }
@@ -241,6 +232,48 @@
         "font-size": {
           "type": "fontSizes",
           "value": "{lux.font-size.large-scale.sm}"
+        }
+      }
+    },
+    "heading": {
+      "1": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        },
+        "font-weight": {
+          "value": "{lux.font-weight.regular}",
+          "type": "fontWeights"
+        }
+      },
+      "2": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "3": {
+        "color": {
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
+        }
+      },
+      "4": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "5": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
+        }
+      },
+      "6": {
+        "color": {
+          "value": "{lux.color.brand.default}",
+          "type": "color"
         }
       }
     }

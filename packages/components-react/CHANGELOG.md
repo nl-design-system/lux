@@ -1,5 +1,11 @@
 # @lux-design-system/components-react
 
+## 1.0.1
+
+### Patch Changes
+
+- 6e250d7: Bugfix niet werkende icon library import in components-react/icon
+
 ## 1.0.0
 
 ### Major Changes

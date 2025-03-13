@@ -10,7 +10,7 @@ LUX helpt jou Logius producten te bouwen zonder dat jij hoeft na te denken over 
 
 ## 🎁 Onze code en packages
 
-<ul class="lsb-list--inline sb-unstyled">
+<ul className="lsb-list--inline sb-unstyled">
   <li>[<img src="github.png" height="18" alt="Github" /> Code op Github](https://github.com/nl-design-system/lux)</li>
   <li>[<img src="npm.png" height="18" alt="NPM" /> Packages op NPM](https://www.npmjs.com/org/lux-design-system)</li>
   <li>[<img src="figma.png" height="18" alt="NPM" /> UI Kit op Figma](https://www.figma.com/design/515tboh6xpSNziwQu6WyAy/LUX---UI-kit?node-id=265-14201)</li>
@@ -18,7 +18,7 @@ LUX helpt jou Logius producten te bouwen zonder dat jij hoeft na te denken over 
 
 ## 🛎️ Neem Contact Met Ons Op
 
-<ul class="lsb-list--inline sb-unstyled">
+<ul className="lsb-list--inline sb-unstyled">
   <li>[<img src="slack.png" height="18" alt="Slack" /> Join us on Slack](https://join.slack.com/t/logius-ux/shared_invite/zt-2isbt3hue-A6ksce6Qz5g~eYxez_DF5g)</li>
   <li>Of mail ons op [lux.design.system@logius.nl]</li>
 </ul>

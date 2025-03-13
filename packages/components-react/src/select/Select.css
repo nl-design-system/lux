@@ -1,15 +1,29 @@
 /* TODO: Replace tokens or fix in Utrecht code */
 .lux-select {
-  line-height: var(--lux-line-height-body-default);
+  box-shadow: inset 0 0 0 var(--utrecht-select-border-width) var(--utrecht-select-border-color);
+  border: 0;
+  line-height: var(--utrecht-select-line-height);
 
-  & :focus {
-    border-width: var(--lux-border-width-m);
+  &.utrecht-select--invalid {
+    box-shadow: inset 0 0 0 var(--utrecht-select-invalid-border-width) var(--utrecht-select-invalid-border-color);
   }
 
-  & :hover {
-    border-width: var(--lux-border-width-m);
-    border-color: var(--lux-border-strong);
-    background-color: var(--lux-color-background-default);
-    color: var(--lux-color-foreground-default);
+  &:not([multiple]) {
+    background-position: center right var(--utrecht-select-padding-inline-end);
+    background-size: var(--lux-select-icon-size);
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 var(--lux-select-focus-border-width) var(--utrecht-select-focus-border-color);
+  }
+
+  &:focus-visible {
+    outline-offset: var(--utrecht-focus-outline-offset, revert);
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 var(--lux-select-hover-border-width) var(--utrecht-select-hover-border-color);
+    background-color: var(--utrecht-select-hover-background-color);
+    color: var(--utrecht-select-hover-color);
   }
 }

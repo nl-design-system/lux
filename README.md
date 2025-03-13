@@ -26,7 +26,7 @@ Tip: Installeer Node.js via [Volta](https://volta.sh/) of [NVM](https://github.c
 ### Run storybook
 
 - Install dependencies: `pnpm install`
-- Run storybook: `npm run storybook`
+- Run storybook: `pnpm run storybook`
 
 ## Documentatie
 

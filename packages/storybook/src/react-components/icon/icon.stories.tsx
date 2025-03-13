@@ -1,15 +1,6 @@
 import { LuxIcon, LuxIconProps } from '@lux-design-system/components-react';
-import { IconId, iconIds } from '@lux-design-system/icons';
 import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
-import * as tablerIcons from '@tabler/icons-react';
-import { ReactNode } from 'react';
-
-const CustomLibrary: Partial<Record<string, ReactNode>> = {
-  candle: <tablerIcons.IconCandle />,
-  bulb: <tablerIcons.IconBulb />,
-  lamp: <tablerIcons.IconLamp />,
-  'building-lighthouse': <tablerIcons.IconBuildingLighthouse />,
-};
+import { IconBuildingLighthouse, IconBulb, IconCandle, IconLamp } from '@tabler/icons-react';
 
 interface ExtraArgs {
   size?: number | string;
@@ -58,30 +49,20 @@ export const Playground: Story = {
     },
   },
   args: {
-    iconId: 'lux' as IconId,
+    icon: 'fallback',
   },
   argTypes: {
-    iconId: {
+    icon: {
       control: 'select',
-      options: iconIds,
-    },
-    library: {
-      control: 'object',
+      options: ['fallback', 'candle', 'bulb', 'lamp', 'building-lighthouse'],
+      mapping: {
+        fallback: undefined,
+        candle: <IconCandle />,
+        bulb: <IconBulb />,
+        lamp: <IconLamp />,
+        'building-lighthouse': <IconBuildingLighthouse />,
+      },
     },
   },
   tags: ['!autodocs'],
-};
-
-export const IconLibrary: Story = {
-  name: 'Icon Library',
-  args: {
-    library: CustomLibrary,
-    iconId: 'candle',
-  },
-  argTypes: {
-    iconId: {
-      control: 'select',
-      options: Object.keys(CustomLibrary),
-    },
-  },
 };
