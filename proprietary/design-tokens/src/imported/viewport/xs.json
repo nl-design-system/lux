@@ -156,6 +156,24 @@
           "type": "fontSizes"
         }
       }
+    },
+    "section": {
+      "padding-block-end": {
+        "value": "{lux.space.300}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{lux.space.300}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{lux.space.200}",
+        "type": "spacing"
+      }
     }
   },
   "utrecht": {
