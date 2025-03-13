@@ -133,7 +133,7 @@
       },
       "hover": {
         "border-width": {
-          "value": "{lux.border-width.default}",
+          "value": "{lux.border-width.m}",
           "type": "borderWidth"
         }
       },
