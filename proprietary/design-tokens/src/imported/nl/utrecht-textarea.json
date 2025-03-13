@@ -69,10 +69,6 @@
         "color": {
           "value": "{lux.color.foreground.default}",
           "type": "color"
-        },
-        "border-width": {
-          "value": "{lux.border-width.m}",
-          "type": "borderWidth"
         }
       },
       "disabled": {
@@ -115,10 +111,6 @@
         "color": {
           "value": "{lux.color.foreground.default}",
           "type": "color"
-        },
-        "border-width": {
-          "value": "{lux.border-width.default}",
-          "type": "borderWidth"
         }
       },
       "border-radius": {
@@ -148,6 +140,26 @@
       "font-size": {
         "value": "{lux.font-size.body.default}",
         "type": "fontSizes"
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
+      }
+    }
+  },
+  "lux": {
+    "textarea": {
+      "focus": {
+        "border-width": {
+          "value": "{lux.border-width.m}",
+          "type": "borderWidth"
+        }
+      },
+      "hover": {
+        "border-width": {
+          "value": "{lux.border-width.m}",
+          "type": "borderWidth"
+        }
       }
     }
   }

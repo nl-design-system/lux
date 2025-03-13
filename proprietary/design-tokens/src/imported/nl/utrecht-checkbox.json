@@ -188,15 +188,15 @@
             "type": "borderWidth"
           },
           "background-color": {
-            "value": "{lux.checkbox.checked.active.background-color}",
+            "value": "{lux.color.brand.hover}",
             "type": "color"
           },
           "border-color": {
-            "value": "{lux.checkbox.checked.active.border-color}",
+            "value": "{lux.color.border.strong}",
             "type": "color"
           },
           "color": {
-            "value": "{lux.checkbox.checked.active.color}",
+            "value": "{lux.color.wit}",
             "type": "color"
           }
         },
@@ -206,15 +206,15 @@
             "type": "borderWidth"
           },
           "background-color": {
-            "value": "{lux.checkbox.checked.hover.background-color}",
+            "value": "{lux.color.brand.hover}",
             "type": "color"
           },
           "border-color": {
-            "value": "transparent",
+            "value": "{lux.color.border.strong}",
             "type": "color"
           },
           "color": {
-            "value": "{lux.checkbox.checked.hover.color}",
+            "value": "{lux.color.wit}",
             "type": "color"
           }
         },
@@ -224,29 +224,29 @@
             "type": "borderWidth"
           },
           "background-color": {
-            "value": "{lux.checkbox.checked.focus.background-color}",
+            "value": "{lux.color.brand.default}",
             "type": "color"
           },
           "border-color": {
-            "value": "{lux.checkbox.checked.focus.border-color}",
+            "value": "{lux.color.border.strong}",
             "type": "color"
           },
           "color": {
-            "value": "{lux.checkbox.checked.focus.color}",
+            "value": "{lux.color.wit}",
             "type": "color"
           }
         },
         "disabled": {
           "background-color": {
-            "value": "{lux.checkbox.checked.disabled.background-color}",
+            "value": "{lux.color.background.subdued}",
             "type": "color"
           },
           "border-color": {
-            "value": "{lux.checkbox.checked.disabled.border-color}",
+            "value": "{lux.color.border.subdued}",
             "type": "color"
           },
           "color": {
-            "value": "{lux.checkbox.checked.disabled.color}",
+            "value": "{lux.color.foreground.subdued}",
             "type": "color"
           }
         }
@@ -258,15 +258,15 @@
       "checked": {
         "focus": {
           "background-color": {
-            "value": "{utrecht.checkbox.checked.background-color}",
+            "value": "{lux.color.brand.default}",
             "type": "color"
           },
           "border-color": {
-            "value": "{utrecht.checkbox.checked.border-color}",
+            "value": "{lux.color.border.strong}",
             "type": "color"
           },
           "color": {
-            "value": "{utrecht.checkbox.checked.color}",
+            "value": "{lux.color.wit}",
             "type": "color"
           }
         },
