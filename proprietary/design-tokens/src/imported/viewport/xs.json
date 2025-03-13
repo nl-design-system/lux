@@ -24,6 +24,22 @@
           }
         }
       }
+    },
+    "textarea": {
+      "4-rows": {
+        "block-size": {
+          "value": "6 * 16",
+          "type": "sizing",
+          "description": "4 * lineheight "
+        }
+      },
+      "8-rows": {
+        "block-size": {
+          "value": "12 * 16",
+          "type": "sizing",
+          "description": "4 * lineheight "
+        }
+      }
     }
   },
   "lux": {
