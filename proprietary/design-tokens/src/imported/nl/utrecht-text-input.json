@@ -86,10 +86,6 @@
         "type": "borderWidth"
       },
       "focus": {
-        "border-width": {
-          "value": "{lux.border-width.m}",
-          "type": "borderWidth"
-        },
         "background-color": {
           "value": "{lux.color.background.default}",
           "type": "color"
@@ -131,15 +127,25 @@
           "type": "color"
         }
       },
-      "hover": {
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "sizing"
+      }
+    }
+  },
+  "lux": {
+    "textbox": {
+      "focus": {
         "border-width": {
           "value": "{lux.border-width.m}",
           "type": "borderWidth"
         }
       },
-      "min-block-size": {
-        "value": "{lux.size.target}",
-        "type": "sizing"
+      "hover": {
+        "border-width": {
+          "value": "{lux.border-width.m}",
+          "type": "borderWidth"
+        }
       }
     }
   },
