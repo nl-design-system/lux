@@ -3,7 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokensDefinition from './tokens.json';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -59,16 +59,12 @@ export const Playground: Story = {
 export const DesignTokens = createDesignTokensStory(meta);
 
 export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <div>Lorem ipsum dolor sit amet, content staat NIET in een LuxDocument.</div>
-      <LuxDocument>Lorem ipsum dolor sit amet, content staat in een LuxDocument.</LuxDocument>
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <div>Lorem ipsum dolor sit amet, content staat NIET in een LuxDocument.</div>
-      <LuxDocument>Lorem ipsum dolor sit amet, content staat in een LuxDocument.</LuxDocument>
-    </VisualRegressionWrapper>
-  </>
+  <VisualRegressionTest
+    testCase={() => (
+      <>
+        <div>Lorem ipsum dolor sit amet, content staat NIET in een LuxDocument.</div>
+        <LuxDocument>Lorem ipsum dolor sit amet, content staat in een LuxDocument.</LuxDocument>
+      </>
+    )}
+  />
 ));

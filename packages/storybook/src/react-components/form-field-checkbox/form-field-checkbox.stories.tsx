@@ -3,7 +3,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 import CheckboxMeta from '../checkbox/checkbox.stories';
 import FormFieldDescriptionMeta from '../form-field-description/form-field-description.stories';
 import FormFieldErrorMessageMeta from '../form-field-error-message/form-field-error-message.stories';
@@ -118,15 +118,4 @@ export const withLongTexts: Story = {
 
 export const DesignTokens = createDesignTokensStory(meta);
 
-export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <VisualStates />
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <VisualStates />
-    </VisualRegressionWrapper>
-  </>
-));
+export const Visual = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualStates} />);

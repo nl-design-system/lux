@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { type LabelHTMLAttributes, type PropsWithChildren } from 'react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 const LuxFormFieldLabel = (
   props: PropsWithChildren<LuxFormFieldLabelProps> & LabelHTMLAttributes<HTMLLabelElement>,
@@ -115,15 +115,4 @@ export const CheckedLabel: Story = {
 
 export const DesignTokens = createDesignTokensStory(meta);
 
-export const Visual = createVisualRegressionStory(() => (
-  <div className="utrecht-document">
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`}>
-      <VisualStates />
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`}>
-      <VisualStates />
-    </VisualRegressionWrapper>
-  </div>
-));
+export const Visual = createVisualRegressionStory(() => <VisualRegressionTest testCase={VisualStates} />);
