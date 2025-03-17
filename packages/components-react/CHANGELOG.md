@@ -1,5 +1,11 @@
 # @lux-design-system/components-react
 
+## 1.0.2
+
+### Patch Changes
+
+- 2462274: Bugfix: select focus outline correctie
+
 ## 1.0.1
 
 ### Patch Changes
