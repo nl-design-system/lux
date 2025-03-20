@@ -133,14 +133,19 @@ const preview: Preview = {
       panelPosition: 'bottom',
       storySort: {
         order: [
-          'Intro',
+          'LUX',
+          [
+            'Intro',
+            'Aan de slag',
+            ['Managers', 'Designers', 'Developers', 'Veelgestelde vragen'],
+            'Architectuur',
+            ['NL Design System'],
+          ],
           'Design Tokens',
           ['Design Tokens', 'Core', 'Common'],
           'React Components',
           'Web Components',
           ['Docs', 'Playground', '*', 'Design Tokens'],
-          '*',
-          'Colofon',
         ],
       },
     },
