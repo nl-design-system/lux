@@ -1,8 +1,8 @@
-# Semantic versioning
+# Versioning
 
-## De standaard
+## SemVer als standaard
 
-LUX gebruikt Semantic versioning (SemVer)[^1] voor de versies van releases.
+LUX gebruikt de standaard Semantic versioning (SemVer)[^1] voor de versies van releases.
 Dit is een veelgebruikt versienummeringssysteem, dat in de basis uit drie versienummers bestaat, namelijk:
 
 > MAJOR.MINOR.PATCH

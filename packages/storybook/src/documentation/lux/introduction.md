@@ -21,11 +21,11 @@ Momenteel biedt LUX een UI kit in Figma, een scala aan [Design Tokens][design-to
   <li>[<img src="figma.png" height="18" alt="NPM" /> UI Kit op Figma](https://www.figma.com/design/515tboh6xpSNziwQu6WyAy/LUX---UI-kit?node-id=265-14201)</li>
 </ul>
 
-## 🛎️ Neem Contact Met Ons Op
+## 🛎️ Neem contact met ons op
 
 Zit je na het lezen van deze documentatie nog met vragen? Stuur ons dan een berichtje op Slack of stuur ons een mail. We reageren meestal dezelfde werkdag nog.
 
 <ul className="lsb-list--inline sb-unstyled">
   <li>[<img src="slack.png" height="18" alt="Slack" /> Join us on Slack](https://join.slack.com/t/logius-ux/shared_invite/zt-2isbt3hue-A6ksce6Qz5g~eYxez_DF5g)</li>
-  <li>Of mail ons op [lux.design.system@logius.nl]</li>
+  <li>Of mail ons op [lux.design.system@logius.nl](mailto:lux.design.system@logius.nl)</li>
 </ul>
