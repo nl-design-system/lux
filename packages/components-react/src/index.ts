@@ -42,3 +42,4 @@ export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading
 export { LuxSection, type LuxSectionProps } from './section/Section';
 export { LuxSelect, LuxSelectOption, type LuxSelectProps, type LuxSelectOptionProps } from './select/Select';
 export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
+export { LuxTextArea, type LuxTextAreaProps } from './textarea/Textarea';
