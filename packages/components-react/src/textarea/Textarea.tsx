@@ -5,7 +5,11 @@ import {
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 
-export interface LuxTextAreaProps extends UtrechtTextareaProps {}
+export type Direction = 'ltr' | 'rtl' | 'auto';
+
+export interface LuxTextAreaProps extends UtrechtTextareaProps {
+  dir?: Direction;
+}
 
 export const LuxTextArea = forwardRef(
   (
@@ -18,7 +22,7 @@ export const LuxTextArea = forwardRef(
       dir,
       inputRequired,
       ...restProps
-    }: PropsWithChildren<UtrechtTextareaProps>,
+    }: PropsWithChildren<LuxTextAreaProps>,
     ref: ForwardedRef<HTMLTextAreaElement>,
   ) => {
     return (
