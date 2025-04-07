@@ -90,6 +90,7 @@ export const LuxFormFieldTextarea = ({
       label={labelNode}
       description={descriptionNode}
       errorMessage={errorMessageNode}
+      invalid={invalid}
       input={
         <LuxTextArea
           ref={inputRef}

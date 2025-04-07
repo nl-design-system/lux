@@ -53,4 +53,10 @@ describe('LuxTextArea', () => {
     const textarea = screen.getByRole('textbox');
     expect(textarea).toHaveAttribute('dir', 'rtl');
   });
+
+  it('applies the rows prop correctly', () => {
+    render(<LuxTextArea rows={8} />);
+    const textarea = screen.getByRole('textbox');
+    expect(textarea).toHaveAttribute('rows', '8');
+  });
 });

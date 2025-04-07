@@ -34,6 +34,10 @@ const meta = {
       description: 'Required',
       control: 'boolean',
     },
+    rows: {
+      description: 'Rows',
+      control: 'number',
+    },
     placeholder: {
       description: 'Set the value of the placeholder text',
       control: 'text',
@@ -155,5 +159,12 @@ export const CustomCSSClass: StoryObj<LuxTextAreaProps> = {
   args: {
     placeholder: 'Met een aangepaste class',
     className: 'custom-textarea',
+  },
+};
+
+export const Rows: StoryObj<LuxTextAreaProps> = {
+  args: {
+    placeholder: 'Aantal regels',
+    rows: 8,
   },
 };
