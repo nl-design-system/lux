@@ -1,0 +1,50 @@
+import { Canvas, Description, Meta } from "@storybook/blocks";
+import * as BreadcrumbsStories from "./breadcrumbs.stories.tsx";
+import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
+
+<Meta of={BreadcrumbsStories} />
+
+# Breadcrumbs
+
+<CitationDocumentation
+  component="Utrecht Breadcrumbs"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-breadcrumb-nav--docs"
+/>
+
+Breadcrumbs zijn een navigatie-element dat de hiërarchische structuur van een website weergeeft. Ze helpen gebruikers te begrijpen waar ze zich op de website bevinden en hoe ze terug kunnen navigeren.
+
+## Toepassing
+
+```tsx
+import { LuxBreadcrumbNav, LuxBreadcrumbLink, LuxBreadcrumbSeparator } from "@lux/components-react";
+
+// Basic usage
+<LuxBreadcrumbNav>
+  <LuxBreadcrumbLink href="/">Home</LuxBreadcrumbLink>
+  <LuxBreadcrumbSeparator />
+  <LuxBreadcrumbLink href="/section">Section</LuxBreadcrumbLink>
+  <LuxBreadcrumbSeparator />
+  <LuxBreadcrumbLink href="/section/page">Page</LuxBreadcrumbLink>
+</LuxBreadcrumbNav>;
+```
+
+## Componenten
+
+### LuxBreadcrumbNav
+
+De hoofdcomponent die de breadcrumb navigatie bevat.
+
+### LuxBreadcrumbLink
+
+De links in de breadcrumb navigatie.
+
+### LuxBreadcrumbSeparator
+
+De scheidingstekens tussen de links in de breadcrumb navigatie.
+
+## Voorbeelden
+
+### Default Breadcrumbs
+
+<Description of={BreadcrumbsStories.Default} />
+<Canvas of={BreadcrumbsStories.Default} />
