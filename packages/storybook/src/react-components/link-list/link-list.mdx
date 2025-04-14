@@ -1,0 +1,33 @@
+import { Canvas, Description, Meta } from "@storybook/blocks";
+import * as LinkListStories from "./link-list.stories.tsx";
+import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
+
+<Meta of={LinkListStories} />
+
+# LinkList
+
+<CitationDocumentation
+  component="Utrecht LinkList"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-link-list--docs"
+/>
+
+Links met een pijl als voorloopteken worden gebruikt aan het einde van een tekst. Ze verwijzen naar gerelateerde informatie over het onderwerp wat er in de voorafgaande tekst is besproken.
+
+## Toepassing
+
+```tsx
+import { LuxLinkList, LuxLinkListLink } from "@lux/components-react";
+
+// Basic usage
+<LuxLinkList links={[
+  <LuxLinkListLink href="/internal"> link 1</LuxLinkListLink>
+  <LuxLinkListLink href="/internal"> link 2</LuxLinkListLink>
+]}/>;
+```
+
+## Voorbeelden
+
+### Default LinkList
+
+<Description of={LinkListStories.Default} />
+<Canvas of={LinkListStories.Default} />
