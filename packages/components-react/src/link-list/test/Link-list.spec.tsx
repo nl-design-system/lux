@@ -2,7 +2,7 @@ import { describe, expect, it } from '@jest/globals';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import React from 'react';
-import { LuxLinkList } from './LinkList';
+import { LuxLinkList } from '../LinkList';
 
 const ExampleIcon = (
   <svg height="28" width="20" xmlns="http://www.w3.org/2000/svg" data-testid="lux-link-list-icon">
