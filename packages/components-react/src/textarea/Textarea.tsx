@@ -4,6 +4,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
+import './Textarea.css';
 
 export type Direction = 'ltr' | 'rtl' | 'auto';
 
