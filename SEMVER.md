@@ -31,10 +31,9 @@ Het is niet uitgesloten dat een Minor versie ook (visuele) regressietesten breek
 
 Het artikel ["Visual Breaking Change in Design Systems"](https://medium.com/eightshapes-llc/visual-breaking-change-in-design-systems-1e9109fac9c4) van Nathan Curtis ([EightShapes op Medium](https://medium.com/eightshapes-llc)) beschrijft dit uitgebreid met duidelijke voorbeelden.
 
-### Canary releases
+## Releases
 
-Bij elke merge naar de `main`-branch wordt er een release naar NPM gedaan onder de tag `canary`. Wil je de versie met de laatste, maar misschien niet stabiele, versie installeer het package met bijv `npm install @lux-design-system/<package>@canary`.  
-Voor de stabiele semver-versies kan je de `latest`-tag gebruiken (de default van NPM).
+Hoe we releases maken staat beschreven in [RELEASE.md](RELEASE.md)
 
 ## Contact
 
