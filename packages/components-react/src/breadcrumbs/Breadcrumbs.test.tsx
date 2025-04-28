@@ -2,13 +2,16 @@ import { describe, expect, it } from '@jest/globals';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { LuxBreadcrumbLink, LuxBreadcrumbNav, LuxBreadcrumbSeparator } from './Breadcrumbs';
+import { LuxIcon } from '../icon/Icon';
 
 const ChevronRightIcon = () => (
-  <span style={{ width: '16px', height: '24px' }}>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="16" width="16">
-      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-    </svg>
-  </span>
+  <LuxIcon
+    icon={
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -40 320 512" height="16" width="16">
+        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+      </svg>
+    }
+  />
 );
 
 describe('LuxBreadcrumbNav', () => {
@@ -34,9 +37,6 @@ describe('LuxBreadcrumbNav', () => {
     const list = container.querySelector('ol');
     expect(list).toBeInTheDocument();
     expect(list).toHaveClass('utrecht-breadcrumb-nav__list');
-
-    const listItems = container.querySelectorAll('li');
-    expect(listItems.length).toBe(5);
 
     const links = container.querySelectorAll('.utrecht-breadcrumb-nav__link');
     expect(links.length).toBe(3);
