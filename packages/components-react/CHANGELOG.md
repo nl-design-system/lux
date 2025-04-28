@@ -1,5 +1,13 @@
 # @lux-design-system/components-react
 
+## 1.0.2
+
+### Patch Changes
+
+- 2462274: Bugfix: select focus outline correctie
+- 0ee6198: - Remove test files from tsconfig exclude so they are being interpreted by Typescript
+  - Add Jest setup file to tsconfig so methods on expect are recognised
+
 ## 1.0.1
 
 ### Patch Changes
