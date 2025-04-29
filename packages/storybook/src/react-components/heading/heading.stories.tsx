@@ -12,7 +12,7 @@ import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import tokensDefinition from '@utrecht/heading-css/src/tokens.json';
 import { BADGES } from '../../../config/preview';
-import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -100,40 +100,24 @@ export const HeadingWithDifferentAppearance: Story = {
 export const DesignTokens = createDesignTokensStory(meta);
 
 export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-light`} key={'light'}>
-      {[1, 2, 3, 4, 5, 6].map((level) => (
-        <>
-          <LuxHeading level={level as LuxHeadingProps['level']} key={'light-level-' + level}>
-            H{level}: {headingText}
-          </LuxHeading>
-          <LuxHeading
-            level={99 as LuxHeadingProps['level']}
-            appearance={level as LuxHeadingProps['appearance']}
-            key={'light-appeareance-' + level}
-          >
-            Lijkt op een H{level}: {headingText}
-          </LuxHeading>
-        </>
-      ))}
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className={`lux-theme--logius-dark`} key="dark">
-      {[1, 2, 3, 4, 5, 6].map((level) => (
-        <>
-          <LuxHeading level={level as LuxHeadingProps['level']} key={'dark-level-' + level}>
-            H{level}: {headingText}
-          </LuxHeading>
-          <LuxHeading
-            level={99 as LuxHeadingProps['level']}
-            appearance={level as LuxHeadingProps['appearance']}
-            key={'dark-appeareance-' + level}
-          >
-            Lijkt op een H{level}: {headingText}
-          </LuxHeading>
-        </>
-      ))}
-    </VisualRegressionWrapper>
-  </>
+  <VisualRegressionTest
+    testCase={() => (
+      <>
+        {[1, 2, 3, 4, 5, 6].map((level) => (
+          <>
+            <LuxHeading level={level as LuxHeadingProps['level']} key={'light-level-' + level}>
+              H{level}: {headingText}
+            </LuxHeading>
+            <LuxHeading
+              level={99 as LuxHeadingProps['level']}
+              appearance={level as LuxHeadingProps['appearance']}
+              key={'light-appeareance-' + level}
+            >
+              Lijkt op een H{level}: {headingText}
+            </LuxHeading>
+          </>
+        ))}
+      </>
+    )}
+  />
 ));

@@ -29,7 +29,7 @@ const config: StorybookConfig = {
   managerHead(head) {
     return `
       ${head}
-      <style>div[data-item-id$="--visual"] { display: none; }</style>
+      <style>div[data-item-id*="--visual"] { display: none; }</style>
     `;
   },
   features: {},

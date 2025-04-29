@@ -9,10 +9,16 @@
   padding: 16px;
 }
 
+.lsb-visual-regression-wrapper .lsb-visual-regression-heading {
+  color: var(--lux-color-foreground-default);
+  text-transform: capitalize;
+  text-wrap: nowrap;
+}
+
 .lsb-visual-regression-wrapper--dark {
-  backdrop-filter: invert(1);
+  backdrop-filter: invert(0.9);
   /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-backdrop-filter: invert(1);
+  -webkit-backdrop-filter: invert(0.9);
 }
 
 .lsb-section {

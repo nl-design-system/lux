@@ -2,7 +2,7 @@ import { LuxHeading, LuxHeading1, LuxHeadingGroup, LuxPreHeading } from '@lux-de
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { BADGES } from '../../../config/preview';
-import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
+import { createVisualRegressionStory, VisualRegressionTest } from '../../utils';
 
 type Story = StoryObj<typeof meta>;
 
@@ -52,20 +52,12 @@ export const Playground: Story = {
 };
 
 export const Visual = createVisualRegressionStory(() => (
-  <>
-    <h4 className="utrecht-heading-3">Light</h4>
-    <VisualRegressionWrapper className="lux-theme--logius-light" key="light">
+  <VisualRegressionTest
+    testCase={() => (
       <LuxHeadingGroup>
         <LuxHeading1>LuxHeading1</LuxHeading1>
         <LuxPreHeading>LuxPreHeading</LuxPreHeading>
       </LuxHeadingGroup>
-    </VisualRegressionWrapper>
-    <h4 className="utrecht-heading-3">Dark</h4>
-    <VisualRegressionWrapper className="lux-theme--logius-dark" key="dark">
-      <LuxHeadingGroup>
-        <LuxHeading1>LuxHeading1</LuxHeading1>
-        <LuxPreHeading>LuxPreHeading</LuxPreHeading>
-      </LuxHeadingGroup>
-    </VisualRegressionWrapper>
-  </>
+    )}
+  />
 ));
