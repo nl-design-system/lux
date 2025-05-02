@@ -4,6 +4,7 @@ import {
   type LinkListLinkProps,
   type LinkListProps,
 } from '@utrecht/component-library-react/dist/css-module';
+import './LinkList.css';
 
 LinkList.displayName = 'LuxLinkList';
 export const LuxLinkList = LinkList;

@@ -1,4 +1,4 @@
-import { Canvas, Description, Meta } from "@storybook/blocks";
+import { Canvas, Controls, Meta } from "@storybook/blocks";
 import * as LinkListStories from "./link-list.stories.tsx";
 import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
 
@@ -13,21 +13,11 @@ import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
 
 Links met een pijl als voorloopteken worden gebruikt aan het einde van een tekst. Ze verwijzen naar gerelateerde informatie over het onderwerp wat er in de voorafgaande tekst is besproken.
 
-## Toepassing
+## Playground
 
-```tsx
-import { LuxLinkList, LuxLinkListLink } from "@lux/components-react";
+<Canvas of={LinkListStories.Playground} />
+<Controls of={LinkListStories.Playground} />
 
-// Basic usage
-<LuxLinkList links={[
-  <LuxLinkListLink href="/internal"> link 1</LuxLinkListLink>
-  <LuxLinkListLink href="/internal"> link 2</LuxLinkListLink>
-]}/>;
-```
+## Variants
 
-## Voorbeelden
-
-### Default LinkList
-
-<Description of={LinkListStories.Default} />
-<Canvas of={LinkListStories.Default} />
+<Canvas of={LinkListStories.ListItemWithDifferentIcon} />
