@@ -42,7 +42,7 @@
   ],
   "dependencies": {
     "@utrecht/component-library-css": "6.1.0",
-    "@utrecht/component-library-react": "7.1.0",
+    "@utrecht/component-library-react": "9.0.1",
     "@utrecht/focus-ring-css": "2.3.0",
     "clsx": "2.1.1",
     "date-fns": "3.6.0",
