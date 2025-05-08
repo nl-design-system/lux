@@ -31,6 +31,7 @@
     "component/section",
     "nl/utrecht-action",
     "nl/utrecht-alert",
+    "nl/utrecht-breadcrumb",
     "nl/utrecht-button",
     "nl/utrecht-column-layout",
     "nl/utrecht-document",
