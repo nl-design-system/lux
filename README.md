@@ -33,15 +33,19 @@ Tip: Installeer Node.js via [Volta](https://volta.sh/) of [NVM](https://github.c
 ### Mappenstructuur
 
 Algemene documentatie komt in de map `packages/storybook/src/documentation`  
-Documentatie over componenten komt in de map `packages/storybook/src/web-components` en elk component krijgt zijn eigen map.
+Documentatie over componenten komt in de map `packages/storybook/src/[react-components|web-components]` en elk component krijgt zijn eigen map.
 
 ### Design tokens
 
-De design tokens staan in map `packages/proprietary/design-tokens`. De tokens zelf worden in Figma gedefinieerd en daaruit geexporteerd als json-bestanden en vanuit `./src` gebuild naar `./dist` als css-bestanden.
+De design tokens staan in map `packages/proprietary/design-tokens`. De tokens zelf worden in Figma gedefinieerd en daaruit geexporteerd als json-bestanden naar de `./src/imported` map en vanuit daar gebuild naar `./dist` als css-bestanden.
 
 ## Versioning
 
 Lees meer [over onze versioninering](SEMVER.md).
+
+## Releases en packages
+
+Lees meer [over onze releases en packages](RELEASES.md).
 
 ## Code of Conduct
 
