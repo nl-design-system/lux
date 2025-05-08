@@ -10,28 +10,28 @@
         "type": "fontSizes"
       },
       "line-height": {
-        "value": "{utrecht.document.line-height}",
+        "value": "{lux.line-height.body.default}",
         "type": "lineHeights"
       },
       "min-block-size": {
-        "value": "{utrecht.pointer-target.min-size}",
+        "value": "{lux.size.target}",
         "type": "dimension"
       },
       "item": {
         "padding-block-end": {
-          "value": "{voorbeeld.space.block.snail}",
+          "value": "{lux.space.100}",
           "type": "dimension"
         },
         "padding-block-start": {
-          "value": "{voorbeeld.space.block.snail}",
+          "value": "{lux.space.150}",
           "type": "dimension"
         },
         "padding-inline-end": {
-          "value": "{voorbeeld.space.inline.beetle}",
+          "value": "{lux.space.150}",
           "type": "dimension"
         },
         "padding-inline-start": {
-          "value": "{voorbeeld.space.inline.beetle}",
+          "value": "{lux.space.150}",
           "type": "dimension"
         }
       },
@@ -68,11 +68,11 @@
         },
         "focus": {
           "background-color": {
-            "value": "{lux.color.foreground.link}",
+            "value": "{lux.color.none}",
             "type": "color"
           },
           "color": {
-            "value": "{utrecht.focus.color}",
+            "value": "{lux.color.foreground.link}",
             "type": "color"
           },
           "text-decoration": {
@@ -93,12 +93,12 @@
       },
       "separator": {
         "color": {
-          "value": "{voorbeeld.document.subtle.color}",
+          "value": "{lux.color.foreground.link}",
           "type": "color"
         },
         "icon": {
           "size": {
-            "value": "{voorbeeld.size.2xs}",
+            "value": "{lux.size.icon}",
             "type": "dimension"
           }
         }
