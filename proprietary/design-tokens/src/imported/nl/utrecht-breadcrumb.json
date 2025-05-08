@@ -1,1 +1,108 @@
-{}
+{
+  "utrecht": {
+    "breadcrumb-nav": {
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "line-height": {
+        "value": "{utrecht.document.line-height}",
+        "type": "lineHeights"
+      },
+      "min-block-size": {
+        "value": "{utrecht.pointer-target.min-size}",
+        "type": "dimension"
+      },
+      "item": {
+        "padding-block-end": {
+          "value": "{voorbeeld.space.block.snail}",
+          "type": "dimension"
+        },
+        "padding-block-start": {
+          "value": "{voorbeeld.space.block.snail}",
+          "type": "dimension"
+        },
+        "padding-inline-end": {
+          "value": "{voorbeeld.space.inline.beetle}",
+          "type": "dimension"
+        },
+        "padding-inline-start": {
+          "value": "{voorbeeld.space.inline.beetle}",
+          "type": "dimension"
+        }
+      },
+      "link": {
+        "color": {
+          "value": "{lux.color.foreground.link}",
+          "type": "color"
+        },
+        "text-decoration": {
+          "value": "underline",
+          "type": "textDecoration"
+        },
+        "active": {
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          },
+          "color": {
+            "value": "{mode.link.active.color}",
+            "type": "color"
+          }
+        },
+        "current": {
+          "font-weight": {
+            "value": "{lux.font-weight.regular}",
+            "type": "fontWeights"
+          }
+        },
+        "disabled": {
+          "color": {
+            "value": "{lux.color.foreground.subdued}",
+            "type": "color"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "value": "{lux.color.foreground.link}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{utrecht.focus.color}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          }
+        },
+        "hover": {
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          },
+          "color": {
+            "value": "{mode.link.active.color}",
+            "type": "color"
+          }
+        }
+      },
+      "separator": {
+        "color": {
+          "value": "{voorbeeld.document.subtle.color}",
+          "type": "color"
+        },
+        "icon": {
+          "size": {
+            "value": "{voorbeeld.size.2xs}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}
