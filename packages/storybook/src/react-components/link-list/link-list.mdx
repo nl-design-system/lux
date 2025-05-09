@@ -1,4 +1,4 @@
-import { Canvas, Controls, Meta } from "@storybook/blocks";
+import { Canvas, Controls, Description, Meta } from "@storybook/blocks";
 import * as LinkListStories from "./link-list.stories.tsx";
 import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
 
@@ -20,4 +20,27 @@ Links met een pijl als voorloopteken worden gebruikt aan het einde van een tekst
 
 ## Variants
 
+### Active
+
+<Description of={LinkListStories.Active} />
+<Canvas of={LinkListStories.Active} />
+
+### Focus
+
+<Description of={LinkListStories.Focus} />
+<Canvas of={LinkListStories.Focus} />
+
+### Hover
+
+<Description of={LinkListStories.Hover} />
+<Canvas of={LinkListStories.Hover} />
+
+### Visited
+
+<Description of={LinkListStories.Visited} />
+<Canvas of={LinkListStories.Visited} />
+
+### Item With Different Icon
+
+<Description of={LinkListStories.ListItemWithDifferentIcon} />
 <Canvas of={LinkListStories.ListItemWithDifferentIcon} />

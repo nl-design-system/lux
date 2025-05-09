@@ -74,6 +74,19 @@ const LinkListTemplate: Story = {
   render: ({ ...args }: LuxLinkListProps) => <LuxLinkList {...args} />,
 };
 
+const LinkListWithOneItemTemplate: Story = {
+  args: {
+    icon: () => ExampleIcon,
+    links: [
+      {
+        href: '#',
+        children: 'Link 1!',
+      },
+    ],
+  },
+  render: ({ ...args }: LuxLinkListProps) => <LuxLinkList {...args} />,
+};
+
 export const Playground: Story = {
   ...LinkListTemplate,
   name: 'Playground',
@@ -104,5 +117,36 @@ export const ListItemWithDifferentIcon: Story = {
       sourceState: 'shown',
     },
   },
-  tags: ['!autodocs'],
+};
+
+export const Active: Story = {
+  ...LinkListWithOneItemTemplate,
+  name: 'Active',
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const Hover: Story = {
+  ...LinkListWithOneItemTemplate,
+  name: 'Hover',
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const Focus: Story = {
+  ...LinkListWithOneItemTemplate,
+  name: 'Focus',
+  parameters: {
+    pseudo: { focus: true, focusVisible: true },
+  },
+};
+
+export const Visited: Story = {
+  ...LinkListWithOneItemTemplate,
+  name: 'Visited',
+  parameters: {
+    pseudo: { visited: true },
+  },
 };
