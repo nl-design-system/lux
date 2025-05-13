@@ -37,7 +37,7 @@
       },
       "link": {
         "color": {
-          "value": "{lux.color.foreground.link}",
+          "value": "{lux.color.roze.500}",
           "type": "color"
         },
         "text-decoration": {
