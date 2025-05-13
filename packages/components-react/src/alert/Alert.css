@@ -30,4 +30,8 @@
   --utrecht-heading-6-font-weight: var(--lux-alert-heading-font-weight);
   --utrecht-heading-6-line-height: var(--lux-alert-heading-line-height);
   --utrecht-paragraph-color: var(--utrecht-alert-color);
+
+  .utrecht-alert__icon {
+    block-size: var(--lux-alert-heading-line-height);
+  }
 }
