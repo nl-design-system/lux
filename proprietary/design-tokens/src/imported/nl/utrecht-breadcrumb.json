@@ -23,7 +23,7 @@
           "type": "dimension"
         },
         "padding-block-start": {
-          "value": "{lux.space.150}",
+          "value": "{lux.space.100}",
           "type": "dimension"
         },
         "padding-inline-end": {
