@@ -1,0 +1,108 @@
+{
+  "utrecht": {
+    "breadcrumb-nav": {
+      "font-family": {
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
+      },
+      "line-height": {
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
+      },
+      "min-block-size": {
+        "value": "{lux.size.target}",
+        "type": "dimension"
+      },
+      "item": {
+        "padding-block-end": {
+          "value": "{lux.space.100}",
+          "type": "dimension"
+        },
+        "padding-block-start": {
+          "value": "{lux.space.100}",
+          "type": "dimension"
+        },
+        "padding-inline-end": {
+          "value": "{lux.space.150}",
+          "type": "dimension"
+        },
+        "padding-inline-start": {
+          "value": "{lux.space.150}",
+          "type": "dimension"
+        }
+      },
+      "link": {
+        "color": {
+          "value": "{lux.color.roze.500}",
+          "type": "color"
+        },
+        "text-decoration": {
+          "value": "underline",
+          "type": "textDecoration"
+        },
+        "active": {
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          },
+          "color": {
+            "value": "{mode.link.active.color}",
+            "type": "color"
+          }
+        },
+        "current": {
+          "font-weight": {
+            "value": "{lux.font-weight.regular}",
+            "type": "fontWeights"
+          }
+        },
+        "disabled": {
+          "color": {
+            "value": "{lux.color.foreground.subdued}",
+            "type": "color"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "value": "{lux.color.none}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{lux.color.foreground.link}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          }
+        },
+        "hover": {
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          },
+          "color": {
+            "value": "{mode.link.active.color}",
+            "type": "color"
+          }
+        }
+      },
+      "separator": {
+        "color": {
+          "value": "{lux.color.foreground.link}",
+          "type": "color"
+        },
+        "icon": {
+          "size": {
+            "value": "{lux.size.icon}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}
