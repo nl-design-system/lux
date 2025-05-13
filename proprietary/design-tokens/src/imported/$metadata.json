@@ -54,7 +54,6 @@
     "nl/utrecht-text-input",
     "nl/utrecht-button-group",
     "nl/utrecht-checkbox",
-    "nl/utrecht-textarea",
-    "nl/utrecht-breadcrumbs"
+    "nl/utrecht-textarea"
   ]
 }
