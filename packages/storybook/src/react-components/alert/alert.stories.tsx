@@ -116,6 +116,24 @@ export const ErrorAlert: Story = {
   },
 };
 
+export const AlertWithoutHeader: Story = {
+  ...AlertTemplate,
+  parameters: {
+    docs: {
+      sourceState: 'shown',
+    },
+  },
+  render: ({ ...args }: LuxAlertProps) => (
+    <LuxAlert {...args}>
+      <>
+        <LuxParagraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis massa lorem. Ut laoreet varius rhoncus.
+        </LuxParagraph>
+      </>
+    </LuxAlert>
+  ),
+};
+
 export const Visual = createVisualRegressionStory(() => (
   <>
     <h4 className="utrecht-heading-3">Light</h4>

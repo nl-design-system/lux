@@ -4,6 +4,7 @@ import {
   AlertType as UtrechtAlertType,
 } from '@utrecht/component-library-react/dist/css-module';
 import './Alert.css';
+import { LuxIcon } from '../icon/Icon';
 
 type AlertType = Exclude<UtrechtAlertType, 'ok'> | 'success';
 
@@ -109,8 +110,8 @@ export const LuxAlert = (props: LuxAlertProps) => {
     error: ErrorIcon,
   };
 
-  const Icon = icons[type];
-  const icon = Icon ? <Icon /> : <></>;
+  const AlertIcon = icons[type];
+  const icon = AlertIcon ? <LuxIcon icon={<AlertIcon />} /> : <></>;
 
   return (
     <UtrechtAlert
