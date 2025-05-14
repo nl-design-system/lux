@@ -30,6 +30,7 @@ export {
   type LuxFormFieldSelectProps,
   type LuxFormFieldSelectOptionsProps,
 } from './form-field-select/FormFieldSelect';
+export { LuxFormFieldTextarea, type LuxFormFieldTextareaProps } from './form-field-textarea/FormFieldTextarea';
 export { LuxFormFieldTextbox, type LuxFormFieldTextboxProps } from './form-field-textbox/FormFieldTextbox';
 export { LuxParagraph, type LuxParagraphProps } from './paragraph/Paragraph';
 export {
@@ -42,3 +43,4 @@ export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading
 export { LuxSection, type LuxSectionProps } from './section/Section';
 export { LuxSelect, LuxSelectOption, type LuxSelectProps, type LuxSelectOptionProps } from './select/Select';
 export { LuxTextbox, INPUT_TYPES, type LuxTextboxProps } from './textbox/Textbox';
+export { LuxTextArea, type LuxTextAreaProps } from './textarea/Textarea';

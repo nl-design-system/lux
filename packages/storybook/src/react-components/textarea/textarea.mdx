@@ -1,0 +1,41 @@
+import { Canvas, Controls, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/textarea-css/README.md?raw";
+import * as TextareaStories from "./textarea.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={TextareaStories} />
+
+# Textarea
+
+Lux Textarea is gebaseerd op Utrecht Textarea.
+
+<CitationDocumentation
+  component="Utrecht Textarea"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-textarea--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={TextareaStories.Playground} />
+<Controls of={TextareaStories.Playground} />
+
+# Gebruik
+
+De Lux Textarea component kan worden gebruikt voor het invoeren van meerdere regels tekst in formulieren. Het ondersteunt verschillende types en staten.
+
+```jsx
+import { LuxTextArea } from '@lux-design-system/components-react';
+
+<LuxTextArea placeholder="Typ hier iets..." />
+<LuxTextArea placeholder="Verplicht veld..." required />
+<LuxTextArea placeholder="Rechts-naar-links tekst" dir="rtl" />
+<LuxTextArea placeholder="Er is iets mis, probeer het opnieuw..." invalid />
+<LuxTextArea placeholder="Alleen-lezen veld" readOnly value="Dit is een alleen-lezen tekst" />
+<LuxTextArea placeholder="Dit veld is uitgeschakeld" disabled />
+<LuxTextArea placeholder="Spellingscheck is uitgeschakeld" spellCheck={false} />
+<LuxTextArea placeholder="Dit veld krijgt automatisch focus" autoFocus />
+<LuxTextArea placeholder="Maximaal 100 tekens" maxLength={100} />
+<LuxTextArea placeholder="Aantal rijen" rows={8} />
+```

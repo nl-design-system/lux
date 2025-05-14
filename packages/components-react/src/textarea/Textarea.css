@@ -1,0 +1,17 @@
+.utrecht-textarea--read-only,
+.utrecht-textarea--html-textarea:read-only {
+  border-color: var(
+    --utrecht-textarea-read-only-border-color,
+    var(
+      --utrecht-form-control-read-only-border-color,
+      var(--utrecht-textarea-border, var(--utrecht-form-control-border-color))
+    )
+  );
+  background-color: var(
+    --utrecht-textarea-read-only-background-color,
+    var(
+      --utrecht-form-control-read-only-background-color,
+      var(--utrecht-textarea-border, var(--utrecht-form-control-background-color))
+    )
+  );
+}
