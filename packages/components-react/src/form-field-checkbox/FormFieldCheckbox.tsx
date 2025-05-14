@@ -103,7 +103,7 @@ export const LuxFormFieldCheckbox = ({
           {...checkBoxAttrs}
         />
       }
-      className={clsx('lux-form-field-checkbox', {
+      className={clsx('lux-form-field lux-form-field-checkbox', {
         'lux-form-field-checkbox--invalid': invalid,
         'lux-form-field-checkbox--disabled': disabled,
         'lux-form-field-checkbox--with-target': withTarget,

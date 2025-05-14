@@ -27,7 +27,7 @@
   --lux-form-field-checkbox-disabled-inner-background-color: var(--lux-color-none);
 }
 
-.lux-form-field-checkbox {
+.lux-form-field.lux-form-field-checkbox {
   /* prettier-ignore */
   --_lux-checkbox-size: calc(var(--utrecht-checkbox-size) + var(--utrecht-checkbox-margin-inline-end) + var(--lux-form-field-checkbox-inner-padding-inline-start));
   --_lux-column-gap: var(--lux-form-field-checkbox-inner-column-gap, var(--utrecht-checkbox-margin-inline-end, 12px));
