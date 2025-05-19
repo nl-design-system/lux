@@ -1,0 +1,11 @@
+.utrecht-link.utrecht-link-list__link {
+  &:active,
+  &:hover {
+    --utrecht-link-hover-text-decoration: underline;
+  }
+
+  &:visited {
+    /* stylelint-disable-next-line custom-property-pattern */
+    color: var(--mode-link-visited-color);
+  }
+}
