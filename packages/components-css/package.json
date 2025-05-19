@@ -10,7 +10,7 @@
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/lux-community.git",
+    "url": "git@github.com:nl-design-system/lux.git",
     "directory": "packages/components-css"
   },
   "devDependencies": {
