@@ -323,8 +323,8 @@ importers:
         specifier: 18.3.0
         version: 18.3.0
       '@utrecht/alert-css':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 2.2.0
+        version: 2.2.0
       '@utrecht/button-css':
         specifier: 1.2.0
         version: 1.2.0
@@ -2923,8 +2923,8 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  '@utrecht/alert-css@1.1.0':
-    resolution: {integrity: sha512-UeX8qfd9LppHg4C0PwkRB/BMh2U7i3NPVavKX6p2KNSM3k6tPWajkLehfNODtfgn0bFlcplIwC+Tw2cGPxmedQ==}
+  '@utrecht/alert-css@2.2.0':
+    resolution: {integrity: sha512-cCJngxahyzpQyCNEr7i1PcNI0g2Ez++Uy2roaRKW6E5bFZO3srriODr+0rmhAEhij4inS9cf5D9QbhhMjMjsww==}
 
   '@utrecht/button-css@1.2.0':
     resolution: {integrity: sha512-aYqnmuT5HOshv8Kr9IvBsJef+2KNKRNwLPQHxNC2fSGXWDFzROAeChUr0A1Ylt45aAApAD/bxxIHHBAeS1PwEA==}
@@ -10779,7 +10779,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@utrecht/alert-css@1.1.0': {}
+  '@utrecht/alert-css@2.2.0': {}
 
   '@utrecht/button-css@1.2.0': {}
 
