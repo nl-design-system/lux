@@ -1,9 +1,5 @@
 ## Veelgestelde vragen
 
-### Wat is LUX?
-
-LUX staat voor "Logius UX", ofwel "Logius User eXperience" en is het design system dat Logius-breed ingezet wordt. LUX staat ook voor de verlichting die het diens gebruikers gaat bieden omdat ze zich hiermee vooral kunnen richten op hun business logic. Het is immers een LUXe dat de UI, UX en toegankelijkheid grotendeels voor hen wordt geregeld door LUX.
-
 ### Wat is een design system?
 
 Een design system is als een gereedschapskist voor ontwerpers en ontwikkelaars. Het bevat herbruikbare componenten zoals kleuren, tekst stijlen, knoppen, en andere interactie elementen. Maar bevat ook richtlijnen voor hoe die componenten gebruikt moeten worden. Eigenlijk een set van bouwblokken voor het maken van kwalitatieve websites.
