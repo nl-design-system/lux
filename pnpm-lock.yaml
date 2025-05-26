@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@tokens-studio/sd-transforms@0.15.2':
-    hash: 4izyzujpparowfeopcgnsqc73u
+    hash: 9cc9f75669c0c4d3d97f6be55c6b06c1b2e465ba82ee06f2eaa9f671489303bc
     path: patches/@tokens-studio__sd-transforms@0.15.2.patch
 
 importers:
@@ -492,7 +492,7 @@ importers:
         version: 14.0.3
       '@tokens-studio/sd-transforms':
         specifier: 0.15.2
-        version: 0.15.2(patch_hash=4izyzujpparowfeopcgnsqc73u)
+        version: 0.15.2(patch_hash=9cc9f75669c0c4d3d97f6be55c6b06c1b2e465ba82ee06f2eaa9f671489303bc)
       chokidar-cli:
         specifier: 3.0.0
         version: 3.0.0
@@ -10425,7 +10425,7 @@ snapshots:
     dependencies:
       '@testing-library/dom': 9.3.4
 
-  '@tokens-studio/sd-transforms@0.15.2(patch_hash=4izyzujpparowfeopcgnsqc73u)':
+  '@tokens-studio/sd-transforms@0.15.2(patch_hash=9cc9f75669c0c4d3d97f6be55c6b06c1b2e465ba82ee06f2eaa9f671489303bc)':
     dependencies:
       '@tokens-studio/types': 0.4.0
       color2k: 2.0.3
