@@ -62,7 +62,7 @@
         },
         "disabled": {
           "color": {
-            "value": "{lux.color.foreground.subdued}",
+            "value": "{lux.color.foreground.default}",
             "type": "color"
           }
         },
@@ -93,7 +93,7 @@
       },
       "separator": {
         "color": {
-          "value": "{lux.color.foreground.link}",
+          "value": "{lux.color.foreground.default}",
           "type": "color"
         },
         "icon": {
