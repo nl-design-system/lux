@@ -12,7 +12,7 @@
   "private": true,
   "engines": {
     "node": "^20",
-    "pnpm": "^9"
+    "pnpm": "^10"
   },
   "repository": {
     "type": "git+ssh",
@@ -87,5 +87,5 @@
       "@tokens-studio/sd-transforms@0.15.2": "patches/@tokens-studio__sd-transforms@0.15.2.patch"
     }
   },
-  "packageManager": "pnpm@9.1.2+sha256.19c17528f9ca20bd442e4ca42f00f1b9808a9cb419383cd04ba32ef19322aba7"
+  "packageManager": "pnpm@10.11.0"
 }
