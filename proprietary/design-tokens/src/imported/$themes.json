@@ -8,8 +8,7 @@
       "core/color": "enabled",
       "core/spacing": "enabled",
       "core/border": "enabled",
-      "core/other": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "core/other": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:1003",
     "$figmaModeId": "7:30",
@@ -189,8 +188,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "common/default": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "common/default": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:46:7",
     "$figmaModeId": "46:0",
@@ -206,8 +204,7 @@
     "name": "Logius",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/Logius": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "product/Logius": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:0",
@@ -264,8 +261,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius Blauw": "enabled",
-      "product/Logius": "source",
-      "nl/utrecht-accordion": "disabled"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2641:0",
@@ -322,8 +318,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/MijnOverheid": "enabled",
-      "product/Logius": "source",
-      "nl/utrecht-accordion": "disabled"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:3",
@@ -380,8 +375,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/DigiD": "enabled",
-      "product/Logius": "source",
-      "nl/utrecht-accordion": "disabled"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "1:4",
@@ -437,8 +431,7 @@
     "name": "NLdoc",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/NLdoc-mapping": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "product/NLdoc-mapping": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "123:0",
@@ -473,8 +466,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Logius": "source",
-      "product/EVA": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "product/EVA": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2418:0",
@@ -530,8 +522,7 @@
     "name": "xl",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "viewport/xl": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "viewport/xl": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "7:1",
@@ -571,8 +562,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport/xl": "source",
-      "viewport/lg": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "viewport/lg": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:0",
@@ -611,8 +601,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport/xl": "source",
-      "viewport/md": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "viewport/md": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:1",
@@ -651,8 +640,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "viewport/xl": "source",
-      "viewport/sm": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "viewport/sm": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "9:2",
@@ -690,8 +678,7 @@
     "name": "xs",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "viewport/xs": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "viewport/xs": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7:318",
     "$figmaModeId": "54:0",
@@ -732,8 +719,7 @@
     "name": "light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/light": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "mode/light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:1",
@@ -787,8 +773,7 @@
     "name": "dark (beta)",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "mode/dark": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "mode/dark": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1:3",
     "$figmaModeId": "1:2",
@@ -843,8 +828,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "component/login link": "enabled",
-      "component/icon-logo": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "component/icon-logo": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:1503:3470",
     "$figmaModeId": "1503:2",
@@ -913,7 +897,9 @@
       "nl/utrecht-checkbox": "enabled",
       "nl/utrecht-textarea": "enabled",
       "nl/utrecht-skip-link": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "nl/utrecht-action": "enabled",
+      "nl/utrecht-accordion": "enabled",
+      "nl/utrecht-accordion-mark": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4948:761",
     "$figmaModeId": "4948:0",
@@ -956,8 +942,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/default": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "NLdoc/default": "enabled"
     },
     "group": "NLdoc",
     "$figmaVariableReferences": {}
@@ -967,8 +952,7 @@
     "name": "Rijksoverheid",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Rijksoverheid": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "NLdoc/Rijksoverheid": "enabled"
     },
     "group": "NLdoc",
     "$figmaVariableReferences": {}
@@ -978,8 +962,7 @@
     "name": "Ridderkerk",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Ridderkerk": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "NLdoc/Ridderkerk": "enabled"
     },
     "group": "NLdoc",
     "$figmaVariableReferences": {}
@@ -989,8 +972,7 @@
     "name": "Waterschap Hollandse Delta",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "NLdoc/Waterschap Hollandse Delta": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "NLdoc/Waterschap Hollandse Delta": "enabled"
     },
     "group": "NLdoc",
     "$figmaVariableReferences": {}
@@ -1001,8 +983,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "product/Digitoegankelijk": "enabled",
-      "product/Logius": "source",
-      "nl/utrecht-accordion": "disabled"
+      "product/Logius": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:1:2",
     "$figmaModeId": "2690:0",
@@ -1058,8 +1039,7 @@
     "name": "KOOP",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "product/KOOP": "enabled",
-      "nl/utrecht-accordion": "disabled"
+      "product/KOOP": "enabled"
     },
     "group": "product",
     "$figmaCollectionId": "VariableCollectionId:1:2",
