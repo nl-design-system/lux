@@ -62,8 +62,7 @@
           "border-color": {
             "value": "{lux.color.grijs.400}",
             "type": "color"
-          },
-          "color": {}
+          }
         },
         "active": {
           "background-color": {
@@ -73,8 +72,7 @@
           "border-color": {
             "value": "{lux.color.grijs.400}",
             "type": "color"
-          },
-          "color": {}
+          }
         },
         "focus": {
           "background-color": {
@@ -84,18 +82,12 @@
           "border-color": {
             "value": "{lux.color.grijs.400}",
             "type": "color"
-          },
-          "color": {}
+          }
         },
         "icon": {
           "size": {
             "type": "sizing",
             "value": "1rem"
-          },
-          "utrecht": {
-            "arrow-down": {},
-            "arrow-up": {},
-            "background-color": {}
           }
         }
       },
