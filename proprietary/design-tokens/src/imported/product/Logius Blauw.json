@@ -229,7 +229,7 @@
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "{lux.font-size.large-scale.sm}"
+        "value": "1.1875rem"
       },
       "primary": {
         "font-size": {
