@@ -14,11 +14,7 @@
           "value": "{lux.icon.inset-block-start}",
           "type": "spacing"
         }
-      }
-    }
-  },
-  "todo": {
-    "link-list": {
+      },
       "item": {
         "column-gap": {
           "value": "{lux.space.100}",
@@ -27,6 +23,24 @@
         "text-decoration": {
           "value": "None",
           "type": "textDecoration"
+        },
+        "active": {
+          "text-decoration": {
+            "value": "underline",
+            "type": "textDecoration"
+          }
+        },
+        "hover": {
+          "text-decoration": {
+            "value": "underline",
+            "type": "textDecoration"
+          }
+        },
+        "focus": {
+          "text-decoration": {
+            "value": "underline",
+            "type": "textDecoration"
+          }
         }
       }
     }
