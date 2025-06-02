@@ -1,5 +1,12 @@
 # @lux-design-system/components-react
 
+## 1.1.1
+
+### Patch Changes
+
+- 3dc8303: Fix link to github repo in package.json
+- 749521f: Increase formfield checkbox specificity to ensure lux styling is always applied
+
 ## 1.1.0
 
 ### Minor Changes
