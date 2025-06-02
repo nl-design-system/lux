@@ -1,5 +1,11 @@
 # @lux-design-system/storybook
 
+## 1.2.0
+
+### Minor Changes
+
+- 3dc8303: Added more user documentation to Storybook
+
 ## 1.1.0
 
 ### Minor Changes
