@@ -353,8 +353,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0
       '@utrecht/paragraph-css':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 2.3.0
+        version: 2.3.0
       '@utrecht/pre-heading-css':
         specifier: 1.2.0
         version: 1.2.0
@@ -456,8 +456,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0
       '@utrecht/paragraph-css':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 2.3.0
+        version: 2.3.0
       '@utrecht/web-component-library-stencil':
         specifier: 2.0.0
         version: 2.0.0
@@ -2982,8 +2982,8 @@ packages:
   '@utrecht/link-css@1.1.0':
     resolution: {integrity: sha512-L/R5rGvA2RrXJFw/k2l2U7ZgeJuz92pdFDbW1Rtw+7XBK5Z/e+YMpnlDL8fx5VmFk95xO4Jmgv1j6BYiI6vnqA==}
 
-  '@utrecht/paragraph-css@1.1.0':
-    resolution: {integrity: sha512-HxkYL/W0tkHngucdBFHOK8t7OmUmlnz4uIXP4GBXdA299Hp+RGb/1vaH5A2RaIN0P7/4v6EkuV4lquOcHx0K0Q==}
+  '@utrecht/paragraph-css@2.3.0':
+    resolution: {integrity: sha512-Qo6iX7a0T1xVSxwtmtqdhv30kTNNTLz45OGrdkXMms4IiiXMMsYJ83K43aCY/d89GlH5lwKfyPb9CU64fzfCIQ==}
 
   '@utrecht/pre-heading-css@1.2.0':
     resolution: {integrity: sha512-64r4F/uXyEnQkquCdP5hSQsSfqg0i4tME0/yQ02q1EkU3grUXSebIYi2nwD0Cq2weBBNdyelNwdI2f/slNMMVA==}
@@ -10819,7 +10819,7 @@ snapshots:
 
   '@utrecht/link-css@1.1.0': {}
 
-  '@utrecht/paragraph-css@1.1.0': {}
+  '@utrecht/paragraph-css@2.3.0': {}
 
   '@utrecht/pre-heading-css@1.2.0': {}
 
