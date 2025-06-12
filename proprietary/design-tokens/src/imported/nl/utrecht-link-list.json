@@ -15,7 +15,7 @@
           "type": "spacing"
         }
       },
-      "item": {
+      "link": {
         "column-gap": {
           "value": "{lux.space.100}",
           "type": "spacing"
@@ -23,20 +23,18 @@
         "text-decoration": {
           "value": "None",
           "type": "textDecoration"
-        },
-        "active": {
-          "text-decoration": {
-            "value": "underline",
-            "type": "textDecoration"
-          }
-        },
+        }
+      },
+      "font-weight": {
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
+      }
+    }
+  },
+  "lux": {
+    "link-list": {
+      "link": {
         "hover": {
-          "text-decoration": {
-            "value": "underline",
-            "type": "textDecoration"
-          }
-        },
-        "focus": {
           "text-decoration": {
             "value": "underline",
             "type": "textDecoration"
