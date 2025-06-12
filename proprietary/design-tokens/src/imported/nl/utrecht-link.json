@@ -42,6 +42,13 @@
         },
         "text-decoration": {
           "value": "none",
+          "type": "textDecoration",
+          "description": "Legacy token"
+        }
+      },
+      "focus-visible": {
+        "text-decoration": {
+          "value": "None",
           "type": "textDecoration"
         }
       },
