@@ -2,141 +2,141 @@
   "utrecht": {
     "accordion": {
       "margin-block-start": {
-        "value": "{lux.space.0}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{lux.space.0}"
       },
       "margin-block-end": {
-        "value": "{lux.space.0}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{lux.space.0}"
       },
       "row-gap": {
-        "value": "{lux.space.50}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{lux.space.50}"
       },
       "button": {
         "padding-inline-end": {
-          "value": "{lux.space.200}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.200}"
         },
         "padding-inline-start": {
-          "value": "{lux.space.200}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.200}"
         },
         "padding-block-end": {
-          "value": "{lux.space.150}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.150}"
         },
         "padding-block-start": {
-          "value": "{lux.space.150}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.150}"
         },
         "background-color": {
-          "value": "{lux.color.background.subdued}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.background.subdued}"
         },
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         },
         "border-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "border-radius": {
-          "type": "dimension",
-          "value": "{lux.border-radius.default}"
+          "$type": "dimension",
+          "$value": "{lux.border-radius.default}"
         },
         "border-width": {
-          "type": "dimension",
-          "value": "{lux.border-width.default}"
+          "$type": "dimension",
+          "$value": "{lux.border-width.default}"
         },
         "gap": {
-          "value": "{lux.space.100}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.100}"
         },
         "hover": {
           "background-color": {
-            "value": "{lux.color.background.hover}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.background.hover}"
           },
           "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.foreground.default}"
           }
         },
         "active": {
           "background-color": {
-            "value": "{lux.color.grijs.400}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.grijs.400}"
           },
           "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.foreground.default}"
           }
         },
         "focus": {
           "background-color": {
-            "value": "{lux.color.background.subdued}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.background.subdued}"
           },
           "border-color": {
-            "value": "{lux.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.none}"
           },
           "color": {
-            "value": "{lux.color.foreground.default}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{lux.color.foreground.default}"
           }
         },
         "icon": {
           "size": {
-            "type": "dimension",
-            "value": "{lux.size.icon}"
+            "$type": "dimension",
+            "$value": "{lux.size.icon}"
           }
         }
       },
       "panel": {
         "border-color": {
-          "value": "{lux.color.grijs.200}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.grijs.200}"
         },
         "border-width": {
-          "type": "dimension",
-          "value": "{lux.border-width.default}"
+          "$type": "dimension",
+          "$value": "{lux.border-width.default}"
         },
         "padding-block-start": {
-          "value": "{lux.space.200}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.200}"
         },
         "padding-block-end": {
-          "value": "{lux.space.400}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.400}"
         },
         "padding-inline-start": {
-          "value": "{lux.space.400}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.400}"
         },
         "padding-inline-end": {
-          "value": "{lux.space.400}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.400}"
         }
       },
       "section": {
         "margin-block-start": {
-          "value": "{lux.space.0}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.0}"
         },
         "margin-block-end": {
-          "value": "{lux.space.0}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{lux.space.0}"
         }
       }
     }

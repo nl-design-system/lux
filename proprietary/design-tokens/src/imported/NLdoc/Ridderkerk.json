@@ -4,36 +4,36 @@
       "brand": {
         "default": {
           "parent": "NLdoc / Organisatie/Ridderkerk",
-          "type": "color",
-          "value": "#028532",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#028532"
         },
         "subdued": {
           "parent": "NLdoc / Organisatie/Ridderkerk",
-          "type": "color",
-          "value": "#d9ede0",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#d9ede0"
         },
         "hover": {
           "parent": "NLdoc / Organisatie/Ridderkerk",
-          "type": "color",
-          "value": "#026732",
-          "description": ""
+          "description": "",
+          "$type": "color",
+          "$value": "#026732"
         }
       }
     },
     "button": {
       "color": {
         "parent": "NLdoc / Organisatie/Ridderkerk",
-        "type": "color",
-        "value": "{lux.color.grijs.700}",
-        "description": ""
+        "description": "",
+        "$type": "color",
+        "$value": "{lux.color.grijs.700}"
       }
     },
     "font-family": {
       "primary": {
-        "type": "fontFamilies",
-        "value": "Lato, Arial"
+        "$type": "fontFamilies",
+        "$value": "Lato, Arial"
       }
     }
   }
