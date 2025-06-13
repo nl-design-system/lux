@@ -1,3 +1,12 @@
+export {
+  LuxAccordion,
+  type LuxAccordionProps,
+  LuxAccordionProvider,
+  type LuxAccordionProviderProps,
+  LuxAccordionSection,
+  type LuxAccordionSectionProps,
+  type LuxAccordionSectionProviderProps,
+} from './accordion/Accordion';
 export { LuxAlert, type LuxAlertProps } from './alert/Alert';
 export { LuxButton, type LuxButtonProps } from './button/Button';
 export { LuxCheckbox, type LuxCheckboxProps } from './checkbox/Checkbox';

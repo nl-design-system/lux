@@ -322,6 +322,9 @@ importers:
       '@types/react-dom':
         specifier: 18.3.0
         version: 18.3.0
+      '@utrecht/accordion-css':
+        specifier: 1.6.0
+        version: 1.6.0
       '@utrecht/alert-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -2922,6 +2925,9 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+
+  '@utrecht/accordion-css@1.6.0':
+    resolution: {integrity: sha512-0PLGWCgRvFyR8kINBE4v8dsQxxdfKbmC5oEolOF2jGJ7NlmeTE29ODAzlcqwiocWOjM45jgXDK8aRVAle2DObg==}
 
   '@utrecht/alert-css@1.1.0':
     resolution: {integrity: sha512-UeX8qfd9LppHg4C0PwkRB/BMh2U7i3NPVavKX6p2KNSM3k6tPWajkLehfNODtfgn0bFlcplIwC+Tw2cGPxmedQ==}
@@ -10778,6 +10784,8 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.2.0': {}
+
+  '@utrecht/accordion-css@1.6.0': {}
 
   '@utrecht/alert-css@1.1.0': {}
 

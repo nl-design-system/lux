@@ -2,53 +2,53 @@
   "utrecht": {
     "page-footer": {
       "background-color": {
-        "value": "{lux.color.background.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.background.default}"
       },
       "color": {
-        "value": "{lux.color.foreground.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.foreground.default}"
       },
       "padding-block-start": {
-        "value": "{lux.space.600}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.600}"
       },
       "padding-block-end": {
-        "value": "{lux.space.600}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.600}"
       },
       "padding-inline-start": {
-        "value": "{lux.grid.margin}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.grid.margin}"
       },
       "padding-inline-end": {
-        "value": "{lux.grid.margin}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.grid.margin}"
       },
       "border-color": {
-        "value": "{lux.color.brand.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.brand.default}"
       },
       "border-width": {
-        "value": "{lux.border-width.m}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{lux.border-width.m}"
       },
       "content": {
         "column-gap": {
-          "value": "{lux.grid.gutter}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{lux.grid.gutter}"
         },
         "row-gap": {
-          "value": "{lux.space.400}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{lux.space.400}"
         },
         "column-width": {
-          "value": "12.5rem",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "12.5rem"
         },
         "max-inline-size": {
-          "value": "{lux.grid.max-inline-size}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{lux.grid.max-inline-size}"
         }
       }
     }

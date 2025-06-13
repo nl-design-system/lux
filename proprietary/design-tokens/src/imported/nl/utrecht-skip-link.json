@@ -2,44 +2,44 @@
   "nl": {
     "skip-link": {
       "background-color": {
-        "type": "color",
-        "value": "{lux.color.background.default}"
+        "$type": "color",
+        "$value": "{lux.color.background.default}"
       },
       "color": {
-        "type": "color",
-        "value": "{lux.color.foreground.default}"
+        "$type": "color",
+        "$value": "{lux.color.foreground.default}"
       },
       "font-size": {
-        "type": "fontSizes",
-        "value": "{lux.font-size.body.default}"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.body.default}"
       },
       "line-height": {
-        "type": "lineHeights",
-        "value": "{lux.line-height.body.default}"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.body.default}"
       },
       "padding-block": {
-        "type": "spacing",
-        "value": "{lux.space.100}"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "padding-inline": {
-        "type": "spacing",
-        "value": "{lux.space.200}"
+        "$type": "spacing",
+        "$value": "{lux.space.200}"
       },
       "min-block-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
+        "$type": "sizing",
+        "$value": "{lux.size.target}"
       },
       "min-inline-size": {
-        "type": "sizing",
-        "value": "{lux.size.target}"
+        "$type": "sizing",
+        "$value": "{lux.size.target}"
       },
       "text-decoration-thickness": {
-        "type": "other",
-        "value": "1px"
+        "$type": "other",
+        "$value": "1px"
       },
       "text-underline-offset": {
-        "type": "other",
-        "value": "1px"
+        "$type": "other",
+        "$value": "1px"
       }
     }
   }
