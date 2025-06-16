@@ -2,28 +2,28 @@
   "utrecht": {
     "document": {
       "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{lux.font-family.primary}"
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
       },
       "color": {
-        "$type": "color",
-        "$value": "{lux.color.foreground.default}"
+        "value": "{lux.color.foreground.default}",
+        "type": "color"
       },
       "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{lux.font-weight.regular}"
+        "value": "{lux.font-weight.regular}",
+        "type": "fontWeights"
       },
       "line-height": {
-        "$type": "lineHeights",
-        "$value": "{lux.line-height.body.default}"
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
       },
       "font-size": {
-        "$type": "fontSizes",
-        "$value": "{lux.font-size.body.default}"
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
       },
       "background-color": {
-        "$type": "color",
-        "$value": "{lux.color.background.default}"
+        "value": "{lux.color.background.default}",
+        "type": "color"
       }
     }
   }

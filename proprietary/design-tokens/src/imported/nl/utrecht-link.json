@@ -2,98 +2,98 @@
   "utrecht": {
     "link": {
       "color": {
-        "$type": "color",
-        "$value": "{lux.color.foreground.link}"
+        "type": "color",
+        "value": "{lux.color.foreground.link}"
       },
       "text-decoration-color": {
-        "$type": "color",
-        "$value": "{lux.color.foreground.link}"
+        "type": "color",
+        "value": "{lux.color.foreground.link}"
       },
       "text-decoration-thickness": {
-        "$type": "other",
-        "$value": "auto"
+        "type": "other",
+        "value": "auto"
       },
       "text-underline-offset": {
-        "$type": "other",
-        "$value": "auto"
+        "type": "other",
+        "value": "auto"
       },
       "active": {
         "color": {
-          "$type": "color",
-          "$value": "{mode.link.active.color}"
+          "type": "color",
+          "value": "{mode.link.active.color}"
         },
         "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "none"
+          "value": "none",
+          "type": "textDecoration"
         }
       },
       "focus": {
         "color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.link}"
+          "type": "color",
+          "value": "{lux.color.foreground.link}"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "type": "other",
+          "value": "auto"
         },
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.none}"
+          "value": "{lux.color.none}",
+          "type": "color"
         },
         "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "none"
+          "value": "none",
+          "type": "textDecoration"
         }
       },
       "hover": {
         "color": {
-          "$type": "color",
-          "$value": "{mode.link.hover.color}"
+          "type": "color",
+          "value": "{mode.link.hover.color}"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "type": "other",
+          "value": "auto"
         },
         "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "none"
+          "value": "none",
+          "type": "textDecoration"
         }
       },
       "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{lux.font-weight.regular}"
+        "type": "fontWeights",
+        "value": "{lux.font-weight.regular}"
       },
       "visited": {
         "color": {
-          "$type": "color",
-          "$value": "{mode.link.visited.color}"
+          "type": "color",
+          "value": "{mode.link.visited.color}"
         }
       },
       "icon": {
         "size": {
-          "$type": "sizing",
-          "$value": "{lux.size.icon}"
+          "type": "sizing",
+          "value": "{lux.size.icon}"
         }
       },
       "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{lux.font-family.primary}"
+        "value": "{lux.font-family.primary}",
+        "type": "fontFamilies"
       },
       "line-height": {
-        "$type": "lineHeights",
-        "$value": "{lux.line-height.body.default}"
+        "value": "{lux.line-height.body.default}",
+        "type": "lineHeights"
       },
       "font-size": {
-        "$type": "fontSizes",
-        "$value": "{lux.font-size.body.default}"
+        "value": "{lux.font-size.body.default}",
+        "type": "fontSizes"
       },
       "text-decoration": {
-        "$type": "textDecoration",
-        "$value": "underline"
+        "value": "underline",
+        "type": "textDecoration"
       },
       "column-gap": {
-        "$type": "spacing",
-        "$value": "{lux.space.50}"
+        "value": "{lux.space.50}",
+        "type": "spacing"
       }
     }
   }

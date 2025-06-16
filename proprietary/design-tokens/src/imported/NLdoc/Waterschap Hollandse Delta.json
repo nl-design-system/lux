@@ -4,36 +4,36 @@
       "brand": {
         "default": {
           "parent": "NLdoc / Organisatie/Waterschap Hollandse Delta",
-          "description": "",
-          "$type": "color",
-          "$value": "#462e87"
+          "type": "color",
+          "value": "#462e87",
+          "description": ""
         },
         "subdued": {
           "parent": "NLdoc / Organisatie/Waterschap Hollandse Delta",
-          "description": "",
-          "$type": "color",
-          "$value": "#e3e0ed"
+          "type": "color",
+          "value": "#e3e0ed",
+          "description": ""
         },
         "hover": {
           "parent": "NLdoc / Organisatie/Waterschap Hollandse Delta",
-          "description": "",
-          "$type": "color",
-          "$value": "#2c1d54"
+          "type": "color",
+          "value": "#2c1d54",
+          "description": ""
         }
       }
     },
     "button": {
       "color": {
         "parent": "NLdoc / Organisatie/Waterschap Hollandse Delta",
-        "description": "",
-        "$type": "color",
-        "$value": "{nldoc.color.brand.default}"
+        "type": "color",
+        "value": "{nldoc.color.brand.default}",
+        "description": ""
       }
     },
     "font-family": {
       "primary": {
-        "$type": "fontFamilies",
-        "$value": "Verdana, Arial"
+        "type": "fontFamilies",
+        "value": "Verdana, Arial"
       }
     }
   }

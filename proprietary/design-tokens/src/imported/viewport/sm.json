@@ -3,24 +3,24 @@
     "rijkslint": {
       "variant": {
         "parent": "viewport (beta)/sm",
-        "description": "",
-        "$type": "text",
-        "$value": "default"
+        "type": "text",
+        "value": "default",
+        "description": ""
       }
     },
     "screen-size": {
       "parent": "viewport (beta)/sm",
-      "description": "",
-      "$type": "sizing",
-      "$value": "36rem"
+      "type": "sizing",
+      "value": "36rem",
+      "description": ""
     },
     "viewport": {
       "size": {
         "icon": {
           "wrapper-height": {
             "parent": "viewport (beta)/sm",
-            "$type": "sizing",
-            "$value": "1.75rem"
+            "type": "sizing",
+            "value": "1.75rem"
           }
         }
       }
@@ -30,19 +30,19 @@
     "grid": {
       "gutter": {
         "parent": "viewport (beta)/sm",
-        "description": "",
-        "$type": "spacing",
-        "$value": "1.5rem"
+        "type": "spacing",
+        "value": "1.5rem",
+        "description": ""
       },
       "margin": {
         "parent": "viewport (beta)/sm",
-        "description": "",
-        "$type": "spacing",
-        "$value": "1.5rem"
+        "type": "spacing",
+        "value": "1.5rem",
+        "description": ""
       },
       "max-inline-size": {
-        "$type": "sizing",
-        "$value": "82.5rem"
+        "value": "82.5rem",
+        "type": "sizing"
       }
     }
   },
@@ -52,17 +52,17 @@
         "75%": {
           "padding-block-start": {
             "parent": "viewport (beta)/sm",
-            "description": "",
-            "$type": "spacing",
-            "$value": "2.5rem"
+            "type": "spacing",
+            "value": "2.5rem",
+            "description": ""
           }
         },
         "default": {
           "padding-block-start": {
             "parent": "viewport (beta)/sm",
-            "description": "",
-            "$type": "spacing",
-            "$value": "3.125rem"
+            "type": "spacing",
+            "value": "3.125rem",
+            "description": ""
           }
         }
       }
@@ -71,37 +71,37 @@
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xl",
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.xl}"
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.xl}"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.lg}"
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.lg}"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.md}"
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.md}"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.sm}"
+          "type": "lineHeights",
+          "value": "{lux.line-height.large-scale.sm}"
         }
       },
       "body": {
         "default": {
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.sm}"
+          "value": "{lux.line-height.large-scale.sm}",
+          "type": "lineHeights"
         },
         "large": {
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.md}"
+          "value": "{lux.line-height.large-scale.md}",
+          "type": "lineHeights"
         },
         "small": {
-          "$type": "lineHeights",
-          "$value": "{lux.line-height.large-scale.xs}"
+          "value": "{lux.line-height.large-scale.xs}",
+          "type": "lineHeights"
         }
       }
     },
@@ -109,56 +109,56 @@
       "heading": {
         "level-1": {
           "parent": "viewport (beta)/xl",
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.xl}"
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.xl}"
         },
         "level-2": {
           "parent": "viewport (beta)/xl",
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.lg}"
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.lg}"
         },
         "level-3": {
           "parent": "viewport (beta)/xl",
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.md}"
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.md}"
         },
         "level-4": {
           "parent": "viewport (beta)/xl",
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.sm}"
+          "type": "fontSizes",
+          "value": "{lux.font-size.large-scale.sm}"
         }
       },
       "body": {
         "default": {
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.sm}"
+          "value": "{lux.font-size.large-scale.sm}",
+          "type": "fontSizes"
         },
         "large": {
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.md}"
+          "value": "{lux.font-size.large-scale.md}",
+          "type": "fontSizes"
         },
         "small": {
-          "$type": "fontSizes",
-          "$value": "{lux.font-size.large-scale.xs}"
+          "value": "{lux.font-size.large-scale.xs}",
+          "type": "fontSizes"
         }
       }
     },
     "section": {
       "padding-block-end": {
-        "$type": "spacing",
-        "$value": "{lux.space.400}"
+        "value": "{lux.space.400}",
+        "type": "spacing"
       },
       "padding-block-start": {
-        "$type": "spacing",
-        "$value": "{lux.space.400}"
+        "value": "{lux.space.400}",
+        "type": "spacing"
       },
       "padding-inline-start": {
-        "$type": "spacing",
-        "$value": "{lux.space.400}"
+        "value": "{lux.space.400}",
+        "type": "spacing"
       },
       "padding-inline-end": {
-        "$type": "spacing",
-        "$value": "{lux.space.400}"
+        "value": "{lux.space.400}",
+        "type": "spacing"
       }
     }
   }

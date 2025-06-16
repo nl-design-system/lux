@@ -2,24 +2,24 @@
   "utrecht": {
     "button-group": {
       "background-color": {
-        "$type": "color",
-        "$value": "{lux.color.none}"
+        "value": "{lux.color.none}",
+        "type": "color"
       },
       "column-gap": {
-        "$type": "spacing",
-        "$value": "{lux.space.200}"
+        "value": "{lux.space.200}",
+        "type": "spacing"
       },
       "padding-block-end": {
-        "$type": "spacing",
-        "$value": "{lux.space.0}"
+        "value": "{lux.space.0}",
+        "type": "spacing"
       },
       "padding-block-start": {
-        "$type": "spacing",
-        "$value": "{lux.space.0}"
+        "value": "{lux.space.0}",
+        "type": "spacing"
       },
       "row-gap": {
-        "$type": "spacing",
-        "$value": "{lux.space.100}"
+        "value": "{lux.space.100}",
+        "type": "spacing"
       }
     }
   }

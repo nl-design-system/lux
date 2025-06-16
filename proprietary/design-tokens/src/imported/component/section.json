@@ -2,32 +2,32 @@
   "lux": {
     "section": {
       "background-color": {
-        "$type": "color",
-        "$value": "{lux.color.background.default}"
+        "value": "{lux.color.background.default}",
+        "type": "color"
       },
       "padding-block-end": {
-        "$type": "spacing",
-        "$value": "{viewport.section.padding-block-end}"
+        "value": "{viewport.section.padding-block-end}",
+        "type": "spacing"
       },
       "padding-block-start": {
-        "$type": "spacing",
-        "$value": "{viewport.section.padding-block-start}"
+        "value": "{viewport.section.padding-block-start}",
+        "type": "spacing"
       },
       "padding-inline-start": {
-        "$type": "spacing",
-        "$value": "{viewport.section.padding-inline-start}"
+        "value": "{viewport.section.padding-inline-start}",
+        "type": "spacing"
       },
       "padding-inline-end": {
-        "$type": "spacing",
-        "$value": "{viewport.section.padding-inline-end}"
+        "value": "{viewport.section.padding-inline-end}",
+        "type": "spacing"
       },
       "row-gap": {
-        "$type": "spacing",
-        "$value": "{lux.space.400}"
+        "value": "{lux.space.400}",
+        "type": "spacing"
       },
       "border-radius": {
-        "$type": "borderRadius",
-        "$value": "{lux.border-radius.default}"
+        "value": "{lux.border-radius.default}",
+        "type": "borderRadius"
       }
     }
   }

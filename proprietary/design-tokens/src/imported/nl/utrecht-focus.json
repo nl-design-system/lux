@@ -2,25 +2,25 @@
   "utrecht": {
     "focus": {
       "outline-color": {
-        "$type": "color",
-        "$value": "{lux.color.focus.outline}"
+        "value": "{lux.color.focus.outline}",
+        "type": "color"
       },
       "outline-offset": {
-        "$type": "spacing",
-        "$value": "{lux.focus.outline-offset}"
+        "value": "{lux.focus.outline-offset}",
+        "type": "spacing"
       },
       "outline-style": {
-        "$type": "other",
-        "$value": "{lux.focus.outline.style}"
+        "value": "{lux.focus.outline.style}",
+        "type": "other"
       },
       "outline-width": {
-        "$type": "borderWidth",
-        "$value": "{lux.focus.outline-width}"
+        "value": "{lux.focus.outline-width}",
+        "type": "borderWidth"
       },
       "inverse": {
         "outline-color": {
-          "$type": "color",
-          "$value": "transparant"
+          "value": "transparant",
+          "type": "color"
         }
       }
     }

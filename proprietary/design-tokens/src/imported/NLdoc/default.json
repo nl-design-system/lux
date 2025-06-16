@@ -4,36 +4,36 @@
       "brand": {
         "default": {
           "parent": "NLdoc / Organisatie/NLdoc",
-          "description": "",
-          "$type": "color",
-          "$value": "{lux.color.violet.500}"
+          "type": "color",
+          "value": "{lux.color.violet.500}",
+          "description": ""
         },
         "subdued": {
           "parent": "NLdoc / Organisatie/NLdoc",
-          "description": "",
-          "$type": "color",
-          "$value": "{lux.color.violet.50}"
+          "type": "color",
+          "value": "{lux.color.violet.50}",
+          "description": ""
         },
         "hover": {
           "parent": "NLdoc / Organisatie/NLdoc",
-          "description": "",
-          "$type": "color",
-          "$value": "{lux.color.violet.700}"
+          "type": "color",
+          "value": "{lux.color.violet.700}",
+          "description": ""
         }
       }
     },
     "button": {
       "color": {
         "parent": "NLdoc / Organisatie/NLdoc",
-        "description": "",
-        "$type": "color",
-        "$value": "{nldoc.color.brand.default}"
+        "type": "color",
+        "value": "{nldoc.color.brand.default}",
+        "description": ""
       }
     },
     "font-family": {
       "primary": {
-        "$type": "fontFamilies",
-        "$value": "{ro.font-family.primary}"
+        "type": "fontFamilies",
+        "value": "{ro.font-family.primary}"
       }
     }
   }

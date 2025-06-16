@@ -2,162 +2,162 @@
   "utrecht": {
     "accordion": {
       "margin-block-end": {
-        "$type": "dimension",
-        "$value": "0px",
-        "$description": "[code-only]"
+        "value": "0px",
+        "description": "[code-only]",
+        "type": "dimension"
       },
       "margin-block-start": {
-        "$type": "dimension",
-        "$value": "0px",
-        "$description": "[code-only]"
+        "value": "0px",
+        "description": "[code-only]",
+        "type": "dimension"
       },
       "row-gap": {
-        "$type": "dimension",
-        "$value": "{lux.space.100}"
+        "value": "{lux.space.100}",
+        "type": "dimension"
       },
       "button": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.background.subdued}"
+          "value": "{lux.color.background.subdued}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.none}"
+          "value": "{lux.color.none}",
+          "type": "color"
         },
         "border-radius": {
-          "$type": "dimension",
-          "$value": "{lux.border-radius.default}"
+          "value": "{lux.border-radius.default}",
+          "type": "dimension"
         },
         "border-width": {
-          "$type": "dimension",
-          "$value": "{lux.border-width.default}"
+          "value": "{lux.border-width.default}",
+          "type": "dimension"
         },
         "color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "gap": {
-          "$type": "dimension",
-          "$value": "{lux.space.100}"
+          "value": "{lux.space.100}",
+          "type": "dimension"
         },
         "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{lux.space.150}"
+          "value": "{lux.space.150}",
+          "type": "dimension"
         },
         "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{lux.space.150}"
+          "value": "{lux.space.150}",
+          "type": "dimension"
         },
         "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{lux.space.200}"
+          "value": "{lux.space.200}",
+          "type": "dimension"
         },
         "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{lux.space.200}"
+          "value": "{lux.space.200}",
+          "type": "dimension"
         },
         "icon": {
           "size": {
-            "$type": "dimension",
-            "$value": "{lux.size.icon}"
+            "value": "{lux.size.icon}",
+            "type": "dimension"
           }
         },
         "active": {
           "background-color": {
-            "$type": "color",
-            "$value": "{lux.color.grijs.400}"
+            "value": "{lux.color.grijs.400}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.none}"
+            "value": "{lux.color.none}",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           }
         },
         "hover": {
           "background-color": {
-            "$type": "color",
-            "$value": "{lux.color.background.hover}"
+            "value": "{lux.color.background.hover}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.none}"
+            "value": "{lux.color.none}",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           }
         },
         "focus-visible": {
           "background-color": {
-            "$type": "color",
-            "$value": "{lux.color.background.subdued}"
+            "value": "{lux.color.background.subdued}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.none}"
+            "value": "{lux.color.none}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "dimension",
-            "$value": "{lux.border-width.default}"
+            "value": "{lux.border-width.default}",
+            "type": "dimension"
           },
           "color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           }
         }
       },
       "panel": {
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.none}"
+          "value": "{lux.color.none}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "dimension",
-          "$value": "{lux.border-width.default}"
+          "value": "{lux.border-width.default}",
+          "type": "dimension"
         },
         "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{lux.space.400}"
+          "value": "{lux.space.400}",
+          "type": "dimension"
         },
         "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{lux.space.200}"
+          "value": "{lux.space.200}",
+          "type": "dimension"
         },
         "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{lux.space.400}"
+          "value": "{lux.space.400}",
+          "type": "dimension"
         },
         "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{lux.space.400}"
+          "value": "{lux.space.400}",
+          "type": "dimension"
         }
       },
       "section": {
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.feedback.error.default}"
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "dimension",
-          "$value": "{lux.border-width.default}"
+          "value": "{lux.border-width.default}",
+          "type": "dimension"
         },
         "margin-block-end": {
-          "$type": "dimension",
-          "$value": "0px",
-          "$description": "[code-only]"
+          "value": "0px",
+          "description": "[code-only]",
+          "type": "dimension"
         },
         "margin-block-start": {
-          "$type": "dimension",
-          "$value": "0px",
-          "$description": "[code-only]"
+          "value": "0px",
+          "description": "[code-only]",
+          "type": "dimension"
         },
         "hover": {
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.feedback.success.default}"
+            "value": "{lux.color.feedback.success.default}",
+            "type": "color"
           }
         }
       }
@@ -167,20 +167,20 @@
     "accordion": {
       "button": {
         "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{utrecht.button.font-family}"
+          "value": "{utrecht.button.font-family}",
+          "type": "fontFamilies"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.button.font-size}"
+          "value": "{utrecht.button.font-size}",
+          "type": "fontSizes"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{utrecht.button.font-weight}"
+          "value": "{utrecht.button.font-weight}",
+          "type": "fontWeights"
         },
         "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.button.line-height}"
+          "value": "{utrecht.button.line-height}",
+          "type": "lineHeights"
         }
       }
     }

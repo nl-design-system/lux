@@ -3,38 +3,38 @@
     "action": {
       "activate": {
         "cursor": {
-          "$type": "other",
-          "$value": "pointer"
+          "value": "pointer",
+          "type": "other"
         }
       },
       "busy": {
         "cursor": {
-          "$type": "other",
-          "$value": "wait"
+          "value": "wait",
+          "type": "other"
         }
       },
       "disabled": {
         "cursor": {
-          "$type": "other",
-          "$value": "not-allowed"
+          "value": "not-allowed",
+          "type": "other"
         }
       },
       "inert": {
         "cursor": {
-          "$type": "other",
-          "$value": "default"
+          "value": "default",
+          "type": "other"
         }
       },
       "navigate": {
         "cursor": {
-          "$type": "other",
-          "$value": "pointer"
+          "value": "pointer",
+          "type": "other"
         }
       },
       "submit": {
         "cursor": {
-          "$type": "other",
-          "$value": "pointer"
+          "value": "pointer",
+          "type": "other"
         }
       }
     }

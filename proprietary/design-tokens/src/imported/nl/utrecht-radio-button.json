@@ -2,196 +2,196 @@
   "utrecht": {
     "radio-button": {
       "border-width": {
-        "$type": "borderWidth",
-        "$value": "0.094rem"
+        "value": "0.094rem",
+        "type": "borderWidth"
       },
       "size": {
-        "$type": "sizing",
-        "$value": "1.125rem"
+        "value": "1.125rem",
+        "type": "sizing"
       },
       "icon": {
         "size": {
-          "$type": "sizing",
-          "$value": "0.625rem"
+          "value": "0.625rem",
+          "type": "sizing"
         }
       },
       "background-color": {
-        "$type": "color",
-        "$value": "{lux.color.background.default}"
+        "value": "{lux.color.background.default}",
+        "type": "color"
       },
       "border-color": {
-        "$type": "color",
-        "$value": "{lux.color.foreground.default}"
+        "value": "{lux.color.foreground.default}",
+        "type": "color"
       },
       "color": {
-        "$type": "color",
-        "$value": "{utrecht.radio-button.border-color}"
+        "value": "{utrecht.radio-button.border-color}",
+        "type": "color"
       },
       "invalid": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.feedback.error.default}"
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.feedback.error.default}"
+          "value": "{lux.color.feedback.error.default}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{utrecht.radio-button.invalid.border-color}"
+          "value": "{utrecht.radio-button.invalid.border-color}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{utrecht.radio-button.border-width}"
+          "value": "{utrecht.radio-button.border-width}",
+          "type": "borderWidth"
         }
       },
       "hover": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.background.default}"
+          "value": "{lux.color.background.default}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{utrecht.radio-button.hover.border-color}"
+          "value": "{utrecht.radio-button.hover.border-color}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "0.125rem"
+          "value": "0.125rem",
+          "type": "borderWidth"
         }
       },
       "active": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.background.default}"
+          "value": "{lux.color.background.default}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{utrecht.radio-button.active.border-color}"
+          "value": "{utrecht.radio-button.active.border-color}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{utrecht.radio-button.border-width}"
+          "value": "{utrecht.radio-button.border-width}",
+          "type": "borderWidth"
         }
       },
       "disabled": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.canvas}"
+          "value": "{lux.color.canvas}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.border.subdued}"
+          "value": "{lux.color.border.subdued}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{lux.color.border.subdued}"
+          "value": "{lux.color.border.subdued}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{utrecht.radio-button.border-width}"
+          "value": "{utrecht.radio-button.border-width}",
+          "type": "borderWidth"
         }
       },
       "focus": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.background.default}"
+          "value": "{lux.color.background.default}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "0.125rem"
+          "value": "0.125rem",
+          "type": "borderWidth"
         }
       },
       "checked": {
         "background-color": {
-          "$type": "color",
-          "$value": "{lux.color.background.default}"
+          "value": "{lux.color.background.default}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{lux.color.foreground.default}"
+          "value": "{lux.color.foreground.default}",
+          "type": "color"
         },
         "hover": {
           "background-color": {
-            "$type": "color",
-            "$value": "{lux.color.background.default}"
+            "value": "{lux.color.background.default}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "borderWidth",
-            "$value": "0.125rem"
+            "value": "0.125rem",
+            "type": "borderWidth"
           }
         },
         "active": {
           "background-color": {
-            "$type": "color",
-            "$value": "{lux.color.background.default}"
+            "value": "{lux.color.background.default}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "borderWidth",
-            "$value": "{utrecht.radio-button.border-width}"
+            "value": "{utrecht.radio-button.border-width}",
+            "type": "borderWidth"
           }
         },
         "focus": {
           "background-color": {
-            "$type": "color",
-            "$value": "{lux.color.background.default}"
+            "value": "{lux.color.background.default}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{lux.color.foreground.default}"
+            "value": "{lux.color.foreground.default}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "borderWidth",
-            "$value": "0.125rem"
+            "value": "0.125rem",
+            "type": "borderWidth"
           }
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{utrecht.radio-button.border-width}"
+          "value": "{utrecht.radio-button.border-width}",
+          "type": "borderWidth"
         }
       },
       "margin-inline-end": {
-        "$type": "spacing",
-        "$value": "{lux.space.100}"
+        "value": "{lux.space.100}",
+        "type": "spacing"
       }
     }
   }

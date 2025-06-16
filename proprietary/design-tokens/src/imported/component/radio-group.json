@@ -2,16 +2,16 @@
   "lux": {
     "radio-group": {
       "padding-block-start": {
-        "$type": "spacing",
-        "$value": "{lux.space.0}"
+        "value": "{lux.space.0}",
+        "type": "spacing"
       },
       "padding-block-end": {
-        "$type": "spacing",
-        "$value": "{lux.space.0}"
+        "value": "{lux.space.0}",
+        "type": "spacing"
       },
       "row-gap": {
-        "$type": "spacing",
-        "$value": "{lux.space.100}"
+        "value": "{lux.space.100}",
+        "type": "spacing"
       }
     }
   }
