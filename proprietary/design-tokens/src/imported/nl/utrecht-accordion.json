@@ -111,7 +111,7 @@
       },
       "panel": {
         "border-color": {
-          "value": "{lux.color.none}",
+          "value": "{lux.color.background.default}",
           "type": "color"
         },
         "border-width": {
@@ -137,7 +137,7 @@
       },
       "section": {
         "border-color": {
-          "value": "{lux.color.feedback.error.default}",
+          "value": "{lux.color.background.subdued}",
           "type": "color"
         },
         "border-width": {
@@ -156,7 +156,7 @@
         },
         "hover": {
           "border-color": {
-            "value": "{lux.color.feedback.success.default}",
+            "value": "{lux.color.background.hover}",
             "type": "color"
           }
         }
