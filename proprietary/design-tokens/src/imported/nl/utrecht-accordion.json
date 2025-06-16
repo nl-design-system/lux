@@ -13,7 +13,7 @@
       },
       "row-gap": {
         "$type": "dimension",
-        "$value": "0px"
+        "$value": "{lux.space.100}"
       },
       "button": {
         "background-color": {
