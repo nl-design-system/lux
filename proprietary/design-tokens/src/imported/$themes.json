@@ -897,8 +897,7 @@
       "nl/utrecht-checkbox": "enabled",
       "nl/utrecht-textarea": "enabled",
       "nl/utrecht-skip-link": "enabled",
-      "nl/utrecht-action": "enabled",
-      "nl/utrecht-accordion-mark": "enabled"
+      "nl/utrecht-action": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4948:761",
     "$figmaModeId": "4948:0",
