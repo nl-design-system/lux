@@ -2,41 +2,41 @@
   "utrecht": {
     "form-field-description": {
       "color": {
-        "type": "color",
-        "value": "{lux.color.foreground.subdued}"
+        "$type": "color",
+        "$value": "{lux.color.foreground.subdued}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-size": {
-        "value": "{lux.font-size.body.default}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.body.default}"
       },
       "line-height": {
-        "value": "{lux.line-height.body.default}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.body.default}"
       },
       "invalid": {
         "color": {
-          "value": "{lux.color.foreground.subdued}",
-          "type": "color",
-          "description": "Checkvraag dev: bestaat deze echt in code? "
+          "$type": "color",
+          "$value": "{lux.color.foreground.subdued}",
+          "$description": "Checkvraag dev: bestaat deze echt in code? "
         }
       },
       "valid": {
         "color": {
-          "value": "{lux.color.foreground.subdued}",
-          "type": "color",
-          "description": "Checkvraag dev: bestaat deze echt in code? "
+          "$type": "color",
+          "$value": "{lux.color.foreground.subdued}",
+          "$description": "Checkvraag dev: bestaat deze echt in code? "
         }
       }
     },
     "invalid": {
       "font-weight": {
-        "value": "{no-token}",
-        "type": "fontWeights",
-        "description": "Controle vraag aan devs: bestaat deze echt in utrecht code?"
+        "$type": "fontWeights",
+        "$value": "{no-token}",
+        "$description": "Controle vraag aan devs: bestaat deze echt in utrecht code?"
       }
     }
   }

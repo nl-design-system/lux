@@ -3,68 +3,68 @@
     "form-field-error-message": {
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "1.5rem"
+          "$type": "sizing",
+          "$value": "1.5rem"
         },
         "color": {
-          "value": "{lux.color.feedback.error.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.feedback.error.default}"
         }
       },
       "color": {
-        "type": "color",
-        "value": "{lux.color.feedback.error.default}"
+        "$type": "color",
+        "$value": "{lux.color.feedback.error.default}"
       },
       "font-family": {
-        "value": "{lux.font-family.primary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{lux.font-family.primary}"
       },
       "font-size": {
-        "value": "{lux.font-size.body.default}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{lux.font-size.body.default}"
       },
       "font-weight": {
-        "value": "{lux.font-weight.regular}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{lux.font-weight.regular}"
       },
       "background-color": {
-        "value": "{lux.color.none}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.none}"
       },
       "padding-block-end": {
-        "value": "{lux.space.0}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.0}"
       },
       "padding-block-start": {
-        "value": "{lux.space.0}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.0}"
       },
       "padding-inline-end": {
-        "value": "{lux.space.0}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.0}"
       },
       "padding-inline-start": {
-        "value": "{lux.space.0}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.0}"
       },
       "column-gap": {
-        "value": "{lux.space.100}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{lux.space.100}"
       },
       "line-height": {
-        "value": "{lux.line-height.body.default}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{lux.line-height.body.default}"
       },
       "border-color": {
-        "value": "{lux.color.none}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{lux.color.none}"
       }
     },
     "alert": {
       "icon": {
         "inset-block-start": {
-          "value": "{lux.space.25}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{lux.space.25}"
         }
       }
     }
@@ -72,13 +72,13 @@
   "todo": {
     "form-field-error-message": {
       "border-radius": {
-        "value": "{lux.border-radius.default}",
-        "type": "borderRadius",
-        "description": "todo token"
+        "$type": "borderRadius",
+        "$value": "{lux.border-radius.default}",
+        "$description": "todo token"
       },
       "border-width": {
-        "value": "{lux.border-width.default}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{lux.border-width.default}"
       }
     }
   }

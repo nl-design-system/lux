@@ -2,8 +2,8 @@
   "utrecht": {
     "pointer-target": {
       "min-size": {
-        "value": "{lux.size.target}",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "{lux.size.target}"
       }
     }
   }
