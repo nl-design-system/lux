@@ -3,57 +3,57 @@
     "form-fieldset": {
       "legend": {
         "color": {
-          "value": "{lux.color.brand.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.brand.default}"
         },
         "font-family": {
-          "value": "{lux.font-family.primary}",
-          "type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{lux.font-family.primary}"
         },
         "font-size": {
-          "value": "{lux.font-size.heading.level-3}",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "{lux.font-size.heading.level-3}"
         },
         "font-weight": {
-          "value": "{lux.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{lux.font-weight.bold}"
         },
         "line-height": {
-          "value": "{lux.line-height.heading.level-3}",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "{lux.line-height.heading.level-3}"
         },
         "disabled": {
           "color": {
-            "value": "{lux.color.foreground.subdued}",
-            "type": "color",
-            "description": "Do not use a disabled state"
+            "$type": "color",
+            "$value": "{lux.color.foreground.subdued}",
+            "$description": "Do not use a disabled state"
           }
         }
       },
       "section": {
         "background-color": {
-          "value": "{lux.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.none}"
         },
         "color": {
-          "value": "{lux.color.foreground.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{lux.color.foreground.default}"
         }
       },
       "invalid": {
         "border-inline-start": {
           "color": {
-            "value": "{utrecht.form-field.invalid.border-inline-start-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{utrecht.form-field.invalid.border-inline-start-color}"
           }
         },
         "border-inline-start-width": {
-          "value": "{utrecht.form-field.invalid.border-inline-start-width}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{utrecht.form-field.invalid.border-inline-start-width}"
         },
         "padding-inline-start": {
-          "value": "{utrecht.form-field.invalid.padding-inline-start}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{utrecht.form-field.invalid.padding-inline-start}"
         }
       }
     }
