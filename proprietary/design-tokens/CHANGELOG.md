@@ -1,5 +1,18 @@
 # @lux-design-system/design-tokens
 
+## 2.1.0
+
+### Minor Changes
+
+- 7efe245: Nieuwe tokens: utrecht component skip link
+- 2f03243: Wijziging tokens: padding section waardes aangepast zodat ze responsive zijn.
+
+### Patch Changes
+
+- fb0eb34: Wijzig tokens: hover en focus tokens van de inputs gelijk getrokken
+- 2462274: Bugfix: select focus outline correctie
+- 5bbd6c2: Voeg Utrecht action design tokens voor correct cursor in Button component
+
 ## 2.0.0
 
 ### Major Changes
