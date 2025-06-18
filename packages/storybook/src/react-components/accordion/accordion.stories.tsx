@@ -98,3 +98,35 @@ export const AccordionWithMultipleSections: Story = {
   },
   name: 'Accordion with sections',
 };
+
+export const Hover: Story = {
+  ...Default,
+  name: 'Hover',
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const Active: Story = {
+  ...Default,
+  name: 'Active',
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const Focus: Story = {
+  ...Default,
+  name: 'Focus',
+  parameters: {
+    pseudo: { focus: true },
+  },
+};
+
+export const FocusVisible: Story = {
+  ...Default,
+  name: 'Focus Visible',
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
+};
