@@ -5,6 +5,6 @@
   }
 
   &:visited {
-    color: var(--lux-color-paars-500);
+    color: var(--utrecht-link-visited-color);
   }
 }

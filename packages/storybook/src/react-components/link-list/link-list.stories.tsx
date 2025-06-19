@@ -75,16 +75,18 @@ const LinkListTemplate: Story = {
 };
 
 const LinkListWithOneItemTemplate: Story = {
-  args: {
-    icon: () => ExampleIcon,
-    links: [
-      {
-        href: '#',
-        children: 'Link 1!',
-      },
-    ],
-  },
-  render: ({ ...args }: LuxLinkListProps) => <LuxLinkList {...args} />,
+  render: ({ ...args }: LuxLinkListProps, context) => (
+    <LuxLinkList
+      {...args}
+      icon={() => ExampleIcon}
+      links={[
+        {
+          href: `#${context.name}`,
+          children: 'Link 1!',
+        },
+      ]}
+    />
+  ),
 };
 
 export const Playground: Story = {
