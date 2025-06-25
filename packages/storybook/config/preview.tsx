@@ -134,13 +134,9 @@ const preview: Preview = {
       storySort: {
         order: [
           'LUX',
-          [
-            'Intro',
-            'Aan de slag',
-            ['Managers', 'Designers', 'Developers', 'Veelgestelde vragen'],
-            'Architectuur',
-            ['NL Design System'],
-          ],
+          ['Start', 'Wat is LUX?', 'NL Design System', '*', 'Changelogs'],
+          'Aan de slag',
+          ['Ontwerpen', ['Aan de slag'], 'Ontwikkelen', ['Aan de slag', 'Frameworks', 'Design tokens'], 'Bijdragen'],
           'Design Tokens',
           ['Design Tokens', 'Core', 'Common'],
           'React Components',
