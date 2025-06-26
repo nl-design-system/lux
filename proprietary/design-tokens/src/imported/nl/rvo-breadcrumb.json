@@ -60,12 +60,6 @@
             "value": "None"
           }
         },
-        "current": {
-          "color": {
-            "type": "color",
-            "value": "{lux.color.foreground.default}"
-          }
-        },
         "hover": {
           "color": {
             "type": "color",
@@ -79,6 +73,12 @@
         "text-decoration": {
           "type": "textDecoration",
           "value": "underline"
+        }
+      },
+      "current": {
+        "color": {
+          "type": "color",
+          "value": "{lux.color.foreground.default}"
         }
       },
       "item": {
