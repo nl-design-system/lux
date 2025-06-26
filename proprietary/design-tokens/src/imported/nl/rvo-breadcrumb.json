@@ -22,11 +22,11 @@
         "value": "{lux.line-height.body.default}"
       },
       "link": {
+        "column-gap": {
+          "type": "dimension",
+          "value": "{lux.space.50}"
+        },
         "icon": {
-          "column-gap": {
-            "type": "dimension",
-            "value": "{lux.space.50}"
-          },
           "size": {
             "type": "dimension",
             "value": "{lux.size.icon}"
@@ -97,6 +97,10 @@
         "padding-inline-start": {
           "type": "dimension",
           "value": "{lux.space.0}"
+        },
+        "min-block-size": {
+          "value": "{lux.size.target}",
+          "type": "dimension"
         }
       },
       "separator": {
