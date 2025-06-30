@@ -1,44 +1,6 @@
-import { Meta } from "@storybook/blocks";
+import { Markdown, Meta } from "@storybook/blocks";
+import markdown from "./design-tokens-mappen.md?raw";
 
 <Meta title="Aan de slag/Ontwikkelen/Tokens toepassen" />
 
-# Design tokens toepassen op je eigen componenten
-
-**Let op: direct gebruik van design tokens is niet ondersteund**
-
-LUX raad aan om LUX componenten te gebruiken zodat je geen onderhoud hebt aan componenten en de tokens die daar voor nodig zijn.
-
-## Waarom?
-
-Er kunnen situaties zijn waar je (nog) niet gebruik wilt of kunt maken van LUX componenten. Bijvoorbeeld als je een eigen component library hebt die je wel al met design tokens wilt laten voldoen aan de designs in Figma. Dan is direct de design tokens toepassen mogelijk een optie. Houdt er rekening mee dat je zelf verantwoordelijk bent voor het correct laten werken en bijhouden van de tokens in jouw code.
-
-## Hoe werkt het
-
-- Je laad een LUX thema in via een css import
-- Zet je eigen component tokens op volgens de richtlijnen
-- Je eigen component tokens vul je met tokens uit het thema
-- Pas deze component tokens toe in je eigen componenten
-
-## Eigen component tokens instellen
-
-We raden je aan om in een apart bestand naast je component je eigen component tokens in te stellen. Zo
-
-```css
-/* my-button-tokens.scss */
-.my-button {
-  --my-button-background-color: var(--lux-background-color);
-}
-```
-
-## Tokens uit het thema kiezen
-
-## Wat als de LUX UI kit het component niet heeft
-
-## Voorbeeld
-
-```css
-/* my-button.scss */
-.my-button {
-  background-color: var(--my-button-background-color, #999999);
-}
-```
+<Markdown>{markdown}</Markdown>

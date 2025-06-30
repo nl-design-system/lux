@@ -1,42 +1,6 @@
-import { Meta } from "@storybook/blocks";
+import { Markdown, Meta } from "@storybook/blocks";
+import markdown from "./nl-design-system.md?raw";
 
 <Meta title="LUX/NL Design System" />
 
-[nlds]: https://www.nldesignsystem.nl/
-[nlds-community]: https://www.nldesignsystem.nl/community
-[nlds-estafette]: https://www.nldesignsystem.nl/handboek/estafettemodel
-[design-tokens]: /docs/design-tokens-design-tokens
-[nlds-example]: https://github.com/nl-design-system/example
-[frameworks]: /docs/lux-architectuur-frameworks-support--docs
-[kwaliteit-componenten]: /docs/lux-architectuur-kwaliteitseisen-componenten--docs
-
-# NL Design System
-
-Het [NL Design System][nlds] helpt overheden om robuuste, toegankelijke, inclusieve en gebruikersvriendelijke websites te bouwen. Dat doet NL Design System door een actieve community te faciliteren en door middel van open discussies tot richtlijnen en componenten te komen.
-Daar naast hanteert het NL Design System een [estafettemodel][nlds-estafette] dat er per stap voor zorgt dat componenten steeds beter, vollediger en conreter gemaakt worden.
-
-## LUX als implementatie
-
-LUX is een implementatie van het NL Design System binnen Logius. LUX hanteert daarom de [NL Design System richtlijnen](https://www.nldesignsystem.nl/richtlijnen), we volgen het [NL Design System Handboek](https://www.nldesignsystem.nl/handboek/introductie/) en implementeren de [NL Design System architectuur](https://www.nldesignsystem.nl/handboek/developer/architectuur).
-
-In de praktijk betekend dit voornamelijk dat:
-
-- Onze designs in Figma zijn uitgewerkt
-- We werken met design tokens en deze zoveel als mogelijk hebben ingericht naar het voorbeeld van NL Design System
-- We actief in de [NL Design System Community][nlds-community] deelnemen en bijdragen
-- We community componenten zoveel mogelijk herbruiken, ook als dit ietsjes minder mooi
-- We open-source werken in de Github groep van het NL Design System
-
-### Design Tokens
-
-Lees hier meer over onze [design tokens][design-tokens].
-
-### Repository
-
-Naast het gebruik van design tokens gebruikt LUX de [NL Design System example repository][nlds-example] als startpunt voor de LUX codebase.
-De example repository biedt een monorepo van waaruit verschillende packages opgebouwd en beheerd kunnen worden. Daarbij biedt de example repository een Storybook inrichting die componenten uit meerdere frameworks kan laten zien.
-
-### Componenten
-
-LUX volgt de uitkomsten van community discussies voor het stijlen en bouwen van componenten. Waarbij LUX zoveel mogelijk techniek uit de community wilt herbruiken. Je ziet daarom op verschillende plekken het gebruik van deze community componenten terugkomen in LUX.
-Bekijk hier de [kwaliteitscriteria voor componenten][kwaliteit-componenten] in LUX en welke [frameworks][frameworks] LUX ondersteund.
+<Markdown>{markdown}</Markdown>
