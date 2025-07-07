@@ -4,7 +4,7 @@ Je wilt wel LUX gebruiken maar kan nog niet de LUX componenten toepassen. Om het
 
 ## Disclaimers
 
-**Let op:** LUX is opgezet met het idee dat je LUX componenten gebruikt en zo zelf geen componenten hoeft te onderhouden. Er is daarom, naast deze handleiding, geen support vanuit LUX bij het direct zelf toepassen van design tokens. Houdt er rekening mee dat je zelf de tokens zult moeten bijwerken als er iets wijzigt in jouw thema.
+**Let op:** LUX is opgezet met het idee dat je LUX componenten gebruikt en zo zelf geen componenten hoeft te onderhouden of tokens hoeft in te stellen. Er is daarom, naast deze handleiding, geen support vanuit LUX bij het direct zelf toepassen van design tokens of garantie dat dit vlekkeloos werkt. Houdt er rekening mee dat je zelf de tokens zult moeten bijwerken als er iets wijzigt in jouw thema.
 
 ## Hoe werkt het
 
@@ -24,17 +24,17 @@ We raden je aan om in een apart bestand naast je component je eigen component to
 
 Zo moet je je tokens noemen: [NL Design System Handboek/Design Tokens/Naamgeving](https://nldesignsystem.nl/handboek/design-tokens/#naamgeving):
 
-1. Prefix (verplicht)
-2. Block (verplicht)
-3. Element (optioneel)
-4. Modifier (optioneel)
-5. Property (verplicht)
+1. Prefix (verplicht, bv: --gg, --mo, --dgd enz)
+2. Block (verplicht, bv: button)
+3. Element (optioneel, bv: icon)
+4. Modifier (optioneel, bv: primary-action)
+5. Property (verplicht, bv: background-color)
 
 Kijk in de UI kit in Figma voor tokens die LUX gebruikt worden in componenten die LUX beschikbaar heeft en gebruik deze:
 
 ```css
 .my-button {
-  --prefix-button-primary-action-background-color: var(--utrecht-button-primary-action-background-color);
+  --jouwPrefix-button-primary-action-background-color: var(--utrecht-button-primary-action-background-color);
 }
 ```
 
@@ -42,4 +42,4 @@ Kijk in de UI kit in Figma voor tokens die LUX gebruikt worden in componenten di
 
 Voor alle componenten in de LUX UI kit heeft LUX al een mapping gemaakt van de common laag naar de component tokens. Als je componenten die niet in de UI kit staan wilt stijlen met design tokens zul je zelf de juiste common tokens moeten toepassen.
 
-Jouw designer krijgt tijdens het inwerken op LUX uitleg over de opzet van design tokens en toepassing binnen jouw thema. Stem met jouw designer af welke tokens je in dit geval het beste kan gebruiken.
+Jouw designer krijgt tijdens het inwerken op LUX uitleg over de opzet van design tokens en toepassing binnen jouw thema. Stem met jouw designer af welke tokens je in dit geval het beste kan gebruiken. Houdt je zoveel mogelijk aan de common laag conventies om te voorkomen dat je bij wijzigingen in jouw thema ook veel tokens moet bijwerken.
