@@ -1,7 +1,3 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="LUX/Wat is LUX" />
-
 # Wat is LUX?
 
 ## Wat is een design system?

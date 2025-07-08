@@ -17,10 +17,10 @@ LUX is een implementatie van het NL Design System binnen Logius. LUX hanteert da
 
 In de praktijk betekend dit voornamelijk dat:
 
-- Onze designs in Figma zijn uitgewerkt
+- Onze designs in Figma zijn uitgewerkt op basis van het voorbeeld van NL Design System
 - We werken met design tokens en deze zoveel als mogelijk hebben ingericht naar het voorbeeld van NL Design System
 - We actief in de [NL Design System Community][nlds-community] deelnemen en bijdragen
-- We community componenten zoveel mogelijk herbruiken, ook als dit ietsjes minder mooi
+- We community componenten zoveel mogelijk herbruiken
 - We open-source werken in de Github groep van het NL Design System
 
 ### Design Tokens
