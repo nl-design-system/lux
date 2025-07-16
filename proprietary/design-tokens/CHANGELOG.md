@@ -1,5 +1,11 @@
 # @lux-design-system/design-tokens
 
+## 2.2.0
+
+### Minor Changes
+
+- 31d4877: Add Accordion component
+
 ## 2.1.0
 
 ### Minor Changes

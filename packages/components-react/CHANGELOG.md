@@ -1,5 +1,12 @@
 # @lux-design-system/components-react
 
+## 1.2.0
+
+### Minor Changes
+
+- a6d5673: Added LinkList component
+- 31d4877: Add Accordion component
+
 ## 1.1.1
 
 ### Patch Changes
