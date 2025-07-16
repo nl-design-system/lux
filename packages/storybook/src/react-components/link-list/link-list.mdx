@@ -1,0 +1,46 @@
+import { Canvas, Controls, Description, Meta } from "@storybook/blocks";
+import * as LinkListStories from "./link-list.stories.tsx";
+import { CitationDocumentation } from "../../utils/CitationDocumentation.tsx";
+
+<Meta of={LinkListStories} />
+
+# LinkList
+
+<CitationDocumentation
+  component="Utrecht LinkList"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-link-list--docs"
+/>
+
+Links met een pijl als voorloopteken worden gebruikt aan het einde van een tekst. Ze verwijzen naar gerelateerde informatie over het onderwerp wat er in de voorafgaande tekst is besproken.
+
+## Playground
+
+<Canvas of={LinkListStories.Playground} />
+<Controls of={LinkListStories.Playground} />
+
+## Variants
+
+### Active
+
+<Description of={LinkListStories.Active} />
+<Canvas of={LinkListStories.Active} />
+
+### Focus
+
+<Description of={LinkListStories.Focus} />
+<Canvas of={LinkListStories.Focus} />
+
+### Hover
+
+<Description of={LinkListStories.Hover} />
+<Canvas of={LinkListStories.Hover} />
+
+### Visited
+
+<Description of={LinkListStories.Visited} />
+<Canvas of={LinkListStories.Visited} />
+
+### Item With Different Icon
+
+<Description of={LinkListStories.ListItemWithDifferentIcon} />
+<Canvas of={LinkListStories.ListItemWithDifferentIcon} />

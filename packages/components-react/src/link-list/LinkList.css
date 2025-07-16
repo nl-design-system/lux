@@ -1,0 +1,10 @@
+.utrecht-link.utrecht-link-list__link {
+  &:active,
+  &:hover {
+    --utrecht-link-hover-text-decoration: var(--lux-link-list-link-hover-text-decoration);
+  }
+
+  &:visited {
+    color: var(--utrecht-link-visited-color);
+  }
+}

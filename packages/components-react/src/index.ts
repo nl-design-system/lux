@@ -39,6 +39,7 @@ export {
 } from './form-field-radio-option/FormFieldRadioOption';
 export { LuxFormFieldRadioGroup, type LuxFormFieldRadioGroupProps } from './form-field-radio-group/FormFieldRadioGroup';
 export { LuxLink, type LuxLinkProps } from './link/Link';
+export { LuxLinkList, type LuxLinkListProps, LuxLinkListLink, type LuxLinkListLinkProps } from './link-list/LinkList';
 export { LuxPreHeading, type LuxPreHeadingProps } from './pre-heading/PreHeading';
 export { LuxSection, type LuxSectionProps } from './section/Section';
 export { LuxSelect, LuxSelectOption, type LuxSelectProps, type LuxSelectOptionProps } from './select/Select';
