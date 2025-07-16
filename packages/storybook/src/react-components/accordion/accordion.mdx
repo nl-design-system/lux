@@ -1,0 +1,45 @@
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/accordion-css/README.md?raw";
+import * as AccordionStories from "./accordion.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={AccordionStories} />
+
+# Accordion
+
+<CitationDocumentation
+  component="Utrecht Accordion"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-accordion--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={AccordionStories.Default} />
+<Controls of={AccordionStories.Default} />
+
+## Variants
+
+### With Sections
+
+<Description of={AccordionStories.AccordionWithMultipleSections} />
+<Canvas of={AccordionStories.AccordionWithMultipleSections} />
+
+## States
+
+### Hover
+
+<Canvas of={AccordionStories.Hover} />
+
+### Active
+
+<Canvas of={AccordionStories.Active} />
+
+### Focus
+
+<Canvas of={AccordionStories.Focus} />
+
+### Focus Visible
+
+<Canvas of={AccordionStories.FocusVisible} />
