@@ -32,6 +32,8 @@
   --utrecht-paragraph-color: var(--utrecht-alert-color);
 
   .utrecht-alert__icon {
+    --utrecht-icon-inset-block-start: var(--lux-space-0);
+
     block-size: var(--lux-alert-heading-line-height);
   }
 }
