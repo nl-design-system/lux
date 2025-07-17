@@ -3,7 +3,7 @@
   margin-block-start: calc(
     (
         var(--utrecht-document-line-height, inherit) - var(--utrecht-radio-button-size, 1em) -
-          var(--_utrecht-radio-button-border-width)
+          var(--utrecht-radio-button-border-width)
       ) / 2
   );
   background-image: radial-gradient(
