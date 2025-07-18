@@ -24,7 +24,7 @@ export const LuxRadioButton = forwardRef(
         id={id}
         name={name}
         value={value}
-        className={`lux-radio-button ${className !== undefined ? className : ''}`}
+        className={clsx('lux-radio-button', className)`}
         checked={checked}
         {...restProps}
       />
