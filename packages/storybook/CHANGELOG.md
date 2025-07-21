@@ -1,5 +1,11 @@
 # @lux-design-system/storybook
 
+## 1.3.0
+
+### Minor Changes
+
+- 31d4877: Add Accordion component
+
 ## 1.2.0
 
 ### Minor Changes

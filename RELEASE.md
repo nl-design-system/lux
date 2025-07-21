@@ -31,3 +31,4 @@ De github pipeline herkent automatisch wanneer er een changeset file in ./change
 ## Documentatie changesets
 
 [Intro to using changesets](https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md)
+git pus
