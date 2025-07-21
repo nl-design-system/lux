@@ -329,8 +329,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0
       '@utrecht/button-css':
-        specifier: 1.2.0
-        version: 1.2.0
+        specifier: 2.2.0
+        version: 2.2.0
       '@utrecht/checkbox-css':
         specifier: 1.3.0
         version: 1.3.0
@@ -2932,8 +2932,8 @@ packages:
   '@utrecht/alert-css@1.1.0':
     resolution: {integrity: sha512-UeX8qfd9LppHg4C0PwkRB/BMh2U7i3NPVavKX6p2KNSM3k6tPWajkLehfNODtfgn0bFlcplIwC+Tw2cGPxmedQ==}
 
-  '@utrecht/button-css@1.2.0':
-    resolution: {integrity: sha512-aYqnmuT5HOshv8Kr9IvBsJef+2KNKRNwLPQHxNC2fSGXWDFzROAeChUr0A1Ylt45aAApAD/bxxIHHBAeS1PwEA==}
+  '@utrecht/button-css@2.2.0':
+    resolution: {integrity: sha512-Fooo1EN8Dla4XKdqAnvSI3yCqnh4XkwX0jmMWgm9czcyj4ahVYayEIz7zEg34J8Gd5bMbFmeakyaIU9/A9YAvQ==}
 
   '@utrecht/checkbox-css@1.3.0':
     resolution: {integrity: sha512-8V2mm6niueojETo8wmYaidnqZPt5HdUZhofHBwQDz7TKQcldM4Q9TD/eYt0T7SFWZTFC7XyZn/lJYetBD75Q5Q==}
@@ -10789,7 +10789,7 @@ snapshots:
 
   '@utrecht/alert-css@1.1.0': {}
 
-  '@utrecht/button-css@1.2.0': {}
+  '@utrecht/button-css@2.2.0': {}
 
   '@utrecht/checkbox-css@1.3.0': {}
 
