@@ -3,6 +3,7 @@ import {
   type RadioButtonProps as UtrechtRadioButtonProps,
 } from '@utrecht/component-library-react/dist/css-module';
 import './RadioButton.css';
+import clsx from 'clsx';
 import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 
 export type LuxRadioButtonProps = UtrechtRadioButtonProps & {
@@ -24,7 +25,7 @@ export const LuxRadioButton = forwardRef(
         id={id}
         name={name}
         value={value}
-        className={clsx('lux-radio-button', className)`}
+        className={clsx('lux-radio-button', className)}
         checked={checked}
         {...restProps}
       />
