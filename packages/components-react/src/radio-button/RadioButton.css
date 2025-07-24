@@ -1,0 +1,16 @@
+/* stylelint-disable scss/operator-no-newline-after */
+.lux-radio-button {
+  margin-block-start: calc(
+    (
+        var(--utrecht-document-line-height, inherit) - var(--utrecht-radio-button-size, 1em) -
+          var(--utrecht-radio-button-border-width)
+      ) / 2
+  );
+  background-image: radial-gradient(
+    circle,
+    var(--_utrecht-radio-button-color, transparent) calc((var(--_utrecht-radio-button-icon-size, 50%) / 2) - 5%),
+    var(--_utrecht-radio-button-background-color, currentColor) calc((var(--_utrecht-radio-button-icon-size, 50%) / 2))
+  );
+  min-inline-size: var(--utrecht-radio-button-size, 1em);
+  min-block-size: var(--utrecht-radio-button-size, 1em);
+}
