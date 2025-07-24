@@ -1,5 +1,12 @@
 # @lux-design-system/components-react
 
+## 1.2.1
+
+### Patch Changes
+
+- b97a9d2: Improved React Alert component styling for font and icon-positioning
+- 360505e: Radio button size improvements
+
 ## 1.2.0
 
 ### Minor Changes
