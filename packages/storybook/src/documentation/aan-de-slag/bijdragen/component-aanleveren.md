@@ -1,4 +1,19 @@
-# Community Component Aanleveren
+# Component Aanleveren
+
+Mis jij een component bij LUX of heb je zelf een goed component ontwikkeld? Je kan deze zelf aanleveren door de stappen op deze pagina te volgen.
+
+## Wanneer kan je een component aanleveren?
+
+In de volgende gevallen kan je een component bij LUX aanleveren:
+
+- Het component is nog niet beschikbaar in LUX
+- Het component is nog niet in framework beschikbaar dat jij nodig hebt
+
+LUX componenten moeten aan een groot aantal vereisten voldoen voordat het component in LUX opgenomen kan worden. Lees deze goed door zodat je zelf al zoveel mogelijk doet. Neem contact op met LUX om jou te helpen het component helemaal geschikt te maken.
+
+## Community component gebruiken
+
+## Zelf bouwen
 
 [github-button]: https://github.com/nl-design-system/lux/tree/main/packages/storybook/src/web-components/button/button.mdx#L13
 [lux-button]: /docs/web-components-button--docs
