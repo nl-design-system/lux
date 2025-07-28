@@ -1,5 +1,11 @@
 # @lux-design-system/storybook
 
+## 1.3.1
+
+### Patch Changes
+
+- b97a9d2: Improved React Alert component styling for font and icon-positioning
+
 ## 1.3.0
 
 ### Minor Changes
