@@ -1,6 +1,4 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="LUX/Architectuur/Toegankelijkheid" />
+# Toegankelijkheid
 
 [storybook]: https://storybook.js.org/
 [storybook-a11y]: https://storybook.js.org/addons/@storybook/addon-a11y
@@ -9,8 +7,6 @@ import { Meta } from "@storybook/blocks";
 [estafettemodel]: https://www.nldesignsystem.nl/handboek/estafettemodel
 [community]: https://www.nldesignsystem.nl/community
 [nlds]: https://www.nldesignsystem.nl/
-
-# Toegankelijkheid
 
 LUX ontwerpt en bouwt componenten met gebruikersvriendelijkheid en toegankelijkheid als grootste focus. Het ontwerpen van een component gebeurd aan de hand van marktonderzoek, gebruikerstests en praktijkervaring. Deze kennis vindt je onder andere terug in de pagina's van elk component bij het [NL Design System][nlds]. Deze informatie is volgens het [estafettemodel][estafettemodel], open [community][community] discussies en praktijkgebruik tot stand gekomen.
 

@@ -1,7 +1,3 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="LUX/Aan de slag/Designers" />
-
 # Aan de slag als designer
 
 ## LUX UI kit

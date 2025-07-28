@@ -1,7 +1,3 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="LUX/Architectuur/Kwaliteitseisen componenten" />
-
 # Kwaliteitseisen componenten
 
 Alle componenten die aan LUX worden toegevoegd moeten voldoen aan dezelfde kwaliteitseisen. Dit noemen we ook wel de Component Definition of Done. Dat houdt in dat ze alle onderstaande fases hebben doorlopen en alle vragen beantwoord zijn.
