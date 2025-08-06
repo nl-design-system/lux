@@ -79,6 +79,36 @@ export const Disabled: Story = {
   },
 };
 
+export const Hover: Story = {
+  name: 'Hover',
+  args: {
+    ...Playground.args,
+  },
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
+
+export const Active: Story = {
+  name: 'Active',
+  args: {
+    ...Playground.args,
+  },
+  parameters: {
+    pseudo: { active: true },
+  },
+};
+
+export const Focus: Story = {
+  name: 'Focus',
+  args: {
+    ...Playground.args,
+  },
+  parameters: {
+    pseudo: { focus: true, focusVisible: true },
+  },
+};
+
 export const WithDescription: Story = {
   name: 'With Description',
   args: {
@@ -100,6 +130,57 @@ export const WithTarget: Story = {
           'Met `withTarget` wordt het hele component (behalve de foutmelding) een klikdoel. _Let op:_ dit kan voor gebruikers onverwacht zijn.',
       },
     },
+  },
+};
+
+export const HoverWithTarget: Story = {
+  name: 'Hover With Target',
+  args: {
+    ...Playground.args,
+    withTarget: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Met `withTarget` wordt het hele component (behalve de foutmelding) een klikdoel. _Let op:_ dit kan voor gebruikers onverwacht zijn.',
+      },
+    },
+    pseudo: { hover: true },
+  },
+};
+
+export const ActiveWithTarget: Story = {
+  name: 'Active With Target',
+  args: {
+    ...Playground.args,
+    withTarget: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Met `withTarget` wordt het hele component (behalve de foutmelding) een klikdoel. _Let op:_ dit kan voor gebruikers onverwacht zijn.',
+      },
+    },
+    pseudo: { active: true },
+  },
+};
+
+export const FocusWithTarget: Story = {
+  name: 'Fosus With Target',
+  args: {
+    ...Playground.args,
+    withTarget: true,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Met `withTarget` wordt het hele component (behalve de foutmelding) een klikdoel. _Let op:_ dit kan voor gebruikers onverwacht zijn.',
+      },
+    },
+    pseudo: { focus: true, focusVisible: true },
   },
 };
 
