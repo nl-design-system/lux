@@ -46,10 +46,6 @@
   content: "";
 }
 
-.lux-checkbox--with-target::after {
-  z-index: -1;
-}
-
 .lux-checkbox--with-target:hover::after {
   border-radius: var(--lux-checkbox-target-border-radius);
   background-color: var(--lux-checkbox-target-hover-background-color);
