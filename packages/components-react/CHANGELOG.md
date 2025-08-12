@@ -1,5 +1,11 @@
 # @lux-design-system/components-react
 
+## 1.2.2
+
+### Patch Changes
+
+- 42da7f2: Checkbox doesn't use force z-order settings anymore
+
 ## 1.2.1
 
 ### Patch Changes

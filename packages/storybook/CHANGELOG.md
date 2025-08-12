@@ -1,5 +1,11 @@
 # @lux-design-system/storybook
 
+## 1.4.0
+
+### Minor Changes
+
+- 15d5518: Refactor documentation structure and add token mapping docs
+
 ## 1.3.1
 
 ### Patch Changes
