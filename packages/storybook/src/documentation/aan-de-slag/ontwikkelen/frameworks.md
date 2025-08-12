@@ -1,11 +1,7 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="LUX/Architectuur/Frameworks support" />
+# Framework support
 
 [web-components]: /docs/web-components-alert--docs
 [react-components]: /docs/react-components-alert--docs
-
-# Framework support
 
 LUX biedt ondersteuning voor meerdere frameworks. Je bent dus niet verplicht om je aan een specifiek framework te houden als je van LUX gebruikt wilt maken. In de zijbalk zie je per framework welke componenten LUX op dit moment aanbiedt.
 Op dit moment heeft LUX componenten in [React][react-components] en [Web Componenten][web-components].

@@ -1,6 +1,4 @@
-import { Meta } from "@storybook/blocks";
-
-<Meta title="LUX/Architectuur/NL Design System" />
+# NL Design System
 
 [nlds]: https://www.nldesignsystem.nl/
 [nlds-community]: https://www.nldesignsystem.nl/community
@@ -9,8 +7,6 @@ import { Meta } from "@storybook/blocks";
 [nlds-example]: https://github.com/nl-design-system/example
 [frameworks]: /docs/lux-architectuur-frameworks-support--docs
 [kwaliteit-componenten]: /docs/lux-architectuur-kwaliteitseisen-componenten--docs
-
-# NL Design System
 
 Het [NL Design System][nlds] helpt overheden om robuuste, toegankelijke, inclusieve en gebruikersvriendelijke websites te bouwen. Dat doet NL Design System door een actieve community te faciliteren en door middel van open discussies tot richtlijnen en componenten te komen.
 Daar naast hanteert het NL Design System een [estafettemodel][nlds-estafette] dat er per stap voor zorgt dat componenten steeds beter, vollediger en conreter gemaakt worden.
@@ -21,10 +17,10 @@ LUX is een implementatie van het NL Design System binnen Logius. LUX hanteert da
 
 In de praktijk betekend dit voornamelijk dat:
 
-- Onze designs in Figma zijn uitgewerkt
+- Onze designs in Figma zijn uitgewerkt op basis van het voorbeeld van NL Design System
 - We werken met design tokens en deze zoveel als mogelijk hebben ingericht naar het voorbeeld van NL Design System
 - We actief in de [NL Design System Community][nlds-community] deelnemen en bijdragen
-- We community componenten zoveel mogelijk herbruiken, ook als dit ietsjes minder mooi
+- We community componenten zoveel mogelijk herbruiken
 - We open-source werken in de Github groep van het NL Design System
 
 ### Design Tokens

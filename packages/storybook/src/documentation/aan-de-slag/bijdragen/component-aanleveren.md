@@ -1,4 +1,19 @@
-# Community Component Aanleveren
+# Component Aanleveren
+
+Mis jij een component bij LUX of heb je zelf een goed component ontwikkeld? Je kan deze zelf aanleveren door de stappen op deze pagina te volgen.
+
+## Wanneer kan je een component aanleveren?
+
+In de volgende gevallen kan je een component bij LUX aanleveren:
+
+- Het component is nog niet beschikbaar in LUX
+- Het component is nog niet in framework beschikbaar dat jij nodig hebt
+
+LUX componenten moeten aan een groot aantal vereisten voldoen voordat het component in LUX opgenomen kan worden. Lees deze goed door zodat je zelf al zoveel mogelijk doet. Neem contact op met LUX om jou te helpen het component helemaal geschikt te maken.
+
+## Community component gebruiken
+
+## Zelf bouwen
 
 [github-button]: https://github.com/nl-design-system/lux/tree/main/packages/storybook/src/web-components/button/button.mdx#L13
 [lux-button]: /docs/web-components-button--docs
@@ -9,10 +24,21 @@
 [stencil]: https://stenciljs.com/docs/introduction
 [stencil-slots-doc]: https://stenciljs.com/docs/docs-json#slots
 [tsdoc]: https://tsdoc.org/
+[kwaliteit-componenten]: /docs/lux-kwaliteitseisen-componenten--docs
 
 Als gebruiker van LUX mag je ook componenten aandragen. Mocht het component al beschikbaar zijn in de [NL Design System community][nlds-components] is deze geschikt om bij LUX te betrekken. Dat kunnen wij voor je doen maar dat kan je zelf ook. Dan hoef je niet op ons te wachten. Handig toch?!
 
 Natuurlijk willen wij wel dat alle componenten op de zelfde wijze gebouwd worden zodat wij het allemaal makkelijker kunnen onderhouden. Om consistentie te waarborgen vertellen wij hier hoe je zelf een NLDS community component kunt aandragen als LUX component. Hier zijn de stappen.
+
+Voordat we componenten aan LUX toevoegen moeten een aantal checks, zoals beschreven op [Kwaliteitseisen Componenten][kwaliteit-componenten], uitgevoerd zijn.
+We helpen je graag met het uitvoeren van deze checks, maar je kan gerust ook zelf al proberen om de Onderzoeksfase te doorlopen en de resultaten met ons bespreken.
+
+Als de Onderzoeksfase is afgerond en het component geschikt is voor LUX zullen grofweg de volgende stappen doorlopen worden om het component in LUX te ontwikkelen:
+
+- Samen vaststellen op welke manier het component ontworpen en gebouwd zal worden.
+- Samen verdelen we de taken. In meeste gevallen bouw jij zelf het component in de LUX repository op in het framework dat je zelf wilt gebruiken.
+- Review van het component door LUX en eventueel andere LUX gebruikers.
+- Release van het component in de lux NPM packages.
 
 <!-- > **Waarom een wrapper?**
 >
