@@ -20,7 +20,6 @@
     "clean": "rimraf dist/",
     "lint-build": "tsc --noEmit --project tsconfig.json",
     "storybook": "storybook dev --config-dir config/ --port 6006",
-    "build-storybook": "storybook build --config-dir config/ --output-dir dist/",
     "chromatic": "chromatic"
   },
   "devDependencies": {
