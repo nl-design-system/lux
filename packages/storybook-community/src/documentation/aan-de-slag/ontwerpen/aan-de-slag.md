@@ -1,0 +1,5 @@
+# Aan de slag als designer
+
+## LUX UI kit
+
+[Lees in de LUX Figma omgeving hoe je de UI kit kan gebruiken](https://www.figma.com/design/515tboh6xpSNziwQu6WyAy/LUX---UI-kit?m=auto&node-id=265-14201) om in Figma designs te maken met herbruikbare componenten, in de huisstijl van jouw product.

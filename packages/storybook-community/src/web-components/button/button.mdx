@@ -1,0 +1,77 @@
+import { Canvas, Controls, Description, Markdown, Meta } from "@storybook/blocks";
+import markdown from "@utrecht/button-css/README.md?raw";
+import * as ButtonStories from "./button.stories";
+import { CitationDocumentation } from "../../utils/CitationDocumentation";
+
+<Meta of={ButtonStories} />
+
+<CitationDocumentation
+  component="Utrecht Button"
+  url="https://nl-design-system.github.io/utrecht/storybook-css/index.html?path=/docs/css-button--docs"
+/>
+
+<Markdown>{markdown}</Markdown>
+
+## Playground
+
+<Canvas of={ButtonStories.Playground} />
+<Controls of={ButtonStories.Playground} />
+
+## Variants (appearance)
+
+Voor Lux zijn er drie varianten van de button. In de community komen ook andere varianten voor. Kies je een variant die
+niet bestaat in onze tokens dan zal je een paarse styling zien, als visuele waarschuwing.
+
+### Primary / primary action Button
+
+<Description of={ButtonStories.Primary} />
+<Canvas of={ButtonStories.Primary} />
+
+### Secondary / secondary action button
+
+<Description of={ButtonStories.Secondary} />
+<Canvas of={ButtonStories.Secondary} />
+
+### Tertiary / subtle button
+
+<Description of={ButtonStories.Tertiary} />
+<Canvas of={ButtonStories.Tertiary} />
+
+<h2 id="states_examples">States</h2>
+
+### Active
+
+<Description of={ButtonStories.Active} />
+<Canvas of={ButtonStories.Active} sourceState="none" />
+
+### Hover
+
+<Description of={ButtonStories.Hover} />
+<Canvas of={ButtonStories.Hover} sourceState="none" />
+
+### Focus
+
+<Description of={ButtonStories.Focus} />
+<Canvas of={ButtonStories.Focus} sourceState="none" />
+
+### Busy
+
+<Description of={ButtonStories.Busy} />
+<Canvas of={ButtonStories.Busy} sourceState="hidden" />
+
+### Toggle / Pressed
+
+<Description of={ButtonStories.Toggle} />
+<Canvas of={ButtonStories.Toggle} sourceState="hidden" />
+
+## Icons
+
+### Start Icon
+
+<Description of={ButtonStories.WithStartIcon} />
+<Canvas of={ButtonStories.WithStartIcon} sourceState="hidden" />
+
+### End Icon
+
+<Description of={ButtonStories.WithEndIcon} />
+<Canvas of={ButtonStories.WithEndIcon} sourceState="hidden" />
