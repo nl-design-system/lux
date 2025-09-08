@@ -1,0 +1,41 @@
+{
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": ["community-extensions"]
+  },
+  "community-extensions": {
+    "common": {
+      "koop": {
+        "color": {
+          "primary": {
+            "value": "blue",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "red",
+            "type": "color"
+          }
+        },
+        "spacing": {
+          "xs": {
+            "value": "4px",
+            "type": "dimension",
+            "description": "Extra small spacing for Koop components"
+          }
+        }
+      },
+      "rhc": {
+        "color": {
+          "feedback": {
+            "error": {
+              "subdued": {
+                "value": "blue",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
