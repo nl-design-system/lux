@@ -1,4 +1,4 @@
-import { LuxLink } from '@lux-design-system/components-react';
+import { LuxLink, type LuxLinkProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import type { Meta, StoryObj } from '@storybook/react';
 import { VisualStates } from './visual/States';
@@ -82,7 +82,7 @@ const LinkTemplate: Story = {
     icon: undefined,
     iconPosition: undefined,
   },
-  render: (args) => (
+  render: (args: LuxLinkProps) => (
     <LuxLink {...args} icon={args.icon ? ExampleIcon : undefined}>
       {args.children}
     </LuxLink>

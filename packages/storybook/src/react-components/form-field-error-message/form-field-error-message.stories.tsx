@@ -13,7 +13,7 @@ const WrappedLuxFormFieldErrorMessage = forwardRef<
 
 WrappedLuxFormFieldErrorMessage.displayName = 'WrappedLuxFormFieldErrorMessage';
 
-const meta = {
+const meta: Meta<typeof WrappedLuxFormFieldErrorMessage> = {
   title: 'React Components/Form Field/Form Field Error Message',
   id: 'react-components-form-field-error-message',
   component: WrappedLuxFormFieldErrorMessage,
@@ -41,12 +41,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const FormFieldErrorMessageTemplate: Story = {
-  render: (args) => <WrappedLuxFormFieldErrorMessage {...args} />,
-};
-
 export const Playground: Story = {
-  ...FormFieldErrorMessageTemplate,
   args: {
     children: 'Your password must contain at least 16 characters.',
     id: 'error-message-1',
@@ -59,7 +54,6 @@ export const Playground: Story = {
 };
 
 export const Default: Story = {
-  ...FormFieldErrorMessageTemplate,
   args: {
     children: 'Your password must contain at least 16 characters.',
     id: 'error-message-2',
@@ -67,7 +61,6 @@ export const Default: Story = {
 };
 
 export const Distanced: Story = {
-  ...FormFieldErrorMessageTemplate,
   args: {
     children: 'Your password must contain at least 16 characters.',
     id: 'error-message-3',
