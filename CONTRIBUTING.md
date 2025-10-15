@@ -60,19 +60,6 @@ graph TD
 4. Zo nee, kan het intern in het productteam worden ontwikkeld. Onderdelen kunnen altijd worden heroverwogen als ze toch een breed nut blijken te hebben.
 5. Zo ja, kan het onderdeel op de gezamenlijke backlog op github worden gezet. Vanaf daar begint het werk van POs en dev teams, prioritering, planning, ontwikkeling, testen en opleveren.
 
-## Kopie van bord (verouderd)
-
-Start: ingevulde behoefte checklist. Doel, toepassing, herbruikbaarheid.
-
-1. ontwerpers en ontwikkelaars. Toets of de behoefte breder speelt.
-2. buiten generieke bibliotheek. Eigen template??
-3. intern: LUX. Extern: RHC, NLDS.
-4. (nvt)
-5. op gezamenlijke backlog op github. Met LUX' RHC template en criteria.
-6. prioritering, plannen, ontwikkeling. Testen en oplevering.
-   Meeting. Doel: backlog. Tijd: 1 uur wekelijks. Deelnemers: POs.
-7. intern/extern (nlds). Publiceren en communiceren.
-
 ## Wat is er nog meer nodig?
 
 1. Checklist of componenten kunnen worden overwogen
@@ -84,3 +71,4 @@ Start: ingevulde behoefte checklist. Doel, toepassing, herbruikbaarheid.
    - documentatie
    - naamgeving
 3. Lijst van alle reguliere en ad-hoc vergaderingen
+4. Duidelijk stellen welk niveau dit is: Logius
