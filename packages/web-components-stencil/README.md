@@ -8,20 +8,20 @@ Om Lux in je Stencil-project te gebruiken doe je het volgende:
 
 ### NPM
 
-`npm install --save-dev --save-exact @lux-design-system/web-component-library-stencil`
+`npm install --save-dev --save-exact @lux-design-system/web-components-stencil`
 
 ### Yarn
 
-`yarn add install --dev --exact @lux-design-system/web-component-library-stencil`
+`yarn add install --dev --exact @lux-design-system/web-components-stencil`
 
 ### PNPM
 
-`pnpm add --save-dev --save-exact @lux-design-system/web-component-library-stencil`
+`pnpm add --save-dev --save-exact @lux-design-system/web-components-stencil`
 
 In een/het `app.ts`-bestand voeg je het volgende toe:
 
 ```js
-import { defineCustomElements as defineLuxCustomElements } from "@lux-design-system/web-component-library-stencil";
+import { defineCustomElements as defineLuxCustomElements } from "@lux-design-system/web-components-stencil";
 
 export default function () {
   defineLuxCustomElements();
