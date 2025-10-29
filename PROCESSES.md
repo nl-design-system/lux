@@ -1,7 +1,7 @@
 # LUX Processen
 
-Doel 1: Inzicht bieden in de processen en werkzaamheden binnen team LUX.
-Doel 2: LUX gebruikers in staat stellen om te begrijpen hoe ze met LUX kunnen samenwerken
+- Doel 1: Inzicht bieden in de processen en werkzaamheden binnen team LUX.
+- Doel 2: LUX gebruikers in staat stellen om te begrijpen hoe ze met LUX kunnen samenwerken
 
 ## Overzicht LUX
 
@@ -31,13 +31,9 @@ E-->|initieert|G
 E-->|input voor|H
 ```
 
-- Het LUX team is verantwoordelijk voor het meedoen in NLDS en RHC communities.
-- Zelf faciliteren zij de LUX community binnen Logius, ter kennisdeling, transparantie en feedback momenten
-- Vanuit de communities komt feedback, updates en ander werk dat op de LUX backlog terecht komt
-- De LUX backlog is de plek en het proces waar al het werk voor design system binnen Logius wordt opgevoerd, geprioriteerd, samen met de LUX gebruikerteams
-- In refinement en uitvoering voeren de meewerkende gebruikerteams en LUX teamleden dezelfde taken uit.
-- Taken die alleen voor team LUX zijn worden indien nodig op een eigen backlog bijgehouden. Dit werk wordt alsnog via LUX Beheer en LUX Change uitgevoerd.
-- Het kan zijn dat werk voor RHC en NLDS bedoeld is, via de backlog, of andere kanalen, wordt dit werk op de RHC en NLDS backlogs ondergebracht.
+- _Het LUX team draagt zorg voor correcte deelname aan NLDS en RHC communities_
+- _Via de LUX community is er kennisdeling, feedbackmoment en samenwerking door en met de LUX gebruikers_
+- _Planbaar werk wordt via de backlog opgevoerd, gepriotiseerd, refined en opgepakt_
 
 ---
 
@@ -48,11 +44,11 @@ flowchart LR
 
 A@{shape: circle, label: "LUX BACKLOG"}
 B[Vullen backlog]
-C[Prioriteren backlog]
-D@{shape: fr-rect, label: "1A: REFINEMENT"}
-E@{shape: fr-rect, label: "1B: ANALYSE"}
-F@{shape: fr-rect, label: "Op welk niveau?"}
-G@{shape: diam, label: "Is beheer?"}
+C[Prioriteren]
+D@{shape: diam, label: "Is beheer?"}
+E@{shape: fr-rect, label: "1A: REFINEMENT"}
+F@{shape: fr-rect, label: "1B: ANALYSE"}
+G@{shape: diam, label: "Op welk niveau?"}
 H@{shape: fr-rect, label: "2: LUX CHANGE"}
 I@{shape: fr-rect, label: "3: LUX BEHEER"}
 J@{shape: fr-rect, label: "D: RHC backlog"}
@@ -60,32 +56,29 @@ J@{shape: fr-rect, label: "D: RHC backlog"}
 A-->B
 B-->C
 C-->D
-D-->E
+D-->|Nee|E
+D-->|Ja|I
 E-->F
-F-->|LUX niveau|G
-G-->|Nee|H
-G-->|Ja|I
-F-->|RHC niveau|J
+F-->G
+G-->|LUX niveau|H
+G-->|RHC niveau|J
 ```
 
-_Beheer betekend: doorlopend onderhoud of changes vanuit RHC bieb die doorgevoerd moeten worden in de LUX bieb om in sync te blijven enz._
+- _PO team LUX is eigenaar van dit proces en de backlog_
+- _Het gehele proces wordt samen met meewerkende gebruikers doorlopen_
+- _Soms is er werk alleen voor het LUX team. Dit werkt wordt eventueel op een aparte backlog volgens hetzelfde proces behandeld_
+
+---
 
 #### 1A: REFINEMENT
-
-- Component afpellen: welke onderliggende componenten zijn er nodig? Bv page header -> navigation -> button, link, enz
-- Vastleggen in Github ticket
-- Vragen vastleggen in ticket
-- Welke varianten zijn er nodig?
-- Info en bronnen die er tot nu zijn vastleggen
-- Zijn er lopende discussies over het component?
 
 ```mermaid
 flowchart LR
 
 A@{shape: circle, label: "Start"}
 B[Github ticket op LUX project board]
-C[Vastleggen component en onderliggende elementen]
-D[Wat we al weten vastleggen]
+C[Vastleggen component subcomponenten]
+D[Vastleggen Wat we al weten]
 Z@{shape: double-circle, label: "Stop"}
 
 A-->B
@@ -94,10 +87,26 @@ C-->D
 D-->Z
 ```
 
-- _Onderliggende componenten voorbeeld: Page Header -> Navigatie -> Button_
+- _Voorbeeld component opbouw: Page Header -> Navigatie -> Button_
 - _Desnoods worden deze stappen meermaals doorlopen totdat het component voldoende refined is._
+- _Wat we al weten is o.a.: lopende github discussies op NL, RHC of LUX niveau, bekend onderzoek, best practices_
+
+---
 
 #### 1B: ANALYSE
+
+```mermaid
+flowchart LR
+
+A@{shape: circle, label: "start"}
+A-->B[Gebruik binnen Logius teams beschrijven]
+B-->C[Rationale vastleggen]
+C-->D[Gedeelde functionaliteiten beschrijven]
+D-->E[Gewenste varianten beschrijven]
+E-->F@{shape: fr-rect, label: "1B: BEPALEN NIVEAU"}
+F-->G[Goedkeuring LUX community]
+G-->Z@{shape: double-circle, label: "stop"}
+```
 
 - Wensen en onderzoeksuitslagen als comment onder Github ticket plaatsen
 - Discussie voeren op Slack in RHC channel, verwijzing naar NLDS github discussie - toevoegen hoe component per team/afdeling binnen Logius er uit ziet (designs aflopen om de varianten in kaart te brengen. Liefst alle plekken waar het component staat. Maar praktisch alleen binnen het component waar het nu om gaat (bv button in header, of alle buttons)).
@@ -105,18 +114,7 @@ D-->Z
 - RHC discussie: Beargumenteren welke bron we gekozen hebben (utrecht of nlds etc)
 - Teams verdiepen zich in het component, hoe het in hun designs/applicaties gebruikt wordt, wensen, problemen, toepassingen, github discussies nalezen, onderzoek doen
 
-```mermaid
-flowchart LR
-
-A@{shape: circle, label: "start"}
-A-->B[Wens goed beschrijven]
-B-->C2[Onderzoek bestaande componenten]
-C2-->D2@{shape: fr-rect, label: "1B: BEPALEN NIVEAU"}
-B-->C[Benodigde patroon onderzoeken]
-C-->D[Vastleggen rationele, functionaliteiten, varianten]
-D-->E[Vastleggen visueel ontwerp]
-E-->F[Goedkeuring LUX community]
-```
+---
 
 #### 1C: BEPALEN NIVEAU
 
@@ -180,10 +178,10 @@ DDD[]
 flowchart LR
 A@{shape: circle, label: "Start"}
 Z@{shape: double-circle, label: "Stop"}
-A-->B
-B-->C
-C-->D
-D-->E
+A-->B[LUX team refinement]
+B-->C[Uitvoering]
+C-->D[Documenteren wijzigingen]
+D-->E[Communiceren wijzigingen]
 E-->Z
 ```
 
