@@ -3,19 +3,18 @@
 - Doel 1: Inzicht bieden in de processen en werkzaamheden binnen team LUX.
 - Doel 2: LUX gebruikers in staat stellen om te begrijpen hoe ze met LUX kunnen samenwerken
 
-## Overzicht LUX
+## 00. Overzicht LUX
 
 ```mermaid
 flowchart LR
 
-A@{shape: circle, label: "LUX team"}
+A@{shape: circle, label: "LUX"}
 B[NLDS community]
 C[Rijkshuisstijl Community]
-D@{shape: fr-rect, label: "4: LUX COMMUNITY"}
-E@{shape: fr-rect, label: "1: LUX BACKLOG"}
-F@{shape: fr-rect, label: "2: LUX CHANGE"}
-G@{shape: fr-rect, label: "3: LUX BEHEER"}
-H@{shape: fr-rect, label: "D: RHC BACKLOG"}
+D@{shape: fr-rect, label: "01. LOGIUS COMMUNITY"}
+E@{shape: fr-rect, label: "02. LOGIUS COMMUNITY BACKLOG"}
+F@{shape: fr-rect, label: "03. LOGIUS COMMUNITY REFINEMENT"}
+G@{shape: fr-rect, label: "04. LOGIUS COMMUNITY UITVOERING"}
 
 A-->|neemt deel aan|B
 A-->|neemt deel aan|C
@@ -26,103 +25,92 @@ B-->|input voor|E
 C-->|input voor|E
 D-->|input voor|E
 
-E-->|initieert|F
-E-->|initieert|G
-E-->|input voor|H
+E-->|input voor|F
+F-->|Input voor|G
+G-->|herhaal|A
 ```
 
-- _Het LUX team draagt zorg voor correcte deelname aan NLDS en RHC communities_
-- _Via de LUX community is er kennisdeling, feedbackmoment en samenwerking door en met de LUX gebruikers_
-- _Planbaar werk wordt via de backlog opgevoerd, gepriotiseerd, refined en opgepakt_
+- Het LUX team faciliteert deelname in de NL Design System communities en overziet correcte toepassing van de NL Design System architectuur binnen Logius
+- Logius teams doen mee via de Logius Community
+- Teams kunnen zelf beslissen of ze actief willen meewerken. Dit wordt via de Product Owners afgestemd
+- Backlog, refinement en uitvoering worden gezamenlijk opgepakt en uitgevoerd
 
----
+## 01. LOGIUS COMMUNITY
 
-### 1: LUX Backlog
+Proces voor het samenwerken van de Logius community. In de community wordt kennis en informatie gedeeld over LUX en NL Design System. LUX faciliteert verschillende mogelijkheden voor Logius teams om samen te werken met LUX. Deze samenwerking zie je in alle vervolgprocessen terug komen.
 
-```mermaid
-flowchart LR
+TODO: Beantwoorden: Is dit een proces of zijn dit alleen de contactmomenten die als input dienen voor de backlog?
 
-A@{shape: circle, label: "LUX BACKLOG"}
-B[Vullen backlog]
-C[Prioriteren]
-D@{shape: diam, label: "Is beheer?"}
-E@{shape: fr-rect, label: "1A: REFINEMENT"}
-F@{shape: fr-rect, label: "1B: ANALYSE"}
-G@{shape: diam, label: "Op welk niveau?"}
-H@{shape: fr-rect, label: "2: LUX CHANGE"}
-I@{shape: fr-rect, label: "3: LUX BEHEER"}
-J@{shape: fr-rect, label: "D: RHC backlog"}
+## 02. LOGIUS COMMUNITY BACKLOG
 
-A-->B
-B-->C
-C-->D
-D-->|Nee|E
-D-->|Ja|I
-E-->F
-F-->G
-G-->|LUX niveau|H
-G-->|RHC niveau|J
-```
-
-- _PO team LUX is eigenaar van dit proces en de backlog_
-- _Het gehele proces wordt samen met meewerkende gebruikers doorlopen_
-- _Soms is er werk alleen voor het LUX team. Dit werkt wordt eventueel op een aparte backlog volgens hetzelfde proces behandeld_
-
----
-
-#### 1A: REFINEMENT
+Dit proces is er voor bedoeld om wensen en prioriteiten in kaart te brengen en alle informatie te verzamelen en structureren die nodig is om een component te kunnen ontwikkelen.
 
 ```mermaid
 flowchart LR
 
 A@{shape: circle, label: "Start"}
-B[Github ticket op LUX project board]
-C[Vastleggen component subcomponenten]
-D[Vastleggen Wat we al weten]
-Z@{shape: double-circle, label: "Stop"}
+B[A. Vullen backlog]
+C[B. Prioriteren]
+D@{shape: fr-rect, label: "03. LOGIUS COMMUNITY REFINEMENT"}
 
 A-->B
 B-->C
 C-->D
-D-->Z
 ```
 
-- _Voorbeeld component opbouw: Page Header -> Navigatie -> Button_
-- _Desnoods worden deze stappen meermaals doorlopen totdat het component voldoende refined is._
-- _Wat we al weten is o.a.: lopende github discussies op NL, RHC of LUX niveau, bekend onderzoek, best practices_
+### A. Vullen backlog
 
----
+- Product owner LUX stelt samen met product owners Logius teams de backlog op het Logius Community Github bord
+- Soms is er werk dat alleen voor het LUX team is. Dit handelt het LUX team zelfstandig af, eventueel op een aparte backlog
+- Backlog item bevat: Duidelijke titel, beschrijving van de wens, wie de wens heeft
 
-#### 1B: ANALYSE
+### B. Prioriteren
+
+- Product owner LUX zal samen met Product owners Logius teams de backlog prioriteren
+- Prioriteit wordt gegeven op basis van de behoefte van de Logius teams
+
+## 03. LOGUS COMMUNITY REFINEMENT
+
+Het doel van de refinement is om als Logius organisatie eens te worden over de componenten die we nodig hebben in een design system, welke functionaliteiten en varianten ze nodig hebben.
+
+- Component wordt in Logius Community Refinement behandeld (wie bereid voor?)
+- Beschikbare informatie, zoals Github discussies worden toegevoegd (welke informatie?)
+- Teams leveren voorbeelden aan hoe zij het component nu/willen gebruiken
+- De varianten en anatomie van het component wordt vastgelegd bij het backlog item
+- Eventuele ontwerpkeuzes worden al vastgelegd (waar?)
+- Openstaande vragen worden genoteerd bij het backlog item
+- Community bepaald samen met LUX welke vragen tenminste beantwoord moeten zijn voor het component opgepakt kan worden. Zo nodig wordt refinement enkele keren herhaald
+
+Controles:
+
+- Is het component door meerdere teams gewenst / er is geen bezwaar tegen het gerefinede component?
+- Er is voldaan aan de DoR?
+
+## 04. LOGIUS COMMUNITY UITVOERING
+
+In dit proces worden backlog items uitgevoerd aan de hand van de gerefinede backlog items. Dit houd in: onderzoek, design, bouw, testen en gebruiken van nieuwe maar ook bestaande componenten.
+
+- 1 ontwerp maken in Figma die alle functionaliteiten en varianten bevat, in de stijl die Logius nodig heeft. Rijkshuisstijl wordt zoveel mogelijk aangehouden (dit pakt 1 iemand meestal op?)
+- Ontwerp met Logius community afstemmen
+- RHC/NLDS/LUX component onderzoek: wat is er al dat bruikbaar is
+- Geschikte componenten selecteren, ontbrekende functionaliteiten/varianten noteren
+- Eventuele discussies in NLDS/RHC communities starten (welke, en waanneer en waarom?)
+- Met Logius community afstemmen welke bron gebruikt wordt, of dat een eigen component gemaakt wordt
+- Tokens instellen
+- Component bouwen/aanpassen/laten aanpassen
+- Updates aan Figma bieb, tokens, repo en/of NPM packages documenteren en delen met Logius community
+- Check?: moeten we RHC en/of NLDS community component stappen doorlopen?
+- Na dit proces?: Logius community het nieuwe component laten gebruiken
+
+### 03.1 BEPALEN NIVEAU
+
+TODO: splitsen in zoeken naar geschikte bron en uitvoering.
 
 ```mermaid
 flowchart LR
 
 A@{shape: circle, label: "start"}
-A-->B[Gebruik binnen Logius teams beschrijven]
-B-->C[Rationale vastleggen]
-C-->D[Gedeelde functionaliteiten beschrijven]
-D-->E[Gewenste varianten beschrijven]
-E-->F@{shape: fr-rect, label: "1B: BEPALEN NIVEAU"}
-F-->G[Goedkeuring LUX community]
-G-->Z@{shape: double-circle, label: "stop"}
-```
-
-- Wensen en onderzoeksuitslagen als comment onder Github ticket plaatsen
-- Discussie voeren op Slack in RHC channel, verwijzing naar NLDS github discussie - toevoegen hoe component per team/afdeling binnen Logius er uit ziet (designs aflopen om de varianten in kaart te brengen. Liefst alle plekken waar het component staat. Maar praktisch alleen binnen het component waar het nu om gaat (bv button in header, of alle buttons)).
-- RHC stijldiscussie bekijken/aanvullen
-- RHC discussie: Beargumenteren welke bron we gekozen hebben (utrecht of nlds etc)
-- Teams verdiepen zich in het component, hoe het in hun designs/applicaties gebruikt wordt, wensen, problemen, toepassingen, github discussies nalezen, onderzoek doen
-
----
-
-#### 1C: BEPALEN NIVEAU
-
-```mermaid
-flowchart LR
-
-A@{shape: circle, label: "start"}
-Z@{shape: double-circle, label: "stop"}
+Z
 
 A-->B[Component bestaat op RHC niveau?]
 
@@ -141,7 +129,7 @@ G-->|Nee|J[LUX component gebruiken]
 H-->|Ja|E
 H-->|Nee|I
 
-F-->Z
+F-->Z@{shape: double-circle, label: "stop"}
 J-->Z
 ```
 
@@ -162,46 +150,8 @@ DDD[]
 - PO LUX is initiator en eigenaar van de LUX backlog, maar vult en prioriteert deze samen met de PO's van gebruikerteams
 - PO's maken afspraken over de werkvorm tussen de verschillende teams
 - In prio, refine en uitvoering wordt samen- en meegewerkt met en door gebruikerteams
-
----
-
-### 2: LUX CHANGE
-
 - Changes documenteren
 - Wijzigingen communiceren (trigger LUX COMMUNITY)
-
----
-
-### 3: LUX BEHEER
-
-```mermaid
-flowchart LR
-A@{shape: circle, label: "Start"}
-Z@{shape: double-circle, label: "Stop"}
-A-->B[LUX team refinement]
-B-->C[Uitvoering]
-C-->D[Documenteren wijzigingen]
-D-->E[Communiceren wijzigingen]
-E-->Z
-```
-
-- Updates aan RHC bieb, tokens en componenten doorvoeren in LUX bieb, tokens en componenten
-- Changes documenteren
-- Wijzigingen communiceren (trigger LUX COMMUNITY)
-
-### 4: LUX community
-
-Zichtbaarheid, feedback loop en duidelijke communicatie naar gebruikers van LUX
-
-- Delen updates LUX
-- Kennissessies
-- Workshops & hackathons
-
-```mermaid
-flowchart LR
-A@{shape: circle, label: "Start"}
-Z@{shape: double-circle, label: "Stop"}
-```
 
 ## Overview RHC
 
@@ -235,23 +185,3 @@ F-->Z
 G-->Z
 H-->Z
 ```
-
-### A: RHC BACKLOG
-
-- ???
-
-### B: RHC CHANGE
-
-- Nieuwe en aanpassingen aan componenten doorvoeren binnen RHC bieb, tokens en repo
-- Documenteren changes
-- Wijzigingen communiceren (trigger: RHC community)
-
-### C: RHC BEHEER
-
-- Updates vanuit NLDS verwerken in RHC bieb, RHC tokens en RHC repo
-- Documenteren changes
-- Wijzigingen communiceren (trigger: RHC community)
-
-### D: RHC COMMUNITY
-
-- Communiceren over wijzigingen
