@@ -11,7 +11,7 @@
   ],
   "private": true,
   "engines": {
-    "node": "^20",
+    "node": ">=24 <=25",
     "pnpm": "^10"
   },
   "repository": {
