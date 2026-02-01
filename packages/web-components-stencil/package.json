@@ -46,7 +46,7 @@
     "@stencil/sass": "3.0.12",
     "@types/jest": "29.5.12",
     "@utrecht/document-css": "1.1.0",
-    "@utrecht/paragraph-css": "1.1.0",
+    "@utrecht/paragraph-css": "3.0.1",
     "@utrecht/web-component-library-stencil": "2.0.0",
     "chokidar-cli": "3.0.0",
     "npm-run-all": "4.1.5",
