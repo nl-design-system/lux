@@ -41,7 +41,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@utrecht/component-library-css": "6.1.0",
+    "@utrecht/component-library-css": "9.0.0",
     "@utrecht/component-library-react": "7.1.0",
     "@utrecht/focus-ring-css": "2.3.0",
     "clsx": "2.1.1",
