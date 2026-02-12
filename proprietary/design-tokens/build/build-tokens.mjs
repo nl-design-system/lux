@@ -1,5 +1,4 @@
-import { registerTransforms } from '@tokens-studio/sd-transforms';
-import { transform } from '@divriots/style-dictionary-to-figma';
+import { register } from '@tokens-studio/sd-transforms';
 import { readFile } from 'node:fs/promises';
 import StyleDictionary from 'style-dictionary';
 import { IMPORTED_SRC_FOLDER, MANUAL_SRC_FOLDER, DIST_FOLDER } from './constants.mjs';
@@ -14,16 +13,16 @@ StyleDictionary.registerTransform({
   type: 'value',
   transitive: true,
   matcher: function(token) {
-    const {type, value, isSource} = token
+    const { type, value, isSource } = token
     return type === 'spacing' && value.match(/[\+\-\*\/]/g);
   },
-  transformer: function(token) {
+  transform: function(token) {
     return `calc(${token.original.value})`;
   }
 })
 
 // Register the custom transforms for Style-Dictionary, to work with Design Tokens that are exported from Tokens Studio
-registerTransforms(StyleDictionary);
+register(StyleDictionary);
 
 const cleanName = (n) => n.toLowerCase().replaceAll(/\/?(default|\s\(.+\))/g, '').replaceAll(' ', '-');
 const isFigmaToken = (name) => name.startsWith('figma');
@@ -181,10 +180,6 @@ export const buildTokens = async () => {
     preprocessors: ['tokens-studio'],
     format: {
       ...jsonListFormat,
-      figmaTokensPlugin: ({ dictionary }) => {
-        const transformedTokens = transform(dictionary.tokens);
-        return JSON.stringify(transformedTokens, null, 2);
-      },
     },
     platforms: {
       jsonx: {
@@ -193,7 +188,6 @@ export const buildTokens = async () => {
           {
             filter: excludeSystemTokens,
             destination: `${DIST_FOLDER}/figma-tokens.json`,
-            format: 'figmaTokensPlugin',
           },
         ],
       },
@@ -233,12 +227,12 @@ export const buildTokens = async () => {
     },
   }));
 
-  configs.forEach((cfg) => {
-    const sd = StyleDictionary.extend(cfg);
+  configs.forEach(async (cfg) => {
+    const sd = new StyleDictionary(cfg);
+    await sd.hasInitialized;
     console.info(`\n🔧 Building files ${cfg.platforms.css.files.map(({destination}) => destination).join(', ')}`);
     console.info(`  Files used: \n${[...cfg.include, ...cfg.source].join('\n')}`);
-  
-    sd.cleanAllPlatforms();
-    sd.buildAllPlatforms();
+    await sd.cleanAllPlatforms();
+    await sd.buildAllPlatforms();
   });
 };

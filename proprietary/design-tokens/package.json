@@ -41,12 +41,12 @@
   "devDependencies": {
     "@divriots/style-dictionary-to-figma": "0.4.0",
     "@prantlf/jsonlint": "14.0.3",
-    "@tokens-studio/sd-transforms": "0.15.2",
+    "@tokens-studio/sd-transforms": "2.0.1",
     "chokidar-cli": "3.0.0",
     "cpy-cli": "5.0.0",
     "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
-    "style-dictionary": "3.9.2"
+    "style-dictionary": "5.0.4"
   },
   "gitHead": "0b9df605d6559335afddf7761dde5e806153d468"
 }

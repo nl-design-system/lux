@@ -54,15 +54,17 @@ Thumbs.db
 # Example file exceptions
 !.env.example
 
-# Only track the npm 7 workspace root package-lock.json
+# Only track the npm and pnpm lockfile in the root
 yarn.lock
 package-lock.json
 !/package-lock.json
+pnpm-lock.yaml
+!/pnpm-lock.yaml
 
 # Ignore generated files from Stencil
 components.d.ts
 
-# Do not ignore our build scripts 
+# Do not ignore our build scripts
 # (This leaves other build/ folders ignored, see line #9)
 !/proprietary/design-tokens/build
 !/proprietary/icons/build
