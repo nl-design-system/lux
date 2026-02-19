@@ -35,6 +35,18 @@ export {
 } from './form-field-error-message/FormFieldErrorMessage';
 export { LuxFormFieldLabel, type LuxFormFieldLabelProps } from './form-field-label/FormFieldLabel';
 export {
+  LuxFormSummary,
+  LuxFormSummaryActions,
+  LuxFormSummaryKey,
+  LuxFormSummaryItem,
+  LuxFormSummaryValue,
+  type LuxFormSummaryProps,
+  type LuxFormSummaryActionsProps,
+  type LuxFormSummaryKeyProps,
+  type LuxFormSummaryItemProps,
+  type LuxFormSummaryValueProps,
+} from './form-summary/FormSummary';
+export {
   LuxFormFieldSelect,
   type LuxFormFieldSelectProps,
   type LuxFormFieldSelectOptionsProps,
