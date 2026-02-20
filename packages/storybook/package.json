@@ -55,7 +55,7 @@
     "@utrecht/alert-css": "1.1.0",
     "@utrecht/button-css": "1.2.0",
     "@utrecht/checkbox-css": "1.3.0",
-    "@utrecht/form-field-css": "1.3.0",
+    "@utrecht/form-field-css": "2.0.1",
     "@utrecht/form-field-description-css": "1.3.0",
     "@utrecht/form-field-error-message-css": "1.3.1",
     "@utrecht/form-label-css": "1.3.0",
