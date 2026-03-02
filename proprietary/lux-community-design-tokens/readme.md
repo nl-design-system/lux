@@ -1,4 +1,4 @@
-# Design Tokens voor het LUX Design System
+# Community Design Tokens voor het LUX Design System
 
 Deze package bevat de Design Tokens van het LUX Design System in verschillende formaten.  
 In design tokens worden de design beslissingen vastgelegd voor het design system. De design tokens in deze package zijn de enige bron van waarheid voor de look en feel van de componenten.
@@ -7,15 +7,15 @@ In design tokens worden de design beslissingen vastgelegd voor het design system
 
 ### NPM
 
-`npm install @lux-design-system/design-tokens --save-dev`
+`npm install @lux-design-system/lux-community-design-tokens --save-dev`
 
 ### Yarn
 
-`yarn add @lux-design-system/design-tokens --dev`
+`yarn add @lux-design-system/lux-community-design-tokens --dev`
 
 ### PNPM
 
-`pnpm add @lux-design-system/design-tokens --save-dev`
+`pnpm add @lux-design-system/lux-community-design-tokens --save-dev`
 
 Daarna zijn de volgende tokens beschikbaar:
 
@@ -43,12 +43,15 @@ In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
 
 ```html
 <!-- :root-versie -->
-<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/design-tokens/dist/logius/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/logius/index.css" />
 ```
 
 ```html
 <!-- theme-versie -->
-<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/design-tokens/dist/logius/index-theme.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/logius/index-theme.css"
+/>
 ```
 
 ```html
@@ -59,7 +62,7 @@ In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
 Via Webpack in Create React App en geïnstalleerd via een [package manager](#installeren):
 
 ```javascript
-import "@lux-design-system/design-tokens/dist/logius/index.css";
+import "@lux-design-system/lux-community-design-tokens/dist/logius/index.css";
 ```
 
 ### Fonts
