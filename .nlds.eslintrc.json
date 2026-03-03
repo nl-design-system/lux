@@ -87,8 +87,6 @@
           "packages/web-components-react/tsconfig.json",
           "packages/components-react/tsconfig.json",
           "packages/components-react/tsconfig.test.json",
-          "packages/lux-community-components-react/tsconfig.json",
-          "packages/lux-community-components-react/tsconfig.test.json",
           "packages/web-components-stencil/tsconfig.json",
           "packages/web-components-stencil/tsconfig.jest.json",
           "proprietary/icons/tsconfig.json"
