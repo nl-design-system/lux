@@ -32,7 +32,6 @@
     "prebuild": "npm run clean",
     "build": "npm-run-all build:tokens-studio",
     "build:tokens-studio": "node ./build.mjs",
-    "test": "vitest run --coverage --reporter verbose",
     "watch": "npm-run-all watch:**",
     "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
     "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src",
