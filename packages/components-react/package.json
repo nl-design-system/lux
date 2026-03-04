@@ -23,7 +23,9 @@
     "build": "npm-run-all build:**",
     "build:components": "vite build",
     "clean": "rimraf dist/ pages/",
-    "lint": "tsc --project ./tsconfig.json --noEmit && tsc --noEmit --project ./tsconfig.test.json",
+    "lint": "npm-run-all lint:*",
+    "lint:src": "tsc --project ./tsconfig.json --noEmit",
+    "lint:test": "tsc --project ./tsconfig.test.json --noEmit",
     "test": "mkdirp pages && cross-env NODE_OPTIONS=--experimental-vm-modules jest --verbose",
     "watch:components": "vite build --watch",
     "watch:test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --verbose --watch"
