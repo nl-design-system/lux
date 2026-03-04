@@ -2,7 +2,7 @@ import { Textbox as UtrechtTextbox } from '@utrecht/component-library-react/dist
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, InputHTMLAttributes, PropsWithChildren } from 'react';
 
-const TEXTBOX_CLASSES: { [key: string]: string } = {
+const TEXTBOX_CLASSES: Record<string, string> = {
   invalid: 'utrecht-textbox--invalid',
   disabled: 'utrecht-textbox--disabled',
   readOnly: 'utrecht-textbox--read-only',
