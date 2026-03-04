@@ -8,7 +8,7 @@ describe('TestComponent', () => {
   it('should live', () => {
     const { getByText } = render(<TestComponent />);
 
-    const el = getByText('test');
+    const el = getByText('test component');
 
     expect(el).toBeInTheDocument();
   });

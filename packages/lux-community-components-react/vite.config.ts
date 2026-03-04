@@ -30,4 +30,8 @@ export default defineConfig({
     minify: false,
   },
   plugins: [dts(), react(), cssInjectedByJsPlugin({ topExecutionPriority: false })],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  },
 });
