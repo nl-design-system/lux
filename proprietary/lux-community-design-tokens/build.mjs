@@ -1,5 +1,5 @@
-import StyleDictionary from 'style-dictionary';
 import { register } from '@tokens-studio/sd-transforms';
+import StyleDictionary from 'style-dictionary';
 
 // Custom header to add generation date
 StyleDictionary.registerFileHeader({
