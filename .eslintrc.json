@@ -1,3 +1,16 @@
 {
-  "extends": ["./.nlds.eslintrc"]
+  "extends": ["./.nlds.eslintrc"],
+  "ignores": [
+    "**/.node_modules",
+    "**/coverage/",
+    "**/build/",
+    "**/dist/",
+    "**/tmp/",
+    "**/components/components.d.ts",
+    "**/packages/web-components-angular/src/directives/angular-component-lib/utils.ts",
+    "**/packages/web-components-angular/src/directives/proxies.ts",
+    "**/packages/web-components-stencil/loader",
+    "**/packages/web-components-react/src/react-component-lib/",
+    "**/packages/web-components-react/src/components.ts"
+  ]
 }
