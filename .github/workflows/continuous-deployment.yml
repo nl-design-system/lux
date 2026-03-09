@@ -89,6 +89,9 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Debug env
+        run: env
+
       - name: Merge RHC tokens with LUX community overrides
         if: steps.needtokenmerge.output.changed == 'true'
         run: pnpm --filter @lux-design-system/lux-community-design-tokens merge-token-sets
