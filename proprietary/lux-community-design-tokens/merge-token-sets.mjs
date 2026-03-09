@@ -1,8 +1,8 @@
 import rhcFigmaTokens from '@rijkshuisstijl-community/design-tokens/figma/figma.tokens.json' with { type: 'json' };
-import koopFigmaTokens from './src/koop.figma.tokens.json' with { type: 'json' };
-import path from 'path';
 import fs from 'fs/promises';
+import path from 'path';
 import { fileURLToPath } from 'url';
+import koopFigmaTokens from './src/koop.figma.tokens.json' with { type: 'json' };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -46,8 +46,8 @@ const mergeTokenSets = (original, addition) => {
 
   // Add keys from addition
   for (const [key, value] of Object.entries(addition)) {
-    if (!(key in original) && key != '$themes') merged[key] = value;
-    else if (key != '$themes') collisions.push(key);
+    if (!(key in original) && key !== '$themes') merged[key] = value;
+    else if (key !== '$themes') collisions.push(key);
   }
 
   // Concatenate $themes array of both
