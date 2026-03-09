@@ -1,4 +1,3 @@
-/* eslint-env node */
 import nextJest from 'next/jest.js';
 
 // Next Jest config is great for Jest 27 + React + TypeScript, so let's use that as basis
