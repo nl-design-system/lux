@@ -83,7 +83,7 @@ jobs:
       - name: Check if merge-token-sets is required
         id: needtokenmerge
         run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^proprietary/lux-community-design-tokens/src/koop\.figma\.tokens\.json'; then
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^proprietary/lux-community-design-tokens/src/.*\.json'; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
