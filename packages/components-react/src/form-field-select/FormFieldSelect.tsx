@@ -15,7 +15,8 @@ export type LuxFormFieldSelectOptionsProps = LuxSelectOptionProps & {
 };
 
 export interface LuxFormFieldSelectProps
-  extends Omit<UtrechtFormFieldProps, 'type' | 'onBlur' | 'onChange' | 'onFocus'>,
+  extends
+    Omit<UtrechtFormFieldProps, 'type' | 'onBlur' | 'onChange' | 'onFocus'>,
     Pick<
       LuxSelectProps,
       | 'defaultValue'

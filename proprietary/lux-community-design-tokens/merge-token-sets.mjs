@@ -36,6 +36,11 @@ const mergeFigmaTokenFiles = async () => {
   await writeJsonFile(outputPath, mergedTokens);
 
   console.log(`Merged Figma tokens generated successfully at ${outputPath}.`);
+
+  if (collisions.length > 0) {
+    console.error('Token set collisions found, exiting with error');
+    process.exit(collisions.length);
+  }
 };
 
 const mergeTokenSets = (original, addition) => {
