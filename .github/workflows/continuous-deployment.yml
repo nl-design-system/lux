@@ -90,7 +90,9 @@ jobs:
           fi
 
       - name: Debug env
-        run: env
+        run: |
+          env
+          echo ${{ steps.needtokenmerge.output.changed }}
 
       - name: Merge RHC tokens with LUX community overrides
         if: steps.needtokenmerge.output.changed == 'true'
