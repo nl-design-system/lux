@@ -14,7 +14,7 @@
       "button": {
         "background-color": {
           "$type": "color",
-          "$value": "{expert-user.color.cta.background-color}"
+          "$value": "black"
         },
         "pressed": {
           "background-color": {
