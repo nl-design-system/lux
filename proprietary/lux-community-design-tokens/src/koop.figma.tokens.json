@@ -1,18 +1,4 @@
 {
-  "common/border": {
-    "rhc": {
-      "border-radius": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "2.5px"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "5px"
-        }
-      }
-    }
-  },
   "overrides/expert-user": {
     "basis": {
       "color": {
