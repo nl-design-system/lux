@@ -39,6 +39,24 @@
             "$type": "color",
             "$value": "{expert-user.color.cta.hover}"
           }
+        },
+        "primary-action": {
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "150%"
+          }
+        },
+        "secondary-action": {
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "150%"
+          }
+        },
+        "subtle": {
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "150%"
+          }
         }
       },
       "checkbox": {
@@ -406,12 +424,30 @@
             "$value": "{rhc.color.lichtblauw.100}"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "space": "lch",
+                  "type": "lighten",
+                  "value": "0.15"
+                }
+              }
+            },
             "$type": "color",
             "$value": "{rhc.color.lintblauw.50}"
           },
           "selected": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "space": "lch",
+                  "type": "lighten",
+                  "value": "0.25"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{rhc.color.hemelblauw.50}"
+            "$value": "{rhc.color.hemelblauw.100}"
           }
         },
         "status": {
@@ -499,10 +535,6 @@
             "$type": "color",
             "$value": "{rhc.color.wit}"
           },
-          "header": {
-            "$type": "color",
-            "$value": "{rhc.color.lintblauw.500}"
-          },
           "primary": {
             "$type": "color",
             "$value": "{rhc.color.wit}"
@@ -510,10 +542,6 @@
           "secondary": {
             "$type": "color",
             "$value": "{rhc.color.cool-grey.50}"
-          },
-          "tooltip": {
-            "$type": "color",
-            "$value": "{rhc.color.cool-grey.600}"
           }
         }
       }
@@ -700,9 +728,30 @@
   "extra-components/header": {
     "rhc": {
       "header": {
-        "background-color": {
+        "default": {
           "$type": "color",
-          "$value": "{expert-user.color.surface.header}"
+          "$value": "{rhc.color.lintblauw.500}"
+        },
+        "alternative": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "space": "lch",
+                "type": "darken",
+                "value": "0.15"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{rhc.color.violet.500}"
+        },
+        "shadow": {
+          "$type": "color",
+          "$value": "{rhc.color.cool-grey.700}"
+        },
+        "alternative-shadow": {
+          "$type": "color",
+          "$value": "{rhc.color.paars.400}"
         },
         "nav-item": {
           "border-radius": {
@@ -741,6 +790,18 @@
             "border-color": {
               "$type": "color",
               "$value": "{rhc.color.foreground.on-dark-color}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "rgba(255,255,255,0.3)"
+            }
+          },
+          "pressed": {
+            "background-color": {
+              "$type": "color",
+              "$value": "rgba(0,0,0,0.3)"
             }
           }
         }
@@ -967,7 +1028,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{rhc.font-family.primary}"
+            "$value": "{rhc.text.font-family.default}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -979,7 +1040,7 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{rhc.text.line-height.body}"
+            "$value": "{rhc.text.line-height.md}"
           },
           "min-block-size": {
             "$type": "dimension",
@@ -1480,7 +1541,7 @@
       "tooltip": {
         "background-color": {
           "$type": "color",
-          "$value": "{expert-user.color.surface.tooltip}"
+          "$value": "{rhc.color.cool-grey.600}"
         },
         "border-radius": {
           "$type": "dimension",
@@ -1582,6 +1643,12 @@
           "max-inline-size": {
             "$type": "dimension",
             "$value": "60 * 1rem"
+          },
+          "progress": {
+            "min-height": {
+              "$type": "dimension",
+              "$value": "5.75rem"
+            }
           }
         },
         "main": {
