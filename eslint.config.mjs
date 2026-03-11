@@ -220,9 +220,6 @@ export default tseslint.config(
         sourceType: 'module',
       },
     },
-    settings: {
-      react: { version: 'detect' },
-    },
     plugins: {
       '@typescript-eslint': tseslint.plugin,
       react,
