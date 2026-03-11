@@ -177,7 +177,7 @@ export default tseslint.config(
     },
   },
 
-  // JS/JSX/TS/TSX source files
+  // JS/JSX source files
   {
     files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
@@ -195,7 +195,6 @@ export default tseslint.config(
       react: { version: 'detect' },
     },
     plugins: {
-      '@typescript-eslint': tseslint.plugin,
       react,
       import: importPlugin,
     },
