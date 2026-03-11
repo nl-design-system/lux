@@ -43,7 +43,7 @@ export const mergeFigmaTokenFiles = async () => {
   }
 };
 
-const mergeTokenSets = (original, addition) => {
+export const mergeTokenSets = (original, addition) => {
   let collisions = [];
 
   // Make copy of original
@@ -65,5 +65,3 @@ const mergeTokenSets = (original, addition) => {
 if (import.meta.url === `file://${process.argv[1]}`) {
   mergeFigmaTokenFiles().catch(console.error);
 }
-
-export { mergeFigmaTokenFiles };
