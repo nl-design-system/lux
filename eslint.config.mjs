@@ -179,7 +179,7 @@ export default tseslint.config(
 
   // JS/JSX/TS/TSX source files
   {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+    files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
       globals: {
         ...globals.browser,
