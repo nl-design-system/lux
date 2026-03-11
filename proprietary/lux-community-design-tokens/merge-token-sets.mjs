@@ -1,7 +1,8 @@
 import rhcFigmaTokens from '@rijkshuisstijl-community/design-tokens/figma/figma.tokens.json' with { type: 'json' };
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import process from 'node:process';
+import { fileURLToPath } from 'node:url';
 import koopFigmaTokens from './src/koop.figma.tokens.json' with { type: 'json' };
 
 const __filename = fileURLToPath(import.meta.url);
