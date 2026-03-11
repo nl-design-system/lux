@@ -293,6 +293,7 @@ export default tseslint.config(
           'packages/web-components-stencil/tsconfig.json',
           'packages/web-components-stencil/tsconfig.jest.json',
           'proprietary/icons/tsconfig.json',
+          'proprietary/lux-community-design-tokens/tsconfig.test.json',
         ],
       },
     },

@@ -30,7 +30,7 @@
     "prebuild": "npm run clean && npm run merge-token-sets",
     "build": "node ./build.mjs",
     "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
-    "test": "vitest run",
+    "test": "vitest",
     "prepack": "npm-run-all build lint createlib",
     "postpack": "npm run clean:lib"
   },
