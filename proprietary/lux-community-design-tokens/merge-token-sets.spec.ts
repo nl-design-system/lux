@@ -30,4 +30,15 @@ describe('mergeTokenSets', () => {
 
     expect(merged.$themes).toStrictEqual(['some', 'stuff']);
   });
+
+  it('should not suffer from shallow copy residue', () => {
+    const orig = { a: 'a', ...defaultTheme };
+    const add1 = { b: 'b', $themes: ['b'] };
+    const add2 = { c: 'c', $themes: ['c'] };
+
+    mergeTokenSets(orig, add1);
+    const [merged2] = mergeTokenSets(orig, add2);
+
+    expect(merged2.$themes.find((x: string) => x === 'b')).not.toBeTruthy();
+  });
 });
