@@ -3,7 +3,7 @@ module.exports = {
     {
       files: ['*.js', '*.cjs', '*.mjs', '*.jsx'],
       options: {
-        parser: 'flow',
+        parser: 'babel',
         printWidth: 120,
         trailingComma: 'all',
         tabWidth: 2,
