@@ -683,6 +683,9 @@ importers:
       '@rijkshuisstijl-community/design-tokens':
         specifier: 11.1.0
         version: 11.1.0
+      jest:
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@24.10.4)
     devDependencies:
       '@prantlf/jsonlint':
         specifier: 14.0.3
@@ -11356,7 +11359,7 @@ snapshots:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@jridgewell/trace-mapping': 0.3.25
+      '@jridgewell/trace-mapping': 0.3.31
       '@types/node': 24.10.4
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
@@ -11384,7 +11387,7 @@ snapshots:
 
   '@jest/source-map@29.6.3':
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.25
+      '@jridgewell/trace-mapping': 0.3.31
       callsites: 3.1.0
       graceful-fs: 4.2.11
 
@@ -12576,7 +12579,7 @@ snapshots:
 
   '@types/babel__traverse@7.20.6':
     dependencies:
-      '@babel/types': 7.25.7
+      '@babel/types': 7.29.0
 
   '@types/body-parser@1.19.2':
     dependencies:
@@ -13522,8 +13525,8 @@ snapshots:
 
   babel-plugin-jest-hoist@29.6.3:
     dependencies:
-      '@babel/template': 7.25.7
-      '@babel/types': 7.25.7
+      '@babel/template': 7.28.6
+      '@babel/types': 7.29.0
       '@types/babel__core': 7.20.5
       '@types/babel__traverse': 7.20.6
 
@@ -15840,7 +15843,7 @@ snapshots:
   istanbul-lib-instrument@6.0.3:
     dependencies:
       '@babel/core': 7.25.2
-      '@babel/parser': 7.25.7
+      '@babel/parser': 7.29.0
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
       semver: 7.7.4
@@ -19182,7 +19185,7 @@ snapshots:
 
   v8-to-istanbul@9.3.0:
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.25
+      '@jridgewell/trace-mapping': 0.3.31
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
 

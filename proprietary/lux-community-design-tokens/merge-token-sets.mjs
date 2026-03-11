@@ -20,7 +20,7 @@ const writeJsonFile = async (filePath, data) => {
 /**
  * Generate merged Figma tokens from RHC and Koop sources
  */
-const mergeFigmaTokenFiles = async () => {
+export const mergeFigmaTokenFiles = async () => {
   console.log('Generating merged Figma tokens...');
   console.log('# RHC token sets:', Object.keys(rhcFigmaTokens).length);
   console.log('# Koop token sets:', Object.keys(koopFigmaTokens).length);
