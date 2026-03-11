@@ -31,8 +31,7 @@
     "build": "npm-run-all build:**",
     "build:icons": "node ./build/run-build.mjs",
     "build:types": "tsc -p .",
-    "lint": "npm-run-all clean build:icons lint:**",
-    "lint:types": "tsc -p . --noEmit",
+    "lint-build": "tsc -p . --noEmit",
     "test": "npm-run-all build"
   },
   "devDependencies": {
