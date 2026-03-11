@@ -177,9 +177,9 @@ export default tseslint.config(
     },
   },
 
-  // JS/JSX files
+  // JS/JSX source files
   {
-    files: ['**/*.js', '**/*.cjs', '**/*.mjs', '**/*.jsx'],
+    files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -195,6 +195,32 @@ export default tseslint.config(
       react: { version: 'detect' },
     },
     plugins: {
+      react,
+      import: importPlugin,
+    },
+    rules: {
+      ...react.configs.flat.recommended.rules,
+      ...prettierConfig.rules,
+      ...jsRules,
+      ...reactRules,
+    },
+  },
+
+  // CJS/MJS files (utils)
+  {
+    files: ['**/*.cjs', '**/*.mjs'],
+    languageOptions: {
+      globals: {
+        ...globals.es2018,
+        ...globals.node,
+      },
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+    },
+    plugins: {
+      '@typescript-eslint': tseslint.plugin,
       react,
       import: importPlugin,
     },
