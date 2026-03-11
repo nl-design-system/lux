@@ -4,7 +4,8 @@
     (
         var(--utrecht-document-line-height, inherit) - var(--utrecht-radio-button-size, 1em) -
           var(--utrecht-radio-button-border-width)
-      ) / 2
+      ) /
+      2
   );
   background-image: radial-gradient(
     circle,

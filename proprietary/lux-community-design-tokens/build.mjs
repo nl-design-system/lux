@@ -36,12 +36,12 @@ const getPlatformsConfig = (buildPath) => {
   };
 };
 
-// This will build the base tokens without the themes and without the overwrites
+// This will build the tokens
 async function buildBaseTokens() {
   const config = getPlatformsConfig('dist/');
   const StyleDictionaryBase = new StyleDictionary({
     log: { verbosity: 'verbose' },
-    source: ['./src/figma.tokens.json'],
+    source: ['./merged/figma.tokens.json'],
     preprocessors: ['tokens-studio'],
     platforms: {
       ...config,

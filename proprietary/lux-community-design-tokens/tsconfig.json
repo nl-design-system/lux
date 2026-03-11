@@ -1,9 +1,11 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "declaration": true,
+    "downlevelIteration": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
@@ -13,14 +15,20 @@
     "lib": ["dom", "es2020"],
     "module": "es2020",
     "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "sourceMap": true,
     "strict": true,
     "target": "es2020"
   },
-  "include": ["next-env.d.ts", "dist/**/*.ts", "dist/**/*.tsx", "dist/index.tsx"],
-  "exclude": ["**/node_modules/*", "**/*.test.ts", "src/**/*.test.tsx", "**/*.spec.ts", "src/**/*.spec.tsx"]
+  "include": ["merge-token-sets.spec.ts"],
+  "exclude": ["**/node_modules/*"]
 }

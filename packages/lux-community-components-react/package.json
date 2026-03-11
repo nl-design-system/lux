@@ -20,15 +20,14 @@
   "scripts": {
     "prebuild": "npm run clean",
     "prepack": "npm run build",
-    "build": "npm-run-all build:**",
-    "build:components": "vite build",
+    "build": "vite build",
     "clean": "rimraf dist/ pages/",
     "lint": "npm-run-all lint:*",
     "lint:src": "tsc --project ./tsconfig.json --noEmit",
     "lint:test": "tsc --project ./tsconfig.test.json --noEmit",
     "test": "vitest run --coverage --reporter verbose",
-    "watch:components": "vite build --watch",
-    "watch:test": "vitest --coverage --watch"
+    "test-watch": "vitest --coverage --watch",
+    "watch:components": "vite build --watch"
   },
   "main": "./dist/index.umd.js",
   "module": "./dist/index.mjs",

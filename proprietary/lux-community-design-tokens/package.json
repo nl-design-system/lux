@@ -24,17 +24,13 @@
   "homepage": "https://nl-design-system.github.io/lux/",
   "bugs": "https://github.com/nl-design-system/lux/issues",
   "scripts": {
-    "clean": "npm-run-all clean:**",
-    "clean:dist": "rimraf dist/",
-    "clean:lib": "rimraf lib/",
-    "lint": "npm-run-all lint:**",
-    "lint:json": "jsonlint -q -F src/**/*.json",
-    "prebuild": "npm run clean",
-    "build": "npm-run-all build:tokens-studio",
-    "build:tokens-studio": "node ./build.mjs",
-    "watch": "npm-run-all watch:**",
-    "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
-    "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src",
+    "clean": "rimraf dist/",
+    "lint": "jsonlint -q -F src/**/*.json",
+    "merge-token-sets": "node ./merge-token-sets.mjs",
+    "prebuild": "npm run clean && npm run merge-token-sets",
+    "build": "node ./build.mjs",
+    "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
+    "test": "vitest",
     "prepack": "npm-run-all build lint createlib",
     "postpack": "npm run clean:lib"
   },
@@ -45,6 +41,11 @@
     "cpy-cli": "5.0.0",
     "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
-    "style-dictionary": "5.0.4"
+    "style-dictionary": "5.0.4",
+    "vitest": "3.2.4"
+  },
+  "dependencies": {
+    "@rijkshuisstijl-community/design-tokens": "11.1.0",
+    "cross-env": "7.0.3"
   }
 }

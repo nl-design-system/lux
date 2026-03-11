@@ -2,6 +2,13 @@
 
 Deze package bevat de Community Design Tokens van het LUX Design System in verschillende formaten.  
 Hier kunnen alle Logius-projecten op een NLDS manier werken aan hun look en feel.
+Intern worden door het script merge-token-sets de RHC-tokens samengevoegd met de lokale tokens tot één bestand. Het is
+dan ook belangrijk dat de token sets niet in elkaars vaarwater zitten: stop in `koop.figma.tokens.json` dan ook geen
+token sets (dat zijn de top level keys van het JSON-object) die al in `figma.tokens.json` in de
+`rijkshuisstijl-community` repo voorkomen. Om dit te bewaken is in het merge-token-sets script een voorwaarde opgenomen,
+zodat de github action eigenlijk al niet accepteert zodra er dingen van RHC worden overschreven.
+In plaats hiervan wordt geadviseerd om eigen token sets te maken, bijvoorbeeld met naam `overrides/*`, en die dan voor
+jouw thema aan te zetten.
 
 ## Installeren
 
