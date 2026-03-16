@@ -223,11 +223,16 @@ jobs:
     needs: [lint, test]
     if: github.ref == 'refs/heads/main'
 
+    environment:
+      name: publish
+
+    permissions:
+      contents: read
+      id-token: write
+
     steps:
       - name: Checkout release branch
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
-        with:
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
