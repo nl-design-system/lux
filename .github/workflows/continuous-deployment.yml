@@ -250,7 +250,7 @@ jobs:
       - name: "Continuous Deployment: build"
         run: pnpm run --if-present build
 
-      - name: Publish to GitHub repository
+      - name: Publish to npm Registry
         uses: changesets/action@6a0a831ff30acef54f2c6aa1cbbc1096b066edaf # v1.7.0
         id: changeset
         env:
