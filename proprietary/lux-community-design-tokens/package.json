@@ -13,7 +13,6 @@
     "access": "public"
   },
   "files": [
-    "lib/",
     "dist/"
   ],
   "repository": {
@@ -31,8 +30,7 @@
     "build": "node ./build.mjs",
     "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
     "test": "vitest",
-    "prepack": "npm-run-all build lint createlib",
-    "postpack": "npm run clean:lib"
+    "prepack": "npm-run-all build lint"
   },
   "devDependencies": {
     "@prantlf/jsonlint": "14.0.3",
