@@ -267,7 +267,7 @@ jobs:
           commit: "docs(release): design system packages"
           setupGitUser: false
           title: "docs(release): design system packages"
-          publish: "pnpm run publish --provenance"
+          publish: "pnpm run publish"
           version: "pnpm run version"
 
       # Publish canary releases only if the packages weren't published already
