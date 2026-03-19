@@ -24,13 +24,16 @@
   "homepage": "https://nl-design-system.github.io/lux/",
   "bugs": "https://github.com/nl-design-system/lux/issues",
   "scripts": {
-    "clean": "rimraf dist/",
+    "clean": "npm-run-all clean:**",
+    "clean:dist": "rimraf dist/",
+    "clean:lib": "rimraf lib/",
     "lint": "jsonlint -q -F src/**/*.json",
     "merge-token-sets": "node ./merge-token-sets.mjs",
     "prebuild": "npm run clean && npm run merge-token-sets",
     "build": "node ./build.mjs",
     "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
     "test": "vitest",
+    "createlib": "cpy merged/*.json lib/tokens/",
     "prepack": "npm-run-all build lint createlib",
     "postpack": "npm run clean:lib"
   },
