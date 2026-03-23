@@ -22,13 +22,13 @@ describe('mergeTokenSets', () => {
     expect(collisions).toStrictEqual(['a']);
   });
 
-  it('should merge themes by concatenation', () => {
+  it('should not merge themes, but only use the local ones', () => {
     const orig = { $themes: [{ id: 'some' }] };
     const add = { $themes: [{ id: 'stuff' }] };
 
     const [merged] = mergeTokenSets(orig, add);
 
-    expect(merged.$themes).toStrictEqual([{ id: 'some' }, { id: 'stuff' }]);
+    expect(merged.$themes).toStrictEqual([{ id: 'stuff' }]);
   });
 
   it('should not suffer from shallow copy residue', () => {

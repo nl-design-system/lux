@@ -62,7 +62,11 @@ package-lock.json
 # Ignore generated files from Stencil
 components.d.ts
 
-# Do not ignore our build scripts 
+# Do not ignore our build scripts
 # (This leaves other build/ folders ignored, see line #9)
 !/proprietary/design-tokens/build
 !/proprietary/icons/build
+
+# Ignore most generated json files for lux-community-design-tokens
+/proprietary/lux-community-design-tokens/merged
+!/proprietary/lux-community-design-tokens/merged/figma.tokens.json
