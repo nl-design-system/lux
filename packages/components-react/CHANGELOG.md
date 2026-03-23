@@ -1,5 +1,11 @@
 # @lux-design-system/components-react
 
+## 1.2.3
+
+### Patch Changes
+
+- ae44d06: Patch release to test the safer publishing to npm
+
 ## 1.2.2
 
 ### Patch Changes
@@ -51,7 +57,6 @@
 
 - 90370e7: Nieuw component: Select
 - edab49a: Nieuwe componenten:
-
   - LuxHeading
   - LuxHeading1
   - LuxHeading2
@@ -61,19 +66,16 @@
   - LuxHeading6
 
 - 6e139a6: Nieuwe componenten:
-
   - LuxPreHeading
   - LuxHeadingGroup
 
 - c834cc4: Nieuw component: LuxAlert
 - a3427ca: Nieuwe componenten:
-
   - LuxDocument
   - LuxParagraph
 
 - 9345672: Nieuw component: Section
 - a2ce8bc: Nieuwe componenten:
-
   - Radio Button
   - Form Field Radio Option
   - Form Field Radio Group
