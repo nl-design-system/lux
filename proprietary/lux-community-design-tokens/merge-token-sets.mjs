@@ -36,7 +36,9 @@ export const mergeFigmaTokenFiles = async () => {
   // Write the merged tokens to a file
   await writeJsonFile(outputPath, mergedTokens);
 
-  console.log(`Merged Figma tokens generated successfully at ${outputPath}.`);
+  console.log(`Merged Figma tokens generated ${collisions.length === 0 ? 'successfully ' : ''}at ${outputPath}.`);
+
+  processThemes(outputPath);
 
   if (collisions.length > 0) {
     console.error('Token set collisions found, exiting with error');
@@ -56,10 +58,41 @@ export const mergeTokenSets = (original, addition) => {
     else if (key !== '$themes') collisions.push(key);
   }
 
-  // Concatenate $themes array of both
-  merged.$themes = merged.$themes.concat(addition.$themes);
+  // No need to re-publish the themes available in RHC here
+  merged.$themes = addition.$themes;
 
   return [merged, collisions];
+};
+
+// Process themes to add the enabled components
+const processThemes = async (file) => {
+  // Read the raw JSON file directly
+  const json = await fs.readFile(file, 'utf-8');
+  const tokens = JSON.parse(json);
+
+  const processedThemes = {};
+
+  (tokens.$themes || []).forEach((theme) => {
+    const themeTokens = {};
+
+    Object.entries(theme.selectedTokenSets).forEach(([tokenSet, status]) => {
+      if (status === 'enabled' && !tokenSet.endsWith('[figma-only]')) {
+        if (tokens[tokenSet]) {
+          themeTokens[tokenSet] = tokens[tokenSet];
+        }
+      }
+    });
+    // Add default type scale here, because Figma does not understand `clamp(...)`
+    themeTokens['overrides/type-scale/default [code-only]'] = tokens['overrides/type-scale/default [code-only]'];
+
+    processedThemes[theme.name] = {
+      id: theme.id,
+      tokens: themeTokens,
+      group: theme.group,
+    };
+  });
+
+  writeJsonFile(path.resolve(__dirname, './merged/themes.json'), processedThemes);
 };
 
 // Run the generator if this script is executed directly
