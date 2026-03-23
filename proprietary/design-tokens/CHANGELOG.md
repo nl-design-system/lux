@@ -1,5 +1,11 @@
 # @lux-design-system/design-tokens
 
+## 2.2.1
+
+### Patch Changes
+
+- ae44d06: Patch release to test the safer publishing to npm
+
 ## 2.2.0
 
 ### Minor Changes
@@ -24,7 +30,6 @@
 ### Major Changes
 
 - 3b4c5ce: Gewijzigde tokens:
-
   - utrecht heading-1: color van `brand` naar `foreground`, font-weight van `bold` naar `regular`
   - utrecht heading-3: color van `brand` naar `foreground`
 
@@ -33,7 +38,6 @@
 ### Minor Changes
 
 - 599a16f: Nieuwe tokens:
-
   - Utrecht Column layout
   - Utrecht Link list
   - Utrecht Page footer
@@ -42,14 +46,12 @@
 - 6e97df6: - Nieuwe tokens: lux component button - smalle variant
   - Wijziging tokens: line-height en font-size tokens voor secondary en subtle button toegevoegd
 - fbb693b: Nieuwe tokens:
-
   - Lux Radio group
   - Utrecht Form label
   - Utrecht radio button
 
 - 6de5a79: Nieuwe tokens: utrecht component checkbox
 - 46d8608: Nieuwe tokens:
-
   - utrecht common pointer target
   - utrecht component form field
   - utrecht component form field description
@@ -59,7 +61,6 @@
   - utrecht component text input
 
   Wijziging tokens:
-
   - utrecht component document background-color toegevoegd
 
 - eaf684a: Wijziging tokens: vormgeving invalid form field
