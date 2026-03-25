@@ -3,5 +3,4 @@
 * @nl-design-system/logius-maintainer
 
 # Community packages can be reviewed by anyone
-/proprietary/lux-community-design-tokens/ @nl-design-system/logius-committer
-/packages/lux-community-components-react/ @nl-design-system/logius-committer
+/**/*community*/ @nl-design-system/logius-committer
