@@ -1,3 +1,7 @@
 # See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 * @nl-design-system/logius-maintainer
+
+# Community packages can be reviewed by anyone
+/proprietary/lux-community-design-tokens/ @nl-design-system/logius-committer
+/packages/lux-community-components-react/ @nl-design-system/logius-committer
