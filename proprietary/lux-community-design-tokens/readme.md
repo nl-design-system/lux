@@ -26,15 +26,9 @@ jouw thema aan te zetten.
 
 ## Genereren
 
-Er komt een script waarmee de RHC design tokens (uit een andere package `@lux-design-system/design-tokens` in deze zelfde repository) lokaal worden
+Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) lokaal worden
 samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
-Studio) en code.
-Dan zijn de volgende producten beschikbaar:
-
-### JSON
-
-Tokens die vanuit Tokens Studio en Figma gegenereerd worden.
-Meer informatie over de LUX design tokens en de lagen vind je op de pagina [Design Tokens](https://nl-design-system.github.io/lux/?path=/docs/design-tokens-design-tokens--docs) van onze Storybook.
+Studio) en code. Daardoor zijn de volgende exports beschikbaar:
 
 ### CSS
 
@@ -43,29 +37,43 @@ In de map `/dist/` staan de CSS-variabelen, die kun je zo importeren en in je pr
 #### Gebruik
 
 Om de design tokens als CSS-variabelen te gebruiken zijn er verschillende methoden. Een aantal voorbeelden.
+Vervang in deze voorbeelden `.css` door `.scss` als je Sass wilt gebruiken.
 
-In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
+##### Via Webpack
 
-```html
-<!-- :root-versie -->
-<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/logius/index.css" />
+Als je de tokens installeert (en de afhankelijkheid beheert) via een [package manager](#installeren).
+Root CSS-variabelen inladen:
+
+```javascript
+import "@lux-design-system/lux-community-design-tokens/dist/index.css";
 ```
 
+Of thema-specifieke CSS-variabelen inladen:
+
+```javascript
+import "@lux-design-system/lux-community-design-tokens/dist/bwbapp/index.css";
+```
+
+##### Via Unpkg (unsupported)
+
+In de `<head>` sectie van je HTML-pagina.
+Root CSS-variabelen inladen:
+
 ```html
-<!-- theme-versie -->
+<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/variables.css" />
+```
+
+Thema-specifieke CSS-variabelen inladen:
+
+```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/logius/index-theme.css"
+  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/bwbapp/variables.css"
 />
 ```
 
+Thema instellen:
+
 ```html
-<!-- theme -->
 <div class="lux-theme--logius-dark">...</div>
-```
-
-Via Webpack als je installeert via een [package manager](#installeren):
-
-```javascript
-import "@lux-design-system/lux-community-design-tokens/dist/logius/index.css";
 ```
