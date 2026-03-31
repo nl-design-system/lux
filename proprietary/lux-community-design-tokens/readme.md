@@ -10,7 +10,7 @@ zodat de github action eigenlijk al niet accepteert zodra er dingen van RHC word
 In plaats hiervan wordt geadviseerd om eigen token sets te maken, bijvoorbeeld met naam `overrides/*`, en die dan voor
 jouw thema aan te zetten.
 
-## Installeren
+## Installatie
 
 ### NPM
 
@@ -24,24 +24,13 @@ jouw thema aan te zetten.
 
 `pnpm add @lux-design-system/lux-community-design-tokens --save-dev`
 
-## Genereren
+## Gebruik
 
-Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) lokaal worden
-samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
-Studio) en code. Daardoor zijn de volgende exports beschikbaar:
+In de map `/dist/` staan de CSS-variabelen, die kun je zo importeren en in je project gebruiken. Om de design tokens als CSS-variabelen te gebruiken zijn er verschillende methoden.
 
-### CSS
+### Via Webpack
 
-In de map `/dist/` staan de CSS-variabelen, die kun je zo importeren en in je project gebruiken.
-
-#### Gebruik
-
-Om de design tokens als CSS-variabelen te gebruiken zijn er verschillende methoden. Een aantal voorbeelden.
-Vervang in deze voorbeelden `.css` door `.scss` als je Sass wilt gebruiken.
-
-##### Via Webpack
-
-Als je de tokens installeert (en de afhankelijkheid beheert) via een [package manager](#installeren).
+Als je de tokens installeert (en de afhankelijkheid beheert) via een [package manager](#installatie).
 Root CSS-variabelen inladen:
 
 ```javascript
@@ -54,7 +43,9 @@ Of thema-specifieke CSS-variabelen inladen:
 import "@lux-design-system/lux-community-design-tokens/dist/bwbapp/index.css";
 ```
 
-##### Via Unpkg (unsupported)
+Vervang in bovenstaande voorbeelden `.css` door `.scss` als je Sass wilt gebruiken.
+
+### Via Unpkg (unsupported)
 
 In de `<head>` sectie van je HTML-pagina.
 Root CSS-variabelen inladen:
@@ -77,3 +68,9 @@ Thema instellen:
 ```html
 <div class="lux-theme--logius-dark">...</div>
 ```
+
+## Automatisch samenvoeging
+
+Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) lokaal worden
+samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
+Studio) en code. Daardoor zijn de volgende exports beschikbaar:
