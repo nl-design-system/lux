@@ -71,6 +71,6 @@ Thema instellen:
 
 ## Automatisch samenvoeging
 
-Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) lokaal worden
+Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) worden
 samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
-Studio) en code. Daardoor zijn de volgende exports beschikbaar:
+Studio) en code. Na samenvoeging wordt de transformatie van token file naar exports gerund en zo komen de hierboven genoemde exports (.css en .scss) beschikbaar.
