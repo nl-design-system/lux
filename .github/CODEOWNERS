@@ -3,4 +3,5 @@
 * @nl-design-system/logius-maintainer
 
 # Community packages can be reviewed by anyone
-/**/*community*/ @nl-design-system/logius-committer
+/packages/*-community-*/* @nl-design-system/logius-committer
+/proprietary/*-community-*/* @nl-design-system/logius-committer
