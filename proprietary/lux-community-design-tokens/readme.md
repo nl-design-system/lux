@@ -45,7 +45,7 @@ import "@lux-design-system/lux-community-design-tokens/dist/bwbapp/index.css";
 
 Vervang in bovenstaande voorbeelden `.css` door `.scss` als je Sass wilt gebruiken.
 
-### Via Unpkg (unsupported)
+### Via Unpkg (unsupported & niet aangeraden voor productie)
 
 In de `<head>` sectie van je HTML-pagina.
 Root CSS-variabelen inladen:
