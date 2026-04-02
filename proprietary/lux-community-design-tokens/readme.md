@@ -10,7 +10,7 @@ zodat de github action eigenlijk al niet accepteert zodra er dingen van RHC word
 In plaats hiervan wordt geadviseerd om eigen token sets te maken, bijvoorbeeld met naam `overrides/*`, en die dan voor
 jouw thema aan te zetten.
 
-## Installeren
+## Installatie
 
 ### NPM
 
@@ -24,48 +24,53 @@ jouw thema aan te zetten.
 
 `pnpm add @lux-design-system/lux-community-design-tokens --save-dev`
 
-## Genereren
+## Gebruik
 
-Er komt een script waarmee de RHC design tokens (uit een andere package `@lux-design-system/design-tokens` in deze zelfde repository) lokaal worden
-samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
-Studio) en code.
-Dan zijn de volgende producten beschikbaar:
+In de map `/dist/` staan de CSS-variabelen, die kun je zo importeren en in je project gebruiken. Om de design tokens als CSS-variabelen te gebruiken zijn er verschillende methoden.
 
-### JSON
+### Via Webpack
 
-Tokens die vanuit Tokens Studio en Figma gegenereerd worden.
-Meer informatie over de LUX design tokens en de lagen vind je op de pagina [Design Tokens](https://nl-design-system.github.io/lux/?path=/docs/design-tokens-design-tokens--docs) van onze Storybook.
+Als je de tokens installeert (en de afhankelijkheid beheert) via een [package manager](#installatie).
+Root CSS-variabelen inladen:
 
-### CSS
-
-In de map `/dist/` staan de CSS-variabelen, die kun je zo importeren en in je project gebruiken.
-
-#### Gebruik
-
-Om de design tokens als CSS-variabelen te gebruiken zijn er verschillende methoden. Een aantal voorbeelden.
-
-In de `<head>` sectie van je HTML-pagina, vanaf de Unpkg CDN:
-
-```html
-<!-- :root-versie -->
-<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/logius/index.css" />
+```javascript
+import "@lux-design-system/lux-community-design-tokens/dist/index.css";
 ```
 
+Of thema-specifieke CSS-variabelen inladen:
+
+```javascript
+import "@lux-design-system/lux-community-design-tokens/dist/bwbapp/index.css";
+```
+
+Vervang in bovenstaande voorbeelden `.css` door `.scss` als je Sass wilt gebruiken.
+
+### Via Unpkg (unsupported & niet aangeraden voor productie)
+
+In de `<head>` sectie van je HTML-pagina.
+Root CSS-variabelen inladen:
+
 ```html
-<!-- theme-versie -->
+<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/variables.css" />
+```
+
+Thema-specifieke CSS-variabelen inladen:
+
+```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/logius/index-theme.css"
+  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/bwbapp/variables.css"
 />
 ```
 
+Thema instellen:
+
 ```html
-<!-- theme -->
 <div class="lux-theme--logius-dark">...</div>
 ```
 
-Via Webpack als je installeert via een [package manager](#installeren):
+## Automatisch samenvoeging
 
-```javascript
-import "@lux-design-system/lux-community-design-tokens/dist/logius/index.css";
-```
+Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) worden
+samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
+Studio) en code. Na samenvoeging wordt de transformatie van token file naar exports gerund en zo komen de hierboven genoemde exports (.css en .scss) beschikbaar.
