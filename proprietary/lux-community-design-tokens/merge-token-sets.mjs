@@ -3,7 +3,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
-import koopFigmaTokens from './src/koop.figma.tokens.json' with { type: 'json' };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,31 +18,42 @@ const writeJsonFile = async (filePath, data) => {
 };
 
 /**
- * Generate merged Figma tokens from RHC and Koop sources
+ * Generate merged figma token files from RHC source and local overrides
  */
 export const mergeFigmaTokenFiles = async () => {
-  console.log('Generating merged Figma tokens...');
-  console.log('# RHC token sets:', Object.keys(rhcFigmaTokens).length);
-  console.log('# Koop token sets:', Object.keys(koopFigmaTokens).length);
+  fs.readdir('./src', (error, files) => {
+    if (error) {
+      console.error(error);
+      process.exit(700);
+    }
 
-  const [mergedTokens, collisions] = mergeTokenSets(rhcFigmaTokens, koopFigmaTokens);
-  console.log('# Merged token sets:', Object.keys(mergedTokens).length);
-  console.log('# Tokens set collisions:', collisions.length);
+    files
+      .filter((fn) => /\.figma\.tokens\.json$/.test(fn))
+      .forEach(async (fn) => {
+        console.log(`Generating merged tokens for: ${fn}`);
+        console.log(`${Object.keys(rhcFigmaTokens).length} rhc token sets`);
 
-  // Output path for the merged tokens
-  const outputPath = path.resolve(__dirname, './merged/figma.tokens.json');
+        const file = await fs.readFile(fn, 'utf-8');
+        const incomingFigmaTokens = JSON.parse(file);
+        console.log(`${Object.keys(incomingFigmaTokens).length} incoming token sets`);
 
-  // Write the merged tokens to a file
-  await writeJsonFile(outputPath, mergedTokens);
+        const [mergedTokens, collisions] = mergeTokenSets(rhcFigmaTokens, incomingFigmaTokens);
+        console.log('# Merged token sets:', Object.keys(mergedTokens).length);
+        console.log('# Tokens set collisions:', collisions.length);
 
-  console.log(`Merged Figma tokens generated ${collisions.length === 0 ? 'successfully ' : ''}at ${outputPath}.`);
+        const outputPath = path.resolve(__dirname, `./merged/${fn}`);
+        await writeJsonFile(outputPath, mergedTokens);
 
-  processThemes(outputPath);
+        console.log(`Merged Figma tokens generated ${collisions.length === 0 ? 'successfully ' : ''}at ${outputPath}.`);
 
-  if (collisions.length > 0) {
-    console.error('Token set collisions found, exiting with error');
-    process.exit(collisions.length);
-  }
+        processThemes(outputPath);
+
+        if (collisions.length > 0) {
+          console.error('Token set collisions found, exiting with error');
+          process.exit(collisions.length);
+        }
+      });
+  });
 };
 
 export const mergeTokenSets = (original, addition) => {
@@ -65,10 +75,10 @@ export const mergeTokenSets = (original, addition) => {
 };
 
 // Process themes to add the enabled components
-const processThemes = async (file) => {
+const processThemes = async (fn) => {
   // Read the raw JSON file directly
-  const json = await fs.readFile(file, 'utf-8');
-  const tokens = JSON.parse(json);
+  const file = await fs.readFile(fn, 'utf-8');
+  const tokens = JSON.parse(file);
 
   const processedThemes = {};
 
