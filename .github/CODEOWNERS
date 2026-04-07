@@ -3,8 +3,7 @@
 * @cascassette @ruurdv @FinnWard @NeslihanUTUK
 
 # Community packages can be reviewed by anyone
-/packages/*-community-*/* @nl-design-system/logius-committer
-/proprietary/*-community-*/* @nl-design-system/logius-committer
+/**/*-community-*/* @nl-design-system/logius-committer
 
 # Protect CODEOWNERS file itself
 /.github/CODEOWNERS @nl-design-system/logius-maintainer @nl-design-system/kernteam-maintainer
