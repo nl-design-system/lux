@@ -75,6 +75,10 @@
         "margin-block-start": {
           "$type": "dimension",
           "$value": "-{rhc.space.50}"
+        },
+        "margin": {
+          "$type": "dimension",
+          "$value": "-{rhc.space.50}"
         }
       },
       "form-field": {
