@@ -19,7 +19,6 @@ StyleDictionary.registerFileHeader({
 
 register(StyleDictionary, { excludeParentKeys: true });
 
-// Get the platforms config
 const getPlatformsConfig = (buildPath) => ({
   web: {
     transformGroup: 'tokens-studio',
