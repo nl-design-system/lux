@@ -75,13 +75,14 @@ async function buildThemes() {
     }
 
     // Write individual theme tokens
-    await writeFile(posix.join(themesDir, `tokens.json`), JSON.stringify(themeData.tokens, null, 2));
+    const fileName = posix.join(themesDir, `tokens.json`);
+    await writeFile(fileName, JSON.stringify(themeData.tokens, null, 2));
 
     const config = getPlatformsConfig(`dist/${themeName}/`, themeName);
     // Create a separate Style Dictionary instance for each theme
     const StyleDictionaryTheme = new StyleDictionary({
       log: { verbosity: 'verbose' },
-      source: [`./merged/${themeName}/tokens.json`],
+      source: [fileName],
       preprocessors: ['tokens-studio'],
       platforms: {
         ...config,

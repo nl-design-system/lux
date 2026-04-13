@@ -27,9 +27,13 @@ export const mergeFigmaTokenFiles = async () => {
       process.exit(700);
     }
 
+    const validFileNameRegex = /^([a-z]+)\.figma\.tokens\.json$/;
+
     files
-      .filter((fn) => /\.figma\.tokens\.json$/.test(fn))
+      .filter((fn) => validFileNameRegex.test(fn))
       .forEach(async (fn) => {
+        const appName = validFileNameRegex.exec(fn)[1];
+
         console.log(`Generating merged tokens for: ${fn}`);
         console.log(`${Object.keys(rhcFigmaTokens).length} rhc token sets`);
 
@@ -41,7 +45,7 @@ export const mergeFigmaTokenFiles = async () => {
         console.log('# Merged token sets:', Object.keys(mergedTokens).length);
         console.log('# Tokens set collisions:', collisions.length);
 
-        const outputPath = path.resolve(__dirname, `./merged/${fn}`);
+        const outputPath = path.resolve(__dirname, `./merged/${appName}.themes.json`);
         await writeJsonFile(outputPath, mergedTokens);
 
         console.log(`Merged Figma tokens generated ${collisions.length === 0 ? 'successfully ' : ''}at ${outputPath}.`);
