@@ -29,3 +29,6 @@ imported/
 
 # Other
 .changeset/*.md
+
+# Ignore merged json files
+**/merged/
