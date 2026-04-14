@@ -77,7 +77,7 @@ async function buildThemes() {
     const fileName = posix.join(themesDir, `tokens.json`);
     await writeFile(fileName, JSON.stringify(themeData.tokens, null, 2));
 
-    const config = getPlatformsConfig(`dist/${themeName}/`, themeName);
+    const config = getPlatformsConfig(`dist/${themeName}/`);
     // Create a separate Style Dictionary instance for each theme
     const StyleDictionaryTheme = new StyleDictionary({
       log: { verbosity: 'verbose' },
