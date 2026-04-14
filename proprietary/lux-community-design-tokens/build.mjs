@@ -68,19 +68,23 @@ async function buildThemes(appName) {
   // Process each theme separately
   for (const [theme, themeData] of Object.entries(themes)) {
     const themeName = themeData.id || normalizeThemeName(theme);
-    const themesDir = `./merged/${appName}`;
-    const themeFile = `${themesDir}/${themeName}.tokens.json`;
+    const appDir = `./merged/${appName}`;
+    const themeFile = `${appDir}/${themeName}.tokens.json`;
 
     // Create the theme directory if it doesn't exist
-    if (!existsSync(themesDir)) {
-      mkdirSync(themesDir, { recursive: true });
+    if (!existsSync(appDir)) {
+      mkdirSync(appDir, { recursive: true });
     }
 
     // Write individual theme tokens
     await writeFile(themeFile, JSON.stringify(themeData.tokens, null, 2));
 
     console.log(`Building theme tokens for ${appName}: theme ${themeName}`);
-    const config = getPlatformsConfig(`dist/${appName}/${themeName}/`);
+    const themeOutputDir = `dist/${appName}/${themeName}/`;
+    if (!existsSync(themeOutputDir)) {
+      mkdirSync(themeOutputDir, { recursive: true });
+    }
+    const config = getPlatformsConfig(themeOutputDir);
     // Create a separate Style Dictionary instance for each theme
     const StyleDictionaryTheme = new StyleDictionary({
       log: { verbosity: 'verbose' },
