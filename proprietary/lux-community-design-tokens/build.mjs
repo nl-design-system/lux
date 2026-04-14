@@ -65,7 +65,7 @@ async function buildThemes() {
 
   // Process each theme separately
   for (const [theme, themeData] of Object.entries(themes)) {
-    const themeName = normalizeThemeName(theme);
+    const themeName = themeData.id || normalizeThemeName(theme);
     const themesDir = `./merged/${themeName}`;
 
     // Create the theme directory if it doesn't exist
