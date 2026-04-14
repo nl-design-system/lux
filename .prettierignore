@@ -31,4 +31,4 @@ imported/
 .changeset/*.md
 
 # Ignore merged json files
-proprietary/lux-design-tokens/merged/
+**/merged/
