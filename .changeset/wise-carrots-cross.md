@@ -1,5 +1,5 @@
 ---
-"@lux-design-system/lux-community-design-tokens": patch
+"@lux-design-system/lux-community-design-tokens": major
 ---
 
-introduce contributing.md for community design tokens package
+enable per-team token sets and themes to merge with upstream RHC tokens and build generated files
