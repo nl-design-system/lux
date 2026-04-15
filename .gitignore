@@ -69,3 +69,4 @@ components.d.ts
 
 # Ignore most generated json files for lux-community-design-tokens
 /proprietary/lux-community-design-tokens/merged/*/
+/proprietary/lux-community-design-tokens/merged/*.themes.json
