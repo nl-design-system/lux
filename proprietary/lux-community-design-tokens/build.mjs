@@ -42,7 +42,7 @@ const getPlatformsConfig = (buildPath) => ({
   },
 });
 
-// This will build the base tokens
+// This will build the base tokens per app (=team)
 async function buildBaseTokens(appName) {
   console.log(`Building base tokens for ${appName}`);
   const config = getPlatformsConfig(`dist/${appName}/`);
@@ -60,7 +60,7 @@ async function buildBaseTokens(appName) {
   await StyleDictionaryBase.buildAllPlatforms();
 }
 
-// This will build the themes
+// This will build the themes per app (=team)
 async function buildThemes(appName) {
   const themesJson = await readFile(`./merged/${appName}.themes.json`, 'utf-8');
   const themes = JSON.parse(themesJson);
