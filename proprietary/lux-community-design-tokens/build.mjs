@@ -1,8 +1,9 @@
 import { register } from '@tokens-studio/sd-transforms';
-import { existsSync, mkdirSync } from 'fs';
+import { existsSync, mkdirSync, readdirSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
-import { posix } from 'path';
 import StyleDictionary from 'style-dictionary';
+
+const mergedPath = './merged';
 
 // Will take the theme name and remove all spaces and make it lowercase
 const normalizeThemeName = (name) => {
@@ -19,7 +20,6 @@ StyleDictionary.registerFileHeader({
 
 register(StyleDictionary, { excludeParentKeys: true });
 
-// Get the platforms config
 const getPlatformsConfig = (buildPath) => ({
   web: {
     transformGroup: 'tokens-studio',
@@ -42,12 +42,13 @@ const getPlatformsConfig = (buildPath) => ({
   },
 });
 
-// This will build the base tokens
-async function buildBaseTokens() {
-  const config = getPlatformsConfig('dist/');
+// This will build the base tokens per app (=team)
+async function buildBaseTokens(appName) {
+  console.log(`Building base tokens for ${appName}`);
+  const config = getPlatformsConfig(`dist/${appName}/`);
   const StyleDictionaryBase = new StyleDictionary({
     log: { verbosity: 'verbose' },
-    source: ['./merged/figma.tokens.json'],
+    source: [`./merged/${appName}.tokens.json`],
     preprocessors: ['tokens-studio'],
     platforms: {
       ...config,
@@ -59,30 +60,35 @@ async function buildBaseTokens() {
   await StyleDictionaryBase.buildAllPlatforms();
 }
 
-// This will build the themes
-async function buildThemes() {
-  const themesJson = await readFile('./merged/themes.json', 'utf-8');
+// This will build the themes per app (=team)
+async function buildThemes(appName) {
+  const themesJson = await readFile(`./merged/${appName}.themes.json`, 'utf-8');
   const themes = JSON.parse(themesJson);
 
   // Process each theme separately
   for (const [theme, themeData] of Object.entries(themes)) {
-    const themeName = normalizeThemeName(theme);
-    const themesDir = `./merged/${themeName}`;
+    const themeName = themeData.id || normalizeThemeName(theme);
+    const appDir = `./merged/${appName}`;
+    const themeFile = `${appDir}/${themeName}.tokens.json`;
 
     // Create the theme directory if it doesn't exist
-    if (!existsSync(themesDir)) {
-      mkdirSync(themesDir, { recursive: true });
+    if (!existsSync(appDir)) {
+      mkdirSync(appDir, { recursive: true });
     }
 
     // Write individual theme tokens
-    const fileName = posix.join(themesDir, `tokens.json`);
-    await writeFile(fileName, JSON.stringify(themeData.tokens, null, 2));
+    await writeFile(themeFile, JSON.stringify(themeData.tokens, null, 2));
 
-    const config = getPlatformsConfig(`dist/${themeName}/`);
+    console.log(`Building theme tokens for ${appName}: theme ${themeName}`);
+    const themeOutputDir = `dist/${appName}/${themeName}/`;
+    if (!existsSync(themeOutputDir)) {
+      mkdirSync(themeOutputDir, { recursive: true });
+    }
+    const config = getPlatformsConfig(themeOutputDir);
     // Create a separate Style Dictionary instance for each theme
     const StyleDictionaryTheme = new StyleDictionary({
       log: { verbosity: 'verbose' },
-      source: [fileName],
+      source: [themeFile],
       preprocessors: ['tokens-studio'],
       platforms: {
         ...config,
@@ -96,13 +102,20 @@ async function buildThemes() {
   }
 }
 
-async function build() {
-  try {
-    await buildBaseTokens();
-    await buildThemes();
-  } catch (error) {
-    console.error(error);
-  }
+function build() {
+  const files = readdirSync(mergedPath);
+  const validFileNameRegex = /^([a-z]+)\.tokens\.json/;
+  files
+    .filter((fn) => validFileNameRegex.test(fn))
+    .forEach(async (fn) => {
+      const appName = validFileNameRegex.exec(fn)[1];
+      try {
+        await buildBaseTokens(appName);
+        await buildThemes(appName);
+      } catch (error) {
+        console.error(error);
+      }
+    });
 }
 
 build();

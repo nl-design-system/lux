@@ -1,0 +1,28 @@
+{
+  "overrides/ridiculous-font-size": {
+    "rhc": {
+      "text": {
+        "font-size": {
+          "md": {
+            "$type": "fontSizes",
+            "$value": "53.1px"
+          }
+        }
+      }
+    }
+  },
+  "$themes": [
+    {
+      "id": "voorbeeld-thema-niet-gebruiken",
+      "name": "Voorbeeld-thema met belachelijke font size",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "brand/text": "enabled",
+        "common/text": "enabled",
+        "overrides/ridiculous-font-size": "enabled"
+      },
+      "$figmaVariableReferences": {},
+      "group": "Development"
+    }
+  ]
+}

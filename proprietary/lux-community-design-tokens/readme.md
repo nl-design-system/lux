@@ -34,13 +34,13 @@ Als je de tokens installeert (en de afhankelijkheid beheert) via een [package ma
 Root CSS-variabelen inladen:
 
 ```javascript
-import "@lux-design-system/lux-community-design-tokens/dist/index.css";
+import "@lux-design-system/lux-community-design-tokens/dist/voorbeeld/variables.css";
 ```
 
 Of thema-specifieke CSS-variabelen inladen:
 
 ```javascript
-import "@lux-design-system/lux-community-design-tokens/dist/bwbapp/index.css";
+import "@lux-design-system/lux-community-design-tokens/dist/voorbeeld/voorbeeld-thema-niet-gebruiken/variables.css";
 ```
 
 Vervang in bovenstaande voorbeelden `.css` door `.scss` als je Sass wilt gebruiken.
@@ -51,7 +51,10 @@ In de `<head>` sectie van je HTML-pagina.
 Root CSS-variabelen inladen:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/variables.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/voorbeeld/variables.css"
+/>
 ```
 
 Thema-specifieke CSS-variabelen inladen:
@@ -59,7 +62,7 @@ Thema-specifieke CSS-variabelen inladen:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/bwbapp/variables.css"
+  href="https://unpkg.com/@lux-design-system/lux-community-design-tokens/dist/voorbeeld/voorbeeld-thema-niet-gebruiken/variables.css"
 />
 ```
 
@@ -69,8 +72,13 @@ Thema instellen:
 <div class="lux-theme--logius-dark">...</div>
 ```
 
-## Automatisch samenvoeging
+## Zelf token sets en thema's maken
 
 Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) worden
-samengevoegd met de overwrites uit de projecten. Zo kunnen designers en developers samenwerken met Figma (en Tokens
+samengevoegd met de overwrites uit jouw project. Zo kunnen designers en developers samenwerken met Figma (en Tokens
 Studio) en code. Na samenvoeging wordt de transformatie van token file naar exports gerund en zo komen de hierboven genoemde exports (.css en .scss) beschikbaar.
+
+Als voorbeeld hiervoor kun je kijken naar `src/voorbeeld.figma.tokens.json`: daar staat namelijk maar één overwrite in
+en maar 1 thema. Je kunt zien dat de font-size-md variable inderdaad in `dist/voorbeeld/variables.scss` (en ook in de
+thema-subdir `/voorbeeld-thema-niet-gebruiken`) op `53.1px` wordt gezet, zoals in de json wordt gevraagd. Uiteraard is
+dit puur als voorbeeld, zodat je makkelijk overal "53.1px" kunt terugvinden.
