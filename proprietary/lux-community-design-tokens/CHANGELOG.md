@@ -1,5 +1,16 @@
 # @lux-design-system/lux-community-design-tokens
 
+## 2.0.0
+
+### Major Changes
+
+- b2588f8: Now exports themes in css and scss formats
+- f40931a: enable per-team token sets and themes to merge with upstream RHC tokens and build generated files
+
+### Patch Changes
+
+- 83630df: Refactoring
+
 ## 1.0.0
 
 ### Major Changes
