@@ -1,9 +1,9 @@
-# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# See: https://nldesignsystem.nl/codeowners
 
 * @nl-design-system/logius-maintainer @nl-design-system/kernteam-maintainer
 
 # Community packages can be reviewed by anyone
 /**/*-community-*/* @nl-design-system/logius-committer @nl-design-system/kernteam-maintainer
 
-# Protect CODEOWNERS file itself
+# Protect this file itself (order matters, keep this line last):
 /.github/CODEOWNERS @nl-design-system/logius-maintainer @nl-design-system/kernteam-maintainer
