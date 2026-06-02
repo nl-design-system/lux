@@ -41,7 +41,7 @@
     "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
     "style-dictionary": "5.0.4",
-    "vitest": "3.2.4"
+    "vitest": "3.2.6"
   },
   "dependencies": {
     "@rijkshuisstijl-community/design-tokens": "11.1.0",
