@@ -3,7 +3,7 @@
 * @nl-design-system/logius-maintainer @nl-design-system/kernteam-maintainer
 
 # Community packages can be reviewed by anyone
-/**/*-community-*/* @nl-design-system/logius-committer @nl-design-system/kernteam-maintainer
+/**/*-community-*/** @nl-design-system/logius-committer @nl-design-system/kernteam-maintainer
 
 # Protect this file itself (order matters, keep this line last):
 /.github/CODEOWNERS @nl-design-system/logius-maintainer @nl-design-system/kernteam-maintainer
