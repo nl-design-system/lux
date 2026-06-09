@@ -8593,6 +8593,34 @@
       }
     },
     "utrecht": {
+      "alert": {
+        "icon": {
+          "error": {
+            "color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.negative.icon}"
+            }
+          },
+          "info": {
+            "color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.informative.icon}"
+            }
+          },
+          "ok": {
+            "color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.positive.icon}"
+            }
+          },
+          "warning": {
+            "color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.warning.icon}"
+            }
+          }
+        }
+      },
       "button": {
         "background-color": {
           "$type": "color",
