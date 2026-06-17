@@ -832,6 +832,12 @@
               "$value": "rgba(0,0,0,0.3)"
             }
           }
+        },
+        "environment-info": {
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.cool-grey.100}"
+          }
         }
       }
     }
