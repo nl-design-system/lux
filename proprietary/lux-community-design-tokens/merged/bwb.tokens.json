@@ -9945,6 +9945,14 @@
             "font-weight": {
               "$type": "fontWeights",
               "$value": "{rhc.text.font-weight.strong}"
+            },
+            "border-inline-start-color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.link}"
+            },
+            "border-inline-start-width": {
+              "$type": "dimension",
+              "$value": "{rhc.border-width.md}"
             }
           },
           "minimized": {
