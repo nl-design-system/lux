@@ -836,7 +836,7 @@
         "environment-info": {
           "color": {
             "$type": "color",
-            "$value": "{rhc.color.cool-grey.100}"
+            "$value": "{rhc.color.primary.100}"
           }
         }
       }
