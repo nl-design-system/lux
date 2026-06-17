@@ -9952,7 +9952,7 @@
             },
             "border-inline-start-width": {
               "$type": "dimension",
-              "$value": "{rhc.border-width.md}"
+              "$value": "0.25rem"
             }
           },
           "minimized": {
