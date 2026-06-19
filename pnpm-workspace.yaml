@@ -5,6 +5,11 @@ packages:
   - "packages/*"
   - "proprietary/*"
 
+allowBuilds:
+  '@bundled-es-modules/glob': true
+  esbuild: true
+  style-dictionary: true
+
 # Configure pnpm so peer dependencies must be explicitly added instead of being automatically installed.
 autoInstallPeers: false
 
@@ -34,6 +39,7 @@ minimumReleaseAgeExclude:
 
 overrides:
   form-data@>=4.0.0 <4.0.4: ">=4.0.4"
+  shell-quote@>=1.1.0 <=1.8.3: ">=1.8.4"
 
 # Configure pnpm to save exact version numbers (not including ^ or ~) in package.json. Lock dependencies to specific
 # versions to ensure reproducible installs and prevent automatic upgrades to newer minor or patch releases.
@@ -42,3 +48,6 @@ savePrefix: ""
 
 # Configure pnpm to not fail when there are missing or invalid peer dependencies in the tree.
 strictPeerDependencies: false
+
+patchedDependencies:
+  '@tokens-studio/sd-transforms@0.15.2': patches/@tokens-studio__sd-transforms@0.15.2.patch
