@@ -9983,7 +9983,7 @@
         "side-bar-item-sub": {
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.400}"
+            "$value": "{rhc.space.800}"
           }
         }
       }
