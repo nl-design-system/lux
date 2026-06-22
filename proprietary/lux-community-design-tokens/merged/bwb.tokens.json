@@ -9945,7 +9945,7 @@
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.200}"
+            "$value": "{rhc.space.400}"
           },
           "selected": {
             "font-weight": {
