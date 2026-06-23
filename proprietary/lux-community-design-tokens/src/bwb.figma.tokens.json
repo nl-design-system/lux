@@ -5,7 +5,7 @@
         "highlight": {
           "bg-default": {
             "$type": "color",
-            "$value": "{rhc.color.violet.100}"
+            "$value": "{rhc.color.violet.200}"
           }
         }
       }
