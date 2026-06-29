@@ -10053,10 +10053,10 @@
   },
   "extra-components/status-tag": {
     "rhc": {
-      "tag": {
+      "status-tag": {
         "column-gap": {
           "$type": "dimension",
-          "$value": "{expert-user.spacing.column-gap-sm}"
+          "$value": "{expert-user.spacing.column-gap-xs}"
         },
         "padding-block-start": {
           "$type": "dimension",
