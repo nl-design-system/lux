@@ -679,9 +679,9 @@
           "$value": "{expert-user.color.surface.details}"
         },
         "expandable": {
-          "border-block-end-color": {
+          "border-block-start-color": {
             "$type": "color",
-            "$value": "{expert-user.color.surface.details}"
+            "$value": "{rhc.color.hemelblauw.100}"
           },
           "button-container": {
             "padding-block-start": {
