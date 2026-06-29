@@ -1837,6 +1837,14 @@
   "local-components-bwb/bwb-status-tag": {
     "bwb": {
       "bwb-status-tag": {
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.150}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.150}"
+        },
         "separator": {
           "border-inline-start-width": {
             "$type": "dimension",
