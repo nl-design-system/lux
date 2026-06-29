@@ -1898,12 +1898,12 @@
                 "$type": "color",
                 "$value": "{rhc.color.groen.50}"
               }
-            },
-            "passive": {
-              "border-color": {
-                "$type": "color",
-                "$value": "{rhc.color.cool-grey.300}"
-              }
+            }
+          },
+          "passive": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{rhc.color.cool-grey.300}"
             }
           }
         },
