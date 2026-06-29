@@ -10021,17 +10021,13 @@
       }
     }
   },
-  "extra-components/status-tag": {
+  "extra-components/tag": {
     "rhc": {
-      "status-tag": {
-        "border-color": {
-          "$type": "color",
-          "$value": "transparent"
-        },
+      "tag": {
         "border-radius": "2rem",
-        "column-gap": {
+        "border-width": {
           "$type": "dimension",
-          "$value": "{rhc.space.100}"
+          "$value": "{rhc.border-width.sm}"
         },
         "padding-block-start": {
           "$type": "dimension",
