@@ -8347,6 +8347,7 @@
         "expert-user/color": "enabled",
         "expert-user/focus": "enabled",
         "expert-user/spacing": "enabled",
+        "extra-components/context-block": "enabled",
         "extra-components/context-menu": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
@@ -8455,6 +8456,7 @@
         "expert-user/color": "enabled",
         "expert-user/focus": "enabled",
         "expert-user/spacing": "enabled",
+        "extra-components/context-block": "enabled",
         "extra-components/context-menu": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
@@ -8470,7 +8472,6 @@
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
         "local-components-bwb/bwb-accordion": "enabled",
-        "local-components-bwb/bwb-details-block": "enabled",
         "local-components-bwb/bwb-layout": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
@@ -9249,6 +9250,22 @@
         "padding-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.400}"
+        }
+      }
+    }
+  },
+  "extra-components/context-block": {
+    "rhc": {
+      "context-block": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.surface.details}"
+        },
+        "expandable": {
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": "{rhc.color.lichtblauw.300}"
+          }
         }
       }
     }
@@ -10233,32 +10250,6 @@
           "padding-inline-start": {
             "$type": "dimension",
             "$value": "0"
-          }
-        }
-      }
-    }
-  },
-  "local-components-bwb/bwb-details-block": {
-    "rhc": {
-      "bwb-details-block": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{expert-user.color.surface.details}"
-        },
-        "expandable": {
-          "border-block-end-color": {
-            "$type": "color",
-            "$value": "{rhc.color.lichtblauw.300}"
-          },
-          "button": {
-            "background-color": {
-              "$type": "color",
-              "$value": "{rhc.color.lichtblauw.50}"
-            },
-            "border-color": {
-              "$type": "color",
-              "$value": "{rhc.color.lichtblauw.300}"
-            }
           }
         }
       }
