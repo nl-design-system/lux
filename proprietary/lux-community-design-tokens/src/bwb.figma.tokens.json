@@ -1479,15 +1479,15 @@
         },
         "padding-inline-end": {
           "$type": "dimension",
-          "$value": "{rhc.space.150}"
+          "$value": "{rhc.space.200}"
         },
         "padding-block-end": {
           "$type": "dimension",
-          "$value": "{rhc.space.100}"
+          "$value": "{rhc.space.50}"
         },
         "padding-inline-start": {
           "$type": "dimension",
-          "$value": "{rhc.space.150}"
+          "$value": "{rhc.space.100}"
         }
       }
     }
