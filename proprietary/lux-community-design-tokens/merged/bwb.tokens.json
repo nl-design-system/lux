@@ -10492,7 +10492,7 @@
           "positive": {
             "background-color": {
               "$type": "color",
-              "$value": "transparent"
+              "$value": "expert-user.color.surface.input"
             },
             "border-color": {
               "$type": "color",
