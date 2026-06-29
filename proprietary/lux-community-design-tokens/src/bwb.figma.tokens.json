@@ -681,7 +681,7 @@
         "expandable": {
           "border-block-end-color": {
             "$type": "color",
-            "$value": "{rhc.color.lichtblauw.300}"
+            "$value": "{expert-user.color.surface.details}"
           }
         }
       }
