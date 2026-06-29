@@ -8357,9 +8357,9 @@
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
-        "extra-components/status-tag": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
+        "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled"
       },
       "$figmaVariableReferences": {},
@@ -8465,9 +8465,9 @@
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
-        "extra-components/status-tag": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
+        "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
         "local-components-bwb/bwb-accordion": "enabled",
         "local-components-bwb/bwb-details-block": "enabled",
@@ -10024,11 +10024,6 @@
   "extra-components/tag": {
     "rhc": {
       "tag": {
-        "border-radius": "2rem",
-        "border-width": {
-          "$type": "dimension",
-          "$value": "{rhc.border-width.sm}"
-        },
         "padding-block-start": {
           "$type": "dimension",
           "$value": "{rhc.space.50}"
