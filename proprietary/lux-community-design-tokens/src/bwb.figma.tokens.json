@@ -1466,6 +1466,32 @@
       }
     }
   },
+  "extra-components/status-tag": {
+    "rhc": {
+      "tag": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{expert-user.spacing.column-gap-sm}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.50}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.150}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.150}"
+        }
+      }
+    }
+  },
   "extra-components/tag": {
     "rhc": {
       "tag": {
@@ -1889,7 +1915,7 @@
           "positive": {
             "background-color": {
               "$type": "color",
-              "$value": "transparent"
+              "$value": "{expert-user.color.surface.input}"
             },
             "border-color": {
               "$type": "color",
@@ -1909,7 +1935,7 @@
           "positive": {
             "background-color": {
               "$type": "color",
-              "$value": "expert-user.color.surface.input"
+              "$value": "{expert-user.color.surface.input}"
             },
             "border-color": {
               "$type": "color",
@@ -1937,6 +1963,20 @@
           "icon": {
             "$type": "color",
             "$value": "{rhc.color.cool-grey.400}"
+          },
+          "positive": {
+            "background-color": {
+              "$type": "color",
+              "$value": "expert-user.color.surface.input"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "{rhc.color.cool-grey.300}"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.subtle}"
+            }
           }
         }
       }
@@ -2044,6 +2084,7 @@
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
+        "extra-components/status-tag": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
@@ -2153,6 +2194,7 @@
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
+        "extra-components/status-tag": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
