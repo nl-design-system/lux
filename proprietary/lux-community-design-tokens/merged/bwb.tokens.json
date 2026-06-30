@@ -8656,7 +8656,7 @@
         "disabled": {
           "background-color": {
             "$type": "color",
-            "$value": "{rhc.color.lintblauw.300}"
+            "$value": "{rhc.color.violet.300}"
           },
           "color": {
             "$type": "color",
@@ -8671,7 +8671,7 @@
           "disabled": {
             "background-color": {
               "$type": "color",
-              "$value": "{rhc.color.primary.100}"
+              "$value": "{rhc.color.primary.300}"
             },
             "color": {
               "$type": "color",
