@@ -8653,22 +8653,62 @@
             "$value": "{expert-user.color.cta.hover}"
           }
         },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{rhc.color.lintblauw.300}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.foreground.on-dark-color}"
+          }
+        },
         "primary-action": {
           "line-height": {
             "$type": "lineHeights",
             "$value": "150%"
+          },
+          "disabled": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{rhc.color.primary.100}"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.on-dark-color}"
+            }
           }
         },
         "secondary-action": {
           "line-height": {
             "$type": "lineHeights",
             "$value": "150%"
+          },
+          "disabled": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{rhc.color.transparent}"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.primary.300}"
+            }
           }
         },
         "subtle": {
           "line-height": {
             "$type": "lineHeights",
             "$value": "150%"
+          },
+          "disabled": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{rhc.color.transparent}"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.primary.300}"
+            }
           }
         }
       },
