@@ -1004,29 +1004,35 @@
   "extra-components/navigable-collapsible": {
     "rhc": {
       "navigable-collapsible": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{expert-user.color.surface.secondary}"
-        },
         "border-radius": {
           "$type": "dimension",
           "$value": "0.5rem"
         },
-        "padding-block-start": {
+        "row-gap": {
           "$type": "dimension",
-          "$value": "{rhc.space.150}"
+          "$value": "1px"
         },
-        "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{rhc.space.200}"
-        },
-        "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{rhc.space.150}"
-        },
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.200}"
+        "header": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.secondary}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          }
         }
       }
     }
@@ -1742,42 +1748,6 @@
       }
     }
   },
-  "local-components-bwb/bwb-accordion": {
-    "bwb": {
-      "bwb-accordion": {
-        "border-color": {
-          "$type": "color",
-          "$value": "transparent"
-        },
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "0.5 * 1rem"
-        },
-        "row-gap": {
-          "$type": "dimension",
-          "$value": "1px"
-        },
-        "content": {
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0"
-          }
-        }
-      }
-    }
-  },
   "local-components-bwb/bwb-layout": {
     "bwb": {
       "bwb-layout": {
@@ -2289,7 +2259,6 @@
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
-        "local-components-bwb/bwb-accordion": "enabled",
         "local-components-bwb/bwb-layout": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
