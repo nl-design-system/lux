@@ -10486,7 +10486,7 @@
             "default": {
               "border-color": {
                 "$type": "color",
-                "$value": "{rhc.color.donkergeel.500}"
+                "$value": "{rhc.color.bruin.500}"
               }
             },
             "subtle": {
