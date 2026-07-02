@@ -45,7 +45,7 @@ export const mergeFigmaTokenFiles = () => {
       console.log('# Merged token sets:', Object.keys(mergedTokens).length);
       console.log('# Tokens set collisions:', collisions.length);
 
-      const outputPath = path.resolve(__dirname, `./merged/${appName}.tokens.json`);
+      const outputPath = path.resolve(packageRootPath, `./merged/${appName}.tokens.json`);
       writeJsonFile(outputPath, mergedTokens);
 
       console.log(`Merged Figma tokens generated ${collisions.length === 0 ? 'successfully ' : ''}at ${outputPath}.`);
@@ -105,7 +105,7 @@ const processThemes = (fn, appName) => {
     };
   });
 
-  writeJsonFile(path.resolve(__dirname, `./merged/${appName}.themes.json`), processedThemes);
+  writeJsonFile(path.resolve(packageRootPath, `./merged/${appName}.themes.json`), processedThemes);
 };
 
 // Run the generator if this script is executed directly
