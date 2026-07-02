@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest';
-import { extractTokenOverrides } from './split-token-sets.mts';
+import { describe, expect, it } from "vitest";
+import { extractTokenOverrides } from "./split-token-sets.mts";
 
 const mergedTokenSet = {
   rhc: {
@@ -63,7 +63,9 @@ describe("extractTokenOverrides", () => {
       },
     };
 
-    expect(() => extractTokenOverrides(mergedTokenSet, differentBaseTokenSet)).toThrow();
+    expect(() =>
+      extractTokenOverrides(mergedTokenSet, differentBaseTokenSet),
+    ).toThrow();
   });
 
   it("should pass even if base token set is in different order", () => {
@@ -88,7 +90,9 @@ describe("extractTokenOverrides", () => {
         },
       },
     };
-    expect(() => extractTokenOverrides(shuffledMergedTokenSet, shuffledBaseTokenSet)).not.toThrow();
+    expect(() =>
+      extractTokenOverrides(shuffledMergedTokenSet, shuffledBaseTokenSet),
+    ).not.toThrow();
   });
 
   it("should keep $themes in overrides while validating base token sets", () => {
