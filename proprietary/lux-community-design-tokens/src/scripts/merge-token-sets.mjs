@@ -7,8 +7,9 @@ import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const mergedPath = path.resolve(__dirname, 'merged');
-const srcPath = path.resolve(__dirname, 'src');
+const packageRootPath = path.resolve(__dirname, '..', '..');
+const mergedPath = path.resolve(packageRootPath, 'merged');
+const srcPath = path.resolve(packageRootPath, 'src');
 
 const writeJsonFile = (filePath, data) => {
   try {
@@ -44,7 +45,7 @@ export const mergeFigmaTokenFiles = () => {
       console.log('# Merged token sets:', Object.keys(mergedTokens).length);
       console.log('# Tokens set collisions:', collisions.length);
 
-      const outputPath = path.resolve(__dirname, `./merged/${appName}.tokens.json`);
+      const outputPath = path.resolve(packageRootPath, `./merged/${appName}.tokens.json`);
       writeJsonFile(outputPath, mergedTokens);
 
       console.log(`Merged Figma tokens generated ${collisions.length === 0 ? 'successfully ' : ''}at ${outputPath}.`);
@@ -104,7 +105,7 @@ const processThemes = (fn, appName) => {
     };
   });
 
-  writeJsonFile(path.resolve(__dirname, `./merged/${appName}.themes.json`), processedThemes);
+  writeJsonFile(path.resolve(packageRootPath, `./merged/${appName}.themes.json`), processedThemes);
 };
 
 // Run the generator if this script is executed directly
