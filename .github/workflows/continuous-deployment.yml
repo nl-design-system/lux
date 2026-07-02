@@ -114,6 +114,8 @@ jobs:
 
       - name: Split merged token edits and commit src overrides
         if: steps.needtokenmerge.outputs.merged_changed == 'true' && steps.needtokenmerge.outputs.src_changed != 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           pnpm --filter @lux-design-system/lux-community-design-tokens split-token-sets
 
@@ -126,7 +128,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add proprietary/lux-community-design-tokens/src/*.figma.tokens.json
           git commit -m "chore(tokens): split merged token updates"
-          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+          git push origin "HEAD:${PR_HEAD_REF}"
 
       - name: Validate split from merged token edits
         if: steps.needtokenmerge.outputs.merged_changed == 'true' && steps.needtokenmerge.outputs.src_changed != 'true' && !(github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
