@@ -8363,7 +8363,10 @@
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
-        "extra-components/tooltip": "enabled"
+        "extra-components/tooltip": "enabled",
+        "templates/dialog-wizard": "enabled",
+        "templates/layout-app": "enabled",
+        "templates/layout-search": "enabled"
       },
       "$figmaVariableReferences": {},
       "group": "Rijkshuisstijl"
@@ -8475,6 +8478,9 @@
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
+        "templates/dialog-wizard": "enabled",
+        "templates/layout-app": "enabled",
+        "templates/layout-search": "enabled",
         "local-components-bwb/bwb-layout": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
@@ -10334,25 +10340,21 @@
       }
     }
   },
-  "local-components-bwb/bwb-layout": {
-    "bwb": {
-      "bwb-layout": {
-        "dialog-wizard": {
-          "max-block-size": {
+  "templates/dialog-wizard": {
+    "rhc": {
+      "dialog-wizard": {
+        "progress": {
+          "min-height": {
             "$type": "dimension",
-            "$value": "54 * 1rem"
-          },
-          "max-inline-size": {
-            "$type": "dimension",
-            "$value": "60 * 1rem"
-          },
-          "progress": {
-            "min-height": {
-              "$type": "dimension",
-              "$value": "5.75rem"
-            }
+            "$value": "5.75rem"
           }
-        },
+        }
+      }
+    }
+  },
+  "templates/layout-app": {
+    "rhc": {
+      "layout-app": {
         "main": {
           "padding-block-start": {
             "$type": "dimension",
@@ -10391,34 +10393,24 @@
               "$type": "dimension",
               "$value": "{expert-user.spacing.padding-inline-start}"
             }
-          },
-          "error-page": {
-            "border-radius": {
-              "$type": "dimension",
-              "$value": "{rhc.space.200}"
-            },
-            "padding-block-start": {
-              "$type": "dimension",
-              "$value": "{rhc.space.800}"
-            },
-            "padding-inline-end": {
-              "$type": "dimension",
-              "$value": "{rhc.space.800}"
-            },
-            "padding-block-end": {
-              "$type": "dimension",
-              "$value": "{rhc.space.800}"
-            },
-            "padding-inline-start": {
-              "$type": "dimension",
-              "$value": "{rhc.space.800}"
-            }
           }
         },
         "side": {
           "background-color": {
             "$type": "color",
             "$value": "{expert-user.color.surface.primary}"
+          }
+        }
+      }
+    }
+  },
+  "templates/layout-search": {
+    "rhc": {
+      "layout-search": {
+        "criteria": {
+          "width": {
+            "$type": "dimension",
+            "$value": "20 * 1rem"
           }
         }
       }
