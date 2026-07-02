@@ -20,17 +20,6 @@ const readJsonFile = <T extends JsonMap>(filePath: string): T =>
 const writeJsonFile = (filePath: string, data: JsonMap): void =>
   fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
 
-const getComparableBaseTokenSet = (baseTokenSet: JsonMap): JsonMap => {
-  const comparable: JsonMap = {};
-  for (const [key, value] of Object.entries(baseTokenSet)) {
-    if (key !== "$themes") {
-      comparable[key] = value;
-    }
-  }
-
-  return comparable;
-};
-
 // Split merged token files into project overrides and assert that no base token sets were changed.
 export const extractTokenOverrides = (
   fullTokenSet: JsonMap,
@@ -38,10 +27,10 @@ export const extractTokenOverrides = (
 ): JsonMap => {
   const overrides: JsonMap = {};
   const comparisonBaseTokenSet: JsonMap = {};
-  const comparableBaseTokenSet = getComparableBaseTokenSet(baseTokenSet);
+  const { $themes, ...comparableBaseTokenSet }: JsonMap = baseTokenSet;
 
   for (const [key, value] of Object.entries(fullTokenSet)) {
-    if (key === "$themes" || comparableBaseTokenSet[key] === undefined) {
+    if (comparableBaseTokenSet[key] === undefined) {
       overrides[key] = value;
     } else {
       comparisonBaseTokenSet[key] = value;

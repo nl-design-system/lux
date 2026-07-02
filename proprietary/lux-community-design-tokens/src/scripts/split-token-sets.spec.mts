@@ -117,4 +117,44 @@ describe("extractTokenOverrides", () => {
       $themes: [{ id: "theme-a" }],
     });
   });
+
+  it("should maintain the order of keys in the overrides", () => {
+    const mergedWithOrder = {
+      rhc: {
+        color: {
+          primary: "blue",
+        },
+      },
+      overwrite: {
+        color: {
+          primary: "red",
+        },
+        icon: {
+          smile: ":)",
+        },
+      },
+      anotherOverride: {
+        size: {
+          sm: "1px",
+        },
+      },
+      $themes: [{ id: "theme-a" }, { id: "theme-b" }],
+    };
+
+    const baseWithOrder = {
+      rhc: {
+        color: {
+          primary: "blue",
+        },
+      },
+      $themes: [{ id: "theme-a" }],
+    };
+
+    const result = extractTokenOverrides(mergedWithOrder, baseWithOrder);
+    expect(Object.keys(result)).toEqual([
+      "overwrite",
+      "anotherOverride",
+      "$themes",
+    ]);
+  });
 });

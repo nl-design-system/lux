@@ -7,8 +7,9 @@ import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const mergedPath = path.resolve(__dirname, 'merged');
-const srcPath = path.resolve(__dirname, 'src');
+const packageRootPath = path.resolve(__dirname, '..', '..');
+const mergedPath = path.resolve(packageRootPath, 'merged');
+const srcPath = path.resolve(packageRootPath, 'src');
 
 const writeJsonFile = (filePath, data) => {
   try {
