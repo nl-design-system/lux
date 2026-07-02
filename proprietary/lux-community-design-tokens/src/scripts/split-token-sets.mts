@@ -27,9 +27,17 @@ export const extractTokenOverrides = (
 ): JsonMap => {
   const overrides: JsonMap = {};
   const comparisonBaseTokenSet: JsonMap = {};
-  const { $themes, ...comparableBaseTokenSet }: JsonMap = baseTokenSet;
+  const { $themes: _baseThemes, ...comparableBaseTokenSet }: JsonMap = baseTokenSet;
+  let overrideThemes: unknown;
+  let hasOverrideThemes = false;
 
   for (const [key, value] of Object.entries(fullTokenSet)) {
+    if (key === "$themes") {
+      hasOverrideThemes = true;
+      overrideThemes = value;
+      continue;
+    }
+
     if (comparableBaseTokenSet[key] === undefined) {
       overrides[key] = value;
     } else {
@@ -38,6 +46,10 @@ export const extractTokenOverrides = (
   }
 
   assert.deepStrictEqual(comparisonBaseTokenSet, comparableBaseTokenSet);
+
+  if (hasOverrideThemes) {
+    overrides["$themes"] = overrideThemes;
+  }
 
   return overrides;
 };

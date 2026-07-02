@@ -157,4 +157,56 @@ describe("extractTokenOverrides", () => {
       "$themes",
     ]);
   });
+
+  it("should preserve nested key order in override token sets", () => {
+    const mergedWithNestedOrder = {
+      rhc: {
+        color: {
+          primary: "blue",
+        },
+      },
+      overwrite: {
+        component: {
+          button: {
+            $type: "color",
+            $value: "{rhc.color.blue.500}",
+          },
+          badge: {
+            $type: "color",
+            $value: "{rhc.color.red.500}",
+          },
+        },
+      },
+    };
+
+    const result = extractTokenOverrides(mergedWithNestedOrder, baseTokenSet);
+
+    expect(Object.keys(result)).toEqual(["overwrite"]);
+    expect(
+      Object.keys(
+        (result["overwrite"] as { component: Record<string, unknown> })
+          .component,
+      ),
+    ).toEqual(["button", "badge"]);
+  });
+
+  it("should keep $themes after overrides even when merged file has $themes first", () => {
+    const mergedWithThemesFirst = {
+      $themes: [{ id: "theme-a" }],
+      rhc: {
+        color: {
+          primary: "blue",
+        },
+      },
+      overwrite: {
+        color: {
+          primary: "red",
+        },
+      },
+    };
+
+    const result = extractTokenOverrides(mergedWithThemesFirst, baseTokenSet);
+
+    expect(Object.keys(result)).toEqual(["overwrite", "$themes"]);
+  });
 });
