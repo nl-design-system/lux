@@ -39,9 +39,9 @@
     "cpy-cli": "5.0.0",
     "mkdirp": "3.0.1",
     "npm-run-all": "4.1.5",
-    "rimraf": "6.0.1",
+    "rimraf": "6.1.3",
     "style-dictionary": "5.0.4",
-    "vitest": "4.1.8"
+    "vitest": "4.1.9"
   },
   "dependencies": {
     "@rijkshuisstijl-community/design-tokens": "11.1.0",
