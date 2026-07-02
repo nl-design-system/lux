@@ -1,5 +1,5 @@
-import { extractTokenOverrides } from "./split-token-sets.mts";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it } from 'vitest';
+import { extractTokenOverrides } from './split-token-sets.mts';
 
 const mergedTokenSet = {
   rhc: {
@@ -51,6 +51,7 @@ describe("extractTokenOverrides", () => {
 
   it("should return all keys if the base token set is empty", () => {
     const result = extractTokenOverrides(mergedTokenSet, {});
+    expect(result).toEqual(mergedTokenSet);
   });
 
   it("should error if the base token set does not match the structure of the merged token set", () => {
@@ -62,9 +63,7 @@ describe("extractTokenOverrides", () => {
       },
     };
 
-    expect(() =>
-      extractTokenOverrides(mergedTokenSet, differentBaseTokenSet),
-    ).toThrow();
+    expect(() => extractTokenOverrides(mergedTokenSet, differentBaseTokenSet)).toThrow();
   });
 
   it("should pass even if base token set is in different order", () => {
@@ -89,8 +88,29 @@ describe("extractTokenOverrides", () => {
         },
       },
     };
-    expect(() =>
-      extractTokenOverrides(shuffledMergedTokenSet, shuffledBaseTokenSet),
-    ).not.toThrow();
+    expect(() => extractTokenOverrides(shuffledMergedTokenSet, shuffledBaseTokenSet)).not.toThrow();
+  });
+
+  it("should keep $themes in overrides while validating base token sets", () => {
+    const mergedWithThemes = {
+      ...mergedTokenSet,
+      $themes: [{ id: "theme-a" }],
+    };
+    const baseWithThemes = {
+      ...baseTokenSet,
+      $themes: [{ id: "base-theme" }],
+    };
+
+    expect(extractTokenOverrides(mergedWithThemes, baseWithThemes)).toEqual({
+      overwrite: {
+        color: {
+          primary: "red",
+        },
+        icon: {
+          smile: ":)",
+        },
+      },
+      $themes: [{ id: "theme-a" }],
+    });
   });
 });

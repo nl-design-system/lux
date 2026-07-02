@@ -25,9 +25,11 @@
   "scripts": {
     "clean": "rimraf dist/",
     "lint": "jsonlint -q -F src/**/*.json",
-    "merge-token-sets": "node ./merge-token-sets.mjs",
+    "merge-token-sets": "node ./src/scripts/merge-token-sets.mjs",
     "prebuild": "npm run clean && npm run merge-token-sets",
-    "build": "node ./build.mjs",
+    "build": "node ./src/scripts/build.mjs",
+    "split-token-sets": "node --experimental-strip-types ./src/scripts/split-token-sets.mts",
+    "split-token-sets:check": "node --experimental-strip-types ./src/scripts/split-token-sets.mts --check",
     "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
     "test": "vitest",
     "prepack": "npm-run-all build lint"
