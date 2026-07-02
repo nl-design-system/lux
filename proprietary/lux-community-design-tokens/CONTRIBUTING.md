@@ -22,3 +22,10 @@ pnpm --filter @lux-design-system/lux-community-design-tokens merge-token-sets
 
 en te controleren of je in de `dist/` map de .css en .scss krijgt die je verwacht. Het script waarschuwt er ook voor als
 je per ongeluk een token set van RHC dreigt te overschrijven.
+
+Als je tokens in Token Studio vanuit een gemergede `merged/*.tokens.json` hebt aangepast, splitst CI de overrides
+automatisch terug naar `src/*.figma.tokens.json` en commit CI deze aan je PR-branch. Je hoeft `split-token-sets` dus
+niet lokaal te draaien.
+
+Als CI niet naar de branch kan pushen (bijvoorbeeld bij een fork), valt CI terug op validatie en faalt de job als de
+resulterende `src`-overrides ontbreken of als base RHC token sets zijn overschreven.
