@@ -1037,6 +1037,16 @@
       }
     }
   },
+  "extra-components/option-card": {
+    "rhc": {
+      "option-card": {
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.400}"
+        }
+      }
+    }
+  },
   "extra-components/progress": {
     "rhc": {
       "progress": {
@@ -2129,6 +2139,7 @@
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/navigable-collapsible": "enabled",
+        "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
@@ -2243,6 +2254,7 @@
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/navigable-collapsible": "enabled",
+        "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
@@ -2255,7 +2267,6 @@
         "templates/dialog-wizard": "enabled",
         "templates/layout-app": "enabled",
         "templates/layout-search": "enabled",
-        "local-components-bwb/bwb-layout": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
         "local-components-bwb/bwb-status-tag": "enabled"
