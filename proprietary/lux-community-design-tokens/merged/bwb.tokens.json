@@ -10115,31 +10115,21 @@
   "extra-components/spinner": {
     "rhc": {
       "spinner": {
-        "border-color": {
-          "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
-        },
         "color": {
           "$type": "color",
           "$value": "{rhc.color.foreground.subtle}"
         },
-        "accent": {
-          "border-color": {
-            "$type": "color",
-            "$value": "{expert-user.color.cta.border-color}"
-          }
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.cta.border-color}"
         },
         "on-dark": {
-          "border-color": {
-            "$type": "color",
-            "$value": "transparent"
-          },
           "color": {
             "$type": "color",
             "$value": "{rhc.color.foreground.on-dark-color}"
           },
           "accent": {
-            "border-color": {
+            "background-color": {
               "$type": "color",
               "$value": "{rhc.color.foreground.on-dark-color}"
             }
