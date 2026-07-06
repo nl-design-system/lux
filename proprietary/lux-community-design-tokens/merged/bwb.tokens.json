@@ -9633,9 +9633,11 @@
   "extra-components/option-card": {
     "rhc": {
       "option-card": {
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.400}"
+        "content": {
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.800}"
+          }
         }
       }
     }
