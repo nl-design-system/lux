@@ -10115,24 +10115,22 @@
   "extra-components/spinner": {
     "rhc": {
       "spinner": {
-        "color": {
-          "$type": "color",
-          "$value": "{rhc.color.foreground.subtle}"
-        },
         "background-color": {
           "$type": "color",
           "$value": "{expert-user.color.cta.border-color}"
         },
+        "color": {
+          "$type": "color",
+          "$value": "{rhc.color.foreground.subtle}"
+        },
         "on-dark": {
-          "color": {
+          "background-color": {
             "$type": "color",
             "$value": "{rhc.color.foreground.on-dark-color}"
           },
-          "accent": {
-            "background-color": {
-              "$type": "color",
-              "$value": "{rhc.color.foreground.on-dark-color}"
-            }
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.foreground.on-dark-color}"
           }
         },
         "sm": {
