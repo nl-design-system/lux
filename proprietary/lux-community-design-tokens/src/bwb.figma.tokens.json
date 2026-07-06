@@ -1537,6 +1537,22 @@
             "$value": "{expert-user.color.cta.border-color}"
           }
         },
+        "on-dark": {
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.foreground.on-dark-color}"
+          },
+          "accent": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.on-dark-color}"
+            }
+          }
+        },
         "sm": {
           "border-width": {
             "$type": "dimension",
