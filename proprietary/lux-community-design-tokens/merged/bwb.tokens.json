@@ -10004,26 +10004,6 @@
   "extra-components/side-bar": {
     "rhc": {
       "side-bar": {
-        "border-color": {
-          "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
-        },
-        "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.200}"
-        },
-        "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{rhc.space.400}"
-        },
-        "padding-block-end": {
-          "$type": "dimension",
-          "$value": "0"
-        },
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.400}"
-        },
         "row-gap": {
           "$type": "dimension",
           "$value": "{rhc.space.200}"
@@ -10032,23 +10012,17 @@
           "$type": "dimension",
           "$value": "12.5 * 1rem"
         },
-        "minimized": {
+        "header": {
           "padding-block-start": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
           },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "0"
-          },
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0"
-          },
+            "$value": "{rhc.space.200}"
+          }
+        },
+        "minimized": {
           "width": {
             "$type": "dimension",
             "$value": "4 * 1rem"
