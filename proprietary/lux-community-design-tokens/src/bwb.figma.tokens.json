@@ -1037,6 +1037,18 @@
       }
     }
   },
+  "extra-components/option-card": {
+    "rhc": {
+      "option-card": {
+        "content": {
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.800}"
+          }
+        }
+      }
+    }
+  },
   "extra-components/progress": {
     "rhc": {
       "progress": {
@@ -1399,26 +1411,6 @@
   "extra-components/side-bar": {
     "rhc": {
       "side-bar": {
-        "border-color": {
-          "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
-        },
-        "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.200}"
-        },
-        "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{rhc.space.400}"
-        },
-        "padding-block-end": {
-          "$type": "dimension",
-          "$value": "0"
-        },
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.400}"
-        },
         "row-gap": {
           "$type": "dimension",
           "$value": "{rhc.space.200}"
@@ -1427,23 +1419,17 @@
           "$type": "dimension",
           "$value": "12.5 * 1rem"
         },
-        "minimized": {
+        "header": {
           "padding-block-start": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
           },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "0"
-          },
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0"
-          },
+            "$value": "{rhc.space.200}"
+          }
+        },
+        "minimized": {
           "width": {
             "$type": "dimension",
             "$value": "4 * 1rem"
@@ -1523,18 +1509,22 @@
   "extra-components/spinner": {
     "rhc": {
       "spinner": {
-        "border-color": {
+        "background-color": {
           "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
+          "$value": "{expert-user.color.cta.border-color}"
         },
         "color": {
           "$type": "color",
           "$value": "{rhc.color.foreground.subtle}"
         },
-        "accent": {
-          "border-color": {
+        "on-dark": {
+          "background-color": {
             "$type": "color",
-            "$value": "{expert-user.color.cta.border-color}"
+            "$value": "{rhc.color.foreground.on-dark-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.foreground.on-dark-color}"
           }
         },
         "sm": {
@@ -2125,6 +2115,7 @@
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/navigable-collapsible": "enabled",
+        "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
@@ -2239,6 +2230,7 @@
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/navigable-collapsible": "enabled",
+        "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
@@ -2251,7 +2243,6 @@
         "templates/dialog-wizard": "enabled",
         "templates/layout-app": "enabled",
         "templates/layout-search": "enabled",
-        "local-components-bwb/bwb-layout": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
         "local-components-bwb/bwb-status-tag": "enabled"
