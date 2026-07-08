@@ -15,8 +15,8 @@ const srcPath = path.resolve(packageRootPath, "src");
 
 const validMergedFileNameRegex = /^([a-z]+)\.tokens\.json$/;
 
-const readJsonFile = <T extends JsonMap>(filePath: string): T =>
-  JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
+const readJsonFile = (filePath: string): JsonMap =>
+  JSON.parse(fs.readFileSync(filePath, "utf-8")) as JsonMap;
 const writeJsonFile = (filePath: string, data: JsonMap): void =>
   fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
 
@@ -27,7 +27,8 @@ export const extractTokenOverrides = (
 ): JsonMap => {
   const overrides: JsonMap = {};
   const comparisonBaseTokenSet: JsonMap = {};
-  const { $themes: _baseThemes, ...comparableBaseTokenSet }: JsonMap = baseTokenSet;
+  const { $themes: _baseThemes, ...comparableBaseTokenSet }: JsonMap =
+    baseTokenSet;
   let overrideThemes: unknown;
   let hasOverrideThemes = false;
 
@@ -38,13 +39,14 @@ export const extractTokenOverrides = (
       continue;
     }
 
-    if (comparableBaseTokenSet[key] === undefined) {
+    if (!(key in comparableBaseTokenSet)) {
       overrides[key] = value;
     } else {
       comparisonBaseTokenSet[key] = value;
     }
   }
 
+  // assert that the base token set has not been changed in the merged token set
   assert.deepStrictEqual(comparisonBaseTokenSet, comparableBaseTokenSet);
 
   if (hasOverrideThemes) {
@@ -80,7 +82,7 @@ export const splitTokenSets = ({
       continue;
     }
 
-    const tokenSet = readJsonFile<JsonMap>(mergedTokenFile);
+    const tokenSet = readJsonFile(mergedTokenFile);
     const overrides = extractTokenOverrides(tokenSet, baseTokenSet);
     const outputFile = path.join(srcPath, `${appName}.figma.tokens.json`);
 
@@ -89,7 +91,7 @@ export const splitTokenSets = ({
         throw new Error(`Missing source token file: ${outputFile}`);
       }
 
-      const existingOverrides = readJsonFile<JsonMap>(outputFile);
+      const existingOverrides = readJsonFile(outputFile);
       assert.deepStrictEqual(
         existingOverrides,
         overrides,
