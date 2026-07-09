@@ -1590,13 +1590,11 @@
           },
           "margin-inline-end": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}",
-            "$description": "[code-only]"
+            "$value": "{rhc.space.400}"
           },
           "margin-inline-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}",
-            "$description": "[code-only]"
+            "$value": "{rhc.space.400}"
           },
           "subtle": {
             "inline-size": {

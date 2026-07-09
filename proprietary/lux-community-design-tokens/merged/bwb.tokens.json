@@ -8591,12 +8591,7 @@
       "overrides/primaire kleur/contrast fix/non primary buttons coolgrey",
       "overrides/responsive/min",
       "overrides/type-scale/information dense",
-      "overrides/type-scale/promotion",
-      "expert-user/_rhc-addition",
-      "expert-user/color",
-      "expert-user/focus",
-      "expert-user/spacing",
-      "overrides/expert-user"
+      "overrides/type-scale/promotion"
     ]
   },
   "overrides/expert-user": {
@@ -10190,13 +10185,11 @@
           },
           "margin-inline-end": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}",
-            "$description": "[code-only]"
+            "$value": "{rhc.space.400}"
           },
           "margin-inline-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}",
-            "$description": "[code-only]"
+            "$value": "{rhc.space.400}"
           },
           "subtle": {
             "inline-size": {
