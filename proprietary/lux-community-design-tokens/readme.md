@@ -2,13 +2,12 @@
 
 Deze package bevat de Community Design Tokens van het LUX Design System in verschillende formaten.  
 Hier kunnen alle Logius-projecten op een NLDS manier werken aan hun look en feel.
-Intern worden door het script merge-token-sets de RHC-tokens samengevoegd met de lokale tokens tot één bestand. Het is
-dan ook belangrijk dat de token sets niet in elkaars vaarwater zitten: stop in `koop.figma.tokens.json` dan ook geen
-token sets (dat zijn de top level keys van het JSON-object) die al in `figma.tokens.json` in de
-`rijkshuisstijl-community` repo voorkomen. Om dit te bewaken is in het merge-token-sets script een voorwaarde opgenomen,
-zodat de github action eigenlijk al niet accepteert zodra er dingen van RHC worden overschreven.
-In plaats hiervan wordt geadviseerd om eigen token sets te maken, bijvoorbeeld met naam `overrides/*`, en die dan voor
-jouw thema aan te zetten.
+Per team (=app) wordt één token file beheerd: `merged/<app>.tokens.json`. Daarin staan de RHC token sets (uit de
+package `@rijkshuisstijl-community/design-tokens`) samen met de eigen token sets, `$themes` en `$metadata`. De RHC
+(base) token sets mogen lokaal niet worden aangepast: het script validate-token-sets controleert dat deze exact
+overeenkomen met de package, en de github action accepteert het dan ook niet zodra er dingen van RHC worden
+overschreven. In plaats hiervan wordt geadviseerd om eigen token sets te maken (dat zijn de top level keys van het
+JSON-object), bijvoorbeeld met naam `overrides/*`, en die dan voor jouw thema aan te zetten.
 
 ## Installatie
 
@@ -74,11 +73,21 @@ Thema instellen:
 
 ## Zelf token sets en thema's maken
 
-Er is een script, `merge-token-sets.mjs` waarmee de RHC design tokens (uit de package `@rijkshuisstijl-community/design-tokens`) worden
-samengevoegd met de overwrites uit jouw project. Zo kunnen designers en developers samenwerken met Figma (en Tokens
-Studio) en code. Na samenvoeging wordt de transformatie van token file naar exports gerund en zo komen de hierboven genoemde exports (.css en .scss) beschikbaar.
+Je beheert je token sets en thema's rechtstreeks in `merged/<app>.tokens.json`, bijvoorbeeld via Figma (en Tokens
+Studio) of direct in code. Bij de build wordt de transformatie van token file naar exports gerund en zo komen de
+hierboven genoemde exports (.css en .scss) beschikbaar.
 
-Als voorbeeld hiervoor kun je kijken naar `src/voorbeeld.figma.tokens.json`: daar staat namelijk maar één overwrite in
-en maar 1 thema. Je kunt zien dat de font-size-md variable inderdaad in `dist/voorbeeld/variables.scss` (en ook in de
-thema-subdir `/voorbeeld-thema-niet-gebruiken`) op `53.1px` wordt gezet, zoals in de json wordt gevraagd. Uiteraard is
-dit puur als voorbeeld, zodat je makkelijk overal "53.1px" kunt terugvinden.
+Er is een script, `validate-token-sets.mts`, dat bewaakt dat de token file consistent blijft:
+
+- de RHC (base) token sets moeten exact overeenkomen met `@rijkshuisstijl-community/design-tokens` (fout);
+- token sets die ontbreken in `$metadata.tokenSetOrder` worden gemeld (fout, zelf toevoegen op de juiste plek omdat de
+  volgorde de resolutie in Tokens Studio bepaalt);
+- entries in `$metadata.tokenSetOrder` zonder bijbehorende token set worden automatisch verwijderd (met `--check` wordt
+  dit een fout in plaats van een fix);
+- eigen (team) token sets die in geen enkel thema worden gebruikt, worden als waarschuwing gemeld.
+
+Als voorbeeld kun je kijken naar de token set `overrides/ridiculous-font-size` in `merged/voorbeeld.tokens.json`: daar
+staat namelijk maar één overwrite in. Je kunt zien dat de font-size-md variable inderdaad in
+`dist/voorbeeld/variables.scss` (en ook in de thema-subdir `/voorbeeld-thema-niet-gebruiken`) op `53.1px` wordt gezet,
+zoals in de json wordt gevraagd. Uiteraard is dit puur als voorbeeld, zodat je makkelijk overal "53.1px" kunt
+terugvinden.
