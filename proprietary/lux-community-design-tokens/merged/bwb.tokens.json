@@ -8349,6 +8349,7 @@
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
         "extra-components/context-menu": "enabled",
+        "extra-components/divider": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
@@ -8464,6 +8465,7 @@
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
         "extra-components/context-menu": "enabled",
+        "extra-components/divider": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
@@ -8589,7 +8591,12 @@
       "overrides/primaire kleur/contrast fix/non primary buttons coolgrey",
       "overrides/responsive/min",
       "overrides/type-scale/information dense",
-      "overrides/type-scale/promotion"
+      "overrides/type-scale/promotion",
+      "expert-user/_rhc-addition",
+      "expert-user/color",
+      "expert-user/focus",
+      "expert-user/spacing",
+      "overrides/expert-user"
     ]
   },
   "overrides/expert-user": {
@@ -10157,6 +10164,42 @@
         "padding-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.100}"
+        }
+      }
+    }
+  },
+  "extra-components/divider": {
+    "rhc": {
+      "divider": {
+        "horizontal": {
+          "subtle": {
+            "block-size": {
+              "$type": "dimension",
+              "$value": "1px"
+            }
+          }
+        },
+        "vertical": {
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.cool-grey.300}"
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}",
+            "$description": "[code-only]"
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}",
+            "$description": "[code-only]"
+          },
+          "subtle": {
+            "inline-size": {
+              "$type": "dimension",
+              "$value": "1px"
+            }
+          }
         }
       }
     }
