@@ -36,7 +36,8 @@
     "watch": "npm-run-all watch:**",
     "watch:tokens-studio": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
     "createlib": "cpy imported/**/*.json ../lib/tokens/ --cwd=src",
-    "prepack": "npm-run-all build lint createlib"
+    "prepack": "npm-run-all build lint createlib",
+    "postpack": "npm run clean:lib"
   },
   "devDependencies": {
     "@divriots/style-dictionary-to-figma": "0.4.0",
