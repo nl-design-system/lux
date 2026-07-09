@@ -10184,6 +10184,10 @@
             "$type": "color",
             "$value": "{rhc.color.cool-grey.300}"
           },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": "2px"
+          },
           "margin-inline-end": {
             "$type": "dimension",
             "$value": "{rhc.space.150}",
