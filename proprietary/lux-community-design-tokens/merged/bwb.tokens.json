@@ -10171,6 +10171,10 @@
   "extra-components/divider": {
     "rhc": {
       "divider": {
+        "color": {
+          "$type": "color",
+          "$value": "{rhc.color.cool-grey.300}"
+        },
         "horizontal": {
           "subtle": {
             "block-size": {
@@ -10180,10 +10184,6 @@
           }
         },
         "vertical": {
-          "color": {
-            "$type": "color",
-            "$value": "{rhc.color.cool-grey.300}"
-          },
           "inline-size": {
             "$type": "dimension",
             "$value": "2px"
