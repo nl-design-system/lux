@@ -14,6 +14,21 @@ Gebruik zoveel mogelijk de NLDS structuur en naming in je tokens.json. Dat wil o
 altijd op `min-height` wordt gezet, ook altijd in naam eindigt op `min-height`. Er is ook vastgelegd hoe de tokens over
 verschillende lagen met elkaar samenwerken. Lees meer over de standaard op [nldesignsystem.nl](https://nldesignsystem.nl/handboek/huisstijl/design-tokens/).
 
+## RHC package updaten
+
+Om naar een nieuwe versie van `@rijkshuisstijl-community/design-tokens` te gaan, draai je:
+
+```shell
+pnpm --filter @lux-design-system/lux-community-design-tokens update-base-token-sets
+```
+
+Standaard wordt naar `latest` geüpdatet; met `--version <versie>` kies je een specifieke versie. Het script werkt de
+dependency bij en ververst de base token sets in elke `merged/<app>.tokens.json`. De oude waarden van alle gewijzigde
+en verwijderde tokens komen in een nieuwe token set `overrides/deprecated changes/<oude versie>`, die achteraan in
+`tokenSetOrder` komt en in elk thema wordt aangezet. Daardoor verandert de output van teams niet door de update zelf:
+elk team migreert op eigen tempo door die token set leeg te maken of te verwijderen zodra ze de nieuwe waarden willen
+gebruiken. Review de diff, draai de validatie en build hieronder, en commit alles samen.
+
 ## Testen
 
 Voordat je een PR maakt, kan het handig zijn om de validatie te draaien:

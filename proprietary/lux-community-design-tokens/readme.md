@@ -86,6 +86,10 @@ Er is een script, `validate-token-sets.mts`, dat bewaakt dat de token file consi
   dit een fout in plaats van een fix);
 - eigen (team) token sets die in geen enkel thema worden gebruikt, worden als waarschuwing gemeld.
 
+Voor het updaten van de RHC package is er het script `update-base-token-sets.mts`: dat installeert de nieuwe versie,
+ververst de base token sets en bewaart de oude waarden van gewijzigde tokens in `overrides/deprecated changes/<oude versie>`,
+zodat teams pas migreren wanneer ze er klaar voor zijn (zie [CONTRIBUTING.md](CONTRIBUTING.md)).
+
 Als voorbeeld kun je kijken naar de token set `overrides/ridiculous-font-size` in `merged/voorbeeld.tokens.json`: daar
 staat namelijk maar één overwrite in. Je kunt zien dat de font-size-md variable inderdaad in
 `dist/voorbeeld/variables.scss` (en ook in de thema-subdir `/voorbeeld-thema-niet-gebruiken`) op `53.1px` wordt gezet,

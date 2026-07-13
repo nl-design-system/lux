@@ -28,6 +28,7 @@
     "generate-themes": "node ./src/scripts/generate-themes.mjs",
     "prebuild": "npm run clean && npm run generate-themes",
     "build": "node ./src/scripts/build.mjs",
+    "update-base-token-sets": "node --experimental-strip-types ./src/scripts/update-base-token-sets.mts",
     "validate-token-sets": "node --experimental-strip-types ./src/scripts/validate-token-sets.mts",
     "validate-token-sets:check": "node --experimental-strip-types ./src/scripts/validate-token-sets.mts --check",
     "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'merged/*.tokens.json'",
