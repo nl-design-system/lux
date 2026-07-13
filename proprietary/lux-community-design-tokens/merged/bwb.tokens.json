@@ -8348,6 +8348,7 @@
         "expert-user/focus": "enabled",
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
+        "extra-components/divider": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
@@ -8464,6 +8465,7 @@
         "expert-user/focus": "enabled",
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
+        "extra-components/divider": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
@@ -8573,35 +8575,6 @@
       "components/textarea",
       "components/toggletip",
       "components/unordered-list",
-      "expert-user/_rhc-addition",
-      "expert-user/color",
-      "expert-user/focus",
-      "expert-user/spacing",
-      "extra-components/context-block",
-      "extra-components/floating-button-bar",
-      "extra-components/header",
-      "extra-components/highlight",
-      "extra-components/key-value",
-      "extra-components/link",
-      "extra-components/menu",
-      "extra-components/navigable-collapsible",
-      "extra-components/option-card",
-      "extra-components/progress",
-      "extra-components/segmented-control",
-      "extra-components/side-bar",
-      "extra-components/spinner",
-      "extra-components/status-tag",
-      "extra-components/tag",
-      "extra-components/table-grid",
-      "extra-components/tabs",
-      "extra-components/tooltip",
-      "templates/dialog-wizard",
-      "templates/layout-app",
-      "templates/layout-detail",
-      "templates/layout-search",
-      "local-components-bwb/bwb-object-path",
-      "local-components-bwb/bwb-regelinggegevens",
-      "local-components-bwb/bwb-status-tag",
       "overrides/closed-source/font",
       "overrides/font-weight/bzk",
       "overrides/heading-color/primary",
@@ -8620,8 +8593,7 @@
       "overrides/primaire kleur/contrast fix/non primary buttons coolgrey",
       "overrides/responsive/min",
       "overrides/type-scale/information dense",
-      "overrides/type-scale/promotion",
-      "overrides/expert-user"
+      "overrides/type-scale/promotion"
     ]
   },
   "overrides/expert-user": {
@@ -9591,6 +9563,10 @@
           "$type": "dimension",
           "$value": "{rhc.border-radius.lg}"
         },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": "6rem"
+        },
         "padding-block-start": {
           "$type": "dimension",
           "$value": "{rhc.space.100}"
@@ -9611,22 +9587,15 @@
           "$type": "dimension",
           "$value": "{rhc.space.100}"
         },
-        "context-menu-item": {
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.200}"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0"
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "2",
+            "blur": "4",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.25)",
+            "type": "dropShadow"
           }
         }
       }
@@ -10195,6 +10164,44 @@
         "padding-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.100}"
+        }
+      }
+    }
+  },
+  "extra-components/divider": {
+    "rhc": {
+      "divider": {
+        "color": {
+          "$type": "color",
+          "$value": "{rhc.color.cool-grey.300}"
+        },
+        "horizontal": {
+          "subtle": {
+            "block-size": {
+              "$type": "dimension",
+              "$value": "1px"
+            }
+          }
+        },
+        "vertical": {
+          "inline-size": {
+            "$type": "dimension",
+            "$value": "2px"
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "subtle": {
+            "inline-size": {
+              "$type": "dimension",
+              "$value": "1px"
+            }
+          }
         }
       }
     }
