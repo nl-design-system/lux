@@ -160,22 +160,26 @@ export const insertIntoTokenSetOrder = (
   return order;
 };
 
-// The new deprecated set goes before any existing deprecated-changes pins: a team
-// still pinned to an older version keeps the older (higher-precedence) values.
+// The new deprecated set goes directly after the last base set entry, not at the end
+// of the order: team overrides stay later in the order, so the old base values never
+// win from a team's own overrides. Older deprecated-changes pins also stay later, so a
+// team still pinned to an older version keeps the older (higher-precedence) values.
 export const insertDeprecatedSetIntoOrder = (
   appOrder: string[],
   deprecatedSetName: string,
+  baseSetNames: string[],
 ): string[] => {
   const order = appOrder.filter((entry) => entry !== deprecatedSetName);
-  const firstPinIndex = order.findIndex((entry) =>
-    entry.startsWith(deprecatedSetPrefix),
-  );
+  const baseSets = new Set(baseSetNames);
 
-  if (firstPinIndex === -1) {
-    order.push(deprecatedSetName);
-  } else {
-    order.splice(firstPinIndex, 0, deprecatedSetName);
+  let insertAt = 0;
+  for (let i = order.length - 1; i >= 0; i--) {
+    if (baseSets.has(order[i])) {
+      insertAt = i + 1;
+      break;
+    }
   }
+  order.splice(insertAt, 0, deprecatedSetName);
 
   return order;
 };
@@ -238,6 +242,7 @@ export const applyBaseUpdate = (
     tokenSetOrder = insertDeprecatedSetIntoOrder(
       tokenSetOrder,
       deprecatedSetName,
+      getTokenSetNames(newBase),
     );
   }
   metadata["tokenSetOrder"] = tokenSetOrder;

@@ -176,16 +176,18 @@ describe("insertIntoTokenSetOrder", () => {
 });
 
 describe("insertDeprecatedSetIntoOrder", () => {
-  it("appends at the end when there are no older pins", () => {
+  it("inserts after the last base set so team overrides keep winning", () => {
     expect(
       insertDeprecatedSetIntoOrder(
-        ["brand/color", "overrides/own"],
+        ["brand/color", "components/button", "overrides/own"],
         "overrides/deprecated changes/12.0.0",
+        ["brand/color", "components/button"],
       ),
     ).toEqual([
       "brand/color",
-      "overrides/own",
+      "components/button",
       "overrides/deprecated changes/12.0.0",
+      "overrides/own",
     ]);
   });
 
@@ -194,6 +196,7 @@ describe("insertDeprecatedSetIntoOrder", () => {
       insertDeprecatedSetIntoOrder(
         ["brand/color", "overrides/deprecated changes/11.1.0"],
         "overrides/deprecated changes/12.0.0",
+        ["brand/color"],
       ),
     ).toEqual([
       "brand/color",
@@ -207,8 +210,19 @@ describe("insertDeprecatedSetIntoOrder", () => {
       insertDeprecatedSetIntoOrder(
         ["brand/color", "overrides/deprecated changes/11.1.0"],
         "overrides/deprecated changes/11.1.0",
+        ["brand/color"],
       ),
     ).toEqual(["brand/color", "overrides/deprecated changes/11.1.0"]);
+  });
+
+  it("inserts at the start when the order lists no base sets", () => {
+    expect(
+      insertDeprecatedSetIntoOrder(
+        ["overrides/own"],
+        "overrides/deprecated changes/12.0.0",
+        ["brand/color"],
+      ),
+    ).toEqual(["overrides/deprecated changes/12.0.0", "overrides/own"]);
   });
 });
 
@@ -320,8 +334,8 @@ describe("applyBaseUpdate", () => {
     expect(tokens.$metadata.tokenSetOrder).toEqual([
       "brand/color",
       "components/shiny",
-      "overrides/own",
       "overrides/deprecated changes/11.1.0",
+      "overrides/own",
     ]);
     expect(tokens.$themes[0].selectedTokenSets).toEqual({
       "brand/color": "enabled",
