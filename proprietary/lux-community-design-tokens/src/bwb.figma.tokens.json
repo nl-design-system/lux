@@ -329,6 +329,12 @@
   },
   "expert-user/_rhc-addition": {
     "rhc": {
+      "border-radius": {
+        "lg": {
+          "$type": "dimension",
+          "$value": "8px"
+        }
+      },
       "color": {
         "groen": {
           "550": {
@@ -737,54 +743,6 @@
       }
     }
   },
-  "extra-components/context-menu": {
-    "rhc": {
-      "context-menu": {
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "0.5rem"
-        },
-        "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.100}"
-        },
-        "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{rhc.space.100}"
-        },
-        "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{rhc.space.100}"
-        },
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{rhc.space.100}"
-        },
-        "row-gap": {
-          "$type": "dimension",
-          "$value": "{rhc.space.100}"
-        },
-        "context-menu-item": {
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.200}"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "0"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0"
-          }
-        }
-      }
-    }
-  },
   "extra-components/floating-button-bar": {
     "rhc": {
       "floating-button-bar": {
@@ -996,6 +954,51 @@
           "text-bold": {
             "$type": "textDecoration",
             "$value": "underline"
+          }
+        }
+      }
+    }
+  },
+  "extra-components/menu": {
+    "rhc": {
+      "menu": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{rhc.border-radius.lg}"
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": "6rem"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "2",
+            "blur": "4",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.25)",
+            "type": "dropShadow"
           }
         }
       }
@@ -1791,6 +1794,10 @@
   "templates/layout-app": {
     "rhc": {
       "layout-app": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.surface.canvas}"
+        },
         "main": {
           "padding-block-start": {
             "$type": "dimension",
@@ -1836,6 +1843,16 @@
             "$type": "color",
             "$value": "{expert-user.color.surface.primary}"
           }
+        }
+      }
+    }
+  },
+  "templates/layout-detail": {
+    "rhc": {
+      "layout-detail": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{rhc.border-radius.lg}"
         }
       }
     }
@@ -2146,13 +2163,13 @@
         "expert-user/focus": "enabled",
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
-        "extra-components/context-menu": "enabled",
         "extra-components/divider": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
+        "extra-components/menu": "enabled",
         "extra-components/navigable-collapsible": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
@@ -2166,6 +2183,7 @@
         "extra-components/tooltip": "enabled",
         "templates/dialog-wizard": "enabled",
         "templates/layout-app": "enabled",
+        "templates/layout-detail": "enabled",
         "templates/layout-search": "enabled"
       },
       "$figmaVariableReferences": {},
@@ -2262,13 +2280,13 @@
         "expert-user/focus": "enabled",
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
-        "extra-components/context-menu": "enabled",
         "extra-components/divider": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
+        "extra-components/menu": "enabled",
         "extra-components/navigable-collapsible": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
@@ -2282,6 +2300,7 @@
         "extra-components/tooltip": "enabled",
         "templates/dialog-wizard": "enabled",
         "templates/layout-app": "enabled",
+        "templates/layout-detail": "enabled",
         "templates/layout-search": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
