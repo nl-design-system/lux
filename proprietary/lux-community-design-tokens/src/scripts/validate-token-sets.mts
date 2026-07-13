@@ -1,30 +1,19 @@
 import rhcFigmaTokens from "@rijkshuisstijl-community/design-tokens/figma/figma.tokens.json" with { type: "json" };
-import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
-import { fileURLToPath } from "node:url";
 import { isDeepStrictEqual } from "node:util";
-
-type JsonMap = Record<string, unknown>;
+import {
+  collectTokenFiles,
+  getTokenSetNames,
+  mergedPath,
+  readJsonFile,
+  writeJsonFile,
+  type JsonMap,
+} from "./token-file-utils.mts";
 
 interface ThemeDefinition {
   selectedTokenSets?: Record<string, string>;
 }
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const packageRootPath = path.resolve(__dirname, "..", "..");
-const mergedPath = path.resolve(packageRootPath, "merged");
-
-const validTokenFileNameRegex = /^([a-z]+)\.tokens\.json$/;
-
-const readJsonFile = (filePath: string): JsonMap =>
-  JSON.parse(fs.readFileSync(filePath, "utf-8")) as JsonMap;
-const writeJsonFile = (filePath: string, data: JsonMap): void =>
-  fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`);
-
-const getTokenSetNames = (tokens: JsonMap): string[] =>
-  Object.keys(tokens).filter((key) => key !== "$metadata" && key !== "$themes");
 
 // The base token sets (everything the RHC package publishes, except its metadata and
 // themes) may not be changed locally; only the team-managed sets (overrides, metadata
@@ -105,12 +94,6 @@ export const findTokenSetsNotInAnyTheme = (
     (name) => !(name in baseTokens) && !usedTokenSets.has(name),
   );
 };
-
-const collectTokenFiles = (dir: string): string[] =>
-  fs
-    .readdirSync(dir)
-    .filter((file) => validTokenFileNameRegex.test(file))
-    .map((file) => path.join(dir, file));
 
 const logList = (
   log: (message: string) => void,
