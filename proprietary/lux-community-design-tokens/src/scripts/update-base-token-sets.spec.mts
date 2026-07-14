@@ -3,6 +3,7 @@ import type { JsonMap } from "./token-file-utils.mts";
 import {
   applyBaseUpdate,
   diffBaseTokenSets,
+  findRemovedBaseTokenUsage,
   insertDeprecatedSetIntoOrder,
   insertIntoTokenSetOrder,
   updateThemes,
@@ -440,5 +441,60 @@ describe("applyBaseUpdate", () => {
       "overrides/deprecated changes/11.1.0/components/legacy",
       "overrides/own",
     ]);
+  });
+});
+
+describe("findRemovedBaseTokenUsage", () => {
+  const removed = new Set(["rhc.space.100", "rhc.form-field.label.margin"]);
+  const baseSetNames = ["brand/color", "components/form-field"];
+
+  it("flags a team set that overrides a removed base token path", () => {
+    const tokens: JsonMap = {
+      "components/form-field": { rhc: { "form-field": { label: { margin: token("x") } } } },
+      "overrides/team": {
+        rhc: { "form-field": { label: { margin: token("{rhc.space.50}") } } },
+      },
+    };
+
+    expect(findRemovedBaseTokenUsage(tokens, removed, baseSetNames)).toContainEqual({
+      setName: "overrides/team",
+      tokenPath: "rhc.form-field.label.margin",
+      removedToken: "rhc.form-field.label.margin",
+      via: "override",
+    });
+  });
+
+  it("flags a team set that references a removed base token", () => {
+    const tokens: JsonMap = {
+      "overrides/team": { rhc: { gap: token("{rhc.space.100}") } },
+    };
+
+    expect(findRemovedBaseTokenUsage(tokens, removed, baseSetNames)).toEqual([
+      {
+        setName: "overrides/team",
+        tokenPath: "rhc.gap",
+        removedToken: "rhc.space.100",
+        via: "reference",
+      },
+    ]);
+  });
+
+  it("ignores surviving base sets and the deprecated pins", () => {
+    const tokens: JsonMap = {
+      // a surviving base set naturally still defines its own tokens
+      "components/form-field": { rhc: { "form-field": { label: { margin: token("x") } } } },
+      // the deprecated pin is meant to keep referencing the tokens it preserves
+      "overrides/deprecated changes/11.1.0": { rhc: { space: { "100": token("0.5rem") } } },
+    };
+
+    expect(findRemovedBaseTokenUsage(tokens, removed, baseSetNames)).toEqual([]);
+  });
+
+  it("returns nothing when no base tokens were removed", () => {
+    const tokens: JsonMap = {
+      "overrides/team": { rhc: { gap: token("{rhc.space.100}") } },
+    };
+
+    expect(findRemovedBaseTokenUsage(tokens, new Set(), baseSetNames)).toEqual([]);
   });
 });
