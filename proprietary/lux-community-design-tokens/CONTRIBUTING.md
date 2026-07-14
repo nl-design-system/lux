@@ -23,11 +23,13 @@ pnpm --filter @lux-design-system/lux-community-design-tokens update-base-token-s
 ```
 
 Standaard wordt naar `latest` geüpdatet; met `--version <versie>` kies je een specifieke versie. Het script werkt de
-dependency bij en ververst de base token sets in elke `merged/<app>.tokens.json`. De oude waarden van alle gewijzigde
-en verwijderde tokens komen in een nieuwe token set `overrides/deprecated changes/<oude versie>`, die achteraan in
-`tokenSetOrder` komt en in elk thema wordt aangezet. Daardoor verandert de output van teams niet door de update zelf:
-elk team migreert op eigen tempo door die token set leeg te maken of te verwijderen zodra ze de nieuwe waarden willen
-gebruiken. Review de diff, draai de validatie en build hieronder, en commit alles samen.
+dependency bij en ververst de base token sets in elke `merged/<app>.tokens.json`. De oude waarden van gewijzigde tokens
+komen in een nieuwe token set `overrides/deprecated changes/<oude versie>`, die direct na de laatste base token set in
+`tokenSetOrder` komt en in elk thema wordt aangezet. Token sets die in de nieuwe versie zijn verwijderd, blijven elk
+apart bewaard als `overrides/deprecated changes/<oude versie>/<token set>`, op hun oorspronkelijke plek in
+`tokenSetOrder`; verwijzingen in thema's worden naar die bewaarde kopie omgezet. Daardoor verandert de output van teams
+niet door de update zelf: elk team migreert op eigen tempo door die token sets leeg te maken of te verwijderen zodra ze
+de nieuwe waarden willen gebruiken. Review de diff, draai de validatie en build hieronder, en commit alles samen.
 
 ## Testen
 

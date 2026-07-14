@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import type { JsonMap } from "./token-file-utils.mts";
 import {
   applyBaseUpdate,
   diffBaseTokenSets,
@@ -69,9 +70,52 @@ describe("diffBaseTokenSets", () => {
 
     expect(diffBaseTokenSets(oldBase, newBase)).toEqual({
       addedSets: ["components/shiny"],
-      deprecatedTokens: { legacy: { size: token("1rem") } },
-      removedSets: ["components/legacy"],
+      deprecatedTokens: {},
+      removedSets: [
+        {
+          name: "components/legacy",
+          tokens: { legacy: { size: token("1rem") } },
+        },
+      ],
     });
+  });
+
+  it("keeps a removed set out of the deprecated tokens so it cannot overwrite pinned defaults", () => {
+    const oldBase = {
+      $metadata: { tokenSetOrder: ["brand/color", "overrides/promo"] },
+      "brand/color": { color: { primary: token("#default-old") } },
+      "overrides/promo": { color: { primary: token("#promo-old") } },
+    };
+    const newBase = {
+      $metadata: { tokenSetOrder: ["brand/color"] },
+      "brand/color": { color: { primary: token("#default-new") } },
+    };
+
+    expect(diffBaseTokenSets(oldBase, newBase)).toEqual({
+      addedSets: [],
+      deprecatedTokens: { color: { primary: token("#default-old") } },
+      removedSets: [
+        {
+          name: "overrides/promo",
+          tokens: { color: { primary: token("#promo-old") } },
+        },
+      ],
+    });
+  });
+
+  it("ignores changes that only touch $description", () => {
+    const oldBase = {
+      "brand/color": { color: { primary: token("#111111") } },
+    };
+    const newBase = {
+      "brand/color": {
+        color: {
+          primary: { ...token("#111111"), $description: "[figma-only]" },
+        },
+      },
+    };
+
+    expect(diffBaseTokenSets(oldBase, newBase).deprecatedTokens).toEqual({});
   });
 
   it("does not capture tokens that are only added in the new version", () => {
@@ -227,7 +271,7 @@ describe("insertDeprecatedSetIntoOrder", () => {
 });
 
 describe("updateThemes", () => {
-  it("enables the deprecated set in every theme and strips removed sets", () => {
+  it("enables the deprecated set in every theme and remaps removed sets to their preserved copy", () => {
     const themes = [
       {
         id: "one",
@@ -245,15 +289,17 @@ describe("updateThemes", () => {
     ];
 
     expect(
-      updateThemes(themes, "overrides/deprecated changes/11.1.0", [
-        "components/legacy",
-      ]),
+      updateThemes(themes, "overrides/deprecated changes/11.1.0", {
+        "components/legacy":
+          "overrides/deprecated changes/11.1.0/components/legacy",
+      }),
     ).toEqual([
       {
         id: "one",
         name: "One",
         selectedTokenSets: {
           "brand/color": "enabled",
+          "overrides/deprecated changes/11.1.0/components/legacy": "enabled",
           "overrides/deprecated changes/11.1.0": "enabled",
         },
       },
@@ -268,16 +314,26 @@ describe("updateThemes", () => {
     ]);
   });
 
-  it("leaves themes unchanged apart from removals when there is no deprecated set", () => {
+  it("keeps the original status when remapping a removed set", () => {
     const themes = [
       {
         name: "One",
-        selectedTokenSets: { "brand/color": "enabled", "gone/set": "enabled" },
+        selectedTokenSets: { "gone/set": "source", "kept/set": "disabled" },
       },
     ];
 
-    expect(updateThemes(themes, null, ["gone/set"])).toEqual([
-      { name: "One", selectedTokenSets: { "brand/color": "enabled" } },
+    expect(
+      updateThemes(themes, null, {
+        "gone/set": "overrides/deprecated changes/11.1.0/gone/set",
+      }),
+    ).toEqual([
+      {
+        name: "One",
+        selectedTokenSets: {
+          "overrides/deprecated changes/11.1.0/gone/set": "source",
+          "kept/set": "disabled",
+        },
+      },
     ]);
   });
 });
@@ -327,20 +383,62 @@ describe("applyBaseUpdate", () => {
     expect(tokens).not.toHaveProperty(["components/legacy"]);
     expect(tokens).toHaveProperty(["components/shiny"]);
     expect(tokens["overrides/own"]).toEqual({ own: token("#aaaaaa") });
-    expect(tokens["overrides/deprecated changes/11.1.0"]).toEqual({
-      color: { primary: token("#111111") },
-      legacy: { size: token("1rem") },
-    });
+    expect((tokens as JsonMap)["overrides/deprecated changes/11.1.0"]).toEqual(
+      {
+        color: { primary: token("#111111") },
+      },
+    );
+    expect(
+      (tokens as JsonMap)[
+        "overrides/deprecated changes/11.1.0/components/legacy"
+      ],
+    ).toEqual({ legacy: { size: token("1rem") } });
+    // the preserved set keeps the removed set's position: after the pinned
+    // defaults, before team overrides
     expect(tokens.$metadata.tokenSetOrder).toEqual([
       "brand/color",
       "components/shiny",
       "overrides/deprecated changes/11.1.0",
+      "overrides/deprecated changes/11.1.0/components/legacy",
       "overrides/own",
     ]);
     expect(tokens.$themes[0].selectedTokenSets).toEqual({
       "brand/color": "enabled",
+      "overrides/deprecated changes/11.1.0/components/legacy": "enabled",
       "overrides/own": "enabled",
       "overrides/deprecated changes/11.1.0": "enabled",
     });
+  });
+
+  it("inserts a preserved set after the last base set when the app order did not list it", () => {
+    const tokens = {
+      $metadata: { tokenSetOrder: ["brand/color", "overrides/own"] },
+      "brand/color": { color: { primary: token("#111111") } },
+      "components/legacy": { legacy: { size: token("1rem") } },
+      "overrides/own": { own: token("#aaaaaa") },
+    };
+    const newBase = {
+      $metadata: { tokenSetOrder: ["brand/color"] },
+      "brand/color": { color: { primary: token("#111111") } },
+    };
+    const diff = diffBaseTokenSets(
+      {
+        "brand/color": tokens["brand/color"],
+        "components/legacy": tokens["components/legacy"],
+      },
+      newBase,
+    );
+
+    applyBaseUpdate(tokens, {
+      deprecatedSetName: "overrides/deprecated changes/11.1.0",
+      diff,
+      newBase,
+    });
+
+    expect(tokens.$metadata.tokenSetOrder).toEqual([
+      "brand/color",
+      "overrides/deprecated changes/11.1.0/components/legacy",
+      "overrides/own",
+    ]);
   });
 });

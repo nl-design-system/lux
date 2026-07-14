@@ -18,10 +18,15 @@ const deprecatedSetPrefix = "overrides/deprecated changes/";
 // semver or npm dist-tag such as "latest"
 const validVersionRegex = /^[a-z0-9][a-z0-9.\-+]*$/i;
 
+export interface RemovedTokenSet {
+  name: string;
+  tokens: JsonMap;
+}
+
 export interface BaseTokenSetDiff {
   addedSets: string[];
   deprecatedTokens: JsonMap;
-  removedSets: string[];
+  removedSets: RemovedTokenSet[];
 }
 
 const isTokenLeaf = (value: unknown): value is JsonMap =>
@@ -29,6 +34,9 @@ const isTokenLeaf = (value: unknown): value is JsonMap =>
 
 const isJsonMap = (value: unknown): value is JsonMap =>
   typeof value === "object" && value !== null && !Array.isArray(value);
+
+// $description changes don't affect rendering, so they don't count as a change.
+const stripDescription = ({ $description, ...rest }: JsonMap): JsonMap => rest;
 
 // Collect the parts of the old token tree that no longer resolve to the same value in
 // the new tree: changed leaves keep their old value, removed leaves and groups are
@@ -42,7 +50,17 @@ const diffTokenTree = (
   for (const [key, oldValue] of Object.entries(oldNode)) {
     const newValue = newNode[key];
 
-    if (isTokenLeaf(oldValue) || !isJsonMap(oldValue)) {
+    if (isTokenLeaf(oldValue)) {
+      if (
+        !isTokenLeaf(newValue) ||
+        !isDeepStrictEqual(
+          stripDescription(oldValue),
+          stripDescription(newValue),
+        )
+      ) {
+        changes[key] = oldValue;
+      }
+    } else if (!isJsonMap(oldValue)) {
       if (!isDeepStrictEqual(oldValue, newValue)) {
         changes[key] = oldValue;
       }
@@ -83,9 +101,11 @@ const getTokenSetOrder = (tokens: JsonMap): string[] => {
     : [];
 };
 
-// Diff two versions of the RHC base package. The old values of every changed or
-// removed token end up in one tree, walked in the old package's tokenSetOrder so a
-// path collision between sets resolves the same way Tokens Studio would.
+// Diff two versions of the RHC base package. The old values of changed tokens in
+// surviving sets end up in one tree, walked in the old package's tokenSetOrder so a
+// path collision between sets resolves the same way Tokens Studio would. Removed sets
+// are kept whole (with their content) so they can be preserved as their own set and
+// never overwrite the pinned old defaults of surviving sets.
 export const diffBaseTokenSets = (
   oldBase: JsonMap,
   newBase: JsonMap,
@@ -93,7 +113,12 @@ export const diffBaseTokenSets = (
   const oldSetNames = getTokenSetNames(oldBase);
   const newSetNames = new Set(getTokenSetNames(newBase));
 
-  const removedSets = oldSetNames.filter((name) => !newSetNames.has(name));
+  const removedSets = oldSetNames
+    .filter((name) => !newSetNames.has(name) && isJsonMap(oldBase[name]))
+    .map((name) => ({
+      name,
+      tokens: structuredClone(oldBase[name]) as JsonMap,
+    }));
   const addedSets = [...newSetNames].filter(
     (name) => !oldSetNames.includes(name),
   );
@@ -107,14 +132,12 @@ export const diffBaseTokenSets = (
   const deprecatedTokens: JsonMap = {};
   for (const setName of orderedOldSets) {
     const oldSet = oldBase[setName];
-    if (!isJsonMap(oldSet)) {
+    const newSet = newBase[setName];
+    if (!isJsonMap(oldSet) || !isJsonMap(newSet)) {
       continue;
     }
 
-    const newSet = newBase[setName];
-    const setChanges = isJsonMap(newSet)
-      ? diffTokenTree(oldSet, newSet)
-      : oldSet;
+    const setChanges = diffTokenTree(oldSet, newSet);
     if (setChanges) {
       deepMerge(deprecatedTokens, structuredClone(setChanges));
     }
@@ -185,21 +208,21 @@ export const insertDeprecatedSetIntoOrder = (
 };
 
 // Enable the deprecated set in every theme (so team output keeps rendering the old
-// values) and drop references to base sets that no longer exist.
+// values) and remap references to removed base sets to their preserved copy, keeping
+// the original status so a theme that had the set enabled keeps its old rendering.
 export const updateThemes = (
   themes: JsonMap[],
   deprecatedSetName: string | null,
-  removedSets: string[],
+  renamedSets: Record<string, string>,
 ): JsonMap[] =>
   themes.map((theme) => {
-    const selectedTokenSets: Record<string, unknown> = {
-      ...(isJsonMap(theme["selectedTokenSets"])
-        ? theme["selectedTokenSets"]
-        : {}),
-    };
+    const selectedTokenSets: Record<string, unknown> = {};
+    const existing = isJsonMap(theme["selectedTokenSets"])
+      ? theme["selectedTokenSets"]
+      : {};
 
-    for (const removedSet of removedSets) {
-      delete selectedTokenSets[removedSet];
+    for (const [setName, status] of Object.entries(existing)) {
+      selectedTokenSets[renamedSets[setName] ?? setName] = status;
     }
     if (deprecatedSetName) {
       selectedTokenSets[deprecatedSetName] = "enabled";
@@ -217,12 +240,16 @@ export const applyBaseUpdate = (
   }: { deprecatedSetName: string; diff: BaseTokenSetDiff; newBase: JsonMap },
 ): JsonMap => {
   const hasDeprecatedTokens = Object.keys(diff.deprecatedTokens).length > 0;
+  const renamedSets: Record<string, string> = Object.fromEntries(
+    diff.removedSets.map(({ name }) => [name, `${deprecatedSetName}/${name}`]),
+  );
 
   for (const setName of getTokenSetNames(newBase)) {
     tokens[setName] = newBase[setName];
   }
-  for (const setName of diff.removedSets) {
-    delete tokens[setName];
+  for (const removedSet of diff.removedSets) {
+    delete tokens[removedSet.name];
+    tokens[renamedSets[removedSet.name]] = structuredClone(removedSet.tokens);
   }
   if (hasDeprecatedTokens) {
     tokens[deprecatedSetName] = diff.deprecatedTokens;
@@ -230,9 +257,21 @@ export const applyBaseUpdate = (
 
   const metadata = isJsonMap(tokens["$metadata"]) ? tokens["$metadata"] : {};
   tokens["$metadata"] = metadata;
-  let tokenSetOrder = getTokenSetOrder(tokens).filter(
-    (entry) => !diff.removedSets.includes(entry),
+  // Rename removed sets in place so their preserved copy keeps its original
+  // precedence: it stays after the (lower-precedence) pinned defaults and keeps
+  // winning path collisions the way the removed set did.
+  let tokenSetOrder = getTokenSetOrder(tokens).map(
+    (entry) => renamedSets[entry] ?? entry,
   );
+  for (const preservedName of Object.values(renamedSets)) {
+    if (!tokenSetOrder.includes(preservedName)) {
+      tokenSetOrder = insertDeprecatedSetIntoOrder(
+        tokenSetOrder,
+        preservedName,
+        getTokenSetNames(newBase),
+      );
+    }
+  }
   tokenSetOrder = insertIntoTokenSetOrder(
     tokenSetOrder,
     diff.addedSets,
@@ -251,7 +290,7 @@ export const applyBaseUpdate = (
     tokens["$themes"] = updateThemes(
       tokens["$themes"] as JsonMap[],
       hasDeprecatedTokens ? deprecatedSetName : null,
-      diff.removedSets,
+      renamedSets,
     );
   }
 
@@ -326,6 +365,11 @@ export const updateBaseTokenSets = (targetVersion: string): void => {
   console.log(
     `Base token sets updated: ${diff.addedSets.length} set(s) added, ${diff.removedSets.length} set(s) removed.`,
   );
+  for (const removedSet of diff.removedSets) {
+    console.log(
+      `Removed set "${removedSet.name}" is preserved as "${deprecatedSetName}/${removedSet.name}"; theme references were remapped.`,
+    );
+  }
   if (deprecatedTokenCount > 0) {
     console.log(
       `${deprecatedTokenCount} changed or removed token(s) kept their old value in "${deprecatedSetName}" (enabled in every theme).`,
