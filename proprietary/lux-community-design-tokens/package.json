@@ -25,11 +25,13 @@
   "bugs": "https://github.com/nl-design-system/lux/issues",
   "scripts": {
     "clean": "rimraf dist/",
-    "lint": "jsonlint -q -F src/**/*.json",
-    "merge-token-sets": "node ./merge-token-sets.mjs",
-    "prebuild": "npm run clean && npm run merge-token-sets",
-    "build": "node ./build.mjs",
-    "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.json'",
+    "lint": "jsonlint -q -F merged/*.json",
+    "generate-themes": "node ./src/scripts/generate-themes.mjs",
+    "prebuild": "npm run clean && npm run generate-themes",
+    "build": "node ./src/scripts/build.mjs",
+    "validate-token-sets": "node --experimental-strip-types ./src/scripts/validate-token-sets.mts",
+    "validate-token-sets:check": "node --experimental-strip-types ./src/scripts/validate-token-sets.mts --check",
+    "watch": "chokidar --follow-symlinks --initial --command 'npm run build' 'merged/*.tokens.json'",
     "test": "vitest",
     "prepack": "npm-run-all build lint"
   },

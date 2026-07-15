@@ -6,7 +6,7 @@ packages:
   - "proprietary/*"
 
 allowBuilds:
-  '@bundled-es-modules/glob': true
+  "@bundled-es-modules/glob": true
   esbuild: true
   style-dictionary: true
 
@@ -50,4 +50,4 @@ savePrefix: ""
 strictPeerDependencies: false
 
 patchedDependencies:
-  '@tokens-studio/sd-transforms@0.15.2': patches/@tokens-studio__sd-transforms@0.15.2.patch
+  "@tokens-studio/sd-transforms@0.15.2": patches/@tokens-studio__sd-transforms@0.15.2.patch

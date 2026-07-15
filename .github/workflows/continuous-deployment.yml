@@ -69,7 +69,7 @@ jobs:
       - name: "Continuous Integration: lint"
         run: pnpm run --if-present lint
 
-  merge-tokens:
+  validate-tokens:
     runs-on: ubuntu-latest
     needs: install
     permissions:
@@ -93,22 +93,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Check if merge-token-sets is required
-        id: needtokenmerge
-        run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^proprietary/lux-community-design-tokens/src/.*\.json'; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Merge RHC tokens with LUX community overrides
-        if: steps.needtokenmerge.outputs.changed == 'true'
-        run: pnpm --filter @lux-design-system/lux-community-design-tokens merge-token-sets
+      # Validates the community token files: base token sets must match the
+      # @rijkshuisstijl-community/design-tokens package, $metadata.tokenSetOrder must be in
+      # sync with the token sets, and token sets unused by any theme are reported. Runs
+      # unconditionally so an upstream RHC dependency bump that changes base tokens is
+      # caught as well.
+      - name: Validate community design tokens
+        run: pnpm --filter @lux-design-system/lux-community-design-tokens validate-token-sets:check
 
   build:
     runs-on: ubuntu-latest
-    needs: [merge-tokens, install]
+    needs: [validate-tokens, install]
     permissions:
       contents: read
 
