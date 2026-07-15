@@ -8593,7 +8593,12 @@
       "overrides/primaire kleur/contrast fix/non primary buttons coolgrey",
       "overrides/responsive/min",
       "overrides/type-scale/information dense",
-      "overrides/type-scale/promotion"
+      "overrides/type-scale/promotion",
+      "expert-user/_rhc-addition",
+      "expert-user/color",
+      "expert-user/focus",
+      "expert-user/spacing",
+      "overrides/expert-user"
     ]
   },
   "overrides/expert-user": {
@@ -9404,14 +9409,7 @@
         },
         "box-shadow": {
           "$type": "boxShadow",
-          "$value": {
-            "x": "0",
-            "y": "8px",
-            "blur": "16px",
-            "spread": "0",
-            "color": "{basis.box-shadow.md}",
-            "type": "dropShadow"
-          }
+          "$value": "{basis.box-shadow.md}"
         },
         "column-gap": {
           "$type": "dimension",
@@ -9640,14 +9638,7 @@
         },
         "box-shadow": {
           "$type": "boxShadow",
-          "$value": {
-            "x": "0",
-            "y": "8px",
-            "blur": "16px",
-            "spread": "0",
-            "color": "{basis.box-shadow.md}",
-            "type": "dropShadow"
-          }
+          "$value": "{basis.box-shadow.md}"
         },
         "inner": {
           "border-radius": {
