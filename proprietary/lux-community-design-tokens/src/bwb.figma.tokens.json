@@ -1045,10 +1045,10 @@
           "$type": "boxShadow",
           "$value": {
             "x": "0",
-            "y": "2",
-            "blur": "4",
+            "y": "8px",
+            "blur": "16px",
             "spread": "0",
-            "color": "rgba(0,0,0,0.25)",
+            "color": "{basis.box-shadow.md}",
             "type": "dropShadow"
           }
         },
