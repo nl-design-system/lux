@@ -55,6 +55,12 @@
           "type": "color",
           "value": "#171717",
           "description": ""
+        },
+        "1000": {
+          "parent": "core/default",
+          "type": "color",
+          "value": "#000000",
+          "description": ""
         }
       },
       "zwart": {
