@@ -8598,6 +8598,32 @@
       "expert-user/color",
       "expert-user/focus",
       "expert-user/spacing",
+      "extra-components/context-block",
+      "extra-components/divider",
+      "extra-components/floating-button-bar",
+      "extra-components/header",
+      "extra-components/highlight",
+      "extra-components/key-value",
+      "extra-components/link",
+      "extra-components/menu",
+      "extra-components/navigable-collapsible",
+      "extra-components/option-card",
+      "extra-components/progress",
+      "extra-components/segmented-control",
+      "extra-components/side-bar",
+      "extra-components/spinner",
+      "extra-components/status-tag",
+      "extra-components/tag",
+      "extra-components/table-grid",
+      "extra-components/tabs",
+      "extra-components/tooltip",
+      "templates/dialog-wizard",
+      "templates/layout-app",
+      "templates/layout-detail",
+      "templates/layout-search",
+      "local-components-bwb/bwb-object-path",
+      "local-components-bwb/bwb-regelinggegevens",
+      "local-components-bwb/bwb-status-tag",
       "overrides/expert-user"
     ]
   },
@@ -8658,12 +8684,6 @@
         "background-color": {
           "$type": "color",
           "$value": "{expert-user.color.cta.background-color}"
-        },
-        "pressed": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{expert-user.color.cta.pressed}"
-          }
         },
         "active": {
           "background-color": {
@@ -9043,19 +9063,6 @@
                   "space": "lch",
                   "type": "darken",
                   "value": "0.3"
-                }
-              }
-            },
-            "$type": "color",
-            "$value": "{expert-user.color.cta.background-color}"
-          },
-          "pressed": {
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "space": "lch",
-                  "type": "darken",
-                  "value": "0.5"
                 }
               }
             },
@@ -10068,6 +10075,10 @@
           "$value": "12.5 * 1rem"
         },
         "header": {
+          "height": {
+            "$type": "dimension",
+            "$value": "3rem"
+          },
           "padding-block-start": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
@@ -10421,6 +10432,12 @@
           "padding-inline-start": {
             "$type": "dimension",
             "$value": "{rhc.space.800}"
+          },
+          "breadcrumb": {
+            "height": {
+              "$type": "dimension",
+              "$value": "3rem"
+            }
           },
           "content": {
             "border-radius": {
