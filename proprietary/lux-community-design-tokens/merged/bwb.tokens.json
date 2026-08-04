@@ -8356,6 +8356,7 @@
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
         "extra-components/navigable-collapsible": "enabled",
+        "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
@@ -8473,6 +8474,7 @@
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
         "extra-components/navigable-collapsible": "enabled",
+        "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
@@ -8607,6 +8609,7 @@
       "extra-components/link",
       "extra-components/menu",
       "extra-components/navigable-collapsible",
+      "extra-components/number-badge",
       "extra-components/option-card",
       "extra-components/progress",
       "extra-components/segmented-control",
@@ -8942,24 +8945,6 @@
           }
         }
       }
-    },
-    "nl": {
-      "number-badge": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{rhc.color.warning.default}"
-        },
-        "no-items": {
-          "background-color": {
-            "$type": "color",
-            "$value": "rgba(255,255,255,0.6)"
-          }
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{rhc.color.foreground.default}"
-        }
-      }
     }
   },
   "expert-user/_rhc-addition": {
@@ -8987,6 +8972,16 @@
           "550": {
             "$type": "color",
             "$value": "#CE2A1D"
+          }
+        },
+        "semi-transparent": {
+          "dark": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,0.15)"
+          },
+          "light": {
+            "$type": "color",
+            "$value": "rgba(255,255,255,0.6)"
           }
         }
       },
@@ -9688,6 +9683,28 @@
             "$type": "dimension",
             "$value": "{rhc.space.200}"
           }
+        }
+      }
+    }
+  },
+  "extra-components/number-badge": {
+    "rhc": {
+      "number-badge": {
+        "color": {
+          "$type": "color",
+          "$value": "{rhc.color.foreground.default}"
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": "{rhc.color.semi-transparent.dark}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{rhc.color.semi-transparent.light}"
+        },
+        "notification": {
+          "$type": "color",
+          "$value": "{rhc.color.warning.default}"
         }
       }
     }
