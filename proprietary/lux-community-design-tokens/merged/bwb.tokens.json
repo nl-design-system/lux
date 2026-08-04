@@ -8977,7 +8977,7 @@
         "semi-transparent": {
           "dark": {
             "$type": "color",
-            "$value": "rgba(0,0,0,0.2)"
+            "$value": "rgba(0,0,0,0.15)"
           },
           "light": {
             "$type": "color",
