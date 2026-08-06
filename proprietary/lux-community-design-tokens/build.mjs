@@ -27,7 +27,10 @@ const getPlatformsConfig = (buildPath) => ({
     buildPath,
     options: {
       fileHeader: 'nlds-rhc-header',
-      outputReferences: true,
+      //Fix $extensions.studio.tokens.modify issues that are overridden when outputReferences = true
+      outputReferences: (token) => {
+        return !token.$extensions?.['studio.tokens']?.modify;
+      },
     },
     files: [
       {
