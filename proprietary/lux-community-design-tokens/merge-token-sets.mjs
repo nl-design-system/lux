@@ -74,8 +74,10 @@ export const mergeTokenSets = (original, addition) => {
   merged.$themes = addition.$themes;
 
   // Add additional keys as metadata to the $metadata array
-  const bwbAdditions = Object.keys(addition).filter((key) => /^[^$]/i.test(key));
-  merged.$metadata.tokenSetOrder = merged.$metadata.tokenSetOrder.concat(bwbAdditions);
+  if (!!merged.$metadata && !!merged.$metadata.tokenSetOrder) {
+    const bwbAdditions = Object.keys(addition).filter((key) => /^[^$]/i.test(key));
+    merged.$metadata.tokenSetOrder = merged.$metadata.tokenSetOrder.concat(bwbAdditions);
+  }
 
   return [merged, collisions];
 };
