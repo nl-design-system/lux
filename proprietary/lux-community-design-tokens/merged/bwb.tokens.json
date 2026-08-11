@@ -8595,39 +8595,7 @@
       "overrides/primaire kleur/contrast fix/non primary buttons coolgrey",
       "overrides/responsive/min",
       "overrides/type-scale/information dense",
-      "overrides/type-scale/promotion",
-      "expert-user/_rhc-addition",
-      "expert-user/color",
-      "expert-user/focus",
-      "expert-user/spacing",
-      "extra-components/context-block",
-      "extra-components/divider",
-      "extra-components/floating-button-bar",
-      "extra-components/header",
-      "extra-components/highlight",
-      "extra-components/key-value",
-      "extra-components/link",
-      "extra-components/menu",
-      "extra-components/navigable-collapsible",
-      "extra-components/number-badge",
-      "extra-components/option-card",
-      "extra-components/progress",
-      "extra-components/segmented-control",
-      "extra-components/side-bar",
-      "extra-components/spinner",
-      "extra-components/status-tag",
-      "extra-components/tag",
-      "extra-components/table-grid",
-      "extra-components/tabs",
-      "extra-components/tooltip",
-      "templates/dialog-wizard",
-      "templates/layout-app",
-      "templates/layout-detail",
-      "templates/layout-search",
-      "local-components-bwb/bwb-object-path",
-      "local-components-bwb/bwb-regelinggegevens",
-      "local-components-bwb/bwb-status-tag",
-      "overrides/expert-user"
+      "overrides/type-scale/promotion"
     ]
   },
   "overrides/expert-user": {
@@ -8805,6 +8773,13 @@
             "$type": "color",
             "$value": "{expert-user.color.content.hover}"
           }
+        }
+      },
+      "select": {
+        "image-background-position": {
+          "$type": "other",
+          "$value": "right {utrecht.form-field.margin-block-end} center",
+          "$description": "[code-only]"
         }
       }
     },
@@ -10705,7 +10680,7 @@
           "positive": {
             "background-color": {
               "$type": "color",
-              "$value": "expert-user.color.surface.input"
+              "$value": "{expert-user.color.surface.input}"
             },
             "border-color": {
               "$type": "color",
