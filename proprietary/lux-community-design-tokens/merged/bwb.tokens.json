@@ -10688,7 +10688,7 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{rhc.color.foreground.subtle}"
+              "$value": "red"
             }
           }
         }
