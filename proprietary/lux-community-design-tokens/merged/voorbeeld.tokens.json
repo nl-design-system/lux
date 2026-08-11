@@ -8368,7 +8368,8 @@
       "overrides/primaire kleur/contrast fix/non primary buttons coolgrey",
       "overrides/responsive/min",
       "overrides/type-scale/information dense",
-      "overrides/type-scale/promotion"
+      "overrides/type-scale/promotion",
+      "overrides/ridiculous-font-size"
     ]
   },
   "overrides/ridiculous-font-size": {

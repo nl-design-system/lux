@@ -73,6 +73,15 @@ export const mergeTokenSets = (original, addition) => {
   // No need to re-publish the themes available in RHC here
   merged.$themes = addition.$themes;
 
+  // Add additional keys as metadata to the $metadata array
+  if (!!merged.$metadata && !!merged.$metadata.tokenSetOrder) {
+    const bwbAdditions = Object.keys(addition).filter((key) => /^[^$]/i.test(key));
+    merged.$metadata = {
+      ...merged.$metadata,
+      tokenSetOrder: merged.$metadata.tokenSetOrder.concat(bwbAdditions),
+    };
+  }
+
   return [merged, collisions];
 };
 
