@@ -9786,6 +9786,14 @@
           "padding-block-end": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
           }
         },
         "minimized": {
