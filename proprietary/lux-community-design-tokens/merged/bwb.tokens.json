@@ -10579,6 +10579,13 @@
             "$value": "{expert-user.color.content.hover}"
           }
         }
+      },
+      "select": {
+        "image-background-position": {
+          "$type": "other",
+          "$value": "right {utrecht.form-field.margin-block-end} center",
+          "$description": "[code-only]"
+        }
       }
     },
     "rhc": {
