@@ -10628,6 +10628,12 @@
           }
         }
       },
+      "focus": {
+        "outline-offset": {
+          "$type": "other",
+          "$value": "2px"
+        }
+      },
       "size": {
         "pointer-target": {
           "$type": "dimension",
