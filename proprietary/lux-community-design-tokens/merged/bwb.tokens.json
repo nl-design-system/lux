@@ -10553,7 +10553,7 @@
         },
         "margin-block-start": {
           "$type": "dimension",
-          "$value": "-{rhc.space.50}"
+          "$value": "0"
         }
       },
       "form-field": {
