@@ -1304,6 +1304,20 @@
       }
     }
   },
+  "extra-components/suffix": {
+    "rhc": {
+      "suffix": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{rhc.space.50}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.50}"
+        }
+      }
+    }
+  },
   "extra-components/tag": {
     "rhc": {
       "tag": {
@@ -2209,6 +2223,7 @@
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
+        "extra-components/suffix": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
@@ -2327,6 +2342,7 @@
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
+        "extra-components/suffix": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
