@@ -274,6 +274,10 @@
             "$type": "color",
             "$value": "{rhc.color.hemelblauw.50}"
           },
+          "preview": {
+            "$type": "color",
+            "$value": "{rhc.color.lichtblauw.50}"
+          },
           "input": {
             "$type": "color",
             "$value": "{rhc.color.wit}"
@@ -769,6 +773,40 @@
             "$type": "dimension",
             "$value": "{rhc.space.800}"
           }
+        }
+      }
+    }
+  },
+  "extra-components/preview": {
+    "rhc": {
+      "preview": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.surface.preview}"
+        },
+        "min-height": {
+          "$type": "dimension",
+          "$value": "2rem"
+        },
+        "max-height": {
+          "$type": "dimension",
+          "$value": "8rem"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
         }
       }
     }
@@ -1307,13 +1345,23 @@
   "extra-components/suffix": {
     "rhc": {
       "suffix": {
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{rhc.space.50}"
+        "color": {
+          "$type": "color",
+          "$value": "{rhc.color.foreground.subtle}"
         },
         "padding-inline-start": {
           "$type": "dimension",
-          "$value": "{rhc.space.50}"
+          "$value": "{rhc.space.100}"
+        },
+        "required": {
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.foreground.default}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.50}"
+          }
         }
       }
     }
@@ -2218,6 +2266,7 @@
         "extra-components/navigable-collapsible": "enabled",
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
+        "extra-components/preview": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
@@ -2337,6 +2386,7 @@
         "extra-components/navigable-collapsible": "enabled",
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
+        "extra-components/preview": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
