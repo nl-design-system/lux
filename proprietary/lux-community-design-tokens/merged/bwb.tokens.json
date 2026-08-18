@@ -10263,7 +10263,7 @@
         "criteria": {
           "width": {
             "$type": "dimension",
-            "$value": "20 * 1rem"
+            "$value": "21rem"
           }
         }
       }
