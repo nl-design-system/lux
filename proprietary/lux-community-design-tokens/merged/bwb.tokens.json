@@ -9421,10 +9421,6 @@
           "$type": "color",
           "$value": "{expert-user.color.surface.preview}"
         },
-        "min-height": {
-          "$type": "dimension",
-          "$value": "4rem"
-        },
         "max-height": {
           "$type": "dimension",
           "$value": "10rem"
@@ -9444,6 +9440,12 @@
         "padding-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.200}"
+        },
+        "content": {
+          "min-height": {
+            "$type": "dimension",
+            "$value": "2rem"
+          }
         }
       }
     }
