@@ -9444,15 +9444,15 @@
           }
         },
         "neutral": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{expert-user.color.surface.preview}"
-          }
-        },
-        "info": {
           "border-color": {
             "$type": "color",
             "$value": "{expert-user.color.border.medium}"
+          }
+        },
+        "info": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.preview}"
           }
         }
       }
