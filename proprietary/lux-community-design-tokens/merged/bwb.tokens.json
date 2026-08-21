@@ -9423,11 +9423,11 @@
         },
         "min-height": {
           "$type": "dimension",
-          "$value": "2rem"
+          "$value": "4rem"
         },
         "max-height": {
           "$type": "dimension",
-          "$value": "8rem"
+          "$value": "10rem"
         },
         "padding-block-start": {
           "$type": "dimension",
