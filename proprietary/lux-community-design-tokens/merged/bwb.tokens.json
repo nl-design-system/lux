@@ -10534,6 +10534,16 @@
           }
         }
       },
+      "backdrop": {
+        "background-color": {
+          "$type": "color",
+          "$value": "rgba(0,0,0,0.5)"
+        },
+        "opacity": {
+          "$type": "opacity",
+          "$value": "1"
+        }
+      },
       "button": {
         "background-color": {
           "$type": "color",
