@@ -9417,6 +9417,10 @@
   "extra-components/preview": {
     "rhc": {
       "preview": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.surface.preview}"
+        },
         "max-height": {
           "$type": "dimension",
           "$value": "10rem"
@@ -9441,18 +9445,6 @@
           "min-height": {
             "$type": "dimension",
             "$value": "2rem"
-          }
-        },
-        "neutral": {
-          "border-color": {
-            "$type": "color",
-            "$value": "{expert-user.color.border.medium}"
-          }
-        },
-        "info": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{expert-user.color.surface.preview}"
           }
         }
       }
