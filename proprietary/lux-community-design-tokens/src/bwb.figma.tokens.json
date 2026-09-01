@@ -274,6 +274,10 @@
             "$type": "color",
             "$value": "{rhc.color.hemelblauw.50}"
           },
+          "preview": {
+            "$type": "color",
+            "$value": "{rhc.color.lichtblauw.50}"
+          },
           "input": {
             "$type": "color",
             "$value": "{rhc.color.wit}"
@@ -768,6 +772,42 @@
           "padding-inline-start": {
             "$type": "dimension",
             "$value": "{rhc.space.800}"
+          }
+        }
+      }
+    }
+  },
+  "extra-components/preview": {
+    "rhc": {
+      "preview": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.surface.preview}"
+        },
+        "max-height": {
+          "$type": "dimension",
+          "$value": "10rem"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "content": {
+          "min-height": {
+            "$type": "dimension",
+            "$value": "2rem"
           }
         }
       }
@@ -1304,6 +1344,30 @@
       }
     }
   },
+  "extra-components/suffix": {
+    "rhc": {
+      "suffix": {
+        "color": {
+          "$type": "color",
+          "$value": "{rhc.color.foreground.subtle}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{rhc.space.100}"
+        },
+        "required": {
+          "color": {
+            "$type": "color",
+            "$value": "{rhc.color.foreground.default}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.50}"
+          }
+        }
+      }
+    }
+  },
   "extra-components/tag": {
     "rhc": {
       "tag": {
@@ -1564,7 +1628,7 @@
         "criteria": {
           "width": {
             "$type": "dimension",
-            "$value": "20 * 1rem"
+            "$value": "21rem"
           }
         }
       }
@@ -1825,6 +1889,16 @@
           }
         }
       },
+      "backdrop": {
+        "background-color": {
+          "$type": "color",
+          "$value": "rgba(0,0,0,0.5)"
+        },
+        "opacity": {
+          "$type": "opacity",
+          "$value": "1"
+        }
+      },
       "button": {
         "background-color": {
           "$type": "color",
@@ -1922,7 +1996,7 @@
         },
         "margin-block-start": {
           "$type": "dimension",
-          "$value": "-{rhc.space.50}"
+          "$value": "0"
         }
       },
       "form-field": {
@@ -2204,11 +2278,13 @@
         "extra-components/navigable-collapsible": "enabled",
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
+        "extra-components/preview": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
+        "extra-components/suffix": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
@@ -2322,11 +2398,13 @@
         "extra-components/navigable-collapsible": "enabled",
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
+        "extra-components/preview": "enabled",
         "extra-components/progress": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
+        "extra-components/suffix": "enabled",
         "extra-components/table-grid": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
