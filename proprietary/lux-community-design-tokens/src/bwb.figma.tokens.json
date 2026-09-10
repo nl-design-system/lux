@@ -603,6 +603,26 @@
       }
     }
   },
+  "extra-components/input-date": {
+    "rhc": {
+      "input-date": {
+        "width": {
+          "$type": "dimension",
+          "$value": "6rem"
+        }
+      }
+    }
+  },
+  "extra-components/input-year": {
+    "rhc": {
+      "input-year": {
+        "width": {
+          "$type": "dimension",
+          "$value": "3rem"
+        }
+      }
+    }
+  },
   "extra-components/key-value": {
     "rhc": {
       "key-value": {
@@ -2326,6 +2346,8 @@
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
+        "extra-components/input-date": "enabled",
+        "extra-components/input-year": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
@@ -2446,6 +2468,8 @@
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
+        "extra-components/input-date": "enabled",
+        "extra-components/input-year": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
