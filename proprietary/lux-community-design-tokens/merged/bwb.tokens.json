@@ -8352,6 +8352,8 @@
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
+        "extra-components/input-date": "enabled",
+        "extra-components/input-year": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
@@ -8472,6 +8474,8 @@
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
+        "extra-components/input-date": "enabled",
+        "extra-components/input-year": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
@@ -8609,6 +8613,8 @@
       "extra-components/floating-button-bar",
       "extra-components/header",
       "extra-components/highlight",
+      "extra-components/input-date",
+      "extra-components/input-year",
       "extra-components/key-value",
       "extra-components/link",
       "extra-components/menu",
@@ -9236,6 +9242,26 @@
         "color": {
           "$type": "color",
           "$value": "{rhc.color.foreground.on-dark-color}"
+        }
+      }
+    }
+  },
+  "extra-components/input-date": {
+    "rhc": {
+      "input-date": {
+        "width": {
+          "$type": "dimension",
+          "$value": "6rem"
+        }
+      }
+    }
+  },
+  "extra-components/input-year": {
+    "rhc": {
+      "input-year": {
+        "width": {
+          "$type": "dimension",
+          "$value": "3rem"
         }
       }
     }
