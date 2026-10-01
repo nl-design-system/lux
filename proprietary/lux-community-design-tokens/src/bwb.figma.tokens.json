@@ -1619,11 +1619,19 @@
           "$type": "color",
           "$value": "{rhc.color.bg-document}"
         },
-        "border-bottom-width": {
+        "border-radius": {
           "$type": "dimension",
           "$value": "{rhc.border-width.sm}"
         },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": "{basis.box-shadow.md}"
+        },
         "header": {
+          "border-bottom-width": {
+            "$type": "dimension",
+            "$value": "{rhc.border-width.sm}"
+          },
           "border-color": {
             "$type": "color",
             "$value": "{rhc.color.border.subtle}"
@@ -1751,7 +1759,7 @@
           "content": {
             "border-radius": {
               "$type": "dimension",
-              "$value": "{rhc.space.200}"
+              "$value": "{rhc.space.400}"
             },
             "padding-block-start": {
               "$type": "dimension",
@@ -2193,7 +2201,7 @@
         "icon": {
           "size": {
             "$type": "dimension",
-            "$value": "max(4px, calc({utrecht.radio-button.size} - 4px))"
+            "$value": "{utrecht.radio-button.size} * 0.8"
           }
         }
       },
