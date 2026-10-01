@@ -2201,7 +2201,7 @@
         "icon": {
           "size": {
             "$type": "dimension",
-            "$value": "{utrecht.radio-button.size} * 0.67"
+            "$value": "{utrecht.radio-button.size} * 0.5"
           }
         }
       },
