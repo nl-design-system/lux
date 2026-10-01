@@ -603,6 +603,26 @@
       }
     }
   },
+  "extra-components/input-date": {
+    "rhc": {
+      "input-date": {
+        "width": {
+          "$type": "dimension",
+          "$value": "6rem"
+        }
+      }
+    }
+  },
+  "extra-components/input-year": {
+    "rhc": {
+      "input-year": {
+        "width": {
+          "$type": "dimension",
+          "$value": "3rem"
+        }
+      }
+    }
+  },
   "extra-components/key-value": {
     "rhc": {
       "key-value": {
@@ -2075,6 +2095,12 @@
             "$type": "color",
             "$value": "{expert-user.color.content.hover}"
           }
+        },
+        "icon": {
+          "size": {
+            "$type": "dimension",
+            "$value": "max, (4px, calc({utrecht.radio-button.size} - 4px))"
+          }
         }
       },
       "select": {
@@ -2082,6 +2108,34 @@
           "$type": "other",
           "$value": "right {utrecht.form-field.margin-block-end} center",
           "$description": "[code-only]"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.content.hover}"
+          }
+        },
+        "focus": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{rhc.border-width.md}"
+          }
+        }
+      },
+      "textbox": {
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.content.hover}"
+          }
+        }
+      },
+      "textarea": {
+        "focus": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{rhc.border-width.md}"
+          }
         }
       }
     },
@@ -2326,6 +2380,8 @@
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
+        "extra-components/input-date": "enabled",
+        "extra-components/input-year": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
@@ -2446,6 +2502,8 @@
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
+        "extra-components/input-date": "enabled",
+        "extra-components/input-year": "enabled",
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
