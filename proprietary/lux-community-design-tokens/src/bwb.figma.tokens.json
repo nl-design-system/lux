@@ -1612,6 +1612,100 @@
       }
     }
   },
+  "templates/dialog": {
+    "rhc": {
+      "dialog": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{rhc.color.bg-document}"
+        },
+        "border-bottom-width": {
+          "$type": "dimension",
+          "$value": "{rhc.border-width.sm}"
+        },
+        "header": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{rhc.color.border.subtle}"
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.default}"
+            },
+            "font-family": {
+              "$type": "fontFamilies",
+              "$value": "{nl.heading.level-4.font-family}"
+            },
+            "font-size": {
+              "$type": "fontSizes",
+              "$value": "{nl.heading.level-4.font-size}"
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": "{nl.heading.level-4.font-weight}"
+            },
+            "line-height": {
+              "$type": "lineHeights",
+              "$value": "{nl.heading.level-4.line-height}"
+            }
+          }
+        },
+        "footer": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{rhc.color.border.subtle}"
+          },
+          "border-top-width": {
+            "$type": "dimension",
+            "$value": "{rhc.border-width.sm}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "button-group": {
+            "column-gap": {
+              "$type": "dimension",
+              "$value": "{rhc.space.200}"
+            }
+          }
+        }
+      }
+    }
+  },
   "templates/dialog-wizard": {
     "rhc": {
       "dialog-wizard": {
@@ -2099,7 +2193,7 @@
         "icon": {
           "size": {
             "$type": "dimension",
-            "$value": "max, (4px, calc({utrecht.radio-button.size} - 4px))"
+            "$value": "max(4px, calc({utrecht.radio-button.size} - 4px))"
           }
         }
       },
@@ -2399,6 +2493,7 @@
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
+        "templates/dialog": "enabled",
         "templates/dialog-wizard": "enabled",
         "templates/layout-app": "enabled",
         "templates/layout-detail": "enabled",
@@ -2521,6 +2616,7 @@
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
+        "templates/dialog": "enabled",
         "templates/dialog-wizard": "enabled",
         "templates/layout-app": "enabled",
         "templates/layout-detail": "enabled",
