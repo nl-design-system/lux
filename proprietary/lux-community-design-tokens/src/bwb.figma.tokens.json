@@ -1634,7 +1634,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "{rhc.color.border.subtle}"
+            "$value": "{rhc.color.cool-grey.300}"
           },
           "column-gap": {
             "$type": "dimension",
@@ -1682,7 +1682,7 @@
         "footer": {
           "border-color": {
             "$type": "color",
-            "$value": "{rhc.color.border.subtle}"
+            "$value": "{rhc.color.cool-grey.200}"
           },
           "border-top-width": {
             "$type": "dimension",
