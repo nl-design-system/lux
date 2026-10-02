@@ -1682,7 +1682,7 @@
         "footer": {
           "border-color": {
             "$type": "color",
-            "$value": "{rhc.color.cool-grey.200}"
+            "$value": "{rhc.color.cool-grey.300}"
           },
           "border-top-width": {
             "$type": "dimension",
@@ -2201,7 +2201,7 @@
         "icon": {
           "size": {
             "$type": "dimension",
-            "$value": "{utrecht.radio-button.size} * 0.5"
+            "$value": "{utrecht.radio-button.size} * 0.58"
           }
         }
       },
