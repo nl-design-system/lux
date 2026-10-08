@@ -305,6 +305,7 @@ jobs:
         if: steps.changeset.outputs.published != 'true'
         run: |
           git checkout main
+          git reset --hard HEAD
           pnpm run version:canary
           pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
           pnpm run publish:canary
