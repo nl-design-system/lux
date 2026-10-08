@@ -302,7 +302,7 @@ jobs:
 
       # Publish canary releases only if the packages weren't published already
       - name: Publishing canary releases to npm
-        if: steps.changeset.outputs.published != 'true'
+        if: steps.changeset.outputs.published != 'true' && steps.changeset.outputs.hasChangesets == 'true'
         run: |
           git checkout main
           git reset --hard HEAD
