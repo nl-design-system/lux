@@ -833,9 +833,9 @@
       }
     }
   },
-  "extra-components/progress": {
+  "extra-components/progress-steps": {
     "rhc": {
-      "progress": {
+      "progress-steps": {
         "padding-block-start": {
           "$type": "dimension",
           "$value": "{rhc.space.200}"
@@ -2491,7 +2491,7 @@
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/preview": "enabled",
-        "extra-components/progress": "enabled",
+        "extra-components/progress-steps": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
@@ -2614,7 +2614,7 @@
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/preview": "enabled",
-        "extra-components/progress": "enabled",
+        "extra-components/progress-steps": "enabled",
         "extra-components/segmented-control": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
