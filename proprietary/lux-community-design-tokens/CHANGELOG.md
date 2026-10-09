@@ -1,5 +1,22 @@
 # @lux-design-system/lux-community-design-tokens
 
+## 2.0.0
+
+### Major Changes
+
+- b2588f8: Now exports themes in css and scss formats
+- f40931a: enable per-team token sets and themes to merge with upstream RHC tokens and build generated files
+
+### Minor Changes
+
+- 39b5c62: Add tokens for input and dialog elements with overrides
+
+### Patch Changes
+
+- 83630df: Refactoring
+- 83630df: Update RHC and BWB tokens for Tab component
+- 0b8ea85: This is not strictly necessary, because there are other ways to configure provenance (notably .npmrc), but it helps with automated scripts and gives extra peace of mind.
+
 ## 1.0.0
 
 ### Major Changes
