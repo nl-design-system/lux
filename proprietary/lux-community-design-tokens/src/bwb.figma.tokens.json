@@ -2168,7 +2168,7 @@
       "form-field-description": {
         "margin-block-end": {
           "$type": "dimension",
-          "$value": "{rhc.space.50}"
+          "$value": "0"
         },
         "margin-block-start": {
           "$type": "dimension",
