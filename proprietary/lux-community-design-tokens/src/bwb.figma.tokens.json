@@ -2096,6 +2096,10 @@
           "background-color": {
             "$type": "color",
             "$value": "{expert-user.color.cta.hover}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{rhc.color.primary.500}"
           }
         },
         "disabled": {
