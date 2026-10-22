@@ -2096,10 +2096,6 @@
           "background-color": {
             "$type": "color",
             "$value": "{expert-user.color.cta.hover}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{rhc.color.primary.500}"
           }
         },
         "disabled": {
@@ -2141,6 +2137,12 @@
             "color": {
               "$type": "color",
               "$value": "{rhc.color.primary.300}"
+            }
+          },
+          "focus": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{rhc.color.primary.500}"
             }
           }
         },
