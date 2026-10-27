@@ -488,6 +488,10 @@
         "padding-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.200}"
+        },
+        "bottom-offset": {
+          "$type": "dimension",
+          "$value": "{rhc.space.800}"
         }
       }
     }
