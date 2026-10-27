@@ -9103,6 +9103,10 @@
   "extra-components/floating-button-bar": {
     "rhc": {
       "floating-button-bar": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{expert-user.color.surface.primary}"
+        },
         "border-radius": {
           "$type": "dimension",
           "$value": "0.75rem"
