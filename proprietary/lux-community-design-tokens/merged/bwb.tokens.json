@@ -9995,9 +9995,9 @@
   "extra-components/status-tag": {
     "rhc": {
       "status-tag": {
-        "column-gap": {
+        "margin-inline-start": {
           "$type": "dimension",
-          "$value": "{expert-user.spacing.column-gap-xs}"
+          "$value": "{rhc.space.100}"
         },
         "padding-block-start": {
           "$type": "dimension",
