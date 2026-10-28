@@ -273,7 +273,7 @@
           },
           "info": {
             "$type": "color",
-            "$value": "{rhc.color.rood.800}"
+            "$value": "{rhc.color.hemelblauw.800}"
           },
           "negative": {
             "$type": "color",
