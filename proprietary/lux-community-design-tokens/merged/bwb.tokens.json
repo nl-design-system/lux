@@ -8655,21 +8655,135 @@
       },
       "color": {
         "groen": {
-          "550": {
+          "600": {
             "$type": "color",
-            "$value": "#39880C"
+            "$value": "#32750a"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#2a6208"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#224f06"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#1a3c05"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#122903"
           }
         },
         "hemelblauw": {
-          "550": {
+          "600": {
             "$type": "color",
-            "$value": "#0078C2"
+            "$value": "#006db2"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#005f9a"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#004f80"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#003f66"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#002f4d"
+          }
+        },
+        "lintblauw": {
+          "600": {
+            "$type": "color",
+            "$value": "#123862"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#0F2E51"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#0C2440"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#091A2F"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#06101E"
+          }
+        },
+        "mintgroen": {
+          "600": {
+            "$type": "color",
+            "$value": "#5AB89D"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#429780"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#307663"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#205546"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#123429"
           }
         },
         "rood": {
-          "550": {
+          "600": {
             "$type": "color",
-            "$value": "#CE2A1D"
+            "$value": "#B92319"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#9B1D15"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#7D1711"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#5F110D"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#410B09"
+          }
+        },
+        "violet": {
+          "600": {
+            "$type": "color",
+            "$value": "#900053"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#770045"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#5E0037"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#450029"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#2C001B"
           }
         },
         "semi-transparent": {
@@ -8783,11 +8897,11 @@
           },
           "negative": {
             "$type": "color",
-            "$value": "{rhc.color.rood.550}"
+            "$value": "{rhc.color.rood.600}"
           },
           "positive": {
             "$type": "color",
-            "$value": "{rhc.color.groen.550}"
+            "$value": "{rhc.color.groen.600}"
           },
           "subtle-on-dark": {
             "$extensions": {
@@ -8857,7 +8971,7 @@
           "informative": {
             "icon": {
               "$type": "color",
-              "$value": "{rhc.color.hemelblauw.550}"
+              "$value": "{rhc.color.hemelblauw.600}"
             },
             "default": {
               "$type": "color",
@@ -8871,7 +8985,7 @@
           "positive": {
             "icon": {
               "$type": "color",
-              "$value": "{rhc.color.groen.550}"
+              "$value": "{rhc.color.groen.600}"
             },
             "default": {
               "$type": "color",
@@ -8899,7 +9013,7 @@
           "negative": {
             "icon": {
               "$type": "color",
-              "$value": "{rhc.color.rood.550}"
+              "$value": "{rhc.color.rood.600}"
             },
             "default": {
               "$type": "color",
@@ -10931,13 +11045,13 @@
         "negative": {
           "default": {
             "$type": "color",
-            "$value": "{rhc.color.rood.550}"
+            "$value": "{rhc.color.rood.600}"
           }
         },
         "positive": {
           "default": {
             "$type": "color",
-            "$value": "{rhc.color.groen.550}"
+            "$value": "{rhc.color.groen.600}"
           }
         }
       },
