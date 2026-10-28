@@ -8,6 +8,28 @@
         }
       },
       "color": {
+        "bruin": {
+          "600": {
+            "$type": "color",
+            "$value": "#805F08"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#6A4E06"
+          },
+          "800": {
+            "$type": "color",
+            "$value": "#574006"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#423004"
+          },
+          "1000": {
+            "$type": "color",
+            "$value": "#2E2103"
+          }
+        },
         "groen": {
           "600": {
             "$type": "color",
@@ -249,13 +271,21 @@
             "$type": "color",
             "$value": "{rhc.color.foreground.on-dark-color}"
           },
+          "info": {
+            "$type": "color",
+            "$value": "{rhc.color.rood.800}"
+          },
           "negative": {
             "$type": "color",
-            "$value": "{rhc.color.rood.600}"
+            "$value": "{rhc.color.rood.800}"
           },
           "positive": {
             "$type": "color",
-            "$value": "{rhc.color.groen.600}"
+            "$value": "{rhc.color.groen.800}"
+          },
+          "warning": {
+            "$type": "color",
+            "$value": "{rhc.color.bruin.800}"
           },
           "subtle-on-dark": {
             "$extensions": {
