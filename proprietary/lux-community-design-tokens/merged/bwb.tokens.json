@@ -10142,6 +10142,10 @@
             "$type": "dimension",
             "$value": "35px"
           }
+        },
+        "spacing": {
+          "$type": "dimension",
+          "$value": "{rhc.space.150}"
         }
       }
     }
