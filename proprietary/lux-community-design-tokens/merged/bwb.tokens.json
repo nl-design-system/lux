@@ -8713,8 +8713,70 @@
         "icon": {
           "xl": {
             "$type": "dimension",
-            "$value": "2.5 x 1rem"
+            "$value": "{rhc.space.1000}"
           }
+        }
+      },
+      "space": {
+        "900": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "9 * 0.25rem"
+        },
+        "1000": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "10 * 0.25rem"
+        },
+        "1100": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "11 * 0.25rem"
+        },
+        "1200": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "12 * 0.25rem"
+        },
+        "1600": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "16 * 0.25rem"
+        },
+        "2000": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "20 * 0.25rem"
+        },
+        "2400": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "24 * 0.25rem"
+        },
+        "3200": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "32 * 0.25rem"
+        },
+        "4000": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "40 * 0.25rem"
+        },
+        "5000": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "50 * 0.25rem"
+        },
+        "6400": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "64 * 0.25rem"
+        },
+        "8000": {
+          "parent": "core/default",
+          "$type": "dimension",
+          "$value": "80 * 0.25rem"
         }
       },
       "text": {
@@ -9105,7 +9167,7 @@
       "floating-button-bar": {
         "border-radius": {
           "$type": "dimension",
-          "$value": "0.75rem"
+          "$value": "{rhc.space.300}"
         },
         "border-color": {
           "$type": "color",
@@ -9254,7 +9316,7 @@
       "input-date": {
         "width": {
           "$type": "dimension",
-          "$value": "6rem"
+          "$value": "{rhc.space.2400}"
         }
       }
     }
@@ -9264,7 +9326,7 @@
       "input-year": {
         "width": {
           "$type": "dimension",
-          "$value": "3rem"
+          "$value": "{rhc.space.1200}"
         }
       }
     }
@@ -9287,21 +9349,21 @@
         "horizontal": {
           "column-gap": {
             "$type": "dimension",
-            "$value": "1rem"
+            "$value": "{rhc.space.400}"
           },
           "key": {
             "width": {
               "sm": {
                 "$type": "dimension",
-                "$value": "4 * 1rem"
+                "$value": "{rhc.space.1600}"
               },
               "md": {
                 "$type": "dimension",
-                "$value": "6 * 1rem"
+                "$value": "{rhc.space.2400}"
               },
               "lg": {
                 "$type": "dimension",
-                "$value": "10 * 1rem"
+                "$value": "{rhc.space.2000}"
               }
             }
           }
@@ -9338,7 +9400,7 @@
         },
         "min-inline-size": {
           "$type": "dimension",
-          "$value": "6rem"
+          "$value": "{rhc.space.2400}"
         },
         "padding-block-start": {
           "$type": "dimension",
@@ -9378,7 +9440,7 @@
       "navigable-collapsible": {
         "border-radius": {
           "$type": "dimension",
-          "$value": "0.5rem"
+          "$value": "{rhc.space.200}"
         },
         "row-gap": {
           "$type": "dimension",
@@ -9452,7 +9514,7 @@
         },
         "max-height": {
           "$type": "dimension",
-          "$value": "10rem"
+          "$value": "{rhc.space.4000}"
         },
         "padding-block-start": {
           "$type": "dimension",
@@ -9473,7 +9535,7 @@
         "content": {
           "min-height": {
             "$type": "dimension",
-            "$value": "2rem"
+            "$value": "{rhc.space.800}"
           }
         }
       }
@@ -9506,11 +9568,11 @@
           "marker": {
             "height": {
               "$type": "dimension",
-              "$value": "1.5 * 1rem"
+              "$value": "{rhc.space.600}"
             },
             "width": {
               "$type": "dimension",
-              "$value": "1.5 * 1rem"
+              "$value": "{rhc.space.600}"
             },
             "todo": {
               "background-color": {
@@ -9847,12 +9909,12 @@
         },
         "width": {
           "$type": "dimension",
-          "$value": "12.5 * 1rem"
+          "$value": "{rhc.space.5000}"
         },
         "header": {
           "height": {
             "$type": "dimension",
-            "$value": "3rem"
+            "$value": "{rhc.space.1200}"
           },
           "padding-block-start": {
             "$type": "dimension",
@@ -9874,7 +9936,7 @@
         "minimized": {
           "width": {
             "$type": "dimension",
-            "$value": "4 * 1rem"
+            "$value": "{rhc.space.1600}"
           }
         },
         "side-bar-item": {
@@ -9888,7 +9950,7 @@
           },
           "height": {
             "$type": "dimension",
-            "$value": "3 * 1rem"
+            "$value": "{rhc.space.1200}"
           },
           "padding-block-start": {
             "$type": "dimension",
@@ -9917,7 +9979,7 @@
             },
             "border-inline-start-width": {
               "$type": "dimension",
-              "$value": "0.25rem"
+              "$value": "{rhc.space.100}"
             }
           },
           "minimized": {
@@ -9978,7 +10040,7 @@
         "lg": {
           "border-width": {
             "$type": "dimension",
-            "$value": "0.25 * 1rem"
+            "$value": "{rhc.space.100}"
           }
         }
       }
@@ -10066,19 +10128,25 @@
         "header": {
           "height": {
             "$type": "dimension",
-            "$value": "3 rem"
+            "$value": "{rhc.space.1200}"
           }
         },
         "radio-button": {
           "size": {
             "$type": "dimension",
-            "$value": "1.25 x 1rem"
+            "$value": "{rhc.space.500}"
+          }
+        },
+        "cell": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
           }
         },
         "row": {
           "height": {
             "$type": "dimension",
-            "$value": "2.5 rem"
+            "$value": "{rhc.space.900}"
           }
         }
       }
@@ -10237,7 +10305,7 @@
         },
         "max-width": {
           "$type": "dimension",
-          "$value": "20 * 1rem"
+          "$value": "{rhc.space.8000}"
         },
         "padding-block-start": {
           "$type": "dimension",
@@ -10267,7 +10335,7 @@
         },
         "border-radius": {
           "$type": "dimension",
-          "$value": "1rem"
+          "$value": "{rhc.space.400}"
         },
         "box-shadow": {
           "$type": "boxShadow",
@@ -10399,7 +10467,7 @@
           "breadcrumb": {
             "height": {
               "$type": "dimension",
-              "$value": "3rem"
+              "$value": "{rhc.space.1200}"
             }
           },
           "content": {
@@ -10491,7 +10559,7 @@
       "bwb-regelinggegevens": {
         "max-height": {
           "$type": "dimension",
-          "$value": "10rem"
+          "$value": "{rhc.space.4000}"
         },
         "remarks": {
           "max-height": {
@@ -10578,7 +10646,7 @@
         "revision": {
           "width": {
             "$type": "dimension",
-            "$value": "8rem"
+            "$value": "{rhc.space.3200}"
           },
           "positive": {
             "background-color": {
@@ -10606,7 +10674,7 @@
           },
           "width": {
             "$type": "dimension",
-            "$value": "16rem"
+            "$value": "{rhc.space.6400}"
           },
           "positive": {
             "background-color": {
@@ -10942,12 +11010,12 @@
       "size": {
         "pointer-target": {
           "$type": "dimension",
-          "$value": "2 * 1rem"
+          "$value": "{rhc.space.800}"
         },
         "icon": {
           "md": {
             "$type": "dimension",
-            "$value": "1.25 * 1rem"
+            "$value": "{rhc.space.500}"
           }
         }
       },
@@ -11013,7 +11081,7 @@
           "margin": {
             "block-start": {
               "$type": "dimension",
-              "$value": "0rem"
+              "$value": "0"
             }
           }
         },
