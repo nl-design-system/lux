@@ -10128,7 +10128,7 @@
         "header": {
           "height": {
             "$type": "dimension",
-            "$value": "{rhc.space.1200}"
+            "$value": "{rhc.space.1000}"
           }
         },
         "radio-button": {
