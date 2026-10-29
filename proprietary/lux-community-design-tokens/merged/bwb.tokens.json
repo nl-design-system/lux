@@ -10128,25 +10128,19 @@
         "header": {
           "height": {
             "$type": "dimension",
-            "$value": "{rhc.space.1000}"
-          }
-        },
-        "radio-button": {
-          "size": {
-            "$type": "dimension",
-            "$value": "{rhc.space.500}"
+            "$value": "40px"
           }
         },
         "cell": {
           "padding-inline": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}"
+            "$value": "11px"
           }
         },
         "row": {
           "height": {
             "$type": "dimension",
-            "$value": "{rhc.space.900}"
+            "$value": "35px"
           }
         }
       }
