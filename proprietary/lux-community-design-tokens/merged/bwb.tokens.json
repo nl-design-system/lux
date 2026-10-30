@@ -10219,6 +10219,18 @@
           "background-color": {
             "$type": "color",
             "$value": "{rhc.color.cool-grey.50}"
+          },
+          "height": {
+            "$description": "For figma only",
+            "$type": "dimension",
+            "$value": "40px"
+          }
+        },
+        "row": {
+          "height": {
+            "$description": "For figma only",
+            "$type": "dimension",
+            "$value": "35px"
           }
         },
         "spacing": {
