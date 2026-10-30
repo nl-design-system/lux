@@ -10277,6 +10277,23 @@
           "$type": "color",
           "$value": "{rhc.color.lintblauw.50}"
         },
+        "cell": {
+          "height": {
+            "$description": "For figma only",
+            "$type": "dimension",
+            "$value": "35px"
+          },
+          "padding-inline-start": {
+            "$description": "For figma only",
+            "$type": "dimension",
+            "$value": "11px"
+          },
+          "padding-inline-end": {
+            "$description": "For figma only",
+            "$type": "dimension",
+            "$value": "11px"
+          }
+        },
         "header": {
           "background-color": {
             "$type": "color",
@@ -10286,13 +10303,6 @@
             "$description": "For figma only",
             "$type": "dimension",
             "$value": "40px"
-          }
-        },
-        "row": {
-          "height": {
-            "$description": "For figma only",
-            "$type": "dimension",
-            "$value": "35px"
           }
         },
         "spacing": {
