@@ -1570,22 +1570,14 @@
           "$value": "{rhc.color.lintblauw.50}"
         },
         "header": {
-          "height": {
-            "$type": "dimension",
-            "$value": "3 rem"
+          "background-color": {
+            "$type": "color",
+            "$value": "{rhc.color.cool-grey.50}"
           }
         },
-        "radio-button": {
-          "size": {
-            "$type": "dimension",
-            "$value": "1.25 x 1rem"
-          }
-        },
-        "row": {
-          "height": {
-            "$type": "dimension",
-            "$value": "2.5 rem"
-          }
+        "spacing": {
+          "$type": "dimension",
+          "$value": "{rhc.space.150}"
         }
       }
     }
@@ -2326,7 +2318,7 @@
       "form-field-description": {
         "margin-block-end": {
           "$type": "dimension",
-          "$value": "0"
+          "$value": "{rhc.space.50}"
         },
         "margin-block-start": {
           "$type": "dimension",
@@ -2337,7 +2329,7 @@
         "label": {
           "margin-block-end": {
             "$type": "dimension",
-            "$value": "{rhc.space.50}"
+            "$value": "0"
           }
         },
         "margin-block-end": {
@@ -2376,9 +2368,9 @@
           }
         },
         "focus": {
-          "border-color": {
+          "border-width": {
             "$type": "color",
-            "$value": "{rhc.border-width.md}"
+            "$value": "{rhc.border-width.sm}"
           }
         }
       },
@@ -2392,9 +2384,9 @@
       },
       "textarea": {
         "focus": {
-          "border-color": {
+          "border-width": {
             "$type": "color",
-            "$value": "{rhc.border-width.md}"
+            "$value": "{rhc.border-width.sm}"
           }
         }
       }
