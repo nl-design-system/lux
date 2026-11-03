@@ -2256,15 +2256,31 @@
         "shadow-cell": {
           "background-color": {
             "$type": "color",
-            "$value": "{expert-user.color.border.light}"
+            "$value": "{expert-user.color.surface.secondary}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{expert-user.color.surface.secondary}"
+            "$value": "{expert-user.color.border.light}"
           },
           "border-radius": {
             "$type": "dimension",
-            "$value": "{rhc.border-radius.sm}"
+            "$value": "{rhc.border-radius.md}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150} * 0.5"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150} * 0.5"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
           }
         }
       }
@@ -2895,7 +2911,8 @@
         "templates/layout-search": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
-        "local-components-bwb/bwb-status-tag": "enabled"
+        "local-components-bwb/bwb-status-tag": "enabled",
+        "local-components-bwb/bwb-task-overview": "enabled"
       },
       "$figmaVariableReferences": {},
       "group": "Rijkshuisstijl"
