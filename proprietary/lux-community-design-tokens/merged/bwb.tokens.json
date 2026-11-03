@@ -9970,6 +9970,16 @@
               }
             }
           },
+          "disabled": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{rhc.color.cool-grey.200}"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.subtle}"
+            }
+          },
           "border-left": {
             "border-top-left-radius": {
               "$type": "dimension",
