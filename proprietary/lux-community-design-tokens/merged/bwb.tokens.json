@@ -8642,6 +8642,7 @@
       "local-components-bwb/bwb-object-path",
       "local-components-bwb/bwb-regelinggegevens",
       "local-components-bwb/bwb-status-tag",
+      "local-components-bwb/bwb-task-overview",
       "overrides/expert-user"
     ]
   },
@@ -10891,6 +10892,26 @@
               "$type": "color",
               "$value": "{rhc.color.foreground.subtle}"
             }
+          }
+        }
+      }
+    }
+  },
+  "local-components-bwb/bwb-task-overview": {
+    "bwb": {
+      "bwb-task-overview": {
+        "shadow-cell": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.border.light}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.secondary}"
+          },
+          "border-radius": {
+            "$type": "dimension",
+            "$value": "{rhc.border-radius.sm}"
           }
         }
       }

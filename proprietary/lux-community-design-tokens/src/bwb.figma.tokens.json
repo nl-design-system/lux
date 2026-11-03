@@ -2250,6 +2250,26 @@
       }
     }
   },
+  "local-components-bwb/bwb-task-overview": {
+    "bwb": {
+      "bwb-task-overview": {
+        "shadow-cell": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.border.light}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.secondary}"
+          },
+          "border-radius": {
+            "$type": "dimension",
+            "$value": "{rhc.border-radius.sm}"
+          }
+        }
+      }
+    }
+  },
   "overrides/expert-user": {
     "basis": {
       "box-shadow": {
