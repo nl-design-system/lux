@@ -9016,6 +9016,19 @@
           }
         },
         "content": {
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "space": "lch",
+                  "type": "lighten",
+                  "value": "0.65"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{rhc.color.hemelblauw.100}"
+          },
           "active": {
             "$extensions": {
               "studio.tokens": {
@@ -9027,20 +9040,20 @@
               }
             },
             "$type": "color",
-            "$value": "{rhc.color.lintblauw.500}"
+            "$value": "{rhc.color.lintblauw.100}"
           },
-          "hover": {
+          "pressed": {
             "$extensions": {
               "studio.tokens": {
                 "modify": {
                   "space": "lch",
                   "type": "lighten",
-                  "value": "0.7"
+                  "value": "0.35"
                 }
               }
             },
             "$type": "color",
-            "$value": "{rhc.color.hemelblauw.100}"
+            "$value": "{rhc.color.lintblauw.200}"
           },
           "selected": {
             "$extensions": {
@@ -10950,7 +10963,7 @@
           "active": {
             "background-color": {
               "$type": "color",
-              "$value": "{rhc.color.cool-grey.100}"
+              "$value": "{expert-user.color.content.active}"
             }
           },
           "hover": {
@@ -11090,7 +11103,7 @@
           "pressed": {
             "background-color": {
               "$type": "color",
-              "$value": "{expert-user.color.content.active}"
+              "$value": "{expert-user.color.content.pressed}"
             }
           },
           "active": {
@@ -11130,7 +11143,7 @@
           "pressed": {
             "background-color": {
               "$type": "color",
-              "$value": "{expert-user.color.content.active}"
+              "$value": "{expert-user.color.content.pressed}"
             }
           },
           "active": {
