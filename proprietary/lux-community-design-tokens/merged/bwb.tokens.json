@@ -11092,6 +11092,12 @@
               "$type": "color",
               "$value": "{expert-user.color.content.active}"
             }
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
+            }
           }
         },
         "subtle": {
@@ -11122,6 +11128,12 @@
             }
           },
           "pressed": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
+            }
+          },
+          "active": {
             "background-color": {
               "$type": "color",
               "$value": "{expert-user.color.content.active}"
