@@ -9016,22 +9016,18 @@
           }
         },
         "content": {
-          "alternative": {
-            "$type": "color",
-            "$value": "{rhc.color.lichtblauw.100}"
-          },
           "hover": {
             "$extensions": {
               "studio.tokens": {
                 "modify": {
                   "space": "lch",
                   "type": "lighten",
-                  "value": "0.15"
+                  "value": "0.25"
                 }
               }
             },
             "$type": "color",
-            "$value": "{rhc.color.lintblauw.50}"
+            "$value": "{rhc.color.hemelblauw.50}"
           },
           "selected": {
             "$extensions": {
@@ -9120,6 +9116,10 @@
           }
         },
         "surface": {
+          "alternative": {
+            "$type": "color",
+            "$value": "{rhc.color.lichtblauw.100}"
+          },
           "canvas": {
             "$type": "color",
             "$value": "{rhc.color.lintblauw.50}"
