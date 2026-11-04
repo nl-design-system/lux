@@ -386,8 +386,8 @@
               "studio.tokens": {
                 "modify": {
                   "space": "lch",
-                  "type": "lighten",
-                  "value": "0.85"
+                  "type": "darken",
+                  "value": "0.05"
                 }
               }
             },
