@@ -9016,18 +9016,31 @@
           }
         },
         "content": {
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "space": "lch",
+                  "type": "lighten",
+                  "value": "0.85"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{rhc.color.lintblauw.500}"
+          },
           "hover": {
             "$extensions": {
               "studio.tokens": {
                 "modify": {
                   "space": "lch",
                   "type": "lighten",
-                  "value": "0.25"
+                  "value": "0.7"
                 }
               }
             },
             "$type": "color",
-            "$value": "{rhc.color.hemelblauw.50}"
+            "$value": "{rhc.color.hemelblauw.100}"
           },
           "selected": {
             "$extensions": {
@@ -9116,10 +9129,6 @@
           }
         },
         "surface": {
-          "alternative": {
-            "$type": "color",
-            "$value": "{rhc.color.lichtblauw.100}"
-          },
           "canvas": {
             "$type": "color",
             "$value": "{rhc.color.lintblauw.50}"
@@ -10935,30 +10944,23 @@
     }
   },
   "overrides/expert-user": {
-    "basis": {
-      "box-shadow": {
-        "md": {
-          "$type": "boxShadow",
-          "$value": {
-            "x": "0",
-            "y": "8",
-            "blur": "16",
-            "spread": "0",
-            "color": "rgba(0,0,0,0.5)",
-            "type": "dropShadow"
+    "utrecht": {
+      "accordion": {
+        "button": {
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{rhc.color.cool-grey.100}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            }
           }
         }
       },
-      "color": {
-        "highlight": {
-          "bg-default": {
-            "$type": "color",
-            "$value": "{rhc.color.violet.100}"
-          }
-        }
-      }
-    },
-    "utrecht": {
       "alert": {
         "icon": {
           "error": {
@@ -10995,6 +10997,14 @@
         "opacity": {
           "$type": "opacity",
           "$value": "1"
+        }
+      },
+      "breadcrumb-nav": {
+        "link": {
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "none"
+          }
         }
       },
       "button": {
@@ -11062,6 +11072,10 @@
             }
           },
           "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            },
             "border-color": {
               "$type": "color",
               "$value": "{rhc.color.primary.500}"
@@ -11071,6 +11085,12 @@
             "background-color": {
               "$type": "color",
               "$value": "{expert-user.color.content.hover}"
+            }
+          },
+          "pressed": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
             }
           }
         },
@@ -11089,10 +11109,22 @@
               "$value": "{rhc.color.primary.300}"
             }
           },
+          "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            }
+          },
           "hover": {
             "background-color": {
               "$type": "color",
               "$value": "{expert-user.color.content.hover}"
+            }
+          },
+          "pressed": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
             }
           }
         }
