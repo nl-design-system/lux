@@ -10641,6 +10641,34 @@
           "$type": "color",
           "$value": "{expert-user.color.surface.canvas}"
         },
+        "backdrop": {
+          "z-index": {
+            "$type": "dimension",
+            "$value": "500"
+          }
+        },
+        "dialog": {
+          "z-index": {
+            "$type": "dimension",
+            "$value": "1000"
+          }
+        },
+        "floating-button-bar": {
+          "z-index": {
+            "$type": "dimension",
+            "$value": "50"
+          }
+        },
+        "header": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.primary}"
+          },
+          "z-index": {
+            "$type": "dimension",
+            "$value": "100"
+          }
+        },
         "main": {
           "padding-block-start": {
             "$type": "dimension",
@@ -10658,10 +10686,16 @@
             "$type": "dimension",
             "$value": "{rhc.space.800}"
           },
-          "breadcrumb": {
-            "height": {
+          "page-chrome": {
+            "z-index": {
               "$type": "dimension",
-              "$value": "{rhc.space.1200}"
+              "$value": "40"
+            },
+            "breadcrumb": {
+              "height": {
+                "$type": "dimension",
+                "$value": "{rhc.space.1200}"
+              }
             }
           },
           "content": {
@@ -10684,6 +10718,18 @@
             "padding-inline-start": {
               "$type": "dimension",
               "$value": "{expert-user.spacing.padding-inline-start}"
+            },
+            "detail-header": {
+              "z-index": {
+                "$type": "dimension",
+                "$value": "30"
+              }
+            },
+            "data-header": {
+              "z-index": {
+                "$type": "dimension",
+                "$value": "30"
+              }
             }
           }
         },
@@ -10691,6 +10737,10 @@
           "background-color": {
             "$type": "color",
             "$value": "{expert-user.color.surface.primary}"
+          },
+          "z-index": {
+            "$type": "dimension",
+            "$value": "90"
           }
         }
       }
