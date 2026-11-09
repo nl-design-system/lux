@@ -816,7 +816,7 @@
           "active": {
             "background-color": {
               "$type": "color",
-              "$value": "{rhc.color.semi-transparent.white.30}"
+              "$value": "{rhc.color.semi-transparent.black.15}"
             }
           }
         },
