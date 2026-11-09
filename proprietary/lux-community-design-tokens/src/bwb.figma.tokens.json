@@ -298,6 +298,10 @@
           "medium": {
             "$type": "color",
             "$value": "{rhc.color.cool-grey.300}"
+          },
+          "details": {
+            "$type": "color",
+            "$value": "{rhc.color.hemelblauw.100}"
           }
         },
         "cta": {
@@ -636,7 +640,7 @@
         "expandable": {
           "border-block-start-color": {
             "$type": "color",
-            "$value": "{rhc.color.hemelblauw.100}"
+            "$value": "{expert-user.color.border.details}"
           },
           "button-container": {
             "padding-block-start": {
@@ -655,9 +659,9 @@
   "extra-components/divider": {
     "rhc": {
       "divider": {
-        "color": {
+        "background-color": {
           "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
+          "$value": "{expert-user.color.border.medium}"
         },
         "horizontal": {
           "subtle": {
@@ -703,7 +707,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
+          "$value": "{expert-user.color.border.medium}"
         },
         "box-shadow": {
           "$type": "boxShadow",
