@@ -163,13 +163,21 @@
           }
         },
         "semi-transparent": {
-          "dark": {
-            "$type": "color",
-            "$value": "rgba(0,0,0,0.15)"
+          "black": {
+            "15": {
+              "$type": "color",
+              "$value": "rgba(0,0,0,0.15)"
+            }
           },
-          "light": {
-            "$type": "color",
-            "$value": "rgba(255,255,255,0.6)"
+          "white": {
+            "30": {
+              "$type": "color",
+              "$value": "rgba(255,255,255,0.3)"
+            },
+            "60": {
+              "$type": "color",
+              "$value": "rgba(255,255,255,0.6)"
+            }
           }
         }
       },
@@ -290,6 +298,10 @@
           "medium": {
             "$type": "color",
             "$value": "{rhc.color.cool-grey.300}"
+          },
+          "details": {
+            "$type": "color",
+            "$value": "{rhc.color.hemelblauw.100}"
           }
         },
         "cta": {
@@ -368,22 +380,44 @@
           }
         },
         "content": {
-          "alternative": {
-            "$type": "color",
-            "$value": "{rhc.color.lichtblauw.100}"
-          },
           "hover": {
             "$extensions": {
               "studio.tokens": {
                 "modify": {
                   "space": "lch",
                   "type": "lighten",
-                  "value": "0.15"
+                  "value": "0.65"
                 }
               }
             },
             "$type": "color",
-            "$value": "{rhc.color.lintblauw.50}"
+            "$value": "{rhc.color.hemelblauw.100}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "space": "lch",
+                  "type": "darken",
+                  "value": "0.05"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{rhc.color.lintblauw.100}"
+          },
+          "pressed": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "space": "lch",
+                  "type": "lighten",
+                  "value": "0.35"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{rhc.color.lintblauw.200}"
           },
           "selected": {
             "$extensions": {
@@ -606,7 +640,7 @@
         "expandable": {
           "border-block-start-color": {
             "$type": "color",
-            "$value": "{rhc.color.hemelblauw.100}"
+            "$value": "{expert-user.color.border.details}"
           },
           "button-container": {
             "padding-block-start": {
@@ -625,9 +659,9 @@
   "extra-components/divider": {
     "rhc": {
       "divider": {
-        "color": {
+        "background-color": {
           "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
+          "$value": "{expert-user.color.border.medium}"
         },
         "horizontal": {
           "subtle": {
@@ -673,7 +707,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "{rhc.color.cool-grey.300}"
+          "$value": "{expert-user.color.border.medium}"
         },
         "box-shadow": {
           "$type": "boxShadow",
@@ -768,21 +802,21 @@
             "$value": "{rhc.space.200}"
           },
           "focus": {
-            "border-color": {
+            "background-color": {
               "$type": "color",
-              "$value": "{rhc.color.foreground.on-dark-color}"
+              "$value": "{rhc.color.semi-transparent.white.30}"
             }
           },
           "hover": {
             "background-color": {
               "$type": "color",
-              "$value": "rgba(255,255,255,0.3)"
+              "$value": "{rhc.color.semi-transparent.white.30}"
             }
           },
-          "pressed": {
+          "active": {
             "background-color": {
               "$type": "color",
-              "$value": "rgba(0,0,0,0.3)"
+              "$value": "{rhc.color.semi-transparent.black.15}"
             }
           }
         },
@@ -986,11 +1020,11 @@
         },
         "background-color": {
           "$type": "color",
-          "$value": "{rhc.color.semi-transparent.dark}"
+          "$value": "{rhc.color.semi-transparent.black.15}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{rhc.color.semi-transparent.light}"
+          "$value": "{rhc.color.semi-transparent.white.60}"
         },
         "notification": {
           "$type": "color",
@@ -1226,7 +1260,7 @@
           "hover": {
             "background-color": {
               "$type": "color",
-              "$value": "{rhc.color.primary.50}"
+              "$value": "{expert-user.color.content.hover}"
             },
             "border-color": {
               "$type": "color",
@@ -1240,7 +1274,7 @@
           "focus": {
             "background-color": {
               "$type": "color",
-              "$value": "{rhc.color.primary.50}"
+              "$value": "{expert-user.color.content.hover}"
             },
             "border-color": {
               "$type": "color",
@@ -1971,6 +2005,34 @@
           "$type": "color",
           "$value": "{expert-user.color.surface.canvas}"
         },
+        "backdrop": {
+          "z-index": {
+            "$type": "dimension",
+            "$value": "500"
+          }
+        },
+        "dialog": {
+          "z-index": {
+            "$type": "dimension",
+            "$value": "1000"
+          }
+        },
+        "floating-button-bar": {
+          "z-index": {
+            "$type": "dimension",
+            "$value": "50"
+          }
+        },
+        "header": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.primary}"
+          },
+          "z-index": {
+            "$type": "dimension",
+            "$value": "100"
+          }
+        },
         "main": {
           "padding-block-start": {
             "$type": "dimension",
@@ -1988,10 +2050,16 @@
             "$type": "dimension",
             "$value": "{rhc.space.800}"
           },
-          "breadcrumb": {
-            "height": {
+          "page-chrome": {
+            "z-index": {
               "$type": "dimension",
-              "$value": "{rhc.space.1200}"
+              "$value": "40"
+            },
+            "breadcrumb": {
+              "height": {
+                "$type": "dimension",
+                "$value": "{rhc.space.1200}"
+              }
             }
           },
           "content": {
@@ -2014,6 +2082,18 @@
             "padding-inline-start": {
               "$type": "dimension",
               "$value": "{expert-user.spacing.padding-inline-start}"
+            },
+            "detail-header": {
+              "z-index": {
+                "$type": "dimension",
+                "$value": "30"
+              }
+            },
+            "data-header": {
+              "z-index": {
+                "$type": "dimension",
+                "$value": "30"
+              }
             }
           }
         },
@@ -2021,6 +2101,10 @@
           "background-color": {
             "$type": "color",
             "$value": "{expert-user.color.surface.primary}"
+          },
+          "z-index": {
+            "$type": "dimension",
+            "$value": "90"
           }
         }
       }
@@ -2250,31 +2334,60 @@
       }
     }
   },
-  "overrides/expert-user": {
-    "basis": {
-      "box-shadow": {
-        "md": {
-          "$type": "boxShadow",
-          "$value": {
-            "x": "0",
-            "y": "8",
-            "blur": "16",
-            "spread": "0",
-            "color": "rgba(0,0,0,0.5)",
-            "type": "dropShadow"
-          }
-        }
-      },
-      "color": {
-        "highlight": {
-          "bg-default": {
+  "local-components-bwb/bwb-task-overview": {
+    "bwb": {
+      "bwb-task-overview": {
+        "shadow-cell": {
+          "background-color": {
             "$type": "color",
-            "$value": "{rhc.color.violet.100}"
+            "$value": "{expert-user.color.surface.secondary}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.border.light}"
+          },
+          "border-radius": {
+            "$type": "dimension",
+            "$value": "{rhc.border-radius.md}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150} * 0.5"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150} * 0.5"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
           }
         }
       }
-    },
+    }
+  },
+  "overrides/expert-user": {
     "utrecht": {
+      "accordion": {
+        "button": {
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            }
+          }
+        }
+      },
       "alert": {
         "icon": {
           "error": {
@@ -2311,6 +2424,14 @@
         "opacity": {
           "$type": "opacity",
           "$value": "1"
+        }
+      },
+      "breadcrumb-nav": {
+        "link": {
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "none"
+          }
         }
       },
       "button": {
@@ -2378,9 +2499,31 @@
             }
           },
           "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            },
             "border-color": {
               "$type": "color",
               "$value": "{rhc.color.primary.500}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            }
+          },
+          "pressed": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.pressed}"
+            }
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
             }
           }
         },
@@ -2397,6 +2540,30 @@
             "color": {
               "$type": "color",
               "$value": "{rhc.color.primary.300}"
+            }
+          },
+          "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.hover}"
+            }
+          },
+          "pressed": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.pressed}"
+            }
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.content.active}"
             }
           }
         }
@@ -2875,7 +3042,8 @@
         "templates/layout-search": "enabled",
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
-        "local-components-bwb/bwb-status-tag": "enabled"
+        "local-components-bwb/bwb-status-tag": "enabled",
+        "local-components-bwb/bwb-task-overview": "enabled"
       },
       "$figmaVariableReferences": {},
       "group": "Rijkshuisstijl"
