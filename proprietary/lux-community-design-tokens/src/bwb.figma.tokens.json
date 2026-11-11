@@ -1899,19 +1899,13 @@
           "$type": "boxShadow",
           "$value": "{basis.box-shadow.md}"
         },
-        "wide": {
-          "height": {
-            "$type": "dimension",
-            "$value": "90vh"
-          },
-          "width": {
-            "$type": "dimension",
-            "$value": "90vw"
-          },
-          "max-width": {
-            "$type": "dimension",
-            "$value": "1920px"
-          }
+        "max-height": {
+          "$type": "dimension",
+          "$value": "90vh"
+        },
+        "max-width": {
+          "$type": "dimension",
+          "$value": "720px"
         },
         "footer": {
           "border-color": {
@@ -1995,6 +1989,26 @@
               "$type": "lineHeights",
               "$value": "{nl.heading.level-4.line-height}"
             }
+          }
+        },
+        "view": {
+          "max-width": {
+            "$type": "dimension",
+            "$value": "960px"
+          }
+        },
+        "wide": {
+          "height": {
+            "$type": "dimension",
+            "$value": "90vh"
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": "90vw"
+          },
+          "max-width": {
+            "$type": "dimension",
+            "$value": "1920px"
           }
         }
       }
