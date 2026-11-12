@@ -11,7 +11,7 @@
   ],
   "private": true,
   "engines": {
-    "node": ">=24 <=25",
+    "node": "^24.22.3 || ^26.13.1",
     "pnpm": "^11.10.0"
   },
   "repository": {
@@ -20,7 +20,7 @@
     "directory": "."
   },
   "volta": {
-    "node": "20.16.0"
+    "node": "24.22.3"
   },
   "devDependencies": {
     "@changesets/cli": "3.0.1",
