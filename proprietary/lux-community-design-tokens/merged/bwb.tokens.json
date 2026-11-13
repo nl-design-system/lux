@@ -11119,6 +11119,12 @@
               "$type": "color",
               "$value": "{expert-user.color.status.warning.icon}"
             }
+          },
+          "no-title": {
+            "inset-block-start": {
+              "$type": "dimension",
+              "$value": "2px"
+            }
           }
         },
         "padding-inline-end": {
