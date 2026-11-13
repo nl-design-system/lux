@@ -1,5 +1,11 @@
 # @lux-design-system/web-components-react
 
+## 1.1.2
+
+### Patch Changes
+
+- 0b8ea85: This is not strictly necessary, because there are other ways to configure provenance (notably .npmrc), but it helps with automated scripts and gives extra peace of mind.
+
 ## 1.1.1
 
 ### Patch Changes
