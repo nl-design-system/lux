@@ -483,7 +483,7 @@
             },
             "default": {
               "$type": "color",
-              "$value": "{rhc.color.donkergeel.100}"
+              "$value": "{rhc.color.donkergeel.200}"
             },
             "subtle": {
               "$type": "color",
