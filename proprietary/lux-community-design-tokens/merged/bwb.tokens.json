@@ -10640,6 +10640,10 @@
           }
         },
         "view": {
+          "max-height": {
+            "$type": "dimension",
+            "$value": "90vh"
+          },
           "max-width": {
             "$type": "dimension",
             "$value": "960px"
@@ -11111,6 +11115,16 @@
               "$type": "color",
               "$value": "{expert-user.color.status.warning.icon}"
             }
+          }
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.400}"
+        },
+        "closeable": {
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
           }
         }
       },
