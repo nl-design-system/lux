@@ -11092,6 +11092,10 @@
       },
       "alert": {
         "icon": {
+          "inset-block-start": {
+            "$type": "dimension",
+            "$value": "4px"
+          },
           "error": {
             "color": {
               "$type": "color",
