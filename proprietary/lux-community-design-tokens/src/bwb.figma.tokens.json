@@ -1899,6 +1899,46 @@
           "$type": "boxShadow",
           "$value": "{basis.box-shadow.md}"
         },
+        "max-height": {
+          "$type": "dimension",
+          "$value": "90vh"
+        },
+        "max-width": {
+          "$type": "dimension",
+          "$value": "720px"
+        },
+        "footer": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{rhc.color.cool-grey.300}"
+          },
+          "border-top-width": {
+            "$type": "dimension",
+            "$value": "{rhc.border-width.sm}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.400}"
+          },
+          "button-group": {
+            "column-gap": {
+              "$type": "dimension",
+              "$value": "{rhc.space.200}"
+            }
+          }
+        },
         "header": {
           "border-bottom-width": {
             "$type": "dimension",
@@ -1951,36 +1991,28 @@
             }
           }
         },
-        "footer": {
-          "border-color": {
-            "$type": "color",
-            "$value": "{rhc.color.cool-grey.300}"
-          },
-          "border-top-width": {
+        "view": {
+          "max-height": {
             "$type": "dimension",
-            "$value": "{rhc.border-width.sm}"
+            "$value": "90vh"
           },
-          "padding-block-start": {
+          "max-width": {
             "$type": "dimension",
-            "$value": "{rhc.space.400}"
-          },
-          "padding-inline-end": {
+            "$value": "960px"
+          }
+        },
+        "wide": {
+          "height": {
             "$type": "dimension",
-            "$value": "{rhc.space.400}"
+            "$value": "90vh"
           },
-          "padding-block-end": {
+          "width": {
             "$type": "dimension",
-            "$value": "{rhc.space.400}"
+            "$value": "90vw"
           },
-          "padding-inline-start": {
+          "max-width": {
             "$type": "dimension",
-            "$value": "{rhc.space.400}"
-          },
-          "button-group": {
-            "column-gap": {
-              "$type": "dimension",
-              "$value": "{rhc.space.200}"
-            }
+            "$value": "1920px"
           }
         }
       }
@@ -2004,6 +2036,28 @@
         "background-color": {
           "$type": "color",
           "$value": "{expert-user.color.surface.canvas}"
+        },
+        "breakpoints": {
+          "handheld": {
+            "$type": "dimension",
+            "$value": "786px"
+          },
+          "compact": {
+            "$type": "dimension",
+            "$value": "787px"
+          },
+          "desktop": {
+            "$type": "dimension",
+            "$value": "1024px"
+          },
+          "wide": {
+            "$type": "dimension",
+            "$value": "1440px"
+          },
+          "sidebar-expanded": {
+            "$type": "dimension",
+            "$value": "1200px"
+          }
         },
         "backdrop": {
           "z-index": {
@@ -2390,6 +2444,10 @@
       },
       "alert": {
         "icon": {
+          "inset-block-start": {
+            "$type": "dimension",
+            "$value": "4px"
+          },
           "error": {
             "color": {
               "$type": "color",
@@ -2412,6 +2470,86 @@
             "color": {
               "$type": "color",
               "$value": "{expert-user.color.status.warning.icon}"
+            }
+          },
+          "no-title": {
+            "inset-block-start": {
+              "$type": "dimension",
+              "$value": "2px"
+            }
+          }
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{rhc.space.300}"
+        },
+        "closeable": {
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.default}"
+            }
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "error": {
+            "button": {
+              "hover": {
+                "background-color": {
+                  "$type": "color",
+                  "$value": "{expert-user.color.status.negative.default}"
+                }
+              },
+              "focus": {
+                "background-color": {
+                  "$type": "color",
+                  "$value": "{expert-user.color.status.negative.default}"
+                }
+              }
+            }
+          },
+          "info": {
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.informative.default}"
+              }
+            },
+            "focus": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.informative.default}"
+              }
+            }
+          },
+          "ok": {
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.positive.default}"
+              }
+            },
+            "focus": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.positive.default}"
+              }
+            }
+          },
+          "warning": {
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.warning.default}"
+              }
+            },
+            "focus": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.warning.default}"
+              }
             }
           }
         }
