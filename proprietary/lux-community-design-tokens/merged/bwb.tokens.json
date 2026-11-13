@@ -11123,7 +11123,7 @@
         },
         "padding-inline-end": {
           "$type": "dimension",
-          "$value": "{rhc.space.400}"
+          "$value": "{rhc.space.300}"
         },
         "closeable": {
           "padding-inline-end": {
