@@ -11132,9 +11132,73 @@
           "$value": "{rhc.space.300}"
         },
         "closeable": {
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{rhc.color.foreground.default}"
+            }
+          },
           "padding-inline-end": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
+          },
+          "error": {
+            "button": {
+              "hover": {
+                "background-color": {
+                  "$type": "color",
+                  "$value": "{expert-user.color.status.negative.default}"
+                }
+              },
+              "focus": {
+                "background-color": {
+                  "$type": "color",
+                  "$value": "{expert-user.color.status.negative.default}"
+                }
+              }
+            }
+          },
+          "info": {
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.informative.default}"
+              }
+            },
+            "focus": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.informative.default}"
+              }
+            }
+          },
+          "ok": {
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.positive.default}"
+              }
+            },
+            "focus": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.positive.default}"
+              }
+            }
+          },
+          "warning": {
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.warning.default}"
+              }
+            },
+            "focus": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.warning.default}"
+              }
+            }
           }
         }
       },
