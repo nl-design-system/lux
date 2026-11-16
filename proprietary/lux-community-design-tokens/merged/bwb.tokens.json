@@ -9101,6 +9101,10 @@
               "$type": "color",
               "$value": "{rhc.color.hemelblauw.600}"
             },
+            "active": {
+              "$type": "color",
+              "$value": "{rhc.color.hemelblauw.200}"
+            },
             "default": {
               "$type": "color",
               "$value": "{rhc.color.hemelblauw.100}"
@@ -9114,6 +9118,10 @@
             "icon": {
               "$type": "color",
               "$value": "{rhc.color.groen.600}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{rhc.color.groen.200}"
             },
             "default": {
               "$type": "color",
@@ -9129,6 +9137,10 @@
               "$type": "color",
               "$value": "{rhc.color.bruin.500}"
             },
+            "active": {
+              "$type": "color",
+              "$value": "{rhc.color.donkergeel.300}"
+            },
             "default": {
               "$type": "color",
               "$value": "{rhc.color.donkergeel.200}"
@@ -9142,6 +9154,10 @@
             "icon": {
               "$type": "color",
               "$value": "{rhc.color.rood.600}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{rhc.color.rood.200}"
             },
             "default": {
               "$type": "color",
@@ -11150,6 +11166,12 @@
                   "$value": "{expert-user.color.status.negative.default}"
                 }
               },
+              "active": {
+                "background-color": {
+                  "$type": "color",
+                  "$value": "{expert-user.color.status.negative.active}"
+                }
+              },
               "focus": {
                 "background-color": {
                   "$type": "color",
@@ -11163,6 +11185,12 @@
               "background-color": {
                 "$type": "color",
                 "$value": "{expert-user.color.status.informative.default}"
+              }
+            },
+            "active": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.informative.active}"
               }
             },
             "focus": {
@@ -11179,6 +11207,12 @@
                 "$value": "{expert-user.color.status.positive.default}"
               }
             },
+            "active": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.positive.active}"
+              }
+            },
             "focus": {
               "background-color": {
                 "$type": "color",
@@ -11191,6 +11225,12 @@
               "background-color": {
                 "$type": "color",
                 "$value": "{expert-user.color.status.warning.default}"
+              }
+            },
+            "active": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.warning.active}"
               }
             },
             "focus": {
