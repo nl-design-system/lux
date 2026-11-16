@@ -1923,10 +1923,6 @@
           "$type": "dimension",
           "$value": "90vh"
         },
-        "max-width": {
-          "$type": "dimension",
-          "$value": "720px"
-        },
         "footer": {
           "border-color": {
             "$type": "color",
