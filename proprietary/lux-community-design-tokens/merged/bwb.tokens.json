@@ -9087,6 +9087,10 @@
               "$type": "color",
               "$value": "{rhc.color.cool-grey.500}"
             },
+            "active": {
+              "$type": "color",
+              "$value": "{rhc.color.cool-grey.300}"
+            },
             "default": {
               "$type": "color",
               "$value": "{rhc.color.cool-grey.200}"
