@@ -763,6 +763,10 @@
   "extra-components/header": {
     "rhc": {
       "header": {
+        "height": {
+          "$type": "dimension",
+          "$value": "4.5rem"
+        },
         "default": {
           "$type": "color",
           "$value": "{rhc.color.lintblauw.500}"
@@ -2058,10 +2062,6 @@
             "$type": "dimension",
             "$value": "786px"
           },
-          "compact": {
-            "$type": "dimension",
-            "$value": "787px"
-          },
           "desktop": {
             "$type": "dimension",
             "$value": "1024px"
@@ -2172,9 +2172,11 @@
             "$type": "color",
             "$value": "{expert-user.color.surface.primary}"
           },
-          "z-index": {
-            "$type": "dimension",
-            "$value": "90"
+          "handheld": {
+            "z-index": {
+              "$type": "dimension",
+              "$value": "90"
+            }
           }
         }
       }
