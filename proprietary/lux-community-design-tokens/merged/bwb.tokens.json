@@ -10271,6 +10271,10 @@
   "extra-components/status-tag": {
     "rhc": {
       "status-tag": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{rhc.border-radius.round}"
+        },
         "margin-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.100}"
