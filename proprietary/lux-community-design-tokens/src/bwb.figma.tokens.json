@@ -763,6 +763,10 @@
   "extra-components/header": {
     "rhc": {
       "header": {
+        "height": {
+          "$type": "dimension",
+          "$value": "4.5rem"
+        },
         "default": {
           "$type": "color",
           "$value": "{rhc.color.lintblauw.500}"
@@ -1619,6 +1623,10 @@
   "extra-components/status-tag": {
     "rhc": {
       "status-tag": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{rhc.border-radius.round}"
+        },
         "margin-inline-start": {
           "$type": "dimension",
           "$value": "{rhc.space.100}"
@@ -1923,10 +1931,6 @@
           "$type": "dimension",
           "$value": "90vh"
         },
-        "max-width": {
-          "$type": "dimension",
-          "$value": "720px"
-        },
         "footer": {
           "border-color": {
             "$type": "color",
@@ -2062,10 +2066,6 @@
             "$type": "dimension",
             "$value": "786px"
           },
-          "compact": {
-            "$type": "dimension",
-            "$value": "787px"
-          },
           "desktop": {
             "$type": "dimension",
             "$value": "1024px"
@@ -2176,9 +2176,11 @@
             "$type": "color",
             "$value": "{expert-user.color.surface.primary}"
           },
-          "z-index": {
-            "$type": "dimension",
-            "$value": "90"
+          "handheld": {
+            "z-index": {
+              "$type": "dimension",
+              "$value": "90"
+            }
           }
         }
       }
@@ -2319,9 +2321,17 @@
             }
           },
           "passive": {
-            "border-color": {
-              "$type": "color",
-              "$value": "{rhc.color.cool-grey.300}"
+            "default": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{rhc.color.cool-grey.400}"
+              }
+            },
+            "subtle": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{rhc.color.cool-grey.300}"
+              }
             }
           }
         },
