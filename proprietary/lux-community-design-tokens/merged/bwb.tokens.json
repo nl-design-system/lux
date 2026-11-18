@@ -10978,7 +10978,7 @@
             "subtle": {
               "border-color": {
                 "$type": "color",
-                "$value": "{rhc.color.cool-grey.300}"
+                "$value": "{rhc.color.cool-grey.50}"
               }
             }
           }
