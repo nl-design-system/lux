@@ -2398,7 +2398,7 @@
         "passive": {
           "icon": {
             "$type": "color",
-            "$value": "{rhc.color.cool-grey.400}"
+            "$value": "{rhc.color.cool-grey.500}"
           },
           "positive": {
             "background-color": {
