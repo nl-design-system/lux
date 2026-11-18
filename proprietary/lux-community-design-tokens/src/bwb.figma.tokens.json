@@ -2321,9 +2321,17 @@
             }
           },
           "passive": {
-            "border-color": {
-              "$type": "color",
-              "$value": "{rhc.color.cool-grey.300}"
+            "default": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{rhc.color.cool-grey.400}"
+              }
+            },
+            "subtle": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{rhc.color.cool-grey.300}"
+              }
             }
           }
         },
