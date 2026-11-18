@@ -2330,7 +2330,7 @@
             "subtle": {
               "border-color": {
                 "$type": "color",
-                "$value": "{rhc.color.cool-grey.300}"
+                "$value": "{rhc.color.cool-grey.50}"
               }
             }
           }
@@ -2398,7 +2398,7 @@
         "passive": {
           "icon": {
             "$type": "color",
-            "$value": "{rhc.color.cool-grey.400}"
+            "$value": "{rhc.color.cool-grey.500}"
           },
           "positive": {
             "background-color": {
