@@ -8349,6 +8349,7 @@
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
         "extra-components/divider": "enabled",
+        "extra-components/expandable-group": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
@@ -8357,7 +8358,6 @@
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
-        "extra-components/navigable-collapsible": "enabled",
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/preview": "enabled",
@@ -8472,6 +8472,7 @@
         "expert-user/spacing": "enabled",
         "extra-components/context-block": "enabled",
         "extra-components/divider": "enabled",
+        "extra-components/expandable-group": "enabled",
         "extra-components/floating-button-bar": "enabled",
         "extra-components/header": "enabled",
         "extra-components/highlight": "enabled",
@@ -8480,7 +8481,6 @@
         "extra-components/key-value": "enabled",
         "extra-components/link": "enabled",
         "extra-components/menu": "enabled",
-        "extra-components/navigable-collapsible": "enabled",
         "extra-components/number-badge": "enabled",
         "extra-components/option-card": "enabled",
         "extra-components/preview": "enabled",
@@ -8613,6 +8613,7 @@
       "expert-user/spacing",
       "extra-components/context-block",
       "extra-components/divider",
+      "extra-components/expandable-group",
       "extra-components/floating-button-bar",
       "extra-components/header",
       "extra-components/highlight",
@@ -8621,7 +8622,6 @@
       "extra-components/key-value",
       "extra-components/link",
       "extra-components/menu",
-      "extra-components/navigable-collapsible",
       "extra-components/number-badge",
       "extra-components/option-card",
       "extra-components/preview",
@@ -9362,6 +9362,42 @@
       }
     }
   },
+  "extra-components/expandable-group": {
+    "rhc": {
+      "expandable-group": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{rhc.space.200}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "1px"
+        },
+        "header": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{expert-user.color.surface.secondary}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.150}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          }
+        }
+      }
+    }
+  },
   "extra-components/floating-button-bar": {
     "rhc": {
       "floating-button-bar": {
@@ -9642,42 +9678,6 @@
           "border-radius": {
             "$type": "dimension",
             "$value": "{rhc.border-radius.md}"
-          }
-        }
-      }
-    }
-  },
-  "extra-components/navigable-collapsible": {
-    "rhc": {
-      "navigable-collapsible": {
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "{rhc.space.200}"
-        },
-        "row-gap": {
-          "$type": "dimension",
-          "$value": "1px"
-        },
-        "header": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{expert-user.color.surface.secondary}"
-          },
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "{rhc.space.150}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.200}"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.150}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "{rhc.space.200}"
           }
         }
       }
