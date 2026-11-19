@@ -2436,7 +2436,7 @@
           },
           "padding-block": {
             "$type": "dimension",
-            "$value": "{rhc.space.150} * 0.5"
+            "$value": "calc({rhc.space.150} * 0.5)"
           },
           "padding-inline": {
             "$type": "dimension",
