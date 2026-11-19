@@ -2436,11 +2436,11 @@
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.150} * 0.5"
+            "$value": "{rhc.space.100} * 0.5"
           },
           "padding-inline-end": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}"
+            "$value": "{rhc.space.100}"
           },
           "padding-block-end": {
             "$type": "dimension",
@@ -2448,7 +2448,7 @@
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}"
+            "$value": "{rhc.space.100}"
           }
         },
         "shadow-table-cell": {
