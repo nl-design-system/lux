@@ -11082,39 +11082,23 @@
             "$type": "dimension",
             "$value": "{rhc.border-radius.md}"
           },
-          "padding-block-start": {
+          "padding-block": {
             "$type": "dimension",
             "$value": "{rhc.space.150} * 0.5"
           },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.100}"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.150} * 0.5"
-          },
-          "padding-inline-start": {
+          "padding-inline": {
             "$type": "dimension",
             "$value": "{rhc.space.100}"
           }
         },
         "shadow-table-cell": {
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.100}"
-          },
-          "padding-inline-start": {
+          "padding-inline": {
             "$type": "dimension",
             "$value": "{rhc.space.100}"
           }
         },
         "table-cell": {
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.200}"
-          },
-          "padding-inline-start": {
+          "padding-inline": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
           }
