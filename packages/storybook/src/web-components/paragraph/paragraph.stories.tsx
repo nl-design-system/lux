@@ -1,7 +1,7 @@
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { LuxParagraph as Paragraph } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
 import tokensDefinition from './tokens.json';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';

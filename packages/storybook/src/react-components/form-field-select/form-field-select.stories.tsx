@@ -4,7 +4,7 @@ import {
   type LuxFormFieldSelectProps,
 } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
@@ -23,7 +23,7 @@ const meta = {
   id: 'react-components-form-field-form-field-select',
   component: LuxFormFieldSelect,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-form-field-select',
   },
