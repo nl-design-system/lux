@@ -23,7 +23,7 @@ const meta = {
   id: 'react-components-heading',
   component: LuxHeading,
   parameters: {
-    badges: [BADGES.BETA, BADGES.LATEST],
+    status: { type: [BADGES.BETA, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-heading-1',
     tokensDefinition,

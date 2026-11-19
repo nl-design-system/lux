@@ -12,7 +12,7 @@ const meta = {
   id: 'react-components-link',
   component: LuxLink,
   parameters: {
-    badges: [BADGES.BETA, BADGES.LATEST],
+    status: { type: [BADGES.BETA, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-link',
   },

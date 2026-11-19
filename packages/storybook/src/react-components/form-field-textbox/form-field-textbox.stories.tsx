@@ -13,7 +13,7 @@ const meta = {
   id: 'react-components-form-field-form-field-textbox',
   component: LuxFormFieldTextbox,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-form-field-textbox',
   },

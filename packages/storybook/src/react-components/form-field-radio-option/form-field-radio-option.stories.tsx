@@ -13,7 +13,7 @@ const meta = {
   component: LuxFormFieldRadioOption,
   subcomponents: {},
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-radio-button',
   },

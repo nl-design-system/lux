@@ -23,7 +23,7 @@ const meta = {
   id: 'react-components-section',
   component: LuxSection,
   parameters: {
-    badges: [BADGES.BETA, BADGES.LATEST],
+    status: { type: [BADGES.BETA, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'react-section',
   },

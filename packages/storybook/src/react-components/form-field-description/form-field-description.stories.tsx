@@ -21,7 +21,7 @@ const meta = {
   id: 'react-components-form-field-description',
   component: LuxFormFieldDescription,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-form-field-description',
     docs: {

@@ -16,7 +16,7 @@ const meta = {
   component: LuxButton,
   subcomponents: {},
   parameters: {
-    badges: [BADGES.BETA, BADGES.LATEST],
+    status: { type: [BADGES.BETA, BADGES.LATEST] },
     tokens,
     tokensDefinition,
     tokensPrefix: 'utrecht-button',

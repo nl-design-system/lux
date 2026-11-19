@@ -23,7 +23,7 @@ const meta = {
   id: 'react-components-form-field-form-field-select',
   component: LuxFormFieldSelect,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-form-field-select',
   },

@@ -30,7 +30,7 @@ const meta = {
     },
   },
   parameters: {
-    badges: [BADGES.STABLE, BADGES.LATEST],
+    status: { type: [BADGES.STABLE, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-paragraph',
     tokensDefinition,

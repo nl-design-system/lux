@@ -8,7 +8,7 @@ const meta = {
   id: 'react-components-textarea',
   component: LuxTextArea,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-textarea',
   },

@@ -17,7 +17,7 @@ const meta = {
   id: 'react-components-form-field-textbox',
   component: WrappedLuxTextbox,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-textbox',
   },

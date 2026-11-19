@@ -12,7 +12,7 @@ const meta = {
   component: LuxHeadingGroup,
   subcomponents: {},
   parameters: {
-    badges: [BADGES.STABLE, BADGES.LATEST],
+    status: { type: [BADGES.STABLE, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'react-heading-group',
   },
