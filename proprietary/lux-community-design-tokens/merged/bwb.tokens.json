@@ -11069,7 +11069,7 @@
   "local-components-bwb/bwb-task-overview": {
     "bwb": {
       "bwb-task-overview": {
-        "shadow-cell": {
+        "shadow-task": {
           "background-color": {
             "$type": "color",
             "$value": "{expert-user.color.surface.secondary}"
@@ -11082,21 +11082,25 @@
             "$type": "dimension",
             "$value": "{rhc.border-radius.md}"
           },
-          "padding-block-start": {
+          "padding-block": {
             "$type": "dimension",
             "$value": "{rhc.space.150} * 0.5"
           },
-          "padding-inline-end": {
+          "padding-inline": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}"
-          },
-          "padding-block-end": {
+            "$value": "{rhc.space.100}"
+          }
+        },
+        "shadow-table-cell": {
+          "padding-inline": {
             "$type": "dimension",
-            "$value": "{rhc.space.150} * 0.5"
-          },
-          "padding-inline-start": {
+            "$value": "{rhc.space.100}"
+          }
+        },
+        "table-cell": {
+          "padding-inline": {
             "$type": "dimension",
-            "$value": "{rhc.space.150}"
+            "$value": "{rhc.space.200}"
           }
         }
       }
