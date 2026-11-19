@@ -4,15 +4,10 @@ import { mergeConfig } from 'vite';
 const config: StorybookConfig = {
   stories: ['../src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
   addons: [
-    '@geometricpanda/storybook-addon-badges',
+    '@etchteam/storybook-addon-status',
     '@storybook/addon-a11y',
-    '@storybook/addon-backgrounds',
     '@storybook/addon-themes',
-    '@storybook/addon-controls',
     '@storybook/addon-docs',
-    '@storybook/addon-viewport',
-    '@storybook/addon-actions',
-    '@storybook/addon-interactions',
     '@storybook/addon-links',
     'storybook-addon-pseudo-states',
   ],
@@ -22,9 +17,6 @@ const config: StorybookConfig = {
   },
   core: {
     disableTelemetry: true,
-  },
-  docs: {
-    autodocs: true,
   },
   managerHead(head) {
     return `

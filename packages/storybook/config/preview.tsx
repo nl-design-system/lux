@@ -1,25 +1,19 @@
-import { BADGE, BADGE_LOCATION } from '@geometricpanda/storybook-addon-badges';
 import { LuxDocument } from '@lux-design-system/components-react';
 import { defineCustomElements } from '@lux-design-system/web-components-stencil/loader/index.js';
 import { withThemeByClassName } from '@storybook/addon-themes';
-import type { Preview, ReactRenderer } from '@storybook/react';
+import type { Preview, ReactRenderer } from '@storybook/react-vite';
 
 import '@lux-design-system/font/src/index.scss';
 import './themes';
 import '../src/styles/theme.css';
 
-/* eslint-disable no-unused-vars */
-export enum LUXBADGE {
-  WIP = 'wip',
-  CANARY = 'canary',
-  LATEST = 'latest',
-}
-/* eslint-enable */
-
 export const BADGES = {
-  ...BADGE,
-  ...LUXBADGE,
-};
+  WIP: 'wip',
+  CANARY: 'canary',
+  LATEST: 'latest',
+  BETA: 'beta',
+  STABLE: 'stable',
+} as const;
 
 defineCustomElements();
 
@@ -54,17 +48,16 @@ const preview: Preview = {
   ],
   parameters: {
     backgrounds: {
-      default: 'default',
-      values: [
-        {
+      options: {
+        default: {
           name: 'default',
           value: 'var(--lux-color-background-default)',
         },
-        {
+        canvas: {
           name: 'canvas',
           value: 'var(--lux-color-canvas)',
         },
-        {
+        boundaries: {
           /*
           Deliberately provide a background which we'd never use in production.
           This helps us identify the component boundaries. Use purple because
@@ -73,47 +66,48 @@ const preview: Preview = {
           name: 'boundaries',
           value: 'rebeccapurple',
         },
-        {
+        transparent: {
           name: 'transparent',
           value:
             'fixed repeating-conic-gradient(#EFEFEF 0% 25%, var(--lux-color-background-default) 0% 50%) 50% / 20px 20px',
         },
-        {
+        light: {
           name: 'light',
           value: 'white',
         },
-        {
+        dark: {
           name: 'dark',
           value: 'black',
         },
-      ],
+      },
     },
-    badgesConfig: {
-      [BADGES.WIP]: {
-        location: [BADGE_LOCATION.TOOLBAR],
-        title: 'W.I.P.',
-        tooltip: 'Work in progress',
-      },
-      [BADGES.CANARY]: {
-        styles: {
-          backgroundColor: '#FFFF8F', // Canary Yellow
-          borderColor: '#bfbf6b',
-          textTransform: 'none',
+    status: {
+      statuses: {
+        [BADGES.WIP]: {
+          background: '#666666',
+          color: '#ffffff',
+          description: 'Work in progress',
         },
-        location: [BADGE_LOCATION.TOOLBAR_EXTRA],
-        title: 'Canary',
-        tooltip: 'Alleen beschikbaar in de canary release packages',
-      },
-      [BADGES.LATEST]: {
-        styles: {
-          backgroundColor: '#4cbb17',
-          borderColor: '#398c11',
-          color: '#181920', // Contrast Ratio: 7.03:1
-          textTransform: 'none',
+        [BADGES.CANARY]: {
+          background: '#FFFF8F',
+          color: '#181920',
+          description: 'Alleen beschikbaar in de canary release packages',
         },
-        location: [BADGE_LOCATION.TOOLBAR_EXTRA],
-        title: 'Latest',
-        tooltip: 'Beschikbaar in de latest release package',
+        [BADGES.LATEST]: {
+          background: '#4cbb17',
+          color: '#181920',
+          description: 'Beschikbaar in de latest release package',
+        },
+        [BADGES.BETA]: {
+          background: '#3065ee',
+          color: '#ffffff',
+          description: 'Beta',
+        },
+        [BADGES.STABLE]: {
+          background: '#088008',
+          color: '#ffffff',
+          description: 'Stable',
+        },
       },
     },
     chromatic: {
@@ -146,6 +140,12 @@ const preview: Preview = {
       },
     },
   },
+  initialGlobals: {
+    backgrounds: {
+      value: 'default',
+    },
+  },
+  tags: ['autodocs'],
 };
 
 export default preview;
