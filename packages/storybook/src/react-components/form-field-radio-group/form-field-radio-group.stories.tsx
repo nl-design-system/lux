@@ -1,5 +1,5 @@
 import { LuxFormFieldRadioGroup } from '@lux-design-system/components-react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';

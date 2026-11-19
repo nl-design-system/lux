@@ -1,6 +1,6 @@
 import { LuxLinkList, LuxLinkListProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { BADGES } from '../../../config/preview';
 
 type Story = StoryObj<typeof meta>;

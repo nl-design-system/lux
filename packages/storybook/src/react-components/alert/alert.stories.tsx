@@ -1,6 +1,6 @@
 import { LuxAlert, type LuxAlertProps, LuxHeading1, LuxParagraph } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { VisualTypes } from './visual/Types';
 import { BADGES } from '../../../config/preview';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';

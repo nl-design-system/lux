@@ -9,7 +9,7 @@ import {
   type LuxHeadingProps,
 } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import tokensDefinition from '@utrecht/heading-css/src/tokens.json';
 import { BADGES } from '../../../config/preview';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';

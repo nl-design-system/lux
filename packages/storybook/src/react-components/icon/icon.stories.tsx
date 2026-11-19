@@ -1,5 +1,5 @@
 import { LuxIcon, LuxIconProps } from '@lux-design-system/components-react';
-import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
+import type { ArgTypes, Meta, StoryObj } from '@storybook/react-vite';
 import { IconBuildingLighthouse, IconBulb, IconCandle, IconLamp } from '@tabler/icons-react';
 
 interface ExtraArgs {

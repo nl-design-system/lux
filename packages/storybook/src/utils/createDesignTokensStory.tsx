@@ -1,6 +1,6 @@
 // @ts-expect-error no definition file
 import { ComponentTokensSection } from '@nl-design-system-unstable/theme-toolkit';
-import type { StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react-vite';
 
 type DesignToken = {
   comment?: string;

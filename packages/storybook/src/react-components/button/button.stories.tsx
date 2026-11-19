@@ -1,8 +1,8 @@
 import { LuxButton } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import { useArgs } from '@storybook/preview-api';
-import type { Meta, StoryFn, StoryObj } from '@storybook/react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import tokensDefinition from '@utrecht/button-css/src/tokens.json';
+import { useArgs } from 'storybook/preview-api';
 import { InteractiveStates, PropertyStates } from './visual/States';
 import { Appearances, Sizes } from './visual/Variants';
 import { BADGES } from '../../../config/preview';

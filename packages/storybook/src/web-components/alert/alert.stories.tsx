@@ -5,9 +5,9 @@ import {
   LuxParagraph as Paragraph,
 } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
-import { useState } from '@storybook/preview-api';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
+import { useState } from 'storybook/preview-api';
 import tokensDefinition from './tokens.json';
 import { VisualTypes } from './visual/Types';
 import { createDesignTokensStory, createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';

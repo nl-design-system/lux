@@ -3,7 +3,7 @@
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
 import { LuxLoginLink as LoginLink } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { type PropsWithoutRef } from 'react';
 import tokensDefinition from './tokens.json';
 import { VisualAgents } from './visual/Agents';
@@ -53,32 +53,42 @@ export const Playground: Story = {
 
 export const LightTheme: Story = {
   name: 'Light version',
+
   args: {
     label: '',
     agent: 'digid',
   },
+
   parameters: {
     themes: {
       themeOverride: 'Logius light',
     },
+  },
+
+  globals: {
     backgrounds: {
-      default: 'light',
+      value: 'light',
     },
   },
 };
 
 export const DarkTheme: Story = {
   name: 'Dark version',
+
   args: {
     label: '',
     agent: 'digid',
   },
+
   parameters: {
     themes: {
       themeOverride: 'Logius dark',
     },
+  },
+
+  globals: {
     backgrounds: {
-      default: 'dark',
+      value: 'dark',
     },
   },
 };
