@@ -2461,7 +2461,7 @@
   "local-components-bwb/bwb-revision-overview": {
     "bwb": {
       "bwb-revision-overview": {
-        "table-cell": {
+        "status-cell": {
           "padding-inline": {
             "$type": "dimension",
             "$value": "{rhc.space.200}"
