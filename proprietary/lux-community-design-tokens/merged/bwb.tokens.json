@@ -8644,6 +8644,7 @@
       "local-components-bwb/bwb-regelinggegevens",
       "local-components-bwb/bwb-status-tag",
       "local-components-bwb/bwb-task-overview",
+      "local-components-bwb/bwb-revision-overview",
       "overrides/expert-user"
     ]
   },
@@ -11097,6 +11098,18 @@
             "$value": "{rhc.space.100}"
           }
         },
+        "table-cell": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          }
+        }
+      }
+    }
+  },
+  "local-components-bwb/bwb-revision-overview": {
+    "bwb": {
+      "bwb-revision-overview": {
         "table-cell": {
           "padding-inline": {
             "$type": "dimension",

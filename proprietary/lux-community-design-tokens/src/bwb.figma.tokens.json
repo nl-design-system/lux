@@ -2458,6 +2458,18 @@
       }
     }
   },
+  "local-components-bwb/bwb-revision-overview": {
+    "bwb": {
+      "bwb-revision-overview": {
+        "table-cell": {
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          }
+        }
+      }
+    }
+  },
   "overrides/expert-user": {
     "utrecht": {
       "accordion": {
