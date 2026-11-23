@@ -8502,7 +8502,8 @@
         "local-components-bwb/bwb-object-path": "enabled",
         "local-components-bwb/bwb-regelinggegevens": "enabled",
         "local-components-bwb/bwb-status-tag": "enabled",
-        "local-components-bwb/bwb-task-overview": "enabled"
+        "local-components-bwb/bwb-task-overview": "enabled",
+        "local-components-bwb/bwb-revision-overview": "enabled"
       },
       "$figmaVariableReferences": {},
       "group": "Rijkshuisstijl"
