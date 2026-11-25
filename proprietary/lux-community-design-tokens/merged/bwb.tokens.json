@@ -9145,7 +9145,7 @@
             },
             "active": {
               "$type": "color",
-              "$value": "{rhc.color.donkergeel.300}"
+              "$value": "{rhc.color.donkergeel.400}"
             },
             "default": {
               "$type": "color",
@@ -11180,15 +11180,15 @@
           "$value": "{rhc.space.300}"
         },
         "closeable": {
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.200}"
+          },
           "icon": {
             "color": {
               "$type": "color",
               "$value": "{rhc.color.foreground.default}"
             }
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{rhc.space.200}"
           },
           "error": {
             "button": {
@@ -11273,29 +11273,47 @@
             }
           }
         },
-        "divider": {
-          "error": {
-            "border-color": {
-              "$type": "color",
-              "$value": "{expert-user.color.status.negative.active}"
-            }
+        "more": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "0"
           },
-          "info": {
-            "border-color": {
-              "$type": "color",
-              "$value": "{expert-user.color.status.informative.active}"
-            }
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.100}"
           },
-          "ok": {
-            "border-color": {
-              "$type": "color",
-              "$value": "{expert-user.color.status.positive.active}"
-            }
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{rhc.space.300}"
           },
-          "warning": {
-            "border-color": {
-              "$type": "color",
-              "$value": "{expert-user.color.status.warning.active}"
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{rhc.space.300}"
+          },
+          "divider": {
+            "error": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.negative.active}"
+              }
+            },
+            "info": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.informative.active}"
+              }
+            },
+            "ok": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.positive.active}"
+              }
+            },
+            "warning": {
+              "border-color": {
+                "$type": "color",
+                "$value": "{expert-user.color.status.warning.active}"
+              }
             }
           }
         }
