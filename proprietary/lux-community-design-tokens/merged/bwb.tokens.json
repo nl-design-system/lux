@@ -10173,7 +10173,7 @@
         "on-dark": {
           "background-color": {
             "$type": "color",
-            "$value": "{expert-user.color.status.neutral.default}"
+            "$value": "{expert-user.color.status.neutral.on-dark}"
           },
           "color": {
             "$type": "color",
