@@ -2622,6 +2622,32 @@
               }
             }
           }
+        },
+        "divider": {
+          "error": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.negative.active}"
+            }
+          },
+          "info": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.informative.active}"
+            }
+          },
+          "ok": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.positive.active}"
+            }
+          },
+          "warning": {
+            "border-color": {
+              "$type": "color",
+              "$value": "{expert-user.color.status.warning.active}"
+            }
+          }
         }
       },
       "backdrop": {
