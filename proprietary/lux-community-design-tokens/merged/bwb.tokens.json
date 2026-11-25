@@ -10160,7 +10160,7 @@
         },
         "padding-inline-end": {
           "$type": "dimension",
-          "$value": "{rhc.space.50}"
+          "$value": "{rhc.space.100}"
         },
         "padding-block-end": {
           "$type": "dimension",
@@ -10168,7 +10168,7 @@
         },
         "padding-inline-start": {
           "$type": "dimension",
-          "$value": "{rhc.space.50}"
+          "$value": "{rhc.space.100}"
         },
         "on-dark": {
           "background-color": {
