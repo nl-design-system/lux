@@ -9145,7 +9145,7 @@
             },
             "active": {
               "$type": "color",
-              "$value": "{rhc.color.donkergeel.400}"
+              "$value": "{rhc.color.donkergeel.500}"
             },
             "default": {
               "$type": "color",
@@ -11280,15 +11280,15 @@
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.100}"
+            "$value": "{rhc.space.200}"
           },
           "padding-inline-end": {
             "$type": "dimension",
-            "$value": "{rhc.space.300}"
+            "$value": "{rhc.space.150}"
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{rhc.space.300}"
+            "$value": "{rhc.space.150}"
           },
           "divider": {
             "error": {
