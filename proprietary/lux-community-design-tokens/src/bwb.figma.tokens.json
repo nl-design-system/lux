@@ -1478,9 +1478,9 @@
       }
     }
   },
-  "extra-components/shortcut-tag": {
+  "extra-components/shortcut": {
     "rhc": {
-      "shortcut-tag": {
+      "shortcut": {
         "background-color": {
           "$type": "color",
           "$value": "{expert-user.color.status.neutral.default}"
@@ -3212,7 +3212,7 @@
         "extra-components/preview": "enabled",
         "extra-components/progress-steps": "enabled",
         "extra-components/segmented-control": "enabled",
-        "extra-components/shortcut-tag": "enabled",
+        "extra-components/shortcut": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
@@ -3336,7 +3336,7 @@
         "extra-components/preview": "enabled",
         "extra-components/progress-steps": "enabled",
         "extra-components/segmented-control": "enabled",
-        "extra-components/shortcut-tag": "enabled",
+        "extra-components/shortcut": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",

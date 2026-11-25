@@ -8363,7 +8363,7 @@
         "extra-components/preview": "enabled",
         "extra-components/progress-steps": "enabled",
         "extra-components/segmented-control": "enabled",
-        "extra-components/shortcut-tag": "enabled",
+        "extra-components/shortcut": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
@@ -8487,7 +8487,7 @@
         "extra-components/preview": "enabled",
         "extra-components/progress-steps": "enabled",
         "extra-components/segmented-control": "enabled",
-        "extra-components/shortcut-tag": "enabled",
+        "extra-components/shortcut": "enabled",
         "extra-components/side-bar": "enabled",
         "extra-components/spinner": "enabled",
         "extra-components/status-tag": "enabled",
@@ -8630,7 +8630,7 @@
       "extra-components/preview",
       "extra-components/progress-steps",
       "extra-components/segmented-control",
-      "extra-components/shortcut-tag",
+      "extra-components/shortcut",
       "extra-components/side-bar",
       "extra-components/spinner",
       "extra-components/status-tag",
@@ -10131,9 +10131,9 @@
       }
     }
   },
-  "extra-components/shortcut-tag": {
+  "extra-components/shortcut": {
     "rhc": {
-      "shortcut-tag": {
+      "shortcut": {
         "background-color": {
           "$type": "color",
           "$value": "{expert-user.color.status.neutral.default}"
