@@ -8369,6 +8369,7 @@
         "extra-components/status-tag": "enabled",
         "extra-components/suffix": "enabled",
         "extra-components/table-grid": "enabled",
+        "extra-components/table-info-bar": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
@@ -8493,6 +8494,7 @@
         "extra-components/status-tag": "enabled",
         "extra-components/suffix": "enabled",
         "extra-components/table-grid": "enabled",
+        "extra-components/table-info-bar": "enabled",
         "extra-components/tabs": "enabled",
         "extra-components/tag": "enabled",
         "extra-components/tooltip": "enabled",
@@ -8637,6 +8639,7 @@
       "extra-components/suffix",
       "extra-components/tag",
       "extra-components/table-grid",
+      "extra-components/table-info-bar",
       "extra-components/tabs",
       "extra-components/tooltip",
       "templates/dialog",
@@ -10443,6 +10446,32 @@
         "spacing": {
           "$type": "dimension",
           "$value": "{rhc.space.150}"
+        }
+      }
+    }
+  },
+  "extra-components/table-info-bar": {
+    "rhc": {
+      "table-info-bar": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{expert-user.spacing.column-gap-md}"
+        },
+        "height": {
+          "$type": "dimension",
+          "$value": "{rhc.size.pointer-target}"
+        },
+        "title": {
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "{expert-user.spacing.column-gap-sm}"
+          }
+        },
+        "actions": {
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "{expert-user.spacing.column-gap-sm}"
+          }
         }
       }
     }
