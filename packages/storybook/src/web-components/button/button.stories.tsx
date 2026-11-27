@@ -5,11 +5,11 @@ import {
   LuxIconChevronRight as IconChevronRight,
 } from '@lux-design-system/web-components-react';
 import type { JSX } from '@lux-design-system/web-components-stencil';
-import { useArgs } from '@storybook/preview-api';
-import type { Meta, StoryObj } from '@storybook/react';
-import { userEvent } from '@storybook/test';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { type PropsWithChildren } from 'react';
 import { within } from 'shadow-dom-testing-library';
+import { useArgs } from 'storybook/preview-api';
+import { userEvent } from 'storybook/test';
 import tokensDefinition from './tokens.json';
 import { createDesignTokensStory } from '../../utils';
 

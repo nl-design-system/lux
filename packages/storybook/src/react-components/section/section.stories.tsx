@@ -6,7 +6,7 @@ import {
   LuxSection as Section,
 } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { type HTMLAttributes, type PropsWithChildren } from 'react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
@@ -23,7 +23,7 @@ const meta = {
   id: 'react-components-section',
   component: LuxSection,
   parameters: {
-    badges: [BADGES.BETA, BADGES.LATEST],
+    status: { type: [BADGES.BETA, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'react-section',
   },
@@ -49,6 +49,7 @@ const SectionTemplate: Story = {
 export const Playground: Story = {
   ...SectionTemplate,
   name: 'Playground',
+
   args: {
     children: [
       <div>
@@ -73,15 +74,20 @@ export const Playground: Story = {
       </div>,
     ],
   },
+
   parameters: {
-    backgrounds: {
-      default: 'canvas',
-    },
     docs: {
       sourceState: 'shown',
     },
   },
+
   tags: ['!autodocs'],
+
+  globals: {
+    backgrounds: {
+      value: 'canvas',
+    },
+  },
 };
 
 export const Visual = createVisualRegressionStory(() => (

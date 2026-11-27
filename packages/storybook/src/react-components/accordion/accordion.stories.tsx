@@ -1,6 +1,6 @@
 import { LuxAccordionProvider, LuxIcon } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { IconChevronDown } from '@tabler/icons-react';
 import { BADGES } from '../../../config/preview';
 
@@ -9,7 +9,7 @@ const meta = {
   id: 'react-components-accordion',
   component: LuxAccordionProvider,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-accordion',
   },

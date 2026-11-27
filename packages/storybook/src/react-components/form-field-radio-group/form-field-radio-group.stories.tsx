@@ -1,5 +1,5 @@
 import { LuxFormFieldRadioGroup } from '@lux-design-system/components-react';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
 import { createVisualRegressionStory, VisualRegressionWrapper } from '../../utils';
@@ -11,7 +11,7 @@ const meta = {
   component: LuxFormFieldRadioGroup,
   subcomponents: {},
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
   },
   args: {
     name: 'contact-default',

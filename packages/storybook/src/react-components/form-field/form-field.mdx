@@ -1,5 +1,5 @@
+import { Canvas, Controls, Description, Meta } from "@storybook/addon-docs/blocks";
 import LinkTo from "@storybook/addon-links/react";
-import { Canvas, Controls, Description, Meta } from "@storybook/blocks";
 import mdAnatomy from "@utrecht/form-field-css/docs/anatomy.nl.md?raw";
 import mdWcag from "@utrecht/form-field-css/docs/wcag.nl.md?raw";
 import * as FormFieldStories from "./form-field.stories";
@@ -22,7 +22,7 @@ import FormFieldTextboxMeta from "../form-field-textbox/form-field-textbox.stori
 
 Dit component gebruik je als een van de voorgedefinieerde FormField*Type*'s niet voldoen. Bekijk ook:
 
-- <LinkTo kind={FormFieldTextboxMeta.title} story="docs">
+- <LinkTo title={FormFieldTextboxMeta.title} name="docs">
     FormFieldTextbox
   </LinkTo>
 

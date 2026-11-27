@@ -217,7 +217,7 @@ Storybook is de voornaamste vorm van LUX documentatie. Begin met het aanmaken va
 
 ```tsx
 import { LuxComponentNaam as ComponentNaam } from "@lux-design-system/web-components-react";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const LuxComponentNaam = (props: PropsWithoutRef<JSX.LuxComponentNaam>) => <ComponentNaam {...props} />;
 

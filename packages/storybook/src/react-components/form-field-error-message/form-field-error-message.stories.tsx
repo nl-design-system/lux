@@ -1,6 +1,6 @@
 import { LuxFormFieldErrorMessage, type LuxFormFieldErrorMessageProps } from '@lux-design-system/components-react';
 import tokens from '@lux-design-system/design-tokens/dist/index.json';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { forwardRef, PropsWithChildren } from 'react';
 import { VisualStates } from './visual/States';
 import { BADGES } from '../../../config/preview';
@@ -18,7 +18,7 @@ const meta = {
   id: 'react-components-form-field-error-message',
   component: WrappedLuxFormFieldErrorMessage,
   parameters: {
-    badges: [BADGES.WIP, BADGES.LATEST],
+    status: { type: [BADGES.WIP, BADGES.LATEST] },
     tokens,
     tokensPrefix: 'utrecht-form-field-error-message',
   },
